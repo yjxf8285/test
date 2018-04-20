@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试页面</title>
+    <link rel="stylesheet" href="http://localhost:8080/css/page/test.css"/>
+    <script src="/js/libs/lib.js"></script>
+    <!--<script src="/js/plugins/pagination.js"></script>-->
+    <script src="http://localhost:8080/js/test.js"></script>
+</head>
+<body>
+<div id="container" >
+    <div class="row">
+        <a class="waves-effect waves-light btn" onclick="Materialize.toast('<span>Item Deleted</span><a class=&quot;btn-flat yellow-text&quot; href=&quot;#!&quot;>Undo<a>', 5000)">Toast!</a>
+
+    </div>
+    <div id="wrapper">
+        <div>
+            <ul class="pagination">
+                <li class="disabled"><a href="#!"><i class="mdi-navigation-chevron-left"></i></a></li>
+                <li class="active"><a href="#!">1</a></li>
+                <li class="waves-effect"><a href="#!">2</a></li>
+                <li class="waves-effect"><a href="#!">3</a></li>
+                <li class="waves-effect"><a href="#!">4</a></li>
+                <li class="waves-effect"><a href="#!">5</a></li>
+                <li class="waves-effect"><a href="#!"><i class="mdi-navigation-chevron-right"></i></a></li>
+            </ul>
+        </div>
+        <section>
+            <div class="data-container"></div>
+            <div class="pagination-demo1"></div>
+        </section>
+    </div>
+    <div>
+        <button id="test-window">window</button>
+        <button id="test-alert">Alert</button>
+        <button id="test-confirm">confirm</button>
+    </div>
+</div>
+
+
+</body>
+</html>

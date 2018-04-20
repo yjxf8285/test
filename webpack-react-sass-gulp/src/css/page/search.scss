@@ -1,0 +1,73 @@
+@import "../base";
+.search-hd-wrap{
+  @include border-b();
+  @include flex-display;
+  padding: 0 15px;
+  box-sizing: border-box;
+  height: 42px;
+}
+.search-text{
+  color:#333;
+  font-size: 13px;
+  line-height: 42px;
+  padding-left:13px;
+}
+.search-hd{
+  position: relative;
+  height: 28px;
+  background: #f2f2f2;
+  @include flex(1);
+  margin-top:7px;
+  color:#999;
+  .search-btn{
+    position: absolute;
+    top:8px;
+    left:10px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    @include background-image('/m/img/ui/common/search.png');
+    background-size: cover;
+
+  }
+  input{
+    display: block;
+    height: 28px;
+    font-size: 12px;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 31px;
+    outline: none;
+    background: #f2f2f2;
+    border-radius: 4px;
+    border: 0;
+  }
+}
+.search-bd{
+  display: none;
+  font-size: 14px;
+  .search-all{
+    padding-left:15px;
+    color:#999;
+    height: 40px;
+    line-height: 40px;
+    @include border-b();
+    position: relative;
+    i{
+      position: absolute;
+      width: 14px;
+      height: 15px;
+      right: 15px;
+      top:13px;
+      @include background-image('/m/img/ui/common/delete.png');
+      background-size: cover;
+    }
+  }
+  .search-tiem li{
+    padding-left:15px;
+    color:#333;
+    height: 40px;
+    line-height: 40px;
+    @include border-b();
+  }
+}

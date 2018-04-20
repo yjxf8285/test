@@ -1,0 +1,60 @@
+{
+    "code": 0,
+    "message": "success",
+    "data": {
+        "nodes": [
+            {
+                "id": "a415c5a8-e6d4-49f1-8e1d-af2680d86c0b",
+                "name": "开发测试Tier",
+                "concurrent": 6,
+                "times": 52.5,
+                "type": "SERVER",
+                "smallType": "tomcat",
+                "instances": 2,
+                "apdex": null,
+                "error": null
+            },
+            {
+                "id": "a415c5a8-e6d4-49f1-8e1d-af2680d86c0buser",
+                "name": "用户",
+                "concurrent": 0,
+                "times": 0,
+                "type": "user",
+                "smallType": null,
+                "instances": 0,
+                "apdex": null,
+                "error": null
+            },
+            {
+                "id": "jdbc:oracle:thin:@10.200.3.14:1521:orcloracle",
+                "name": "jdbc:oracle:thin:@10.200.3.14:1521:orcl",
+                "concurrent": 5,
+                "times": 8,
+                "type": "DATABASE",
+                "smallType": "oracle",
+                "instances": 0,
+                "apdex": null,
+                "error": null
+            }
+        ],
+        "links": [
+            {
+                "source": "a415c5a8-e6d4-49f1-8e1d-af2680d86c0buser",
+                "target": "a415c5a8-e6d4-49f1-8e1d-af2680d86c0b",
+                "label": null,
+                "count": 13,
+                "times": 32,
+                "instances": 0
+            },
+            {
+                "source": "a415c5a8-e6d4-49f1-8e1d-af2680d86c0b",
+                "target": "jdbc:oracle:thin:@10.200.3.14:1521:orcloracle",
+                "label": null,
+                "count": 5,
+                "times": 16,
+                "instances": 2
+            }
+        ],
+        "url": null
+    }
+}

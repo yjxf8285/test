@@ -1,0 +1,64 @@
+<script charset="UTF-8" type="text/template" class="tpl-con">
+<div class="segment">
+    <header class="page-body-header" id="page-body-header">
+        <div class="text-box"><span class="title">受众细分</span><span class="text" id="audience-title"><%=audienceTitle%></span></div>
+        <div class="button-box icon iconfont">
+            <a class="a keyong" href="#" title="更多操作">&#xe61a;</a>
+            <a class="a keyong home" id="goIndex"  href="<%=BASE_PATH%>/" title="返回首页">&#xe644;</a>
+            <a class="a keyong return-pages" id="return-pages" title="返回">&#xe62c;</a>
+            <span class="a keyong" id="rui-modals-save" title="保存">&#xe62a;</span>
+            <span class="a keyong" id="aud-tag-edit" title="添加标签">&#xe630;</span>
+        </div>
+    </header>
+    <div class="content" id="segment-id">
+        <div class="actions-box">
+            <div class="prerequisite-box">
+                <div class="prerequisite" style="border-top:none">
+                    <div class="group-box" id="group1">
+                        <div class="term-box " attr-data="group1">
+                            <div class="input-box segment-target"><div class="input"></div></div>
+                        </div>
+                    </div>
+                    <div class="delete-box icon iconfont delete-all"><a href="javascript:void(0);" title="清空">&#xe61d;</a></div>
+                </div>
+            </div>
+            <div id="triggerConfig" class="trigger icon iconfont z-depth-1 shine-blue">&#xe626;</div>
+        </div>
+        <div class="drawing-box no-data" id="drawing-box" style="display: flex; flex-flow: column;">
+            <header class="header"><div class="count-ico blue-color icon iconfont">&#xe62b;</div><div class="text">总计覆盖约&nbsp;<span class="blue-color" id="totalNum"><%=elementNum%></span>&nbsp;人</div></header>
+            <div style="flex: 1;" class="content" >
+                <table style="height: 100%;">
+                    <tbody id="canvas-content">
+                    </tbody>
+                </table>
+            </div>
+
+            <!--<div class="content" id="canvas-content">-->
+                <!--&lt;!&ndash;<div class="canvas-box" id="group1-drawing1-box">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="canvas-area" id="group1-drawing1"></div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+<div class="config-area" id="config-area">
+    <div class="config-box" >
+        <div class="search-box input-field col s6">
+            <input type="text" id="aud-tag-search" placeholder="请输入标签"  class="validate result-search dropdown-button" data-activates="seg-condition-search" data-belowOrigin="true">
+            <div class="find-ico icon iconfont">&#xe60b;</div>
+        </div>
+        <div id="seg-condition-search" class="dropdown-content">
+        </div>
+        <div class="result-area"  id="result-area">
+        </div>
+    </div>
+    <div class="drawing-area">
+        <div class="drawing-box" style="width:100%;height:100%;">
+            <div class="drawing no-data"  id="drawing4" ></div>
+        </div>
+    </div>
+</div>
+</script>
+
+
+

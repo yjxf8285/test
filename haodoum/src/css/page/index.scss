@@ -1,0 +1,161 @@
+@import "../base";
+
+.menubar {
+  height: 40px;
+  line-height: 40px;
+  @include flex-display;
+  @include border-b();
+  font-size: 16px;
+  color: #333;
+  .bar-btn {
+    width: 50%;
+    text-align: center;
+    &.cur {
+      border-bottom: solid 2px #ff5a00;
+    }
+  }
+}
+
+.active-list-warp li {
+  margin-top: 1px;
+  position: relative;
+  background: #ccc;
+}
+
+.active-list-warp li .bg {
+  text-align:center;
+  width: 100%;
+  height: 0;
+  padding-bottom: 40%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: block;
+  -webkit-transition: background-position-y, 300ms;
+  transition: background-position-y, 300ms;
+}
+
+.active-list-warp li .tit {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 15px;
+}
+
+.content {
+  .search-btn {
+    display: block;
+    margin: 5px 15px;
+    background: #f2f2f2;
+    border-radius: 4px;
+    text-align: center;
+    height: 28px;
+    line-height: 28px;
+    .ico {
+      font-size: 12px;
+      color: #999;
+      display: inline-block;
+      padding-left: 17px;
+      background: url("../../img/ui/common/ico_search@2X.png") no-repeat 0 50%;
+      background-size: 12px 12px;
+    }
+  }
+  .weal-banner {
+    background: url('../../img/ui/index/weal.png') no-repeat 0 50%;
+    @include scale-block(20%)
+  }
+}
+
+.footer {
+  margin-top: 12px;
+  color: #333;
+  font-size: 12px;
+  text-align: center;
+  li {
+    @include border-t();
+    height: 40px;
+    line-height: 40px;
+    .gray {
+      margin-left: 17px;
+      color: #999;
+    }
+  }
+}
+
+.bottom-btn-warp {
+  position: fixed;
+  bottom: 20px;
+  width: 73px;
+  height: 100px;
+  left: 0;
+  .bbtn-c {
+    position: relative;
+    width: 73px;
+    height: 100px;
+    .btn-qiao {
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      bottom: 0;
+      left: 50%;
+      margin-left: -22px;
+      background: url('../../img/ui/index/ico_qiao@2X.png') no-repeat 0 50%;
+      background-size: 45px;
+      z-index: 2;
+    }
+    .btn-profile {
+      position: absolute;
+      width: 31px;
+      height: 31px;
+      transition: transform, 300ms;
+      transform: translate3d(22px, 63px, 0);
+      -webkit-transition: transform, 300ms;
+      -webkit-transform: translate3d(22px, 63px, 0);
+      background: url('../../img/ui/index/ico_people@2X.png') no-repeat 0 50%;
+      background-size: 31px;
+      &.show {
+        transform: translate3d(22px, -4px, 0);
+        -webkit-transform: translate3d(22px, -4px, 0);
+      }
+      z-index: 1;
+    }
+    .btn-shopping {
+      transition: transform, 300ms;
+      transform: translate3d(22px, 63px, 0);
+      -webkit-transition: transform, 300ms;
+      -webkit-transform: translate3d(22px, 63px, 0);
+      position: absolute;
+      width: 31px;
+      height: 31px;
+      background: url('../../img/ui/index/ico_shopping@2X.png') no-repeat 0 50%;
+      background-size: 31px;
+      &.show {
+        transform: translate3d(67px, 18px, 0);
+        -webkit-transform: translate3d(67px, 18px, 0);
+      }
+      z-index: 1;
+    }
+    .btn-scrolltop {
+      transition: top, 300ms;
+      -webkit-transition: top, 300ms;
+      position: absolute;
+      width: 31px;
+      height: 31px;
+      top: 65px;
+      left: 50%;
+      margin-left: -12px;
+      background: url('../../img/ui/index/ico_backtop@2X.png') no-repeat 0 50%;
+      background-size: 31px;
+      &.show {
+        top: 63px;
+        left: 96px;
+        //-webkit-transform: translate3d(116px, 24px, 0);
+      }
+      z-index: 1;
+    }
+  }
+
+}

@@ -1,0 +1,37 @@
+// Core variables and mixins
+@import "../core/variable";
+@import "../core/mixin";
+@import "../base";
+
+
+.goods-list-tab{
+  height:40px;
+  padding:0 10px;
+  @include flex-display;
+  @include flex-justify-content(space-between);
+  @include flex-align-items(center);
+  .hov{
+    background:red;
+  }
+}
+
+.goods{
+  padding:0 10px;
+  margin-top:10px;
+  height:80px;
+  @include clearfix;
+  @include flex-display;
+  @include flex-align-items(center);
+  .goods-img{
+    width:80px;
+    height:80px;
+    img{
+      width:80px;
+      height:80px;
+      display:block;
+    }
+  }
+  .goods-right{
+    margin-left:10px;
+  }
+}

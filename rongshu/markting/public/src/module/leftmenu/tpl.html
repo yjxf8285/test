@@ -1,0 +1,130 @@
+<script type="text/template" id="tpl-con">
+    <div id="mainlogo"></div>
+    <div class="menuwrap"></div>
+</script>
+
+<script type="text/template" id="tpl-dmpmenu">
+    <ul class="leftmenu-wrap-s" style="display: none">
+        <li><a href="#" class="leftmenu-btn"><span class="icon iconfont">&#xe62f;</span></a>
+            <ul class='subm-con'>
+                <!--<li><span class="tit">受众管理</span></li>-->
+                <li><a href="<%=BASE_PATH%>/html/data-access/file.html">文件接入</a></li>
+                <li><a href="<%=BASE_PATH%>/html/data-access/weixin.html">微信接入</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="leftmenu-btn"> <span class="icon iconfont">&#xe634;</span></a>
+            <ul class='subm-con'>
+                <!--<li><span class="tit">营销活动</span></li>-->
+                <li><a href="<%=BASE_PATH%>/html/data-supervise/quality-report.html">数据质量报告</a></li>
+                <li><a href="<%=BASE_PATH%>/html/data-supervise/master-data.html">主数据管理</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="leftmenu-btn"> <span class="icon iconfont">&#xe631;</span></a>
+            <ul class='subm-con'>
+                <!--<li><span class="tit">数字资产</span></li>-->
+                <li><a href="<%=BASE_PATH%>/html/label-management/system.html">系统标签</a></li>
+                <li><a href="<%=BASE_PATH%>/html/label-management/custom.html">自定义标签</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="leftmenu-wrap-b collapsible" >
+        <li>
+            <div class="leftmenu-btn collapsible-header"><span class="icon iconfont">&#xe653;</span><span
+                    class="txt">数据接入</span></div>
+            <ul class="collapsible-body">
+                <li><a href="<%=BASE_PATH%>/html/data-access/file.html">文件接入</a></li>
+                <li><a href="<%=BASE_PATH%>/html/data-access/weixin.html">微信接入</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="leftmenu-btn collapsible-header"><span class="icon iconfont">&#xe654;</span><span
+                    class="txt">数据管理</span></div>
+            <ul class="collapsible-body">
+                <li><a href="<%=BASE_PATH%>/html/data-supervise/quality-report.html">数据质量报告</a></li>
+                <li><a href="<%=BASE_PATH%>/html/data-supervise/master-data.html">主数据管理</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="leftmenu-btn collapsible-header"><span class="icon iconfont">&#xe655;</span><span
+                    class="txt">标签管理</span></div>
+            <ul class="collapsible-body">
+                <li><a href="<%=BASE_PATH%>/html/label-management/system.html">系统标签</a></li>
+                <li><a href="<%=BASE_PATH%>/html/label-management/custom.html">自定义标签</a></li>
+            </ul>
+        </li>
+    </ul>
+</script>
+<script type="text/template" id="tpl-marketingmenu">
+    <ul class="leftmenu-wrap-s" style="display: none">
+        <li><a href="#" class="leftmenu-btn"><span class="icon iconfont">&#xe62f;</span></a>
+            <ul class='subm-con'>
+                <!--<li><span class="tit">受众管理</span></li>-->
+                <li><a href="<%=BASE_PATH%>/html/audience/manage.html">细分管理</a></li>
+                <li><a href="<%=BASE_PATH%>/html/audience/segment.html">受众细分</a></li>
+                <li><a href="<%=BASE_PATH%>/html/audience/crowd.html">人群管理</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="leftmenu-btn"> <span class="icon iconfont">&#xe634;</span></a>
+            <ul class='subm-con'>
+                <!--<li><span class="tit">营销活动</span></li>-->
+                <li><a href="<%=BASE_PATH%>/html/activity/plan.html ">活动编排</a></li>
+                <li><a href="<%=BASE_PATH%>/html/activity/supervise.html">活动管理</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="leftmenu-btn"> <span class="icon iconfont">&#xe631;</span></a>
+            <ul class='subm-con'>
+                <!--<li><span class="tit">数字资产</span></li>-->
+                <li><a href="<%=BASE_PATH%>/html/asset/graphic.html">图文资产</a></li>
+                <li><a href="<%=BASE_PATH%>/html/asset/weixin.html">微信资产</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="leftmenu-wrap-b collapsible" >
+        <li>
+            <div class="leftmenu-btn collapsible-header"><span class="icon iconfont">&#xe62f;</span><span
+                    class="txt">受众管理</span></div>
+            <ul class="collapsible-body">
+                <li ><a  href="<%=BASE_PATH%>/html/audience/manage.html">细分管理</a></li>
+                <li><a href="<%=BASE_PATH%>/html/audience/segment.html">受众细分</a></li>
+                <li><a href="<%=BASE_PATH%>/html/audience/crowd.html">人群管理</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="leftmenu-btn collapsible-header"><span class="icon iconfont">&#xe634;</span><span
+                    class="txt">营销活动</span></div>
+            <ul class="collapsible-body">
+                <li><a href="<%=BASE_PATH%>/html/activity/plan.html">活动编排</a></li>
+                <li><a href="<%=BASE_PATH%>/html/activity/supervise.html">活动管理</a></li>
+            </ul>
+        </li>
+        <li>
+            <div class="leftmenu-btn collapsible-header"><span class="icon iconfont">&#xe631;</span><span
+                    class="txt">数字资产</span></div>
+            <ul class="collapsible-body">
+                <li><a href="<%=BASE_PATH%>/html/asset/graphic.html">图文资产</a></li>
+                <li><a href="<%=BASE_PATH%>/html/asset/weixin.html">微信资产</a></li>
+            </ul>
+        </li>
+    </ul>
+</script>
+<script type="text/template" id="tpl-insight">
+    <ul class="leftmenu-wrap-s" style="display: none">
+        <li><a href="#" class="leftmenu-btn"><span class="icon iconfont">&#xe654;</span></a>
+            <ul class='subm-con'>
+                <!--<li><span class="tit">数据洞察</span></li>-->
+                <li><a href="<%=BASE_PATH%>/html/data-lnsight/comprehensive-analysis.html">综合分析</a></li>
+                <li><a href="<%=BASE_PATH%>/html/data-lnsight/custom-report.html">定制报表</a></li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="leftmenu-wrap-b collapsible" >
+        <li>
+            <div class="leftmenu-btn collapsible-header"><span class="icon iconfont">&#xe654;</span><span
+                    class="txt">数据洞察</span></div>
+            <ul class="collapsible-body">
+                <li ><a  href="<%=BASE_PATH%>/html/data-lnsight/comprehensive-analysis.html">综合分析</a></li>
+                <li><a href="<%=BASE_PATH%>/html/data-lnsight/custom-report.html">定制报表</a></li>
+            </ul>
+        </li>
+    </ul>
+</script>

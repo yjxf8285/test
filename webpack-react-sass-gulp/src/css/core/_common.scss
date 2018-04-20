@@ -1,0 +1,201 @@
+@import "../core/variable";
+@import "../core/mixin";
+
+.main-warp {
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+}
+
+//ios点击去除灰框
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+//超链接
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+//清浮动
+.clearfix {
+  @include clearfix;
+}
+
+//DOM隐藏
+body .fn-hide {
+  display: none;
+}
+
+//文字截取
+.fn-text-overflow {
+  @include single-text;
+}
+
+.fn-fl {
+  float: left !important;
+}
+
+.fn-fr {
+  float: right !important;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+//m站 公用头部
+header {
+  padding: 0 15px;
+  position: fixed;
+  height: 40px;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 50;
+  background: #fff;
+  @include border-b();
+  .tete-homepage {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    display: block;
+    width: 16px;
+    height: 17px;
+    @include background-image('../../img/ui/common/homepage.png');
+    background-size: cover;
+  }
+  .tete-personal {
+    display: block;
+    width: 17px;
+    height: 17px;
+    margin-top: 12px;
+    margin-left: 20px;
+    float: right;
+    @include background-image('../../img/ui/common/personal.png');
+    background-size: cover;
+  }
+  .tete-title {
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    line-height: 40px;
+  }
+  .header-right {
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+  .shopcart-warp {
+    float: right;
+    width: 17px;
+    height: 17px;
+    margin-top: 12px;
+    @at-root .shopccart-inner {
+      position: absolute;
+      i {
+        font-style: normal;
+        width: 16px;
+        height: 16px;
+        color: #fff;
+        text-align: center;
+        line-height: 16px;
+        border-radius: 50%;
+        background: #ff5a00;
+        font-size: 12px;
+        position: absolute;
+        top: -8px;
+        right: -8px;
+      }
+
+      a {
+        display: block;
+        width: 17px;
+        height: 17px;
+        @include background-image('../../img/ui/common/shopcart.png');
+        background-size: cover;
+      }
+    }
+
+  }
+}
+
+//公共样式
+
+//模拟radio
+.tete-tick {
+  width: 14px;
+  height: 14px;
+  @include background-image('../../img/ui/common/tick.png');
+  background-size: 8px 6px;
+  background-position: 3px 4px;
+}
+
+.black-color {
+  background-color: #000;
+}
+
+.gray-color {
+  background-color: #ccc;
+}
+
+//common btn
+.tete-btn {
+  height: 40px;
+  color: #fff;
+  font-size: 15px;
+  background: #141414;
+  line-height: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+//下拉加载更多文字图片样式
+.no-list-data {
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  font-size: 14px;
+  color: $gray-d;
+  @include flex-display;
+  @include flex-center;
+  img {
+    width: 16px;
+    margin-right: 5px;
+  }
+}
+
+.btn-addcart {
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  @include background-image("/m/img/ui/common/ico_tianjiagouwuche@2x.png");
+  background-repeat: no-repeat;
+  background-size: 29px;
+}
+//解决click区域问题
+.touch{
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 50%;
+    left: 50%;
+    margin-left: -22px;
+    margin-right: -22px;
+
+  }
+}
+
+.shopcart-banner{
+  @include scale-block(20%);
+  background-image: url("../../img/ui/index/weal.png");
+  margin-top: 40px;
+}

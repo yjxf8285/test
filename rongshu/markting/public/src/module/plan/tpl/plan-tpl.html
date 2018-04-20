@@ -1,0 +1,53 @@
+<script charset="UTF-8" type="text/template" id="tpl-content">
+    <div class="plan">
+        <header class="page-body-header" id="page-body-header">
+            <div class="text-box"><span class="title">活动编排</span><span class="text"><%=audienceTitle%></span></div>
+            <div class="button-box icon iconfont">
+                <a class="a keyong dropdown-button" data-activates="plan-more-menu" data-beloworigin="true"
+                   data-constrainwidth="false" title="更多操作">&#xe61a;</a>
+                <a class="a keyong home" id="goIndex"  href="<%=BASE_PATH%>/" title="返回首页">&#xe644;</a>
+                <a class="a keyong return-pages" id="return-pages"  title="返回">&#xe62c;</a>
+                <span class="a keyong rui-cursor-pointer" id="plan-save" title="保存">&#xe62a;</span>
+            </div>
+            <ul id="plan-more-menu" class="rui-more-menu dropdown-content">
+                <li class="plan-more-menu-item manual-trigger">
+                    <i class="icon iconfont">&#xe63e;</i>
+                    <a class="text" href="javascript:void(0);" >开启活动</a>
+                </li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="draw-box trigger-animate" id="openMacket-draw-animate">
+                <canvas height="3000" width="3000" id="main-cavs"></canvas>
+
+            </div>
+            <div class="menubar">
+                <ul>
+                    <li>
+                        <a class="btn-floating  waves-effect waves-light one">触发</a>
+                    </li>
+                    <li>
+                        <a class="btn-floating  waves-effect waves-light two">受众</a>
+                    </li>
+                    <li>
+                        <a class="btn-floating  waves-effect waves-light three">决策</a>
+                    </li>
+                    <li>
+                        <a class="btn-floating  waves-effect waves-light four">行动</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mackt-box trigger-animate" id="openMacket-mackt-animate">
+                <div class="header" >
+                    <i class="icon iconfont close"  id="mackt-close">&#xe664;</i>
+                    <spn class="text">活动安排相关分析</spn>
+                </div>
+                <div class="mackt" >
+                    <iframe id="plan-chart" width="100%" height="100%" frameborder="0" scrolling="auto" src="<%=basePath%>/html/activity/plan-iframe.html"></iframe>
+                </div>
+            </div>
+
+            <div class="switch-trigger switch-img" id="openMacket" style="display:none;"></div>
+        </div>
+    </div>
+</script>

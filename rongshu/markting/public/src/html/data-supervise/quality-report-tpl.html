@@ -1,0 +1,158 @@
+<script charset="UTF-8" type="text/template" id="tpl-content">
+    <div class="quality-report">
+        <header class="page-body-header">
+            <div class="text-box">
+                <span class="title">数据质量报告</span>
+                <span class="text">
+                    <span class="color">共计接入数据&nbsp;</span>796,279<span class="color">&nbsp;条&nbsp;|&nbsp;问题数据&nbsp;</span>36<span class="color">&nbsp;条&nbsp;|&nbsp;修复&nbsp;</span>217<span class="color">&nbsp;条</span>
+                </span>
+            </div>
+            <div class="button-box icon iconfont"><a class="a keyong" id="goIndex" href="<%=BASE_PATH%>/" title="返回首页">&#xe644;</a></div>
+        </header>
+        <div class="content">
+            <header class="header">
+                <div class="title">数据质量报告</div>
+                <div class="h2">您可以在此查看所有接入数据的质量并尝试修复它</div>
+            </header>
+            <div class="list-box" id="table-box"></div>
+        </div>
+    </div>
+</script>
+
+<script charset="UTF-8" type="text/template" id="tpl-table">
+    <table class="page-table-box" id="quality-report-table">
+        <thead>
+        <tr>
+            <th class="first">开始时间</th>
+            <th>完成时间</th>
+            <th>数据源</th>
+            <th>合法记录</th>
+            <th>非法记录</th>
+            <th>修正记录</th>
+            <th class="ico"></th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="first">2016-4-28&nbsp;2:00</td>
+                <td>2016-4-28&nbsp;2:07</td>
+                <td>ETL(乐友商城APP)</td>
+                <td>100,203</td>
+                <td class="illegal"></td>
+                <td class="modify"><a class="download" href="../../download/data_fix.zip">data_fix.zip</a><span class="time">2016-4-28&nbsp;10:00</span></td>
+                <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button moreico" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+            </tr>
+            <tr>
+                <td class="first">2016-4-29&nbsp;2:00</td>
+                <td>2016-4-29&nbsp;2:05</td>
+                <td>ETL(乐友商城APP)</td>
+                <td>99,203</td>
+                <td class="illegal"></td>
+                <td class="modify"><a class="download" href="../../download/data_fix.zip">data_fix.zip</a><span class="time">2016-4-29&nbsp;10:00</span></td>
+                <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button moreico" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+            </tr>
+            <tr>
+                <td class="first">2016-5-1&nbsp;2:00</td>
+                <td>2016-5-1&nbsp;2:06</td>
+                <td>ETL(乐友商城APP)</td>
+                <td>101,203</td>
+                <td class="illegal"></td>
+                <td class="modify"><a class="download" href="../../download/data_fix.zip">data_fix.zip</a><span class="time">2016-5-1&nbsp;10:00</span></td>
+                <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button moreico" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+            </tr>
+            <tr>
+                <td class="first">2016-5-1&nbsp;3:00</td>
+                <td>2016-5-1&nbsp;3:05</td>
+                <td>ETL(乐友孕婴童网上商城) </td>
+                <td>91,886</td>
+                <td class="illegal"></td>
+                <td class="modify"></td>
+                <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button moreico" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+            </tr>
+            <tr>
+                <td class="first">2016-5-2&nbsp;3:00</td>
+                <td>2016-5-2&nbsp;3:05</td>
+                <td>ETL(乐友孕婴童网上商城) </td>
+                <td>92,886</td>
+                <td class="illegal"></td>
+                <td class="modify"></td>
+                <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button moreico" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+            </tr>
+            <tr>
+                <td class="first">2016-5-3&nbsp;3:00</td>
+                <td>2016-5-3&nbsp;3:05</td>
+                <td>ETL(乐友孕婴童网上商城) </td>
+                <td>93,886</td>
+                <td class="illegal"></td>
+                <td class="modify"></td>
+                <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button moreico" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+            </tr>
+            <tr>
+                <td class="first">2016-5-2&nbsp;4:00</td>
+                <td>2016-5-2&nbsp;4:06</td>
+                <td>ETL(乐友天猫旗舰店)</td>
+                <td>5,102</td>
+                <td class="illegal">
+                    <a href="javascript:void(0)" class="r-btn dropdown-button" data-activates="illegal-list" data-constrainwidth="false" data-gutter="-140"><num class="num">12</num><ico class="pointer icon iconfont">&#xe604;</ico></a>
+                </td>
+                <td id="modify" class="modify"></td>
+                <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button moreico" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+            </tr>
+            <tr>
+                <td class="first">2016-5-3&nbsp;4:00</td>
+                <td>2016-5-3&nbsp;4:06</td>
+                <td>ETL(乐友天猫旗舰店)</td>
+                <td>5,202</td>
+                <td class="illegal">
+                    <a href="javascript:void(0)" class="r-btn dropdown-button" data-activates="illegal-list" data-constrainwidth="false" data-gutter="-140"><num class="num">12</num><ico class="pointer icon iconfont">&#xe604;</ico></a>
+                </td>
+                <td id="modify" class="modify"></td>
+                <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button moreico" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+            </tr>
+            <tr>
+                <td class="first">2016-5-4&nbsp;4:00</td>
+                <td>2016-5-4&nbsp;4:09</td>
+                <td>ETL(乐友天猫旗舰店)</td>
+                <td>5,302</td>
+                <td class="illegal">
+                    <a href="javascript:void(0)" class="r-btn dropdown-button" data-activates="illegal-list" data-constrainwidth="false" data-gutter="-140"><num class="num">12</num><ico class="pointer icon iconfont">&#xe604;</ico></a>
+                </td>
+                <td id="modify" class="modify"></td>
+                <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button moreico" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+            </tr>
+            <tr>
+                <td class="first">2016-5-7&nbsp;2:00</td>
+                <td>2016-5-7&nbsp;2:06</td>
+                <td>文件(<a class="download" href="../../download/乐友孕婴童连锁店POS.csv" title="乐友孕婴童连锁店POS.csv">乐友孕婴童连锁店POS.csv</a>)</td>
+                <td>101,203</td>
+                <td class="illegal"></td>
+                <td class="modify"><a class="download" href="../../download/乐友孕婴童连锁店POS.csv" title="乐友孕婴童连锁店POS.csv">乐友孕婴童连锁店POS.csv</a><span class="time">2016-5-7&nbsp;10:00</span></td>
+                <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button moreico" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+            </tr>
+            <tr>
+                <td class="first">2016-5-10&nbsp;2:00</td>
+                <td>2016-5-10&nbsp;2:06</td>
+                <td>文件(<a class="download" href="../../download/乐友CRM.zip" title="乐友CRM.zip">乐友CRM.zip</a>)</td>
+                <td>100,203</td>
+                <td class="illegal"></td>
+                <td class="modify"><a class="download" href="../../download/乐友CRM.zip" title="乐友CRM.zip">乐友CRM.zip</a><span class="time">2016-5-10&nbsp;10:00</span></td>
+                <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button moreico" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+            </tr>
+        </tbody>
+    </table>
+    <!--菜单下拉-->
+    <ul id="morelist" class="dropdown-content setuplist">
+        <li><i class="icon iconfont">&#xe64e;</i><a href="../../download/data_fix.zip">下载非法数据</a></li>
+        <li><i class="icon iconfont">&#xe60b;</i><a href="../../download/2016-5-20-log.csv">查看日志</a></li>
+        <li class="upfile">
+            <i class="icon iconfont">&#xe663;</i><a href="javascript:void(0)">修正后上传</a>
+            <input type="file" id="uploadFile" class="file" title="修正后上传"/>
+        </li>
+    </ul>
+    <!--非法记录下拉-->
+    <ul id="illegal-list" class="dropdown-content illegal-list">
+        <li><a href="javascript:void(0)">非法手机号</a><num class="num">8</num></li>
+        <li><a href="javascript:void(0)">非法邮箱</a><num class="num">3</num></li>
+        <li><a href="javascript:void(0)">重复记录</a><num class="num">8</num></li>
+    </ul>
+</script>

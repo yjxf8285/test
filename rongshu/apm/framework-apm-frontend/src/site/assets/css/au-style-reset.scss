@@ -1,0 +1,8 @@
+// 重置面板样式
+$marginWidth:10px;
+.common-panel{
+  margin: $marginWidth;
+  .au-panel-title{
+    padding: 10px 20px;
+  }
+}

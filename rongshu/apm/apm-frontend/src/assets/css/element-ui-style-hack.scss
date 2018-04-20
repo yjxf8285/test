@@ -1,0 +1,153 @@
+/**
+ * 重置elementUI样式（注意！仅无法通过自定义EL主题配置的情况下使用）
+ * 不可重置布局类（盒子模型、浮动、网格）
+ */
+
+.el-table {
+    font-size: 12px !important;
+}
+
+// .el-table.el-table-no-border {
+//   border:none;
+//   div, table, tr, td {
+//     border:none !important;
+//   }
+//   .el-table.el-table-no-border div, .el-table.el-table-no-border table, .el-table.el-table-no-border tr, .el-table.el-table-no-border td {
+//     border: none;
+//   }
+// }
+.el-dropdown-menu {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+// .el-popover {
+//   left: 0 !important;
+// }
+.el-tooltip__popper {
+    max-width: 300px;
+}
+
+.hackpopper-fitler-list {
+    padding: 0;
+    margin-top: 0!important;
+    border: solid 1px #ccc;
+    z-index: 20000!important; // loading的级别是10000，所以要盖住它
+}
+
+.tabs-transaction {
+    .el-tabs__item {
+        font-size: 12px!important;
+    }
+}
+
+.el-input {
+    input {
+        border: 1px solid #dcdcdc;
+    }
+    &.circular {
+        input {
+            border-radius: 16px;
+        }
+    }
+    .el-input--mini .el-input__inner {
+        height: 26px;
+    }
+    &.apm-input-border-radius__0-4-4-0 {
+        input {
+            border-radius: 0px 4px 4px 0px;
+        }
+    }
+    &.apm-input-border-radius__4-4-0-0 {
+      input {
+          border-radius: 4px 4px 0px 0px;
+      }
+  }
+}
+
+.el-table {
+    &.apm-table-bordered {
+        border: 1px solid #dcdcdc;
+        border-radius: 2px;
+    }
+}
+
+.el-tree {
+  &.apm-tree-1 {
+    .el-tree-node {
+      &.is-current {
+        >.el-tree-node__content{
+          background-color: #fff;
+          color: #2879ff;
+          font-weight: 700;
+        }
+      }
+      >.el-tree-node__content{
+        &:hover {
+          background-color: #fff;
+          color:#2879ff;
+        }
+      }
+      .el-tree-node__label {
+        padding-right: 10px;
+        width: 100%;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.el-tabs.header-margin0 {
+    .el-tabs__header {
+        margin-bottom: 0px;
+    }
+}
+
+
+/* 事务详情页的tabs头样式 */
+
+.tabs-transaction {
+    .el-tabs__header {
+        margin: 24px 24px 0 24px;
+        background: #fff;
+        border: solid 1px #dcdcdc;
+        border-radius: 5px;
+    }
+}
+
+
+/* 自定义时间选择框样式 */
+
+.date-timer {
+    float: right;
+    //width: 310px!important;
+    border: none;
+    height: 35px;
+    .el-input__inner {
+        border: none;
+        text-align: center;
+    }
+}
+
+.date-timer-popper {
+  right: 23px;
+  left: inherit!important;
+    .el-date-range-picker__time-header {
+        //padding: 8px 50px;
+    }
+    .el-picker-panel__shortcut.cur {
+        background: #2879ff;
+        color: #fff;
+    }
+    .el-picker-panel__footer {
+        .el-button--text {
+            display: none;
+        }
+    }
+}
+
+.el-tabs__header {
+    padding: 0 10px;
+}

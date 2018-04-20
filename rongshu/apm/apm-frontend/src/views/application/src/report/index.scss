@@ -1,0 +1,148 @@
+/*
+ * @Author: AnThen
+ * @Date: 2017-08-03 10:07:55
+ * @Last Modified by: jiangfeng
+ * @Last Modified time: 2018-01-08 09:48:02
+ */
+
+@mixin flex-display {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+//水平位置justify-content
+//flex-start | flex-end | center | space-between |
+//默认flex-start
+@mixin flex-justify-content($justifyType:flex-start) {
+    @if $justifyType==flex-end {
+        -webkit-box-pack: end;
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end;
+    }
+    @else if $justifyType==center {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+    @else if $justifyType==space-between {
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+    }
+    @else {
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+//垂直方向align-items
+//flex-start：交叉轴的起点对齐。
+//flex-end：交叉轴的终点对齐。
+//center：交叉轴的中点对齐。
+//baseline: 项目的第一行文字的基线对齐。
+//stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
+//默认flex-start
+@mixin flex-align-items($alignType:flex-start) {
+    @if $alignType==flex-end {
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+        align-items: flex-end;
+    }
+    @else if $alignType==center {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    @else if $alignType==baseline {
+        -webkit-box-align: baseline;
+        -webkit-align-items: baseline;
+        align-items: baseline;
+    }
+    @else if $alignType==stretch {
+        -webkit-box-align: stretch;
+        -webkit-align-items: stretch;
+        align-items: stretch;
+    }
+    @else {
+        -webkit-box-align: start;
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+@mixin flex-order($order:0) {
+    -webkit-box-ordinal-group: $order;
+    order: $order;
+}
+
+//水平，垂直方向居中
+@mixin flex-center() {
+    @include flex-display;
+    @include flex-justify-content(center);
+    @include flex-align-items(center);
+}
+
+.report {
+    float: left;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.search-input-container {
+    display: inline-block;
+    width: 300px;
+    margin-left: 40px;
+}
+
+.sql {
+    margin: 20px 0 40px 0;
+    padding: 0 20px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.query-bar {
+    padding: 8px 10px;
+    box-shadow: 1px 1px 5px #ccc;
+    margin-bottom: 20px;
+}
+
+.sys-selector {
+    margin-right: 20px;
+}
+
+.table-container {
+    float: left;
+    width: 100%;
+    .table-box {
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+        .name {
+            margin-top: 0;
+            .tag {
+                word-break: break-all;
+                white-space: inherit;
+                font-size: 13px;
+                line-height: 19px;
+                height: auto;
+            }
+        }
+        .table {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+    .table-box:first-child {
+        margin-top: 0;
+    }
+    .table-prompt {
+        width: 100%;
+        font-size: 12px;
+        padding: 10px 0;
+        text-align: center;
+    }
+}

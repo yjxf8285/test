@@ -1,0 +1,43 @@
+@import "../core/mixin";
+
+.area-html{
+  height: 100%;
+  position: relative;
+  left:-90%;
+}
+.sideslipMask{
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 11110;
+}
+
+.sideslipWrap{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 90%;
+  height: 100%;
+  overflow: scroll;
+  z-index: 9999999;
+  background: #fff;
+}
+.areas-hd{
+  height: 40px;
+  @include border-b();
+  text-align: center;
+  line-height: 40px;
+}
+.areas-bd{
+  div{
+    height: 40px;
+    @include border-b();
+    text-align: center;
+    line-height: 40px;
+  }
+
+}

@@ -1,0 +1,509 @@
+// Core variables and mixins
+@import "../base";
+@import "../components/dialog";
+@import "../components/myselect";
+
+
+
+body {
+  background: $b-gray-l;
+  &.white-background {
+    background: $white;
+  }
+}
+
+//我的    首页
+.mine {
+  .mine-title {
+    height: 50px;
+    overflow: hidden;
+    padding: 10px;
+    background: $white;
+    @include flex-display;
+    @include flex-justify-content(space-between);
+    @include flex-align-items(center);
+    .l {
+      font-size: 15px;
+      @include flex-display;
+      @include flex;
+      @include flex-align-items(center);
+      img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+    }
+    .r {
+      img {
+        height: 13px;
+      }
+    }
+  }
+  .mine-menu {
+    margin-top: 5px;
+    padding: 0 10px;
+    background: $white;
+    li {
+      display: block;
+      height: 40px;
+      @include border-b;
+      @include flex-display;
+      @include flex-justify-content(space-between);
+      @include flex-align-items(center);
+      div {
+        font-size: 14px;
+        @include flex-display;
+        @include flex;
+        @include flex-align-items(center);
+        img {
+          width: 15px;
+          height: 15px;
+          margin-right: 15px;
+        }
+      }
+      .r {
+        img {
+          height: 13px;
+        }
+      }
+      &:last-child {
+        border: none;
+        background: none;
+      }
+    }
+  }
+  .mine-show-txt {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .mine-show-txt2 {
+    @extend .mine-show-txt;
+    margin-top: 10px;
+  }
+  .login-out {
+    margin: 60px 10px 38px 10px;
+    background: #8ac64e;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: $white;
+    @include radius(4px);
+  }
+}
+
+//我的收获地址
+.mine-address {
+  .my-addr {
+    background: $white;
+    margin-bottom: 5px;
+    .my-addr-t {
+      padding-top: 12px;
+      padding-bottom: 17px;
+      margin: 0 10px;
+      font-size: 15px;
+      @include border-b;
+      span {
+        margin-right: 40px;
+      }
+      div {
+        margin-top: 10px;
+        @include flex-display;
+        @include clearfix;
+        p {
+          line-height: 18px;
+          @include flex;
+        }
+        span {
+          &.default {
+            color: #8ac64e;
+            text-indent: -7.5px;
+            line-height: 18px;
+            margin: 0;
+          }
+        }
+      }
+    }
+    .my-addr-b {
+      height: 40px;
+      @include flex-display;
+      @include flex-justify-content(flex-end);
+      @include flex-align-items(center);
+      a {
+        margin-right: 20px;
+        margin-left: 10px;
+        height: 40px;
+        font-size: 14px;
+        @include flex-display;
+        @include flex-align-items(center);
+        img {
+          margin-right: 7px;
+          width: 14px;
+          height: 14px;
+        }
+      }
+      .delete-address {
+        @extend a;
+      }
+    }
+  }
+}
+
+//没有地址
+.my-no-address {
+  p {
+    text-align: center;
+    margin-top: 75px;
+    img {
+      width: 70px;
+      height: 70px;
+    }
+    &.txt {
+      margin-top: 15px;
+      color: $gray-l;
+      font-size: 13px;
+    }
+  }
+}
+.my-no-message{
+  @extend .my-no-address;
+  margin-top:95px;
+  img{
+    width:80px;
+    height:80px;
+  }
+}
+.my-no-coupon{
+  @extend .my-no-address;
+  margin-top:85px;
+  img{
+    width:80px;
+    height:80px;
+  }
+}
+
+//我的账户
+.my-account {
+  background: $white;
+  padding: 0 10px;
+  .my-account-list {
+    height: 40px;
+    @include border-b;
+    @include flex-display;
+    @include flex-align-items(center);
+    @include flex-justify-content(space-between);
+    .l {
+      font-size: 14px;
+    }
+    .r {
+      height: 40px;
+      @include flex-display;
+      @include flex-align-items(center);
+      @include flex-justify-content(space-between);
+      color: $gray-l;
+      font-size: 14px;
+      input {
+        font-size: 14px;
+        color: $gray-l;
+        text-align: right;
+        border: none;
+        width:200px;
+      }
+      img {
+        margin-left: 10px;
+        height: 13px;
+        display: block;
+      }
+    }
+    &.head {
+      height: 70px;
+      .l {
+        font-size: 15px;
+      }
+      .r {
+        img {
+          width: 50px;
+          height: 50px;
+          display: block;
+        }
+      }
+    }
+    &:last-child {
+      border: none;
+      background: none;
+    }
+    &.align-left {
+      @include flex-justify-content;
+      .r {
+        margin-left: 25px;
+        input {
+          text-align: left;
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+//我的账户   选择性别和年龄
+.account-choice-bg {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.5;
+  z-index: 5;
+}
+
+.choice {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 6;
+  .account-choice {
+    width: 100%;
+    height: 100%;
+    @include flex-center;
+    ul {
+      width: 210px;
+      background: #000;
+      @include radius(4px);
+      li {
+        width: 210px;
+        height: 45px;
+        color: $gray-l;
+        font-size: 14px;
+        text-align: center;
+        line-height: 45px;
+        @include border-b;
+        &.curr {
+          color: $white;
+          font-size: 16px;
+        }
+        &.clear {
+          color: #ccc;
+        }
+        &:last-child {
+          border: none;
+          background: none;
+        }
+      }
+    }
+  }
+}
+
+//新增和编辑收货地址
+.add-addr {
+  .my-account {
+    background: $white;
+    padding: 0 10px;
+    .my-account-list {
+      .r {
+        div {
+          width: 16px;
+          height: 16px;
+          &.curr {
+            @include background-image("../../images/ui/common/is_chioce.png");
+            background-size: 16px 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.search-address{
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:$white;
+  .data-bd{
+
+  }
+}
+
+
+//我的消息
+.mine-messages{
+  padding:0 10px;
+  .mine-message{
+    padding-bottom:10px;
+    @include border-b;
+    .t{
+      margin:12px 0 10px 0;
+      @include flex-display;
+      @include flex-justify-content(space-between);
+      @include flex-align-items(flex-end);
+      span{
+        font-size:13px;
+        &.time{
+          font-size:11px;
+          color:$gray-l;
+        }
+      }
+    }
+    .c{
+      margin-bottom:5px;
+      font-size:10px;
+      color:$gray-l;
+    }
+    .b{
+      margin-top:2px;
+      @include flex-display;
+      @include flex-justify-content(space-between);
+      span{
+        font-size:10px;
+        color:$gray-l;
+      }
+      .show-detail{
+        color:#8ac64e;
+        font-size:12px;
+      }
+    }
+  }
+}
+//我的优惠券
+.coupon-tab{
+  height:40px;
+  background: $white;
+  @include flex-display;
+  @include flex-justify-content(center);
+  div{
+    line-height:40px;
+    font-size:14px;
+    margin:0 25px;
+    &.curr{
+      color:#8ac64e;
+    }
+    em{
+      font-style: normal;
+    }
+  }
+}
+.coupon-content{
+  .coupon{
+    width:280px;
+    height:135px;
+    margin:10px auto 0 auto;
+    @include background-image("../../images/ui/mine/coupon_on.png");
+    background-size:100% 100%;
+    .coupon-name{
+      padding-left:19.5px;
+      font-size:13px;
+      height:40px;
+      @include flex-display;
+      @include flex-align-items(center);
+      color:$base-color;
+      span{
+        color:$gray-m;
+        margin-left:10px;
+        font-size:10px;
+      }
+    }
+    .coupon-price{
+      margin-top:10px;
+      padding-left:19.5px;
+      font-size:15px;
+      color:#8ac64e;
+      span{
+        color:#8ac64e;
+        font-size:36px;
+      }
+    }
+    .coupon-time{
+      height:20px;
+      margin-top:3px;
+      padding-left:19.5px;
+      padding-right:10px;
+      color:$gray-m;
+      @include clearfix;
+      .l{
+        float:left;
+        font-size:10px;
+        line-height:24px;
+      }
+      .r{
+        float:right;
+        font-size:15px;
+        line-height:20px;
+        display:none;
+      }
+    }
+  }
+  &.off{
+    .coupon{
+      @include background-image("../../images/ui/mine/coupon_off.png");
+      background-size:100% 100%;
+      .coupon-name{
+        color:$gray-l;
+        span{
+          color:$gray-l;
+        }
+      }
+      .coupon-price{
+        color:$gray-l;
+        span{
+          color:$gray-l;
+        }
+      }
+      .coupon-time{
+        color:$gray-l;
+        .r{
+          display:block;
+        }
+      }
+    }
+  }
+}
+.instructions-bg{
+  position:fixed;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  background:#000;
+  z-index:5;
+  opacity: .5;
+}
+.instructions{
+  position:fixed;
+  left:30px;
+  right:30px;
+  top:85px;
+  height:390px;
+  background:#000;
+  z-index:6;
+  @include radius(6px);
+  .instructions-top{
+    font-size:16px;
+    margin-top:20px;
+    color:$white;
+    text-align:center;
+  }
+  p{
+    padding:0 10px;
+    margin-top:12px;
+    color:$white;
+    font-size:11px;
+  }
+  .i-am-sure{
+    display:block;
+    background:#8ac64e;
+    width:90px;
+    height:36px;
+    text-align: center;
+    line-height:36px;
+    color:$white;
+    margin:23px auto 0 auto;
+    @include radius(4px);
+  }
+}

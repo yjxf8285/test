@@ -1,0 +1,77 @@
+<script charset="UTF-8" type="text/template" id="tpl-list">
+    <%_.each(listData,function(m,i){%>
+    <li>
+        <input type="checkbox" class="filled-in checkitem" id="xfitem<%=i%>">
+        <label for="xfitem<%=i%>"><%=m.name%></label>
+        <a href="<%=BASE_PATH%>/html/audience/segment.html?returnurl=<%=BASE_PATH%>/html/audience/manage.html&audienceId=<%=i+1%>
+" class="icon iconfont right" style="font-size:20px;margin-top:-2px;" title="编辑">&#xe666;</a>
+    </li>
+    <%})%>
+</script>
+<script charset="UTF-8" type="text/template" id="tpl-layout">
+    <div class="manage">
+        <header class="page-body-header">
+            <div class="text-box"><span class="title">细分管理</span><span class="text">受众细分共计5个</span></div>
+            <div class="button-box icon iconfont"><a class="a keyong" id="goIndex" href="<%=BASE_PATH%>/" title="返回首页">&#xe644;</a><a
+                    class="a keyong" href="<%=BASE_PATH%>/html/audience/segment.html" title="新增细分人群">&#xe652;</a></div>
+        </header>
+        <div class="content">
+            <div class="tab-btnwrap">
+                <ul class="tabs">
+                    <li class="tab"><a href="#0">未发布 (0)</a></li>
+                    <li class="tab"><a href="#1">已发布 (5)</a></li>
+                    <li class="tab"><a href="#2">活动中 (5)</a></li>
+                    <li class="tab"><a href="#3" class="active">全部 (5)</a></li>
+                </ul>
+            </div>
+            <div class="main-con">
+                <div class="main-l">
+                    <div class="search-wrap">
+                        <input type="text" class="validate search-input" placeholder="筛选关键字">
+                        <span class="icon iconfont">&#xe60b;</span>
+                    </div>
+                    <div class="tabs-listwrap">
+                        <div class="select-all">
+                            <input type="checkbox" class="filled-in" id="group-all">
+                            <label for="group-all">全选</label>
+                        </div>
+                        <ul class="itemlist-wrap">
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-r">
+                    <table class="layouttable havedata">
+                        <tr>
+                            <td colspan="2" class="chartswrap-t">
+                                <div class="title">净增人数</div>
+                                <div id="chartstop" class="valign" style="width:100%;height: 100%;margin: auto"></div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="chartswrap-l" width="50%">
+                                <div class="title">活动转化分析</div>
+                                <div id="chartsleft" style="width:90%;height: 90%;margin: auto"></div>
+                            </td>
+
+                            <td  class="chartswrap-r" width="50%">
+                                <div class="title">用户分布</div>
+                                <div id="chartsright" style="width:90%;height: 90%;margin: auto"></div>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="layouttable nodata" style="display: none;">
+                        <tr>
+                            <td class="chartswrap-t">
+                                <img src="/img/common/nochartdata.jpg" alt="">
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

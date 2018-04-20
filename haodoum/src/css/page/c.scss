@@ -1,0 +1,51 @@
+@import "../base";
+
+.new-todo {
+  margin-top: 8px;
+  width: 100%;
+}
+
+.loading-wrap {
+  //top:0;
+  //left: 0;
+  //right: 0;
+  //bottom:0;
+  //z-index: 99999;
+  //position: fixed;
+  background: #000;
+  opacity:0.3;
+  @include flex-center;
+  .loading {
+    opacity: 1;
+    background: url(../../img/ui/common/loading.gif) no-repeat;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.menu-wrap {
+  margin-top: 40px;
+  padding: 0 10px;
+  display: flex;
+  border-bottom: solid 1px #ccc;
+  li {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    &.cur {
+      background: #ccc;
+    }
+  }
+}
+
+.list-wrap {
+  display: none;
+  li {
+    border-bottom: solid 1px #ccc;
+    padding: 10px;
+  }
+  &.show {
+    display: block;
+  }
+}

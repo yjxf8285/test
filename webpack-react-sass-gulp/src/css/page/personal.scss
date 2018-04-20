@@ -1,0 +1,120 @@
+@import "../base";
+
+//个人中心有状态
+.persoal-header{
+  @include scale-block(50%);
+  @include background-image('/m/img/ui/personal/personal-bg.png');
+  background-size: cover;
+  text-align: center;
+  @at-root .personal-islogin{
+    @include flex-display;
+    @include flex-justify-content(center);
+    a{
+      color: #fff;
+      text-align: center;
+      line-height: 25px;
+      margin-top:55px ;
+      width: 70px;
+      height: 25px;
+      @include border(#fff);
+    }
+    .mr65{
+      margin-right: 65px;
+    }
+  }
+}
+.persoal-header-hd{
+  width: 61px;
+  height: 61px;
+  margin:26px auto 12px auto;
+  background: rgba(255,255,255,0.5);
+  border-radius: 50%;
+  position: relative;
+  img{
+    position: absolute;
+    top:3px;
+    left: 3px;
+    display: block;
+    width: 55px;
+    height: 55px;
+    background-size: cover;
+    border-radius: 50%;
+
+  }
+}
+.personal-header-title{
+  color: #fff;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+.personal-header-detail{
+  color: #fff;
+  font-size: 14px;
+}
+
+.personal-mystatus{
+  li{
+    height: 44px;
+    margin-left: 15px;
+    box-sizing: border-box;
+    padding-right: 15px;
+    @include flex-display;
+    @include flex-justify-content(space-between);
+    @include flex-align-items(center);
+    @include border-b();
+  }
+  @mixin personal-leftarea($imgurl){
+
+  }
+  .personal-leftarea{
+    font-size: 15px;
+    color: #333;
+    position: relative;
+    padding-left: 25px;
+    &::before{
+      content: '';
+      position: absolute;
+      top:1px;
+      left:0;
+      width: 15px;
+      height: 15px;
+      background-size: cover;
+    }
+  }
+}
+.order-icon{
+  &::before{
+    @include background-image('/m/img/ui/common/my_order.png');
+  }
+}
+.account-icon{
+  &::before{
+    @include background-image('/m/img/ui/common/my_account.png');
+  }
+}
+.coupons-icon{
+  &::before{
+    @include background-image('/m/img/ui/common/my_coupons.png');
+  }
+}
+.collection-icon{
+  &::before{
+    @include background-image('/m/img/ui/common/my_collection.png');
+  }
+}
+.site-icon{
+  &::before{
+    @include background-image('/m/img/ui/common/my_site.png');
+  }
+}
+.downapp-icon{
+  &::before{
+    @include background-image('/m/img/ui/common/down_app.png');
+  }
+}
+.personal-right-area{
+  color: #ff5a00;
+  font-size: 13px;
+}
+
+

@@ -1,0 +1,180 @@
+/* font color */
+.theme-font-color-base {
+  color: #333 !important;
+}
+.theme-font-color-weak {
+  color: #666 !important;
+}
+.theme-font-color-weaken {
+  color: #999 !important;
+}
+.theme-font-color-strong {
+  color: #222 !important;
+}
+.theme-font-color-normal-1 {
+  color: #fff !important;
+}
+.theme-font-color-normal-2 {
+  color: #000 !important;
+}
+.theme-font-color-primary {
+  color: #2879ff !important;
+}
+.theme-font-color-success {
+  color: #24bb76 !important;
+}
+.theme-font-color-warning {
+  color: #ecae38 !important;
+}
+.theme-font-color-danger {
+  color: #e94949 !important;
+}
+.theme-font-color-info {
+  color: #169edd !important;
+}
+
+/* font icon color */
+.theme-font-icon-color-base {
+  color: #808080 !important;
+}
+.theme-font-icon-color-weak-1 {
+  color: #999 !important;
+}
+.theme-font-icon-color-weak-2 {
+  color: #ccc !important;
+}
+.theme-font-icon-color-strong {
+  color: #666 !important;
+}
+.theme-font-icon-color-normal-1 {
+  color: #fff !important;
+}
+.theme-font-icon-color-normal-2 {
+  color: #000 !important;
+}
+.theme-font-icon-color-primary {
+  color: #2879ff !important;
+}
+.theme-font-icon-color-success {
+  color: #24bb76 !important;
+}
+.theme-font-icon-color-warning {
+  color: #ecae38 !important;
+}
+.theme-font-icon-color-danger {
+  color: #e94949 !important;
+}
+.theme-font-icon-color-info {
+  color: #169edd !important;
+}
+
+/* background color */
+.theme-background-color-base {
+  background-color: #333 !important;
+}
+.theme-background-color-darken {
+  background-color: #000 !important;
+}
+.theme-background-color-lighten {
+  background-color: #f5f5f5 !important;
+}
+.theme-background-color-normal-1 {
+  background-color: #fff !important;
+}
+.theme-background-color-normal-2 {
+  background-color: #7a879d !important;
+}
+.theme-background-color-normal-3 {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+.theme-background-color-primary {
+  background-color: #2879ff !important;
+}
+.theme-background-color-success {
+  background-color: #24bb76 !important;
+}
+.theme-background-color-warning {
+  background-color: #ecae38 !important;
+}
+.theme-background-color-danger {
+  background-color: #e94949 !important;
+}
+.theme-background-color-info {
+  background-color: #169edd !important;
+}
+/* border color */
+.theme-border-color-base {
+  border-color: #dcdcdc !important;
+}
+.theme-border-color-darken {
+  border-color: #333 !important;
+}
+.theme-border-color-lighten {
+  border-color: #f0f0f0 !important;
+}
+.theme-border-color-normal-1 {
+  border-color: #fff !important;
+}
+.theme-border-color-normal-2 {
+  border-color: #000 !important;
+}
+.theme-border-color-primary {
+  border-color: #2879ff !important;
+}
+.theme-border-color-success {
+  border-color: #24bb76 !important;
+}
+.theme-border-color-warning {
+  border-color: #ecae38 !important;
+}
+.theme-border-color-danger {
+  border-color: #e94949 !important;
+}
+.theme-border-color-info {
+  border-color: #169edd !important;
+}
+
+/* pseudo class and dynamic class */
+/* top menu theme */
+.top-menu > li:hover {
+  color: #2879ff !important;
+}
+/* left menu theme */
+.left-show:hover {
+  background-color: #2879ff !important;
+  color: #fff !important;
+}
+.left-show:hover .icon-box {
+  border-color: #2879ff !important;
+}
+.left-menu > ul > li:hover {
+  color: #fff !important;
+  background-color: #7a879d !important;
+}
+.left-menu > ul > li:hover .icon {
+  color: #fff !important;
+}
+/* filter-bar */
+.filter-bar .tab-list > li a:hover {
+  border-color: #2879ff !important;
+  color: #2879ff !important;
+}
+/* time selector */
+.time-selector-time-item:hover {
+  color: #fff !important;
+  background-color: #2879ff !important;
+  border-color: #fff !important;
+}
+/* settings/set-group */
+.set-container.set-group .choice-container .li:hover{
+  background-color: #2879ff !important;
+  color: #fff !important;
+}
+.set-container.set-group .choice-container .li.hover{
+  background-color: #2879ff !important;
+  color: #fff !important;
+}
+/* application/report */
+.table-container .table-prompt{
+  color: #999 !important;
+}

@@ -1,0 +1,208 @@
+<script charset="UTF-8" type="text/template" id="tpl-content">
+<div class="custom">
+    <header class="page-body-header">
+        <div class="text-box">
+            <span class="title">数据质量报告</span>
+            <span class="text">
+                <span class="color">自定义标签&nbsp;</span>4<span class="color">&nbsp;个</span>
+            </span>
+        </div>
+        <div class="button-box icon iconfont"><a class="a keyong" id="goIndex" href="<%=BASE_PATH%>/" title="返回首页">&#xe644;</a></div>
+    </header>
+    <div class="content">
+        <header class="header">
+            <div class="title">自定义标签</div>
+            <div class="h2">自定义标签是用户针对群体和个体自行定义的标签</div>
+        </header>
+        <div class="list-box">
+            <table class="page-table-box">
+                <thead>
+                <tr>
+                    <th class="first">标签名称</th>
+                    <th>添加时间</th>
+                    <th>覆盖人群</th>
+                    <th class="ico">&nbsp;</th>
+                </tr>
+                </thead>
+                <tbody id="tbody-box"></tbody>
+            </table>
+            <div id="dropdown-box"></div>
+        </div>
+        <div class="pagination-wrap">
+            <ul class="pagination">
+                <li class="disabled"><a href="#!" class="mdi-navigation-chevron-left icon iconfont">&#xe60c;</a></li>
+                <li class="waves-effect active"><a href="#!">1</a></li>
+                <li class="waves-effect "><a href="#!">2</a></li>
+                <li class="waves-effect"><a href="#!">3</a></li>
+                <li class="waves-effect"><a href="#!">4</a></li>
+                <li class="waves-effect"><a href="#!">5</a></li>
+                <li class="waves-effect"><a href="#!" class="mdi-navigation-chevron-right icon iconfont">&#xe60d;</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</script>
+<script charset="UTF-8" type="text/template" id="dropdown-content">
+    <!--菜单下拉-->
+    <ul id="morelist" class="dropdown-content setuplist">
+        <li><i class="icon iconfont">&#xe64e;</i><a href="../../download/crowd.csv">标签人群</a></li>
+        <li><i class="icon iconfont">&#xe60b;</i><a href="javascript:void(0)" id="showgrouplist">人群中查找</a></li>
+        <li><i class="icon iconfont">&#xe61d;</i><a href="javascript:void(0)" id="delete">删除</a></li>
+    </ul>
+</script>
+<script charset="UTF-8" type="text/template" id="tpl-table1">
+    <tr>
+        <td class="first">新产品尝鲜用户</td>
+        <td>2016-5-15&nbsp;11:00</td>
+        <td>279</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false" title="更多">&#xe61a;</ico></td>
+    </tr>
+    <tr>
+        <td class="first">口碑传播用户</td>
+        <td>2016-5-20&nbsp;10:07</td>
+        <td>501</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false" title="更多">&#xe61a;</ico></td>
+    </tr>
+    <tr>
+        <td class="first">新产品首发购买用户</td>
+        <td>2016-6-1&nbsp;18:40</td>
+        <td>2000</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false" title="更多">&#xe61a;</ico></td>
+    </tr>
+    <tr>
+        <td class="first">新产品满意用户</td>
+        <td>2016-7-10&nbsp;20:01</td>
+        <td>1990</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false" title="更多">&#xe61a;</ico></td>
+    </tr>
+</script>
+<script charset="UTF-8" type="text/template" id="tpl-table2">
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+</script>
+<script charset="UTF-8" type="text/template" id="tpl-table3">
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+</script>
+<script charset="UTF-8" type="text/template" id="tpl-table4">
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+</script>
+<script charset="UTF-8" type="text/template" id="tpl-table5">
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+</script>
+<script charset="UTF-8" type="text/template" id="tpl-table6">
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+    <tr>
+        <td class="first">孩子的妈妈</td>
+        <td>2016-3-15&nbsp;16:00</td>
+        <td>8</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false">&#xe61a;</ico></td>
+    </tr>
+</script>

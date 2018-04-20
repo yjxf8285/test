@@ -1,0 +1,46 @@
+@charset "utf-8";
+/*加载公用css文件*/
+@import "../base";
+
+/*初始化变量*/
+$main-font-size: 12px;
+$animate: 0.1s;
+$base-z-index: 1;
+
+/*正文开始*/
+.supervise{position: relative; width: 100%; height: 100%; padding: 0 16px 12px 16px;
+    .content{position: absolute; top: 48px; right: 16px; bottom: 12px; left: 16px; background-color: rgba(255,255,255,1);
+        .header{float: left; width: 100%; height: 57px; padding: 0 24px; border-bottom: 1px solid rgba(230,230,230,1);
+            .tab-box{float: left; width: 600px; height: 56px;
+                .tabs{height: 57px;border-bottom: 1px solid rgba(230,230,230,1);
+                    .tab{margin: 4px 0 0 0;}
+                }
+            }
+            .search-box{float: right; width: 230px; height: 57px;
+                .validate{float: left; width: 0%; height: 32px; margin: 10px 0 0 0; font-size: $main-font-size + 2; transition: width $animate;
+                    &.show{width: 100%;}
+                }
+                .ico{position: absolute; width: 36px; height: 36px; top: 10px; right: 10px; opacity: 1; transition: opacity $animate; cursor: pointer;
+                    &.hide{opacity: 0;}
+                }
+                #activity-supervise-search-list{font-family: "微软雅黑"; margin-top: 2px; min-height: 180px;
+                    .nodata{text-align: center; line-height: 180px;
+                        .icon{margin-right: 16px;}
+                        span{vertical-align: middle; font-size: 12px; color: #787878;}
+                    }
+                    .search-feeds{display: none;
+                        li {padding: 0 32px; height: 48px; line-height: 48px; font-size: 12px; color: #3c3c3c;
+                            &.count{color: #787878;}
+                        }
+                    }
+                }
+
+            }
+        }
+        .list-box{position: absolute; top: 71.5px; right: 0; bottom: 0; left: 0;line-height: 48px; overflow-y: auto; text-align: left;
+            .going,.iss{.state{color: rgba(81,129,173,1);}}
+            .close{.state{color: rgba(120,120,120,1);}}
+            .tbody-box-object{display: block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+        }
+    }
+}

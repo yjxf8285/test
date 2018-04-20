@@ -1,0 +1,391 @@
+@import "../base";
+@import "../components/dialog";
+
+
+//common
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+  background: $b-gray-a;
+}
+.bb{
+  @include border-b();
+}
+
+.dialogs-wrap.two .dialogs-inner-two .dialogs-sure{
+  color:$primary-bg;
+}
+//店铺相关信息
+.user-store-hd{
+  margin-top: 8px;
+  @include flex-display;
+  @include flex-direction(column);
+  @include flex-align-items(center);
+  background-color: #fff;
+  padding-top: 15px;
+  @at-root .user-store-name{
+    font-size: 13px;
+    color: $base-color;
+  }
+  .star-list{
+    margin: 8px 0;
+    li{
+      @include background-image('../../images/ui/common/star_unactive.png');
+      width: 10px;
+      height: 10px;
+      margin-right: 4px;
+      background-size: cover;
+      float: left;
+      &.active{
+        @include background-image('../../images/ui/common/star_active.png');
+        background-size: cover;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: block;
+  }
+  @at-root .user-store-site{
+    margin: 8px 0 10px 0;
+    color: #999;
+    span:first-child{
+      margin-left: 10px;
+    }
+  }
+}
+.user-store-bd{
+  @include border-t();
+  height: 35px;
+  margin-bottom: 8px;
+  @include flex-display;
+  @include flex-align-items(center);
+  @include flex-justify-content(space-between);
+  padding:0 15px;
+  box-sizing: border-box;
+  background-color: #fff;
+  div{
+    @include flex-display;
+    @include flex-align-items(center);
+
+    i{
+      width: 13px;
+      height: 13px;
+      background-size: cover;
+      margin-right: 10px;
+      display: block;
+    }
+    span{
+      font-size: 12px;
+      color: #999;
+    }
+  }
+}
+.start-price i{
+  @include background-image('../../images/ui/common/icon_start.png');
+}
+.send-price i{
+  @include background-image('../../images/ui/common/icon_send.png');
+}
+.auto-get i{
+  @include background-image('../../images/ui/common/icon_auto.png');
+  &.active{
+    @include background-image('../../images/ui/common/icon_auto1.png');
+  }
+}
+
+.user-store-ft{
+  div{
+    height: 35px;
+    @include flex-display;
+    @include flex-align-items(center);
+    padding:0 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #666;
+    i{
+      display: block;
+      width: 11px;
+      height: 11px;
+      background-size: cover;
+      margin-right: 10px;
+    }
+  }
+}
+.user-store-ft-time i{
+  @include background-image('../../images/ui/common/icon_time.png');
+}
+.user-store-ft-site i{
+  @include background-image('../../images/ui/common/icon_site.png');
+}
+.user-store-ft-food i{
+  @include background-image('../../images/ui/common/good_food.png');
+}
+
+
+//样品列表
+.good-wrap{
+  margin: 0 5px 0px 5px;
+  padding-bottom: 45px;
+  .good-list{
+    margin-top: 8px;
+    background-color: #fff;
+    @include border();
+    height: 109px;
+    position: relative;
+    img{
+      width:109px;
+      height: 109px;
+      display: block;
+      float: left;
+    }
+  }
+}
+.good-list-r{
+  margin-left: 109px;
+  padding: 10px;
+  height: 89px;
+  position: relative;
+  @at-root .good-list-title{
+    font-size: 14px;
+    color: $base-color;
+    @include single-text;
+  }
+  @at-root .good-list-num{
+    color: #999;
+    margin-top: 12px;
+    span{
+      &:first-child{
+        padding-right: 12px;
+        @include border-r(#999);
+      }
+      &:last-child{
+        padding-left: 12px;
+      }
+    }
+  }
+}
+.good-list-price{
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: $base-color;
+  font-size: 15px;
+  font-family: "微软雅黑";
+  span{
+    font-size: 12px;
+  }
+}
+.food-list{
+  width: 20px;
+  overflow: hidden;
+  span{
+    position: absolute;
+    left: 20px;
+  }
+  .good-list-plus{
+    position: absolute;
+    right: 0;
+  }
+  .good-list-minutes{
+    position: absolute;
+    left: 0;
+  }
+}
+.good-list-num-box{
+  position: absolute;
+
+  height: 20px;
+  right: 10px;
+  bottom: 10px;
+  @include flex-display;
+  font-size: 12px;
+  color: #ccc;
+
+  i{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+  }
+  span{
+    font-size: 18px;
+    color: #666;
+    display: block;
+    width: 38px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+
+  }
+}
+.good-list-plus{
+
+  @include background-image('../../images/ui/common/icon_plus.png');
+}
+.good-list-minutes{
+
+  @include background-image('../../images/ui/common/icon_minuts.png');
+}
+
+.good-list-food{
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 40px;
+  height: 15px;
+  @include background-image('../../images/ui/common/food_box.png');
+  background-size: cover;
+  text-align: center;
+  line-height: 15px;
+  font-size: 10px;
+  color: #fff;
+}
+
+.user-shopcart{
+  height: 45px;
+  @include flex-display;
+  @include flex-align-items(center);
+  display: none;
+  @at-root .user-shopcart-r{
+    width: 90px;
+    font-size: 15px;
+    color: #fff;
+    background-color: $primary-bg;
+    font-family: '微软雅黑';
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+  }
+  .unselect-shopcar{
+    width: 120px;
+    background-color: rgba(51,51,51,0.9);
+    padding-right: 13px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: $gray-l;
+  }
+  .user-shopcart-l{
+    @include flex(1);
+    @include flex-display;
+    @include flex-align-items(center);
+    background: rgba(51,51,51,0.9);
+    height: 45px;
+  }
+  .shopcart-icon-box{
+    opacity: 1;
+    margin-left: 13px;
+    position: relative;
+    z-index: 88;
+    width: 18px;
+    height: 18px;
+    @include background-image('../../images/ui/common/shop_cart.png');
+    background-size: cover;
+    i{
+      display: block;
+      width: 17px;
+      height: 17px;
+      background-color: $primary-bg;
+      text-align: center;
+      line-height: 17px;
+      color: #fff;
+      top: -8px;
+      right: -8px;
+      border-radius: 50%;
+      position: absolute;
+      font-style: normal;
+    }
+
+  }
+}
+.shopccart-price{
+  opacity: 1;
+  z-index: 88;
+  margin-left: 14px;
+  color: #fff;
+  font-size: 0;
+  .shopccart-price-l{
+    font-size: 13px;
+    font-family: "微软雅黑";
+  }
+  .shopccart-price-r{
+    font-size: 17px;
+  }
+}
+.shopccart-auto{
+  opacity: 1;
+  z-index: 88;
+  margin-left: 7px;
+  font-size: 11px;
+  color: #999;
+}
+.shopccart-null{
+  font-size: 15px;
+  color: #fff;
+  margin-left: 14px;
+  font-family: "微软雅黑";
+}
+
+.shopcart-list-wrap{
+  ul{
+    background-color: #fff;
+    z-index: 999;
+    li{
+      height: 55px;
+      background-color: #fff;
+      @include flex-justify-content(space-between);
+      padding: 0 10px;
+      box-sizing: border-box;
+      @include flex-display;
+      @include flex-align-items(center);
+      .c{
+        @include flex(1);
+        text-align: center;
+        font-family: '微软雅黑';
+        font-size: 15px;
+        color: $base-color;
+        span{
+          font-size: 15px;
+          color: $base-color;
+        }
+      }
+      .r{
+        position: static;
+      }
+    }
+
+  }
+}
+.user-shopcart-wrap{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  @include clearfix;
+  z-index: 100;
+}
+.shopcart-mask{
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  left: 0;
+  top:0;
+  z-index: 99;
+}
+
+
+//lunbo
+.swiper-container {
+  .ad-item {
+    @include scale-block(40%);
+  }
+}
+

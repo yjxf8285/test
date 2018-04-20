@@ -1,0 +1,67 @@
+{
+  "app": {
+    "logoUrl": "logo_blank",
+    "remoteHost": "http://apm-website.rcs.dataengine.com",
+    "outerRemoteHost": "http://10.200.10.22:280821",
+    "alarmRemoteHost": "http://10.205.17.127:39092",
+    "alarmHost": "http://apm-alarm.rcs.dataengine.com",
+    "grafana": {
+      "host": "http://10.200.0.65:81",
+      "fullScreenUrl": "/dashboard/db/new-dashboard-copy?orgId=2",
+      "login": "/login?sso=true"
+    },
+    "staticSrc": "./dist/src",
+    "renderView": "./dist/views",
+    "webAgent": {
+      "disabled": true,
+      "showLog": false,
+      "openTracing": false,
+      "transFrequency": 1000,
+      "apiHost": "http://10.205.16.130:28080",
+      "agentId": "4A3iHZls",
+      "tierId": "1",
+      "appId": "708495053846728704"
+    }
+  },
+  "runtime": {
+    "listenPort": "18080",
+    "session": {
+      "maxAge": 7200000,
+      "store": "redis"
+    },
+    "log4js": {
+      "customBaseDir": "./logs/",
+      "customDefaultAtt": {
+        "type": "dateFile",
+        "absolute": false,
+        "alwaysIncludePattern": true
+      }
+    },
+    "redis": {
+      "mode": "cluster",
+      "local": {
+        "port": 6379,
+        "host": "127.0.0.1"
+      },
+      "cluster": [
+        {
+          "port": 7000,
+          "host": "10.200.10.36"
+        },
+        {
+          "port": 7001,
+          "host": "10.200.10.36"
+        },
+        {
+          "port": 7000,
+          "host": "10.200.10.37"
+        }
+      ]
+    },
+    "sso": {
+      "host": "http://apm-website.rcs.dataengine.com",
+      "outerHost": "http://localhost:18000",
+      "md5": "6ca89616f12a41808b1c17b296bead8a"
+    }
+  }
+}

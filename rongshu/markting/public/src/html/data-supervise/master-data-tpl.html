@@ -1,0 +1,304 @@
+<script charset="UTF-8" type="text/template" id="tpl-layout">
+    <div class="masterdata">
+        <header class="page-body-header">
+            <div class="text-box"><span class="title">主数据管理</span><span class="text">联系人主数据总计1,209,087条，覆盖7个数据源</span>
+            </div>
+            <div class="button-box icon iconfont"><a class="a keyong" id="goIndex" href="<%=BASE_PATH%>/" title="返回首页">&#xe644;</a>
+            </div>
+            <div class="button-box icon iconfont"><span class="a keyong fnbtn-down" title="下载当前数据">&#xe64e;</span>
+            </div>
+            <div class="button-box icon iconfont"><span class="a keyong fnbtn-customview"  title="自定义视图">&#xe657;</span>
+            </div>
+            <div class="button-box icon iconfont"><span class="a keyong fnbtn-screen"  title="快捷筛选">
+                &#xe656;</span>
+            </div>
+        </header>
+        <div class="content">
+            <div class="con-topwrap clearfix">
+                <ul class="mainitem left">
+                    <li>
+                        <div class="logo left">
+                            <img src="/img/masterdata/lxr.gif" alt="">
+                        </div>
+                        <div class="info left">
+                            <div class="num">1,209,087</div>
+                            <div class="tit">主数据</div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="left seemore-btn">
+                    <span class="icon iconfont">&#xe662;</span>
+                </div>
+
+            </div>
+            <ul class="itemlistwrap clearfix" style="display: none;">
+                <li data-id="0" style="display: none;">
+                    <div class="logo left">
+                        <img src="/img/masterdata/lxr.gif" alt="">
+                    </div>
+                    <div class="info left">
+                        <div class="num">1,209,087</div>
+                        <div class="tit">主数据</div>
+                    </div>
+                </li>
+
+                <li data-id="1">
+                    <div class="logo left">
+                        <img src="/img/masterdata/crm.gif" alt="">
+                    </div>
+                    <div class="info left">
+                        <div class="num">1,209,087</div>
+                        <div class="tit">APP数据</div>
+                    </div>
+                </li>
+                <li data-id="2">
+                    <div class="logo left">
+                        <img src="/img/masterdata/pos.gif" alt="">
+                    </div>
+                    <div class="info left">
+                        <div class="num">1,207</div>
+                        <div class="tit">POS数据</div>
+                    </div>
+                </li>
+                <li data-id="3">
+                    <div class="logo left">
+                        <img src="/img/masterdata/gzh.gif" alt="">
+                    </div>
+                    <div class="info left">
+                        <div class="num">09,087</div>
+                        <div class="tit">公众号数据</div>
+                    </div>
+                </li>
+                <li data-id="4">
+                    <div class="logo left">
+                        <img src="/img/masterdata/grh.gif" alt="">
+                    </div>
+                    <div class="info left">
+                        <div class="num">187</div>
+                        <div class="tit">个人号数据</div>
+                    </div>
+                </li>
+                <li data-id="5">
+                    <div class="logo left">
+                        <img src="/img/masterdata/xxhd.gif" alt="">
+                    </div>
+                    <div class="info left">
+                        <div class="num">087</div>
+                        <div class="tit">网上商城数据</div>
+                    </div>
+                </li>
+                <li data-id="6">
+                    <div class="logo left">
+                        <img src="/img/masterdata/xxhd.gif" alt="">
+                    </div>
+                    <div class="info left">
+                        <div class="num">387</div>
+                        <div class="tit">CRM数据</div>
+                    </div>
+                </li>
+                <li data-id="7">
+                    <div class="logo left">
+                        <img src="/img/masterdata/xxhd.gif" alt="">
+                    </div>
+                    <div class="info left">
+                        <div class="num">487</div>
+                        <div class="tit">天猫数据</div>
+                    </div>
+                </li>
+            </ul>
+            <!--列表容器-->
+            <div class="table-list-wrap">
+
+            </div>
+
+
+            <div class="pagination-wrap">
+                <ul class="pagination">
+
+                    <li class="disabled"><a href="#!" class="mdi-navigation-chevron-left icon iconfont">
+                        &#xe60c;</a></li>
+                    <li class="waves-effect active"><a href="#!">1</a></li>
+                    <li class="waves-effect "><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!">4</a></li>
+                    <li class="waves-effect"><a href="#!">5</a></li>
+                    <li class="waves-effect"><a href="#!" class="mdi-navigation-chevron-right icon iconfont">
+                        &#xe60d;</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</script>
+
+<script charset="UTF-8" type="text/template" id="tpl-modal-screen">
+    <div class="subtitle">您可以在此选择不同的筛选方式来定位数据</div>
+    <div class="con-body">
+        <div class="swrap clearfix">
+            <span class="left">筛选</span>
+                <span class="left" style="width: 120px;margin-top: -4px;">
+                <select>
+                    <option value="1">近1小时之内</option>
+                    <option value="2">近1天之内</option>
+                    <option value="3">近1周之内</option>
+                </select>
+                    </span>
+            <span class="left">接入数据</span>
+        </div>
+        <ul class="sxlist-wrap clearfix">
+            <li>
+                <input type="checkbox" class="filled-in" id="group1">
+                <label for="group1">Batch01234214231412-文件接入</label>
+            </li>
+            <li>
+                <input type="checkbox" class="filled-in" id="group2">
+                <label for="group2">Batch01234214231412-文件接入</label>
+            </li>
+            <li>
+                <input type="checkbox" class="filled-in" id="group3">
+                <label for="group3">Batch01234214231412-文件接入</label>
+            </li>
+
+        </ul>
+        <div class="stit">按联系方式筛选</div>
+        <ul class="sxlist-wrap clearfix">
+            <li>
+                <input type="checkbox" class="filled-in" id="sr1">
+                <label for="sr1">手机</label>
+            </li>
+            <li>
+                <input type="checkbox" class="filled-in" id="sr2">
+                <label for="sr2">电子邮箱</label>
+            </li>
+            <li>
+                <input type="checkbox" class="filled-in" id="sr3">
+                <label for="sr3">微信号</label>
+            </li>
+
+        </ul>
+    </div>
+
+</script>
+
+<script charset="UTF-8" type="text/template" id="tpl-modal-customview">
+
+
+    <div class="subtitle">您可以在此定义不同数据源的显示属性，组织自己的视图</div>
+    <div class="con-body">
+
+        <div class="tabheader">
+            <ul class="tabs">
+                <li class="tab col s3"><a class="active" href="#customlist0">主数据</a></li>
+                <li class="tab col s3"><a href="#customlist1">APP数据</a></li>
+                <li class="tab col s3 "><a href="#customlist2">POS数据</a></li>
+                <li class="tab col s3 "><a href="#customlist3">公众号数据</a></li>
+                <li class="tab col s3 "><a href="#customlist4">个人号数据</a></li>
+                <li class="tab col s3 "><a href="#customlist5">网上商城数据</a></li>
+                <li class="tab col s3 "><a href="#customlist6">CRM数据</a></li>
+                <li class="tab col s3 "><a href="#customlist7">天猫数据</a></li>
+            </ul>
+        </div>
+        <ul class="sxlist-wrap clearfix" id="customlist0">
+            <%_.each(data[0][0],function(m,i){%>
+            <li>
+                <% if(i>data[0][0].length-3){%>
+                <input type="checkbox" class="filled-in" id="group<%=i%>">
+                <% }else{%>
+                <input type="checkbox" class="filled-in" id="group<%=i%>" checked="checked">
+                <% }%>
+                <label for="group<%=i%>"><%=m.name%></label>
+            </li>
+            <%})%>
+        </ul>
+
+        <ul class="sxlist-wrap clearfix" id="customlist1">
+            <%_.each(data[1][0],function(m,i){%>
+            <li>
+                <% if(i>data[1][0].length-3){%>
+                <input type="checkbox" class="filled-in" id="groupa<%=i%>">
+                <% }else{%>
+                <input type="checkbox" class="filled-in" id="groupa<%=i%>" checked="checked">
+                <% }%>
+                <label for="groupa<%=i%>"><%=m.name%></label>
+            </li>
+            <%})%>
+        </ul>
+        <ul class="sxlist-wrap clearfix" id="customlist2">
+            <%_.each(data[2][0],function(m,i){%>
+            <li>
+                <% if(i>data[2][0].length-3){%>
+                <input type="checkbox" class="filled-in" id="groupb<%=i%>">
+                <% }else{%>
+                <input type="checkbox" class="filled-in" id="groupb<%=i%>" checked="checked">
+                <% }%>
+                <label for="groupb<%=i%>"><%=m.name%></label>
+            </li>
+            <%})%>
+        </ul>
+        <ul class="sxlist-wrap clearfix" id="customlist3">
+            <%_.each(data[3][0],function(m,i){%>
+            <li>
+                <% if(i>data[3][0].length-3){%>
+                <input type="checkbox" class="filled-in" id="groupc<%=i%>">
+                <% }else{%>
+                <input type="checkbox" class="filled-in" id="groupc<%=i%>" checked="checked">
+                <% }%>
+                <label for="groupc<%=i%>"><%=m.name%></label>
+            </li>
+            <%})%>
+        </ul>
+        <ul class="sxlist-wrap clearfix" id="customlist4">
+            <%_.each(data[4][1],function(m,i){%>
+            <li>
+                <% if(i>data[4][0].length-3){%>
+                <input type="checkbox" class="filled-in" id="groupd<%=i%>">
+                <% }else{%>
+                <input type="checkbox" class="filled-in" id="groupd<%=i%>" checked="checked">
+                <% }%>
+                <label for="groupd<%=i%>"><%=m.name%></label>
+            </li>
+            <%})%>
+        </ul>
+        <ul class="sxlist-wrap clearfix" id="customlist5">
+            <%_.each(data[5][1],function(m,i){%>
+            <li>
+                <% if(i>data[5][0].length-3){%>
+                <input type="checkbox" class="filled-in" id="groupe<%=i%>">
+                <% }else{%>
+                <input type="checkbox" class="filled-in" id="groupe<%=i%>" checked="checked">
+                <% }%>
+                <label for="groupe<%=i%>"><%=m.name%></label>
+            </li>
+            <%})%>
+        </ul>
+        <ul class="sxlist-wrap clearfix" id="customlist6">
+            <%_.each(data[6][1],function(m,i){%>
+            <li>
+                <% if(i>data[6][0].length-3){%>
+                <input type="checkbox" class="filled-in" id="groupf<%=i%>">
+                <% }else{%>
+                <input type="checkbox" class="filled-in" id="groupf<%=i%>" checked="checked">
+                <% }%>
+                <label for="groupf<%=i%>"><%=m.name%></label>
+            </li>
+            <%})%>
+        </ul>
+        <ul class="sxlist-wrap clearfix" id="customlist7">
+            <%_.each(data[7][1],function(m,i){%>
+            <li>
+                <% if(i>data[7][0].length-3){%>
+                <input type="checkbox" class="filled-in" id="groupg<%=i%>">
+                <% }else{%>
+                <input type="checkbox" class="filled-in" id="groupg<%=i%>" checked="checked">
+                <% }%>
+                <label for="groupg<%=i%>"><%=m.name%></label>
+            </li>
+            <%})%>
+        </ul>
+
+
+    </div>
+
+
+</script>
+

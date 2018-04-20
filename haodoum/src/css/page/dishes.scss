@@ -1,0 +1,332 @@
+// Core variables and mixins
+@import "../base";
+@import "../components/dialog";
+@import "../components/myselect";
+
+body {
+  background: #f8f8f8;
+}
+
+.color-green {
+  color: #8ac64e;
+}
+
+.color-gray {
+  color: $gray-m;
+}
+.color-gray-l {
+  color: $gray-l;
+}
+
+.font-size15 {
+  font-size: 15px;
+}
+
+.dishes-edit {
+  margin-top: 8px;
+  .dishes-e {
+    height: 40px;
+    padding: 0 10px;
+    background: $white;
+    @include border-b;
+    @include flex-display;
+    @include flex-justify-content(space-between);
+    @include flex-align-items(center);
+    .l {
+      font-size: 14px;
+      color: $gray-d;
+    }
+    .r {
+      height: 40px;
+      @include flex;
+      @include flex-display;
+      @include flex-justify-content(flex-end);
+      @include flex-align-items(center);
+      img {
+        height: 13px;
+        width: 7px;
+        margin-left: 6px;
+      }
+      input {
+        font-size: 13px;
+        border: none;
+        text-align: right;
+      }
+      .introduce {
+        @include flex;
+        padding-left: 26px;
+        text-align: right;
+        span {
+          display: block;
+          @include single-text;
+          color: $base-color;
+        }
+      }
+      span {
+        color: #8ac64e;
+        font-size: 13px;
+        margin-left: 6px;
+        &.on {
+          width: 70px;
+          height: 25px;
+          font-size: 14px;
+          color: $gray-l;
+          @include flex-center;
+          @include border-radius(#999, 4px, 4px);
+          &.curr {
+            color: #8ac64e;
+            @include border-radius(#8ac64e, 4px, 4px);
+          }
+        }
+        &.off {
+          margin-left: 10px;
+          width: 70px;
+          height: 25px;
+          font-size: 14px;
+          color: $gray-l;
+          @include flex-center;
+          @include border-radius(#999, 4px, 4px);
+          &.curr {
+            color: #8ac64e;
+            @include border-radius(#8ac64e, 4px, 4px);
+          }
+        }
+        &.not-walk {
+          color: $gray-l;
+        }
+      }
+
+    }
+  }
+}
+
+.prompt {
+  padding: 0 10px;
+  margin-top: 10px;
+  height: 30px;
+  text-align: right;
+  font-size: 12px;
+  color: $gray-l;
+}
+
+.dishes-btn {
+  padding: 0 10px;
+  @include flex-display;
+  span {
+    width: 100%;
+    height: 40px;
+    background: #8ac64e;
+    font-size: 15px;
+    color: $white;
+    @include radius(4px);
+    @include flex;
+    @include flex-center;
+    &#bespeak {
+      margin-left: 15px;
+    }
+  }
+}
+
+.dishes-introduce {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 45px;
+  right: 0;
+  bottom: 0;
+  background: #f8f8f8;
+  .introduce-textarea {
+    background: $white;
+    margin: 10px 0;
+    padding: 10px 10px 20px 10px;
+    position: relative;
+    textarea {
+      border: none;
+      height: 140px;
+      width: 100%;
+      &::-webkit-input-placeholder {
+        &:after {
+          display: block;
+          content: "\A 重量：200克/份 \A 产地：北京 \A 保持期：10天 \A 储存方法：冷藏"; /*  \A 表示换行  */
+          color: #a9a9a9;
+        }
+      }
+    }
+    .txt-number {
+      position: absolute;
+      right: 10px;
+      bottom: 5px;
+      color: $gray-l;
+    }
+  }
+  .introduce-btn {
+    padding: 0 10px;
+    span {
+      width: 100%;
+      height: 40px;
+      background: #8ac64e;
+      font-size: 15px;
+      color: $white;
+      @include radius(4px);
+      @include flex-center;
+    }
+  }
+}
+
+.bespeak {
+  background: $white;
+  @include clearfix;
+}
+
+.dishes-icon {
+  @include flex-center;
+  margin-top: 25px;
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.dishes-ok-title {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dishes-ok-content {
+  margin-top: 15px;
+  color: $gray-m;
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 25px;
+}
+
+.bespeak-goods {
+  background: $white;
+  margin-top: 8px;
+  .bespeak-goods-title {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 13px;
+    color: $gray-d;
+    @include border-b;
+  }
+  .bespeak-goods-content {
+    padding: 2px 10px 10px 10px;
+    li {
+      margin-top: 10px;
+      color: $gray-m;
+      font-size: 12px;
+    }
+  }
+}
+
+.add-result {
+  @extend .bespeak;
+}
+
+.add-result-btn {
+  @extend .bespeak;
+  padding-bottom: 25px;
+  @include flex-center;
+  span {
+    height: 40px;
+    @include radius(4px);
+    background: #8ac64e;
+    color: $white;
+    font-size: 15px;
+    margin: 0 10px;
+    @include flex;
+    @include flex-center;
+    &.not {
+      background: #ccc;
+    }
+  }
+}
+
+.dishes-lists-top-hide{
+  display:none;
+}
+.dishes-lists-top {
+  height: 40px;
+  color: #8ac64e;
+  font-size: 14px;
+  background: $white;
+  @include flex-center;
+  img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+}
+
+.dishes-list {
+  margin-top: 8px;
+  padding: 10px;
+  height: 75px;
+  background: $white;
+  @include flex-display;
+  .goods-img {
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+  }
+  .list-r{
+    @include flex;
+    @include flex-display;
+    @include flex-justify-content(space-between);
+    @include flex-align-items(center);
+    .l{
+      p{
+        font-size:15px;
+        color:$base-color;
+        &.goods-name{
+          font-size:13px;
+          color:$gray-d;
+          margin-bottom:10px;
+        }
+      }
+    }
+    .r{
+      height:75px;
+      @include flex-display;
+      @include flex-align-items(center);
+      img{
+        width:7px;
+        height:13px;
+        margin-left:5px;
+      }
+    }
+  }
+}
+
+
+.no-dishes-list{
+  p {
+    text-align: center;
+    margin-top: 60px;
+    img {
+      width: 70px;
+      height: 70px;
+    }
+    &.txt {
+      margin-top: 15px;
+      color: $gray-l;
+      font-size: 13px;
+    }
+    &.go-buy{
+      margin-top: 15px;
+      @include flex-center;
+      a{
+        width:80px;
+        height:30px;
+        background:#8ac64e;
+        color:$white;
+        font-size:14px;
+        @include radius(4px);
+        @include flex-center;
+      }
+    }
+  }
+}

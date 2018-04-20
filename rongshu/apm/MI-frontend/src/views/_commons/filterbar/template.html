@@ -1,0 +1,106 @@
+<div class="filterbar">
+  <au-select :label="label" :options="options" :value="value" :multiple="multiple"></au-select>
+  <div class="filter-group">
+    <ul class="filter_ul">
+        <li class="dropdown1" data-type="domain" id="domain_filter">
+            <a href="javascript:;" tsb-toggle="">
+                <div class="pull-left filter_overflow">
+                    <i class="fa fa-times" tsb-remove=""></i>
+                    域名：<span id="domain_confirm_title" tsb-select-value="" tsb-select-value-radio="" title=""></span>
+                </div>
+                <span class="fa fa-angle-down pull-right"></span>
+            </a>
+            <div class="dropdown-menu padding_15 dropdown_check" role="menu">
+                <div class="mobile_group filter_overflow_text">
+                    已选：<span id="domain_confirm" tsb-select-result="" tsb-select-result-radio="" title=""></span>
+                </div>
+                <div class="filter_tag">
+                    <div class="filter_search" tsb-select-search="">
+                        <input type="text" placeholder="按域名搜索" id="domain_search">
+                        <span class="fa fa-search color-gray" id="domain_search_icon"></span>
+                    </div>
+                </div>
+                <div class="border-mobile clearfix scroll_y" tsb-select-content="" id="domain_area" data-type="detail"></div>
+                <div class="text-center">
+                    <button type="button" tsb-cancel="" class="btn btn-default filter_group_cancle">取消
+                    </button>
+                    <button type="button" tsb-ok="" class="btn btn-blue filter_group_confirm">确定
+                    </button>
+                </div>
+            </div>
+        </li>
+        <li class="dropdown1" style="display: none" data-type="uri" id="uri_filter">
+            <a href="javascript:;" tsb-toggle="">
+                <div class="pull-left filter_overflow">
+                    <i class="fa fa-times" tsb-remove=""></i>
+                    请求：<span tsb-select-value="" tsb-select-value-radio="" id="url_confirm_title" title=""></span>
+                </div>
+                <span class="fa fa-angle-down pull-right"></span>
+            </a>
+
+            <div class="dropdown-menu padding_15 dropdown_check" role="menu">
+                <div class="mobile_group filter_overflow_text" style="overflow-x: hidden;text-overflow: ellipsis;white-space: nowrap">
+                    已选：<span tsb-select-result="" tsb-select-result-radio="" id="url_confirm" title=""></span>
+                </div>
+                <div class="filter_tag">
+                    <div class="filter_search" tsb-select-search="">
+                        <input type="text" placeholder="按请求名称搜索" id="url_search">
+                        <span class="fa fa-search color-gray" id="url_search_icon"></span>
+                    </div>
+                </div>
+                <div tsb-select-content="" class="border-mobile clearfix scroll_y" id="url_filter_area">
+
+                </div>
+                <div class="text-center">
+                    <button tsb-cancel="" type="button" class="btn btn-default filter_group_cancle">取消
+                    </button>
+                    <button tsb-ok="" type="button" class="btn btn-blue filter_group_confirm">确定
+                    </button>
+                </div>
+
+            </div>
+
+        </li>
+        <li class="dropdown1" tsb-range="" style="display: list-item;" data-type="resptime" id="resptime_filter">
+            <a href="javascript:;" tsb-toggle="">
+                <div class="pull-left filter_overflow">
+                    <i class="fa fa-times" tsb-remove=""></i>
+                    <span tsb-range-text="">响应时间</span>：
+                    <span tsb-range-value="" id="resptime_confirm_title" title="1ms--2ms">1ms--2ms</span>
+                </div>
+                <span class="fa fa-angle-down pull-right"></span>
+            </a>
+
+            <div class="dropdown-menu padding_15 dropdown_check" role="menu">
+                <div class="mobile_group filter_overflow_text">
+                    <select name="" id="" tsb-range-select="" class="form-control input-sm" title=""><option value="resptime">响应时间</option></select>
+                </div>
+                <div class="row mobile_group">
+                    <div class="col-md-5">
+                        <div class="input-group">
+                            <input tsb-range-from="" class="form-control input-sm start_value" type="text" placeholder="">
+                            <div tsb-range-unit="" class="input-group-addon">ms</div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 text-center line-height">—</div>
+                    <div class="col-md-5">
+                        <div class="input-group">
+                            <input tsb-range-to="" class="form-control input-sm end_value" type="text" placeholder="">
+                            <div tsb-range-unit="" class="input-group-addon">ms</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="dash-center">
+                    <button tsb-cancel="" type="button" class="btn btn-default filter_group_cancle">取消
+                    </button>
+                    <button tsb-ok="" type="button" class="btn btn-blue filter_group_confirm">确定
+                    </button>
+                </div>
+
+            </div>
+
+        </li>
+    </ul>
+</div>
+</div>

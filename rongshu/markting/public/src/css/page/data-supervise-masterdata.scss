@@ -1,0 +1,169 @@
+@charset "utf-8";
+@import "../base";
+
+.masterdata {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0 16px 12px 16px;
+  .content {
+    background: #fff;
+    position: absolute;
+    top: 48px;
+    right: 16px;
+    bottom: 12px;
+    left: 16px;
+    .table-list-wrap{
+      overflow-x: auto;
+    }
+    .con-topwrap {
+      padding: 24px;
+      position: relative;
+      border-bottom: solid 1px #e6e6e6;
+
+      .mainitem {
+        .info {
+          margin-left: 16px;
+        }
+        .num {
+          margin-top: -4px;
+          font-size: 30px;
+          color: #3c3c3c;
+        }
+        .tit {
+          font-size: 16px;
+          color: #5a5a5a;
+        }
+        img {
+          width: 64px;
+          height: 64px;
+        }
+
+      }
+      .seemore-btn {
+        margin-top: 18px;
+        margin-left: 16px;
+        cursor: pointer;
+      }
+      .fnbtn-wrap {
+        margin-top: -14px;
+        li {
+          cursor: pointer;
+          float: left;
+          margin-left: 24px;
+          span {
+            vertical-align: middle;
+            &.name {
+              font-size: 12px;
+              color: #787878;
+            }
+          }
+
+        }
+      }
+    }
+
+    .itemlistwrap {
+      padding: 24px;
+      border-bottom: solid 1px #e6e6e6;
+      li {
+        width: 200px;
+        cursor: pointer;
+        float: left;
+        margin-right: 24px;
+        .info {
+          margin-left: 16px;
+        }
+        .num {
+          margin-top: -4px;
+          font-size: 22px;
+          color: #3c3c3c;
+        }
+        .tit {
+          font-size: 14px;
+          color: #5a5a5a;
+        }
+        img {
+          width: 50px;
+          height: 50px;
+        }
+
+      }
+      .seemore-btn {
+        margin-top: 18px;
+        margin-left: 16px;
+        cursor: pointer;
+      }
+
+      .fnbtn-wrap {
+        margin-top: -14px;
+        li {
+          cursor: pointer;
+          float: left;
+          margin-left: 24px;
+          span {
+            vertical-align: middle;
+            &.name {
+              font-size: 12px;
+              color: #787878;
+            }
+          }
+
+        }
+      }
+    }
+
+
+  }
+}
+
+
+//模态框样式
+.modal {
+  width: 880px;
+  background: #fff;
+
+
+    .subtitle {
+      font-size: 12px;
+      color: #787878;
+      margin-top: 4px;
+    }
+    .con-body {
+      height:300px;
+      overflow-y: auto;
+      margin-top: 40px;
+      font-size: 16px;
+      color: #5a5a5a;
+      .tabheader{
+        border-bottom: solid 1px #e6e6e6;
+        margin-bottom: 24px;
+      }
+      span {
+        margin-right: 12px;
+      }
+      .select-wrapper input.select-dropdown {
+        font-size: 16px;
+      }
+      .sxlist-wrap {
+        li {
+          float: left;
+          font-size: 14px;
+          color: #5a5a5a;
+          margin-bottom: 16px;
+          margin-right: 16px;
+          label{
+            vertical-align: middle;
+            line-height: 120%;
+            font-size: 14px;
+          }
+
+        }
+      }
+      .stit{
+        margin-top: 40px;
+        margin-bottom:16px;
+      }
+    }
+
+}

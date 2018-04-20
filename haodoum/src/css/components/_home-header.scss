@@ -1,0 +1,60 @@
+// Core variables and mixins
+@import "../core/variable";
+@import "../core/mixin";
+
+//m站 公用头部
+.home-header {
+  background: #fff;
+  position: fixed;
+  height: 57px;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  .home-header-con {
+    @include border-t();
+    @include flex-display;
+    .btn-wrap {
+      @include flex(1);
+      text-align: center;
+      .ico {
+        margin: 5px auto 0;
+        width: 30px;
+        height: 30px;
+        &.index {
+          @include background-image('../../images/ui/common/home_off.png');
+          background-size: 30px 30px;
+        }
+        &.order {
+          @include background-image('../../images/ui/common/dd_off.png');
+          background-size: 30px 30px;
+        }
+        &.mine {
+          @include background-image('../../images/ui/common/mine.png');
+          background-size: 30px 30px;
+        }
+      }
+      .tit {
+        color: #999;
+        font-size: 10px;
+      }
+      &.cur {
+        .tit {
+          color: #f5b230;
+        }
+        .index {
+          @include background-image('../../images/ui/common/home_on.png');
+          background-size: 30px 30px;
+        }
+        .order {
+          @include background-image('../../images/ui/common/dd_on.png');
+          background-size: 30px 30px;
+        }
+        .mine {
+          @include background-image('../../images/ui/common/mine_on.png');
+          background-size: 30px 30px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+@import "../base";
+
+//没有收获地址的状态
+.manager-no-site{
+  font-size:15px;
+
+  i{
+    display: block;
+    margin:79px auto 15px auto;
+    width: 70px;
+    height: 75px;
+    background: url("/m/img/ui/personal/manager-add.png") no-repeat;
+    background-size: cover;
+  }
+  p{
+    color:#999;
+    text-align: center;
+  }
+
+}
+.add-manager-site{
+  display: block;
+  background: #000000;
+  height: 40px;
+  box-sizing: border-box;
+  margin:35px 15px 0 15px;
+
+  line-height: 40px;
+  color:#fff;
+  text-align: center;
+
+}
+//创建收获地址
+.create-manager-site{
+  padding-left:15px;
+  li{
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+    @include border-b();
+    @include flex-display;
+    position: relative;
+    label{
+      margin-right: 22px;
+      color:#333;
+      display: inline-block;
+    }
+    input{
+      @include flex(1);
+      display: block;
+      height: 39px;
+      border: none;
+      color: #999;
+      outline: none;
+    }
+
+    .tete-area-warp{
+      width: 14px;
+      height: 8px;
+      @include background-image('/m/img/ui/common/arr-down.png');
+      display: block;
+      position: absolute;
+      top:16px;
+      right: 15px;
+      background-size: cover;
+      transform:rotate(-90deg);
+      -webkit-transform:rotate(-90deg); /* Safari 和 Chrome */
+    }
+    i{
+      position: absolute;
+      right: 15px;
+      top:13px;
+    }
+  }
+}
+.create-site-btn-wrap{
+  width: 100%;
+  max-width: 720px;
+  position: fixed;
+  box-sizing: border-box;
+  bottom:15px;
+  padding:0 15px;
+}
+.create-site-btn{
+  height: 40px;
+  color:#fff;
+  font-size: 15px;
+  background: #000;
+  line-height: 40px;
+  text-align: center;
+}
+
+//管理收获地址
+.manager-site-wrap{
+  @at-root .manager-site-list{
+    padding: 12px 15px;
+    @include border-b();
+    position: relative;
+    .manager-site-single{
+      margin-bottom: 12px;
+      font-size: 14px;
+      color:#333;
+      @include single-text;
+    }
+    .manager-site-multi{
+      font-size: 14px;
+      color:#333;
+      line-height: 24px;
+      width: 80%;
+      @include multi-text(2);
+
+    }
+  }
+}
+.manage-site-defaut{
+  position: absolute;
+  right: 15px;
+  top:34px;
+  width: 50px;
+  height: 27px;
+  text-align: center;
+  line-height: 27px;
+  color: #fff;
+  font-size: 14px;
+}
+.manager-site-delete{
+  position: absolute;
+  right: 15px;
+  bottom: 12px;
+  width: 14px;
+  height: 15px;
+  @include background-image('/m/img/ui/common/delete.png');
+  background-size: cover;
+}

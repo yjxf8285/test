@@ -1,0 +1,232 @@
+@import "./variable";
+@import "./mixin";
+
+.main-warp {
+  max-width: 720px;
+  margin: 0 auto;
+  position: relative;
+}
+
+//ios点击去除灰框
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+//超链接
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+//清浮动
+.clearfix {
+  @include clearfix;
+}
+
+//DOM隐藏
+body .fn-hide {
+  display: none;
+}
+
+//文字截取
+.fn-text-overflow {
+  @include single-text;
+}
+
+.fn-fl {
+  float: left !important;
+}
+
+.fn-fr {
+  float: right !important;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+//公共样式
+
+.txt-gray {
+  color: #c8c8c8;
+}
+
+.black-color {
+  background-color: #000;
+}
+
+.gray-color {
+  background-color: #ccc;
+}
+
+//common btn
+.tete-btn {
+  height: 40px;
+  color: #fff;
+  font-size: 15px;
+  background: #141414;
+  line-height: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+//二级头部
+.page-body-header {
+  float: left;
+  width: 100%;
+  height: 48px;
+  font-size: 14px;
+  .text-box {
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    color: rgba(90, 90, 90, 1);
+    .title {
+      float: left;
+    }
+    .text {
+      float: left;
+      margin-left: 20px;
+      .color {
+        color: rgba(140, 140, 140, 1);
+      }
+      .a {
+        margin-left: 10px;
+      }
+    }
+  }
+  .button-box {
+    float: right;
+    height: 48px;
+    text-align: right;
+    line-height: 48px;
+    .a {
+      float: right;
+      margin-right: 16px;
+      cursor: pointer;
+    }
+    .a:last-child {
+      margin-left: 0;
+    }
+    .keyong {
+      color: rgba(120, 120, 120, 1);
+    }
+    .bukeyong {
+      color: rgba(200, 200, 200, 1);
+      cursor: not-allowed;
+    }
+  }
+}
+
+//表格
+.page-table-box {
+  margin-top: 8px;
+  tr > th {
+
+    height: 56px;
+    line-height: 56px;
+    font-weight: inherit;
+    white-space: nowrap;
+  }
+  tr > td {
+
+    height: 48px;
+    line-height: 48px;
+    white-space: nowrap;
+  }
+  tr > th, tr > td {
+    padding: 0 16px;
+    text-align: left;
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+  }
+  .first {
+    text-align: left;
+    padding-left: 24px;
+  }
+  .ico {
+    text-align: right;
+    padding: 0 24px 0 12px;
+    .pointer {
+      cursor: pointer;
+    }
+  }
+  thead {
+    color: rgba(120, 120, 120, 1);
+    font-size: 13px;
+  }
+  tbody {
+    color: rgba(60, 60, 60, 1);
+    font-size: 14px;
+    tr:hover {
+      background-color: rgba(243, 249, 255, 1);
+    }
+  }
+  .setuplist {
+    width: 144px;
+    padding: 8px 0;
+    .close {
+      cursor: not-allowed;
+      .iconfont {
+        color: rgba(200, 200, 200, 1);
+        cursor: not-allowed;
+      }
+      a {
+        color: rgba(200, 200, 200, 1);
+        cursor: not-allowed;
+      }
+    }
+    li {
+      padding: 0 16px;
+      height: 48px;
+      line-height: 48px;
+      a {
+        padding: 0 12px;
+        display: inline-block;
+        height: 48px;
+        line-height: 48px;
+        font-size: 12px;
+        color: rgba(60, 60, 60, 1);
+      }
+    }
+  }
+}
+
+//分页样式重置
+.pagination-wrap {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  .active {
+    background-color: rgba(130, 183, 232, 1);
+  }
+  .disabled {
+    vertical-align: middle;
+  }
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  //-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.2);
+  //-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  //background: rgba(255,0,0,0.4);
+}

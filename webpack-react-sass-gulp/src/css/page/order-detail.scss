@@ -1,0 +1,197 @@
+// Core variables and mixins
+@import "../core/variable";
+@import "../core/mixin";
+@import "../base";
+
+
+.order-detail{
+  .order-tips{
+    padding:10px 11px;
+    @include border-b;
+    .tips{
+      height:25px;
+      line-height:25px;
+      @include background-image("/m/img/ui/common/notic.png");
+      background-size:100% 100%;
+      font-size:13px;
+      color:$gray-d;
+      padding-left:40px;
+    }
+  }
+  .order-code{
+    padding:0 15px;
+    height:40px;
+    line-height:40px;
+    font-size:13px;
+    color:$gray-m;
+    @include border-b;
+  }
+  .order-address{
+    padding:0 15px;
+    @include border-b;
+    @include flex-display;
+    @include flex-align-items(center);
+    img{
+      width:15px;
+      margin-right:12px;
+    }
+    .order-address-content{
+      padding:7px 0;
+      @include flex;
+      p{
+        font-size:12px;
+        color:$gray-d;
+        line-height:22px;
+        .address-tit{
+          float:left;
+          display:inline-block;
+          width:60px;
+          @include flex-display;
+          @include flex-justify-content(space-between);
+        }
+        .phone{
+          float:right;
+          display:block;
+        }
+      }
+    }
+  }
+  .order-goods{
+    .order-title{
+      padding:0 15px;
+      @include clearfix;
+      span{
+        display:block;
+        line-height:40px;
+        &.fl{
+          float:left;
+          color:$gray-d;
+          font-size:13px;
+          padding-left:20px;
+          @include background-image("/m/img/ui/common/tete_shop.png");
+          background-size:14px 12px;
+          background-position: left 13px;
+        }
+        &.fr{
+          float:right;
+          font-size:12px;
+          color:$gray-m;
+        }
+      }
+    }
+    .order-content{
+      background:#f7f7f7;
+      .order-content-border{
+        padding:10px 15px;
+        @include border-b;
+        @include flex-display;
+        img{
+          width:70px;
+          height:70px;
+          display:block;
+          margin-right:10px;
+        }
+        .order-content-r{
+          position:relative;
+          height:70px;
+          @include flex;
+          .good-name{
+            @include multi-text(2);
+            font-size:13px;
+            color:$gray-d;
+          }
+          .good-price{
+            position:absolute;
+            bottom:0;
+            left:0;
+            font-size:15px;
+            color:$orange-m;
+          }
+          .good-num{
+            position:absolute;
+            bottom:0;
+            right:0;
+          }
+        }
+      }
+    }
+  }
+  .order-price{
+    @include border-b;
+    p{
+      margin-left:15px;
+      padding-right:15px;
+      height:40px;
+      line-height:40px;
+      @include border-b;
+      @include flex-display;
+      @include flex-justify-content(space-between);
+      .fl{
+        color:$gray-m;
+        font-size:13px;
+      }
+      .fr{
+        font-size:14px;
+        color:$gray-d;
+      }
+      &.no-border{
+        border:none;
+        background:none;
+      }
+    }
+  }
+  .order-totle{
+    padding:0 15px;
+    line-height:40px;
+    font-size:13px;
+    text-align:right;
+    color:$gray-d;
+    @include border-b;
+    em{
+      display:inline-block;
+      width:10px;
+      height:10px;
+    }
+    span{
+      font-size:18px;
+      color: $orange-m;
+      margin-left:7px;
+    }
+  }
+  .order-prompt{
+    padding:0 15px 10px 15px;
+    @include border-b;
+    p{
+      margin-top:10px;
+      font-size:12px;
+      color:$gray-l;
+    }
+  }
+  .order-submit{
+    padding:0 15px;
+    height:49px;
+    @include flex-display;
+    @include flex-align-items(center);
+    @include flex-justify-content(flex-end);
+    span{
+      display:block;
+      width:70px;
+      height:30px;
+      background:none;
+      border:none;
+      margin-left:15px;
+      line-height:30px;
+      text-align:center;
+      &.gray-btn{
+        @include border(#141414);
+        font-size:14px;
+        color:#141414;
+      }
+      &.orange-btn{
+        background:$orange-m;
+        font-size:14px;
+        color:#fff;
+      }
+    }
+  }
+}

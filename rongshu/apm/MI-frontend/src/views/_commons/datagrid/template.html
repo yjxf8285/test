@@ -1,0 +1,32 @@
+  <div ref="datagrid">
+    <au-table :striped="striped" :bordered="bordered" ref="datagrid">
+      <thead>
+        <tr>
+          <th v-for="column in columns" @click="onSort(column.sortable, column.code)">{{column.text}}
+            <i v-show="column.sortable && localSort.orderBy==column.code && localSort.rule==='DESC'" class="fa fa-caret-down" aria-hidden="true"></i>
+            <i v-show="column.sortable && localSort.orderBy==column.code && localSort.rule==='ASC'" class="fa fa-caret-up" aria-hidden="true"></i>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-show="dataList.length==0">
+          <td :colspan="columns.length" style="height: 30px;line-height: 30px;text-align: center">暂无数据</td>
+        </tr>
+        <tr v-show="!slotBody" v-for="(entry, index) in dataList">
+          <td v-for="column in columns">
+            <div v-if="column.styler" :style="typeof column.styler=='object'?column.styler:column.styler(entry[column.code],entry,index)">{{column.formatter?column.formatter(entry[column.code],entry,index):entry[column.code]}}</div>
+            <div v-else-if="column.btns" v-for="btn in column.btns">
+              <button v-if="btn.iconCls" :class="btn.iconCls" @click="btn.callback?btn.callback(entry[column.code],entry,index):void 0">{{btn.label}}</button>
+              <button v-else @click="btn.callback?btn.callback(entry[column.code],entry,index):void 0">{{btn.label}}</button>
+            </div>
+            <div v-else-if="column.formatter">{{column.formatter?column.formatter(entry[column.code],entry,index):entry[column.code]}}</div>
+            <div v-else>{{entry[column.code]}}</div>
+          </td>
+        </tr>
+        <slot v-if="slotBody" name="rows" v-for="(row,index) in dataList" :row="{value:row,index:index}"></slot>
+      </tbody>
+    </au-table>
+    <div class="paginator" v-show="pagination">
+      <au-paginator :total="totalCount" :size="pageSize" :current="currentPage" @toggle="togglePage" />
+    </div>
+  </div>

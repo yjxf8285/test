@@ -1,0 +1,26 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "avg": 40.0,
+      "min": 40.0,
+      "max": 40.0,
+      "name": "select * from bbbb",
+      "count": 1
+    },
+    {
+      "avg": 30.0,
+      "min": 30.0,
+      "max": 30.0,
+      "name": "select * from aaaa",
+      "count": 1
+    },
+    {
+      "avg": 10.5,
+      "min": 1.0,
+      "max": 20.0,
+      "name": "select * from class",
+      "count": 2
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+<script charset="UTF-8" type="text/template" id="tpl-content">
+<div class="system">
+    <header class="page-body-header">
+        <div class="text-box">
+            <span class="title">数据质量报告</span>
+            <span class="text">
+                <span class="color">系统标签&nbsp;</span>415<span class="color">&nbsp;个，最后一次同步时间&nbsp;</span>2016-5-23&nbsp;13:00
+            </span>
+        </div>
+        <div class="button-box icon iconfont"><a class="a keyong" id="goIndex" href="<%=BASE_PATH%>/" title="返回首页">&#xe644;</a><a class="a keyong synchere" id="sync" href="javascript:void(0)" title="更新">&#xe65e;</a></div>
+    </header>
+    <div class="content">
+        <header class="header">
+            <div class="title">系统标签</div>
+            <div class="h2">系统标签是系统根据已有数据自动生成的标签及分类</div>
+        </header>
+        <div class="list-box" id="list-box">
+            <table class="page-table-box">
+                <thead>
+                <tr>
+                    <th class="first">标签分类&nbsp;&nbsp;&#62;&nbsp;&nbsp;<span class="select r-btn dropdown-button dropdown-button" data-activates="lablelist" data-constrainwidth="false" data-gutter="0"><span id="selectTtxt">用户标签-个人标签</span><i class="icon iconfont">&#xe60e;</i></span>
+                        <!--菜单下拉-->
+                        <ul id="lablelist" class="dropdown-content lablelist">
+                            <li>用户标签-个人标签</li>
+                            <li>用户标签-家庭标签</li>
+                            <li>用户标签-宝宝标签</li>
+                            <li>用户标签-会员标签</li>
+                            <li>用户标签-位置标签</li>
+                            <li>交易标签-交易历史</li>
+                            <li>交易标签-交易偏好</li>
+                            <li>交易标签-售后行为</li>
+                            <li>互动标签-用户触达</li>
+                            <li>互动标签-互动历史</li>
+                            <li>互动标签-互动偏好</li>
+                            <li>意图标签-用户类型细分</li>
+                            <li>意图标签-用户意图预测</li>
+                        </ul>
+                    </th>
+                    <th>标签数量</th>
+                    <th class="ico"></th>
+                </tr>
+                </thead>
+                <tbody id="tbody-box"></tbody>
+            </table>
+            <div id="dropdown-box"></div>
+        </div>
+    </div>
+</div>
+</script>

@@ -1,0 +1,308 @@
+// Core variables and mixins
+@import "../core/variable";
+@import "../core/mixin";
+@import "../base";
+
+.good {
+  padding-bottom:70px;
+  .good-img {
+    position:relative;
+    overflow:hidden;
+    .label{
+      display:block;
+      width:62px;
+      height:30px;
+      position:absolute;
+      top:20px;
+      left:0;
+      background:url(/m/img/ui/good-detail/tt_you.png) no-repeat;
+      background-size:100%;
+    }
+    .swiper-slide {
+      width: 100%;
+      .good-img-ad {
+        @include scale-block(80%);
+      }
+    }
+  }
+  .good-survey {
+    padding: 0 15px;
+    .good-name {
+      font-size: 15px;
+      line-height: 19px;
+      margin-top: 10px;
+      color: $gray-d;
+    }
+    .good-price {
+      font-size: 15px;
+      color: #ff5a00;
+      margin-top: 8px;
+      line-height: 19px;
+      span {
+        font-size: 12px;
+        color: $gray-l;
+        margin-left: 20px;
+        text-decoration: line-through;
+      }
+    }
+    .good-s-bottom {
+      height: 18px;
+      line-height: 18px;
+      font-size: 12px;
+      margin-top: 12px;
+      color: $gray-d;
+      position: relative;
+      span {
+        margin-left: 13px;
+      }
+      img {
+        position: absolute;
+        height: 18px;
+        display: block;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+  .good-tab {
+    margin-top: 12px;
+    height: 34px;
+    @include clearfix;
+    span {
+      display: block;
+      width: 50%;
+      float: left;
+      height: 34px;
+      line-height: 34px;
+      text-align: center;
+      font-size: 15px;
+      color: $gray-d;
+      -webkit-box-sizing: border-box;
+      @include border-t(#141414);
+      &.no-curr {
+        @include border(#141414);
+      }
+    }
+  }
+  .good-bottom {
+    width: 100%;
+    .good-introduces {
+      .g-introduces {
+        padding: 0 15px 15px 15px;
+        @include border-b;
+        p {
+          @include flex-display;
+          @include clearfix;
+          font-size: 13px;
+          line-height: 16px;
+          margin-top: 15px;
+          .g-intro-title {
+            width: 80px;
+            color: $gray-l;
+          }
+          .g-intro-content {
+            @include flex;
+            color: $gray-d;
+          }
+        }
+      }
+      .goods-detail-common {
+        //通用样式   商品详细页   下面通用标题
+        font-size:15px;
+        color:$gray-d;
+        padding:0 15px;
+        height: 40px;
+        -webkit-box-sizing: border-box;
+        @include border-b;
+        line-height: 40px;
+        overflow:hidden;
+        .g-title{
+          position:relative;
+          height:40px;
+          span{
+            position:absolute;
+            right:0;
+            top:15px;
+            width:16px;
+            height:10px;
+            @include background-image('/m/img/ui/common/open_no.png');
+            background-size:100%;
+          }
+        }
+
+
+
+
+
+        &.curr{
+          height:auto;
+          padding: 0 15px 15px 15px;
+          .g-title{
+            span{
+              @include background-image('/m/img/ui/common/open.png');
+              background-size:100%;
+            }
+          }
+        }
+      }
+      .good-desc {
+        .g-desc{
+          line-height: 20px;
+          margin-top: 13px;
+          font-size:13px;
+          color:$gray-d;
+          img{
+            max-width:100%;
+          }
+        }
+      }
+      .make-course{
+        .m-course{
+          p {
+            @include flex-display;
+            @include clearfix;
+            font-size: 13px;
+            line-height: 16px;
+            margin-top: 15px;
+            .g-intro-title {
+              width: 80px;
+              color: $gray-l;
+            }
+            .g-intro-content {
+              @include flex;
+              color: $gray-d;
+            }
+          }
+        }
+      }
+      .capture-present{
+        .c-present{
+          line-height: 20px;
+          margin-top: 13px;
+          font-size:13px;
+          color:$gray-d;
+        }
+      }
+      .good-parameter{
+        .g-parameter{
+          p {
+            @include flex-display;
+            @include clearfix;
+            font-size: 13px;
+            line-height: 16px;
+            margin-top: 15px;
+            .g-intro-title {
+              width: 80px;
+              color: $gray-l;
+            }
+            .g-intro-content {
+              @include flex;
+              color: $gray-d;
+            }
+          }
+        }
+      }
+
+      .shop-present{
+        .s-present{
+          font-size: 13px;
+          line-height: 20px;
+          margin-top: 13px;
+          color:$gray-d;
+          img{
+            display:block;
+            max-width:100%;
+          }
+        }
+      }
+    }
+    .good-comments {
+      width: 100%;
+      display:none;
+    }
+  }
+  .go-submit{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#fff;
+    padding:15px;
+    z-index:10;
+    @include clearfix;
+    .add-cart{
+      width:48%;
+      height:40px;
+      line-height:40px;
+      text-align:center;
+      float:left;
+      display:block;
+      color:#fff;
+      background:#141414;
+      border:none;
+    }
+    .go-buy{
+      @extend .add-cart;
+      background:#ff5a00;
+      float:right;
+    }
+    .go-buy-option{
+      display:none;
+      left:0;
+      right:0;
+      padding:10px 15px;
+      @include border-tb;
+      @include clearfix;
+      position:absolute;
+      bottom:70px;
+      height:25px;
+      background:#fff;
+      .add{
+        margin:0 10px;
+        display:block;
+        float:left;
+        width:20px;
+        height:20px;
+        margin-top:2.5px;
+        @include background-image("/m/img/ui/common/add.png");
+        background-size:100%;
+      }
+      input{
+        border:1px solid #141414;
+        display:block;
+        float:left;
+        height:16px;
+        line-height:16px;
+        &.num{
+          padding:3.5px 2px;
+          width:40px;
+          text-align:center;
+          font-size:13px;
+          color:$gray-d;
+
+        }
+        &.confirm{
+          width:70px;
+          height:25px;
+          line-height:25px;
+          border:1px solid #141414;
+          background:none;
+          float:right;
+          font-size:13px;
+          color:$gray-d;
+        }
+        &.cancel{
+          @extend .confirm;
+          margin-left:10px;
+        }
+      }
+
+
+      .minus{
+        @extend .add;
+        @include background-image("/m/img/ui/common/minus.png");
+        background-size:100%;
+      }
+    }
+  }
+}

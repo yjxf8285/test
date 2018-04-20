@@ -1,0 +1,16 @@
+<script type="text/template" id="menu">
+    <ul id="menubarTip-wrap" class="menubarTip-wrap <%=listType%>">
+        <%_.each(listData,function(m,i){%>
+        <li class="item dom-dragable menu-item"
+            attr-icon="<%=m[0]%>"
+            attr-name="<%=m[1]%>"
+            attr-type="<%=m[2]%>"
+            attr-url="<%=m[3]%>"
+            attr-item-type="<%=m[4]%>">
+            <span class="icon iconfont"><%=m[0]%></span>
+            <span><%=m[1]%></span>
+        </li>
+        <%})%>
+    </ul>
+</script>
+

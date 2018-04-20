@@ -1,0 +1,79 @@
+// Core variables and mixins
+@import "../core/variable";
+@import "../core/mixin";
+@import "../base";
+//s
+
+.back-content{
+  padding:0 15px;
+  padding-top:10px;
+  .content{
+    padding:10px;
+    line-height:18px;
+    height:148px;
+    margin-top:10px;
+    @include border(#ccc);
+    #back-content{
+      border:none;
+      width:100%;
+      height:100%;
+      overflow-y:auto;
+      resize: none;
+    }
+  }
+  .phone{
+    padding:10px;
+    line-height:20px;
+    height:20px;
+    overflow:hidden;
+    margin-top:12px;
+    @include border(#ccc);
+    font-size:14px;
+    color:$gray-l;
+    #back-phone{
+      border:none;
+      background:none;
+      color:#333;
+    }
+  }
+  .verification{
+    height:40px;
+    margin-top:12px;
+    @include flex-display;
+    div{
+      @include flex;
+      padding:9px;
+      border-size:border-box;
+      height:22px;
+      @include border(#ccc);
+      input{
+        border:none;
+        height:100%;
+        width:100%;
+        margin:0;
+        padding:0;
+        font-size:14px;
+        color:$gray-l;
+      }
+    }
+    img{
+      width:90px;
+      @include border(#141414);
+      border-size:border-box;
+      height:40px;
+      line-height:40px;
+      text-align:center;
+      margin-left:10px;
+    }
+  }
+  .back-botton{
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    margin-top:12px;
+    background:#141414;
+    color:#fff;
+    font-size:15px;
+  }
+}
+

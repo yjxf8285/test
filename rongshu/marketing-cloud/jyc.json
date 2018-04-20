@@ -1,0 +1,1241 @@
+{
+    "journeyId": 10000,
+    "journeyName": "电商消费旅程",
+    "isComparing": true,
+    "stage": {
+      "rowNumber": 5,
+      "columnNumber": 15
+    },
+    "nodes": [
+      {
+        "props": {
+          "nodeId": 1, 
+          "behaviorId": 1, 
+          "behaviorName": "b1", 
+          "xIndex": 1, 
+          "yIndex": 0, 
+          "nodeName": "海报-二维码", 
+          "type": "start", 
+          "total": "7.8k", 
+          "behaviorStatus": [ ],
+          "filters": [ ] 
+        }
+      },
+      {
+        "props": {
+          "nodeId": 2, 
+          "behaviorId": 2, 
+          "behaviorName": "b2", 
+          "xIndex": 1, 
+          "yIndex": 1, 
+          "nodeName": "活动促销", 
+          "type": "start", 
+          "total": "9.9k", 
+          "behaviorStatus": [
+            { 
+              "type": "total", 
+              "value": 9900, 
+              "label": "9.9k", 
+              "color": "#FF5252" 
+            }
+          ],
+          "filters": [
+            {
+              "attributeValues": ["1"],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            },
+            {
+              "attributeValues": ["1"],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            }
+          ] 
+        }
+      },
+      {
+        "props": {
+          "nodeId": 3, 
+          "behaviorId": 3, 
+          "behaviorName": "b2", 
+          "xIndex": 1, 
+          "yIndex": 2, 
+          "nodeName": "广告", 
+          "type": "start", 
+          "total": "12.5k", 
+          "behaviorStatus": [
+            { 
+              "type": "total", 
+              "value": 12500, 
+              "label": "12.5k", 
+              "color": "#FFB74D" 
+            }
+          ],
+          "filters": [
+            {
+              "attributeValues": ["1"],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            },
+            {
+              "attributeValues": ["1"],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            }
+          ] 
+        }
+      },
+      {
+        "props": {
+          "nodeId": 4, 
+          "behaviorId": 4, 
+          "behaviorName": "b2", 
+          "xIndex": 1, 
+          "yIndex": 3, 
+          "nodeName": "分享链接", 
+          "type": "start", 
+          "total": "8.8k", 
+          "behaviorStatus": [
+            { 
+              "type": "total", 
+              "value": 8800, 
+              "label": "8.8k", 
+              "color": "#81C784" 
+            }
+          ],
+          "filters": [
+            {
+              "attributeValues": ["1"],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            },
+            {
+              "attributeValues": ["1"],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            }
+          ] 
+        }
+      },
+      {
+        "props": {
+          "nodeId": 5, 
+          "behaviorId": 5, 
+          "behaviorName": "b2", 
+          "xIndex": 1, 
+          "yIndex": 4, 
+          "nodeName": "门店优惠券", 
+          "type": "start", 
+          "total": "5.6k", 
+          "behaviorStatus": [
+            { 
+              "type": "total", 
+              "value": 5600, 
+              "label": "5.6k", 
+              "color": "#999999" 
+            }
+          ],
+          "filters": [
+            {
+              "attributeValues": ["1"],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            },
+            {
+              "attributeValues": ["1"],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            }
+          ] 
+        }
+      },
+      {
+        "props": {
+          "nodeId": 6, 
+          "behaviorId": 6, 
+          "behaviorName": "b2", 
+          "xIndex": 3, 
+          "yIndex": 0, 
+          "nodeName": "下载APP", 
+          "type": "process", 
+          "total": "8.4k", 
+          "behaviorStatus": [
+            { 
+              "type": "total", 
+              "value": 8400, 
+              "label": "8.4k", 
+              "color": "#999999" 
+            }
+          ],
+          "filters": [
+            {
+              "attributeValues": ["1"],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            },
+            {
+              "attributeValues": ["1"],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            }
+          ] 
+        }
+      },
+      {
+        "props": {
+          "nodeId": 7, 
+          "behaviorId": 7, 
+          "behaviorName": "b2", 
+          "xIndex": 3, 
+          "yIndex": 2, 
+          "nodeName": "注册", 
+          "type": "process", 
+          "total": "16.9k", 
+          "behaviorStatus": [
+            { 
+              "type": "total", 
+              "value": 6000, 
+              "label": "6k", 
+              "color": "#FF5252" 
+            },
+            { 
+              "type": "total", 
+              "value": 5200, 
+              "label": "5.2k", 
+              "color": "#FFB74D" 
+            },
+            { 
+              "type": "total", 
+              "value": 5700, 
+              "label": "5.7k", 
+              "color": "#81C784" 
+            }
+          ],
+          "filters": [
+            {
+              "attributeValues": ["1"],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            },
+            {
+              "attributeValues": ["1"],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            }
+          ] 
+        }
+      },
+      {
+        "props": {
+          "nodeId": 8, 
+          "behaviorId": 8, 
+          "behaviorName": "b2", 
+          "xIndex": 3, 
+          "yIndex": 3, 
+          "nodeName": "访问门店", 
+          "type": "process", 
+          "total": "16k", 
+          "behaviorStatus": [
+            { 
+              "type": "total", 
+              "value": 16000, 
+              "label": "16k", 
+              "color": "#999999" 
+            }
+          ],
+          "filters": [ 
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            },
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "nodeId": 9, 
+          "behaviorId": 9, 
+          "behaviorName": "b2", 
+          "xIndex": 5, 
+          "yIndex": 0, 
+          "nodeName": "浏览秋季新款", 
+          "type": "process", 
+          "total": "4.1k", 
+          "behaviorStatus": [
+            { 
+              "type": "total", 
+              "value": 400, 
+              "label": "0.4k", 
+              "color": "#FF5252" 
+            },
+            { 
+              "type": "total", 
+              "value": 3000, 
+              "label": "3k", 
+              "color": "#FFB74D" 
+            },
+            { 
+              "type": "total", 
+              "value": 700, 
+              "label": "0.7k", 
+              "color": "#81C784" 
+            }
+          ],
+          "filters": [ 
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            },
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "nodeId": 10, 
+          "behaviorId": 10, 
+          "behaviorName": "b2", 
+          "xIndex": 5, 
+          "yIndex": 1, 
+          "nodeName": "浏览夏季新款", 
+          "type": "process", 
+          "total": "8.8k", 
+          "behaviorStatus": [
+            { 
+              "type": "total", 
+              "value": 5700, 
+              "label": "5.7k", 
+              "color": "#FF5252" 
+            },
+            { 
+              "type": "total", 
+              "value": 2300, 
+              "label": "2.3k", 
+              "color": "#FFB74D" 
+            },
+            { 
+              "type": "total", 
+              "value": 800, 
+              "label": "0.8k", 
+              "color": "#81C784" 
+            }
+          ],
+          "filters": [ 
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            },
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "nodeId": 11, 
+          "behaviorId": 11, 
+          "behaviorName": "b2", 
+          "xIndex": 5, 
+          "yIndex": 2, 
+          "nodeName": "浏览常年基础款", 
+          "type": "process", 
+          "total": "1.9k", 
+          "behaviorStatus": [
+            { 
+              "type": "total", 
+              "value": 600, 
+              "label": "0.6k", 
+              "color": "#FF5252" 
+            },
+            { 
+              "type": "total", 
+              "value": 700, 
+              "label": "0.7k", 
+              "color": "#FFB74D" 
+            },
+            { 
+              "type": "total", 
+              "value": 600, 
+              "label": "0.6k", 
+              "color": "#81C784" 
+            }
+          ],
+          "filters": [ 
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            },
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "nodeId": 12, 
+          "behaviorId": 12, 
+          "behaviorName": "b2", 
+          "xIndex": 7, 
+          "yIndex": 0, 
+          "nodeName": "加入收藏夹", 
+          "type": "process", 
+          "total": "0.8k", 
+          "behaviorStatus": [
+            { 
+              "type": "total", 
+              "value": 100, 
+              "label": "0.1k", 
+              "color": "#FF5252" 
+            },
+            { 
+              "type": "total", 
+              "value": 500, 
+              "label": "0.5k", 
+              "color": "#FFB74D" 
+            },
+            { 
+              "type": "total", 
+              "value": 200, 
+              "label": "0.2k", 
+              "color": "#81C784" 
+            }
+          ],
+          "filters": [ 
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            },
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "nodeId": 13, 
+          "behaviorId": 13, 
+          "behaviorName": "b2", 
+          "xIndex": 7, 
+          "yIndex": 1, 
+          "nodeName": "加入购物车", 
+          "type": "process", 
+          "total": "9.4k", 
+          "behaviorStatus": [
+            { 
+              "type": "total", 
+              "value": 3600, 
+              "label": "3.6k", 
+              "color": "#FF5252" 
+            },
+            { 
+              "type": "total", 
+              "value": 1800, 
+              "label": "1.8k", 
+              "color": "#FFB74D" 
+            },
+            { 
+              "type": "total", 
+              "value": 4000, 
+              "label": "4k", 
+              "color": "#81C784" 
+            }
+          ],
+          "filters": [ 
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            },
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "nodeId": 14, 
+          "behaviorId": 14, 
+          "behaviorName": "b2", 
+          "xIndex": 9, 
+          "yIndex": 0, 
+          "nodeName": "客服", 
+          "type": "process", 
+          "total": "3k", 
+          "behaviorStatus": [
+            { 
+              "type": "total", 
+              "value": 1800, 
+              "label": "1.8k", 
+              "color": "#FF5252" 
+            },
+            { 
+              "type": "total", 
+              "value": 500, 
+              "label": "0.5k", 
+              "color": "#FFB74D" 
+            },
+            { 
+              "type": "total", 
+              "value": 700, 
+              "label": "0.7k", 
+              "color": "#81C784" 
+            }
+          ],
+          "filters": [ 
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            },
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "nodeId": 15, 
+          "behaviorId": 15, 
+          "behaviorName": "b2", 
+          "xIndex": 11, 
+          "yIndex": 1, 
+          "nodeName": "下单支付", 
+          "type": "process", 
+          "total": "6.2k", 
+          "behaviorStatus": [
+            { 
+              "type": "total", 
+              "value": 1800, 
+              "label": "1.8k", 
+              "color": "#FF5252" 
+            },
+            { 
+              "type": "total", 
+              "value": 600, 
+              "label": "0.6k", 
+              "color": "#FFB74D" 
+            },
+            { 
+              "type": "total", 
+              "value": 3800, 
+              "label": "3.8k", 
+              "color": "#81C784" 
+            }
+          ],
+          "filters": [ 
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            },
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "nodeId": 16, 
+          "behaviorId": 16, 
+          "behaviorName": "b2", 
+          "xIndex": 13, 
+          "yIndex": 0, 
+          "nodeName": "领取优惠券", 
+          "type": "process", 
+          "total": "3.9k", 
+          "behaviorStatus": [
+            { 
+              "type": "total", 
+              "value": 2200, 
+              "label": "2.2k", 
+              "color": "#FF5252" 
+            },
+            { 
+              "type": "total", 
+              "value": 1000, 
+              "label": "1k", 
+              "color": "#FFB74D" 
+            },
+            { 
+              "type": "total", 
+              "value": 700, 
+              "label": "0.7k", 
+              "color": "#81C784" 
+            }
+          ],
+          "filters": [ 
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            },
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "nodeId": 17, 
+          "behaviorId": 17, 
+          "behaviorName": "b2", 
+          "xIndex": 13, 
+          "yIndex": 1, 
+          "nodeName": "分享", 
+          "type": "process", 
+          "total": "1.1k", 
+          "behaviorStatus": [
+            { 
+              "type": "total", 
+              "value": 300, 
+              "label": "0.3k", 
+              "color": "#FF5252" 
+            },
+            { 
+              "type": "total", 
+              "value": 800, 
+              "label": "0.8k", 
+              "color": "#81C784" 
+            }
+          ],
+          "filters": [ 
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            },
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "nodeId": 18, 
+          "behaviorId": 18, 
+          "behaviorName": "b2", 
+          "xIndex": 13, 
+          "yIndex": 2, 
+          "nodeName": "评价", 
+          "type": "process", 
+          "total": "4.4k", 
+          "behaviorStatus": [
+            { 
+              "type": "total", 
+              "value": 700, 
+              "label": "0.7k", 
+              "color": "#FF5252" 
+            },
+            { 
+              "type": "total", 
+              "value": 2500, 
+              "label": "2.5k", 
+              "color": "#FFB74D" 
+            },
+            { 
+              "type": "total", 
+              "value": 1200, 
+              "label": "1.2k", 
+              "color": "#81C784" 
+            }
+          ],
+          "filters": [ 
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            },
+            {
+              "attributeValues": [
+                "1"
+              ],
+              "operationCode": "eq",
+              "attributeCode": "name"
+            }
+          ]
+        }
+      }
+    ],
+    "lines": [
+      {
+        "props": {
+          "lineId": 1,
+          "from": {
+            "nodeId": 1,
+            "xIndex": 1,
+            "yIndex": 0
+          },
+          "to": {
+            "nodeId": 6,
+            "xIndex": 3,
+            "yIndex": 0
+          },
+          "color": "#ccc", 
+          "number": 8400,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "lineId": 2,
+          "from": {
+            "nodeId": 1,
+            "xIndex": 1,
+            "yIndex": 1
+          },
+          "to": {
+            "nodeId": 7,
+            "xIndex": 3,
+            "yIndex": 2
+          },
+          "color": "#999", 
+          "number": 6000,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "lineId": 3,
+          "from": {
+            "nodeId": 3,
+            "xIndex": 1,
+            "yIndex": 2
+          },
+          "to": {
+            "nodeId": 7,
+            "xIndex": 3,
+            "yIndex": 2
+          },
+          "color": "#cccccc", 
+          "number": 5200,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "lineId": 4,
+          "from": {
+            "nodeId": 4,
+            "xIndex": 1,
+            "yIndex": 3
+          },
+          "to": {
+            "nodeId": 7,
+            "xIndex": 3,
+            "yIndex": 2
+          },
+          "color": "#cccccc", 
+          "number": 5700,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "lineId": 5,
+          "from": {
+            "nodeId": 5,
+            "xIndex": 1,
+            "yIndex": 4
+          },
+          "to": {
+            "nodeId": 8,
+            "xIndex": 3,
+            "yIndex": 3
+          },
+          "color": "#999999", 
+          "number": 1600,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "lineId": 6,
+          "from": {
+            "nodeId": 6,
+            "xIndex": 3,
+            "yIndex": 0
+          },
+          "to": {
+            "nodeId": 9,
+            "xIndex": 5,
+            "yIndex": 0
+          },
+          "color": "#999999", 
+          "number": 5597,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "lineId": 7,
+          "from": {
+            "nodeId": 7,
+            "xIndex": 3,
+            "yIndex": 2
+          },
+          "to": {
+            "nodeId": 9,
+            "xIndex": 5,
+            "yIndex": 0
+          },
+          "color": "#cccccc", 
+          "number": 4100,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "lineId": 8,
+          "from": {
+            "nodeId": 7,
+            "xIndex": 3,
+            "yIndex": 2
+          },
+          "to": {
+            "nodeId": 10,
+            "xIndex": 5,
+            "yIndex": 1
+          },
+          "color": "#cccccc", 
+          "number": 8800,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "lineId": 9,
+          "from": {
+            "nodeId": 7,
+            "xIndex": 3,
+            "yIndex": 2
+          },
+          "to": {
+            "nodeId": 11,
+            "xIndex": 5,
+            "yIndex": 2
+          },
+          "color": "#cccccc", 
+          "number": 1900,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "lineId": 10,
+          "from": {
+            "nodeId": 8,
+            "xIndex": 3,
+            "yIndex": 3
+          },
+          "to": {
+            "nodeId": 15,
+            "xIndex": 11,
+            "yIndex": 1
+          },
+          "color": "#999999", 
+          "number": 1500,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "lineId": 11,
+          "from": {
+            "nodeId": 9,
+            "xIndex": 5,
+            "yIndex": 0
+          },
+          "to": {
+            "nodeId": 12,
+            "xIndex": 7,
+            "yIndex": 0
+          },
+          "color": "#cccccc", 
+          "number": 800,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "lineId": 12,
+          "from": {
+            "nodeId": 9,
+            "xIndex": 5,
+            "yIndex": 0
+          },
+          "to": {
+            "nodeId": 13,
+            "xIndex": 7,
+            "yIndex": 1
+          },
+          "color": "#cccccc", 
+          "number": 4000,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "lineId": 13,
+          "from": {
+            "nodeId": 10,
+            "xIndex": 5,
+            "yIndex": 1
+          },
+          "to": {
+            "nodeId": 13,
+            "xIndex": 7,
+            "yIndex": 1
+          },
+          "color": "#cccccc", 
+          "number": 3200,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "lineId": 14,
+          "from": {
+            "nodeId": 11,
+            "xIndex": 5,
+            "yIndex": 2
+          },
+          "to": {
+            "nodeId": 13,
+            "xIndex": 7,
+            "yIndex": 1
+          },
+          "color": "#cccccc", 
+          "number": 2200,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "lineId": 15,
+          "from": {
+            "nodeId": 13,
+            "xIndex": 7,
+            "yIndex": 1
+          },
+          "to": {
+            "nodeId": 14,
+            "xIndex": 9,
+            "yIndex": 0
+          },
+          "color": "#cccccc", 
+          "number": 3000,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "lineId": 16,
+          "from": {
+            "nodeId": 13,
+            "xIndex": 7,
+            "yIndex": 1
+          },
+          "to": {
+            "nodeId": 15,
+            "xIndex": 11,
+            "yIndex": 1
+          },
+          "color": "#cccccc", 
+          "number": 6400,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "lineId": 17,
+          "from": {
+            "nodeId": 14,
+            "xIndex": 9,
+            "yIndex": 0
+          },
+          "to": {
+            "nodeId": 15,
+            "xIndex": 11,
+            "yIndex": 1
+          },
+          "color": "#cccccc", 
+          "number": 1200,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "lineId": 18,
+          "from": {
+            "nodeId": 15,
+            "xIndex": 11,
+            "yIndex": 1
+          },
+          "to": {
+            "nodeId": 16,
+            "xIndex": 13,
+            "yIndex": 0
+          },
+          "color": "#cccccc", 
+          "number": 2100,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "lineId": 19,
+          "from": {
+            "nodeId": 15,
+            "xIndex": 11,
+            "yIndex": 1
+          },
+          "to": {
+            "nodeId": 17,
+            "xIndex": 13,
+            "yIndex": 1
+          },
+          "color": "#cccccc", 
+          "number": 1100,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      },
+      {
+        "props": {
+          "lineId": 22,
+          "from": {
+            "nodeId": 15,
+            "xIndex": 11,
+            "yIndex": 1
+          },
+          "to": {
+            "nodeId": 18,
+            "xIndex": 13,
+            "yIndex": 2
+          },
+          "color": "#cccccc", 
+          "number": 4400,
+          "dropRules": [
+            {
+              "code": "WATCH", 
+              "detail": {
+                "config": 1000 
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }

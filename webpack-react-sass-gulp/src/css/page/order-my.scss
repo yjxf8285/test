@@ -1,0 +1,36 @@
+// Core variables and mixins
+@import "../core/variable";
+@import "../core/mixin";
+@import "../base";
+
+.order-my{
+  width:100%;
+  overflow:hidden;
+  .order-my-title{
+    @include flex-display;
+    @include flex-justify-content(space-between);
+    width:100%;
+    height:40px;
+    box-sizing: border-box;
+    @include border-b(#d9d9d9);
+    span{
+      display:block;
+      width:18%;
+      padding-left:2%;
+      height:40px;
+      line-height:40px;
+      box-sizing: border-box;
+      font-size:12px;
+      color:$gray-d;
+      &.curr{
+        border-bottom:1px solid $orange-m;
+        color:$orange-m;
+      }
+      &.home{
+        width:20%;
+        padding:0;
+        text-align:center;
+      }
+    }
+  }
+}

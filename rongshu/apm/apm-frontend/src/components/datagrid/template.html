@@ -1,0 +1,40 @@
+<div ref="datagrid" class="datagrid">
+  <au-table :striped="striped" :bordered="bordered" ref="dataTble">
+    <thead>
+      <tr>
+        <th v-for="column in columns" @click="onSort(column.sortable, column.code)">{{column.text}}
+          <span class="icon-sort" v-show="column.sortable">
+            <i class="fa fa-caret-up" :class="{
+                selected:localSort.orderBy==column.code && localSort.rule==='ASC'
+              }" aria-hidden="true"></i>
+            <i class="fa fa-caret-down" :class="{
+                selected:localSort.orderBy==column.code && localSort.rule==='DESC'
+              }" aria-hidden="true"></i>
+          </span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-show="dataList.length==0">
+        <td :colspan="columns.length" style="height: 30px;line-height: 30px;text-align: center">暂无数据</td>
+      </tr>
+      <tr v-show="!slotBody" v-for="(entry, index) in dataList" class="au-theme-border-color--base-8 au-theme-hover-background-color--base-10 au-theme-background-color--base-11">
+        <td v-for="column in columns">
+          <div :style="column.styler">
+            <formatter-link v-if="column.formatter && column.formatter.type === 'link'" :options="column.formatter.options" :value="entry[column.code]"
+              :row="entry" :index="index">
+            </formatter-link>
+            <template v-else>
+              {{entry[column.code]}}
+            </template>
+          </div>
+
+        </td>
+      </tr>
+      <slot v-if="slotBody" name="rows" v-for="(row,index) in dataList" :row="{value:row,index:index}"></slot>
+    </tbody>
+  </au-table>
+  <div class="paginator" v-show="pagination">
+    <au-paginator :total="totalCount" :size="pageSize" :current="currentPage" @toggle="togglePage" />
+  </div>
+</div>

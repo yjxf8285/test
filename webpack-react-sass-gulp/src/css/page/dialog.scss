@@ -1,0 +1,81 @@
+// Core variables and mixins
+@import "../core/variable";
+@import "../core/mixin";
+
+.dialog-common{
+  position:fixed;
+  z-index:9;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  @include flex-center;
+}
+.dialog-common-content{
+  padding:10px 20px;
+  max-width:80%;
+  text-align:center;
+  background:#333;
+  color:#fff;
+  @include radius(8px);
+}
+
+.dialog-choice{
+  position:fixed;
+  z-index:9;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:#000;
+  opacity:.5;
+}
+.dialog-choice-content{
+  position:fixed;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+  z-index:10;
+  @include flex-center;
+  .choice{
+    background:#fff;
+    padding-top:10px;
+    @include radius(4px);
+    .choice-top{
+      font-size:14px;
+      color:#666;
+      text-align:center;
+      line-height:30px;
+    }
+    .choice-content{
+      padding-bottom:10px;
+      @extend .choice-top;
+    }
+    .choice-btn{
+      line-height:40px;
+      font-size:14px;
+      @include border-t;
+      color:#666;
+      @include flex-display;
+      .choice-confirm{
+        width:50%;
+        text-align:center;
+        background:none;
+        border:none;
+        @include border-r;
+      }
+      .choice-cancel{
+        text-align:center;
+        @include flex;
+      }
+    }
+    .choice-confirm{
+      line-height:40px;
+      font-size:14px;
+      @include border-t;
+      color:#666;
+      text-align:center;
+    }
+  }
+}

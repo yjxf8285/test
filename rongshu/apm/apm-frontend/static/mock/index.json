@@ -1,0 +1,56 @@
+{
+  "code": 0,
+  "data": [
+    {
+      "name": "org.apache.catalina.core.StandardHostValve.invoke(org.apache.catalina.connector.Request request, org.apache.catalina.connector.Response response)",
+      "agentName": "测试20",
+      "value": 1023,
+      "child": [
+        {
+          "name": "spring.xxxx.xxx.aa",
+          "agentName": "测试20",
+          "value": 1864,
+          "child": [
+            {
+              "name": "spring.xxxx.xxx.bbb",
+              "agentName": "测试20",
+              "value": 1864,
+              "child": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "hibernate.xxxx.xxx.aa",
+      "agentName": "测试20",
+      "value": 1864,
+      "child": [
+        {
+          "name": "mybatis.xxx.xxx.aa",
+          "agentName": "测试20",
+          "value": 1864,
+          "child": []
+        },
+        {
+          "name": "mybatis.xxx.xxx.aa",
+          "agentName": "测试20",
+          "value": 1864,
+          "child": []
+        },
+        {
+          "name": "mybatis.xxx.xxx.aa",
+          "agentName": "测试20",
+          "value": 1864,
+          "child": []
+        },
+        {
+          "name": "mybatis.xxx.xxx.aa",
+          "agentName": "测试20",
+          "value": 1864,
+          "child": []
+        }
+      ]
+    }
+  ]
+}

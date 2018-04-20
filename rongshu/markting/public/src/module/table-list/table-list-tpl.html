@@ -1,0 +1,36 @@
+<script charset="UTF-8" type="text/template" id="tpl-layout">
+    <table class="page-table-box">
+        <thead>
+        <tr>
+
+            <th class="first" width="50"></th>
+            <%_.each(listData[0],function(m,i){%>
+            <th ><%= m.name %></th>
+            <% })%>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody id="tbody-box">
+        <%_.each(listData,function(m,i){%>
+        <%if(i<=6){%>
+        <tr>
+            <td class="first"><%=i+1%></td>
+            <%_.each(m,function(mm,ii){%>
+            <td ><%= mm.value %></td>
+            <% })%>
+            <td class="ico">
+                <ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more"
+                     data-activates="morelist" data-constrainwidth="false" title="更多操作">
+                </ico>
+            </td>
+        </tr>
+        <%}%>
+        <% })%>
+        </tbody>
+    </table>
+
+    <ul id="morelist" class="dropdown-content setuplist">
+        <li><i class="icon iconfont">&#xe65f;</i><a href="javascript:;" class="js-showuserfile">联系人档案</a></li>
+        <li><i class="icon iconfont">&#xe61d;</i><a href="#!">删除</a></li>
+    </ul>
+</script>

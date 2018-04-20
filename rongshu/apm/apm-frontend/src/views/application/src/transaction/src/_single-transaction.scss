@@ -1,0 +1,292 @@
+$border: solid 1px #e1e1e1;
+.title {
+    padding: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    border-bottom: $border;
+}
+.single-transaction{
+}
+.graph-content {
+    .row-first {
+        padding: 0 10px;
+        display: flex;
+        min-height: 155px;
+        .l {
+            position: relative;
+            width: 30%;
+            .half-circle {
+                position: absolute;
+                width: 140px;
+                height: 140px;
+                border-radius: 100%;
+                background: #eef4ff;
+                text-align: center;
+                color: #fff;
+                .center {
+                    left: 6px;
+                    top: 6px;
+                    position: absolute;
+                    border: solid 6px #c8ddff;
+                    background: #5b97fb;
+                    width: 130px;
+                    height: 130px;
+                    line-height: 120px;
+                    border-radius: 100%;
+                }
+            }
+            .list-wrap {
+                margin-top: -5px;
+                margin-left: 165px;
+                position: absolute;
+                height: 140px;
+                width: 100%;
+                li {
+                    background: #f7f7f7;
+                    border-radius: 6px;
+                    border: $border;
+                    padding: 4px;
+                    margin-top: 8px;
+                    height: 40px;
+                    .hd {
+                        padding: 4px;
+                    }
+                }
+            }
+        }
+        .r {
+            flex: 1;
+            padding-left: 200px;
+            .list-wrap {
+                margin-top: -5px;
+                li {
+                    padding: 0 10px;
+                    background: #f7f7f7;
+                    border-radius: 6px;
+                    border: $border;
+                    height: 40px;
+                    width: 100%;
+                    margin-top: 8px;
+                    span {
+                        line-height: 40px;
+                    }
+                    .component-name {
+                        display: block;
+                        float: left;
+                        width: 80%;
+                        color: #2b8dd1;
+                        cursor: pointer;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    .rtext {
+                        float: right;
+                    }
+                  &.cur{
+                    color:#fff;
+                    background: #2b8dd1;
+                    .component-name{
+                      color:#fff;
+                    }
+                  }
+                }
+            }
+        }
+    }
+    .row-second {
+        border-top: $border;
+        margin-top: 24px;
+        display: flex;
+        padding: 24px 0 10px 0;
+        .url-name {
+            color: #2b8dd1;
+            cursor: pointer;
+        }
+        .left-box {
+            width: 200px;
+            border: $border;
+            height: 110px;
+            border-radius: 6px;
+          .title {
+            padding: 0 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+            .content {
+              padding-top:30px;
+                height: 80px;
+                text-align: center;
+            }
+        }
+        .arrow-box {
+            margin-top: 50px;
+            width: 100px;
+            text-align: center;
+            .t,
+            .b {
+                height: 20px;
+                line-height: 20px;
+            }
+            .line {
+                width: 90px;
+                float: left;
+                border-bottom: solid 1px #ccc;
+            }
+            .arrow {
+                margin-top: -4px;
+                float: right;
+                width: 0;
+                height: 0;
+                border-top: 5px solid transparent;
+                border-left: 10px solid #ccc;
+                border-bottom: 5px solid transparent;
+            }
+        }
+        .math-box {
+            width: 300px;
+            border: $border;
+            height: 190px;
+            border-radius: 6px;
+            .title {
+                padding: 0 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .content {
+                padding-top: 10px;
+                .line {
+                    border-bottom: $border;
+                    margin-bottom: 10px;
+                }
+                .tr {
+                    padding: 0 10px 10px;
+                    display: flex;
+                    .equal {
+                        font-weight: bold;
+                        font-size: 16px;
+                        float: left;
+                        margin-top: -3px;
+                    }
+                    .icon {
+                        vertical-align: middle;
+                    }
+                    .c-1 {
+                        width: 20px;
+                    }
+                    .c-2 {
+                        text-align: right;
+                        width: 100px;
+                    }
+                    .c-3 {
+                        text-align: right;
+                        flex: 1;
+                    }
+                    .c-4 {
+                        flex: 1;
+                        padding-left: 36px;
+                    }
+                }
+            }
+        }
+        .list-box {
+            border-radius: 6px;
+            flex: 1;
+            border: $border;
+        }
+    }
+    .row-third {
+        margin: -24px 0;
+        display: flex;
+        .l {
+            flex: 1;
+            .chart-wrap {
+                height: 250px;
+            }
+            .r-btn {
+                cursor: pointer;
+                padding: 5px 10px;
+                border-radius: 20px;
+                &.cur {
+                    background: #2979ff;
+                    color: #fff;
+                    padding: 5px 10px;
+                    border-radius: 20px;
+                }
+            }
+        }
+        .r {
+            width: 30%;
+            .list-wrap {
+                width: 100%;
+                margin: 24px 0;
+                td {
+                    line-height: 42px;
+                    padding: 10px;
+                }
+                .c-1 {
+                    width: 60px;
+                    text-align: right;
+                }
+                .c-3 {
+                    width: 100px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .row-fourth {
+        .main-con {
+            display: flex;
+            .l {
+                width: 400px;
+                .chart-wrap {
+                    height: 300px;
+                }
+            }
+            .r {
+                flex: 1;
+                padding: 30px;
+            }
+        }
+    }
+}
+
+.topo-box {
+    height: 500px;
+}
+
+.snapshot-analyze {
+    .chartbar-warp {
+        height: 300px;
+    }
+}
+
+.icon-health {
+    display: inline-block;
+    font-size: 12px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+}
+
+.icon-health-normal {
+    background-image: url(/static/images/health_normal.png);
+}
+
+.icon-health-slow {
+    background-image: url(/static/images/health_slow.png);
+}
+
+.icon-health-very-slow {
+    background-image: url(/static/images/health_very_slow.png);
+}
+
+.icon-health-error {
+    background-image: url(/static/images/health_error.png);
+}

@@ -1,0 +1,25 @@
+body{
+    padding:50px;
+    font-size:14px;
+}
+a{
+    color:#00b7ef;
+}
+#content{
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+#room{
+    background-color:#ddd;
+    height:300px;
+    margin-bottom:1em;
+}
+#messages{
+    width:690px;
+    heigth:300px;
+    overflow:auto;
+    background-color:#eee;
+    margin-bottom:1em;
+    margin-right:10px;
+}

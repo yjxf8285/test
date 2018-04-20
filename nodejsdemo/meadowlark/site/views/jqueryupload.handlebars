@@ -1,0 +1,31 @@
+<h2>jquery文件上传测试</h2>
+<span class="btn btn-default btn-file">
+    Upload
+    <input type="file" class="form-control" required  id="filedPhoto" data-url="/upload" multiple
+           name="photo">
+</span>
+<div id="fileUploads"></div>
+{{#section 'jquery'}}
+    <script src="/vendor/jqfu/jquery.ui.widget.js"></script>
+    <script src="/vendor/jqfu/jquery.iframe-transport.js"></script>
+    <script src="/vendor/jqfu/jquery.fileupload.js"></script>
+    <script>
+        $(function ($) {
+            $('#filedPhoto').fileupload({
+                dataType: 'json',
+                done: function (e, data) {
+                    $.each(data.result.files, function (i, file) {
+                        console.info(file)
+                        $('#fileUploads').append($('<div class="upload">' +
+                                '<span class="glyphiconglyphicon-ok"></span>' +
+                                '&nbsp;' + file.originalName + '' +
+                                '<img src="'+file.url+'">'+
+                                '</div>'
+                        ))
+                    })
+
+                }
+            })
+        })
+    </script>
+{{/section}}

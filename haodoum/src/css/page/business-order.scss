@@ -1,0 +1,274 @@
+// Core variables and mixins
+@import "../base";
+@import "../components/dialog";
+@import "../components/myselect";
+
+body {
+  background: #f8f8f8;
+}
+
+.color-green {
+  color: #8ac64e;
+}
+
+.color-gray {
+  color: $gray-m;
+}
+
+.business-order-title {
+  height: 44px;
+  background: $white;
+  @include border-b;
+  @include flex-center;
+  span {
+    height: 43px;
+    color: $gray-m;
+    font-size: 14px;
+    @include flex;
+    @include flex-center;
+    &.curr {
+      color: #8ac64e;
+      border-bottom: 1px solid #8ac64e;
+    }
+  }
+}
+
+.business-order-list {
+  .list {
+    display: none;
+    &:first-child {
+      display: block;
+    }
+  }
+}
+
+.order-list {
+  margin-top: 5px;
+  background: $white;
+  .order-title {
+    padding: 8px 10px;
+    @include border-b;
+    @include flex-display;
+    @include flex-align-items(center);
+    @include flex-justify-content(space-between);
+    span {
+      color: $gray-d;
+      font-size: 14px;
+      span {
+        font-size: 15px;
+        color: $base-color;
+      }
+    }
+    .order-title-r {
+      @include flex-display;
+      @include flex;
+      @include flex-align-items(center);
+      @include flex-justify-content(flex-end);
+      div {
+        width: 60px;
+        height: 25px;
+        color: $gray-l;
+        font-size: 13px;
+        margin-left: 10px;
+        @include flex-center;
+        @include border-radius(#999, 1px);
+        &.btn-green {
+          color: #8ac64e;
+          @include border-radius(#8ac64e, 1px);
+        }
+      }
+    }
+  }
+  .order-goods {
+    padding: 0 10px 15px 10px;
+    @include border-b;
+    .goods {
+      color: $gray-m;
+      font-size: 13px;
+      margin-top: 15px;
+      @include flex;
+      @include flex-align-items(center);
+      @include flex-justify-content(flex-start);
+      .goods-name {
+        width: 120px;
+      }
+    }
+  }
+  .order-address {
+    padding: 5px 10px 15px 10px;
+    div {
+      color: $gray-m;
+      font-size: 13px;
+      margin-top: 10px;
+      &.color-grayl {
+        color: $gray-l;
+      }
+    }
+  }
+
+}
+
+//订单详情
+.order-detail {
+  .order-detail-type {
+    padding: 0 10px;
+    height:35px;
+    background: #fff;
+    @include flex-display;
+    @include flex-justify-content(space-between);
+    @include flex-align-items(center);
+    font-size:15px;
+    .type{
+      color:#8ac64e;
+    }
+    .time{
+      display:none;
+      color:$gray-l;
+      font-size:13px;
+    }
+  }
+
+
+  .order-detail-content {
+    margin-top: 8px;
+    background: $white;
+    .order-detail-c-title{
+      padding:0 10px;
+      height:40px;
+      font-size:13px;
+      color:$gray-d;
+      @include flex-display;
+      @include flex-align-items(center);
+      @include border-b;
+    }
+    .order-detail-c {
+      margin: 0 10px;
+      padding-bottom: 15px;
+      @include clearfix;
+      @include border-b;
+      .order-detail-price {
+        margin-top: 15px;
+        @include flex-display;
+        @include flex-justify-content(space-between);
+        .name {
+          color: $gray-m;
+          font-size: 13px;
+        }
+        .count {
+          color: $gray-m;
+          font-size: 13px;
+        }
+        .price {
+          font-size: 13px;
+          margin-left: 40px;
+        }
+      }
+    }
+    .order-detail-other {
+      @extend .order-detail-c;
+      border: none;
+      background: none;
+    }
+    .order-detail-total {
+      padding: 0 10px;
+      height: 40px;
+      @include border-t;
+      @include flex-display;
+      @include flex-align-items(center);
+      @include flex-justify-content(space-between);
+      .l {
+        color: $gray-l;
+        font-size: 12px;
+      }
+      .r {
+        font-size: 14px;
+        span {
+          font-size: 13px;
+          &.total-price {
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+
+  .order-detail-bottom {
+    margin-top: 8px;
+    color: $gray-l;
+    background: $white;
+    .order-detail-b-title {
+      padding: 0 10px;
+      height: 40px;
+      @include border-b;
+      @include flex-display;
+      @include flex-align-items(center);
+      @include flex-justify-content(space-between);
+      span{
+        color:$gray-d;
+      }
+    }
+    .order-detail-b-content {
+      padding: 5px 10px 63px 10px;
+      font-size: 12px;
+      p {
+        margin-top: 10px;
+      }
+    }
+  }
+  .order-detail-button {
+    height: 45px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: $white;
+    font-size: 15px;
+    @include flex-display;
+    @include flex-align-items(center);
+    @include flex-justify-content(space-between);
+    .cancel-order{
+      background: $gray-d;
+      opacity: .9;
+      color:$white;
+      width:90px;
+      height:45px;
+      @include flex-center;
+    }
+    .go-payment{
+      @include flex;
+      background: #8ac64e;
+      height:45px;
+      @include flex-center;
+    }
+  }
+}
+
+
+.no-order-list{
+  p {
+    text-align: center;
+    margin-top: 60px;
+    img {
+      width: 70px;
+      height: 70px;
+    }
+    &.txt {
+      margin-top: 15px;
+      color: $gray-l;
+      font-size: 13px;
+    }
+    &.go-buy{
+      margin-top: 15px;
+      @include flex-center;
+      a{
+        width:80px;
+        height:30px;
+        background:#8ac64e;
+        color:$white;
+        font-size:14px;
+        @include radius(4px);
+        @include flex-center;
+      }
+    }
+  }
+}

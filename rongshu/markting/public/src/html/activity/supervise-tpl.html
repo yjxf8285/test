@@ -1,0 +1,132 @@
+<script charset="UTF-8" type="text/template" id="tpl-content">
+<div class="supervise">
+    <header class="page-body-header">
+        <div class="text-box">
+            <span class="title">活动管理</span>
+            <span class="text"><span class="color">正式营销活动</span>3<span class="color">个，累计触达</span>129,880,203<span class="color">人次</span></span>
+        </div>
+        <div class="button-box icon iconfont">
+            <a class="a keyong" id="goIndex" href="<%=BASE_PATH%>/" title="返回首页">&#xe644;</a><a class="a keyong" href="<%=BASE_PATH%>/html/activity/plan.html" title="新增活动">&#xe651;</a>
+        </div>
+    </header>
+    <div class="content">
+        <header class="header">
+            <div class="tab-box">
+                <div class="col s12">
+                    <ul class="tabs">
+                        <li class="tab col s3"><a id="tab-table" href="javascript:void(0)" type="table1">未发布（0）</a></li>
+                        <li class="tab col s3"><a id="tab-table" href="javascript:void(0)" type="table2">已发布（0）</a></li>
+                        <li class="tab col s3"><a id="tab-table" href="javascript:void(0)" type="table3">活动中（2）</a></li>
+                        <li class="tab col s3"><a id="tab-table" href="javascript:void(0)" type="table4">已结束（1）</a></li>
+                        <li class="tab col s3"><a class="active" id="tab-table" href="javascript:void(0)" type="table5">全部（3）</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search-box">
+                <input placeholder="筛选关键字" id="search-input" type="text" class="validate activity-supervise-search-input dropdown-button"  data-activates="activity-supervise-search-list" data-beloworigin="true">
+                <div id="search-ico" class="ico icon iconfont">&#xe60b;</div>
+                <div id="activity-supervise-search-list" class="dropdown-content">
+                    <div class="nodata">
+                        <ico class="icon iconfont">&#xe604;</ico><span>无搜索结果</span>
+                    </div>
+                    <ul class="search-feeds">
+                        <li class="count">共找到3条记录</li>
+                        <li>1.2016年迎新活动</li>
+                        <li>1.2016年迎新活动</li>
+                        <li>1.2016年迎新活动</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="list-box">
+            <!--<div id="table-box"></div>-->
+            <table class="page-table-box">
+                <thead>
+                    <tr>
+                        <th class="first">名称</th>
+                        <th>状态</th>
+                        <th>创建时间</th>
+                        <th>计划开始时间</th>
+                        <th>计划结束时间</th>
+                        <th>受众人群</th>
+                        <th class="ico"></th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-box"></tbody>
+            </table>
+            <!--菜单下拉-->
+            <div id="morelist-box"></div>
+        </div>
+    </div>
+</div>
+</script>
+<script charset="UTF-8" type="text/template" id="tpl-table1">
+    <!--
+    <tr class="close">
+        <td class="first"><a href="<%=BASE_PATH%>/html/activity/plan.html?planId=1&status=unreleased&return=/html/activity/supervise.html">16年迎新活动</a></td>
+        <td><span class="state">未发布</span></td>
+        <td>2016-2-28&nbsp;13:00</td>
+        <td>2016-3-1&nbsp;00:00</td>
+        <td>2016-3-15&nbsp;23:59</td>
+        <td>新用户-2月统计</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false" id="activitySuperviseMoreList">&#xe61a;</ico></td>
+    </tr>
+    -->
+    <tr class="close">
+        <td colspan="7" style="text-align:center">暂无数据！</td>
+    </tr>
+</script>
+<script charset="UTF-8" type="text/template" id="tpl-table2">
+    <!--
+    <tr class="iss">
+        <td class="first"><a href="<%=BASE_PATH%>/html/activity/plan.html?planId=1&status=released&return=/html/activity/supervise.html">16年迎新活动</a></td>
+        <td><span class="state">已发布</span></td>
+        <td>2016-2-28&nbsp;13:00</td>
+        <td>2016-3-1&nbsp;00:00</td>
+        <td>2016-3-15&nbsp;23:59</td>
+        <td>新用户-2月统计</td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false" id="activitySuperviseMoreList">&#xe61a;</ico></td>
+    </tr>
+    -->
+    <tr class="close">
+        <td colspan="7" style="text-align:center">暂无数据！</td>
+    </tr>
+</script>
+<script charset="UTF-8" type="text/template" id="tpl-table3">
+    <tr class="going">
+        <td class="first"><a href="<%=BASE_PATH%>/html/activity/plan.html?planId=4&status=active&returnurl=/html/activity/supervise.html">新产品上市推广活动</a></td>
+        <td><span class="state">活动中</span></td>
+        <td>2016-5-28&nbsp;13:00</td>
+        <td>2016-7-1&nbsp;12:00</td>
+        <td>2016-7-15&nbsp;23:59</td>
+        <td class="object"><div class="tbody-box-object" title="7-12个月宝宝的会员">7-12个月宝宝的会员</div></td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false" id="activitySuperviseMoreList">&#xe61a;</ico></td>
+    </tr>
+    <tr class="going">
+        <td class="first"><a href="<%=BASE_PATH%>/html/activity/plan.html?planId=3&status=active&returnurl=/html/activity/supervise.html">周末促销活动</a></td>
+        <td><span class="state">活动中</span></td>
+        <td>2016-5-10&nbsp;13:00</td>
+        <td>2016-5-25&nbsp;12:00</td>
+        <td>2016-5-05&nbsp;23:59</td>
+        <td class="object"><div class="tbody-box-object" title="&lt;8个月孕龄的孕期妈妈；&gt;8个月孕龄的孕期妈妈；0&#126;6个月新妈妈爸爸；6&#126;24个月宝宝父母">&lt;8个月孕龄的孕期妈妈；&gt;8个月孕龄的孕期妈妈；0&#126;6个月新妈妈爸爸；6&#126;24个月宝宝父母</div></td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false" id="activitySuperviseMoreList">&#xe61a;</ico></td>
+    </tr>
+</script>
+<script charset="UTF-8" type="text/template" id="tpl-table4">
+    <tr class="close">
+        <td class="first"><a href="<%=BASE_PATH%>/html/activity/plan.html?planId=2&status=active&returnurl=/html/activity/supervise.html">周末促销活动测试</a></td>
+        <td><span class="state">已结束</span></td>
+        <td>2016-2-28&nbsp;13:00</td>
+        <td>2016-3-01&nbsp;00:00</td>
+        <td>2016-3-15&nbsp;23:59</td>
+        <td class="object"><div class="tbody-box-object" title="乐友孕婴童-测试白名单">乐友孕婴童-测试白名单</div></td>
+        <td class="ico"><ico class="pointer icon iconfont r-btn dropdown-button dropdown-button-more" data-activates="morelist" data-constrainwidth="false" id="activitySuperviseMoreList">&#xe61a;</ico></td>
+    </tr>
+</script>
+
+<script charset="UTF-8" type="text/template" id="tpl-morelist">
+    <ul id="morelist" class="dropdown-content setuplist">
+        <li><i class="icon iconfont">&#xe60b;</i><a href="<%=BASE_PATH%>/html/activity/analyse.html">活动分析</a></li>
+        <li><i class="icon iconfont">&#xe61d;</i><a href="javascript:void(0)" id="activitySuperviseDelete">删除</a></li>
+    </ul>
+</script>

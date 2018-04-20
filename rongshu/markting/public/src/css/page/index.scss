@@ -1,0 +1,86 @@
+@import "../base";
+@import "../../js/plugins/_loliclock";
+@import "../../js/plugins/layer";
+
+.index {
+  min-width: 1100px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  .b-blue {
+    background: #73a9dc;
+  }
+  .c-blue {
+    color: #73a9dc;
+  }
+  .b-green {
+    background: #55c4b8;
+  }
+  .c-green {
+    color: #55c4b8;
+  }
+  .b-yellow {
+    background: #f6c755;
+  }
+  .c-yellow {
+    color: #f6c755;
+  }
+  .b-purple {
+    background: #c090ec;
+  }
+  .c-purple {
+    color: #c090ec;
+  }
+  .mr12 {
+    margin-right: 8px;
+  }
+  .ml12 {
+    margin-left: 8px;
+  }
+  .row{
+    margin-bottom: 16px;
+  }
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  .block {
+    background: #fff;
+
+
+  }
+  .chartswrap{
+    .title{
+      font-size: 20px;
+      color: #5a5a5a;
+      margin-left: 24px;
+    }
+    .block{
+      padding: 16px 0;
+    }
+  }
+  .item {
+    .info {
+      margin-left: 24px;
+    }
+    .item-ico {
+      width: 88px;
+      height: 104px;
+      line-height: 104px;
+      text-align: center;
+      .icon {
+        color: #fff;
+        font-size: 30px;
+      }
+
+    }
+    .num {
+      margin-top: 18px;
+      margin-bottom: 4px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #5a5a5a;
+    }
+
+  }
+}

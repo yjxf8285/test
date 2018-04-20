@@ -1,0 +1,33 @@
+.f-r {
+  float: right;
+}
+.f-l {
+  float: left;
+}
+
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.au-panel {
+  border-radius: 5px;
+  box-shadow: 0 0px 0px rgba(60, 65, 71, .5) !important;
+  &.au-theme-radius {
+    border-radius: 1px;
+  }
+  .au-panel-content {
+    border-radius: 0px;
+    padding: 5px;
+  }
+}
+
+//au-input是否要内置支持圆角？
+.au-input.radius {
+  input[type="text"] {
+    @include border-radius(32px);
+  }
+}

@@ -1,0 +1,2 @@
+/*! 2018-3-2 author:liuxiaofan */
+webpackJsonp([8],{218:function(e,t,n){var r=n(54)(null,n(898),null,null);e.exports=r.exports},898:function(e,t){e.exports={render:function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",{staticStyle:{width:"100%",height:"100%"}},[n("router-view")],1)},staticRenderFns:[]}}});

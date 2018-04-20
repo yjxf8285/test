@@ -1,0 +1,210 @@
+// Core variables and mixins
+@import "../base";
+@import "../components/swiper.3.1.2.min.css";
+body{background:#f8f8f8;padding-bottom:45px;}
+
+
+.back-history{
+  position:fixed;
+  left:10px;
+  top:10px;
+  width:20px;
+  height:20px;
+  z-index:20;
+  img{
+    width:20px;
+    height:20px;
+  }
+}
+
+.goods-detail{
+  padding-bottom:15px;
+  background:$white;
+  .swiper-container {
+    .ad-item {
+      @include scale-block(75%);
+    }
+  }
+  .goods-name{
+    margin-top:15px;
+    font-size:15px;
+    text-align:center;
+  }
+  .goods-tags{
+    @include flex-center;
+    margin-top:10px;
+    span{
+      width:36px;
+      height:14px;
+      background:#8ac64e;
+      border:1px solid #81b223;
+      @include radius(2px);
+      @include flex-center;
+      color:$white;
+    }
+  }
+  .goods-price{
+    margin-top:15px;
+    padding-top:15px;
+    @include border-t;
+    text-align:center;
+    font-size:15px;
+    color:#ff6000;
+    span{
+      font-size:20px;
+    }
+  }
+  .goods-count{
+    color:#8ac64e;
+    margin-top:10px;
+    @include flex-center;
+    .zan{
+      @include border-l(#80BE3A);
+      padding-left:8px;
+      margin-left:8px;
+      @include flex-center;
+      img{
+        width:11px;
+        height:11px;
+        margin-right:3px;
+      }
+    }
+  }
+}
+.goods-feature{
+  margin-top:8px;
+  background:$white;
+  padding-bottom:10px;
+  @include clearfix;
+  .goods-feature-title{
+    margin-top:15px;
+    font-size:16px;
+    text-align:center;
+  }
+  .goods-feature-content{
+    padding:0 10px;
+    margin-top:10px;
+    line-height:16px;
+    font-size:12px;
+    color:$gray-l;
+  }
+}
+.goods-introduce{
+  @extend .goods-feature;
+  .goods-feature-content{
+    img{
+      max-width: 100%;
+    }
+    p{
+      margin-top:8px;
+    }
+  }
+}
+.goods-txt{
+  text-align:right;
+  padding:0 10px;
+  height:30px;
+  line-height:30px;
+  font-size:11px;
+  color:$gray-l;
+}
+.goods-btn{
+  height:45px;
+  background:#8ac64e;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  @include flex-center;
+  z-index:20;
+  .go-store{
+    width:50%;
+    background:$white;
+    font-size:15px;
+    color:#8ac64e;
+    height:44px;
+    margin-top:1px;
+    @include flex-center;
+  }
+  .immediate-purchase{
+    @include flex;
+    @include flex-center;
+    color:$white;
+    font-size:15px;
+  }
+}
+.goods-btn-two-hide{
+  display:none;
+}
+.goods-btn-two{
+  background:none;
+  @extend .goods-btn;
+  .go-store{
+    width:60px;
+    height:45px;
+    background:$white;
+    @include flex-center;
+    span{
+      padding-top:18px;
+      @include background-image("../../images/ui/common/store.png");
+      background-size:18px 18px;
+      background-position: center top;
+      font-size:11px;
+      color:$gray-l;
+    }
+  }
+  .is-ok{
+    width:80px;
+    height:45px;
+    @include flex-center;
+    color:$gray-l;
+    background:$gray-d;
+    opacity: .9;
+    &.curr{
+      background:#8ac64e;
+      color:$white;
+      font-size:15px;
+    }
+  }
+  .immediate-purchase{
+    @include flex;
+    height:45px;
+    color:$white;
+    background:$gray-d;
+    opacity: .9;
+    @include flex-display;
+    @include flex-align-items(center);
+    @include flex-justify-content(flex-start);
+    .icon-cart{
+      width:18px;
+      height:18px;
+      margin:0 10px;
+      @include background-image("../../images/ui/common/shop_cart.png");
+      background-size:18px 18px;
+      position:relative;
+      span{
+        width:17px;
+        height:17px;
+        background:#8ac64e;
+        @include radius;
+        @include flex-center;
+        font-size:10px;
+        position:absolute;
+        top:-40%;
+        right:-40%;
+      }
+    }
+    .total{
+      font-size:14px;
+      span{
+        font-size:18px;
+      }
+    }
+    .peisong{
+      color:$gray-l;
+      margin-left:5px;
+      font-size:10px;
+
+    }
+  }
+}

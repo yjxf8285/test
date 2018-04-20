@@ -1,0 +1,387 @@
+@import "./mixin";
+
+
+/*颜色*/
+.fc-blue {
+  color: #5BD4C7 !important;
+}
+
+.fc-red {
+  color: #ff1f1f !important;
+}
+
+.bg-blue {
+  background: #67c2ef !important;
+}
+
+.bg-red {
+  background: #fd7979 !important;
+}
+
+.bg-yellow {
+  background: #fabb3d !important;
+}
+
+.bg-green {
+  background: #8bc34a !important;
+}
+
+.fc-666 {
+  color: #666;
+}
+
+//标题
+h4 {
+  padding-bottom: 8px;
+  margin-top: 10px;
+  border-bottom: solid 1px #e5e5e5;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+//ios点击去除灰框
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+//超链接
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+//清浮动
+.clearfix {
+  @include clearfix;
+}
+
+//DOM隐藏
+body .fn-hide {
+  display: none !important;
+}
+
+.fn-blank {
+  visibility: hidden;
+}
+
+//文字截取
+.fn-text-overflow {
+  @include single-text;
+}
+
+.t-c {
+  text-align: center !important;
+}
+
+.t-r {
+  text-align: right !important;
+}
+
+.fn-fl {
+  float: left !important;
+}
+
+.fn-fr {
+  float: right !important;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.ml40 {
+  margin-left: 40px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mr6 {
+  margin-right: 6px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+//公共样式
+
+.txt-gray {
+  color: #c8c8c8;
+}
+
+.black-color {
+  background-color: #000;
+}
+
+.gray-color {
+  background-color: #ccc;
+}
+
+//相对定位
+.posi-r {
+  position: relative;
+}
+
+//common btn
+.tete-btn {
+  height: 40px;
+  color: #fff;
+  font-size: 15px;
+  background: #141414;
+  line-height: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+//二级头部
+.page-body-header {
+  width: 100%;
+  height: 48px;
+  font-size: 14px;
+  .text-box {
+    float: left;
+    height: 48px;
+    line-height: 48px;
+    color: rgba(90, 90, 90, 1);
+    .title {
+      color: #333;
+      float: left;
+    }
+    .text {
+      font-size: 12px;
+      float: left;
+      margin-left: 20px;
+      color: #5a5a5a;
+      .variable {
+        color: #5bd4c7;
+        margin: 0 8px;
+      }
+      .color {
+        color: rgba(90, 90, 90, 1);
+      }
+      .a {
+        margin-left: 10px;
+      }
+
+    }
+  }
+  .button-box {
+    float: right;
+    height: 48px;
+    text-align: right;
+    line-height: 48px;
+    .a {
+      float: right;
+      margin-right: 20px;
+      cursor: pointer;
+      .icon {
+        font-size: 20px;
+      }
+      .text {
+        margin-left: 8px;
+        font-size: 12px;
+      }
+    }
+    .a:last-child {
+      margin-left: 0;
+    }
+    .keyong {
+      color: rgba(153, 153, 153, 1);
+      &:hover {
+        .icon {
+          @extend .fc-blue;
+          color: rgba(153, 153, 153, 1);
+        }
+        .text {
+          @extend .fc-blue;
+          color: rgba(153, 153, 153, 1);
+        }
+      }
+    }
+    .bukeyong {
+      color: rgba(201, 201, 201, 1);
+      cursor: not-allowed;
+      .icon {
+        color: rgba(201, 201, 201, 1);
+      }
+      .text {
+        color: rgba(201, 201, 201, 1);
+      }
+    }
+  }
+}
+
+//分页样式重置
+.pagination-wrap {
+  > ul {
+    float: right;
+    margin: 20px;
+  }
+  .active {
+    background-color: #66c1e3;
+  }
+  .disabled {
+    vertical-align: middle;
+  }
+}
+
+.subtab-wrap {
+  color: #666;
+  border-bottom: solid 1px #ececec;
+  .title {
+    font-size: 14px;
+    padding: 10px 0 10px 26px;
+  }
+  .tabs-wrap {
+    @include clearfix;
+    .tab {
+      cursor: pointer;
+      float: left;
+      width: 156px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 14px;
+      text-align: center;
+      &.active {
+        background: rgba(102, 193, 227, 0.11);
+      }
+    }
+  }
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  //-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.2);
+  //-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.5);
+}
+
+
+/*公用echarts box*/
+.public-echarts {
+  float: left;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+//全局样式
+.page-container {
+  padding: 0 10px;
+  position: relative;
+}
+
+.query-bar {
+  text-align: right;
+  height: 40px;
+  padding: 0 10px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+
+.pag-wrap {
+  text-align: right;
+  padding: 18px 0;
+}
+
+.operation-bar {
+  height: 41px;
+  border-bottom: 1px solid;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.icon-base {
+  display: inline-block;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+}
+
+// 健康度
+.icon-health {
+  @extend .icon-base;
+}
+
+.icon-health-normality {
+  background-image: url(/static/images/health_normality.png);
+}
+
+.icon-health-intolerance {
+  background-image: url(/static/images/health_intolerance.png);
+}
+
+.icon-health-healthy {
+  background-image: url(/static/images/health_healthy.png);
+}
+
+//用户体验
+.icon-apdex {
+  @extend .icon-base;
+  width: 14px;
+  height: 14px;
+  margin-bottom: 2px;
+}
+
+.icon-apdex-normal {
+  background-image: url(/static/images/apdex_normal.png);
+}
+
+.icon-apdex-slow {
+  background-image: url(/static/images/apdex_slow.png);
+}
+
+.icon-apdex-very-slow {
+  background-image: url(/static/images/apdex_very_slow.png);
+}
+.icon-apdex-error {
+  background-image: url(/static/images/apdex_error.png);
+}
+
+.icon-snapshot {
+  @extend .icon-base;
+  width: 14px;
+  height: 14px;
+  margin-bottom: 2px;
+}
+
+.icon-snapshot-error {
+  background-image: url(/static/images/snapshot_error.png);
+}
+.icon-snapshot-component {
+  background-image: url(/static/images/snapshot_component.png);
+}
+.icon-snapshot-server {
+  background-image: url(/static/images/snapshot_server.png);
+}
+.icon-snapshot-database {
+  background-image: url(/static/images/snapshot_database.png);
+}
+
+

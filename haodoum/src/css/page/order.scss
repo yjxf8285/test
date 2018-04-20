@@ -1,0 +1,782 @@
+// Core variables and mixins
+@import "../base";
+@import "../components/dialog";
+@import "../components/myselect";
+
+
+
+body {
+  background: #f8f8f8;
+}
+
+.color-green {
+  color: #8ac64e;
+}
+
+.color-gray {
+  color: $gray-m;
+}
+
+.order-lists {
+  .order-list {
+    margin-bottom: 8px;
+    background: $white;
+    .t {
+      height: 40px;
+      font-size: 14px;
+      color: $gray-d;
+      margin-left: 10px;
+      padding-right: 10px;
+      @include border-b;
+      @include flex-display;
+      @include flex-justify-content(space-between);
+      @include flex-align-items(center);
+      a {
+        @include flex-display;
+        @include flex-align-items(center);
+        img {
+          height: 13px;
+          margin-left: 5px;
+          display: block;
+        }
+      }
+      .t-r {
+        color: #8ac64e;
+        &.color-gray-l {
+          color: $gray-l;
+        }
+      }
+    }
+    .c {
+      padding: 10px;
+      height: 65px;
+      @include border-b;
+      @include flex-display;
+      @include flex-justify-content(space-between);
+      .goods-img {
+        width: 65px;
+        position: relative;
+        height: 65px;
+        @include background-image("../../images/ui/common/mine_default_logo.png");
+        background-size: 100% 100%;
+        display: block;
+        margin-right: 10px;
+        span {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          color: $white;
+          display: block;
+          width: 100%;
+          height: 14px;
+          font-size: 10px;
+          text-align: center;
+          line-height: 14px;
+          background: #8ac64e;
+          opacity: .8;
+        }
+      }
+      .c-r {
+        height: 65px;
+        @include flex;
+        @include flex-display;
+        @include flex-justify-content(space-between);
+        @include flex-align-items(center);
+        .c-r-l {
+          @include flex;
+          .goods-price {
+            font-size: 15px;
+            height: 32px;
+            line-height: 32px;
+          }
+          .goods-time {
+            color: $gray-l;
+            font-size: 12px;
+          }
+        }
+        .right-arrow {
+          height: 13px;
+        }
+      }
+    }
+    .b {
+      height: 40px;
+      @include flex-display;
+      @include flex-justify-content(flex-end);
+      @include flex-align-items(center);
+      a {
+        width: 70px;
+        height: 25px;
+        color: #999;
+        font-size: 13px;
+        text-align: center;
+        line-height: 25px;
+        margin-right: 10px;
+        @include border-radius(#999, 4px, 4px);
+        &.color-lv {
+          color: #8ac64e;
+          @include border-radius(#8ac64e, 4px, 4px);
+        }
+      }
+    }
+  }
+}
+
+//订单详情
+.order-detail {
+  .order-detail-title {
+    padding: 0 10px;
+    background: #fff;
+    @include flex-display;
+    @include flex-align-items(center);
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    div {
+      .detail-title-txt {
+        font-size: 14px;
+      }
+      .detail-title-explain {
+        font-size: 11px;
+        color: $gray-l;
+      }
+    }
+  }
+
+  .order-detail-process {
+    height: 65px;
+    @include flex-display;
+    @include flex-justify-content(center);
+    .detail-process {
+      position: relative;
+      width: 25%;
+      height: 60px;
+      padding-top: 5px;
+      p {
+        display: block;
+        height: 18px;
+        font-size: 12px;
+        color: #8ac64e;
+        @include flex-center;
+        img {
+          width: 7px;
+          height: 7px;
+          display: inline-block;
+        }
+        &.time {
+          font-size: 10px;
+        }
+      }
+      .background-line {
+        position: absolute;
+        top: 0;
+        right: 60%;
+        width: 80%;
+        height: 32.5px;
+        @include border-b(#8ac64e);
+      }
+      &.color-gray-l {
+        p {
+          color: $gray-l;
+          img {
+            width: 3px;
+            height: 3px;
+          }
+        }
+        .background-line {
+          @include border-b(#d9d9d9);
+        }
+      }
+    }
+  }
+
+  .order-detail-content {
+    background: $white;
+    .order-detail-c {
+      margin: 0 10px;
+      padding-bottom: 15px;
+      @include clearfix;
+      @include border-b;
+      .order-detail-price {
+        margin-top: 15px;
+        @include flex-display;
+        @include flex-justify-content(space-between);
+        .name {
+          color: $gray-m;
+          font-size: 13px;
+        }
+        .count {
+          color: $gray-m;
+          font-size: 13px;
+        }
+        .price {
+          font-size: 13px;
+          margin-left: 40px;
+        }
+      }
+      .order-detail-coupon {
+        @extend .order-detail-price;
+        padding-top:15px;
+        @include border-t;
+      }
+    }
+    .order-detail-other {
+      @extend .order-detail-c;
+      border: none;
+      background: none;
+    }
+    .order-detail-total {
+      padding: 0 10px;
+      height: 40px;
+      @include border-t;
+      @include flex-display;
+      @include flex-align-items(center);
+      @include flex-justify-content(space-between);
+      .l {
+        color: $gray-l;
+        font-size: 12px;
+      }
+      .r {
+        color: #ff6000;
+        font-size: 14px;
+        span {
+          font-size: 13px;
+          &.total-price {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .order-detail-bottom {
+    margin-top: 8px;
+    color: $gray-l;
+    background: $white;
+    .order-detail-b-title {
+      padding: 0 10px;
+      height: 40px;
+      @include border-b;
+      @include flex-display;
+      @include flex-align-items(center);
+      @include flex-justify-content(space-between);
+    }
+    .order-detail-b-content {
+      padding: 5px 10px 63px 10px;
+      font-size: 12px;
+      p {
+        margin-top: 10px;
+      }
+    }
+  }
+  .order-detail-button {
+    height: 45px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #8ac64e;
+    color: $white;
+    font-size: 15px;
+    @include flex-center;
+    span {
+      font-size: 13px;
+    }
+    &.cancel {
+      background: $gray-m;
+    }
+    a {
+      width: 50%;
+      height: 45px;
+      @include flex-center;
+      &.go-comment {
+        background: $gray-l;
+      }
+    }
+  }
+}
+
+.is-phone-bg {
+  background: $base-color;
+  opacity: .5;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.is-phone {
+  display: none;
+  position: fixed;
+  left: 15px;
+  right: 15px;
+  bottom: 10px;
+  .phone-t {
+    background: $white;
+    @include radius(4px);
+    margin-bottom: 10px;
+    p {
+      height: 45px;
+      font-size: 15px;
+      @include flex-center;
+      &:last-child {
+        @include border-t;
+      }
+    }
+  }
+  .phone-b {
+    height: 45px;
+    background: $white;
+    @include radius(4px);
+    color: $gray-l;
+    font-size: 15px;
+    @include flex-center;
+  }
+}
+
+.order-confirm {
+  padding-bottom: 45px;
+  .delivery {
+    height: 45px;
+    @include border-b;
+    background: $white;
+    @include flex-display;
+    @include flex-justify-content(center);
+    div {
+      width: 50%;
+      height: 45px;
+      @include flex-center;
+      @include border-r;
+      &:last-child {
+        border: none;
+        background: none;
+      }
+      span {
+        font-size: 14px;
+        color: $gray-l;
+      }
+      img {
+        width: 14px;
+        height: 14px;
+        margin-right: 10px;
+      }
+    }
+  }
+  .my-addr {
+    background: $white;
+    .my-addr-t {
+      padding: 12px 10px 17px 10px;
+      font-size: 15px;
+      position: relative;
+      @include border-b;
+      span {
+        margin-right: 40px;
+      }
+      div {
+        margin-top: 10px;
+        @include flex-display;
+        @include clearfix;
+        p {
+          line-height: 18px;
+          font-size: 13px;
+          color: $gray-m;
+          @include flex;
+        }
+      }
+      .right-arrow {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        margin-top: -6.5px;
+        width: 7px;
+        height: 13px;
+      }
+    }
+  }
+  .go-home-time {
+    height: 40px;
+    font-size: 13px;
+    padding: 0 10px;
+    background: $white;
+    @include flex-display;
+    @include flex-justify-content(space-between);
+    @include flex-align-items(center);
+    span {
+      color: $gray-m;
+      height: 40px;
+      @include flex-display;
+      @include flex-align-items(center);
+      &.time {
+        @include background-image("../../images/ui/common/right_arrow.png");
+        background-size: 7px 13px;
+        background-position: right center;
+        padding-right: 16px;
+        color: #8ac64e;
+      }
+    }
+  }
+  .coupon {
+    margin-top: 8px;
+    @extend .go-home-time;
+    span {
+      img {
+        width: 13px;
+        height: 13px;
+        margin-left: 5px;
+      }
+    }
+  }
+  .order-detail {
+    margin-top: 8px;
+    .order-detail-total-new{
+      padding: 0 10px;
+      height: 40px;
+      @include border-t;
+      @include flex-display;
+      @include flex-align-items(center);
+      @include flex-justify-content(space-between);
+      .l {
+        color: $gray-m;
+        font-size: 13px;
+      }
+      .r {
+        font-size:13px;
+      }
+    }
+    .order-detail-total{
+      .l{
+        color:$gray-m;
+        font-size:13px;
+      }
+      .r{
+        color:$base-color;
+      }
+    }
+  }
+  .remarks {
+    @extend .go-home-time;
+    margin-top: 8px;
+    input {
+      text-align: right;
+      width: 200px;
+      background: none;
+      border: none;
+    }
+  }
+}
+
+.order-confirm-btn {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 45px;
+  z-index:5;
+  @include flex-display;
+  .payment-price{
+    height: 45px;
+    background:$gray-d;
+    opacity: .3;
+    color:$white;
+    font-size:11px;
+    line-height:45px;
+    padding-left:15px;
+    @include flex;
+    span{
+      font-size:13px;
+      &.price{
+        font-size:17px;
+      }
+    }
+  }
+  .payment {
+    width: 90px;
+    height: 45px;
+    background:#8ac64e;
+    color:$white;
+    font-size:15px;
+    @include flex-center;
+  }
+}
+.mine-address {
+  display:none;
+  position:fixed;
+  left:0;
+  top:45px;
+  right:0;
+  bottom:0;
+  background:#f8f8f8;
+  overflow: auto;
+  z-index: 10;
+  .my-addr {
+    background: $white;
+    margin-bottom: 5px;
+    .my-addr-t {
+      padding-top: 12px;
+      padding-bottom: 17px;
+      margin: 0 10px;
+      font-size: 15px;
+      @include border-b;
+      span {
+        margin-right: 40px;
+      }
+      div {
+        margin-top: 10px;
+        @include flex-display;
+        @include clearfix;
+        p {
+          line-height: 18px;
+          @include flex;
+        }
+        span {
+          &.default {
+            color: #8ac64e;
+            text-indent: -7.5px;
+            line-height: 18px;
+            margin: 0;
+          }
+        }
+      }
+    }
+    .my-addr-b {
+      height: 40px;
+      @include flex-display;
+      @include flex-justify-content(flex-end);
+      @include flex-align-items(center);
+      a {
+        margin-right: 20px;
+        margin-left: 10px;
+        height: 40px;
+        font-size: 14px;
+        @include flex-display;
+        @include flex-align-items(center);
+        img {
+          margin-right: 7px;
+          width: 14px;
+          height: 14px;
+        }
+      }
+      .delete-address {
+        @extend a;
+      }
+    }
+  }
+}
+
+
+
+
+//评论
+.publish{
+  font-size:14px;
+  color:#8ac64e;
+}
+.order-comment{
+  .t{
+    padding:0 10px 9px 10px;
+    background:$white;
+    @include clearfix;
+    div{
+      margin-top:14px;
+      margin-bottom: 6px;
+      font-size:13px;
+      color:$gray-m;
+      @include flex-display;
+      @include flex-align-items(center);
+      p{
+        @include flex-display;
+        @include flex;
+        span{
+          width:15px;
+          height:15px;
+          margin-left:10px;
+          @include background-image("../../images/ui/order/start.png");
+          background-size:100% 100%;
+          &.curr{
+            @include background-image("../../images/ui/order/start_curr.png");
+            background-size:100% 100%;
+          }
+        }
+      }
+    }
+  }
+  .c{
+    padding:0 10px 15px 10px;
+    margin-top:10px;
+    background:$white;
+    @include clearfix;
+    .comment-title{
+      font-size:14px;
+      margin-top:15px;
+      margin-bottom:5px;
+    }
+    .like{
+      fond-size:13px;
+      color:$gray-l;
+      margin-top:10px;
+      @include flex-display;
+      @include flex-justify-content(space-between);
+      .is-like{
+        width:43px;
+        height:25px;
+        @include background-image("../../images/ui/order/no_like.png");
+        background-size:43px 25px;
+        &.curr{
+          @include background-image("../../images/ui/order/like.png");
+          background-size:43px 25px;
+        }
+      }
+    }
+  }
+  .b{
+    height:60px;
+    padding:10px;
+    margin-top:10px;
+    background:$white;
+    textarea{
+      width:100%;
+      height:60px;
+      font-size:12px;
+      color:#ccc;
+      border:none;
+      @include radius(0);
+    }
+  }
+  .comment-btn{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    height:45px;
+    background: #8ac64e;
+    color: #fff;
+    font-size: 15px;
+    @include flex-center;
+  }
+}
+
+
+.order-payment{
+  .o-p-title{
+    height:40px;
+    line-height:40px;
+    background:$white;
+    text-align:center;
+    font-size:14px;
+    color:$gray-d;
+    span{
+      color:#8ac64e;
+    }
+  }
+  .t{
+    height:40px;
+    line-height:40px;
+    background:$white;
+    margin-top:8px;
+    font-size:13px;
+    color:$gray-m;
+    padding:0 10px;
+  }
+  .payment-method{
+    background:$white;
+    margin-top:8px;
+    .payment-method-t{
+      height:40px;
+      padding:0 10px;
+      color:$gray-m;
+      font-size:15px;
+      @include border-b;
+      @include flex-display;
+      @include flex-align-items(center);
+      span{
+        color:$base-color;
+      }
+    }
+    .payment-method-c{
+      height:40px;
+      padding:0 10px;
+      color:$gray-d;
+      font-size:14px;
+      @include border-b;
+      @include flex-display;
+      @include flex-justify-content(space-between);
+      @include flex-align-items(center);
+      div{
+        @include flex-display;
+        @include flex-align-items(center);
+        img{
+          width:17.5px;
+          height:17.5px;
+          margin-right:11px;
+        }
+      }
+      span{
+        width:15px;
+        height:15px;
+        @include background-image("../../images/ui/order/order_no_selected.png");
+        background-size:15px 15px;
+        &.curr{
+          @include background-image("../../images/ui/order/order_selected.png");
+          background-size:15px 15px;
+        }
+      }
+    }
+    .payment-method-b{
+      @extend .payment-method-c;
+      border:none;
+      background:none;
+    }
+  }
+}
+.order-payment-btn{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  height:45px;
+  background: #8ac64e;
+  color: #fff;
+  font-size: 15px;
+  @include flex-center;
+}
+
+
+
+
+
+
+//没有订单
+.my-no-order {
+  p {
+    text-align: center;
+    margin-top: 60px;
+    img {
+      width: 70px;
+      height: 70px;
+    }
+    &.txt {
+      margin-top: 15px;
+      color: $gray-l;
+      font-size: 13px;
+    }
+    &.go-buy{
+      margin-top: 15px;
+      @include flex-center;
+      a{
+        width:80px;
+        height:30px;
+        background:#8ac64e;
+        color:$white;
+        font-size:14px;
+        @include radius(4px);
+        @include flex-center;
+      }
+    }
+  }
+}

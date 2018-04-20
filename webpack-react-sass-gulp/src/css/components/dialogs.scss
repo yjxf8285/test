@@ -1,0 +1,66 @@
+@import "../core/mixin";
+
+
+.dialogs-mask{
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  left: 0;
+  top:0;
+  z-index: 9999;
+}
+.dialogs-wrap{
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top:0;
+  position: fixed;
+  z-index: 99999;
+  @include flex-center;
+}
+.dialogs-inner{
+  @include flex-display;
+  @include flex-justify-content(center);
+  @include flex-direction(column);
+  box-sizing: border-box;
+}
+.dialogs-bd{
+  text-align: center;
+  height: 80px;
+  width: 270px;
+  background: #fff;
+  line-height: 80px;
+  @include border-b();
+
+}
+.common-bd{
+  text-align: center;
+  background: #141414;
+  opacity: 0.9;
+  line-height: 40px;
+  padding:0 17px;
+  height: 40px;
+  color:#fff;
+}
+.dialogs-Ft{
+  @include flex-display;
+  background: #fff;
+  width: 270px;
+  height: 40px;
+  span{
+    text-align: center;
+    display: block;
+    line-height: 40px;
+    @include flex(1);
+    font-size: 15px;
+  }
+}
+.dialogs-cancel{
+  box-sizing: border-box;
+  @include border-r();
+  color:#999;
+}
+.dialogs-sure{
+  color:#141414;
+}

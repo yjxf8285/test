@@ -1,0 +1,186 @@
+@import "../base";
+@import "../components/dialog";
+
+
+//登录页
+.userenter-wrap{
+
+  @include flex-display;
+  @include flex-direction(column);
+  @include flex-align-items(center);
+  margin: 0 25px;
+  @at-root .userenter-logo{
+    @include background-image('../../images/ui/user-enter/login_logo.png');
+    width: 162px;
+    height: 50px;
+    background-size: cover;
+    margin:36px 0 40px 0;
+  }
+  input{
+    border-radius: 30px;
+    width: 100%;
+    height: 38px;
+    display: block;
+    box-sizing: border-box;
+    padding:0 20px;
+    font-size: 14px;
+    color: #999;
+    border: 1px solid $primary-bg;
+    -webkit-appearance: none;
+    outline: none;
+
+
+  }
+}
+.psw-wrap{
+  margin: 19px 0 40px 0;
+  width: 100%;
+  position: relative;
+
+
+
+   .login-open{
+    @include background-image('../../images/ui/user-enter/eyes_open.png');
+     background-size: cover;
+  }
+  @at-root .pswBtn{
+    @include background-image('../../images/ui/user-enter/eyes_close.png');
+    width: 17px;
+    height: 16px;
+    position: absolute;
+    display: block;
+    right: 10px;
+    background-size: cover;
+    top:50%;
+    margin-top:-8px;
+  }
+}
+
+.userenter-btn{
+  width: 100%;
+  border-radius: 30px;
+  height: 38px;
+  background: $primary-bg;
+  text-align: center;
+  line-height: 38px;
+  color: #fff;
+  font-size: 15px;
+  display: block;
+
+}
+.userenter-url{
+  @include flex-display;
+  margin-top: 15px;
+  @include flex-justify-content(space-between);
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  a{
+    color: #333;
+    font-size: 13px;
+    display: block;
+  }
+}
+
+//注册页
+.yzm-wrap{
+  padding: 15px 0;
+  position: relative;
+  width: 100%;
+  i{
+    position: absolute;
+    top:15px;
+    right: 0;
+    height:38px;
+    width: 88px;
+    font-style: normal;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 38px;
+
+    font-size: 13px;
+    color: #fff;
+    background:$primary-bg;
+
+  }
+  @at-root .psw-tips{
+    padding: 7px 0 20px 0;
+    color: #666;
+    font-size: 12px;
+    width: 100%;
+    padding-left: 20px;
+    box-sizing: border-box;
+
+  }
+}
+.register-wrap{
+  .psw-wrap{
+    margin: 0;
+  }
+}
+
+.register-agree{
+  @include flex-display;
+  @include flex-align-items(center);
+  width: 100%;
+  margin-bottom:38px;
+  @at-root .tick-btn{
+    @include background-image('../../images/ui/user-enter/tick_ok.png');
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin-right: 6px;
+    background-size: cover;
+  }
+  .active{
+    @include background-image('../../images/ui/user-enter/tick_no.png');
+    background-size: cover;
+  }
+  p{
+    color:#333;
+    font-size: 14px;
+  }
+}
+
+.full-h{
+  overflow: hidden;
+  height: 100%;
+}
+
+
+//重置密码
+.reset-step1,
+.reset-step2,
+.reset-step3{
+ padding-top:50px;
+}
+
+.reset-step1{
+  input{
+    margin-bottom: 40px;
+  }
+}
+.reset-step2{
+  .yzm-wrap{
+    padding-bottom:40px;
+
+  }
+}
+.reset-step3{
+  .psw-wrap{
+    margin-bottom: 7px;
+  }
+  .psw-tips{
+    padding-bottom:21px;
+  }
+}
+
+.tick-ok{
+  display: block;
+  @include background-image('../../images/ui/user-enter/reg_success.png');
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+  margin-right: 7px;
+}

@@ -1,0 +1,78 @@
+<script type="text/template" id="tpl-con">
+    <div class="left">
+        <%if(index!=0){%>
+        <ico class="icon iconfont menu-btn on" title="收起栏目">&#xe600;</ico>
+        <% }else{%>
+        <span class="left company-logo"><img src="/img/index/logo-leyou.gif" alt=""></span>
+        <%}%>
+        <a href="<%=BASE_PATH%>/" class="topmenu-btn">首页</a>
+        <a href="<%=BASE_PATH%>/html/data-access/file.html" class="topmenu-btn">DMP</a>
+        <a href="<%=BASE_PATH%>/html/audience/manage.html" class="topmenu-btn">市场营销</a>
+        <a href="<%=BASE_PATH%>/html/data-lnsight/comprehensive-analysis.html" class="topmenu-btn">数据洞察</a>
+    </div>
+    <ul class="rightbtn-wrap">
+        <li>
+            <span class="icon iconfont r-btn showuser-btn" title="搜索用户">&#xe62d;</span>
+        </li>
+        <li>
+            <span class="icon iconfont r-btn dropdown-button" data-activates="setup-list" data-beloworigin="true"
+                  data-constrainwidth="false" title="系统设置">&#xe636;</span>
+            <ul id="setup-list" class="dropdown-content">
+                <li><i class="icon iconfont">&#xe635;</i><a href="#">用户注销</a></li>
+                <li><i class="icon iconfont">&#xe633;</i><a href="#">修改密码</a></li>
+                <li><i class="icon iconfont">&#xe632;</i><a href="#">退出登录</a></li>
+            </ul>
+        </li>
+        <li>
+            <span class="corner"></span>
+            <span class="icon iconfont r-btn dropdown-button" title="后台任务" data-activates="status-list" data-beloworigin="true"
+                  data-constrainwidth="false">&#xe62e;</span>
+            <div id="status-list" class="dropdown-content">
+                <ul>
+                    <li class="clearfix unfinished">
+                        <div class="left">
+                            <div>文件导入</div>
+                            <div class="detail">03-25 18:49 开始</div>
+                        </div>
+                        <div class="right">
+                            <i class="icon iconfont">&#xe638;</i>
+                        </div>
+                    </li>
+                    <li class="clearfix unfinished">
+                        <div class="left">
+                            <div>文件导入</div>
+                            <div class="detail">03-25 18:49 开始</div>
+                        </div>
+                        <div class="right">
+                            <i class="icon iconfont">&#xe638;</i>
+                        </div>
+                    </li>
+                    <li class="clearfix finished">
+                        <div class="left">
+                            <div>文件导入</div>
+                            <div class="detail">03-25 18:49 <span class="over">结束</span></div>
+                        </div>
+                        <div class="right">
+                            <i class="icon iconfont over">&#xe638;</i>
+                        </div>
+                    </li>
+                </ul>
+                <div class="seeall"><a href="<%=BASE_PATH%>/html/data-supervise/quality-report.html">查看全部</a></div>
+            </div>
+        </li>
+        <li>
+            <input type="text" class="validate search-input dropdown-button" data-activates="search-list"
+                   data-beloworigin="true" placeholder="请输入关键字搜索活动和人群">
+            <span class="icon iconfont r-btn search-ico show" title="全局搜索">&#xe60b;</span>
+            <div id="search-list" class="dropdown-content">
+                <div class="nodata" style="display: none">
+                    <ico class="icon iconfont">&#xe604;</ico>
+                    <span>无搜索结果</span>
+                </div>
+                <ul class="search-feeds">
+
+                </ul>
+            </div>
+        </li>
+    </ul>
+</script>

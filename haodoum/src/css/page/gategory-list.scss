@@ -1,0 +1,64 @@
+@import "../base";
+
+.btn-wrap {
+  @include flex-center;
+  li{
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    cursor:pointer;
+    border-bottom:solid 1px #ccc;
+    &.cur{
+      background: #eee;
+      border-bottom: solid 1px red;
+    }
+  }
+
+}
+
+.good-list-warp {
+  li {
+    @include border-b();
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    position: relative;
+    .goods-img {
+      @include scale-block(70%);
+    }
+    .goods-tit {
+      color: #333;
+      font-size: 15px;
+      margin-top: 12px;
+      margin-left: 15px;
+    }
+    .goods-fnwarp {
+      margin: 15px 15px 0 15px;
+      .l {
+        margin-top: 10px;
+        line-height: 15px;
+        font-size: 15px;
+        float: left;
+        color: #ff5a00;
+      }
+      .r {
+        float: right;
+      }
+    }
+    .tty-ico {
+      position: absolute;
+      width: 62px;
+      height: 30px;
+      top: 15px;
+      left: 0;
+      background: url("../../img/ui/common/tt_you.png") no-repeat 0 50%;
+      background-size: 62px 30px;
+    }
+    .add-cart {
+      width: 29px;
+      height: 29px;
+      background: url("../../img/ui/common/ico_tianjiagouwuche@2x.png") no-repeat 0 50%;
+      background-size: 29px;
+    }
+  }
+}

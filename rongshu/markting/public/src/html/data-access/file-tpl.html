@@ -1,0 +1,121 @@
+<script charset="UTF-8" type="text/template" id="tpl-content">
+<div class="file">
+    <header class="page-body-header">
+        <div class="text-box">
+            <span class="title">文件接入</span>
+            <span class="text">
+                <span class="color">已接入累计数据&nbsp;</span>210,988,334<span class="color">&nbsp;条，最后一次上传时间&nbsp;</span>2016-5-12&nbsp;14:07
+            </span>
+        </div>
+        <div class="button-box icon iconfont"><a class="a keyong" id="goIndex" href="<%=BASE_PATH%>/" title="返回首页">&#xe644;</a></div>
+    </header>
+    <div class="content">
+        <div class="download-area">
+            <div class="area-title">文件模板下载</div>
+            <div class="download-box">
+                <div class="box-title">预置模板下载</div>
+                <div class="list-but-box">
+                    <ul class="ul" id="list-but-ul">
+                        <li class="li">
+                            <input type="checkbox" class="filled-in" id="file-download1" checked="checked"/>
+                            <label for="file-download1">联系人信息</label>
+                        </li>
+                        <li class="li">
+                            <input type="checkbox" class="filled-in" id="file-download2" checked="checked"/>
+                            <label for="file-download2">会员信息</label>
+                        </li>
+                        <li class="li">
+                            <input type="checkbox" class="filled-in" id="file-download3" checked="checked"/>
+                            <label for="file-download3">交易记录</label>
+                        </li>
+                        <li class="li">
+                            <input type="checkbox" class="filled-in" id="file-download4" checked="checked"/>
+                            <label for="file-download4">客服记录</label>
+                        </li>
+                        <li class="li">
+                            <input type="checkbox" class="filled-in" id="file-download5" checked="checked"/>
+                            <label for="file-download5">产品目录</label>
+                        </li>
+                        <li class="li">
+                            <input type="checkbox" class="filled-in" id="file-download6" checked="checked"/>
+                            <label for="file-download6">POS流水</label>
+                        </li>
+                        <li class="li">
+                            <input type="checkbox" class="filled-in" id="file-download7" checked="checked"/>
+                            <label for="file-download7">联系人标签</label>
+                        </li>
+                        <li class="li">
+                            <input type="checkbox" class="filled-in" id="file-download8" checked="checked"/>
+                            <label for="file-download8">线下活动记录</label>
+                        </li>
+                    </ul>
+                    <a id="download-templet" class="waves-effect waves-light btn but" href="../../download/文件接入预置模板.zip">下载（zip）</a>
+                </div>
+            </div>
+        </div>
+        <div class="upload-area">
+            <div class="area-title">数据文件上传</div>
+            <div class="upload-box">
+                <div class="first-box">
+                    <div class="box-title">第一步&nbsp;选择上传文件</div>
+                    <div class="files-box init" id="files">
+                        <div class="select-box">
+                            <input id="upload-file" class="file-input" type="file" placeholder="选择文件"/>
+                        </div>
+                        <div class="loading-box">
+                            <div class="cloud">
+                                <div class="preloader-wrapper big active">
+                                    <div class="spinner-layer spinner-blue-only">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="gap-patch">
+                                            <div class="circle"></div>
+                                        </div>
+                                        <div class="circle-clipper right">
+                                            <div class="circle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text">文件上传中...</div>
+                        </div>
+                        <div class="success-box">
+                            <div class="ico icon iconfont">&#xe623;</div>
+                            <div class="text">文件加载成功！</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-box">
+                    <div class="box-title">第二步&nbsp;核对上传数据摘要</div>
+                    <ul class="data-area">
+                        <li class="box">
+                            <div class="pub-title">主题数据：</div>
+                            <div class="pub-text main" id="second-main"></div>
+                        </li>
+                        <li class="box">
+                            <div class="pub-title">数据条数：</div>
+                            <div class="pub-text amount" id="second-amount"></div>
+                        </li>
+                        <li class="box">
+                            <div class="pub-title">未识别属性：</div>
+                            <div class="pub-text undefined">
+                                <span id="second-undefined-num" class="num"></span>
+                                <span id="second-undefined-doubt" class="ico icon iconfont">&#xe674;</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="third-box">
+                    <div class="box-title">第三步&nbsp;设置标签（可选）</div>
+                    <div class="block-area" id="block-area">
+                        <div id="block-box"></div>
+                        <input id="add-lable" class="input" type="text" placeholder="请输入标签名称"/>
+                    </div>
+                </div>
+                <div class="upload-but-box"><div class="waves-effect waves-light btn but close" id="upload-but">开始上传</div></div>
+            </div>
+        </div>
+    </div>
+</div>
+</script>

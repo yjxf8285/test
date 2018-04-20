@@ -1,0 +1,120 @@
+@import "../base";
+.padding-wrap{
+  padding:0 15px;
+}
+.padding-input{
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border:1px solid #ccc;
+  padding-left:10px;
+  font-size: 14px;
+  color:#999;
+  margin-top:12px;
+  height: 40px;
+  outline: 0;
+}
+.padding-btn{
+  height: 40px;
+  margin-top:15px;
+  color:#fff;
+  font-size: 15px;
+  background: #000;
+  width: 100%;
+  outline: none;
+  border: 0;
+}
+.padding-money-num{
+  margin-top: 40px;
+  ul{
+    @include flex-display;
+    @include flex-justify-content(space-between);
+  }
+  li{
+    width: 80px;
+    height: 40px;
+    background: #c8af7d;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 12px;
+    color: #fff;
+
+  }
+}
+
+//选择支付方式
+.padding-price{
+  margin-top:44px;
+  text-align: center;
+  @at-root .padding-price-hd{
+    color:#141414;
+    font-size: 15px;
+    display: inline-block;
+  }
+  @at-root .padding-price-bd{
+    vertical-align:-1px;
+    font-size: 24px;
+    color:#ff5a00;
+    display: inline-block;
+  }
+  @at-root .padding-price-ft{
+    vertical-align:-3px;
+    font-size: 36px;
+    color: #ff5a00;
+    display: inline-block;
+  }
+  .tete-price{
+    margin-top: 12px;
+    color:#999;
+    font-size: 12px;
+  }
+}
+.padding-select{
+  margin-top: 44px;
+  p{
+    color:#333;
+    font-size: 15px;
+  }
+  .padding-select-type{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    @include border(#ccc);
+
+  }
+}
+.padding-zhifu{
+  height: 40px;
+  width: 100%;
+  @include flex-display;
+  @include flex-align-items(center);
+
+  position: relative;
+  .zhifu-icon{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-left:10px;
+    margin-right: 7px;
+  }
+  span{
+    color:#333;
+    font-size: 14px;
+  }
+  .tete-tick{
+    position: absolute;
+    right: 10px;
+    top:13px;
+  }
+}
+.zhifubao-icon{
+  @include background-image('/m/img/ui/common/zhifubao.png');
+  background-size:cover;
+}
+.wechat-icon{
+  @include background-image('/m/img/ui/common/weixin.png');
+  background-size:cover;
+}
+//common border
+.tete-border-bottom{
+  @include border-b(#ccc);
+}

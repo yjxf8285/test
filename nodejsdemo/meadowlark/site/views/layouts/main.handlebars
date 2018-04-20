@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>只要不是TODO</title>
+    <link rel="stylesheet" href="/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    {{{_sections.head}}}
+    {{#if showTests}}
+        <link rel="stylesheet" href="/vendor/mocha.css">
+    {{/if}}
+</head>
+<body>
+<header>
+    <!--<img src="/img/tx2.jpg" alt="logo">-->
+</header>
+{{{body}}}
+<script src="/vendor/jq.js"></script>
+<script src="/vendor/bootstrap.min.js"></script>
+{{#if showTests}}
+    <div id="mocha"></div>
+    <script src="/vendor/mocha.js"></script>
+    <script src="/vendor/chai.js"></script>
+    <script>
+        mocha.ui('tdd');
+        var assert = chai.assert;
+    </script>
+    <script src="/qa/test-global.js"></script>
+    {{#if pageTestScript}}
+        <script src="{{pageTestScript}}"></script>
+    {{/if}}
+    <script>
+
+        mocha.run();
+    </script>
+{{/if}}
+{{{_sections.jquery}}}
+</body>
+</html>

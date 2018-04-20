@@ -1,0 +1,197 @@
+// Core variables and mixins
+@import "../core/variable";
+@import "../core/mixin";
+@import "../base";
+
+
+.hide{
+  display:none;
+}
+
+
+
+.login-content {
+  padding: 0 15px;
+  .inp {
+    height: 60px;
+    border-bottom:1px solid #d9d9d9;
+    position: relative;
+    span {
+      position: absolute;
+      z-index: 11;
+      bottom: 10px;
+      font-size:14px;
+      height: 20px;
+      line-height:20px;
+      background:#fff;
+      color: #ccc;
+      width:70%;
+      -webkit-transition: bottom .5s;
+      &.hov {
+        font-size:12px;
+        bottom: 35px;
+        color: #c96;
+      }
+    }
+    input {
+      position: absolute;
+      z-index: 10;
+      bottom: 10px;
+      padding: 0;
+      font-size:14px;
+      margin: 0;
+      width:70%;
+      border: none;
+      background: none;
+      outline: none;
+      height: 20px;
+      line-height:20px;
+      color: $gray-d;
+    }
+
+
+
+
+    .show-password {
+      position: absolute;
+      z-index: 11;
+      bottom: 10px;
+      right: 0;
+      height:14px;
+    }
+  }
+  .go-check{
+    margin-top:12px;
+    height: 14px;
+    position: relative;
+    .change{
+      position: absolute;
+      display:inline-block;
+      top: 3px;
+      padding: 0;
+      margin: 0;
+      left:0;
+      width:12px;
+      height:12px;
+      @include background-image('/m/img/ui/login/change.png');
+      &.curr{
+        @include background-image('/m/img/ui/login/change_curr.png');
+      }
+    }
+    .check-txt{
+      left:15px;
+      position:absolute;
+      bottom:0;
+      height:14px;
+
+      font-size:12px;
+      color:$gray-d;
+      a{
+        border-bottom:1px solid $gray-d;
+      }
+    }
+  }
+}
+
+.login-btn {
+  height: 37px;
+  line-height: 37px;
+  text-align: center;
+  background: #141414;
+  color: $white;
+  margin: 15px;
+  font-size:15px;
+}
+
+.reset-pass{
+  padding:0 15px;
+  text-align:right;
+  font-size:12px;
+  color:$gray-d;
+}
+
+.regiest {
+  .reg-img{
+    width:100%;
+    height:55px;
+  }
+  .get-verification{
+    position:absolute;
+    width:75px;
+    height:30px;
+    border:1px solid $gray-d;
+    bottom:10px;
+    font-size:13px;
+    right:0;
+    line-height:30px;
+    color:$gray-d;
+    text-align:center;
+  }
+}
+.reset{
+  @extend .regiest;
+}
+
+
+
+//登录注册头部   最后需要删除
+.login-title {
+  height: 44px;
+  line-height: 44px;
+  border-bottom:1px solid #d9d9d9;
+  position: relative;
+  text-align: center;
+  font-size:14px;
+  color: $gray-d;
+  a {
+    position: absolute;
+    right: 15px;
+    display: block;
+    font-size:12px;
+    height: 44px;
+    line-height: 44px;
+    top: 0;
+  }
+  span {
+    &.history{
+      position: absolute;
+      left: 15px;
+      width:44px;
+      display: block;
+      font-size: 12px;
+      height: 44px;
+      line-height: 44px;
+      top: 0;
+    }
+    @include clearfix;
+  }
+}
+.dia{
+  display:none;
+  position:fixed;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  background:$white;
+  z-index:100;
+  .login-title{
+    font-size:16px;
+    font-weight:bold;
+  }
+  .hui-biank{
+    height:14px;
+    background:#eee;
+  }
+  div{
+    padding:15px;
+    p{
+      font-size:14px;
+      &.dia-con{
+        text-indent:24px;
+        line-height:18px;
+      }
+    }
+  }
+}
+
