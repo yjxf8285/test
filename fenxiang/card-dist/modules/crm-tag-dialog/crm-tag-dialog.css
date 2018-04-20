@@ -1,0 +1,7 @@
+/**
+ * 纷享模块样式
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+
+.crm-tag-dialog-container{padding:40px}.crm-tag-dialog-label{width:80px;padding-top:5px;vertical-align:top}.crm-tag-dialog-label-my-tags{vertical-align:middle}.crm-tag-dialog-input{width:225px;border:1px #c6c6c6 solid;height:25px;padding-left:5px}.crm-tag-dialog-explaination{background-color:#c6c6c6;border:1px #c6c6c6 solid;color:#fff;padding:5px}.crm-tag-dialog-my-tags{padding:5px 0}.crm-tag-dialog-my-tags-box{padding:5px;background-color:#e5e5e5;margin-right:3px}.crm-tag-dialog-my-tag{cursor:pointer}.crm-tag-dialog-my-tag-disable{color:#aaa;cursor:default}.crm-tag-dialog-my-tag-disable:hover{text-decoration:none}.crm-tag-dialog-button-ok{margin-right:5px}

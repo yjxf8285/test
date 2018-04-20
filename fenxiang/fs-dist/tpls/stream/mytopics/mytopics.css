@@ -1,0 +1,7 @@
+/**
+ * 纷享页面样式
+ * @Author: 纷享网页前端部
+ * @Date: 2014-09-02
+ */
+
+.home-right-content .rightc-fontlist li{margin-top:0;position:relative}.home-right-content .rightc-fontlist li a{color:#333}.home-right-content .rightc-fontlist li a:hover{text-decoration:none}.home-right-content .rightc-fontlist li input{vertical-align:middle;margin-right:5px}.home-right-content .rightc-fontlist li.hr-vote{background:url(../../../assets/images/vote_color.png) no-repeat 0 0;padding-left:25px}.home-right-content .rightc-fontlist li.hr-vote a{word-break:break-all}.home-right-content .rightc-fontlist li span.rfl-li-apv{position:absolute;top:0;right:0}.stream-mytopics .topic-list-tbar{padding:10px 0!important;margin:0 20px;border-bottom:1px solid #ddd}

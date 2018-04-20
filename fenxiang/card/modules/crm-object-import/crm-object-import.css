@@ -1,0 +1,78 @@
+.crm-object-import-container{
+	padding: 0px 20px 20px;
+	background-color: #fff;
+}
+
+.crm-object-import-title{
+	font-size: 18px;
+	padding: 10px 0px;
+}
+
+.crm-object-import-table td{
+	padding: 5px 0px;
+	position: relative;
+}
+
+.crm-object-import-file-name{
+	border: 1px #d8d8d8 solid;
+	width: 360px;
+	height: 33px;
+	line-height: 33px;
+	color: #a0a0a0;
+	padding-left:5px; 
+	white-space: nowrap; 
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.crm-object-import-error-container{
+	border-top: 1px #d8d8d8 solid;
+	margin-top: 20px;
+	padding-top:20px; 
+}
+
+.crm-object-import-error-info2{
+	color: #a0a0a0;
+	padding: 10px 0px;
+}
+
+.crm-object-import-error-info3{
+	border: 1px #d8d8d8 solid;
+	line-height: 20px;
+	padding: 5px;
+}
+
+.crm-button-disable{
+    cursor: default;
+    background-color: #c6d8f9;
+    border: 1px #c6d8f9 solid;
+}
+
+.crm-object-import-file-div object{
+	position: absolute;
+	background-color:rgba(255,255,255,0);
+	cursor: pointer;
+}
+.crm-import-loading {
+	position:absolute;
+	z-index:1000;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	background:white;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	text-align:center;
+}
+.crm-import-loading span {
+	display:inline-block;
+	margin-top:95px;
+	color:black;
+	width:16px;
+	height: 16px;
+	background: url("../../assets/images/loading.gif") no-repeat;
+}
+.crm-object-import-button-select {
+	margin-right: 5px;
+}

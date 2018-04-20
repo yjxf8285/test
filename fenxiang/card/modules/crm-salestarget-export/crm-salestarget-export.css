@@ -1,0 +1,29 @@
+.crm-salestarget-export-container{
+	padding: 0px 20px 20px;
+	background-color: #fff;
+}
+.crm-salestarget-export-container .crm-salestarget-export-label{
+	color: #999;
+	font-size: 14px;
+}
+.crm-salestarget-export-container .selected-year, .crm-salestarget-export-container .selected-quarter {
+	font-size: 14px;
+	margin-right: 10px;
+}
+.crm-salestarget-export-title{
+	font-size: 18px;
+	padding: 10px 0px;
+}
+
+.crm-salestarget-export-table{
+	margin:20px;
+}
+
+.crm-salestarget-export-table td{
+	padding: 10px 0px;
+}
+
+.crm-salestarget-export-container .crm-salestarget-export-download {
+	font-size: 13px;
+}
+

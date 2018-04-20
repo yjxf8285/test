@@ -1,0 +1,18 @@
+.fs-employee-list{padding-top:5px;}
+.fs-employee-list li{float:left;width:213px;height:64px;border:#ebebeb solid 1px;box-shadow:2px 2px 4px #c1c1c1;padding:10px;display:inline;margin:10px 10px 0 0;position:relative;}
+.fs-employee-list li span.fel-leave{position:absolute;top:6px;right:10px;}
+.fs-employee-list li .ccl-img-wrap img{width:50px;height:50px;margin-right:10px;}
+.fs-employee-list li a.ccl-name{
+	padding-right:18px;
+	display:inline-block;
+    line-height:16px;
+    max-width:120px;
+	_width:120px;
+    overflow:hidden;
+	text-overflow:ellipsis;
+}
+.fs-employee-list li a.sex-f{background:url(../../assets/images/f.png) no-repeat right 2px;}
+.fs-employee-list li a.sex-m{background:url(../../assets/images/m.png) no-repeat right 2px;}
+.fs-employee-list li em.ccl-job{color:#666666;line-height:20px;height:20px;width:150px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;word-break:break-all;display:inline-block;}
+.fs-employee-list li strong.ccl-mobile{color:#666666;font-weight:normal;}
+.fs-employee-list li strong > span.ccl-mobile-num{color:#a5a5a5;padding-left:10px;}

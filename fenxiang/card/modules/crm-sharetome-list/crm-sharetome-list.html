@@ -1,0 +1,84 @@
+<!--标签列表模板-->
+<script type="text/html" class="crm-contract-list-template">
+
+    <!--身-->
+    <div class="products-product-bd fn-clear">
+        <div class="product-list-warp crm-com-table">
+            <div class="top-fn-btns">
+                <button class="crm-button-blue create-contract-btn mr6">新建联系人...</button>
+                <button class="crm-button-blue contract-import-btn mr6">导入联系人</button>
+                <button class="crm-button-blue contract-export-btn mr6">导出联系人</button>
+                <button class="crm-button-blue delete-contract-btn">删除</button>
+				<button class="crm-button-blue create-sharetome-btn" style="display:none;">全部创建</button>
+				<button class="crm-button-blue remove-sharetome-btn" style="display:none;">清空共享记录</button>
+            </div>
+            <div class="crm-table-list-warp" style="border-top: none;">
+                <div class="crm-table-list-hd fn-clear">
+                    <div class="fn-left">
+                        <span class="select-tit">状态</span>
+                        <span class="mn-select-box states-select-list crm-select-list-short" select-cls="crm-select-list-short">
+                            <span class="mn-select-title-wrapper"><span class="mn-select-title">不限</span><span
+                                    class="title-icon"></span></span>
+                             <ul class="mn-select-list">
+                                 <li class="mn-select-item" data-value="-1">不限</li>
+                                 <li class="mn-select-item" data-value="1">已关联客户</li>
+                                 <li class="mn-select-item" data-value="0">未关联客户</li>
+                             </ul>
+                        </span>
+
+                    </div>
+                    <div class="fn-right">
+                <span class="mn-select-box sort-select-list" select-cls="sort-select-list-optionwarp">
+                    <span class="mn-select-title-wrapper"><span class="mn-select-title">发生变化的在最前面</span><span
+                            class="title-icon"></span></span>
+                    <ul class="mn-select-list">
+                        <li class="mn-select-item" data-value="0">发生变化的在最前面</li>
+                        <li class="mn-select-item" data-value="2">按名称排序</li>
+                    </ul>
+                </span>
+                    </div>
+                </div>
+                <div class="crm-table-bd">
+                    <table border="0" cellpadding="0" cellspacing="0" class="crm-datatable crm-marketing-list-datatable">
+                        <thead>
+                        <tr>
+                           <!-- <th>
+                                <div class="mn-checkbox-box checkbox-for-comtable">
+                                    &nbsp;&nbsp;<span data-value="2" class="mn-checkbox-item checkbox-selectall-btn"></span></div>
+                            </th>-->
+                            <!--<th></th>-->
+                            <th>姓名</th>
+                            <th>职务</th>
+                            <th>部门</th>
+                            <th>公司</th>
+                            <th>更新时间</th>
+                            <th>状态</th>
+                            <th class="th-blank"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <!--<td>1</td>-->
+                            <!--<td>2</td>-->
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--脚-->
+    <div class="crm-list-fd fn-clear">
+        <!--分页-->
+        <div class="pagination-wrapper"></div>
+    </div>
+</script>
+

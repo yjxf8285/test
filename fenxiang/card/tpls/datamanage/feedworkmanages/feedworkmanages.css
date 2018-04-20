@@ -1,0 +1,106 @@
+.feedworkmanages-tit{
+    font-size: 16px;
+    color: #333;
+    border-bottom:#cccccc dotted 1px;
+    height: 68px;
+    line-height: 68px;
+    font-weight: bold;
+    margin: 0 24px;
+}
+.feedworkmanages-content{
+    margin: 0 24px;
+    margin-top: 20px;
+    padding-bottom: 80px;
+}
+.feedworkmanages-form dd{
+    margin-top: 20px;
+}
+.feedworkmanages-form .form-input-tit{
+    font-size: 14px;
+    color: #999;
+    width: 70px;
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    margin-top: 2px;
+}
+.feedworkmanages-form .form-input-text{
+    width: 180px;
+    height: 30px;
+    border: solid 1px #ddd;
+    vertical-align: middle;
+    font-size: 13px;
+    color: #999;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.feedworkmanages-form .form-button{
+    vertical-align: middle;
+}
+.feedworkmanages-form .form-input-datatxt{
+    color: #999;
+    margin: 0 10px;
+}
+.feedworkmanages-form .form-input-checkbox{
+    vertical-align: middle;
+}
+.feedworkmanages-form .form-input-checkbox-righttip{
+    color: #999;
+    margin-left:5px;
+    vertical-align: middle;
+}
+.feedworkmanages-form select{
+    vertical-align: middle;
+}
+.feedworkmanages-form .rwarp{
+    float: left;
+    width: 680px;
+}
+.feedworkmanages-form .circle-warp{
+    float: left;
+    line-height: 20px;
+    width: 680px;
+ *margin-bottom: 5px;
+}
+.feedworkmanages-form .circle-warp dd{
+    float: left;
+    font-size:14px;
+    background: #E5E5E5;
+    padding: 2px 8px 5px;
+    margin: 0 5px 5px 0;
+    white-space: nowrap; 
+    _display: inline;
+}
+.feedworkmanages-form .circle-warp dd b{
+   color:#AEAEAF;
+   /*font-weight:normal;*/
+   cursor:pointer;
+}
+.feedworkmanages-form .butwarp{
+    float: left;
+    width: 100%;
+    _display: inline;
+   
+}
+.feedworkmanages-downbtn{
+    margin-left: 8px;
+    vertical-align: middle;
+}
+.feedworkmanages-downbtn.loading{
+    color: #999;
+    background: url(../../../assets/images/loading.gif) no-repeat 0 0;
+    padding-left: 20px;
+    text-decoration: none;
+}
+/** 
+ * 兼容chorme
+ * 输入框光标位置和黄色边框
+ * 这段放到最后面
+ * Class名称要保持一致才会重置到样式 
+ **/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .feedworkmanages-form .form-input-text {
+        line-height: 15px;
+        outline: none;
+    }
+}

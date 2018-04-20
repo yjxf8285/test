@@ -1,0 +1,54 @@
+.funcpermission{
+	border:#d5d5d5 solid 1px;
+	margin-top:12px;
+}
+.funcpermission .tpl-l{
+	background-color:#f4f7fa;
+}
+.funcpermission .tpl-c .flag-cenm-wrap{
+	padding:20px;
+}
+.funcpermission .tpl-c .flag-title-wrap{
+	height:75px;
+	border-bottom:#cccccc dotted 1px;
+}
+.funcpermission .tpl-c .flag-title-wrap strong{
+	font-size:16px;
+	color:#333333;
+	vertical-align:middle;
+}
+.flag-edit-btn{
+	border:#d4d4d4 solid 1px;
+	background-color:#f1f1f1;
+	height:25px;
+	line-height:25px;
+	padding:0 10px;
+	display:inline-block;
+}
+.funcpermission .tpl-c .flag-title-wrap .flag-title-text{
+	margin-top:10px;
+        display: block;
+}
+.funcpermission .tpl-c .flag-name-list{
+	margin-top:20px;
+}
+.funcpermission .tpl-c .flag-name-list li{
+	float:left;
+	line-height:26px;
+	padding:0 10px;
+	background-color:#f1f1f1;
+	margin-right:5px;
+	margin-bottom:5px;
+	font-size:14px;
+	zoom:1;
+	white-space:nowrap;
+}
+.funcpermission .tpl-c .flag-main-wrap{
+	margin-top:30px;
+}
+.funcpermission .tpl-c .j-modifypermissions-btn{
+	vertical-align:middle;
+}
+.funcpermission .funcpermission-list-empty-tip{
+    color:#999999;
+}

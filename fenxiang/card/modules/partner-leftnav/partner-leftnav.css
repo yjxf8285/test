@@ -1,0 +1,58 @@
+
+/*
+    头像设置
+---------------------------------------------------------*/
+
+.report-photo-box {
+    margin-bottom: 15px;
+    border: 1px #d8d8d8 solid;
+    background-color: #fff;
+    position: relative;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: "\5FAE\8F6F\96C5\9ED1";    
+}
+.report-photo-box span {
+    width: 186px;
+    display: block;
+    padding: 16px;
+    color: #555;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;    
+}
+.report-photo-box img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+/*      
+    左侧列表
+--------------------------------------------------------*/
+.report-left-nav {
+    width: 218px;
+    border: 1px #d8d8d8 solid;
+    background-color: #fff;
+    overflow: hidden;
+}
+.report-left-nav li {
+    width: 100%;
+    height: 42px;
+    line-height: 42px; 
+}
+
+.report-left-nav a {
+    display: block;
+    padding-left: 16px;
+    color: #555;
+    text-decoration: none;
+}
+.report-left-nav a.state-active {
+    background-color: #f0f0f0;
+    border-left: 2px solid #4682ea;
+    padding-left: 14px;
+    font-weight: bold;  
+}

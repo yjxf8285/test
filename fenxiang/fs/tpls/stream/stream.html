@@ -1,0 +1,537 @@
+<div id="stream" class="tpl stream" tplname="stream" js="true" css="true" iscached="true">
+    <!-- 三列式 自适应宽度 -->
+    <div class="tpl-l">
+        <div class="tpl-inner">
+            &nbsp;
+        </div>
+    </div>
+    <div class="tpl-c">
+    <div class="tpl-inner">
+
+    <div class="publish-wrapper ui-tab">
+
+    <ul id="stream-hsent-title" class="ui-switchable-nav ui-tab-items nav-font">
+        <li class="fs-publish-nav ui-tab-item ui-tab-item-current"><a href="javascript:;" class="fs-prevent-default">发分享</a></li>
+        <li class="fs-publish-nav ui-tab-item"><a href="javascript:;" class="fs-prevent-default">发日志</a></li>
+        <li class="fs-publish-nav ui-tab-item"><a href="javascript:;" class="fs-prevent-default">发指令</a></li>
+        <li class="fs-publish-nav ui-tab-item"><a href="javascript:;" class="fs-prevent-default">发审批</a></li>
+    </ul>
+    <div class="ui-switchable-content">
+        <!-- 发分享 -->
+        <div class="fs-publish-share fs-publish-panel ui-tab-panel" feedname="share">
+            <div class="panel-tip color-999999">企业社会化互助，祝您提升工作效率</div>
+            <form class="fs-publish-share-form fs-publish-form" action="#" method="post">
+                <div class="publish-input-wrapper">
+                    <label>
+                        <textarea class="publish-input" name="content"></textarea>
+                    </label>
+                </div>
+                <div class="media"></div>
+                <div class="publish-topic-tip">输入话题表示您授权公司对话题进行知识管理，请不要在敏感和机密信息中加入话题！</div>
+                <div class="ksfw marg10">
+                    <div class="selectbar"></div>
+                </div>
+                <div class="f-ft fn-clear marg10">
+                    <div class="sms-wrapper">
+                        <span class="label-for"><input type="checkbox" name="is_receipt" class="is-receipt" /><label>需要回执</label></span>&nbsp;&nbsp;
+                        <span class="receipt-range"><input type="hidden" name="circle" class="send-sms-g"/><input type="hidden" name="employee" class="send-sms-p"/><input
+                                type="hidden" class="is-send-sms" /><span class="receipt-tip"></span></span>
+                    </div>
+                    <div class="sub-wrapper">
+                        <button type="submit" class="button-green f-sub">发布</button>
+                    </div>
+                </div>
+            </form>
+            <div class="form-thumb fn-clear">
+                <div class="input-empty-text fn-left">分享工作心得体会&#8230;</div>
+                <div class="media-snapshot fn-right">
+                    <a class="icon-imgupload icon-btn" title="添加图片（多张）" href="javascript:;"></a><a href="javascript:;" class="icon-attachupload icon-btn" title="添加附件（多个）"><a
+                        class="icon-vote icon-btn" href="javascript:;" title="添加投票"></a></a><a
+                        class="icon-at icon-btn" href="javascript:;" title="添加提到"></a><a
+                        class="icon-topic icon-btn" href="javascript:;" title="添加话题"></a>
+                </div>
+            </div>
+            <span class="panel-visible-h">×</span>
+        </div>
+        <!-- 发日志 -->
+        <div class="fs-publish-plan fs-publish-panel ui-tab-panel" feedname="plan">
+            <div class="panel-tip color-999999">日事日清，信息通达，责任明确，即时点评</div>
+            <form class="fs-publish-log-form fs-publish-form" action="#" method="post">
+                <div class="publish-input-wrapper">
+                    <label>
+                        <span>请填写<span class="logtype-text">今日</span>工作总结</span>
+                        <textarea class="publish-input" name="report"></textarea>
+                    </label>
+                    <label>
+                        <span>请填写<span class="logtype-text">明日</span>工作计划</span>
+                        <textarea class="publish-input" name="plan"></textarea>
+                    </label>
+                    <label>
+                        <span>请填写工作心得体会</span>
+                        <textarea class="publish-input" name="content"></textarea>
+                    </label>
+                </div>
+                <div class="media"></div>
+                <div class="publish-topic-tip">输入话题表示您授权公司对话题进行知识管理，请不要在敏感和机密信息中加入话题！</div>
+                <div class="publish-extend-wrapper">
+                    <div class="publish-extend marg10">
+                        <ul class="ui-switchable-nav ui-tab-items">
+                            <li class="publish-extend-nav ui-tab-item  ui-tab-item-current"><a href="javascript:;">日志</a></li>
+                            <li class="publish-extend-nav ui-tab-item"><a href="javascript:;">周计划</a></li>
+                            <li class="publish-extend-nav ui-tab-item"><a href="javascript:;">月计划</a></li>
+                        </ul>
+                        <div class="ui-switchable-content">
+                            <div class="publish-extend-panel ui-tab-panel" logtype="1" logtypetext="今日,明日">
+                                <span class="pep-label">选择日志点评人：</span>
+
+                                <div class="selectbar"></div>
+                            </div>
+                            <div class="publish-extend-panel ui-tab-panel" logtype="2" logtypetext="本周,下周">
+                                <span class="pep-label">选择日志点评人：</span>
+
+                                <div class="selectbar"></div>
+                            </div>
+                            <div class="publish-extend-panel ui-tab-panel" logtype="3" logtypetext="本月,下月">
+                                <span class="pep-label">选择日志点评人：</span>
+
+                                <div class="selectbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="show-history-plan-l" href="javascript:;">查看历史日志</a>
+                </div>
+                <div class="ksfw marg10">
+                    <div class="selectbar"></div>
+                </div>
+                <div class="f-ft fn-clear marg10">
+                    <div class="sms-wrapper fn-hide">
+                        <input type="checkbox" name="sendSms" class="send-sms" id="stream-send-sms-plan" /><label for="stream-send-sms-plan" class="form-label">发送短信</label>
+                    </div>
+                    <div class="sub-wrapper">
+                        <button type="submit" class="button-green">发布</button>
+                    </div>
+                </div>
+            </form>
+            <div class="form-thumb fn-clear">
+                <div class="input-empty-text fn-left">填写工作日志&#8230;</div>
+                <div class="media-snapshot fn-right">
+                    <a class="icon-imgupload icon-btn" title="添加图片（多张）" href="javascript:;"></a><a href="javascript:;" class="icon-attachupload icon-btn" title="添加附件（多个）"></a><a
+                        class="icon-at icon-btn" href="javascript:;" title="添加提到"></a><a
+                        class="icon-topic icon-btn" href="javascript:;" title="添加话题"></a>
+                </div>
+            </div>
+            <span class="panel-visible-h">×</span>
+        </div>
+        <!-- 发指令 -->
+        <div class="fs-publish-work fs-publish-panel ui-tab-panel" feedname="work">
+            <div class="panel-tip color-999999">使命必达的跟踪工具，短信即时提醒、手机交互</div>
+            <form class="fs-publish-work-form fs-publish-form" action="#" method="post">
+                <div class="publish-input-wrapper">
+                    <label>
+                        <textarea class="publish-input" name="content"></textarea>
+                    </label>
+                </div>
+                <div class="media"></div>
+                <div class="publish-topic-tip">输入话题表示您授权公司对话题进行知识管理，请不要在敏感和机密信息中加入话题！</div>
+                <div class="publish-extend marg10 fn-clear">
+                    <div class="work-selectbar f-field">
+                        <span class="pep-label">1、选择指令执行人：</span>
+
+                        <div class="selectbar"></div>
+                    </div>
+                    <div class="f-field marg10">
+                        <span class="pep-label">2、选择指令完成时间：</span>
+
+                        <div class="task-complete-datetime">
+                            <span class="date-select-wrapper"></span><span class="time-select-wrapper"></span>
+                        </div>
+                    </div>
+                    <div class="f-field marg10 fn-hide"><!-- add by 13 at 2014-01-02 -->
+                        <span class="pep-label">3、事中短信提醒次数：</span>
+
+                        <div class="sms-warn-counts">
+                            <label><input type="radio" name="sms_warn_counts" value="0" checked="checked"/> 不提醒</label>
+                            <label><input type="radio" name="sms_warn_counts" value="1"/> 提醒一次</label>
+                            <label><input type="radio" name="sms_warn_counts" value="2"/> 提醒两次</label>
+                            <label><input type="radio" name="sms_warn_counts" value="3"/> 提醒三次</label>
+                        </div>
+                    </div>
+                    <div class="sms-warn-list f-field">
+                        <script class="sms-warn-tpl" type="text/html">
+                            <div class="sms-warn marg10">
+                                <span class="pep-label">第{{counts}}次短信提醒：</span>
+
+                                <div class="sms-warn-datetime">
+                                    <span class="date-select-wrapper"></span><span class="time-select-wrapper"></span>
+                                </div>
+                            </div>
+                        </script>
+                    </div>
+                </div>
+                <div class="ksfw marg10 fn-clear">
+                    <div class="selectbar"></div>
+                </div>
+                <div class="f-ft fn-clear marg10">
+                    <div class="sms-wrapper fn-hide">
+                        <input id="stream-send-sms-work" type="checkbox" name="sendSms" class="send-sms"/><label for="stream-send-sms-work" class="form-label">发送短信</label>
+                    </div>
+                    <div class="sub-wrapper">
+                        <button type="submit" class="f-sub button-green">发布</button>
+                    </div>
+                </div>
+            </form>
+            <div class="form-thumb fn-clear">
+                <div class="input-empty-text fn-left">发布指令&#8230;</div>
+                <div class="media-snapshot fn-right">
+                    <a class="icon-imgupload icon-btn" title="添加图片（多张）" href="javascript:;"></a><a href="javascript:;" class="icon-attachupload icon-btn" title="添加附件（多个）"></a><a
+                        class="icon-at icon-btn" href="javascript:;" title="添加提到"></a><a
+                        class="icon-topic icon-btn" href="javascript:;" title="添加话题"></a>
+                </div>
+            </div>
+            <span class="panel-visible-h">&#10005;</span>
+        </div>
+        <!-- 发审批 -->
+        <div class="fs-publish-approve fs-publish-panel ui-tab-panel" feedname="approve">
+            <div class="panel-tip color-999999">领导可用手机在任何时间、地点快速批复</div>
+            <form class="fs-publish-approve-form fs-publish-form" action="#" method="post">
+                <div class="publish-input-wrapper">
+                    <label>
+                        <textarea class="publish-input" name="content"></textarea>
+                    </label>
+                </div>
+                <div class="media"></div>
+                <div class="publish-topic-tip">输入话题表示您授权公司对话题进行知识管理，请不要在敏感和机密信息中加入话题！</div>
+                <div class="publish-extend marg10">
+                    <ul class="ui-switchable-nav ui-tab-items">
+                        <li class="publish-extend-nav ui-tab-item  ui-tab-item-current"><a href="javascript:;" class="fs-prevent-default">普通审批</a></li>
+                        <li class="publish-extend-nav ui-tab-item"><a href="javascript:;" class="fs-prevent-default">请假单</a></li>
+                        <li class="publish-extend-nav ui-tab-item"><a href="javascript:;" class="fs-prevent-default">报销单</a></li>
+                    </ul>
+                    <div class="ui-switchable-content">
+                        <div class="publish-extend-panel ui-tab-panel" approvetype="1">
+                            <div class="approve-selectbar">
+                                <span class="pep-label">选择审批人：</span>
+
+                                <div class="selectbar"></div>
+                            </div>
+                        </div>
+                        <div class="publish-extend-panel ui-tab-panel" approvetype="2">
+                            <div class="approve-selectbar">
+                                <span class="pep-label">选择审批人：</span>
+
+                                <div class="selectbar"></div>
+                            </div>
+                            <div class="leave-wrapper marg10">
+                                <table class="leave" cellPadding="0" cellSpacing="1">
+                                    <thead>
+                                        <tr>
+                                            <th>请假事项</th>
+                                            <th colspan="2">开始时间</th>
+                                            <th colspan="2">结束时间</th>
+                                            <th>小时</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <script class="leave-row-tpl" type="text/html">
+                                            <tr>
+                                                <td class="cate-wrapper">
+                                                    <select name="cate" class="cate">
+                                                        <option value="0" selected="selected"></option>
+                                                        <option value="1">事假</option>
+                                                        <option value="2">病假</option>
+                                                        <option value="3">调休</option>
+                                                        <option value="4">年休假</option>
+                                                        <option value="5">婚假</option>
+                                                        <option value="6">生育假</option>
+                                                        <option value="7">丧假</option>
+                                                        <option value="8">加班</option>
+                                                        <option value="9">外勤</option>
+                                                        <option value="10">出差</option>
+                                                        <option value="11">其他</option>
+                                                    </select>
+                                                </td>
+                                                <td class="start-date-wrapper">
+
+                                                </td>
+                                                <td class="start-time-wrapper">
+
+                                                </td>
+                                                <td class="end-date-wrapper">
+
+                                                </td>
+                                                <td class="end-time-wrapper">
+
+                                                </td>
+                                                <td class="time-span"><input type="text" class="text-edit time-span-edit" maxlength="12" /></td>
+                                            </tr>
+                                        </script>
+                                    </tbody>
+                                </table>
+                                <div class="leave-summary">
+                                    <div class="total-time-span">
+                                        <span class="item-label">共请假：</span><span class="item-value"><span class="num">0</span>小时</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="publish-extend-panel ui-tab-panel" approvetype="3">
+                            <div class="approve-selectbar">
+                                <span class="pep-label">选择审批人：</span>
+
+                                <div class="selectbar"></div>
+                            </div>
+                            <div class="baoxiao-wrapper marg10">
+                                <table class="baoxiao" cellPadding="0" cellSpacing="1">
+                                   <thead>
+                                       <tr>
+                                           <th>报销项名称</th>
+                                           <th>金额</th>
+                                           <th>备注</th>
+                                       </tr>
+                                   </thead>
+                                    <tbody>
+                                        <script class="baoxiao-row-tpl" type="text/html">
+                                            <tr>
+                                                <td class="cate-wrapper" width="300">
+                                                    <input name="cate" type="text" class="cate" maxlength="200"/>
+                                                </td>
+                                                <td class="amount-wrapper">
+                                                    <input name="amount" type="text" class="amount" maxlength="12" />
+                                                </td>
+                                                <td class="mark-wrapper">
+                                                    <input name="mark" type="text" class="mark" maxlength="500"/>
+                                                </td>
+                                            </tr>
+                                        </script>
+                                    </tbody>
+                                </table>
+                                <div class="baoxiao-summary fn-clear">
+                                    <div class="upper-text-w fn-left">大写金额：<span class="upper-text"></span></div>
+                                    <div class="num-text-w">合计金额：<span class="num-text"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ksfw marg10">
+                    <div class="selectbar"></div>
+                </div>
+                <div class="f-ft fn-clear marg10">
+                    <div class="sms-wrapper fn-hide">
+                        <input id="stream-send-sms-approve" type="checkbox" name="sendSms" class="send-sms"/><label for="stream-send-sms-approve" class="form-label">发送短信</label>
+                    </div>
+                    <div class="sub-wrapper">
+                        <button type="submit" class="f-sub button-green">发布</button>
+                    </div>
+                </div>
+            </form>
+            <div class="form-thumb fn-clear">
+                <div class="input-empty-text fn-left">提交审批&#8230;</div>
+                <div class="media-snapshot fn-right">
+                    <a class="icon-imgupload icon-btn" title="添加图片（多张）" href="javascript:;"></a><a href="javascript:;" class="icon-attachupload icon-btn" title="添加附件（多个）"></a><a
+                        class="icon-at icon-btn" href="javascript:;" title="添加提到"></a><a
+                        class="icon-topic icon-btn" href="javascript:;" title="添加话题"></a>
+                </div>
+            </div>
+            <span class="panel-visible-h">&#10005;</span>
+        </div>
+
+
+        <div class="media-share"></div>
+    </div>
+    </div>
+    <div class="main-announcement"></div>
+    <!-- center bottom start -->
+    <div class="feed-list home-center-list fn-clear">
+        <label class="search-wrap">
+            <input type="text" class="search-inp" placeholder="搜索信息" maxlength="100"/><button class="search-btn"></button>
+        </label>
+        <div class="feed-tabs">
+            <ul class="ui-switchable-nav ui-tab-items tag_wrap padL20 marg10">
+                <li class="feed-main-item ui-tab-item ui-tab-item-current"><a href="javascript:;" class="fs-prevent-default">全部</a></li>
+                <li class="feed-main-item ui-tab-item"><a href="javascript:;" class="fs-prevent-default">分享</a></li>
+                <li class="feed-main-item ui-tab-item"><a href="javascript:;" class="fs-prevent-default">日志</a></li>
+                <li class="feed-main-item ui-tab-item"><a href="javascript:;" class="fs-prevent-default">指令</a></li>
+                <li class="feed-main-item ui-tab-item"><a href="javascript:;" class="fs-prevent-default">审批</a></li>
+                <li class="feed-main-item ui-tab-item"><a href="javascript:;" class="fs-prevent-default">公告</a></li>
+            </ul>
+            <div class="ui-switchable-content">
+                <!-- 日志:2,审批:4,分享:1,任务:3 -->
+                <div class="feed-main-panel ui-tab-panel" feedtype="0" feedname="all">
+                    <div class="feed-list"></div>
+                    <div class="feed-list-pagination"></div>
+                </div>
+                <div class="feed-main-panel ui-tab-panel" feedtype="1" feedname="share">
+                    <div class="feed-list"></div>
+                    <div class="feed-list-pagination"></div>
+                </div>
+                <div class="feed-main-panel ui-tab-panel" feedtype="2" feedname="plan">
+                    <div class="feed-plan-list feed-sub-list">
+                        <ul class="ui-switchable-nav ui-tab-items tag_wrap padL20">
+                            <li class="feed-plan-item ui-tab-item ui-tab-item-current"><a href="javascript:;" class="fs-prevent-default">全部</a></li>
+                            <li class="feed-plan-item ui-tab-item"><a href="javascript:;" class="fs-prevent-default">日志</a></li>
+                            <li class="feed-plan-item ui-tab-item"><a href="javascript:;" class="fs-prevent-default">周计划</a></li>
+                            <li class="feed-plan-item ui-tab-item"><a href="javascript:;" class="fs-prevent-default">月计划</a></li>
+                        </ul>
+                        <div class="ui-switchable-content">
+                            <div class="feed-plan-panel ui-tab-panel" subtype="0">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="feed-plan-panel ui-tab-panel" subtype="1">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="feed-plan-panel ui-tab-panel" subtype="2">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="feed-plan-panel ui-tab-panel" subtype="3">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed-main-panel ui-tab-panel" feedtype="3" feedname="work">
+                    <div class="feed-work-list feed-sub-list">
+                        <ul class="ui-switchable-nav ui-tab-items tag_wrap padL20">
+                            <li class="feed-work-item ui-tab-item ui-tab-item-current"><a href="javascript:;" class="fs-prevent-default">全部</a></li>
+                            <li class="feed-work-item ui-tab-item"><a href="javascript:;" class="fs-prevent-default">执行中</a></li>
+                            <li class="feed-work-item ui-tab-item"><a href="javascript:;" class="fs-prevent-default">已完成</a></li>
+                            <li class="feed-work-item ui-tab-item"><a href="javascript:;" class="fs-prevent-default">已取消</a></li>
+                        </ul>
+                        <div class="ui-switchable-content">
+                            <div class="feed-work-panel ui-tab-panel" subtype="0">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="feed-work-panel ui-tab-panel" subtype="1">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="feed-work-panel ui-tab-panel" subtype="2">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="feed-work-panel ui-tab-panel" subtype="3">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed-main-panel ui-tab-panel" feedtype="4" feedname="approve">
+                    <div class="feed-approve-list feed-sub-list">
+                        <ul class="ui-switchable-nav ui-tab-items tag_wrap padL20">
+                            <li class="feed-approve-item ui-tab-item ui-tab-item-current"><a href="javascript:;" class="fs-prevent-default">全部</a></li>
+                            <li class="feed-approve-item ui-tab-item"><a href="javascript:;" class="fs-prevent-default">待审批</a></li>
+                            <li class="feed-approve-item ui-tab-item"><a href="javascript:;" class="fs-prevent-default">同意</a></li>
+                            <li class="feed-approve-item ui-tab-item"><a href="javascript:;" class="fs-prevent-default">不同意</a></li>
+                            <li class="feed-approve-item ui-tab-item"><a href="javascript:;" class="fs-prevent-default">已取消</a></li>
+                        </ul>
+                        <div class="ui-switchable-content">
+                            <div class="feed-approve-panel ui-tab-panel" subtype="0">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="feed-approve-panel ui-tab-panel" subtype="1">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="feed-approve-panel ui-tab-panel" subtype="2">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="feed-approve-panel ui-tab-panel" subtype="3">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="feed-approve-panel ui-tab-panel" subtype="4">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feed-main-panel ui-tab-panel" feedtype="1" feedname="notice" subType="1">
+                    <div class="feed-list"></div>
+                    <div class="feed-list-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- center bottom end -->
+    </div>
+    </div>
+    <div class="tpl-r">
+        <div class="tpl-inner">
+            <aside class="home-right-content">
+                <div class="right-notice-wrap">
+                	<h4 class="rightc-title">公告栏
+                    	<span class="rt-apv02"><a href="javascript:;" class="add-notice-l fna-blue">发布</a></span>
+                        <span class="rt-apv"><a href="#announcements" class="tpl-nav-l fna-blue">管理</a></span>
+                    </h4>
+                </div>
+                
+                <div class="colleague-section">
+                    <h4 class="right-htitle-wrap rightc-title">
+                    </h4>
+                    <p class="right-img-wrap rightc-headimg">
+                    </p>
+                    <div class="rightc-morelink"><a href="#circles/allcolleague" class="tpl-nav-l fna-blue">查看通讯录</a></div>
+                </div>
+                <!--<script class="invite-apv-tpl" type="text/html">
+                    <div class="ui-dialog-title">通过邮箱或者手机号邀请您的同事</div>
+					<div class="ui-dialog-text">
+						<div class="invite-list-wrap">
+							<div class="invite-item">手机或邮箱：<input type="text" class="invite-inp" /><span class="invite-inp-cerror" style="display:none;">格式错误</span></div>
+							<div class="invite-item">手机或邮箱：<input type="text" class="invite-inp" /><span class="invite-inp-cerror" style="display:none;">格式错误</span></div>
+							<div class="invite-item">手机或邮箱：<input type="text" class="invite-inp" /><span class="invite-inp-cerror" style="display:none;">格式错误</span></div>
+							<div class="invite-amore"><a href="javascript:;" class="invite-amore-add fna-blue">+邀请更多</a></div>
+						</div>
+						<div class="invite-btn-wrap marg20">
+						  <button class="f-sub button-green" data-role="confirm">立即邀请</button><button class="f-cancel button-grey f-cancel" data-role="cancel">取消</button>
+						</div>
+				     </div>
+                </script>-->
+                
+                <h4 class="rightc-title hbot-bnone" style="+margin-top:40px;">日程<span class="rt-apv"><a href="javascript:;" class="add-schedule-l fna-blue">添加</a></span></h4>
+                <div class="fs-schedule-wrapper">
+                    <div class="fs-schedule-holder"></div>
+                </div>
+                <div class="rightc-morelink"><a href="#schedules" class="tpl-nav-l fna-blue">查看日程</a></div>
+
+                <div class="todolist-wrapper">
+                    <h4 class="rightc-title">待办(<span class="todolist-count"></span>)<span class="rt-apv"><a href="javascript:;" class="add-worktodo-l fna-blue">添加</a></span>
+                    </h4>
+                    <ul class="right-todolist-wrap rightc-fontlist">
+    
+                    </ul>
+                    <ul><li class="worktodo-item-control worktodo-item-open" style="display:none;"><span class="worktodo-icopenoff">展开</span>更多<span class="worktodo-icnumber"></span>项</li></ul>
+                </div>
+                <div class="rightc-morelink"><a href="#worktodo" class="tpl-nav-l fna-blue">查看待办</a></div>
+                
+                <div class="fixedtopics-wrapper">
+					<h4 class="rightc-title">固定话题<span class="rt-apv"><a href="#stream/mytopics/=/topictype-1" class="fna-blue">更多</a></span></h4>
+                    <ul class="right-fixedtopics-wrap rightc-fontlist">
+                	</ul>
+				</div>
+                
+                <div class="newtopics-wrapper">
+					<h4 class="rightc-title">最新话题<span class="rt-apv"><a href="#stream/mytopics/=/topictype-2" class="fna-blue">更多</a></span></h4>
+                    <ul class="right-newtopics-wrap rightc-fontlist">
+                	</ul>
+				</div>
+                
+                <h4 class="right-votes-title-wrap rightc-title">最新投票<span class="rt-apv"><a href="#stream/votes" class="fna-blue">更多</a></span>
+                </h4>
+                <ul class="right-votes-wrap rightc-fontlist">
+                    
+                </ul>
+            </aside>
+
+        </div>
+    </div>
+</div>

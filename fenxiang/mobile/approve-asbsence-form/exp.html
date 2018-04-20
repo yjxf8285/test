@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!-- Add your site or application content here -->
+        
+        <!-- 1 abs start-->
+        <section class="exp-wrap">
+        	
+            <div class="baoxiao-wrapper marg10">
+                <table class="baoxiao" cellPadding="0" cellSpacing="1">
+                   <tr>
+                       <th>报销项名称</th>
+                       <th>金额</th>
+                       <th>备注</th>
+                   </tr>
+                    <script class="baoxiao-row-tpl" type="text/html">
+                        <tr class="row-tr">
+                            <td class="cate-wrapper" width="">
+                                <input name="cate" type="text" class="cate" maxlength="200" />
+                            </td>
+                            <td class="amount-wrapper" width="90">
+                                <input name="amount" type="number" class="amount" maxlength="12" />
+                            </td>
+                            <td class="mark-wrapper" width="90">
+                                <div class="mark-close-wrap">
+                                    <input name="mark" type="text" class="mark" maxlength="500"/>
+                                    <a href="javascript:;" class="close">清空</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </script>
+                    <script class="baoxiao-row-ad-tpl" type="text/html">
+                        <tr class="row-tr">
+                            <td class="cate-wrapper" width="">
+                                <input name="cate" type="text" class="cate" maxlength="200" />
+                            </td>
+                            <td class="amount-wrapper" width="90">
+                                <input name="amount" type="text" class="amount" maxlength="12" />
+                            </td>
+                            <td class="mark-wrapper" width="90">
+                                <div class="mark-close-wrap">
+                                    <input name="mark" type="text" class="mark" maxlength="500"/>
+                                    <a href="javascript:;" class="close">清空</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </script>
+   
+                </table>
+                <button id="test">test</button>
+                <div class="baoxiao-summary fn-clear">
+                    <div class="upper-text-w fn-left">大写金额：<span class="upper-text"></span></div>
+                    <div class="num-text-w">合计金额：<span class="num-text"></span></div>
+                </div>
+            </div>
+            
+            <!--<div class="f-actions">
+                <button class="f-sub">确定</button>
+            </div>-->
+        </section>
+        <!-- 1 abs end-->
+
+        <script src="js/underscore-min.js"></script>
+        <script src="js/moment.min.js"></script>
+        <script src="js/vendor/jquery-2.0.3.min.js"></script>
+        <script src="js/helper.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

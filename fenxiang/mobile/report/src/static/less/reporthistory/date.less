@@ -1,0 +1,94 @@
+.datepicker-box {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 99999;
+    .datepicker-con {
+        width: 80%;
+        position: absolute;
+        left: 50%; top: 50%;
+        margin: -190px 0 0 -40%;
+        padding: 15px;
+        box-shadow: 0 0 4px rgba(0,0,0,0.25);
+        border: 1px solid #bbb;
+        background-color: #fff;
+         box-sizing: border-box;
+        -webkit-box-sizing: border-box;       
+    }
+    .datepicker-header {
+        background-color:#F8F8F8;
+        border-bottom:1px solid #EEE;
+        span {
+            padding:12px 15px 10px;
+            text-align:center;
+            &.hover {
+                background-color:#EEE;
+            }
+            b {
+                display:block;
+                width:0;
+                height:0;
+                font-size:0;
+                border:8px solid #F8F8F8;
+            }
+            &.datepicker-pre b {
+                border-left:0;
+                border-right:8px solid #444;
+            }
+            &.datepicker-next b{
+                border-right:0;
+                border-left:8px solid #444;
+            }  
+        }
+        .datepicker-pre{float:left;}  
+        .datepicker-next{float:right;}
+        h4 {
+            padding:10px 0;
+            height:20px;
+            line-height:20px;
+            text-align:center;
+        }  
+    }
+    
+    .datepicker-body {
+        width:100%;
+        background-color: #fff;
+        table-layout: fixed;
+        th, td {
+            height:22px;
+            line-height:22px;
+            text-align:center;
+            font-size:13px;
+            &.datepicker-weekend {
+                color:#FF0000;
+            }
+        }
+        th{
+            padding:6px 0;
+            font-weight:normal;
+            color:#333;
+        }
+        td{
+            padding:4px 0;
+            border: 1px solid #ddd;
+            &.cur{
+                background:#DDD;
+                border:1px solid #ccc;
+                color:#FFF;
+            }
+            &.today {
+                font-size: 0;
+                line-height: 0;
+                overflow:hidden;
+                &:after {
+                    display: block;
+                    content: '今天';
+                    font-size: 11px;
+                }
+            }
+            &.afterday {
+                color: #999 !important;
+            } 
+        }  
+    }  
+}  

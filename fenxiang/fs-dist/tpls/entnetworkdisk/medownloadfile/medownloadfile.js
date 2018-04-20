@@ -1,0 +1,6 @@
+/**
+ * 纷享页面逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-09-02
+ */
+define("tpls/entnetworkdisk/medownloadfile/medownloadfile",["util","../entnetworkdisk-common","moment","../entnetworkdisk-common.html","../entnetworkdisk-common.css","modules/webdisk/webdisk"],function(a,b){var c=window,d=c.FS,e=d.tpl,f=(e.store,e.event),g=a("util"),h=a("../entnetworkdisk-common"),i=a("modules/webdisk/webdisk");g.tplRouterReg("#entnetworkdisk/=/:action-:value/:empid-:value/:empname-:value"),g.tplRouterReg("#entnetworkdisk/=/:action-:value/:dirid-:value/:selectedid-:value"),b.init=function(){var a=b.tplName,c=b.tplEl,d=$(".web-disk",c),e=new i({element:d,listPath:"/NetDisk/GetDownloadFiles",searchPath:"/NetDisk/GetDownloadFiles",defaultListRequestData:{pageSize:1e4,pageNumber:1,keyword:""},rootNode:{name:"我下载的文件",nDDirectoryID:0,isReadOnly:!0,parentID:0},showEmpFileOnly:!1,contextActions:[{selector:".rightmenu-fn-viewwho",handler:function(a,b){var c=$(this),d=b.creator;c.attr("href","#entnetworkdisk/=/action-view/empid-"+d.employeeID+"/empname-"+encodeURIComponent(d.name))}},{selector:".rightmenu-fn-view-dir",handler:function(a,b){var c=$(this);c.attr("href","#entnetworkdisk/=/action-fixed/dirid-"+b.parentID+"/selectedid-"+b.nDFileID)}}]});h.init(c,a);var g=!0;f.on("switched",function(b){b==a&&(g?(e.load(),g=!1):e.reset())})}});

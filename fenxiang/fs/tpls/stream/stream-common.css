@@ -1,0 +1,8 @@
+
+.home-right-content .rightc-fontlist li{margin-top:0px;position:relative;}
+.home-right-content .rightc-fontlist li a{color:#333333;}
+.home-right-content .rightc-fontlist li a:hover{text-decoration:none;}
+.home-right-content .rightc-fontlist li input{vertical-align:middle;margin-right:5px;}
+.home-right-content .rightc-fontlist li.hr-vote{background:url(../../assets/images/vote_color.png) no-repeat 0 0;padding-left:25px;}
+.home-right-content .rightc-fontlist li.hr-vote a{word-break:break-all;}
+.home-right-content .rightc-fontlist li span.rfl-li-apv{position:absolute;top:0px;right:0px;}

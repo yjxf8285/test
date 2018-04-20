@@ -1,0 +1,7 @@
+/**
+ * 纷享页面样式
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+
+.feed{padding-top:1px}#stream-showfeed .feed .feed-reply .fs-reply-list-wrapper .fs-reply-pagination{padding-right:0}#stream-showfeed .fs-feed-item{margin-top:0}html.fs-print-html{height:100%}body.fs-print-body{width:787px;height:100%;overflow:auto;background:#fff}.fs-print-body #sub-tpl,.fs-print-body .tpl-c{width:100%;margin-left:0}.fs-print-body .tpl-c .tpl-inner{min-height:0;padding:0 16px}.fs-print-body .app-wrapper{min-width:0}.fs-print-body .fs-feed-item{border:0}

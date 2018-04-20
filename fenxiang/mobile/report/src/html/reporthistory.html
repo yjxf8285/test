@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="北京易动纷享科技有限公司"/>
+    <meta name="keywords" content="纷享,纷享科技,纷享销客,销售团队管理,分享,企业社会化,办公自动化,CRM,移动办公,移动互联网,移动审批,手机办公,移动签批,明道,Yammer"/>
+    <meta name="description" content="销售外勤管理，专业销售日志，移动CRM，销售协同管理，将公司装进手机里，随时随地进行销售管理和业务沟通，助力企业销售业绩倍增。"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <title>历史数据</title>
+    <link rel="stylesheet" href="../static/css/reporthistory.css?v=xc1">
+</head>
+<body>
+    <div class="p-history">
+
+
+        <!--
+            历史数据列表
+        -->
+        <div class="sec list" id="js_list" style="display: none"></div>
+
+        
+        
+        <!--
+            历史详情数据
+        -->
+        <div class="sec m-detail" id="js_detail" style="display: none">
+            <div class="date-bar">
+                <span class="prev">&lt;</span>
+                <span class="con">2014.0.01</span>
+                <span class="next">&gt;</span>
+            </div>
+            <div class="data-wrapper">
+                <table class="m-datatable"><thead></thead><tbody></tbody></table>
+            </div>
+            <div class="footer">
+                <span class="add js_add">+ 添加一行</span>
+                <span class="edite js_edite">编辑</span>
+                <span class="sub js_sub">提交</span>
+            </div>
+        </div>
+        
+        
+        
+        <!--
+            编辑历史
+        -->
+        <div class="sec m-edite" id="js_edite" style="display: none">
+            <div class="edite-list"></div>
+
+            <div class="footer">
+                <span class="back js_back">返回</span>
+                <span class="del js_del">删除并返回</span>
+                <span class="center js_center">确定</span>
+            </div>
+        </div>
+        
+        
+        
+        <!--
+            选择审批人
+        -->
+        <div class="sec m-approver" id="js_approver" style="display:none;">
+            <div class="a-list">
+                <p>上报截止之后的修改需要审核</p>
+            </div>
+            <div class="footer">
+                <span class="center js_center">确定</span>
+            </div>
+        </div>        
+        
+ 
+ 
+        <!--
+            层级弹框元素
+        -->
+        <div class="sec layers-box" style="display:none">
+            <div class="layers-con">
+                <h4>请选择层级</h4>
+                <div class="layers-scroll">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>       
+
+        
+        <!--
+            首次进入页面显示加载状态条
+        -->
+        <div class="sec g-ld"><span>LOADING...</span></div>
+        
+        
+        
+        <!--
+            网络错误页面
+        -->
+        <div class="sec g-p-error">
+            <p><span></span>哎呦~ 网络出错了！</p>
+        </div>  
+        
+        
+        <!--
+            提交成功
+        -->
+        <div class="sec g-sub-ok" style="display: none"><p><span></span>修改成功</p></div>
+        
+        
+        <!--
+            无数据提示
+        -->
+        <div class="sec g-no-data">
+            <p><span></span>您没有任何历史记录</p>
+        </div>
+
+    </div>
+    
+    
+    <!--
+        请求时loading
+    -->
+    <div class="g-req-ld"><span></span></div>
+    
+    
+    <!--
+        全局toast
+    -->
+    <div class="g-toast"></div>
+    
+    <script src="../static/js/lib/zepto.js"></script>
+    <script src="../static/js/lib/routie.js"></script>
+    <script src="../static/js/lib/underscore.js"></script>
+    <script src="../static/js/lib/common.js"></script>
+    <script type="text/javascript" src="../static/js/reporthistory.js?v=11ww1"></script>
+</body>
+</html>
+

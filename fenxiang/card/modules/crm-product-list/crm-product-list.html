@@ -1,0 +1,126 @@
+<!--标签列表模板-->
+<script type="text/html" class="crm-product-list-template">
+
+    <!--toolbar-->
+    <div class="crm-list-bd crm-com-table fn-clear">
+        <div class="top-fn-btns">
+            <button class="crm-button-blue create-product-btn mr6">新建产品...</button>
+			<button class="crm-button-blue product-import-btn mr6">导入产品</button>
+            <button class="crm-button-blue delete-product-btn">删除</button>
+        </div>
+
+        <div class="crm-table-list-warp">
+            <div class="crm-table-list-hd fn-clear">
+                <div class="fn-left">
+                    	<span class="select-tit">产品线</span>
+                        <span class="mn-select-box product-select-list" select-cls="crm-select-list-short">
+                            <span class="mn-select-title-wrapper"><span class="mn-select-title">不限</span><span
+                                    class="title-icon"></span></span>
+                        </span>
+                </div>
+                <div class="fn-right">
+                        <span class="mn-select-box sort-select-list" select-cls="">
+                            <span class="mn-select-title-wrapper"><span class="mn-select-title">发生变化的在最前面</span><span class="title-icon"></span></span>
+                             <ul class="mn-select-list">
+                                 <li class="mn-select-item" data-value="0">发生变化的在最前面</li>
+                                 <li class="mn-select-item" data-value="2">按名称排序</li>
+                             </ul>
+                        </span>
+                </div>
+            </div>
+            <div class="crm-table-bd">
+                <table border="0" cellpadding="0" cellspacing="0" class="crm-datatable">
+                    <thead>
+                    <tr>
+                        <th>
+                            <div class="mn-checkbox-box checkbox-for-comtable">
+                                &nbsp;&nbsp;<span data-value="2" class="mn-checkbox-item checkbox-selectall-btn"></span></div>
+                        </th>
+                        <th class="sorting">名称</th>
+                        <th>单位</th>
+                        <th>单价</th>
+                        <th>产品线</th>
+                        <th>最后修改人</th>
+                        <th class="sorting">最后修改时间</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--脚-->
+    <div class="crm-list-fd fn-clear">
+        <!--分页-->
+        <div class="pagination-wrapper"></div>
+    </div>
+</script>
+
+<!--创建新产品弹框模板-->
+<div class="dialog-createnewproducttags-template">
+    <div class="dialog-product-create-warp fn-clear">
+        <div class="l">
+            <ul class="left-list">
+                <li>基本资料</li>
+            </ul>
+        </div>
+        <div class="r">
+            <div class="fn-warp">
+                <button class="button-cancel" style="margin-right: 16px;border: 1px solid #BFBFBF;">关闭</button>
+                <button class="button-submit" style="border: 1px solid #BFBFBF;">保存</button>
+            </div>
+            <ul class="right-list">
+                <li class="fn-clear">
+                    <div class="inputs-tit">
+                        名称<span class="red">*</span>
+                    </div>
+
+                    <div class="input-warp">
+                        <textarea class="area-auto-height product-name" placeholder="请填写产品名称"></textarea>
+                    </div>
+
+                </li>
+                <li class="fn-clear">
+                    <div class="inputs-tit">
+                        单价
+                    </div>
+                    <div class="input-warp">
+                        <div class="product-unitamount"></div>
+                    </div>
+                </li>
+                <li class="fn-clear">
+                    <div class="inputs-tit">
+                        单位
+                    </div>
+                    <div class="input-warp">
+                        <textarea class="area-auto-height product-unit" placeholder="请填写产品单位，如：个、件、台等"></textarea>
+                    </div>
+                </li>
+            </ul>
+            <ul class="right-list product-tags-list-warp"></ul>
+            <ul class="right-list">
+                <li class="fn-clear">
+                    <div class="inputs-tit">
+                        描述
+                    </div>
+
+                    <div class="input-warp">
+                        <textarea class="area-auto-height product-description" placeholder="请填写产品描述" style="height: 100px;"></textarea>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

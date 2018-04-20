@@ -1,0 +1,125 @@
+{"success": true, "unauthorized": false, "networkError": false, "message": "", "value": {
+    "maxID": 0,
+    "sinceID": 0,
+    "totalCount": 2,
+    "items": [
+        {
+            "sender": {
+                "employeeID": 123456,
+                "name": "laneyli\u7eb7\u4eab\u5408\u4f5c",
+                "profileImage": "201303_20_62c68b1a-95d2-49cc-8dff-d6a15ee9dac9"
+            },
+            "feedReplyID": 1,
+            "feedID": 53,
+            "employeeID": 123456,
+            "replyContent": [
+                {
+                    "text": "分享图片分享图片分享图片分享图片分享图片分享图片分享图片分享图片分享图片分享图片分享图片分享图片分享图片",
+                    "type": 0
+                }
+            ],
+            "replyContentLength": 4,
+            "source": 1,
+            "sourceDescription": "纷享平台",
+            "createTime": "2013-05-03T03:55:16.993Z",
+            "isUnRead": false,
+            "pictures": [
+                {
+                    "attachID": 446,
+                    "attachName": "捕获.PNG",
+                    "attachPath": "201304_24_c5987ce0-fe0e-4e27-b510-8cc64dbbbda2",
+                    "attachSize": 34492,
+                    "attachType": 2,
+                    "canPreview": false,
+                    "createTime": 1367035672,
+
+                    "dataID": 253,
+                    "documentFormat": 0,
+                    "employeeID": 4,
+                    "feedType": 1,
+                    "height": 0,
+                    "isPublic": true,
+                    "previewFormat": 0,
+                    "source": 1,
+                    "width": 150,
+                    "fileIcon": "jpg"
+                }
+            ],
+            "files":[],
+            "operationType": 1,
+            "replyToReplyID": 0,
+            "replyToEmployeeID": 3,
+            "feedType": 2,
+            "feedTypeDescription": "日志",
+            "feedSender": {
+                "employeeID": 3,
+                "name": "晓帆"
+            },
+            "feedContent": "信息源正文，如果replyToReplyID为0，则需要该值（最多20个字，如果原文超过20个字，则最后增加...）",
+            "replyToEmployee": {
+                "employeeID": 3,
+                "name": "晓帆"
+            },
+            "replyToContent": "被回复的回复正文，如果replyToReplyID大于0，则需要该值（最多20个字，如果原文超过20个字，则最后增加...）"
+        },
+        {
+            "sender": {
+                "employeeID": 123456,
+                "name": "张海波",
+                "profileImage": "201303_20_62c68b1a-95d2-49cc-8dff-d6a15ee9dac9"
+            },
+            "feedReplyID": 2,
+            "feedID": 53,
+            "employeeID": 123456,
+            "replyContent": [
+                {
+                    "text": "用纷享解决qq的事情,欢迎加入",
+                    "type": 0
+                }
+            ],
+            "replyContentLength": 4,
+            "source": 1,
+            
+            "createTime": "2013-05-03T03:55:16.993Z",
+            "isUnRead": false,
+            "pictures": [
+                {
+                    "attachID": 446,
+                    "attachName": "捕获.PNG",
+                    "attachPath": "201304_24_c5987ce0-fe0e-4e27-b510-8cc64dbbbda2",
+                    "attachSize": 34492,
+                    "attachType": 2,
+                    "canPreview": false,
+                    "createTime": 1367035672,
+
+                    "dataID": 253,
+                    "documentFormat": 0,
+                    "employeeID": 4,
+                    "feedType": 1,
+                    "height": 0,
+                    "isPublic": true,
+                    "previewFormat": 0,
+                    "source": 1,
+                    "width": 150,
+                    "fileIcon": "jpg"
+                }
+            ],
+            "files":[],
+            "operationType": 1,
+            "replyToReplyID": 3,
+            "replyToEmployeeID": 3,
+            "feedType": 1,
+            "feedTypeDescription": "分享",
+            "feedSender": {
+                "employeeID": 3,
+                "name": "晓帆"
+            },
+            "feedContent": "信息源正文，如果replyToReplyID为0，则需要该值（最多20个字，如果原文超过20个字，则最后增加...）",
+            "replyToEmployee": {
+                "employeeID": 3,
+                "name": "晓帆"
+            },
+            "replyToContent": "被回复的回复正文，如果replyToReplyID大于0，则需要该值（最多20个字，如果原文超过20个字，则最后增加...）"
+        }
+    ]
+}}

@@ -1,0 +1,44 @@
+.fs-createremind .-createremind-label{
+    float: left;
+    line-height: 35px;
+}
+.fs-createremind .-createremind-value{
+    float:right;
+    line-height: 35px;
+}
+.fs-createremind .-createremind-label{
+    color:#999999;
+    vertical-align:middle;
+}
+.fs-createremind .-createremind-content{
+    padding:16px 21px;
+    font-size:12px;
+}
+.fs-createremind .-createremind-field{
+    margin-bottom: 18px;
+}
+
+/*选择日期 选择时间*/
+.fs-createremind  .fs-publish-dateselect-input{width:190px;margin-right: 16px;}
+.fs-createremind  .fs-publish-timeselect-input{width:190px;}
+
+/*提醒范围*/
+.fs-createremind  .fs-contact-bar{width:422px;}
+
+/*提醒内容*/
+.fs-createremind .-createremind-textarea{
+    display: block;
+    padding: 5px;
+    width: 412px;
+    height: 20px;
+    border: 1px solid #d1d1d1;
+}
+/*分享相关内容*/
+.fs-createremind .-createremind-fenx{display: none;}
+
+/**/
+.fs-publish-timeselect{
+    height: 250px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}

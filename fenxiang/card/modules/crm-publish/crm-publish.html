@@ -1,0 +1,132 @@
+<div class="crm-publish-container">
+	
+		<div class="crm-publish-title">新建销售记录</div>
+		<textarea class="crm-publish-content" placeholder = "发布新建销售记录..."></textarea>
+		<div class="crm-publish-operation fn-clear fn-hide">
+			<div class="crm-publish-operation-time fn-left fn-hide" name ="time" title="添加日程">
+			</div>
+			<div class="crm-publish-operation-contact fn-left fn-hide" name ="contact" title="关联联系人">
+				<div class="crm-publish-operation-contact-num fn-right fn-hide"></div>
+			</div>
+			<div class="crm-publish-operation-picture fn-left fn-hide" name ="picture" title="添加图片">
+				<div class="crm-publish-operation-picture-num fn-right fn-hide"></div>
+			</div>
+			<div class="crm-publish-operation-attach fn-left fn-hide" name ="attach" title="添加附件">
+				<div class="crm-publish-operation-attach-num fn-right fn-hide"></div>
+			</div>
+			<div class="crm-publish-operation-tag fn-left fn-hide" name ="tag" title="添加标签">
+				
+			</div>
+			<div class="crm-publish-operation-at fn-left fn-hide" name ="at" title="添加提到">
+			</div>
+			<div class="crm-publish-operation-topic fn-left fn-hide" name ="topic" title="添加话题">
+			</div>
+		</div>
+		<div class="crm-publish-operation-container">
+			<div class="crm-publish-operation-attach-div fn-hide">
+				<input type="file" class="crm-publish-operation-attach-input fn-hide" title="添加文件（多个）" multiple="" accept="*/*" />
+			</div>
+			<div class="crm-publish-operation-time-container fn-hide">
+				<div class="crm-publish-operation-time-start fn-clear">
+					<div class="crm-publish-operation-time-label fn-left">开始时间</div>
+					<div class="crm-publish-operation-time-start-date fn-left"></div>
+					<span class="crm-publish-operation-time-start-time"></span>
+				</div>
+				<div class="crm-publish-operation-time-alarm fn-clear">
+					<div class="crm-publish-operation-time-label fn-left">消息通知</div>
+					<span class="mn-select-box crm-select-list-short crm-publish-operation-time-alarm-select fn-left" select-cls="crm-select-list-short">
+			            <span class="mn-select-title-wrapper"><span class="mn-select-title">不提醒</span><span
+			                    class="title-icon"></span></span>
+			            <ul class="mn-select-list">
+			             	<li class="mn-select-item" data-selected="true" data-defaultselected="true" data-value="1">不提醒</li>
+			                <li class="mn-select-item" data-value="2">按时提醒</li>
+			                <li class="mn-select-item" data-value="3">提前5分钟</li>
+			                <li class="mn-select-item" data-value="4">提前15分钟</li>
+			                <li class="mn-select-item" data-value="5">提前30分钟</li>
+			                <li class="mn-select-item" data-value="6">提前1小时</li>
+			                <li class="mn-select-item" data-value="7">提前2小时</li>
+			                <li class="mn-select-item" data-value="8">提前6小时</li>
+			                <li class="mn-select-item" data-value="9">提前1天</li>
+			                <li class="mn-select-item" data-value="10">提前2天</li>
+			            </ul>
+			        </span>
+			        <div class="crm-publish-operation-time-alarm-date fn-hide fn-left"></div>
+					<span class="mn-select-box crm-select-list-mini crm-publish-operation-time-alarm-time fn-hide fn-left" select-cls="crm-select-list-mini">
+			            <span class="mn-select-title-wrapper"><span class="mn-select-title"></span><span
+			                    class="title-icon"></span></span>
+			             <ul class="mn-select-list">
+			             </ul>
+			        </span>
+			        <span class="mn-select-box crm-select-list-mini crm-publish-operation-time-alarm-minute fn-hide fn-left" select-cls="crm-select-list-mini">
+			            <span class="mn-select-title-wrapper"><span class="mn-select-title"></span><span
+			                    class="title-icon"></span></span>
+			             <ul class="mn-select-list">
+			             </ul>
+			        </span>
+			        <div class="crm-publish-operation-time-alarm-info fn-left fn-hide">
+			            预计在<span class="crm-publish-operation-time-alarm-info-datetime"></span>提醒
+			        </div>
+				</div>
+			</div>
+			<div class="crm-publish-operation-contact-container fn-hide">
+				<div class="crm-publish-operation-contact-list fn-clear">
+					
+				</div>
+				<div class="crm-publish-operation-contact-operation">
+					<a class="crm-publish-operation-contact-add">+选择联系人</a>
+				</div>
+			</div>
+			<div class="crm-publish-operation-picture-container fn-hide">
+				<div class="crm-publish-operation-picture-list fn-clear">
+					
+				</div>
+				<div class="crm-publish-operation-picture-operation">
+					<a class="crm-publish-operation-picture-add">+选择图片</a>
+					<span class="crm-publish-operation-picture-info fn-hide">
+						，已选<span class = "crm-publish-operation-picture-number"></span>
+						张，总大小<span class="crm-publish-operation-picture-size"></span>
+					</span>
+				</div>
+			</div>
+			<div class="crm-publish-operation-attach-container fn-hide">
+				<div class="crm-publish-operation-attach-list fn-clear">
+					
+				</div>
+				<div class="crm-publish-operation-attach-operation">
+					<a class="crm-publish-operation-attach-add">+选择附件</a>
+					<span class="crm-publish-operation-attach-info fn-hide">
+						，已选<span class = "crm-publish-operation-attach-number"></span>
+						个，总大小<span class="crm-publish-operation-attach-size"></span>
+					</span>
+					
+				</div>
+				
+			</div>
+			<div class="crm-publish-operation-tag-container fn-hide">
+				<ul>
+					
+				</ul>
+			</div>
+		</div>
+		<div class="crm-publish-foot fn-hide">
+			<button class = 'crm-publish-button-cancel fn-right crm-button-gray'>取消</button>
+			<button class = 'crm-publish-button-ok fn-right crm-button-green crm-publish-button-disable'>发布</button>
+			<div class="fn-clear"></div>
+		</div>
+</div>
+<script class="topic-dialog-tpl" type="text/html">
+    <!--<div class="arrows-wrapper">
+        <div class="arrows-inner"></div>
+    </div>-->
+    <div class="ui-dialog-tbar">
+        <button class="insert-topic-btn button-gray" type="button">插入话题</button>
+    </div>
+    <div class="ui-dialog-body">
+        <div class="topic-list-wrapper">
+            <ul class="cate-list"></ul>
+        </div>
+    </div>
+    <div class="ui-dialog-bbar">
+        <button class="f-cancel button-gray" type="button">关闭</button>
+    </div>
+</script>

@@ -1,0 +1,64 @@
+<div id="stream-votes" class="tpl department" tplname="stream-votes" js="true" css="modules/tpl-portal/tpl-portal.css" iscached="true">
+    <!-- 三列式 自适应宽度 -->
+    <div class="tpl-l">
+        <div class="tpl-inner">
+            <div class="head-img-wrap fn-clear">
+                <script class="head-img-wrap-tpl" type="text/html">
+                    <a href="#profile"><img class="fn-left" src="{{profileImage}}"/>{{userName}}</a>
+                </script>
+            </div>
+            <ul class="group-list">
+            	<li class="files-nav-item"><a href="#stream" class="tpl-nav-lb">全部信息</a></li>
+				<li class="files-nav-item"><a href="#department" class="tpl-nav-lb tpl-nav-lbq">全公司</a></li>
+            	<script class="group-item-tpl" type="text/html">
+                    <li class="files-nav-item"><a href="#department/=/cid-{{groupID}}/ctitle-{{cTitle}}" class="tpl-nav-lb tpl-nav-lbq">{{groupName}}</a></li>
+                </script>
+            </ul>
+            <ul class="files-nav-list">
+
+            </ul>
+        </div>
+    </div>
+    
+    <div class="tpl-c">
+        <div class="tpl-inner">
+            <!-- votes center start -->
+            <div class="department-wrapper">
+                <h2 class="depw-title">我的投票</h2>
+                <p class="depw-text color-999999">这些是与您有关的投票，在这里您可以快速找到您需要查看或参与的投票。</p>
+                <ul class="filter depw-menu fn-clear marg10">
+                   <li><a href="javascript:;" class="filter-field depw-menu-aon" val="1">我参与的投票</a></li>
+                   <li><a href="javascript:;" class="filter-field" val="2">我发出的投票</a></li>
+                   <li><a href="javascript:;" class="filter-field" val="0">全部投票</a></li>
+                </ul>
+                
+                <!-- center bottom start -->
+                <div class="home-center-list fn-clear">
+                   <label class="search-wrap">
+                       <input type="text" class="search-inp" placeholder="搜索信息"><button class="search-btn"></button>
+                   </label>
+                   <div class="feed-list-wrapper">
+                       <div class="feed-list"></div>
+                       <div class="feed-list-pagination"></div>
+                   </div>
+                </div>
+                <!-- center bottom end -->
+                
+            </div>
+            <!-- votes center end -->
+        </div>
+    </div>
+    
+    <div class="tpl-r">
+        <div class="tpl-inner">
+        
+           <aside class="home-right-content">
+                <h4 class="rightc-title" style="border:none">视频帮助</h4>
+                <div class="r-use-help-wrap">
+                	<a href="http://v.ku6vms.com/player/default_0.0029.swf?vid=7ZOxaKrNnybE5CDe&style=gRiQ5K9giiL4EUzq&sn=fzG2vgqGfMAliYPZGdrePw..&sp=http://v.ku6vms.com/~" target="_blank" class="r-use-help-text">投票的使用方法</a>
+                </div>
+           </aside>
+           
+        </div>
+    </div>
+</div>

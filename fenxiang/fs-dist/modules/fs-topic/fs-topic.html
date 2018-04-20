@@ -1,0 +1,56 @@
+<div class="mytopicstpl-warp">
+	<div class="mytopics">
+		<div class="mtlistwrap"></div>
+	</div>
+</div>
+
+<!-- 弹出层(Dialog)模板 -->
+<div class="fn-setting-dialog-templet">
+  <div class="ui-dialog-title">话题类型设置</div>
+  <div class="ui-dialog-body">
+  <div class="topictype">话题类型<label for="radio-normal">：<input name="radio" type="radio" id="radio-normal" value="0" class="vm"> 普通话题 </label><label for="radio-range" class="ml10"><input name="radio" type="radio" id="radio-range" value="1" checked="checked" class="vm"> 范围性话题</label></div>
+    <div class="readrange fn-clear mt10">
+    <div class="readrange-tit">查阅范围：</div>
+    <div class="selectbar readrange-selectbar"></div>
+    </div>
+
+    <div class="ui-dialog-bbar fn-clear mt10">      
+      <div class="add-worktodo-actions fn-right">
+        <button type="button" class="f-sub button-green">确定</button><button type="reset" class="button-gray f-cancel margl-btn">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/html" class="fs-topic-edit-tpl">
+    <div class="ui-dialog-title">话题类型设置</div>
+    <div class="ui-dialog-body">
+        <div class="f-field fn-clear">
+            <div class="ff-label fn-left">话题类型：</div>
+            <div class="ff-value fn-left">
+                <span class="label-for"><input class="topic-type" type="radio" name="topic_type" value="0" />&nbsp;<label>普通话题</label></span>&nbsp;&nbsp;<span class="label-for"><input type="radio" name="topic_type" value="1" class="topic-type" />&nbsp;<label>范围性话题</label></span>
+            </div>
+        </div>
+        <div class="range-field f-field fn-clear">
+            <div class="ff-label fn-left">查阅范围：</div>
+            <div class="ff-value fn-left">
+                <div class="range-sb"></div>
+            </div>
+        </div>
+        <div class="ui-dialog-bbar fn-clear">
+            <button class="button-green f-sub">确定</button><button type="reset" class="button-gray f-cancel margl-btn">取消</button>
+        </div>
+    </div>
+</script>
+<script type="text/html" class="fs-topic-desc-tpl">
+    <div class="ui-dialog-title">修改话题描述</div>
+    <div class="ui-dialog-body">
+        <div class="f-field">
+            <fieldset>
+                <textarea class="topic-desc-input"></textarea>
+            </fieldset>
+        </div>
+        <div class="ui-dialog-bbar fn-clear">
+            <button class="button-green f-sub">确定</button><button type="reset" class="button-gray f-cancel margl-btn">取消</button>
+        </div>
+    </div>
+</script>

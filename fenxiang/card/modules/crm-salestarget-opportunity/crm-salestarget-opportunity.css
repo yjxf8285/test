@@ -1,0 +1,29 @@
+.crm-salestarget-opportunity-head{
+	height: 30px;
+}
+
+.crm-salestarget-no-opportunity{
+	text-align: center;
+	color: #999;
+	padding-top: 20px;
+}
+
+.crm-salestarget-opportunity-row-selected{
+	background-color: #ffffcc;
+}
+
+.crm-salestarget-opportunity-name{
+	color: #000;
+	max-width: 200px;
+	display: inline-block;
+}
+
+.crm-salestarget-opportunity-customer-name{
+	max-width: 100px;
+	_width:100px;
+	/*display: inline-block;*/
+}
+
+.crm-salestarget-opportunity-table td{
+	line-height: 23px;
+}

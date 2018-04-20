@@ -1,0 +1,71 @@
+<div class="search-tpl-left">  
+   <ul class="search-nav-list">
+    <li class="files-nav-item marg20"><a href="#search" class="tpl-nav-l tpl-nav-lb">工作</a></li>
+    <li class="files-nav-item"><a href="#search/images" class="tpl-nav-l tpl-nav-lb">图片</a></li>
+    <li class="files-nav-item"><a href="#search/attachs" class="tpl-nav-l tpl-nav-lb">附件</a></li>
+    <li class="files-nav-item"><a href="#search/audios" class="tpl-nav-l tpl-nav-lb">录音</a></li>
+    <li class="files-nav-item"><a href="#search/colleagues" class="tpl-nav-l tpl-nav-lb">同事</a></li>
+    <li class="files-nav-item"><a href="#search/shortmessage" class="tpl-nav-l tpl-nav-lb">企信</a></li>
+    <li class="left-bot-line marg10"></li>
+    <li class="filter-employee files-nav-item marg10"><a href="javascript:;" class="all-employee tpl-nav-lb depw-menu-aon">全部</a></li>
+    <li class="filter-employee files-nav-item"><a href="javascript:;" class="my-send tpl-nav-lb">我发的</a></li>
+    <li class="filter-employee files-nav-item custom-send-person-wrap"><a href="javascript:;" class="custom-employee tpl-nav-lb">自定义发出人...</a></li>
+    <li class="files-nav-item custom-send-person" style="display: none">
+       <div class="csp-user">姓名：<input type="text" class="query-employee csp-input"></div>
+       <div class="csp-remind">输入姓名或拼音检索</div>
+       <div class="csp-button"><button class="employee-search-btn csp-btn-search" disabled="disabled">搜索</button><button class="reselect-btn csp-btn-search csp-btn-reelect" disabled="disabled">重选</button></div>
+    </li>
+    
+    <li class="left-bot-line marg10"></li>
+    <li class="filter-date files-nav-item marg10"><a href="javascript:;" class="latest-one-week tpl-nav-lb">过去一周内</a></li>
+    <li class="filter-date files-nav-item"><a href="javascript:;" class="latest-one-month tpl-nav-lb depw-menu-aon">过去一个月内</a></li>
+    <li class="filter-date files-nav-item"><a href="javascript:;" class="latest-three-month tpl-nav-lb">过去三个月内</a></li>
+    <li class="filter-date files-nav-item"><a href="javascript:;" class="latest-half-year tpl-nav-lb">过去半年内</a></li>
+    <li class="filter-date files-nav-item"><a href="javascript:;" class="latest-one-year tpl-nav-lb">过去一年内</a></li>
+    <li class="filter-date files-nav-item custom-data-wrap"><a href="javascript:;" class="custom-date tpl-nav-lb">自定义日期范围...</a></li>
+    <li class="files-nav-item custom-data-range" style="display: none">
+       <div class="cdr-from">从：<input type="text" class="start-date csp-input"></div>
+       <div class="cdr-to">到：<input type="text" class="end-date csp-input"></div>
+       <div class="cdr-remind">例如：2009-01-01</div>
+       <div class="cdr-button"><button class="date-search-btn csp-btn-search">搜索</button></div>
+    </li>
+   </ul> 
+   
+   <ul class="search-include-nav-list fn-hide">
+    <li class="left-bot-line marg10"></li>
+    <li class="files-nav-item marg10"><a href="javascript:;" class="tpl-nav-lb depw-menu-aon" feedattachtype="0">全部</a></li>
+    <li class="files-nav-item"><a href="javascript:;" class="tpl-nav-lb" feedattachtype="1">包含录音</a></li>
+    <li class="files-nav-item"><a href="javascript:;" class="tpl-nav-lb" feedattachtype="2">包含图片</a></li>
+    <li class="files-nav-item"><a href="javascript:;" class="tpl-nav-lb" feedattachtype="3">包含文件</a></li>
+    <li class="files-nav-item"><a href="javascript:;" class="tpl-nav-lb" feedattachtype="4">包含坐标位置</a></li>
+    <li class="files-nav-item"><a href="javascript:;" class="tpl-nav-lb" feedattachtype="5">包含复制文件</a></li>
+    <li class="files-nav-item"><a href="javascript:;" class="tpl-nav-lb" feedattachtype="6">包含定位图片</a></li>
+  </ul>
+  
+</div>
+
+<div class="search-colleagues-tpl-left">
+  <ul class="search-colleagues-nav-list">  
+    <li class="files-nav-item marg20"><a href="#search" class="tpl-nav-l tpl-nav-lb">工作</a></li>
+    <li class="files-nav-item"><a href="#search/images" class="tpl-nav-l tpl-nav-lb">图片</a></li>
+    <li class="files-nav-item"><a href="#search/attachs" class="tpl-nav-l tpl-nav-lb">附件</a></li>
+    <li class="files-nav-item"><a href="#search/audios" class="tpl-nav-l tpl-nav-lb">录音</a></li>
+    <li class="files-nav-item"><a href="#search/colleagues" class="tpl-nav-l tpl-nav-lb">同事</a></li>
+    <li class="left-bot-line marg10"></li>
+    <li class="files-nav-item marg10"><a href="javascript:;" class="tpl-nav-lb depw-menu-aon">全部</a></li>
+    <li class="files-nav-item"><a href="javascript:;" class="tpl-nav-lb">在职</a></li>
+    <li class="files-nav-item"><a href="javascript:;" class="tpl-nav-lb">离职</a></li>
+  </ul>
+</div>
+<script class="search-sender-ac" type="text/html">
+    <div class="{{classPrefix}}">
+        <div class="{{classPrefix}}-query">
+            <div class="{{classPrefix}}-query-title ac-title">输入姓名或拼音检索。</div>
+            <ul class="{{classPrefix}}-ctn" data-role="items">
+                {{#each items}}
+                <li data-role="item" class="{{../classPrefix}}-item" data-value="{{name}}"><a href="javascript:;">{{name}}</a></li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</script>

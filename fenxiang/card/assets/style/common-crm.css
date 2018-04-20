@@ -1,0 +1,194 @@
+
+.crm-button-blue,.crm-button-back,
+.crm-button-submit{
+    color:#ffffff;
+    border: 1px solid #427fed;
+    padding: 0 20px;
+    line-height:28px;
+    cursor:pointer;
+    background-color:#427fed;
+    *border:none;
+    -moz-border-radius: 4px; /* Firefox */
+    -webkit-border-radius: 4px; /* Safari 和 Chrome */
+    border-radius: 4px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    /*box-shadow:1px 1px 0px #98d67b inset,-1px -1px 0px #98d67b inset;
+    background: -webkit-gradient(linear, left top, left bottom, from(#76c955), to(#66b540));
+        background: -moz-linear-gradient(top,  #76c955,  #66b540);
+        background: -o-linear-gradient(top, #76c955, #66b540);
+        background: linear-gradient(to bottom, #76c955, #66b540);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#76c955', endColorstr='#66b540');
+        _background-color:#66b540;*/
+}
+
+.crm-button-white{
+    color:#000;
+    border: 1px solid #bfbfbf;
+    padding: 0 20px;
+    line-height:28px;
+    cursor:pointer;
+    background-color:#fff;
+    *border:none;
+    -moz-border-radius: 4px; /* Firefox */
+    -webkit-border-radius: 4px; /* Safari 和 Chrome */
+    border-radius: 4px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    /*box-shadow:1px 1px 0px #98d67b inset,-1px -1px 0px #98d67b inset;
+    background: -webkit-gradient(linear, left top, left bottom, from(#76c955), to(#66b540));
+        background: -moz-linear-gradient(top,  #76c955,  #66b540);
+        background: -o-linear-gradient(top, #76c955, #66b540);
+        background: linear-gradient(to bottom, #76c955, #66b540);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#76c955', endColorstr='#66b540');
+        _background-color:#66b540;*/
+}
+
+.crm-button-green{color:#fff;border: 1px solid #53a93f;padding: 0 24px;line-height:28px;cursor:pointer;background-color:#53a93f;*border:none;
+    -moz-border-radius: 4px; /* Firefox */
+    -webkit-border-radius: 4px; /* Safari 和 Chrome */
+    border-radius: 4px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    /*box-shadow:1px 1px 0px #98d67b inset,-1px -1px 0px #98d67b inset;
+    background: -webkit-gradient(linear, left top, left bottom, from(#76c955), to(#66b540));
+        background: -moz-linear-gradient(top,  #76c955,  #66b540);
+        background: -o-linear-gradient(top, #76c955, #66b540);
+        background: linear-gradient(to bottom, #76c955, #66b540);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#76c955', endColorstr='#66b540');
+        _background-color:#66b540;*/
+}
+
+
+.crm-button-blue:hover,
+.crm-button-submit:hover{opacity:0.8;filter:alpha(opacity=80);}
+.button-blue:hover,.button-green:hover,
+.button-submit:hover{opacity:0.8;filter:alpha(opacity=80);}
+/*:root .button-green:hover{filter:none;background-color:#66b540}*/
+.crm-button-gray,.crm-button-modify,.crm-button-delete,
+.crm-button-cancel{color:#666666;border:#d8d8d8 solid 1px;border-radius:4px;padding:0 24px;line-height:28px;cursor:pointer;background-color:#fff;
+}
+.crm-button-gray:hover,
+.crm-button-cancel:hover{opacity:0.8;filter:alpha(opacity=80);background-color:#fff;}
+.crm-button-modify:hover{
+    background-color:#427fed;
+    border-color:#427fed;
+    color: #fff;
+}
+.crm-button-delete:hover{
+    background-color:#D73D32;
+    border-color:#D73D32;
+    color: #fff;
+}
+.crm-button-orange{color:#ffffff;border:#fae2c7 solid 1px;border-radius:0px;padding:0 20px;line-height:28px;cursor:pointer;background-color:#ec881d;*border:none;
+    /*box-shadow:1px 1px 0px #fbda97 inset,-1px -1px 0px #fbda97 inset;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fbc105), to(#eb991a));
+        background: -moz-linear-gradient(top,  #fbc105,  #eb991a);
+        background: -o-linear-gradient(top, #fbc105, #eb991a);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fbc105', endColorstr='#eb991a');
+        background: linear-gradient(to bottom, #fbc105, #eb991a);
+        _background-color:#eb991a;*/
+}
+.crm-button-orange:hover{opacity:0.8;filter:alpha(opacity=80);}
+.crm-button-state-disabled{
+
+    opacity:0.5;
+    filter:alpha(opacity=50)progid:DXImageTransform.Microsoft.gradient(startColorstr='#76c955', endColorstr='#66b540');
+}
+.crm-button-state-disabled:hover{
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    cursor: default ! important;
+    background-color: inherit;
+    color: #666;
+    border: solid 1px #d8d8d8;
+
+}
+
+/* confirm and alert start */
+.fs-confirm .icon-flag,
+.fs-alert .icon-flag{
+    width:37px;
+    height:33px;
+}
+.fs-confirm .icon-info,
+.fs-alert .icon-info{
+    background:url(../images/info.png);
+    float:left;
+}
+.fs-confirm .icon-question{
+    background:url(../images/question.png);
+    float:left;
+    height:40px;
+    width:25px;
+}
+.fs-confirm .ui-dialog-message img,
+.fs-alert .ui-dialog-message img{
+    vertical-align: middle;
+}
+.fs-confirm .ui-dialog-container,
+.fs-alert .ui-dialog-container{padding-bottom:10px;}
+.fs-alert .ui-dialog-container,.fs-confirm .ui-dialog-container{padding-right:10px;}
+.fs-confirm .ui-dialog-message{font-size:13px;padding-top:5px;}
+.fs-confirm .ui-dialog-message .message-content{margin-left:50px;display:block;}
+.fs-confirm .ui-dialog-message .undefined .message-content{margin-left:0px;}
+.fs-confirm .ui-dialog-operation{text-align:right;margin: 0 10px 10px 10px;}
+.fs-confirm .ui-dialog-operation .ui-dialog-button-orange,
+.fs-alert .ui-dialog-operation .ui-dialog-button-orange{
+    color:#ffffff;border: 1px solid #427fed;padding: 0 24px;line-height:28px;cursor:pointer;background:none;background-color:#427fed;*border:none;
+    -moz-border-radius: 4px; /* Firefox */
+    -webkit-border-radius: 4px; /* Safari 和 Chrome */
+    border-radius: 4px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    box-shadow: none;
+    height:28px;
+}
+.fs-confirm .ui-dialog-operation .ui-dialog-button-orange:hover,
+.fs-alert .ui-dialog-operation .ui-dialog-button-orange:hover{opacity:0.8;filter:alpha(opacity=80);}
+.fs-confirm .ui-dialog-operation .ui-dialog-button-white{
+    color:#666666;border:#d8d8d8 solid 1px;border-radius:4px;padding:0 24px;line-height:28px;cursor:pointer;background:none;background-color:#fff;
+    box-shadow: none;
+    height:28px;
+}
+.fs-confirm .ui-dialog-operation .ui-dialog-button-white:hover{opacity:0.8;filter:alpha(opacity=80);}
+
+.fs-alert .ui-dialog-operation{text-align:right;}
+.fs-alert .message-content{font-size:13px;
+    word-wrap: break-word;
+}
+
+/* confirm and alert end */
+
+
+
+
+/* textfield start */
+input.crm-textfield,
+textarea.crm-textfield{
+    height:32px;
+    line-height: 32px;
+    border:1px solid #d9d9d9;
+    padding:0 10px;
+    color:#424242;
+    font-size:14px;
+}
+input.crm-textfield{
+    height:32px;
+    line-height: 32px;
+}
+input.crm-textfield-noborder{
+    height:32px;
+    line-height: 32px;
+    border:none;
+    color:#999;
+    width: 420px;
+}
+/* textfield end */
+
+/* mask全局遮罩 start */
+.ui-mask{
+    background: #ffffff ! important;
+    opacity: 0.6 ! important;
+    filter:alpha(opacity=60) ! important; /* 针对 IE8 以及更早的版本 */
+}
+/* mask全局遮罩 start */
+
+/* crm feedlist 样式重置*/
+#crm-stream-showfeed {
+    width: 810px;
+    margin: 0 auto;
+}
+

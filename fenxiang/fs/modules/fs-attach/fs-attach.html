@@ -1,0 +1,74 @@
+<script type="text/html" class="fs-attach-item-tpl">
+    <div class="fs-attach-item-thumb fn-left"><img class="fs-attach-{{fileType}}-icon fs-attach-item-icon" src="{{blankImgSrc}}" /></div>
+    <div class="fs-attach-item-desc">
+        <h3 class="fs-attach-item-title">{{attachTitle}}</h3>
+        <div class="fs-attach-item-summary">{{attachSummary}}</div>
+    </div>
+    ## if(isEncrypted){ ##
+    <div class="fs-attach-item-lockapv">
+    ## }else{ ##
+    <div class="fs-attach-item-lockapv fn-hide">
+        ## } ##
+        <span class="lockapv-title">{{encryptTitle}}</span>
+        <a href="javascript:;" class="lockapv-open">点击解密查看</a>
+    </div>
+</script>
+<script type="text/html" class="fs-img-item-tpl">
+    <div class="fs-img-item-thumb-wrapper {{imgWrapperCls}}">
+        <img class="fs-img-item-thumb" src="{{thumbSrc}}" />
+    </div>
+    <div class="fs-img-item-desc">
+        <div class="fs-img-item-summary">{{imgSummary}}</div>
+    </div>
+    ## if(isEncrypted){ ##
+    <div class="fs-img-item-lockapv">
+    ## }else{ ##
+    <div class="fs-img-item-lockapv fn-hide">
+    ## } ##
+		<span class="lockapv-title">{{encryptTitle}}</span>
+		<a href="javascript:;" class="lockapv-open">点击解密查看</a>
+	</div>
+</script>
+<script type="text/html" class="fs-audio-item-tpl">
+    <div class="fs-audio-item-thumb fn-left"><img class="fs-audio-bg-icon fs-audio-item-icon" src="{{blankImgSrc}}" /></div>
+    <div class="fs-audio-item-desc">
+        <h3 class="fs-audio-item-title">{{attachTitle}}</h3>
+        <div class="fs-audio-item-summary">{{attachSummary}}</div>
+    </div>
+    ## if(isEncrypted){ ##
+    <div class="fs-audio-item-lockapv">
+    ## }else{ ##
+    <div class="fs-audio-item-lockapv fn-hide">
+        ## } ##
+        <span class="lockapv-title">{{encryptTitle}}</span>
+        <a href="javascript:;" class="lockapv-open">点击解密查看</a>
+    </div>
+</script>
+<script type="text/html" class="fs-attach-file-reader-tpl">
+    <!-- 文件预览组件 -->
+    <div class="file-reader-tbar">
+        <div class="file-name"></div>
+        <div class="file-reader-content">
+            <div class="pagination-wrapper">
+                <img class="pagination-nav nav-l" src="{{blankImgSrc}}" alt="向左"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" class="current-page-num" readonly="readonly"/>&nbsp;&nbsp;/&nbsp;&nbsp;<span class="total-page-num">0</span>&nbsp;（<span class="preview-unit"></span>）&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="pagination-nav nav-r" src="{{blankImgSrc}}" alt="向右"/>
+            </div>
+            <a class="download-l" href="#" target="_blank">下载原文件</a>
+        </div>
+        <div class="action">
+            <a href="#" class="close-l" title="关闭">&#10005;</a>
+        </div>
+    </div>
+    <div class="file-reader-body">
+        <div class="file-reader-body-inner">
+            <div class="file-reader-body-inner-inner">
+                <div class="page-list-wrapper overflow-hidden">
+                    <div class="file-reader-content">
+                        <div class="page-list">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

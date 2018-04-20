@@ -1,0 +1,45 @@
+.profile-profilelocations .tpl-l{
+    width:348px;
+}
+.profile-profilelocations .tpl-l .tpl-inner{
+    padding:10px;
+}
+.profile-profilelocations .tpl-c{
+    float: none;
+    width:auto;
+    margin-left:348px;
+}
+.profile-profilelocations .employee-info{
+    margin-bottom:10px;
+}
+.profile-profilelocations .avatar-wrapper img{
+    width:50px;
+    height:50px;
+}
+.profile-profilelocations .employee-name{
+    font-size:18px;
+    color:#333333;
+}
+.profile-profilelocations .summary-wrapper{
+    margin-left:10px;
+}
+.profile-profilelocations .start-date-field{
+    margin-bottom: 5px;
+}
+.profile-profilelocations .date-filter{
+    margin-bottom: 10px;
+}
+.profile-profilelocations .location-info{
+    color:#999999;
+    padding-left:25px;
+    height:25px;
+    background: url(../../../assets/images/feedlocation_ico.gif) no-repeat 0 0;
+}
+.profile-profilelocations .location-list-wrapper{
+    overflow: auto;
+}
+.profile-profilelocations .location-wrapper .date-filter input{width:120px;}
+.profile-profilelocations .location-wrapper .date-filter button{line-height:26px;padding:0 10px;vertical-align: middle;}
+.profile-profilelocations .ui-pagination{
+    padding:5px 0;
+}

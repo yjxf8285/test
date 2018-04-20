@@ -1,0 +1,15 @@
+#circles-atcircle .head-img-wrap{
+    display: none;
+}
+#circles-atcircle .circles-nav-list{
+}
+#circles-atcircle .circle-title{
+    padding:16px;
+    color:#999999;
+}
+.department .tpl-r .home-right-content .circle-name{
+    display: inline-block;
+    width:115px;
+    height:40px;
+    overflow: hidden;
+}

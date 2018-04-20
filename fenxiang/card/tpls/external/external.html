@@ -1,0 +1,94 @@
+<div id="external" class="tpl p-external" tplname="external" js="true" css="true" iscached="false" tpltitle="纷享管理平台-企业邮箱">
+    
+    <!--左侧导航-->
+    <div class="tpl-l">
+        <div class="tpl-inner">
+        
+            <ul class="flag-left-list">
+                <li><a href="javascript:;" class="fl-item-on">外部参与人管理</a></li>
+            </ul>
+            
+        </div>
+    </div>
+    
+    <!--右侧内容-->
+    <div class="tpl-c">
+        <div class="tpl-inner">
+        
+            <div class="con-wp">
+                
+                <h2>外部参与人管理</h2>
+                
+                
+                <!--
+                    过滤条件
+                -->
+                <div class="filter-b fn-clear">
+                    
+                    <input type="text" id="fkeyword" placeholder="姓名、微信号、手机号码、邮箱" />
+                    
+                    <label for="fstatus">状态：</label>
+                    <select id="fstatus">
+                        <option value="0">全部</option>
+                        <option value="1">已加入</option>
+                        <option value="2">已冻结</option>
+                        <option value="4">未加入</option>
+                    </select>
+
+                    <label for="fapp">授权应用：</label>
+                    <select id="fapp">
+                        <option value="">全部</option>
+                        <option value="1">合作伙伴</option>
+                        <option value="2">报数系统</option>
+                        <option value="0">未授权</option>
+                    </select>
+                    
+                    <button class="button-submit j-btn-search">搜索</button>
+                </div>
+                
+                
+                <!--
+                    按钮区域
+                -->
+                <div class="btns-b fn-clear">
+                    <button class="button-default j-add-new">新建</button>
+                    <!--<button class="button-default j-import">批量导入</button>-->
+                    <button class="button-default button-state-disabled j-authorize">批量授权应用</button>
+                </div>
+                
+                
+                <!--
+                    列表区域
+                -->
+                <div class="tb-b">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="50"><input type="checkbox" class="j-checkall"/></th>
+                                <th width="65">姓名</th>
+                                <th width="90">职位</th>
+                                <th width="95">手机</th>
+                                <th width="75">微信号</th>
+                                <th>邮箱</th>
+                                <th width="90">公司</th>
+                                <th width="65">状态</th>
+                                <th width="85">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="9" class="td-loading">正在加载中...</td>
+                            </tr>                           
+                        </tbody>
+                    </table>
+                    
+                    <div class="external-pages"></div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <!--右侧内容结束-->
+    
+</div>

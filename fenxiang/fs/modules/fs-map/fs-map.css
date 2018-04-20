@@ -1,0 +1,54 @@
+.fs-map-overlay{
+    background: #000000;
+}
+.fs-map-overlay-inner{
+    overflow: hidden;   /* ie6需要overflow==hidden，否则iframe可能会撑爆外层容器 */
+}
+.fs-map-overlay-inner .iframe-wrapper{
+    width: 100%;
+    height: 100%;
+}
+.fs-map-overlay .close-l{
+    position: absolute;
+    right:10px;
+    top:0px;
+    color:#ffffff;
+    font-size:20px;
+    text-decoration: none;
+}
+.fs-map-overlay .map-summary,
+.fs-map-overlay .map-summary .bg{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width:100%;
+    height:30px;
+}
+.fs-map-overlay .map-summary .bg{
+    background: #000000;
+    opacity: 0.4;
+    filter:alpha(opacity=40);
+}
+.fs-map-overlay .map-summary-content{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    color:#ffffff;
+    line-height: 30px;
+}
+.fs-map-overlay .map-summary-content a,
+.fs-map-overlay .map-summary-content a:visited{
+    color:#ffffff;
+}
+.fs-map-overlay .map-summary .address{
+    margin-left:10px;
+}
+.fs-map-overlay .map-summary .qd{
+    margin-right:10px;
+}
+.map-showdetail-dialog .ui-dialog-body{
+    height:370px;
+    overflow: auto;
+}
+

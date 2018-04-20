@@ -1,0 +1,84 @@
+<script class="report-layers-tpl">
+    <div class="report-layers">
+        <p class="report-layers-tip">提示：只有上报节点才能设置内部上报人或外部上报人。</p>
+        ## if(!parent){ ##
+	        <div class="report-tb-title title-inner">内部上报人 <a href="#" data-type="inner" onclick="return false;" class="report-btn btn-inner-edit">编辑</a></div>
+	        <div class="report-tb-box list-inner"></div>
+	        <div class="report-tb-title title-outer">外部上报人 <a href="#" data-type="outer" onclick="return false;" class="report-btn btn-outer-edit">编辑</a></div>
+	        <div class="report-tb-box list-outer"></div>
+		## } ##
+        <div class="report-tb-title title-inner">查看人 <a href="#" data-type="viewer" onclick="return false;" class="report-btn btn-viewer-edit">编辑</a></div>
+        <div class="report-tb-box list-viewer"></div>
+    </div>
+</script>
+<script class="report-layers-tbtpl">
+   	## if(data.length) { ##
+   		<ul class="report-pics-warp fn-clear">
+    	## _.each(data, function(source, index){ ##
+	    	<li data-id="{{source.employeeID}}">
+	    		<b class="ico-del-btn" data-id="{{source.employeeID}}" data-type="{{data.type}}"></b>
+	    		<div class="pic-warp">
+	    			<img src="{{source.imgsrc}}" class="pic">
+	    		</div>
+	    		<div class="tit">{{source.name}}</div>
+	    	</li>
+    	## }) ##
+    	</ul>
+    ## } else { ##
+        <div class="blank">
+			## if(data.type == 'viewer') { ##
+				还没有查看人，点击“编辑”查看。
+			## } else if(data.type == 'inner') { ##
+				还没有内部上报人，点击“编辑”查看
+			## } else if(data.type == 'outer') { ##
+				还没有外部上报人，点击“编辑”查看
+			## } ##
+		</div>
+	## } ##	
+</script>
+<script class="report-layers-tabs">
+	<div class="app-tabs report-layers-tabs">
+		<a href="#" data-type="manage" class="app-tab tab-manage active" onclick="return false;" hidefocus="">管理层级视图</a><a href="#" data-type="report" class="app-tab tab-report" onclick="return false;" hidefocus="">上报节点视图</a>
+	</div>
+</script>
+<script class="report-layers-manage-opts">
+	<div class="report-layers-manage-opts">
+		<a href="#" onclick="return false;" class="btn-create-manage">新建管理节点</a>
+		<a href="#" onclick="return false;" class="btn-create-report">新建上报节点</a>
+	</div>
+</script>
+<div class="add-otherpeople-tpl">
+    <div class="add-otherpeople-box">
+        <h3>新增上报人</h3>
+        <div class="otherpeople-form-box">
+            <form action="#" method="post">
+                <p>
+                    <label>姓名</label>
+                    <input type="text" class="input-name" name="username" placeholder="必填"/>
+                </p>
+                <p>
+                    <label>手机</label>
+                    <input type="text" name="mobile" placeholder="必填"/>
+                </p>
+                <p>
+                    <label>邮箱</label>
+                    <input type="text" name="email" class="long-input-text" placeholder="必填"/>
+                </p>
+                <p>
+                    <label>公司</label>
+                    <input type="text" name="company" class="long-input-text" placeholder="必填"/>
+                </p>
+                <p>
+                    <label>职位</label>
+                    <input type="text" name="postion" class="long-input-text" placeholder="必填"/>
+                </p>
+                <p class="submit-btn-box">
+                    <span class="report-btn report-btn-ok enter-addOther-btn">确定</span>
+                    <span class="report-btn report-btn-reset cancel-addOther-btn">取消</span>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
+

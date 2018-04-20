@@ -1,0 +1,36 @@
+
+.crm-contact-operation{
+	cursor: pointer;
+}
+
+.crm-contact-operation:hover{
+	color: #000;
+}
+
+.crm-contact-operation-container{
+	border: 1px #d8d8d8 solid;
+	background-color: #fff;
+	-moz-box-shadow:1px 2px 2px #cccccc;
+    -webkit-box-shadow:1px 2px 2px #cccccc;
+    box-shadow:1px 2px 2px #cccccc;
+    position: absolute;
+    width: 200px;
+    z-index: 1;/* 解决火狐下省略号遮不住问题 */
+}
+
+.crm-contact-operation-container ul{
+	padding: 5px 0;
+
+}
+
+
+.crm-contact-operation-container li{
+	padding-left: 30px;
+	cursor: pointer;
+	color: #000;
+	line-height: 30px;
+}
+
+.crm-contact-operation-container li:hover{
+	background-color: #f5f5f5;
+}

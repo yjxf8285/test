@@ -1,0 +1,63 @@
+// 详细列表模块
+.m-detail {
+
+    // 底部模块
+    .footer {
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        position: fixed;
+        bottom: 0;left: 0;
+        background-color: #eee;
+        border-top: 1px solid #d3d3d3;
+        overflow: hidden;
+        span {
+            float: left;
+            text-align: center;
+            cursor: pointer;    
+        }
+        .edite {
+            color: #2294fc;
+            width: 100%;    
+        }
+        .add {
+            display: none;
+            color: #2fc369;
+            width: 70%;
+            border-right: 1px solid #d3d3d3;
+            box-sizing: border-box;
+            webkit-box-sizing: border-box;    
+        }
+        .sub {
+            color: #2294fc;
+            display: none;
+            width: 30%;
+        }
+    }
+    
+    // 编辑打开
+    .edite-on {
+        .edite {
+            width: 30%;       
+        }
+        .add {
+            display: block;
+        }
+        .sub {
+            display: none;
+        }
+    }
+    
+    // 已修改数据 提交打开
+    .sub-on {
+        .edite {
+            display: none;     
+        }
+        .add {
+            display: block;
+        }
+        .sub {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.m-partneraddress{
+	position: absolute;
+	z-index: 999;
+	width: 480px;
+	padding: 20px;
+	background: #fff;
+	border: 1px #ccc solid;
+}
+.m-partneraddress p{
+	border-top: 1px #e5e5e5 solid;
+}
+.m-partneraddress span{
+	display: inline-block;
+	width: 55px;
+	text-align: center;
+	padding: 14px 0;
+	cursor: pointer;
+}

@@ -1,0 +1,799 @@
+/* 详情页 */
+/* 全局 */
+.text-black {
+    color: #000 !important;
+}
+
+/* 布局 */
+.crm-inner {
+    padding: 0 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.crm-list-inner {
+    max-width: 1400px;
+    min-width: 800px;
+    min-height: 277px;
+}
+
+.crm-detail-inner {
+    max-width: 960px;
+    min-width: 800px;
+    min-height: 277px;
+}
+
+.crm-detail-content {
+    margin-top: 30px;
+}
+
+.crm-detail-tab {
+    margin-top: 18px;
+    background-color: #fff;
+    border: 1px solid #d9d9d9;
+}
+
+.crm-detail-tab h1 {
+    padding: 20px 26px 5px;
+    font-size: 26px;
+    color: #333;
+    font-family: "arial", "宋体", "serif", serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.crm-detail-tab .follow-switch {
+    color: #666;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
+    padding: 0 12px 0 23px;
+    margin-right: 8px;
+    line-height: 28px;
+    cursor: pointer;
+    background-color: #FFF;
+    vertical-align: middle;
+}
+
+.crm-detail-tab .following {
+    background: #53A93F url('../../assets/images/crm_icons.png') no-repeat 6px -295px;
+    color: #FFF;
+    border-color: #FFF;
+}
+
+.crm-detail-tab .no-follow {
+    background: url('../../assets/images/crm_icons.png') no-repeat 7px -246px;
+}
+
+.crm-detail-tab .toolbar {
+    border-bottom: 1px solid #E9EAED;
+    padding-bottom: 20px;
+    padding-left: 28px;
+}
+
+.crm-detail-tab .toolbar .owner-warp {
+    line-height: 30px;
+}
+
+.crm-detail-tab .toolbar .isbatch-warp {
+    line-height: 30px;
+    color: #999;
+    font-family: "宋体", serif;
+}
+
+.crm-detail-tab .toolbar .isbatch-warp.cur {
+    padding-left: 20px;
+    background: url('../../assets/images/crm_icons.png') no-repeat -153px -244px;
+}
+
+.crm-detail-tab .toolbar .isbatch-warp .words, .crm-detail-tab .toolbar .isbatch-warp .link {
+	display: inline-block;
+	overflow: hidden;
+}
+.crm-detail-tab .toolbar .isbatch-warp .link {
+	max-width: 450px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.crm-detail-tab .respo {
+    margin-left: 8px;
+    display: inline-block;
+}
+
+.crm-detail-tab .detail-edit-btns {
+    padding-right: 20px;
+}
+
+.crm-detail-tab .detail-edit-btns button {
+    margin-left: 6px;
+}
+
+.crm-detail-bd .detail-left-list-ul li {
+    line-height: 24px;
+}
+
+.crm-detail-bd .detail-left-list-ul li .tit {
+    line-height: 24px !important;
+    font-size: 12px;
+    color: #333;
+    width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    margin-right: 10px;
+}
+.crm-detail-bd .detail-left-list-ul li .tit a{
+    color: #333;
+}
+.crm-detail-bd .detail-left-list-ul li .value {
+    font-size: 12px !important;
+    line-height: 24px !important;
+    color: #999 !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap !important;
+    display: inline-block;
+    width: 82px !important;
+    text-align: right;
+    height: 24px !important;
+}
+
+/* tab2 start */
+.tab-menu {
+	*height: 44px;
+}
+.crm-tab-menu {
+    border-left: 1px solid #E9EAED;
+    margin-left: 28px;
+    background-color: #fff;
+    *height: 44px;
+}
+
+.crm-tab-btn {
+    color: #999;
+    cursor: pointer;
+    padding: 12px 34px;
+    border-right: 1px solid #E9EAED;
+    position: relative;
+}
+
+.crm-tab-hover {
+    background-color: #f5f5f5;
+}
+
+.crm-tab-selected {
+    color: #000;
+}
+
+.crm-tab-selected-icon {
+    background: url(../../assets/images/crm_icons.png) no-repeat center -1px;
+    position: absolute;
+    width: 60px;
+    height: 8px;
+    display: block;
+    bottom: -1px;
+    left: 50%;
+    margin-left: -30px;
+}
+
+/* tab2 end */
+
+/*--------------------------- crm detail body    start */
+.crm-detail-bd {
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.crm-detail-bd .border-bottom {
+    border-bottom: 1px solid #D8D8D8;;
+}
+
+.crm-detail-bd .left-inner {
+    position: relative;
+    width: 360px;
+    top: 0px;
+}
+
+.crm-detail-bd .left-warp {
+    float: left;
+    width: 360px;
+    top: 0px;
+    /*height: 0;*/
+}
+
+.crm-detail-bd .right-warp {
+    width: 580px;
+    float: right;
+    /*margin-left: 380px;*/
+}
+.crm-detail-bd .right-warp .feed-submit-box-warp {
+	*position: relative;
+	*z-index: 1;
+} 
+
+.crm-detail-bd .base-box .input-tip {
+    float: left;
+    color: #999;
+    padding: 10px 0;
+    line-height: 20px;
+    margin-right: 16px;
+}
+
+.crm-detail-bd .base-box .left-name-tit {
+    padding-left: 16px;
+    padding-top: 28px;
+    font-size: 16px;
+    line-height: 0;
+    padding-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.crm-detail-bd .base-box .input-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    resize: none;
+    line-height: 39px;
+    font-size: 14px;
+    color: #333;
+}
+
+.crm-detail-bd .left-inner .info-box {
+}
+
+.crm-detail-bd .left-inner .base-box-border {
+    border: 1px solid #D8D8D8;
+}
+.crm-detail-bd .left-inner .base-box {
+    background: none repeat scroll 0% 0% #FFF;
+    border-radius: 3px;
+    color: #999;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.crm-detail-bd .left-inner .base-box-hd {
+    padding: 0 16px;
+    background: #fafafa;
+}
+.crm-detail-bd .left-inner .base-box-border .base-box-hd{
+    line-height: 31px;
+    background: none;
+}
+.crm-detail-bd .left-inner .base-box-hd h1 {
+    display: inline-block;
+    color: #333;
+    font-family: tahoma, arial, 'Hiragino Sans GB', 'Hiragino Sans GB W3', "宋体";
+}
+
+.crm-detail-bd .left-inner .base-box-hd .title {
+    font-family: tahoma, arial, 'Hiragino Sans GB', 'Hiragino Sans GB W3', "宋体";
+    font-size: 16px;
+    overflow: hidden;
+	white-space: nowrap;
+	width: 327px;
+    padding-top: 14px;
+	text-overflow: ellipsis;
+}
+
+.crm-detail-bd .left-inner .base-box-hd .operate {
+    cursor: pointer;
+}
+
+.crm-detail-bd .left-inner .base-box-hd .operate:hover {
+    color: #333;
+}
+
+.crm-detail-bd .left-inner .base-box-bd {
+    padding: 8px 16px;
+    overflow: hidden;
+}
+.crm-detail-bd .left-inner .base-box-border .base-box-bd{
+    padding-top: 0;
+}
+.crm-detail-bd .left-inner .base-box-bd li{
+    line-height: 28px;
+}
+.crm-detail-bd .left-inner .base-box-bd .label {
+    float: left;
+    width: 47px;
+    color: #999;
+}
+
+.crm-detail-bd .left-inner .base-box-bd .value-wrapper {
+    margin-left: 50px;
+    display: block;
+}
+
+.crm-detail-bd .left-inner .base-box-bd .value {
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+    border: medium none;
+    overflow: hidden;
+    /*word-wrap: break-word;*/
+    resize: none;
+    height: 19px;
+    display: inline-block;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+    padding-top: 4px;
+}
+
+.crm-detail-bd .left-inner .base-box-bd .base-box-table {
+    width: 100%;
+    line-height: 26px;
+    margin-top: 10px;
+}
+
+.crm-detail-bd .left-inner .base-box-bd .base-box-table th {
+    background: #eee;
+    border: solid 1px #d8d8d8;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.crm-detail-bd .left-inner .base-box-bd .base-box-table td {
+    border: solid 1px #d8d8d8;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.crm-detail-bd .left-inner .base-box-bd .base-box-table .align-r {
+    text-align: right;
+}
+
+.crm-detail-bd .left-inner .base-box-bd .base-box-ul {
+    line-height: 26px;
+}
+
+.crm-detail-bd .left-inner .base-box-bd .base-box-ul .base-box-li-value {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.crm-detail-bd .left-inner .base-box-fd {
+    padding-left: 20px;
+}
+
+.crm-detail-bd .isnodatatip {
+    text-align: center;
+    padding-top: 20px;
+    color: #999;
+    padding-bottom: 20px;
+}
+
+/*--------------------------- crm detail baseinfo    start */
+.crm-detail-bd-baseinfo {
+    background-color: #FFF;
+    border: 1px solid #D8D8D8;
+    padding: 20px;
+}
+.crm-detail-bd .nocustomer-info-warp{
+    text-align: center;
+    color: #999;
+    padding: 20px;
+    margin-top: 20px;
+}
+.crm-detail-bd-baseinfo .operate {
+    position: relative;
+    cursor: pointer;
+    color: #999;
+}
+
+.crm-detail-bd-baseinfo .operate:hover {
+    color: #333;
+}
+
+.crm-detail-bd-baseinfo .baseinfo-hd {
+    padding-bottom: 20px;
+}
+.crm-detail-bd-baseinfo .baseinfo-hd a.operation{
+   color: #999;
+}
+
+.crm-detail-bd-baseinfo .baseinfo-hd h1 {
+    font-family: tahoma, arial, 'Hiragino Sans GB', 'Hiragino Sans GB W3', "宋体";
+    font-size: 18px;
+    color: #333;
+}
+
+.crm-detail-bd-baseinfo .baseinfo-bd {
+}
+.crm-detail-bd .l-files-warp{
+    margin-bottom: 20px;
+}
+
+.crm-detail-bd-baseinfo .baseinfo-bd .baseinfo-module {
+    padding: 10px 0;
+}
+
+.crm-detail-bd-baseinfo .baseinfo-bd .left-inner {
+    border-right: 1px solid #D8D8D8;
+    width: 550px;
+    display: inline-block;
+}
+
+.crm-detail-bd-baseinfo .baseinfo-bd .right-inner {
+    display: inline-block;
+    width: 340px;
+    height: 100%;
+    vertical-align: top;
+    margin-left: 16px;
+}
+
+.crm-detail-bd-baseinfo .baseinfo-bd .input-tip {
+    float: left;
+    width: 90px;
+    color: #999;
+    padding: 10px 0;
+}
+
+.crm-detail-bd-baseinfo .baseinfo-bd .textarea-wrapper {
+    margin-left: 90px;
+    word-wrap: break-word;
+    padding: 10px 10px 10px 0;
+}
+.crm-detail-bd-baseinfo .baseinfo-bd .input-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    resize: none;
+    line-height: 39px;
+    font-size: 14px;
+}
+
+.crm-detail-bd-baseinfo .baseinfo-bd .input-wrapper-nofloat {
+    overflow: hidden;
+    word-wrap: break-word;
+    resize: none;
+    line-height: 24px;
+    font-size: 14px;
+    clear: both;
+    padding-right: 10px;
+    white-space: pre;
+}
+
+.crm-detail-bd-baseinfo .baseinfo-bd .input-textarea-wrapper {
+    height: 50px;
+    padding: 10px 16px;
+    word-break: break-all;
+    font-size: 14px;
+}
+
+.crm-operate-contact-tip {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 20;
+    width: 200px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    -moz-box-shadow: 5px 5px 4px #d8d8d8;
+    -webkit-box-shadow: 5px 5px 4px #d8d8d8;
+    box-shadow: 5px 5px 4px #D8D8D8
+}
+
+.crm-operate-contact-tip ul {
+    padding: 5px 0;
+}
+
+.crm-operate-contact-tip li {
+    padding: 10px;
+}
+
+.crm-operate-contact-tip li:hover {
+    background-color: #f8f8f8;
+}
+
+/* -------------------------------------弹框的样式  start*/
+.dialog-crm {
+}
+
+.dialog-crm .dialog-create-warp .bottom-tip-wrapper {
+    margin-left: 132px;
+    margin-bottom: 10px;
+    color: #999;
+}
+
+.dialog-crm .dialog-create-warp .contact-i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url('../../assets/images/i.png') no-repeat scroll left center transparent;
+}
+
+.dialog-crm .dialog-create-warp .customer-exits-flag-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+}
+
+.dialog-crm .dialog-create-warp .customer-exits-flag-icon-dui {
+    background: url('../../assets/images/dui.png') no-repeat scroll left center transparent;
+}
+
+.dialog-crm .dialog-create-warp .customer-exits-flag-icon-cuo {
+    background: url('../../assets/images/i.png') no-repeat scroll left center transparent;
+}
+
+.dialog-crm .dialog-create-warp .l {
+    float: left;
+    width: 170px;
+    *left: 0;
+}
+
+.dialog-crm .dialog-create-warp .l .left-list {
+    padding: 20px 0 0 20px;
+}
+
+.dialog-crm .dialog-create-warp .l .left-list li {
+    font-weight: bold;
+    border: 1px solid #d8d8d8;
+    border-right: none;
+    border-left: solid 2px #427fed;
+    padding: 10px 0 10px 20px;
+    background: #EEEEEE;
+    cursor: pointer;
+}
+
+.dialog-crm .dialog-create-warp .l .left-list li.unselected {
+    border-left: none;
+    background-color: #fff;
+    font-weight: normal;
+}
+
+.dialog-crm .dialog-create-warp .r {
+    margin-left: 170px;
+    background: #E5E5E5;
+    padding: 20px 20px 100px;
+    border-left: solid 1px #d8d8d8;
+}
+
+.dialog-crm .dialog-create-warp .r .fn-warp {
+    margin-bottom: 20px;
+}
+
+.dialog-crm .dialog-create-warp .r .right-list {
+    background: #fff;
+    border-radius: 5px;
+    border: solid 1px #d8d8d8;
+    border-bottom: none;
+    margin-bottom: 10px;
+    color: #676767;
+}
+
+/*日期选择框的布局*/
+.dialog-crm .dialog-create-warp .r .right-list input.fs-publish-dateselect-input {
+    margin-top: 5px;
+    width: 162px;
+}
+
+.dialog-crm .dialog-create-warp .r .right-list li {
+    border-bottom: solid 1px #d8d8d8;
+}
+
+.dialog-crm .dialog-create-warp .r .right-list li .product-unitamount {
+    padding-top: 10px;
+}
+
+.dialog-crm .dialog-create-warp .r .right-list .selects-tit {
+    float: left;
+    width: 100px;
+    color: #999;
+    padding: 0 16px 6px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.dialog-crm .dialog-create-warp .r .right-list .inputs-tit {
+    float: left;
+    width: 100px;
+    color: #999;
+    padding: 10px 16px;
+    text-overflow: ellipsis;
+}
+
+.dialog-crm .dialog-create-warp .r .right-list .inputs-tit .red {
+    color: red;
+    margin-left: 4px;
+    font-family: "宋体", serif;
+    vertical-align: top;
+}
+
+.dialog-crm .dialog-create-warp .r .right-list .input-warp {
+    margin-left: 132px;
+    display: block;
+}
+
+.dialog-crm .dialog-create-warp .r .right-list .date-wrapper input {
+    width: 162px;
+}
+
+.dialog-crm .dialog-create-warp .r .right-list .radio-wrap {
+    padding: 10px 16px;
+
+}
+
+/*.dialog-crm .dialog-create-warp .r .right-list .select-warp{*/
+/*position: relative;*/
+/*margin-left: 100px;*/
+/*display: block;*/
+/*}*/
+.dialog-crm .dialog-create-warp .r .right-list .select-del {
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+    right: 0px;
+    cursor: pointer;
+    top: 6px;
+}
+
+.dialog-crm .dialog-create-warp .r .right-list .selects-warp .select-for-dialog .mn-select-title {
+    /*width: 100px;*/
+    height: 25px;
+    line-height: 25px;
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+.dialog-crm .dialog-create-warp .r .right-list .selects-warp .select-for-dialog .title-icon {
+    top: 18px;
+}
+
+.dialog-crm .dialog-create-warp .r .right-list .selects-warp {
+
+    display: block;
+}
+
+.tags-list-selects li {
+    width: 98px !important;
+
+}
+
+.dialog-crm .dialog-create-warp .r .right-list .area-auto-height {
+    border: medium none;
+    padding: 10px 0;
+    width: 410px;
+    color: #676767;
+    overflow: hidden;
+}
+
+
+.dialog-crm .dialog-create-warp .r .right-list .textarea-h19{
+    height: 19px;
+}
+.dialog-crm .dialog-create-warp .r .right-list .textarea-h100{
+    height: 100px;
+}
+.dialog-crm .dialog-create-warp .r .right-list .textarea-select-text{
+    width: 320px;
+    vertical-align: middle;
+}
+.dialog-crm .dialog-create-warp .r .right-list .dialog-input-text {
+    height: 39px;
+    border: none;
+    color: #676767;
+    width: 410px;
+}
+.dialog-crm .dialog-create-warp .r .right-list .long-view-text {
+    padding: 12px 0 12px;
+    word-wrap: break-word;
+}
+.dialog-crm .dialog-create-warp .r .right-list .div-view-text {
+    border: none;
+    padding: 10px 0 10px;
+    width: 410px;
+    /*color: #999;*/
+    word-wrap: break-word;
+}
+.dialog-crm .dialog-create-warp .r .right-list .view-text {
+    width: 326px;
+    padding: 12px 0 12px;
+    word-wrap: break-word;
+}
+
+.dialog-crm .dialog-create-warp .r .right-list .one-column {
+    min-height: 12px;
+    line-height: 19px;
+    text-indent: 16px;
+    font-size: 14px;
+    padding: 14px;
+}
+.dialog-crm .dialog-create-warp .button-wrapper button {
+    margin-right: 16px;
+    border: 1px solid #BFBFBF;
+}
+.dialog-crm .dialog-create-warp .r .right-list .dialog-input-wd390 {
+    width: 390px;
+}
+.dialog-crm .dialog-create-warp .page-button{
+    border: 1px solid #d2d2d2;
+    width: 55px;
+    height: 24px;
+    display: inline-block;
+    line-height: 24px;
+    text-align: center;
+    color: #676767;
+    text-decoration: none;
+    background-color: #fff;
+}
+.dialog-crm .dialog-create-warp .history-inner{
+    background-color: #fff;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+.dialog-crm .dialog-create-warp .history-inner li{
+    height: 46px;
+    line-height: 46px;
+    border-bottom: solid 1px #e4e4e4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.dialog-crm .dialog-create-warp .history-inner li:last-child{
+    border-bottom: none;
+}
+.dialog-crm .dialog-create-warp .history-inner li .time-display{
+    padding-left: 5px;
+    color: #b5b5b5;
+}
+
+.dialog-crm .dialog-create-warp .page-btn-disabled{
+    cursor: default;
+    opacity: .5;
+}
+.dialog-crm .owner-name-wrapper  {
+    color: #fff;line-height: 29px;margin: 10px 0 10px 18px;display: inline-block;
+    height: 29px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.dialog-crm .customer-view-wrapper .bg-green{
+    background-color: #53a93f;
+}
+.dialog-crm .customer-view-wrapper .bg-yellow{
+    background-color: #fff1a8;
+}
+.dialog-crm .customer-view-wrapper textarea{
+    height: 19px;
+}
+.dialog-crm .customer-view-wrapper button{
+    margin-left: 6px;
+}
+
+
+
+/* -------------------------------------弹框的样式  end*/
+
+.feed-tabs-hd{
+background: #fff;
+    margin-top: 16px;
+    border: solid 1px #d8d8d8;
+    border-radius: 2px;
+    padding-left: 16px;
+    position: relative;
+}
+.crm-feed-list-warp .list-search-bar{
+    background: #fff;
+    border: solid 1px #d8d8d8;
+    border-top: none;
+}
+.crm-detail-bd .feed-list-pagination {
+    padding-top: 0;
+}
+.feed-tabs-hd .search-wrap{
+    position: absolute;
+    right: 16px;
+    top: 13px;
+    z-index: 3;
+}

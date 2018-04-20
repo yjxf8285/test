@@ -1,0 +1,72 @@
+#work-performance .work-performance-manage-l{
+    background: transparent url("../../../assets/images/menu/lock_gray.png") no-repeat 190px 4px;
+}
+.performance{
+    
+}
+.performance .performance-tit{
+    padding:16px;
+}
+.performance .performance-tit h1{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.performance .performance-tit p{
+    color: #999;
+}
+.performance .performance-content{
+    padding:16px 16px 80px;
+}
+.performance .performance-form{
+    color: #999;
+}
+.performance .performance-form label{
+    padding-top: 4px;
+    width: 65px;
+    float: left;
+    font-family: '宋体',serif;
+}
+.performance .performance-form dd{
+    margin-bottom: 10px;
+}
+.performance .performance-status{
+    padding-top: 4px;
+    font-family: '宋体',serif;
+}
+.performance .performance-status a{
+    padding: 4px 8px;
+    margin-right: 4px;
+    text-decoration: none;
+}
+.performance .performance-status a.cur{
+    background: #0082CB;
+    color: #fff;
+}
+.performance .performance-status a:hover{
+    background: #0082CB;
+    color: #fff;
+}
+.performance .performance-form .sender-sb{
+    width: 468px;
+    float: left;
+}
+.performance .performance-form .executor-sb{
+    width: 468px;
+    float: left;
+}
+.performance .performance-form .downbtntip{
+    margin-left: 8px;
+    vertical-align: middle;
+}
+.performance .performance-form .downbtntip.loading{
+    color: #999;
+    background: url(../../../assets/images/loading.gif) no-repeat 0 0;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.performance  .readme-list{
+    margin-top: 10px;
+    margin-left: 70px;
+    color: #999;
+}
+.department .work-nav-list{border-top:#e8e8e8 solid 1px;padding:16px 0;margin-top:10px;}

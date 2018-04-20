@@ -1,0 +1,27 @@
+.customer-list-warp .top-fn-btns .l {
+    float: left;
+}
+
+.customer-list-warp .top-fn-btns .r {
+    float: right;
+}
+.crm-allcustomers-fliter{
+    border-radius:4px;
+}
+.crm-crmsettings-filterinfo{
+    background: #fff;
+    line-height: 38px;
+    border:1px #d8d8d8 solid;
+    padding: 0 12px;
+    margin-top:15px;
+    display: none;
+}
+
+.crm-crmsettings-filterinfo span{
+    font-weight: bold;
+    padding:0 6px;
+}
+
+.crm-crmsettings-filterinfo a{
+    cursor: pointer;
+}

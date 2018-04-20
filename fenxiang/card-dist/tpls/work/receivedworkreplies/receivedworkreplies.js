@@ -1,0 +1,6 @@
+/**
+ * 纷享页面逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+define("tpls/work/receivedworkreplies/receivedworkreplies",["util","modules/fs-reply/fs-reply-list","../work-common","moment","../work-common.html"],function(a,b){var c=window,d=c.FS,e=d.tpl,f=(e.store,e.event),g=(a("util"),a("modules/fs-reply/fs-reply-list")),h=a("../work-common"),i=g.replyList;b.init=function(){var a,c=b.tplName,d=b.tplEl,e=$(".reply-list",d),g=$(".reply-list-pagination",d),j=$(".filter",d);h.init(d,c),a=new i({element:e,pagSelector:g,pagOpts:{pageSize:10,visiblePageNums:7},listPath:"/feed/getFeedReplysOfIReceive",replyCb:function(b){var c=$(".depw-menu-aon",j).attr("replytype");b.success&&"send"==c&&a.reload()},defaultRequestData:{feedType:3,keyword:""}}),a.load(),j.on("click",".filter-field",function(b){var c=$(this),d=c.attr("replytype");$(".filter-field",j).removeClass("depw-menu-aon"),c.addClass("depw-menu-aon"),a.opts.listPath="/feed/getFeedReplysOfI"+_.str.capitalize(d),"send"==d?a.setReplyBtnVisible(!0):a.setReplyBtnVisible(!1),a.reload(),b.preventDefault()});var k=function(){a.destroy()};f.one("beforeremove",function(a){a==c&&k()})}});

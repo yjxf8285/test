@@ -1,0 +1,6 @@
+/**
+ * 纷享页面逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-09-02
+ */
+define("tpls/search/search",["util","modules/feed-list/feed-list","./search-common","filter","moment","./search-common.html","autocomplete","events"],function(a,b){var c=window,d=c.FS,e=d.tpl;e.store,e.event;var f=a("util"),g=a("modules/feed-list/feed-list"),h=a("./search-common");b.init=function(){var a,c=b.tplEl,d=b.tplName,e=$(".tpl-l",c),i=$(".feed-list",c),j=$(".feed-list-pagination",c),k=$(".search-inp-s",c),l=h.init(c,d);a=new g({element:i,pagSelector:j,pagOpts:{pageSize:20,visiblePageNums:7},loadSize:15,listPath:"/FeedSearch/GetFeedForSearch",defaultRequestData:function(){return{feedType:0,keyword:_.str.trim(k.val()),feedAttachType:0}},listEmptyText:"没有符合条件的搜索结果"}),l.on("search",function(b){var c=_.extend({feedType:0,keyword:_.str.trim(k.val()),feedAttachType:0},b);c.keyword.length>0&&(a.opts.defaultRequestData=c,a.reload())}),function(){var a=f.getTplQueryParams(),b=a?a.key:"";k.val(b).keyup(),$(".tpl-nav-l",e).eq(0).addClass("depw-menu-aon"),$(".all-employee",c).click(),$(".search-include-nav-list",e).hide()}()}});

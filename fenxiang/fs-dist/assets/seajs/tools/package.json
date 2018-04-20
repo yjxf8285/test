@@ -1,0 +1,20 @@
+{
+    "name": "build",
+    "description": "build seajs by Node.js",
+    "author": {
+        "name": "13",
+        "email": "qsimon13@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:q13/githubpage.git"
+    },
+    "bin":{
+        "githubpage":"./bin/build.js"
+    },
+    "dependencies": {
+        "underscore": "latest"
+    },
+    "main": "src/core.js",
+    "version": "1.0.0"
+}

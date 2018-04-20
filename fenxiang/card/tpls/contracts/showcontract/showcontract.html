@@ -1,0 +1,358 @@
+<div id="contracts-showcontract" class="crm-tpl showcontract crm-inner crm-detail-inner fs-tpl-active" tplname="contracts-showcontract" tpltitle="纷享销客平台-合同详细"
+     js="true" css="false"
+     iscached="false" data-lighted="crm|contracts">
+
+
+<div class="crm-detail-content">
+<div>
+    <button class="crm-button-back">返回</button>
+</div>
+<!--头部-->
+<div class="crm-detail-tab">
+    <h1 class="hd-titname"></h1>
+
+    <div class="toolbar fn-clear">
+        <!--左侧功能-->
+        <div class="fn-left">
+            <button class="follow-switch-btn follow-switch">关注</button>
+ <span select-cls="crm-select-list-short" class="mn-select-box updatestates-select-list crm-select-list-short mr6">
+                            <span class="mn-select-title-wrapper"><span class="mn-select-title" style="width: 80px;">执行前</span><span class="title-icon"></span></span>
+                          <ul class="mn-select-list">
+                              <li class="mn-select-item" data-value="1">执行前</li>
+                              <li class="mn-select-item" data-value="2">执行中</li>
+                              <li class="mn-select-item" data-value="3">结束</li>
+                              <li class="mn-select-item" data-value="4">意外终止</li>
+                          </ul>
+                        </span>
+            <span class="owner-warp">由<a href="javascript:;" class="owner-name jdata-ownername canchangeowner-btn"> </a>负责</span>
+        </div>
+        <!--右侧功能-->
+        <div class="fn-right">
+            <div class="detail-edit-btns">
+                <button class="crm-button-modify modify-btn">编辑</button>
+                <button class="crm-button-modify canchangeowner-btn canchangeowner-btn-r" style="margin-left: 6px;">
+                    变更负责人...
+                </button>
+
+                <button class="crm-button-delete delete-btn" style="margin-left: 6px;">删除</button>
+            </div>
+        </div>
+
+    </div>
+    <!--TAB菜单-->
+    <div class="tab-menu"></div>
+</div>
+<!--身体-->
+<div class="crm-detail-bd">
+<!--时间线-->
+<div class="tab-time-line-box">
+    <div class="left-inner left-warp flaot-left-menu">
+        <div class="base-box">
+            <div class="left-name-tit jdata-customername"></div>
+            <ul class="base-box-bd">
+                <li class="fn-clear"><span class="input-tip">总金额</span>
+
+                    <div class="input-wrapper jdata-totalamount"></div>
+                </li>
+                <li class="fn-clear"><span class="input-tip">类型</span>
+
+                    <div class="input-wrapper jdata-customerstatetagoptionname"></div>
+                </li>
+                <li class="fn-clear"><span class="input-tip">状态</span>
+
+                    <div class="input-wrapper jdata-states"></div>
+                </li>
+
+
+            </ul>
+        </div>
+        <!--回款情况-->
+        <div class="base-box">
+            <div class="base-box-hd border-bottom fn-clear">
+                <div class="fn-left">
+                    <h1 class="">回款情况</h1>
+                </div>
+                <div class="fn-right">
+                    <span class="jadta-recordstates">未回款</span>
+                </div>
+            </div>
+            <div class="base-box-bd">
+                <table border="0" cellpadding="0" cellspacing="0" class="base-box-table">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>次数</th>
+                        <th class="align-r">总金额（元）</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>回款计划</td>
+                        <td class="text-black jdata-plannum">0期</td>
+                        <td class="align-r text-black jdata-plantotalamount">0.00</td>
+                    </tr>
+                    <tr>
+                        <td>回款记录</td>
+                        <td class="text-black jdata-recordnum">0笔</td>
+                        <td class="align-r text-black jdata-recordtotalamount">0.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="base-box-fd">
+                <a class="returned-seemore-btn" href="javascript:;">查看明细</a>
+            </div>
+        </div>
+        <!--服务信息-->
+        <div class="base-box">
+            <div class="base-box-hd border-bottom fn-clear">
+                <div class="fn-left">
+                    <h1 class="">服务信息</h1>
+                </div>
+                <div class="fn-right">
+                    <span class="jdata-remainingdaysdesc"></span>
+                </div>
+            </div>
+            <div class="base-box-bd">
+                <ul class="base-box-ul">
+                    <li>
+                        <span class="base-box-li-tit">开始日期</span>
+                        <span class="base-box-li-value text-black jdata-begindate"></span>
+                    </li>
+                    <li>
+                        <span class="base-box-li-tit">结束日期</span>
+                        <span class="base-box-li-value text-black jdata-enddate"></span>
+                    </li>
+                    <li>
+                        <span class="base-box-li-tit">合同周期</span>
+                        <span class="base-box-li-value text-black jdata-contractperiod"></span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!--合同参与人-->
+        <div class="contract-partin">
+
+        </div>
+        <div class="l-files-warp crm-attachment-simple-warp">
+        </div>
+    </div>
+    <div class="right-warp">
+        <div class="feed-submit-box-warp">
+        </div>
+        <div class="crm-feed-list-warp">
+        </div>
+        <div class="feed-list-pagination"></div>
+    </div>
+</div>
+<!-- tab 回款明细-->
+<div class="tab-returned-money-box returned-money-warp">
+    <!--计划-->
+    <div class="crm-detail-bd-baseinfo plan-warp">
+        <div class="fn-clear baseinfo-hd">
+            <div class="fn-left">
+                <h1>回款计划</h1>
+            </div>
+            <div class="fn-right">
+                <a class="plan-add-btn" href="javascript:;">添加</a>
+            </div>
+        </div>
+        <!--通用表格-->
+        <div class="crm-com-table">
+            <div class="crm-table-bd " style="border: solid 1px #d8d8d8;border-top: none;">
+                <table border="0" cellpadding="0" cellspacing="0" class="crm-datatable border-top" style="table-layout: inherit;">
+                    <thead>
+                    <tr>
+                        <th>应收（元）</th>
+                        <th>实收（元）</th>
+                        <th>应收余额（元）</th>
+                        <th>期次</th>
+                        <th>计划日期</th>
+                        <th>状态</th>
+                        <th style="width:140px;">操作</th>
+                        <th class="th-blank"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="isnodatatip">
+            暂无回款记计划，<a class="plan-add-btn-b" href="javascript:;">立即添加</a>
+        </div>
+    </div>
+    <!--记录-->
+    <div class="crm-detail-bd-baseinfo record-warp" style="margin-top: 20px;">
+        <div class="fn-clear baseinfo-hd">
+            <div class="fn-left">
+                <h1>回款记录</h1>
+            </div>
+            <div class="fn-right">
+                <a class="record-add-btn" href="javascript:;">添加</a>
+            </div>
+        </div>
+        <!--通用表格-->
+        <div class="crm-com-table">
+            <div class="crm-table-bd " style="border: solid 1px #d8d8d8;border-top: none;">
+                <table border="0" cellpadding="0" cellspacing="0" class="crm-datatable border-top">
+                    <thead>
+                    <tr>
+                        <th>金额（元）</th>
+                        <th>付款方式</th>
+                        <th>期次</th>
+                        <th>实际日期</th>
+                        <th>开票</th>
+                        <th style="width:140px;">操作</th>
+                        <th class="th-blank"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="isnodatatip">
+            暂无回款记录，<a class="record-add-btn-b" href="javascript:;">立即添加</a>
+        </div>
+    </div>
+</div>
+<!--基本信息-->
+<div class="tab-base-info-box">
+    <div class="crm-detail-bd-baseinfo">
+        <div class="fn-clear baseinfo-hd border-bottom">
+            <div class="fn-left">
+                <h1>基本信息</h1>
+            </div>
+            <div class="fn-right">
+                <a href="javascript:;" class="modify-btn">编辑</a>
+            </div>
+        </div>
+        <div class="fn-clear baseinfo-bd">
+            <div class="left-inner">
+                <ul class="baseinfo-module border-bottom">
+                    <li class="fn-clear">
+                        <span class="input-tip">合同标题</span>
+
+                        <div class="input-wrapper hd-titname"></div>
+                    </li>
+                    <li class="fn-clear">
+                        <span class="input-tip">总金额</span>
+
+                        <div class="input-wrapper jdata-totalamount"></div>
+                    </li>
+                    <li class="fn-clear">
+                        <span class="input-tip">折扣</span>
+
+                        <div class="input-wrapper jdata-discount"></div>
+                    </li>
+                    <li class="fn-clear">
+                        <span class="input-tip">开始日期</span>
+
+                        <div class="input-wrapper jdata-begindate"></div>
+                    </li>
+                    <li class="fn-clear">
+                        <span class="input-tip">结束日期</span>
+
+                        <div class="input-wrapper jdata-enddate"></div>
+                    </li>
+                    <li class="fn-clear">
+                        <span class="input-tip">付款方式</span>
+
+                        <div class="input-wrapper jdata-paymenttypedesc"></div>
+                    </li>
+                    <li class="fn-clear">
+                        <span class="input-tip">状态</span>
+
+                        <div class="input-wrapper jdata-states"></div>
+                    </li>
+                </ul>
+
+                <ul class="baseinfo-module border-bottom">
+                    <li class="fn-clear"><span class="input-tip">客户签约人</span>
+
+                        <div class="input-wrapper jdata-customersigner"></div>
+                    </li>
+                    <li class="fn-clear">
+                        <span class="input-tip">我方签约人</span>
+
+                        <div class="input-wrapper jdata-signername"></div>
+                    </li>
+                    <li class="fn-clear">
+                        <span class="input-tip">签约日期</span>
+
+                        <div class="input-wrapper jdata-signdate"></div>
+                    </li>
+
+
+                </ul>
+                <ul class="baseinfo-module border-bottom">
+                    <li class="fn-clear">
+                        <span class="input-tip">合同编号</span>
+
+                        <div class="input-wrapper jdata-contractno"></div>
+                    </li>
+                    <li class="fn-clear"><span class="input-tip">正文</span>
+
+                        <div class="input-wrapper-nofloat jdata-content"></div>
+                    </li>
+                    <li class="fn-clear"><span class="input-tip">产品描述</span>
+
+                        <div class="input-wrapper-nofloat jdata-productdescription"></div>
+                    </li>
+                </ul>
+                <ul class="border-bottom baseinfo-module product-fbusinesstagrelations">
+
+                </ul>
+
+                <ul class="baseinfo-module">
+                    <li class="fn-clear"><span class="input-tip">描述</span>
+
+                        <div class="input-wrapper-nofloat jdata-description"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-inner">
+                <ul class="baseinfo-module">
+                    <li class="fn-clear">
+                        <span class="input-tip">合同负责人</span>
+
+                        <div class="input-wrapper jdata-ownername"></div>
+                    </li>
+                    <li class="fn-clear">
+                        <span class="input-tip">创建人</span>
+
+                        <div class="input-wrapper jdata-creatorname"></div>
+                    </li>
+                    <li class="fn-clear">
+                        <span class="input-tip">创建时间</span>
+
+                        <div class="input-wrapper jdata-createtime"></div>
+                    </li>
+                    <li class="fn-clear">
+                        <span class="input-tip">最后修改人</span>
+
+                        <div class="input-wrapper jdata-lasteditemployeename"></div>
+                    </li>
+                    <li class="fn-clear">
+                        <span class="input-tip">最后修改时间</span>
+
+                        <div class="input-wrapper jdata-lastedittime"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--附件-->
+<div class="tab-files-box crm-attachmentlist-simple-warp"></div>
+</div>
+
+</div>
+
+
+</div>

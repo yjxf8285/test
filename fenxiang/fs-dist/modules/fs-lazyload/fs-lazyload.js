@@ -1,0 +1,6 @@
+/**
+ * 纷享模块逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-09-02
+ */
+define("modules/fs-lazyload/fs-lazyload",["events"],function(a,b,c){var d=window,e=d.FS,f=a("events"),g=function(a){a=_.extend({triggerSize:0,executeHandler:e.EMPTY_FN,circleCount:3},a||{}),this.opts=a,this._locked=!0,this._activeIndex=0,this.init()};_.extend(g.prototype,{init:function(){var a=this,b=this.opts,c=b.triggerSize;$(d).scroll(function(){var b,e,f;a._locked||(b=$(d).height(),e=$(document).height(),f=$(d).scrollTop(),b+f+c>=e&&a._exec(function(){$(d).scrollTop(f)}))})},_exec:function(a){var b=this,c=this.opts,d=c.executeHandler;this._locked=!0,d.call(b,b._activeIndex,function(c){b._counting(c),a.call(b)})},start:function(a){this._locked=!1,a?this._exec(function(){$(d).scrollTop(0)}):$(d).scrollTop(0).trigger("scroll"),this.trigger("start")},stop:function(){this._locked=!0,this.trigger("stop")},kill:function(){this.stop(),this._activeIndex=0},getActiveIndex:function(){return this._activeIndex},_counting:function(a){var b=this.opts,c=b.circleCount;a?(this._activeIndex++,this._activeIndex==c?(this._activeIndex=0,this.stop()):this._locked=!1):this._locked=!1},destroy:function(){return this.off(),this.kill(),this.executeHandler=e.EMPTY_FN,this}}),f.mixTo(g),c.exports=g});

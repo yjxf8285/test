@@ -1,0 +1,7 @@
+/**
+ * 纷享模块样式
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+
+.crm-contact-box-container{background:none repeat scroll 0 0 #FFF;border:1px solid #D8D8D8;border-radius:3px;color:#999;line-height:40px;margin-bottom:20px}.crm-contact-box-header{padding:0 16px;background:#fafafa;border-bottom:1px solid #D8D8D8}.crm-contact-box-header h1{color:#333;display:inline-block}.crm-contact-box-number-container{margin-left:16px}.crm-contact-box-operation{cursor:pointer}.crm-contact-box-operation:hover{color:#000}.crm-contact-box-operation-container{border:1px #d8d8d8 solid;background-color:#fff;-moz-box-shadow:1px 2px 2px #ccc;-webkit-box-shadow:1px 2px 2px #ccc;box-shadow:1px 2px 2px #ccc;position:absolute;width:200px}.crm-contact-box-operation-container ul{padding:5px 0}.crm-contact-box-operation-container li{padding-left:30px;cursor:pointer;color:#000;line-height:30px}.crm-contact-box-operation-container li:hover{background-color:#f5f5f5}.crm-contact-box-content{padding:6px 16px 16px 20px}.crm-contact-box-image-container{width:150px;height:50px;margin-top:10px;margin-right:10px}.crm-contact-box-image{width:50px;height:50px;cursor:pointer}.crm-contact-box-name,.crm-contact-box-department{width:90px;margin-left:10px;line-height:25px}.crm-contact-box-name{cursor:pointer;color:#333}.crm-contact-box-add{width:46px;height:46px;border:2px #d8d8d8 dashed;line-height:46px;text-align:center;font-size:30px;color:#d8d8d8;cursor:pointer;margin-top:5px;margin-right:5px}.crm-contact-box-info{color:#999;text-align:center;padding:10px}.crm-contact-box-info a{cursor:pointer}

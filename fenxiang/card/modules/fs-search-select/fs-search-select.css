@@ -1,0 +1,46 @@
+.fs-search-select-dialog .ui-dialog-body {
+	padding: 20px;
+}
+.fs-search-select-dialog .ff-label {
+	line-height: 35px;
+	color: #B1B1B1;
+	width: 65px;
+	text-align: right;
+}
+.fs-search-select-dialog .search-inp {
+	height: 28px;
+	width: 369px;
+	border-color: #DDD;
+	color: #000;
+}
+.fs-search-select-dialog .pc-selct-pp {
+	*margin-top: -5px;
+	*margin-bottom: 10px;
+}
+.fs-search-select-dialog .pc-selct-pp .selectbar {
+	width: 395px;
+	margin-bottom: 15px;
+}
+.fs-search-select-dialog .f-field {
+	margin-bottom: 15px;
+	position: relative;
+	color: #B1B1B1;
+}
+.fs-search-select-dialog .f-field .ff-label {
+	line-height: 28px;
+}
+.fs-search-select-dialog .ui-dialog-bbar {
+	text-align: right;
+}
+.fs-search-select-dialog .start-date, .fs-search-select-dialog .end-date {
+	width: 187px;
+	display: inline-block;
+}
+.fs-search-select-dialog .end-date {
+	position: absolute;
+	right: 0;
+}
+.fs-search-select-dialog .start-date input, .fs-search-select-dialog .end-date input {
+	width: 175px;
+	color: #000;
+}

@@ -1,0 +1,7 @@
+/**
+ * 纷享模块样式
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+
+.fs-plan-calendar .ui-calendar-date-column li.fs-calendar-state-ordered{background:#fff url(../../assets/images/icon-plan-calendar-ordered.png) no-repeat 3px 6px;color:#333}.fs-plan-calendar-dialog-content{height:408px;overflow-y:auto;overflow-x:hidden}.fs-plan-calendar-dialog-bbar{position:absolute;bottom:0;left:0;width:100%;text-align:right}.fs-plan-calendar-dialog-bbar button{margin:0 10px 10px 0}.fs-plan-export-dialog .ui-dialog-body{padding:16px}.fs-plan-export-dialog .f-field{line-height:25px;margin:5px 0}.fs-plan-export-dialog .ff-label{width:70px;text-align:left}.fs-plan-export-dialog .ff-value{width:390px}.fs-plan-export-dialog .ui-dialog-bbar{text-align:right}.fs-plan-export-dialog .fs-publish-dateselect-input{width:160px}.fs-plan-export-dialog .ff-success-a{display:none;margin-left:20px}

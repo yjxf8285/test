@@ -1,0 +1,52 @@
+.report-list-content .report-list-operate {
+	height: 30px;
+	padding: 10px 0 15px 0;
+}
+.report-list-content .report-list-operate .btn-create {
+	display: inline-block;
+	width: 92px;
+	height: 30px;
+	background: #427FED;
+	color: white;
+	font-size: 13px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 30px;
+	border-radius: 2px;
+}
+.report-list-content .report-list-ctner .report-list-tip {
+	font-size: 13px;
+	color: #A37419;
+	height: 26px;
+	line-height: 26px;
+	border: 1px solid #EADFA7;
+	background: #FFFDDD;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	padding-left: 18px; 
+}
+.report-list-content .report-list-condition {
+	background: #F6F7F8;
+	padding: 10px 20px;
+	border: solid 1px #d8d8d8;
+	border-bottom: none;
+}
+.report-list-content .report-list-condition .l {
+	float: left;
+}
+.report-list-content .report-list-condition .r {
+	float: right;
+}
+.report-list-content .gray{
+    color:#999;
+}
+.report-list-content .orange{
+    color:#ff7f00;
+}
+.report-list-content .green{
+    color:#4d9925;
+}
+.report-list-pagination {
+	float: right;
+	padding-top: 14px;
+}

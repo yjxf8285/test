@@ -1,0 +1,23 @@
+<div class="approvemployees-list-title">上报截止之后的修改需要审核，请选择一个审核人：</div>
+<table class="report-tb approvemployees-list-talbe">
+    <thead>
+    <tr>
+        <th width="50">选择</th>
+        <th width="50" class="text-left">序号</th>
+        <th width="">姓名</th>
+        <th width="">手机</th>
+        <th width="">职位</th>
+    </tr>
+    </thead>
+    <tbody class="mn-radio-box">
+    ##_.each(value.dRApproveEmployees,function(item,i){##
+        <tr>
+        <td><span class="mn-radio-item" data-value="{{item.employeeID}}"></span></td>
+        <td>{{i+1}}</td>
+        <td>{{item.employee.name}}</td>
+        <td>{{item.employee.mobile}}</td>
+        <td>{{item.employee.post}}</td>
+        </tr>
+    ##});##
+    </tbody>
+</table>

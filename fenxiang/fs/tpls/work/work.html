@@ -1,0 +1,106 @@
+<div id="work" class="tpl department" tplname="work" js="true" css="modules/tpl-portal/tpl-portal.css" iscached="false">
+    <!-- 三列式 自适应宽度 -->
+    <div class="tpl-l">
+        <div class="tpl-inner">
+            &nbsp;
+            <div class="head-img-wrap fn-clear">
+                <script class="head-img-wrap-tpl" type="text/html">
+                    <a href="#profile"><img class="fn-left" src="{{profileImage}}"/>{{userName}}</a>
+                </script>
+            </div>
+          <ul class="work-nav-list">
+          </ul>
+        </div>
+    </div>
+    
+    <div class="tpl-c">
+        <div class="tpl-inner">
+            <!-- department center start -->
+            <div class="department-wrapper">
+                <h2 class="depw-title">我执行的指令</h2>
+                <p class="depw-text color-999999">这些是您的上级布置给您需要您执行的指令。</p>
+                <ul class="depw-menu fn-clear marg10 border-top-none">
+                </ul>
+                <!-- center bottom start -->
+                <div class="home-center-list fn-clear">
+                   <label class="search-wrap">
+                       <input type="text" class="search-inp" placeholder="搜索指令" /><button class="search-btn"></button>
+                   </label>
+                    <div class="feed-tabs">
+                        <ul class="ui-switchable-nav ui-tab-items tag_wrap padL20 marg10">
+                            <li class="ui-tab-item ui-tab-item-current"><a href="javascript:;">全部</a></li>
+                            <li class="ui-tab-item"><a href="javascript:;">执行中</a></li>
+                            <li class="ui-tab-item"><a href="javascript:;">已完成</a></li>
+                            <li class="ui-tab-item"><a href="javascript:;">已取消</a></li>
+                        </ul>
+                        <div class="ui-switchable-content">
+                            <div class="ui-tab-panel" feedworkstatus="0">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="ui-tab-panel" feedworkstatus="1">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="ui-tab-panel" feedworkstatus="2">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="ui-tab-panel" feedworkstatus="3">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+              
+                </div>
+                <!-- center bottom end -->
+                
+                <!-- department center end -->
+                <!-- 列表无内容提示 start -->
+                <!--<div class="info-list-null"><span>没有相关信息</span></div>-->
+                <!-- 列表无内容提示 end -->
+                <!-- 分页 START -->
+                <!--<div class="pad-wrap">
+                   <a href="javascript:void(0);">上一页</a>
+                   <a href="javascript:void(0);">1</a>
+                   <a href="javascript:void(0);" class="on">2</a>
+                   <a href="javascript:void(0);">3</a>
+                   <a href="javascript:void(0);">下一页</a>
+               </div>-->
+               <!-- 分页 END -->
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="tpl-r">
+        <div class="tpl-inner">
+        
+           <aside class="home-right-content">
+              <h4 class="rightc-title" style="border:none;">视频帮助</h4>
+                <div class="r-use-help-wrap">
+                	<a href="http://v.ku6vms.com/player/default_0.0029.swf?vid=Jr3_0MUY7jGywOzR&style=gRiQ5K9giiL4EUzq&sn=4xGLcbPLzZNIof3lcmvBbw..&sp=http://v.ku6vms.com/~" target="_blank" class="r-use-help-text">指令的使用方法</a>
+                </div>
+              <h4 class="rightc-title">我执行中的指令(<span class="workr-do-title-count"></span>)<span class="rt-apv"><a href="#work/=/tabindex-1" class="fna-blue">更多</a></span></h4>
+              <div class="workr-do-list-wrap">
+              </div>
+              
+              <h4 class="rightc-title"><span class="work-mtr-width">我发出执行中的指令(<span class="workr-my-title-count"></span>)</span><span class="rt-apv"><a href="#work/assignedworks/=/tabindex-1" class="fna-blue">更多</a></span></h4>
+              <div class="workr-my-list-wrap">
+              </div>
+              
+              <div class="workr-ups-tpl-wrap">
+                  <h4 class="rightc-title">待我点评的指令(<span class="workr-ups-title-count"></span>)<span class="rt-apv"><a href="#work/assignedworks" class="fna-blue">更多</a></span></h4>
+                  <div class="workr-ups-list-wrap">
+                  </div>
+              </div>
+              
+           </aside>
+           
+        </div>
+    </div>
+</div>

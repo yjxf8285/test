@@ -1,0 +1,45 @@
+<script type="text/html" class="m-reportother-tpl">
+
+    <div class="m-reportother">    
+        <h3>新增上报人</h3>
+        <div class="m-reportother-con">
+            <input type="hidden" value="{{UserId}}" id="userid" />
+            <p>
+                <label for="name">姓名</label>
+                <input type="text" id="name" maxlength="50" class="inp-short" value="{{Name}}" placeholder="必填" />
+            </p>
+            <p>
+                <label for="mobile">手机</label>
+                <input type="text" id="mobile" maxlength="11" class="inp-short" value="{{Mobile}}" placeholder="必填"/>
+            </p>
+            <p>
+                <label for="weixin">微信号</label>
+                <input type="text" id="weixin" maxlength="50" value="{{WeiXinId}}" placeholder="必填"/>
+            </p>            
+            <p>
+                <label for="email">邮箱</label>
+                <input type="text" id="email" maxlength="50" value="{{Email}}" placeholder="必填"/>
+            </p>
+            <p>
+                <label for="company">公司</label>
+                <input type="text" id="company" maxlength="50" value="{{Company}}" placeholder="必填"/>
+            </p>
+            <p>
+                <label for="postion">职位</label>
+                <input type="text" id="position" maxlength="50" value="{{Position}}" placeholder="必填"/>
+            </p>
+            <p class="showauthorize">
+                <label>授权</label>
+                <input type="checkbox" name="atritem" value="1" />
+                <span class="cheaklabel">合作伙伴</span>
+                <input type="checkbox" name="atritem" value="2" />
+                <span class="cheaklabel">报数系统</span>
+            </p>
+            <p class="btn-box">
+                <button class="button-submit j-btn-enter">确定</button>
+                <button class="button-cancel j-btn-cancel">取消</button>
+            </p>
+        </div> 
+    </div>
+    
+</script>

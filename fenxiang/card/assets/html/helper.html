@@ -1,0 +1,122 @@
+<!-- comfirm提示框 -->
+<div class="fs-show">
+	{{#if title}}
+	<div class="{{classPrefix}}-title" data-role="title">{{{title}}}</div>
+	{{/if}}
+	<div class="{{classPrefix}}-container">
+	    <div class="{{classPrefix}}-message" data-role="message">{{{message}}}</div>
+	    {{#if hasFoot}}
+	    <div class="{{classPrefix}}-operation" data-role="foot">
+	        {{#if confirmTpl}}
+	        <div class="{{classPrefix}}-confirm" data-role="confirm">
+	            {{{confirmTpl}}}
+	        </div>
+	        {{/if}}
+	        {{#if cancelTpl}}
+	        <div class="{{classPrefix}}-cancel" data-role="cancel">
+	            {{{cancelTpl}}}
+	        </div>
+	        {{/if}}
+	    </div>
+	    {{/if}}
+	</div>
+</div>
+<!-- 自动完成 -->
+<div class="fs-ac">
+    <div class="{{classPrefix}}">
+        <ul class="{{classPrefix}}-ctn" data-role="items">
+            {{#each items}}
+            <li data-role="item" class="{{../classPrefix}}-item" data-value="{{matchKey}}">{{highlightItem ../classPrefix matchKey}}</li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
+<!-- 浏览器升级提醒 -->
+<script class="browser-upgrade-tip-tpl" type="text/html">
+    <div class="browser-upgrade-tip fn-hide">
+        <p><!--<span class="beta-tip">纷享平台web版本内测期，切换到原来平台请点击&nbsp;<a href="#" class="back-origin-l">这里</a>。</span>&nbsp;--><span class="browser-upgrade-content fn-hide">您的浏览器可能不支持或只支持部分平台功能，为了更好地体验，建议您使用如下最新版浏览器访问：<a href="http://www.google.cn/intl/zh-CN/chrome/" target="_blank" title="Chrome"><img
+                src="{{browserIconPath}}/chrome_24x24.png" alt="Chrome"/></a>&nbsp;<a href="http://www.firefox.com.cn/download/" target="_blank" title="Firefox"><img
+                src="{{browserIconPath}}/firefox_24x24.png" alt="Firefox"/></a><!--&nbsp;<a href="http://windows.microsoft.com/zh-cn/internet-explorer/ie-9-worldwide-languages" target="_blank" title="IE9"><img
+                src="https://raw.github.com/paulirish/browser-logos/master/ie9-10/ie9-10_24x24.png" alt="IE9"/></a>-->&nbsp;<a href="http://windows.microsoft.com/zh-cn/internet-explorer/ie-10-worldwide-languages" target="_blank" title="IE10"><img
+                src="{{browserIconPath}}/ie_24x24.png" alt="IE10"/></a>&nbsp;<a href="http://www.opera.com/zh-cn/computer/windows" target="_blank" title="Opera"><img
+                src="{{browserIconPath}}/opera_24x24.png" alt="Opera"/></a>&nbsp;<a href="http://www.apple.com/cn/safari/" target="_blank" title="Safari"><img
+                src="{{browserIconPath}}/safari_24x24.png" alt="Safari"/></a></span></p>
+        <a href="javascript:;" title="关闭" class="close-l">&#10005;</a>
+    </div>
+
+</script>
+<!-- 录音播放组件 -->
+<script class="audio-player-tpl-1" type="text/html">
+    <div class="mic-wrapper">
+        <div class="mic-content">录音下载中...</div>
+        <div class="mic-lpic"><img src="{{blankImage}}" /></div>
+        <div class="mic-control"><img class="mc-play ctr-btn" src="{{blankImage}}" /></div>
+        <div class="mic-audio mic-vol-list">
+            <i class="mic-aicon01 mic-vol mic-aon"></i><i class="mic-aicon02 mic-vol mic-aon"></i><i class="mic-aicon03 mic-vol"></i><i class="mic-aicon04 mic-vol"></i><i class="mic-aicon05 mic-vol"></i><i class="mic-aicon06 mic-vol"></i>
+        </div>
+    </div>
+</script>
+<script class="audio-player-tpl-2" type="text/html">
+    <div class="voice-green-wrapper">
+        <div class="voice-green-left"></div><!-- click gif addClass 'vgl-on' -->
+        <div class="mc-play ctr-btn voice-green-right"></div><!-- click stop addClass 'vgr-on' -->
+    </div>
+</script>
+<script class="audio-player-tpl-3" type="text/html">
+    <div class="voice-grey-wrapper">
+        <div class="mc-play ctr-btn voice-grey-left"></div><!-- click stop addClass 'vyl-on' -->
+        <div class="voice-grey-right"></div><!-- click gif addClass 'vyr-on' -->
+    </div>
+</script>
+<script class="audio-player-tpl-4" type="text/html">
+    <div class="player-bg fn-clear">
+        <div class="player-icon mc-play fn-left"></div>
+        <div class="audio-length-wrapper fn-left"><span class="audio-length">0</span>&#8221;</div>
+    </div>
+</script>
+<!-- 演示帐号tip -->
+<script class="fs-demo-tip-tpl" type="text/html">
+    <div class="ui-dialog-body">
+        <div class="tip-content">
+            <p>您已切换到&nbsp;<span class="color-hl">模拟演示帐号</span><br/>该帐号中显示的是模拟内容，希望可以有助于您了解纷享销客平台。</p>
+            <p class="return-tip fn-hide">通过左上角的按钮您可以随时退出演示帐号。</p>
+        </div>
+        <div class="ui-dialog-bbar fn-clear">
+            <button type="button" class="button-submit f-sub">我知道了</button>
+        </div>
+    </div>
+</script>
+<!-- 返回正式帐号的弹框 -->
+<!--<div class="return-back-account">
+    <div class="return-back-account-hd"></div>
+     <div class="return-back-account-bd">
+        <dl class="rba-form">
+            <dd>
+                <label class="form-input-tit">企业帐号：</label>
+                <input type="text" class="form-input-text aj-enterprise" placeholder="">
+            </dd>
+            <dd>
+                <label class="form-input-tit">个人帐号：</label>
+                <input type="text" class="form-input-text aj-account" placeholder="">
+                <div class="account-tip">请填写个人帐号、手机或邮箱</div>
+            </dd>
+            <dd>
+                <label class="form-input-tit">密码：</label>
+                <input type="password" class="form-input-text aj-password" placeholder="">
+            </dd>
+            <dd class="aj-yzm-warp">
+                <label class="form-input-tit">验证码：</label>
+                <input type="text" class="form-input-text code-input aj-imgcode" placeholder="">
+                <img src="http://localhost/Coop.HtmlHost/Account/GetCodeImg?randon=Mon%20Feb%2024%202014%2015:40:58%20GMT+0800%20(%E4%B8%AD%E5%9B%BD%E6%A0%87%E5%87%86%E6%97%B6%E9%97%B4)" alt="" class="aj-codeimage"/>
+                <a class="change-code" href="javascript:;">看不清楚？点击更换</a>
+            </dd>
+            <dd>
+                <label class="form-input-tit">&nbsp;</label>
+                <button class="button-green f-sub" type="button">登录</button>
+                <button class="button-gray f-cancel" style="margin-left: 10px;" type="button">取消</button>
+            </dd>
+        </dl>
+    </div>
+</div> -->
+
+

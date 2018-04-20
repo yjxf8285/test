@@ -1,0 +1,6 @@
+/**
+ * 纷享页面逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-09-02
+ */
+define("tpls/settings/setupnodisturb/setupnodisturb",["tabs","util","../settings-common","../settings-common.html"],function(a,b){var c=window,d=c.FS,e=d.tpl;e.event;var f=(a("tabs"),a("util")),g=a("../settings-common"),h=f.getContactData();h.u,b.init=function(){var a=b.tplEl,c=b.tplName,d=$(".start-radios",a),e=$(".end-radios",a),h=$(".s-time-text",a),i=$(".e-time-text",a),j=$("#setupnodisturb-open",a),k=$(".setupnodisturb-main-tpl",a),l=$(".save-success-btn",a),m=f.getEnterpriseConfig(106);j.click(function(){var a=$(this);a.is(":checked")?(k.show(),$('.start-time[value="23"]',d).prop("checked",!0)):(k.hide(),$('.end-time[value="7"]',d).prop("checked",!0))}),d.find("input[type=radio]").click(function(){var a=$(this);h.html(a.val())}),e.find("input[type=radio]").click(function(){var a=$(this);i.html(a.val())}),l.click(function(b){var d;d=j.prop("checked")?h.text()+","+i.text():"",f.setEnterpriseConfig(106,d),f.updateEnterpriseConfig(106,function(b){b.success&&g.saveSuccessAnimated(a,c)}),b.preventDefault()}),m.length>0?(m=m.split(","),$(".start-time",a).filter('[value="'+m[0]+'"]').prop("checked",!0),$(".end-time",a).filter('[value="'+m[1]+'"]').prop("checked",!0),h.text(m[0]),i.text(m[1]),j.prop("checked",!0),k.show()):(j.prop("checked",!1),k.hide()),g.init(a,c)}});

@@ -1,0 +1,7 @@
+/**
+ * 纷享模块样式
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+
+.crm-select-dialog{height:100%;background-color:#F5F5F5}.crm-select-dialog .title{color:#858585;padding:10px 16px;font-size:16px;font-weight:700}.crm-select-dialog .content{border-top:1px #e5e5e5 solid;background-color:#F5F5F5;padding:16px 36px 36px}.crm-select-dialog .search-wrapper{}.crm-select-dialog .search-button{width:48px;height:33px;background-color:#427fed;cursor:pointer}.crm-select-dialog .search-icon{background:url(../../assets/images/crm_icons.png) no-repeat 0 0;position:relative;left:15px;top:7px;width:20px;height:20px}.crm-select-dialog .search-input-wrapper{margin-right:50px}.crm-select-dialog .search-input{height:32px;border:1px #e5e5e5 solid;text-indent:10px;width:100%}.crm-select-dialog .table-footer{margin-top:10px}.crm-select-add-dialog{background-color:#fff;padding:50px 66px 75px}.crm-select-add-dialog ul{margin:20px 0 10px}.crm-select-add-dialog ul li{margin:10px 0}.crm-select-add-dialog ul .form-label{color:#999;width:70px;display:inline-block;height:32px;line-height:32px}.crm-select-add-dialog ul .form-field{display:inline-block;height:32px;width:576px}.crm-select-add-dialog ul .form-field input{height:30px;line-height:20px;border:solid 1px #e5e5e5;text-indent:12px;width:100%}.crm-select-add-dialog ul .form-field textarea{padding:10px 0;height:240px;width:100%;line-height:20px;border:solid 1px #e5e5e5;text-indent:12px}.crm-select-add-dialog ul .form-field textarea.h90{height:70px}

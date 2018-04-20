@@ -1,0 +1,46 @@
+<script type="text/html" class="fs-reply-item"> <span class="fn-hide" feedreplyid={{feedReplyID}}></span>
+  <div class="fs-reply-thumb-wrapper"> <a href="#profile/=/empid-{{senderId}}" title="{{senderName}}"><img src="{{thumbSrc}}" alt="loading" /></a> </div>
+  <div class="fs-reply-item-content">
+    <div class="fs-reply-text-wrapper">
+      <div class="fs-reply-text-inner">
+        <p class="fs-reply-text"><span class="fs-reply-sender-name"><a href="#profile/=/empid-{{senderId}}" title="{{senderName}}">{{senderName}}</a>：</span><span class="fs-reply-text-content">{{replyContent}}</span><span class="fs-reply-create-time">（{{createTime}}）</span></p>
+      </div>
+      <div class="fs-reply-actions"> <a href="#" class="text-visible-l">展开正文（共{{replyContentLength}}个字）</a> </div>
+    </div>
+    <div class="fs-reply-item-bbar"> <a href="#" class="fs-reply-reply-trigger">回复</a> </div>
+  </div>
+</script>
+
+<!-- 我的回复 -->
+<script type="text/html" class="myreply-list-item">{{isagreeImg}}
+  <div class="item-face" feedid="{{feedID}}">{{newico}} <a href="#profile/=/empid-{{senderId}}"> <img src="{{profileImage}}" alt=""></a> </div>
+  <div class="item-detail">
+    <div class="item-info">
+      <div> 
+      ## if(feedFormatContent.leftHtml.length>0){ ##
+        <a href="#profile/=/empid-{{senderId}}"> {{sendername}}</a>：<span class="feed-summary-text">{{feedFormatContent.summaryHtml}}</span><span class="feed-content-ellipsis">&#8230;</span> ({{createTime}}{{operationType}}{{source}})
+      <br/><br/><a href="javascript:;" class="feed-reply-content-visible-h">展开正文，（共{{feedFormatContent.feedWordNum}}个字）</a>
+      ## }else{##
+        <a href="#profile/=/empid-{{senderId}}"> {{sendername}}</a>：<span class="feed-summary-text">{{feedFormatContent.summaryHtml}}</span></span> ({{createTime}}{{operationType}}{{source}})
+      ##} ##
+      </div>
+        
+    </div>
+    ## if(feedTypeDescription){ ##
+    <div class="myreply-content"><span>回复{{feedSenderName}}的{{feedTypeDescription}}：</span>“<a href="#stream/showfeed/=/id-{{feedID}}">{{feedContent}}</a>”</div>
+    ## } ##
+    <!-- 录音 -->
+        <div class="audio-el">
+            {{audioBtn}}
+            {{audioWarp}}
+        </div>
+    <div class="item-media"> {{ feedPic}}{{feedFiles}}</div>
+    
+    <!-- item function -->
+    <div class="item-func fn-clear myreply">
+      <div class="handle"> <a href="javascript:void(0);" class="aj-Reply"><img src="../../html/fs/assets/images/reply_ico.gif" width="14" height="14" class="fs-reply-ico"/>回复</a> </div>
+    </div>
+    <!-- feed repeat -->
+    <div class="feed-reply"></div>
+  </div>
+</script>

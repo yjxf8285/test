@@ -1,0 +1,100 @@
+.p-reportother .rptother-con {
+    padding-bottom: 10px;
+}
+.rptother-title h2 {
+    padding: 0px 0 13px 2px;
+    font-size: 20px;
+    color: #555;
+    border-bottom: 1px solid #d8d8d8;
+    letter-spacing: 1px;
+}
+
+.p-reportother .filter-b {
+    width: 882px;
+    padding: 12px 15px;
+    background-color: #f6f7f8;
+    border: 1px solid #d8d8d8;
+    border-bottom: none;
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.p-reportother .filter-b label {
+    float: left;
+}
+.p-reportother .filter-b .mn-select-box {
+    float: left;
+    margin-right: 14px;
+}
+.p-reportother .filter-b .mn-select-title {
+    width: 75px!important;
+    color: #a9a9a9;
+}
+span.reportohter-select-fstatus {
+    width: 105px!important;
+}
+div.reportohter-select-fstatus {
+    width: 103px!important;
+}
+.reportohter-select-fstatus .ui-select-item {
+    width: 73px!important;
+}
+.p-reportother .filter-b button {
+    float: left;
+    width: 50px;
+    height: 30px;
+    padding: 0; 
+    border-radius: 0;  
+    background: #427FED url(../../../assets/images/crm_icons.png) no-repeat 15px 5px;
+    text-indent: 999em;
+    overflow: hidden;
+}
+.p-reportother .filter-b .filter-search {
+    width: 245px;
+    height: 30px;
+    float: right;
+}
+.p-reportother .filter-b input {
+    float: left;
+    width: 170px;
+    height: 20px;
+    padding: 4px 10px;
+    border: 1px solid #d1d1d1;
+    line-height: 20px;
+}
+.p-reportother .btns-b {
+    padding: 10px 0 15px;
+}
+.p-reportother .btns-b button {
+    float: left;
+    padding: 0 12px;
+    height: 30px;
+    margin-right: 10px;
+    width: auto;
+}
+.p-reportother .report-tb td {
+    color: #999;
+}
+.p-reportother .report-tb .f-red {
+    color: #fc4f64;
+}
+.p-reportother .report-tb .f-green {
+    color: #4d9925;
+}
+.p-reportother .report-tb .td-black {
+    color: #333;
+    padding-left: 15px;
+    text-align: left;
+}
+.p-reportother .report-tb .td-loading {
+   text-align: center;
+   padding: 10px 0;
+}
+.p-reportother .report-tb .td-nodata {
+    text-align: center;
+    padding: 20px 0;
+}
+.reportother-pages {
+    text-align: right;
+    padding: 16px 0;
+}

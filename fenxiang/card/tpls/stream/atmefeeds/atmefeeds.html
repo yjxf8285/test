@@ -1,0 +1,209 @@
+<div id="stream-atmefeeds" class="tpl department" tplname="stream-atmefeeds" js="true" css="modules/tpl-portal/tpl-portal.css" iscached="true">
+    <!-- 三列式 自适应宽度 -->
+    <div class="tpl-l">
+        <div class="tpl-inner">
+          &nbsp;
+        </div>
+    </div>
+    
+    <div class="tpl-c">
+        <div class="tpl-inner">
+            <!-- atmefeeds center start -->
+            <div class="department-wrapper">
+            	<div class="bg-white card-border-radtop cbr-tt">
+                    <h2 class="depw-title">@提到我的</h2>
+                    <p class="depw-text color-999999">这些是正文或回复中包含@您的名字的工作，这些工作可能包含关系到您的内容。</p>
+                    <p class="depw-text color-999999" style="display:none;">这些是信息正文或回复中包含@您的姓名的信息，这些信息可能包含关系到您的内容。</p>
+                    <ul class="filter depw-menu fn-clear marg10">
+                       <li><a href="javascript:;" class="filter-field depw-menu-aon" val="feed">提到我的工作</a></li>
+                       <li><a href="javascript:;" class="filter-field" val="reply">提到我的回复</a></li>
+                    </ul>
+                </div>
+                <!-- center bottom start -->
+                <div class="home-center-list fn-clear">
+                   <label class="search-wrap">
+                       <input type="text" class="search-inp" placeholder="搜索信息" maxlength="100" /><button class="search-btn"></button>
+                   </label>
+                   <div class="feed-tabs">
+                        <ul class="ui-switchable-nav ui-tab-items tag_wrap padL20">
+                            <li class="feed-main-item ui-tab-item ui-tab-item-current"><a href="javascript:;">全部</a></li>
+                            <li class="feed-main-item ui-tab-item"><a href="javascript:;">分享</a></li>
+                            <li class="feed-main-item ui-tab-item"><a href="javascript:;">日志</a></li>
+                            <li class="feed-main-item ui-tab-item"><a href="javascript:;">指令</a></li>
+                            <li class="feed-main-item ui-tab-item"><a href="javascript:;">审批</a></li>
+							<li class="feed-main-item ui-tab-item"><a href="javascript:;">CRM信息</a></li>
+                        </ul>
+                        <div class="ui-switchable-content">
+                            <!-- 日志:2,审批:4,分享:1,任务:3 -->
+                            <div class="feed-main-panel ui-tab-panel" feedtype="0" feedname="all">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="feed-main-panel ui-tab-panel" feedtype="1" feedname="share">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="feed-main-panel ui-tab-panel" feedtype="2" feedname="plan">
+                                <div class="feed-plan-list feed-sub-list">
+                                    <ul class="ui-switchable-nav ui-tab-items tag_wrap padL20">
+                                        <li class="feed-plan-item ui-tab-item ui-tab-item-current"><a href="javascript:;">全部</a></li>
+                                        <li class="feed-plan-item ui-tab-item"><a href="javascript:;">日志</a></li>
+                                        <li class="feed-plan-item ui-tab-item"><a href="javascript:;">周计划</a></li>
+                                        <li class="feed-plan-item ui-tab-item"><a href="javascript:;">月计划</a></li>
+                                    </ul>
+                                    <div class="ui-switchable-content">
+                                        <div class="feed-plan-panel ui-tab-panel" subtype="0">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-plan-panel ui-tab-panel" subtype="1">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-plan-panel ui-tab-panel" subtype="2">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-plan-panel ui-tab-panel" subtype="3">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feed-main-panel ui-tab-panel" feedtype="3" feedname="work">
+                                <div class="feed-work-list feed-sub-list">
+                                    <ul class="ui-switchable-nav ui-tab-items tag_wrap padL20">
+                                        <li class="feed-work-item ui-tab-item ui-tab-item-current"><a href="javascript:;">全部</a></li>
+                                        <li class="feed-work-item ui-tab-item"><a href="javascript:;">执行中</a></li>
+                                        <li class="feed-work-item ui-tab-item"><a href="javascript:;">已完成</a></li>
+                                        <li class="feed-work-item ui-tab-item"><a href="javascript:;">已取消</a></li>
+                                    </ul>
+                                    <div class="ui-switchable-content">
+                                        <div class="feed-work-panel ui-tab-panel" subtype="0">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-work-panel ui-tab-panel" subtype="1">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-work-panel ui-tab-panel" subtype="2">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-work-panel ui-tab-panel" subtype="3">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feed-main-panel ui-tab-panel" feedtype="4" feedname="approve">
+                                <div class="feed-approve-list feed-sub-list">
+                                    <ul class="ui-switchable-nav ui-tab-items tag_wrap padL20">
+                                        <li class="feed-approve-item ui-tab-item ui-tab-item-current"><a href="javascript:;">全部</a></li>
+                                        <li class="feed-approve-item ui-tab-item"><a href="javascript:;">待审批</a></li>
+                                        <li class="feed-approve-item ui-tab-item"><a href="javascript:;">同意</a></li>
+                                        <li class="feed-approve-item ui-tab-item"><a href="javascript:;">不同意</a></li>
+                                        <li class="feed-approve-item ui-tab-item"><a href="javascript:;">已取消</a></li>
+                                    </ul>
+                                    <div class="ui-switchable-content">
+                                        <div class="feed-approve-panel ui-tab-panel" subtype="0">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-approve-panel ui-tab-panel" subtype="1">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-approve-panel ui-tab-panel" subtype="2">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-approve-panel ui-tab-panel" subtype="3">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-approve-panel ui-tab-panel" subtype="4">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feed-main-panel ui-tab-panel" feedtype="9998" feedname="salesrecord">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="reply-tabs" style="display: none;">
+                       <ul class="ui-switchable-nav ui-tab-items tag_wrap padL20">
+                           <li class="ui-tab-item ui-tab-item-current"><a href="javascript:;">全部</a></li>
+                           <li class="ui-tab-item"><a href="javascript:;">分享</a></li>
+                           <li class="ui-tab-item"><a href="javascript:;">日志</a></li>
+                           <li class="ui-tab-item"><a href="javascript:;">指令</a></li>
+                           <li class="ui-tab-item"><a href="javascript:;">审批</a></li>
+                           <li class="ui-tab-item"><a href="javascript:;">CRM信息</a></li>
+
+                       </ul>
+                       <div class="ui-switchable-content">
+                           <div class="ui-tab-panel" feedtype="0">
+                               <div class="reply-list"></div>
+                               <div class="reply-list-pagination"></div>
+                           </div>
+                           <div class="ui-tab-panel" feedtype="1">
+                               <div class="reply-list"></div>
+                               <div class="reply-list-pagination"></div>
+                           </div>
+                           <div class="ui-tab-panel" feedtype="2">
+                               <div class="reply-list"></div>
+                               <div class="reply-list-pagination"></div>
+                           </div>
+                           <div class="ui-tab-panel" feedtype="3">
+                               <div class="reply-list"></div>
+                               <div class="reply-list-pagination"></div>
+                           </div>
+                           <div class="ui-tab-panel" feedtype="4">
+                               <div class="reply-list"></div>
+                               <div class="reply-list-pagination"></div>
+                           </div>
+                           <div class="ui-tab-panel" feedtype="9998">
+                               <div class="reply-list"></div>
+                               <div class="reply-list-pagination"></div>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+                <!-- center bottom end -->
+                
+            </div>
+            <!-- atmefeeds center end -->
+            
+        </div>
+    </div>
+    
+    <div class="tpl-r">
+        <div class="tpl-inner">
+        
+           <aside class="home-right-content">
+           		<div class="bg-white card-border-rad">
+                    <h4 class="rightc-title card-border-radtop">视频帮助</h4>
+                    <div class="r-use-help-wrap">
+                        <a href="http://v.ku6vms.com/phpvms/player/html/vid/yRlh3UVakYeLgMxv/style/gRiQ5K9giiL4EUzq/" target="_blank" class="r-use-help-text fna-blue">@的使用方法</a>
+                    </div>
+                </div>
+                
+                <div class="bg-white margt16 card-border-rad">
+                    <h4 class="rightc-title card-border-radtop">使用帮助</h4>
+                    <div class="rightc-qa">
+                       <strong class="color-333333">什么是@提到</strong><br/>
+                       <span class="color-999999">@提到是社会化应用的通用语言。@后面填写某个人的昵称，例如@张三，张三就可以收到提醒。</span>
+                    </div>
+                </div>
+           </aside>
+           
+        </div>
+    </div>
+</div>

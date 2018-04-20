@@ -1,0 +1,7 @@
+/**
+ * 纷享模块样式
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+
+.fs-employee-list{width:930px}.fs-employee-list li{float:left;width:137px;height:265px;background-color:#fff;border:#d8d8d8 solid 1px;border-radius:3px;display:inline;margin:16px 16px 0 0;position:relative}.fs-employee-list li span.fel-leave{position:absolute;top:6px;right:10px}.fs-employee-list li .ccl-img-wrap img{width:137px;height:137px}.fs-employee-list li a.ccl-name{padding-right:18px;display:inline-block;line-height:16px;max-width:100px;_width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.fs-employee-list li a.sex-f{background:url(../../assets/images/f.png) no-repeat right 2px}.fs-employee-list li a.sex-m{background:url(../../assets/images/m.png) no-repeat right 2px}.fs-employee-list li em.ccl-job{color:#666;line-height:25px;height:25px;width:105px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;word-break:break-all;display:inline-block}.fs-employee-list li strong.ccl-mobile{color:#666;font-weight:400}.fs-employee-list li strong>span.ccl-mobile-num{color:#a5a5a5;padding-left:5px}.fs-employee-list li .ccl-img-wrap{height:137px}.fs-employee-list li .ccl-text-wrap{padding:12px}

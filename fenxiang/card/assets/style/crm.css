@@ -1,0 +1,225 @@
+/**
+ * For app.html
+ * App入口样式
+ */
+html {
+    overflow-y: scroll;
+}
+
+.app-wrapper {
+    width: 100%;
+    min-width: 1024px;
+}
+
+.crm-tpl-nav {
+    width: 480px;
+    margin: 0 auto;
+
+}
+
+.crm-tpl-nav-list {
+}
+
+.crm-tpl-nav-list li.crm-tpl-nav-item {
+    height: 28px;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.crm-tpl-nav-list li .nav-tip-apv {
+    display: none;
+    position: absolute;
+    top: 33px;
+    left: 0;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    height: 27px;
+    line-height: 27px;
+    padding: 0 9px;
+    z-index: 3;
+}
+
+.crm-tpl-nav-list li .nav-tip-attach {
+    width: 60px;
+    left: -18px;
+}
+
+.crm-tpl-nav-list li .nav-tip-apv i {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    color: #2a2a2a;
+    font-size: 14px;
+    font-family: "SimSun";
+    font-style: normal;
+    line-height: 1;
+    margin-left: -6px;
+}
+
+.crm-tpl-nav-list li.crm-tpl-nav-item a {
+    display: inline-block;
+    height: 37px;
+    line-height: 30px;
+    padding: 0 2px;
+    color: #808080;
+    border-bottom: #fff solid 2px;
+    text-align: center;
+    outline: none;
+    position: relative;
+    font-size: 14px;
+}
+
+.crm-tpl-nav-list li a:hover {
+    text-decoration: none;
+    color: #000000;
+    border-bottom: #427fed solid 2px;
+}
+
+.crm-tpl-nav-list li a.tnavon {
+    border-bottom: #427fed solid 2px;
+    color: #427fed;
+}
+.crm-tpl-nav-list li.more-nav-link{
+    padding-right: 24px;
+    background: url(../../assets/images/crm_icons.png) no-repeat -106px -24px;
+}
+.crm-tpl-nav-list .more-nav-link{
+    position: relative;
+}
+.crm-tpl-nav-list .more-nav-list{
+    position: absolute;
+    top:36px;
+    left:14px;
+    background: #ffffff;
+    border:1px solid #dddddd;
+    padding:2px 0 0 0;
+    -moz-box-shadow:1px 2px 2px #cccccc;
+    -webkit-box-shadow:1px 2px 2px #cccccc;
+    box-shadow:1px 2px 2px #cccccc;
+}
+.crm-tpl-nav-list .more-nav-item{
+    margin-bottom: 2px;
+}
+.crm-tpl-nav-list ul.more-nav-list a{
+    color: #808080;
+    display: inline-block;
+    font-size: 13px;
+    width:178px;
+    height: 28px;
+    line-height: 28px;
+    outline: medium none;
+    padding: 0;
+    position: static;
+    text-align: left;
+    border-top:1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    text-indent: 40px;
+}
+.crm-tpl-nav-list ul.more-nav-list a.state-selected{
+    border-top:1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    background: #f5f5f5;
+}
+.crm-tpl-nav-list ul.more-nav-list a:hover{
+    border-top:1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    background: #f5f5f5;
+}
+
+.crm-tpl-nav-list li .remind-count {
+    display: none;
+    position: absolute;
+    top: -5px;
+    left: 42px;
+    /*width:15px;
+    height:15px;*/
+    z-index: 2;
+    padding: 0 4px;
+    font-size: 9px;
+    font-family: Arial;
+    text-align: center;
+    border: 2px solid;
+    border-color: #ef5e65 #db0d14 #db0d14 #ef7378;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -moz-box-shadow: 1px 2px 3px #777777;
+    -webkit-box-shadow: 1px 2px 3px #777777;
+    box-shadow: 1px 2px 3px #777777;
+    color: #c50103;
+    font-weight: bold;
+    background: #ffffff;
+    -webkit-text-size-adjust: none;
+    -webkit-transform: scale(0.8, 0.65) translate(3px, -3px); /*暂时兼容chrome 27 不支持-webkit-text-size-adjust:none;*/
+    font-weight: normal;
+    font-family: Arial;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .crm-tpl-nav-list li .remind-count {
+        font-size: 12px;
+    }
+}
+
+
+.crm-tpl-nav-item {
+    float: left;
+
+}
+
+/* 子模板切换ajax遮罩 */
+.sub-tpl-switch-mask {
+    background: #E5E5E5;
+    opacity: 1;
+    /*background: url(../images/loading.gif) no-repeat center center;*/
+}
+
+.crm-tpl {
+    padding:20px 0;
+    zoom: 1; /* for IE6 IE7 */
+}
+
+.crm-tpl:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.crm-tpl-l,
+.crm-tpl-r {
+    float: left;
+}
+
+.crm-tpl-r {
+    margin-left: 16px;
+}
+
+.crm-tpl-c {
+    margin-left:  236px;
+    /*overflow: hidden;*/
+}
+.crm-tpl-c.detail-singlepage{
+    width: 960px;
+    margin: 0 auto;
+}
+.crm-tpl-c .crm-tpl-inner {
+    min-height: 900px;
+}
+
+.crm-tpl-l {
+    width: 220px;
+    height: 0;
+}
+
+.crm-tpl-r {
+    width: 320px;
+}
+
+.crm-tpl-r {
+    _margin-left: -5px;
+}
+
+

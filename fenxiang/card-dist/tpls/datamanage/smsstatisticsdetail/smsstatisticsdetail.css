@@ -1,0 +1,7 @@
+/**
+ * 纷享页面样式
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+
+.smsstatisticsdetail-tit{border-bottom:#ccc dotted 1px;height:68px;margin:0 24px}.smsstatisticsdetail-tit .h1{font-size:16px;color:#333;margin-top:10px}.smsstatisticsdetail-tit .h2{font-size:13px;margin-top:10px;color:#999}.smsstatisticsdetail-content{margin:0 24px;margin-top:20px}.smsstatisticsdetail-top select{float:left}.smsstatisticsdetail-top-selcetmonth{margin-left:10px}.smsstatisticsdetail-top-info{float:right;margin-top:3px;*display:inline;*zoom:1}.smsstatisticsdetail-bottom{margin-top:25px}.smsstatisticsdetail-table{width:100%;border:solid 1px #999}.smsstatisticsdetail-table thead{background:#DFDFDF}.smsstatisticsdetail-table th{border:solid 1px #999;padding:5px 10px}.smsstatisticsdetail-table td{border:solid 1px #999;padding:5px 10px;background:#fff;font-size:14px}.smsstatisticsdetail-table .txt-center{text-align:center}.smsstatisticsdetail-nulltip{padding:30px 0;font-size:14px;text-align:center;border-top:solid 1px #ddd}.smsstatisticsdetail-nulltip img{vertical-align:middle;margin-right:10px}@media screen and (-webkit-min-device-pixel-ratio:0){.exmails-form .form-input-text{line-height:15px;outline:0}}

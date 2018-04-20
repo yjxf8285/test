@@ -1,0 +1,15 @@
+.btn-reset-crm {
+	margin: 20px 0 0 20px;
+	padding: 0 13px;
+	height: 27px;
+}
+.desc, .scene, .steps {
+	margin-top: 20px;
+	padding: 0 20px;
+}
+.title {
+	font-weight: bold;
+}
+.content {
+	text-indent: 20px;
+}

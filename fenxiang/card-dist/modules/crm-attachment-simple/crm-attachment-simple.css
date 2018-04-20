@@ -1,0 +1,7 @@
+/**
+ * 纷享模块样式
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+
+.crm-attachment-simple-container{position:relative}.crm-attachment-simple-title{background-color:#fafafa;padding:15px;border:1px #d8d8d8 solid}.crm-attachment-simple-title-upload{cursor:pointer;*margin-top:-35px;*margin-right:15px}.crm-attachment-simple-file-flash-container object{position:absolute;cursor:pointer;width:30px;height:20px;top:13px;right:15px;background-color:rgba(255,255,255,0);float:right}.crm-attachment-simple-content{background-color:#fff;border-left:1px #d8d8d8 solid;border-right:1px #d8d8d8 solid;padding:10px 15px 0}.crm-attachment-simple-content a{cursor:pointer}.crm-attachment-simple-result-empty{text-align:center;vertical-align:middle;height:60px;line-height:60px}.crm-attachment-simple-result-empty-flash{text-align:center;vertical-align:middle;height:60px;line-height:60px}.crm-attachment-simple-table td{height:25px;line-height:25px}.crm-attachment-simple-image{width:16px;height:16px;display:block}.crm-attachment-simple-image-td{width:20px}.crm-attachment-simple-name-td{padding-left:10px}.crm-attachment-simple-name-div{width:240px}.crm-attachment-simple-download-td{width:30px;text-align:right}.crm-attachment-simple-show-td{width:30px;text-align:right}.crm-attachment-simple-footer{background-color:#fff;border-left:1px #d8d8d8 solid;border-right:1px #d8d8d8 solid;border-bottom:1px #d8d8d8 solid;padding:10px 15px}.crm-attachment-simple-footer a{cursor:pointer}

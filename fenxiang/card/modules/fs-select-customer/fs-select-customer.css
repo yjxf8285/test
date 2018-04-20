@@ -1,0 +1,89 @@
+.fs-select-customer-dialog-hd h1 {
+    color: #858585;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.fs-select-customer-dialog-bd {
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    background: #f5f5f5;
+}
+.fs-select-customer-dialog-bd .search-warp{
+    background: #fff;
+    padding: 15px 20px;
+    text-align: right;
+}
+
+.fs-select-customer-dialog-bd .bd-l {
+    float: left;
+    width: 150px;
+    background: #fff;
+    height: 492px;
+    padding: 0 0 0 20px;
+    border-right: solid 1px #d8d8d8;
+}
+
+.fs-select-customer-dialog-bd .bd-l .left-listmenu li {
+
+    padding: 10px 0 10px 20px;
+
+    cursor: pointer;
+}
+
+.fs-select-customer-dialog-bd .bd-l .left-listmenu li.selected {
+    font-weight: bold;
+    border: 1px solid #d8d8d8;
+    border-right: none;
+    border-left: solid 2px #427fed;
+    background: #EEEEEE;
+}
+
+.fs-select-customer-dialog-bd .bd-l .selected-count {
+    padding: 44px 0 20px 20px;
+
+}
+
+.fs-select-customer-dialog-bd .bd-l .selected-count .num {
+    color: #f60;
+}
+
+.fs-select-customer-dialog-bd .bd-r {
+    padding: 0 15px 20px 15px;
+    margin-left: 170px;
+    border-top: solid 1px #d8d8d8;
+    height: 460px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.fs-select-customer-dialog-bd .search-warp .ui-search-field {
+    width: 632px;
+}
+
+.fs-select-customer-dialog-bd .bd-r .crm-com-table {
+
+    /*padding-top: 15px;*/
+    *border-top: solid 1px #d8d8d8;
+}
+
+.fs-select-customer-dialog-bd .bd-r .crm-com-table .crm-table-bd {
+    border: solid 1px #d8d8d8;
+    border-top: none;
+    background: #fff;
+}
+
+.fs-select-customer-dialog-bd .bd-r .pagination-wrapper {
+    text-align: right;
+}
+
+.fs-select-customer-dialog-fd {
+    padding: 10px 20px;
+    text-align: right;
+}
+.fs-select-customer-dialog-bd .search-result-tip{
+    color: #999;
+    padding: 4px 0;
+    visibility: hidden;
+}

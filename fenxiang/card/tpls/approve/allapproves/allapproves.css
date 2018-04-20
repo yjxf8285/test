@@ -1,0 +1,48 @@
+#approve-allapproves .tpl-filter{
+    border-top:1px solid #ebebeb;
+    border-bottom:1px solid #ebebeb;
+    padding:16px;
+}
+#approve-allapproves .tpl-filter .f-field{
+    margin-bottom: 10px;
+}
+#approve-allapproves .tpl-filter .ff-label{
+    width:74px;
+    line-height: 25px;
+    color:#999999;
+}
+#approve-allapproves .tpl-filter .range-sb{
+    display: block;
+    width:400px;
+}
+#approve-allapproves .tpl-filter .approve-textfield{
+    border:1px solid #dddddd;
+    height:26px;
+    line-height: 26px;
+    padding-left:10px;
+}
+#approve-allapproves .tpl-filter .last-f-field{
+    margin-bottom: 0;
+}
+#approve-allapproves .tpl-filter .ff-value-label,
+#approve-allapproves .tpl-filter .ff-desc{
+    color:#999999;
+}
+#approve-allapproves .widget-box .box-content{
+padding:16px;
+}
+#approve-allapproves .widget-box .box-title{
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #E1E1E1;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 16px;
+    position: relative;
+}
+#approve-allapproves .widget-box .export-field{
+    line-height:30px;
+}
+#approve-allapproves .search-bar{
+    padding: 10px 15px;
+}
+.department .approve-nav-list{border-top:#e8e8e8 solid 1px;padding:16px 0;margin-top:10px;}

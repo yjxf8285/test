@@ -1,0 +1,32 @@
+.crm-highsea-expiretime-container{
+	padding: 40px;
+}
+
+.crm-highsea-expiretime-title{
+	font-size: 18px;
+}
+.crm-highsea-expiretime-content{
+	height: 30px;
+	line-height: 30px;
+}
+.crm-highsea-expiretime-content b,
+.crm-highsea-expiretime-content span{
+	display: block;
+	float: left;
+}
+.crm-highsea-expiretime-content b{
+	font-weight: normal;
+	padding:0 8px;
+	color: red;
+}
+.crm-highsea-expiretime-content .crm-highsea-expiretime-settime input{
+	width: 156px;
+	padding:0 10px;
+}
+.crm-highsea-expiretime-foot{
+	padding-top: 60px;
+}
+
+.crm-highsea-expiretime-button-ok{
+	margin-right: 5px;
+}

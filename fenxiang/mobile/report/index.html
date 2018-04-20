@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+	<title>纷享销客</title>
+	<script src="src/static/js/lib/underscore-min.js"></script>
+	<script src="src/static/js/lib/zepto.min.js"></script>
+	<script src="src/static/js/lib/util.js"></script>
+	<style>
+		html,body{
+			width: 100%;
+			height: 100%;
+			margin: 0;
+		}
+		body{
+			background: url("src/static/image/qx.jpg") no-repeat center center;
+		}
+		body h2{
+			text-align: center;
+		}
+		body p a{
+			display: inline-block;
+			width: 80px;
+			height: 30px;
+		}
+		body p a:first-child{
+			background: #eee;
+		}
+		body p a:last-child{
+			background: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<h2><label for="">UID</label><input name="uid" type="text" value="ChenYF"/><button>LANUCH</button></h2>
+	<p>
+		<a href="src/html/reportdata.html">上报数据</a>
+		<a href="src/html/reporthistory.html">上报历史</a>
+		<a href="src/html/approvehistory.html">审核记录</a>
+	</p>
+	<script>
+		/*
+		 * http://wx.firstshare.cn/w/authorize/debug?uid=ChenYF
+		 */
+		$(function(){
+			var util=FS.util;
+			var $inu=$('[name="uid"]');
+			$('button').on('click',function(){
+				var uid=$inu.val();
+				$.ajax({
+					'type':'get',
+					'url':'/w/authorize/debug',
+					'data':{
+						'uid':uid
+					},
+					'success':function(){
+						alert('写入成功');
+					}
+				})
+			});
+		
+		})
+	</script>
+</body>
+</html>

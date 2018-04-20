@@ -1,0 +1,28 @@
+<script class="rpt-logs-tpl">
+    <table class="report-tb">
+        <thead>
+            <tr>
+                <th width="50">序号</th>
+                <th width="150">修改人</th>
+                <th>修改内容</th>
+                <th width="210">修改时间</th>
+            </tr>
+        </thead>
+        <tbody>
+            ## if (data.length > 0) { ##
+                ## _.each(data, function(source, index){ ## 
+                <tr>
+                    <td>{{index + 1}}</td>
+                    <td><div class="nowrap">{{source.employee.name}}</div></td>
+                    <td><div class="wrap2">{{source.content}}</div></td>
+                    <td>{{source.createTime}}</td>
+                </tr>
+                ## }) ##
+            ## } else { ##
+                <tr>
+                    <td colspan="4">暂无修改记录</td>
+                </tr>
+            ## } ##
+        </tbody>
+    </table>
+</script>

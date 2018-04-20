@@ -1,0 +1,1 @@
+define("uilibs/crmdatatable",[],function(a,b,c){var d=Backbone.View.extend();c.exports=d});

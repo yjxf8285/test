@@ -1,0 +1,51 @@
+.m-partneradd{
+	font-size: 16px;
+}
+.m-partneradd input{
+	font-size: 16px;
+}
+.m-partneradd .partneradd-title{
+	background: #f1f1f1;
+	border-bottom: 1px #d5d5d5 solid;
+	padding: 12px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.m-partneradd .partneradd-list{
+	padding: 0 55px;
+}
+.m-partneradd .partneradd-list .list-label{
+	padding: 0 10px;
+}
+.m-partneradd .partneradd-list td{
+	padding: 20px 0;
+}
+.m-partneradd .partneradd-list td input{
+	border: 1px #c2c8ce solid;
+	border-radius: 4px;
+	padding: 5px;
+}
+.m-partneradd .partneradd-bottom{
+	border-top: 1px #c2c8ce solid;
+	padding: 16px;
+	height: 30px;
+}
+.m-partneradd .partneradd-bottom span{
+	text-align: center;
+	border-radius:4px;
+	display: inline-block;
+	float: right;
+	line-height: 30px;
+	width: 85px;
+	cursor: pointer;
+	border: 1px #fff solid;
+}
+.m-partneradd .partneradd-bottom .bottom-sure{
+	color: #fff;
+	background: #4682ea;
+}
+.m-partneradd .partneradd-bottom .bottom-cancel{
+	color: #999;
+	background: #fff;
+	border: 1px #d8d8d8 solid;
+}

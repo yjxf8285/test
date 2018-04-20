@@ -1,0 +1,6 @@
+/**
+ * 纷享页面逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+define("tpls/plan/atmeplans/atmeplans",["util","modules/feed-list/feed-list","../plan-common","moment","../plan-common.html"],function(a,b){var c=window,d=c.FS,e=d.tpl,f=(e.store,e.event),g=(a("util"),a("modules/feed-list/feed-list")),h=a("../plan-common");b.init=function(){var a,c=b.tplName,d=b.tplEl,e=$(".feed-list",d),i=$(".feed-list-pagination",d),j=$(".filter",d),k=$(".search-inp",d),l=$(".search-btn",d);h.init(d,c),a=new g({element:e,pagSelector:i,pagOpts:{pageSize:10,visiblePageNums:7},listPath:"/feed/getFeedsOfAtMe",defaultRequestData:function(){var a=$(".filter-field",j).filter(".depw-tabs-aon").attr("val");return{keyword:_.str.trim(k.val()),subType:a,feedType:2}},searchOpts:{inputSelector:k,btnSelector:l}}),l.click(function(b){a.reload(),b.preventDefault()}),j.on("click",".filter-field",function(b){var c=$(this);$(".filter-field",j).removeClass("depw-tabs-aon"),c.addClass("depw-tabs-aon"),a.reload(),b.preventDefault()});var m=function(){a.destroy()};f.one("beforeremove",function(a){a==c&&m()}),a.reload()}});

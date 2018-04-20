@@ -1,0 +1,267 @@
+.reportrecord-infochart{
+    font-family: "微软雅黑";
+    background: #fff;
+}
+.reportrecord-infochart-loading{
+	background: url(../../../assets/images/bigloading.gif) no-repeat center center;
+}
+.reportrecord-infochart button{
+	display: inline-block;
+	width: 92px;
+	height: 30px;
+	background: #427FED;
+	color: white;
+	font-size: 13px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 30px;
+	border-radius: 2px;
+	border: none;
+	cursor: pointer;
+}
+.reportrecord-infochart .-infochart-input{
+	display: inline-block;
+	min-height: 20px;
+	border-radius: 2px;
+	border: 1px #d1d1d1 solid;
+	padding:5px 10px;
+	min-width: 100px;
+}
+.reportrecord-infochart .-infochart-input input{
+	border: none;
+}
+
+/*
+*全局下拉框样式
+*/
+/*.reportrecord-infochart-selectlist{*/
+    /*width: 60px !important;*/
+/*}*/
+
+/*.reportrecord-infochart-selectlist .mn-select-title{*/
+    /*height: 28px;*/
+    /*line-height: 28px;*/
+    /*font-size: 13px;*/
+    /*width: 32px !important;*/
+/*}*/
+/*.reportrecord-infochart-selectlist .ui-select-item {*/
+    /*width: 30px;*/
+    /*font-size: 13px;*/
+    /*height: 28px;*/
+    /*line-height: 26px;*/
+/*}*/
+/*
+*筛选项
+*层级 日期
+*/
+.reportrecord-infochart .-infochart-select{
+	padding: 10px 20px;
+	height: 32px;
+    background: #f5f5f5;
+    border: solid 1px #d8d8d8;
+    border-bottom:none;
+}
+.reportrecord-infochart .-infochart-select b{
+	line-height: 32px;
+	padding: 0 8px;
+	font-weight: normal;
+}
+.reportrecord-infochart .-infochart-select-treewrapper{
+	width: 280px;
+	overflow-x:auto; 
+	z-index: 10;
+	background: #fff;
+	border:1px #ccc solid;
+	position: absolute;
+	top: 30px;
+	display: none;
+}
+.reportrecord-infochart #select_tree{
+	display: block;
+	margin: 20px;
+}
+.reportrecord-infochart .-infochart-select-date{
+	/*padding-left:20px;*/
+}
+.reportrecord-infochart .-infochart-select-date .mn-select-box{
+	margin:0 20px;
+}
+/**
+*日 月 年选择
+*/
+.reportrecord-infochart .-infochart-select-date .-infochart-select-day-input,
+.reportrecord-infochart .-infochart-select-date .-infochart-select-month-input,
+.reportrecord-infochart .-infochart-select-date .-infochart-select-year{
+	display: none;
+}
+.reportrecord-infochart .-infochart-select-date .active{
+	display: block;
+}
+.reportrecord-infochart .-infochart-select-date .-infochart-select-year{
+	position: relative;
+	z-index: 1;
+}
+.reportrecord-infochart .-infochart-select-date .-infochart-select-year-wrapper{
+	position: absolute;
+	top: 30px;
+	background: #fff;
+	border: 1px #ccc solid;
+	border-radius: 4px;
+	width: 166px;
+	padding: 10px 6px;
+}
+.reportrecord-infochart .-infochart-select-date .-infochart-select-year-wrapper span{
+	display: inline-block;
+	width: 38px;
+	text-align: center;
+	cursor: pointer;
+}
+.reportrecord-infochart .-infochart-select-date .-infochart-select-year-wrapper span.deactive{
+	color:#ccc;
+}
+
+.reportrecord-infochart .-infochart-select-date .-infochart-select-day-input,
+.reportrecord-infochart .-infochart-select-date .-infochart-select-month-input,
+.reportrecord-infochart .-infochart-select-date .-infochart-select-year-input{
+	width:148px;
+	padding: 4px 10px;
+	color:#666;
+	/*line-height: 30px;*/
+	/*height: 30px;*/
+	/*border-radius: 2px;*/
+	border:1px #d8d8d8 solid;
+    margin-top: 1px;
+}
+.reportrecord-infochart .-infochart-select-day-input input{
+	border:0;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+.reportrecord-infochart .-infochart-select-rate{
+	font-size: 14px;
+	line-height: 32px;
+	color: #666;
+	/*font-weight: bold;*/
+	display: none;
+}
+
+
+.reportrecord-infochart .-infochart-chartbox{
+	position: relative;
+}
+.reportrecord-infochart .-infochart-chartbox-loading{
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	background-color:rgba(0,0,0,0.1);
+	display: none;
+}
+/*
+*图表范围选择
+*/
+.reportrecord-infochart .-infochart-range{
+	padding: 10px 0;
+	height: 32px;
+	border-top: 1px solid #d8d8d8;
+	border-left: 1px solid #d8d8d8;
+	border-right: 1px solid #d8d8d8;
+}
+.reportrecord-infochart .-infochart-range b{
+	line-height: 32px;
+	padding: 0 8px;
+	font-weight: normal;
+}
+
+/*
+*图表
+*/
+.reportrecord-infochart .-infochart-chart{
+	border: 1px #ccc solid;
+	border-top:0px;
+	padding: 0 15px;
+}
+.reportrecord-infochart .-infochart-chart-pie,
+.reportrecord-infochart .-infochart-chart-line,
+.reportrecord-infochart .-infochart-chart-bar-tb,
+.reportrecord-infochart .-infochart-chart-bar-hb{
+	border-top: 1px #ddd solid;
+}
+.reportrecord-infochart .-infochart-chart>div:first-child{
+	border-top: 0;
+}
+.reportrecord-infochart .-infochart-chart h2{
+	text-align: center;
+	font-size: 16px;
+	color: #666;
+	font: bold 16px "Trebuchet MS", Verdana, sans-serif;
+}
+.reportrecord-infochart .-infochart-chart-pie p,
+.reportrecord-infochart .-infochart-chart-line p,
+.reportrecord-infochart .-infochart-chart-bar-tb p,
+.reportrecord-infochart .-infochart-chart-bar-hb p{
+	line-height: 32px;
+	text-align: center;
+	font-size: 18px;
+	color: #848484;
+	margin-top: 100px;
+}
+.reportrecord-infochart .-infochart-chart div{
+	height: 360px;
+	width: 100%;
+	padding: 10px 0;
+}
+/**
+*图表表格
+*/
+.reportrecord-infochart .-infochart-list{
+    /*border: solid 1px #d8d8d8;*/
+    border-top: none;
+    width: 100%;
+}
+.reportrecord-infochart .-infochart-list th{
+    border-top:none ;
+}
+.reportrecord-infochart .-infochart-list th span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: url(../../../assets/images/app/report_tip.png) no-repeat center center;
+	position: relative;
+	top: 5px;
+	left: 8px;
+}
+.reportrecord-infochart .-infochart-list th span p{
+	position: absolute;
+	top: 20px;
+	left:-120px;
+	height: 30px;
+	line-height: 30px;
+	background:#fffbdd;
+	border:1px #f2eecf solid;
+	color: #ba8429;
+	width: 260px;
+	text-align: center;
+	border-radius: 4px;
+	display: none;
+}
+.reportrecord-infochart .-infochart-list th span:hover p{
+	display: block;
+}
+.reportrecord-infochart .-infochart-list-node{
+	cursor: pointer;
+	color:#0082cb;
+}
+.reportrecord-infochart .-infochart-tip{
+	display: none;
+}
+.reportrecord-infochart .-infochart-tip p{
+	text-align: center;
+	line-height: 60px;
+	font-size: 22px;
+	color: #ccc;
+}

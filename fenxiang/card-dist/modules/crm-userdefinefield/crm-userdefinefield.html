@@ -1,0 +1,53 @@
+<script type="text/html" class="businesstags-template"><div class="hd fn-clear">
+        <div class="l">
+            <h1><span class="titname">{{tagTitle}}自定义字段</span><span>共有字段{{tagsLength}}项</span>
+                <!--## if(value.UserDefineFields.length === 0){ ##-->
+                <!--，<a class="backtoall-btn" href="javascript:;">返回查看全部</a>-->
+                <!--## } ##-->
+            </h1>
+        </div>
+        <div class="r">
+            <div class="search-warp"></div>
+        </div>
+    </div>
+    <ul class="bd user-define-field-ul">
+        <li>
+            <div class="create-define-field-ps">没有合适的字段？</div>
+            <div class="create-define-field-btn">+创建新字段</div>
+            <ul class="create-define-field-intro">
+                <li>·&nbsp;文本类型可创建&nbsp;<span class="text">10</span>&nbsp;个</li>
+                <li>·&nbsp;日期类型可创建&nbsp;<span class="date">5</span>&nbsp;个</li>
+                <li>·&nbsp;数值类型可创建&nbsp;<span class="num">5</span>&nbsp;个</li>
+            </ul>
+        </li>
+        ## if(value.UserDefineFields.length === 0){ ##
+            <!--<p class="nodata-tip"><span>没有搜索到关键词为“</span><span class="nodata-tip-keyword" title="{{keyWord}}">{{keyWord}}</span><span>”的字段</span></p>-->
+            <p class="nodata-tip"><span>没有获取到字段</span></p>
+        ## }else{##
+            ## _.each(value.UserDefineFields,function(tag){ ##
+            <li class="tag-item" data-id="{{tag.userDefineFieldID}}" data-name data-type="{{tag.fieldType}}" data-typename="{{tag.fieldTypeName}}">
+                <div class="tag-name">{{tag.fieldDescription}}</div>
+                <dl class="tag-options" >
+                    <dd>字段类型：{{tag.fieldTypeName}}</dd>
+                </dl>
+                <!--<dl class="tag-options">-->
+                    <!--## _.some(tag.options,function(option,index){ ##-->
+                        <!--## if(index < 6){ ##-->
+                        <!--<dd>-->
+                            <!--字段类型：{{option.fieldTypeName}}-->
+                        <!--</dd>-->
+                        <!--## }else{ ##-->
+                        <!--<dd>-->
+                            <!--......-->
+                        <!--</dd>-->
+                        <!--## return true; ##-->
+                        <!--## } ##-->
+                    <!--## }); ##-->
+                <!--</dl>-->
+                ## if(!tag.isSystemTag){ ##
+                <div class="tag-delbtn">删除字段</div>
+               ## } ##
+            </li>
+            ## }); ##
+        ## } ##
+    </ul></script><div class="dialog-createnewtags-template"><div class="dialog-businesstags-warp"><div class="hd"><h1>新建字段</h1></div><div class="bd"><div class="tit fn-clear"><div class="l"><span class="tit-name">标题</span><input type="text" placeholder="请填写标题" maxlength="20" class="fieldDescription crm-textfield tit-input"></div><div class="r">*必填</div></div><div class="con fn-clear"><div class="edit-wrapper"><div class="l"><span class="tit-name">类型</span>  <span class="mn-select-box user-define-field-type" select-cls="user-define-field-type"><span class="mn-select-title-wrapper"><span class="mn-select-title">2</span> <span class="title-icon"></span></span></span></div><div class="r">*必填</div></div><div class="view-wrapper fn-hide"><div class="l"><span class="tit-name">类型</span><div class="user-define-field-type-name" style="">数字</div></div></div></div></div><div class="fd"><button class="crm-button-submit" style="margin-right: 12px">确定</button> <button class="crm-button-cancel">取消</button></div></div></div><div class="dialog-modifytags-template"><div class="dialog-businesstags-warp"><div class="hd"><h1>修改字段</h1></div><div class="bd"><div class="tit fn-clear"><div class="l"><span class="tit-name">标题</span><input type="text" placeholder="请填写标题" class="crm-textfield tit-input"><span class="modifytitname-btn-warp"><button class="crm-button-blue modifytitname-btn small-btn">保存</button></span></div></div><div class="con fn-clear"><div class="item-defpotion"><span class="tit-name">默认选项</span>  <span class="mn-select-box set-default-mn-warp"><span class="mn-select-title-wrapper"><span class="mn-select-title potion-mn-select-list-title">不设置</span> <span class="title-icon"></span></span><ul class="mn-select-list potion-mn-select-list-warp"><li class="mn-select-item" data-value="1">test1</li><li class="mn-select-item" data-value="2" data-selected="true">test2</li></ul></span> <button class="crm-button-blue set-def-potion-btn small-btn">设置</button></div><div class="item-allpotion fn-clear"><div class="l"><span class="tit-name">选项</span></div><div class="c-warp"><div class="c"><input type="text" placeholder="" value="" class="crm-textfield potion-tit-input"><button class="crm-button-blue save-potion-btn small-btn">保存</button> <button class="crm-button-gray del-potion-btn small-btn">删除</button></div></div></div><div class="add-potion fn-clear"><div class="l"><span class="tit-name">添加选项</span><input type="text" placeholder="" class="crm-textfield potion-tit-input add-tag-potion-input" maxlength="20">&nbsp;<button class="crm-button-blue add-potion-btn small-btn">添加</button></div></div></div></div><div class="fd"><button class="crm-button-cancel">关闭</button></div></div></div>

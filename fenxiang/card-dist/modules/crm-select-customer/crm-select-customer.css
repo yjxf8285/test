@@ -1,0 +1,7 @@
+/**
+ * 纷享模块样式
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+
+.crm-select-customer-title{color:#858585;padding:10px 15px;font-size:15.5px;font-weight:700}.crm-select-customer-content{border-top:1px #e5e5e5 solid;border-bottom:1px #e5e5e5 solid;padding:15px 0;background-color:#f5f5f5;height:466px}.crm-select-customer-search-container{padding:0 40px 0 55px}.crm-select-customer-search-box{}.crm-select-customer-search-input{height:28px;border:1px #e5e5e5 solid;padding:0 10px;width:619px}.crm-select-customer-search-button{width:50px;height:30px;background-color:#427fed;cursor:pointer}.crm-select-customer-search-button-active{background-color:#000}.crm-select-customer-search-icon{background:url(../../assets/images/crm_icons.png) no-repeat 0 0;position:relative;left:15px;top:5px;width:20px;height:20px}.crm-select-customer-colleague{padding:10px;width:198px;height:60px;border:1px #d8d8d8 solid;margin-right:15px;margin-top:15px;cursor:pointer;background-color:#fff}.crm-select-customer-name{word-wrap:break-word;max-height:50px;font-size:15px}.crm-select-customer-owner{color:#999}.crm-select-customer-colleague-active{border:1px #4285f4 solid}.crm-select-customer-result-container{height:390px}.crm-select-customer-result-pagination{margin-top:15px;margin-right:15px}.crm-select-customer-footer-container{padding:15px}.crm-select-customer-button-ok,.crm-select-customer-button-cancel{margin-right:15px}.crm-select-customer-no-result{padding-top:200px;text-align:center}.crm-select-customer-clean-keywords{cursor:pointer}

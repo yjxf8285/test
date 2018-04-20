@@ -1,0 +1,215 @@
+<div class="vote-wrapper">
+    <div class="vote">
+    	<fieldset>
+            <div class="ui-form-item">
+                <label class="ui-label">
+                    创建标题：
+                </label>
+                <input class="vote-title ui-inputb" type="text" style="width:372px" placeholder="标题最多25字" maxlength="25">
+            </div>
+    		<div class="ui-form-item fn-clear">
+                <label class="ui-label fn-left">
+                    投票选项：
+                </label>
+                <div class="ui-form-item-content fn-left">
+                    <div class="option-wrapper">
+                        <p class="option-item"><span class="option-index">1、</span><input class="vote-option ui-inputb" type="text"></p>
+                        <p class="option-item"><span class="option-index">2、</span><input class="vote-option ui-inputb" type="text"></p>
+                        <script type="text/html" class="option-tpl">
+                            <p class="option-item"><span class="option-index">{{index}}、</span><input class="vote-option ui-inputb" type="text" />&nbsp;&nbsp;&nbsp;<span class="remove-l">×</span></p>
+                        </script>
+                    </div>
+                    <div><a href="#" class="add-vote-option-l">添加选项</a></div>
+                </div>
+            </div>
+            <div class="ui-form-item">
+                <label class="ui-label">
+                    单选多选：
+                </label>
+                <select class="vote-count" disabled="disabled">
+                    <option value="1">单选</option>
+                </select>
+                <span class="vote-desc">&nbsp;填写2个以上的选项后可选择多选数量</span>
+            </div>
+            <div class="ui-form-item">
+                <label class="ui-label">
+                    截止时间：
+                </label>
+                <select class="deadline-ticks" name="date">
+                    <option value="1">
+                    	一周
+                    </option>
+                    <option value="2">
+                    	二周
+                    </option>
+                    <option value="3">
+                    	三周
+                    </option>
+                    <option value="4">
+                        一个月
+                    </option>
+                    <option value="5">
+                    	自定义
+                    </option>
+                </select>
+                <span class="dealine-date-time"><span class="date-wrapper"></span>&nbsp;-&nbsp;<span class="time-wrapper"></span></span>
+            </div>
+            <div class="ui-form-item">
+                <label class="ui-label">
+                    匿名投票：
+                </label>
+                <input class="is-anoymouse" value="" type="checkbox">
+            </div>
+            <div class="ui-form-item">
+                <div>
+                    <label class="ui-label">
+                        投票结果：
+                    </label>
+
+                    <label class="label-radio-wrap"><input class="result-view-type" value="1" name="view_type" type="radio" checked="checked"> 投票人可见 </label>
+                    <label class="label-radio-wrap"><input class="result-view-type" value="2" name="view_type" type="radio"> 仅发出人可见 </label>
+                    <label class="label-radio-wrap"><input class="result-view-type" value="3" name="view_type" type="radio"> 自定义范围 </label>
+                </div>
+                <div class="custom-range"></div>
+            </div>
+        </fieldset>
+    </div>
+</div>
+<script class="publish-ac" type="text/html">
+    <div class="{{classPrefix}}">
+        <div class="{{classPrefix}}-init">
+            <div class="{{classPrefix}}-init-title">请输入姓名或拼音</div>
+            <div class="{{classPrefix}}-init-panel">
+                <div class="{{classPrefix}}-list-block">
+
+                </div>
+            </div>
+        </div>
+        <div class="{{classPrefix}}-query">
+            <div class="{{classPrefix}}-query-title ac-title">检索条件为“{{query}}”的部门和同事，部门当中包含您未加入的部门。</div>
+            <ul class="{{classPrefix}}-ctn" data-role="items">
+                {{#each items}}
+                    <li data-role="item" class="{{../classPrefix}}-item" data-value="{{name}}"><a href="javascript:;" title="{{name}}">{{name}}</a></li>
+                {{/each}}
+            </ul>
+        </div>
+        <div class="{{classPrefix}}-empty">
+            没有搜索结果，请变换搜索条件
+        </div>
+    </div>
+</script>
+<script class="global-upload-dialog-wrapper" type="text/html">
+    <div class="ui-dialog-title">上传</div>
+    <div class="ui-dialog-tbar">
+        <span class="upload-btn" id="fs-publish-global-upload-btn">上传</span>
+    </div>
+    <div class="ui-dialog-body">
+        <table class="list-head list-table" cellpadding="0" cellspacing="0">
+            <thead>
+                <tr><th class="file-name">文件名</th><th class="upload-progress">上传进度</th><th class="operation">操作</th></tr>
+            </thead>
+        </table>
+        <div class="list-body-wrapper">
+            <table class="list-body list-table" cellpadding="0" cellspacing="0">
+                <tbody>
+                <!--<tr><td class="file-name">文件名</td><td class="upload-progress">上传进度</td><td class="operation">操作</td></tr>-->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="ui-dialog-bbar">
+        <div class="ui-dialog-bbar-inner">
+            <button class="f-sub button-green" type="button">确定</button><button class="f-cancel button-gray margl-btn" type="button">取消</button>
+        </div>
+    </div>
+</script>
+<script class="topic-dialog-tpl" type="text/html">
+    <!--<div class="arrows-wrapper">
+        <div class="arrows-inner"></div>
+    </div>-->
+    <div class="ui-dialog-tbar">
+        <button class="insert-topic-btn button-gray" type="button">插入话题</button>
+    </div>
+    <div class="ui-dialog-body">
+        <div class="topic-list-wrapper">
+            <ul class="cate-list"></ul>
+        </div>
+    </div>
+    <div class="ui-dialog-bbar">
+        <button class="f-cancel button-gray" type="button">关闭</button>
+    </div>
+</script>
+<script class="receipt-dialog-tpl" type="text/html">
+    <div class="ui-dialog-title">选择提交回执同事</div>
+    <div class="ui-dialog-body">
+        <div class="sb-range"></div>
+        <div class="shortcut">
+            快捷选择：添加正文中<span class="content-at-h">@提到的(<span class="num">0</span>)</span> 或 <span class="send-range-h">添加发送范围(<span class="num">0</span>)</span>
+        </div>
+    </div>
+    <div class="ui-dialog-bbar fn-clear">
+        <div class="bbar-l fn-left fn-hide">
+            <span class="label-for"><input type="checkbox" name="is_sms_send" class="is-sms-send" />&nbsp;<label>立即发送短信通知回执人</label></span>
+        </div>
+        <div class="bbar-r fn-right">
+            <button class="f-sub button-green button-state-disabled btn-sdb-green" type="button" disabled="disabled">确定</button><button class="f-cancel button-gray margl-btn" type="button">取消</button>
+        </div>
+    </div>
+</script>
+<script class="my-history-plan-tpl" type="text/html">
+    <div class="ui-dialog-title">我的历史日志</div>
+    <div class="ui-dialog-body fn-clear">
+        <div class="body-l fn-left">
+            <div class="body-l-tbar fn-clear">
+                <div class="user-info fn-left">
+                    <img src="{{blankImgSrc}}" alt="avatar" class="user-avatar" />
+                    <span class="user-name"></span>
+                    <a class="switch-l" href="#">换人</a>
+                </div>
+                <div class="publish-date fn-right">
+                    <span class="nav-l state-disabled"><img src="{{blankImgSrc}}" alt="向左" /></span>
+                    <span class="show-area"></span>
+                    <span class="nav-r state-disabled"><img src="{{blankImgSrc}}" alt="向左" /></span>
+                </div>
+            </div>
+            <div class="plan-content">
+
+            </div>
+        </div>
+        <div class="body-r fn-right">
+            <div class="current-plan-wrapper">
+                <fieldset class="today-box content-box">
+                    <div class="box-title">请填写<span class="plan-type-name">今日</span>工作总结</div>
+                    <textarea name="today_content" class="today-input publish-input"></textarea>
+                </fieldset>
+                <fieldset class="tomorrow-box content-box">
+                    <div class="box-title">请填写<span class="plan-type-name">明日</span>工作计划</div>
+                    <textarea name="tomorrow_content" class="tomorrow-input publish-input"></textarea>
+                </fieldset>
+                <fieldset class="xdth-box content-box">
+                    <div class="box-title">请填写工作心得体会</div>
+                    <textarea name="xdth_content" class="xdth-input publish-input"></textarea>
+                </fieldset>
+                <div class="media"></div>
+                <div class="publish-topic-tip">输入话题表示您授权公司对话题进行知识管理，请不要在敏感和机密信息中加入话题！</div>
+            </div>
+            <div class="body-r-bbar">
+                <button type="button" class="f-sub button-green">确定</button><button type="button" class="f-cancel button-gray margl-btn">取消</button>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/html" class="fs-publish-fpv-tpl">
+    <div class="ui-dialog-title">解密信息</div>
+    <div class="ui-dialog-body">
+        <div class="f-field fn-clear">
+            <div class="ff-label fn-left">请输入密码：</div>
+            <div class="ff-value fn-left">
+                <input type="password" class="feed-pwd auto-focus" placeholder="6位以内字符" maxlength="6" />
+            </div>
+        </div>
+        <div class="ui-dialog-bbar fn-clear">
+            <button class="button-green f-sub">确定</button><button type="reset" class="button-gray f-cancel margl-btn">取消</button>
+        </div>
+    </div>
+</script>

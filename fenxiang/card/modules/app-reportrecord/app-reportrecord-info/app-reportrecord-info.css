@@ -1,0 +1,31 @@
+.reportrecord-info-title{
+	font-family: "微软雅黑",serif;
+    background: #fff;
+    padding-top: 18px;
+    border: solid 1px #d8d8d8;
+    border-bottom: none;
+}
+.reportrecord-info-title h2{
+	font-size:20px;
+	color:#555;
+    margin-left: 20px;
+}
+.reportrecord-info-title p{
+	color: #afafaf;
+	padding-top: 10px;
+}
+.reportrecord-info-content{
+}
+.reportrecord-info-content .app-tab{
+	/*background: #fafafa;*/
+}
+.reportrecord-info-content .active{
+	background: #fff;
+}
+.-content-card{
+    margin-top: 20px;
+}
+.reportrecord-info-title .tab-menu{
+    border-top: solid 1px #d8d8d8;
+    margin-top: 20px;
+}

@@ -1,0 +1,144 @@
+.fs-shortmessage-item .disable{
+  color: #aaa;
+}
+.fs-shortmessage-item .vline{
+	color: #E4E4E4;
+    font-style: normal;
+    margin: 0 4px;
+}
+.fs-shortmessage-item{border: none;
+	margin: 18px;
+border-bottom: dashed 1px #EBEBEB;
+padding-bottom: 16px;
+
+}
+.fs-shortmessage-item .item-face {
+	float: left;
+width: 50px;
+position: relative;
+}
+.fs-shortmessage-item .item-face img{
+	width: 50px;
+height: 50px;
+}
+.fs-shortmessage-item .item-detail{
+	margin-left: 62px;
+color: #444;
+word-break: break-all;
+}
+.fs-shortmessage-item .item-detail .bottom-content {
+    margin-top: 16px;
+    color: #999;
+}
+.fs-shortmessage-item .bottom-content .bottom-content-l{
+  float: left;
+}
+.fs-shortmessage-item .bottom-content .bottom-content-r{
+  float: right;
+}
+.fs-shortmessage-item .bottom-content .bottom-content-time{
+ padding: 0 30px 0 2px;
+display: inline-block;
+overflow: hidden;
+}
+.fs-shortmessage-item .bottom-content .bottom-content-fromName{
+ width: 140px;
+ overflow: hidden;
+ white-space:nowrap;
+text-overflow:ellipsis;
+display: inline-block;
+
+}
+.fs-shortmessage-item .img-new {
+    top: -4px;
+    right: -9px;
+    position: absolute;
+    width: 17px;
+    height: 14px;
+    display: block;
+    background: url(../../assets/images/new.gif);
+}
+/* 录音 */
+.session-attachs .audio-btn{
+  width: 52px;
+  height: 28px;
+  line-height: 28px;
+  display: block;
+  cursor: pointer;
+  background: url(../../assets/images/audio_ico.png) no-repeat;
+  margin-top: 10px;
+  padding-left: 118px;
+}
+.session-attachs .audio-warp{
+  display: none;
+  border-radius: 3px;
+  border: solid 1px #ccc;
+  background: #f6f6f6;
+  padding: 16px;
+  margin-top: 10px;
+}
+.session-attachs .audio-warp .audio-close{
+  cursor: pointer;
+  color: #0082CB;
+}
+.session-attachs .audio-warp .audio-close img{
+  vertical-align: middle;
+}
+.session-attachs .audio-warp audio{
+  margin-top: 10px;
+}
+/* 图片和附件*/
+.session-attachs .item-media { margin-top: 10px; }
+.session-attachs .item-media img {
+  display: block;
+  cursor: pointer;
+  max-height: 112px;
+}
+
+.session-attachs .item-media .pic-num {
+  margin: 2px 0 0 42px;
+  color: #999;
+}
+.session-attachs .item-media .feedpics-bor {
+  position: relative;
+  height: 120px;
+}
+.session-attachs .item-media .img-warp {
+  text-align: center;
+  width: 150px;
+  height: 112px;
+  background: #fff;
+  padding: 3px;
+  border: #949494 solid 1px;
+}
+.session-attachs .item-media .img-warp td {
+  width: 150px;
+  height: 112px;
+}
+.session-attachs .item-media .feed-files {
+  border-top: dotted 1px #ccc;
+  border-bottom: dotted 1px #ccc;
+  border-left: solid 1px #A7C7F7;
+  padding: 10px;
+  margin-top: 10px;
+  padding-bottom: 0px;
+}
+.session-attachs .feed-files dl {
+  width: 218px;
+  margin-right: 8px;
+  float: left;
+  padding-bottom: 10px;
+}
+.session-attachs .feed-files dl dt { float: left; }
+.session-attachs .feed-files dl dd {
+  margin-left: 38px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.session-attachs .feed-files dl dd a { color: #0082CB; }
+.session-attachs .feed-files dl dd a.v { margin-left: 10px; }
+.session-attachs .item-func {
+  color: #666;
+  margin-top: 22px;
+  position: relative
+}

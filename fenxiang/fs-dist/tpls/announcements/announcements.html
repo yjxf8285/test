@@ -1,0 +1,48 @@
+<div id="announcements" class="tpl department" tplname="announcements" js="true" css="modules/tpl-portal/tpl-portal.css" iscached="true">
+    <!-- 三列式 自适应宽度 -->
+    <div class="tpl-l">
+        <div class="tpl-inner">
+        &nbsp;
+            <div class="head-img-wrap fn-clear">
+                <script class="head-img-wrap-tpl" type="text/html">
+                    <a href="#profile"><img class="fn-left" src="{{profileImage}}"/>{{userName}}</a>
+                </script>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="tpl-c">
+        <div class="tpl-inner">
+            <!-- department center start -->
+            <div class="department-wrapper">
+                <h2 class="depw-title">工作公告管理</h2>
+                <p class="depw-text color-999999">这些是公司工作管理平台公告管理</p>
+                <ul class="depw-menu fn-clear marg10 border-top-none">
+                </ul>
+                <nav class="depw-tabs fn-clear marg10">&nbsp;
+                   <button id="btn-new-create" style="display:none" class="button-green">新建公告</button>
+                   <label class="search-wrap">
+                     <input type="text" class="search-inp" placeholder="搜索公告标题或内容" maxlength="100"><button class="search-btn"></button>
+                   </label>
+                </nav>
+                
+                <div class="depw-content-list">
+                    <div class="announcements-list"></div>
+                    <div class="announcements-list-pagination"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="tpl-r">
+        <div class="tpl-inner">
+        
+           <aside class="home-right-content">
+               
+           </aside>
+           
+        </div>
+    </div>
+</div>

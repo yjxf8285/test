@@ -1,0 +1,138 @@
+<div class="dialog-contract-template">
+    <div class="dialog-create-warp fn-clear">
+        <div class="l">
+            <ul class="left-list">
+                <li>基本资料</li>
+            </ul>
+        </div>
+        <div class="r">
+            <div class="fn-warp">
+                <button class="crm-button-cancel dialog-button-cancel"
+                        style="margin-right: 16px;border: 1px solid #BFBFBF;">关闭
+                </button>
+                <button class="crm-button-submit dialog-button-submit" style="border: 1px solid #BFBFBF;">保存</button>
+            </div>
+            <ul class="right-list">
+                <li class="fn-clear">
+                    <div class="inputs-tit">标题<span class="red">*</span></div>
+                    <div class="input-warp">
+                        <textarea class="area-auto-height textarea-h19 contract-title" placeholder="请填写合同标题"></textarea>
+                    </div>
+                </li>
+                <li class=" fn-clear">
+                    <div class="inputs-tit">机会名称</div>
+                    <div class="input-warp">
+                        <textarea class="area-auto-height textarea-h19 textarea-select-text contract-opp-name" readonly="true" placeholder="请选择销售机会"></textarea>
+                        <button class="button-submit contract-opp-name-btn" style="">选择</button>
+                    </div>
+                </li>
+                <li class=" fn-clear">
+                    <div class="inputs-tit">客户名称<span class="red">*</span></div>
+                    <div class="input-warp">
+                        <textarea class="area-auto-height textarea-h19 textarea-select-text contract-customer-name" readonly="true" placeholder="请选择客户"></textarea>
+                        <button class="button-submit contract-customer-name-btn" style="">选择</button>
+                    </div>
+                </li>
+                <li class="fn-clear">
+                    <div class="inputs-tit">总金额<span class="red">*</span></div>
+                    <div class="input-warp" style="padding: 10px 0;">
+                        <div class="contract-totalAmount"></div>
+                        <!--<input class="dialog-input-text contact-department" placeholder="请填写预计销售金额"/>-->
+                    </div>
+                </li>
+                <li class="fn-clear">
+                    <div class="inputs-tit">折扣</div>
+                    <div class="input-warp" style="padding: 10px 0;">
+                        <div class="mn-checkbox-box contract-discount">
+                            <span class="mn-checkbox-item contract-discount-checkbox-item" data-value="true" style="top: 2px;position: relative;"></span>
+                            <span style="margin-left:6px;">含折扣</span>
+                            <span style="display: none;">
+                            	<input value="10" style="border: none;text-indent: 5px;margin: 0 5px; width: 50px; height: 15px;line-height:15px;"/>
+                            	请输入0-10之间的数字，支持2位小数
+                            </span>
+                        </div>
+                        <!--<input class="dialog-input-text contact-department" placeholder="请填写预计销售金额"/>-->
+                    </div>
+                </li>
+                <li class="fn-clear">
+                    <div class="inputs-tit">签约日期<span class="red">*</span></div>
+                    <div class="input-warp contract-signDate date-wrapper">
+                    </div>
+                </li>
+                <li class="fn-clear">
+                    <div class="inputs-tit">开始日期<span class="red">*</span></div>
+                    <div class="input-warp contract-beginDate date-wrapper">
+                    </div>
+                </li>
+                <li class="fn-clear">
+                    <div class="inputs-tit">结束日期<span class="red">*</span></div>
+                    <div class="input-warp contract-endDate date-wrapper">
+                    </div>
+                </li>
+
+                <li class="fn-clear">
+                    <div class="inputs-tit">合同负责人<span class="red">*</span></div>
+                    <div class="input-warp">
+                        <textarea class="area-auto-height textarea-h19 textarea-select-text contract-ownerID" readonly="true" placeholder=""></textarea>
+                        <button class="button-submit contract-ownerID-btn" style="">选择</button>
+                    </div>
+                </li>
+                <li class="fn-clear">
+                    <div class="inputs-tit">我方签约人<span class="red">*</span></div>
+                    <div class="input-warp">
+                        <textarea class="area-auto-height textarea-h19 textarea-select-text contract-signerID" readonly="true" placeholder=""></textarea>
+                        <button class="button-submit contract-signerID-btn" style="">选择</button>
+                    </div>
+                </li>
+                <li class="fn-clear">
+                    <div class="inputs-tit">客户签约人</div>
+                    <div class="input-warp">
+                        <input class="dialog-input-text contract-customerSigner" placeholder="请填写客户签约人"/>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class=" right-list contract-tags-list-warp">
+                <li class="fn-clear">
+                    <div class="inputs-tit">付款方式<span class="red">*</span></div>
+                    <div class="input-warp selects-warp">
+                        <span class="mn-select-box sort-select-list contract-paymentType" select-cls="">
+                            <span class="mn-select-title-wrapper select-for-dialog">
+                                <span class="mn-select-title">2</span>
+                                <span class="title-icon"></span>
+                            </span>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="right-list">
+                <li class="fn-clear">
+                    <div class="inputs-tit">合同编号</div>
+                    <div class="input-warp">
+                        <input class="dialog-input-text contract-contractNO" placeholder="请填写合同编号"/>
+                    </div>
+                </li>
+
+                <li class="fn-clear">
+                    <div class="inputs-tit">正文</div>
+                    <div class="input-warp">
+                        <textarea class="area-auto-height textarea-h100 contract-content" placeholder="请填写合同正文"></textarea>
+                    </div>
+                </li>
+                <li class="fn-clear">
+                    <div class="inputs-tit">产品说明</div>
+                    <div class="input-warp">
+                        <textarea class="area-auto-height textarea-h100 contract-productDescription" placeholder="请填写合同中有关产品的说明"></textarea>
+                    </div>
+                </li>
+                <li class="fn-clear">
+                    <div class="inputs-tit">描述</div>
+                    <div class="input-warp">
+                        <textarea class="area-auto-height textarea-h100 contract-description" placeholder="请填写合同描述"></textarea>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

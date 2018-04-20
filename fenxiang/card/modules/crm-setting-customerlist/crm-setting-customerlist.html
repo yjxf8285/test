@@ -1,0 +1,121 @@
+<!--标签列表模板-->
+<script type="text/html" class="crm-customer-list-template">
+
+    <div class="crm-list-bd crm-com-table fn-clear">
+        <!--toolbar-->
+        <div class="top-fn-btns fn-clear">
+                <button class="crm-button-submit form-button j-button-submit create-customer-btn mr6">新建客户</button>
+                <button class="crm-button-submit form-button j-button-submit create-by-contracts-btn mr6">通过联系人创建</button>
+                <button class="crm-button-submit form-button j-button-submit customer-import mr6">导入客户</button>
+                <button class="crm-button-submit form-button j-button-submit customer-export">导出客户</button>
+        </div>
+        <!--表格-->
+        <div class="crm-table-list-warp">
+            <div class="crm-table-list-hd fn-clear">
+                <div class="fn-left">
+                    		<span class="select-tit">客户状态</span>
+                            <span class="mn-select-box customer-select-list" select-cls="crm-select-list-short">
+                                <span class="mn-select-title-wrapper"><span class="mn-select-title">不限</span><span class="title-icon"></span></span>
+                            </span>
+                </div>
+                <div class="fn-right">
+                        <span class="mn-select-box sort-select-list" select-cls="">
+                            <span class="mn-select-title-wrapper"><span class="mn-select-title">按最后更新时间倒序</span><span class="title-icon"></span></span>
+                             <ul class="mn-select-list">
+                                 <li class="mn-select-item" data-value="1">按最后更新时间倒序</li>
+                                 <li class="mn-select-item" data-value="2">按客户名称排序</li>
+                             </ul>
+                        </span>
+                </div>
+            </div>
+            <div class="crm-table-bd">
+                <table border="0" cellpadding="0" cellspacing="0" class="crm-datatable">
+                    <thead>
+                    <tr>
+                        <th>
+                            <div class="mn-checkbox-box checkbox-for-comtable">
+                                &nbsp;&nbsp;<span data-value="2" class="mn-checkbox-item checkbox-selectall-btn"></span></div>
+                        </th>
+                        <th></th>
+                        <th>简称</th>
+                        <th>归属人</th>
+                        <th>客户状态</th>
+                        <th>最后修改时间</th>
+                        <th>创建时间</th>
+                        <th class="th-blank"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--脚-->
+    <div class="crm-list-fd fn-clear">
+        <!--分页-->
+        <div class="pagination-wrapper"></div>
+    </div>
+</script>
+
+<!--创建新产品弹框模板-->
+<div class="dialog-customer-template">
+    <div class="dialog-create-warp fn-clear">
+        <div class="l">
+            <ul class="left-list">
+                <li>基本资料</li>
+            </ul>
+        </div>
+        <div class="r">
+            <div class="fn-warp">
+                <button class="button-cancel" style="margin-right: 16px;border: 1px solid #BFBFBF;">关闭</button>
+                <button class="button-submit" style="border: 1px solid #BFBFBF;">保存</button>
+            </div>
+            <ul class="right-list">
+                <li class="fn-clear">
+                    <div class="inputs-tit">全称</div>
+                    <div class="input-warp">
+                        <textarea class="area-auto-height c-fullname" placeholder="请填写客户全称"></textarea>
+                    </div>
+                </li>
+                <li class="fn-clear">
+                    <div class="inputs-tit">简称<span class="red">*</span></div>
+                    <div class="input-warp">
+                        <textarea class="area-auto-height c-name" placeholder="请填写客户简称"></textarea>
+                    </div>
+                </li>
+                <li class="fn-clear">
+                    <div class="inputs-tit">地址</div>
+                    <div class="input-warp">
+                        <textarea class="area-auto-height c-address" placeholder="请填写联系地址"></textarea>
+                    </div>
+                </li>
+                <li class="fn-clear">
+                    <div class="inputs-tit">网址</div>
+                    <div class="input-warp">
+                        <textarea class="area-auto-height c-webSite" placeholder="请填写网址"></textarea>
+                    </div>
+                </li>
+            </ul>
+            <ul class="right-list customer-tags-list-warp"></ul>
+            <ul class="right-list">
+                <li class="fn-clear">
+                    <div class="inputs-tit">简介</div>
+                    <div class="input-warp">
+                        <textarea class="area-auto-height c-introduction" placeholder="请填写客户简介" style="height: 100px;"></textarea>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

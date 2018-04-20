@@ -1,0 +1,25 @@
+.fs-likelist-item{
+    margin-top: 16px;
+    padding: 16px;
+    background: #fff;
+
+}
+.fs-likelist-item .item-face {
+    float: left;
+    width: 50px;
+    position: relative;
+}
+.fs-likelist-item .item-face img{
+    width: 50px;
+    height: 50px;
+}
+.fs-likelist-item .item-detail{
+    margin-left: 62px;
+    color: #444;
+    word-break: break-all;
+}
+.fs-likelist-item .item-detail .myreply-content {
+    font-family: "宋体";
+    margin-top: 20px;
+    color: #707070;
+}

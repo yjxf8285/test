@@ -1,0 +1,131 @@
+.fs-schedule-add-dialog .ff-label,
+.fs-schedule-add-dialog .ff-value{
+	float:left;
+	line-height: 35px;
+}
+.fs-schedule-add-dialog .ff-label{color:#999999;vertical-align:middle;}
+.fs-schedule-add-content{
+	padding:16px;
+	font-size:12px;
+}
+.fs-schedule-add-dialog .fs-contact-bar{
+	width:475px;
+}
+.fs-schedule-add-dialog .sms-notice-wrapper{
+	float:left;
+	margin-top:7px;
+}
+.fs-schedule-add-dialog .sms-notice-wrapper input,
+.fs-schedule-add-dialog .sms-notice-wrapper label{
+	vertical-align: middle;
+}
+.fs-schedule-add-dialog .fs-schedule-add-actions{
+	float:right;
+}
+.fs-schedule-add-dialog .schedule-input{
+	width:530px;
+	height:70px;
+	border:none;
+	resize: none;
+	overflow:hidden;
+    background: transparent;
+    padding:4px;
+}
+.fs-schedule-add-dialog .f-actions{
+	margin-top:10px;
+}
+.fs-schedule-add-dialog .media{
+    border:1px solid #dddddd;
+    border-top:none;
+    margin-top:-36px;
+}
+.fs-schedule-add-dialog .schedule-input-wrapper{
+	padding-bottom: 36px;
+	border:1px solid #d1d1d1;
+}
+.fs-schedule-ordered{
+	/*background: yellow;*/
+}
+.fs-schedule .ui-calendar-date-column li.fs-schedule-my-ordered{
+    background-image: url(../../assets/images/calendar-circle-red.png);
+    background-position: 3px 0;
+    background-repeat: no-repeat;
+    color:#333333;
+}
+.fs-schedule .ui-calendar-date-column li.fs-schedule-other-ordered{
+    background-image: url(../../assets/images/calendar-circle-blue.png);
+    background-position: 3px 0;
+    background-repeat: no-repeat;
+    color:#333333;
+}
+
+.fs-schedule-manage-inner{
+	padding:16px;
+}
+.fs-schedule-manage-content{
+	height:375px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+.fs-schedule-manage-bbar{
+	padding-top:10px;
+	text-align: right;
+}
+.fs-schedule-manage-item{
+	padding:15px 0;
+	border-bottom:1px dotted #d1d1d1;
+}
+.fs-schedule-manage-item-content{
+	padding-left:40px;
+	background: url(images/icon-schedule.png) no-repeat 0 0;
+}
+.fs-schedule-manage-list{
+	/*padding:10px;*/
+}
+.fs-schedule-mange-item-bbar{
+	text-align: right;
+}
+.fs-schedule-add-dialog .ff-value .fs-publish-dateselect-input{width:180px;}
+.fs-schedule-add-dialog .ff-value .fs-publish-timeselect-input{width:270px;}
+.fs-schedule-add-dialog .sms-alert-wrapper{
+    position: relative;
+}
+.fs-schedule-add-dialog .custom-alert-wrapper{
+    position: absolute;
+    right:0;
+    top:5px;
+    color:#DD4B39;
+}
+
+.fs-schedule-custom-alert-dialog .sms-alert-wrapper{
+    position: relative;
+}
+.fs-schedule-custom-alert-dialog .ui-dialog-bbar{
+    position: absolute;
+    top:0;
+    right:0;
+}
+.fs-schedule-custom-alert-dialog .ui-dialog-body{
+    padding:10px;
+}
+.fs-schedule-custom-alert-dialog .range-selectbar{
+    width:456px;
+}
+.fs-schedule-custom-alert-dialog .sms-alert-wrapper{
+    margin-top:6px;
+}
+.fs-schedule-custom-alert-dialog .ff-label,
+.fs-schedule-custom-alert-dialog .ff-value{
+    line-height: 30px;
+}
+.fs-schedule{
+    width: auto;
+}
+
+.fs-schedule-manage-dialog .fs-list-item .feed-main-warp{padding:0;}
+.fs-schedule-manage-dialog .fs-list-item .item-func .handle{
+    margin-right: 0;
+}
+.fs-schedule-manage-dialog .fs-schedule-manage-tbar{
+    padding-bottom: 16px;
+}

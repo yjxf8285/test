@@ -1,0 +1,55 @@
+.app-notice-send .-send-content{
+    padding: 16px 21px;
+}
+.app-notice-send .-sendcontent-section{
+    margin-bottom: 10px;
+}
+.app-notice-send .-sendcontent-section:last-child{
+	margin-bottom: 0px;
+}
+.app-notice-send .-sendcontent-label{
+	float: left;
+    line-height: 35px;
+    width:66px;
+    color: #999;
+}
+.app-notice-send .-sendcontent-content{
+ 	float: right;
+    width:454px;
+}
+.app-notice-send .-sendcontent-title textarea{
+	display: block;
+	width:442px;
+	height:20px;
+	padding:5px;
+	border: 1px #d1d1d1 solid;
+}
+.app-notice-send .-sendcontent-txt{
+	border: 1px #ccc solid;
+}
+.app-notice-send .-sendcontent-txt textarea{
+	display: block;
+	width:444px;
+	height: 60px;
+	padding:5px 5px 41px 5px;
+	border: none;
+}
+.app-notice-send .-sendcontent-media{
+	margin-top: -36px;
+}
+.app-notice-send .-sendcontent-btn{
+	padding-top: 10px;
+	padding-bottom: 4px;
+	line-height: 30px;
+}
+.app-notice-send .-sendcontent-btn label{
+	position: relative;
+}
+.app-notice-send .-sendcontent-btn input{
+	position: relative;
+	cursor: pointer;
+	top: 2px;
+}
+.app-notice-send .-sendcontent-btn-sure{
+	margin-right: 10px;
+}

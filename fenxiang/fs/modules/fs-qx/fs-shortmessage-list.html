@@ -1,0 +1,30 @@
+<!-- 企信列表的模板 -->
+<script type="text/html" class="fs-shortmessage-send-item-tpl">
+<div class="item-face" sessionid="{{sessionID}}">
+  {{newico}}
+  <a href="javascript:void(0);">
+    <img src="{{profileImage}}" alt=""></a>
+</div>
+<div class="item-detail">
+  <div class="item-info">
+    <div>
+      <a href="Index#profile/=/empid-{{employeeID}}">{{name}}</a>
+      ：{{lastMessageShowContent}}
+    </div>
+  </div>
+  <div class="session-attachs">{{attach}}</div>
+  <div class="bottom-content fn-clear">
+    <div class="bottom-content-l">
+      <span class="bottom-content-time">{{lastCreateTime}}</span>
+      <span class="bottom-content-fromName">来自{{fromName}}</span>
+    </div>
+    <div class="bottom-content-r">
+      <span>
+        {{messageCount}} <i class="vline">|</i>
+        <a href="javascript:;" class="shortcut-reply-l {{disable}}">快速回复</a> <i class="vline">|</i>
+        <a href="javascript:;" class="shortcut-del-btn">删除</a>
+      </span>
+    </div>
+  </div>
+</div>
+</script>

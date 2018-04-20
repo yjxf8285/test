@@ -1,0 +1,235 @@
+/*-------------------------------------
+zTree Style
+
+version:	3.4
+author:		Hunter.z
+email:		hunter.z@263.net
+website:	http://code.google.com/p/jquerytree/
+
+-------------------------------------*/
+
+.report-ztree {
+    font-size: 12px;
+    color:#646464;
+}
+.report-ztree li{
+    min-width: 200px;
+    white-space:nowrap;
+    outline:0;
+}
+.report-ztree li ul{
+    padding:0 0 0 18px
+}
+/*线*/
+.report-ztree li ul.line{ 
+    background:url(../img/line_conn.gif) -1px 0 repeat-y;
+}
+.report-ztree li a {
+    display: inline-block;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    height: 30px;
+    color:#686868;
+    line-height: 30px;
+	text-decoration:none;
+    cursor: pointer;
+}
+.report-ztree li a:hover {
+	background: #F5FBFF;
+}
+.report-ztree li a span {
+    float: left;
+    max-width: 170px;
+    height: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;    
+}
+.report-ztree li a.curSelectedNode_Edit span {
+    width: 130px;
+}
+
+.ztree-diy-editebtn,
+.ztree-diy-addbtn {
+    height: 28px;
+    margin-left: 15px;
+    color: #248bcc;
+    cursor: pointer;
+    font-weight: normal;
+}
+.report-ztree li a:hover {
+    text-decoration:none;
+}
+
+/*选中的样式*/
+.report-ztree li a.curSelectedNode {
+    background-color:#f2f4f4;
+    height: 30px;
+}
+
+
+/*所有按钮的样式*/    
+.report-ztree li span.button {
+    line-height:0; margin:0;
+    width:16px; height:16px;
+    display: inline-block;
+    vertical-align:middle;
+	border:0 none;
+    cursor: pointer;
+    outline:none;
+	background-color:transparent;
+    background-repeat:no-repeat;
+    background-attachment: scroll;
+	background-image:url("../img/zTreeStandard.png");
+} 
+.report-ztree li span.button.switch {
+    width: 34px;
+    height: 44px;
+    vertical-align: top;
+}
+
+/*只有一层节点当都不是父节点*/
+.report-ztree li span.button.root_docu{
+    background: none;
+}
+.report-ztree li span.button.roots_docu{
+    background-position:-72px 0;
+}
+
+/* 只有一层根节点 */
+.report-ztree li span.button.root_open{
+    background-position:-36px -135px;
+}
+.report-ztree li span.button.root_close {
+    background-position:0 -135px;
+}
+
+.report-ztree li span.hack-switch.button.root_open {
+    background-position:-72px -135px;
+}
+.report-ztree li span.hack-switch.button.roots_open {
+    background-position:-72px -135px;
+}
+.report-ztree li span.hack-switch.button.center_open {
+    background-position:-108px -136px;
+}
+.report-ztree li span.hack-switch.button.bottom_open {
+    background-position:-108px -1px;
+}
+
+
+/* 顶层节点 */
+.report-ztree li span.button.roots_open{
+    background-position: -36px 0;
+}
+.report-ztree li span.button.roots_close{
+    background-position: 0 0;
+}
+
+/* 中间的节点 */
+.report-ztree li span.button.center_open{
+     background-position: -36px -45px;
+}
+.report-ztree li span.button.center_close{
+    background-position: 0 -45px;
+}
+
+
+
+/* 底层节点 */
+.report-ztree li span.button.bottom_open{
+    background-position: -36px -90px;
+ }
+.report-ztree li span.button.bottom_close{
+    background-position: 0 -90px;
+}
+
+
+/*最低层次 不需要图标的*/
+
+.report-ztree li span.button.center_docu{
+    background-position:-72px -45px;
+}
+.report-ztree li span.button.bottom_docu {
+    background-position:-72px -90px;
+}
+
+
+
+
+
+.report-ztree li a span.diy_set_box {
+    width: 30px;
+    height: 30px;
+    float: right;
+    position: relative;
+    overflow: visible;
+    z-index: 100;
+}
+.report-ztree li .curSelectedNode span.diy_set_box {
+    z-index: 99;
+}
+.report-ztree li a span.diy_set_btn {
+    display: block;
+    width: 80px;
+    height: 30px;
+    float: none;
+    color: #1483c8;
+    background: url("../../images/home-icons.png") no-repeat -47px -256px;
+}
+.report-ztree li a span.diy_set_btn.up {
+	background-position: -16px -268px;
+} 
+.report-ztree li a span.diy_set_list {
+    display: none;
+    float: none;
+    width: 110px;
+    height: auto;
+    border: 1px solid #ADADAD;
+    background-color: #f7f7f7;
+    position: absolute;
+    top: 28px;
+    right: -90px;
+    border-radius: 3px;
+}
+.report-ztree .diy_set_list em {
+    display: block;
+    padding: 2px 16px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+}
+.report-ztree .diy_set_list b {
+	width: 100%;
+	height: 1px; 
+	overflow: hidden;
+	background: #C9C9C9;
+	display: block;
+}
+
+.report-ztree .diy_set_list .diy_btns_hover {
+    background-color: #eee;
+}
+
+.report-ztree li a.curSelectedNode_Edit {
+    background-color: #fff;
+    border: 1px solid #D9D9D9;
+    height: 28px;
+    line-height: 28px;
+}
+
+.report-ztree .curSelectedNode_Edit .diy_set_box {
+    display: none;
+}
+
+.report-ztree .curSelectedNode_Edit input.rename {
+    border: none;
+    width: 163px;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    
+}
+
+
+

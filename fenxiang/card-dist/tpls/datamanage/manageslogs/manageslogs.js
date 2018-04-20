@@ -1,0 +1,6 @@
+/**
+ * 纷享页面逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+define("tpls/datamanage/manageslogs/manageslogs",["util","moment","uilibs/pagination"],function(a,b){var c=window,d=c.FS;d.tpl;var e=a("util"),f=a("moment"),g=a("uilibs/pagination"),h=function(a){var b="",c=a.logs||[];return _.each(c,function(a){var c=a.createTime,d=a.fullName,e=a.content,g=e.replace(/[\n|\r]/g,"<br/>"),h=f.unix(c).format("MMMDD日 HH:mm");b+='<tr><td class="manageslogs-table-gray">'+h+'</td><td class="manageslogs-table-gray">'+d+'</td><td class="manageslogs-table-content">'+g+"</td></tr>"}),b};b.init=function(){var a=b.tplEl,c=$(".manageslogs-table tbody",a),d=$(".manageslogs-pagination",a),f=new g({element:d,pageSize:20}).render();f.on("page",function(a){i(a)});var i=function(a){e.api({url:"/Management/GetAdminOperationLogs",type:"get",dataType:"json",data:{type:0,account:"",fullName:"",pageSize:20,pageNumber:a},success:function(a){var b=a.value||{};a.success&&(c.html(h(b)),f.setTotalSize(b.totalCount))}})};i(1),e.regTplNav($(".tpl-l .flag-left-list a",a),"fl-item-on")}});

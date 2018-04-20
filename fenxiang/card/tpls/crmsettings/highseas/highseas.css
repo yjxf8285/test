@@ -1,0 +1,24 @@
+
+.crm-button-radius{
+	-moz-border-radius: 4px; /* Firefox */
+    -webkit-border-radius: 4px; /* Safari 和 Chrome */
+    border-radius: 4px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+}
+
+.crm-crmsettings-filterinfo{
+	background: #fff;
+	line-height: 38px;
+	border:1px #d8d8d8 solid;
+	padding: 0 12px;
+	margin-top:15px;
+	display: none;
+}
+
+.crm-crmsettings-filterinfo span{
+	font-weight: bold;
+	padding:0 6px;
+}
+
+.crm-crmsettings-filterinfo a{
+	cursor: pointer;
+}

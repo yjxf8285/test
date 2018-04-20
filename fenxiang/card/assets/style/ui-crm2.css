@@ -1,0 +1,496 @@
+/*! endblock alice/select/1.0.0/select-debug.css */
+
+/*! block alice/step/1.0.0/step-debug.css */
+/* alice.step 样式模块 */
+
+
+/* dialog */
+.crm-ui-dialog {
+    /*  background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorstr=#88000000, endColorstr=#88000000);
+    padding: 6px; */
+    background: white;
+    padding:0px;
+    border:1px solid #d8d8d8;
+    -moz-box-shadow:0px 0px 30px #b6b6b6;
+    -webkit-box-shadow:0px 0px 30px #b6b6b6;
+    box-shadow:0px 0px 30px #b6b6b6;
+}
+
+:root .ui-dialog {
+    FILTER: none\9;
+}
+
+.crm-ui-dialog-close {
+    color: #d9d9d9;
+    cursor: pointer;
+
+    font-family: "宋体";
+    font-size: 20px;
+    font-weight: bold;
+    height: 18px;
+    line-height: 14px;
+    position: absolute;
+    right: 20px;
+    text-decoration: none;
+    top: 15px;
+    z-index: 10;
+}
+.crm-ui-dialog-close:hover {
+    color: #d9d9d9;
+    /*text-shadow: 0 0 2px #aaa;*/
+}
+
+.crm-ui-dialog-title {
+    height: 40px;
+    display: block;
+    color: #424242;
+    font-size: 16px;
+    line-height: 40px;
+    text-indent: 20px;
+}
+
+.crm-ui-dialog-container {
+    padding:15px 20px 20px;
+    font-size: 12px;
+}
+
+.crm-ui-dialog-message {
+    margin-bottom:15px;
+}
+
+.crm-ui-dialog-operation {
+    zoom:1;
+}
+
+.crm-ui-dialog-confirm, .crm-ui-dialog-cancel {
+    display: inline;
+}
+
+.crm-ui-dialog-operation .crm-ui-dialog-confirm {
+    margin-right: 4px;
+}
+
+.crm-ui-dialog-button-orange,
+.crm-ui-dialog-button-white {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    font-family: verdana, Hiragino Sans GB;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 0 12px;
+    line-height:23px;
+    height:23px;
+    *overflow: visible; /* for a ie6/7 bug http://blog.csdn.net/jyy_12/article/details/6636099 */
+}
+
+a.crm-ui-dialog-button-orange:hover,
+a.crm-ui-dialog-button-white:hover {
+    text-decoration: none;
+}
+
+.crm-ui-dialog-button-orange {
+    border:1px solid #E5810E;
+    color:#fff;
+    background-color: #F5AA2B;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F5A620), to(#F09611));
+    background: -moz-linear-gradient(top, #F5A620, #F09611);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F5A620', endColorstr='#F09611');
+    background: -o-linear-gradient(top, #F5A620, #F09611);
+    background: linear-gradient(top, #F5A620, #F09611);
+    box-shadow: 0 -2px 2px rgba(255, 255, 255, 0.33) inset;
+}
+
+.crm-ui-dialog-button-orange:hover {
+    background-color: #F5AA2B;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F7B73B), to(#F4A626));
+    background: -moz-linear-gradient(top, #F7B73B, #F4A626);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F7B73B', endColorstr='#F4A626');
+    background:-o-linear-gradient(top, #F7B73B, #F4A626);
+    background: linear-gradient(top, #F7B73B, #F4A626);
+    box-shadow: 0 -2px 2px rgba(255, 255, 255, 0.4) inset;
+}
+
+.crm-ui-dialog-button-white {
+    border:1px solid #B3B3B3;
+    color:#595959;
+    background-color: #F2F2F2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#ECECEC));
+    background: -moz-linear-gradient(top, #FEFEFE, #ECECEC);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFEFE', endColorstr='#ECECEC');
+    background: -o-linear-gradient(top, #FEFEFE, #ECECEC);
+    background: linear-gradient(top, #FEFEFE, #ECECEC);
+    box-shadow: 0 -2px 2px rgba(255, 255, 255, 0.33) inset;
+}
+
+.crm-ui-dialog-button-white:hover {
+    border: 1px solid #999;
+    background-color: #F6F6F6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FEFEFE), to(#F0F0F0));
+    background: -moz-linear-gradient(top, #FEFEFE, #F0F0F0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FEFEFE', endColorstr='#F0F0F0');
+    background: -o-linear-gradient(top, #FEFEFE, #F0F0F0);
+    background: linear-gradient(top, #FEFEFE, #F0F0F0);
+}
+.crm-ui-dialog-drag-proxy{
+    z-index:2000;
+    border:4px dashed #ffffff;
+}
+
+/* 模拟表单元素 start */
+.mn-checkbox-box .mn-checkbox-item{
+    display: inline-block;
+    width:14px;
+    height:14px;
+    background: url(../../assets/images/mn-form-icon.png) no-repeat 0 -28px;
+    cursor: pointer;
+}
+.mn-checkbox-box .mn-checkbox-item:hover{
+    background: url(../../assets/images/mn-form-icon.png) no-repeat 0 -14px;
+}
+.mn-checkbox-box .mn-selected{
+    background: url(../../assets/images/mn-form-icon.png) no-repeat 0 0px;
+}
+.mn-checkbox-box .mn-selected:hover{
+    background: url(../../assets/images/mn-form-icon.png) no-repeat 0 0px;
+}
+.mn-disabled-checkbox-box .mn-checkbox-item{
+    background: url(../../assets/images/mn-form-icon.png) no-repeat 0 -28px;
+    cursor: default;
+}
+.mn-disabled-checkbox-box .mn-selected{
+    background: url(../../assets/images/mn-form-icon.png) no-repeat 0 -42px;
+}
+.mn-disabled-checkbox-box .mn-selected:hover{
+    background: url(../../assets/images/mn-form-icon.png) no-repeat 0 -42px;
+}
+
+.mn-radio-box .mn-radio-item{
+    display: inline-block;
+    width:14px;
+    height:14px;
+    background: url(../../assets/images/mn-form-icon.png) no-repeat -14px -14px;
+    cursor: pointer;
+}
+.mn-radio-box .mn-selected{
+    background: url(../../assets/images/mn-form-icon.png) no-repeat -14px 0px;
+}
+.mn-disabled-radio-box .mn-radio-item{
+    background: url(../../assets/images/mn-form-icon.png) no-repeat -14px -28px;
+    cursor: default;
+}
+.mn-disabled-radio-box .mn-selected{
+    background: url(../../assets/images/mn-form-icon.png) no-repeat -14px -42px;
+}
+.mn-select-box .mn-select-list{
+    display: none;
+}
+.mn-select-box .mn-select-title-wrapper{
+    position: relative;
+    display: inline-block;
+}
+.mn-select-box .mn-select-title{
+    display: inline-block;
+    width:222px;
+    height: 32px;
+    line-height: 28px;
+    border:1px solid #d8d8d8;
+    background: #ffffff;
+    padding:0 14px;
+    color:#424242;
+    cursor:pointer;
+    font-size: 14px;
+    padding-right: 18px;
+}
+.mn-select-box .mn-select-title-wrapper .title-icon{
+    position: absolute;
+    top:14px;
+    right:10px;
+    width:7px;
+    height:4px;
+    background: url(../../assets/images/ico-right-open.png) no-repeat;
+}
+.mn-select-panel .ui-select-content{
+    width:auto;
+    padding:2px 2px 0 2px;
+    max-height: 100px;
+    overflow: auto;
+}
+.mn-select-panel .ui-select-item{
+    padding: 0 12px;
+    width:220px;
+    height:26px;
+    line-height: 26px;
+    margin-bottom: 2px;
+    border:1px solid #ffffff;
+    cursor:pointer;
+    color: #424242;
+    font-size: 14px;
+}
+.mn-select-panel .ui-select-selected{
+    border:1px solid #dddddd;
+    background: #eeeeee;
+}
+.mn-select-panel .ui-select-hover{
+    border:1px solid #dddddd;
+}
+.mn-disabled-select-box .mn-select-title{
+    opacity:0.6;
+    filter:alpha(opacity=60); /* 针对 IE8 以及更早的版本 */
+    cursor: default;
+}
+/* 模拟表单元素 end */
+
+/* 搜索框 start */
+.ui-search-box .ui-search-field{
+    height:26px;
+    line-height: 26px;
+    width:148px;
+    vertical-align: middle;
+    font-size:12px;
+}
+.ui-search-box .button-submit{
+    -moz-border-radius: 0; /* Firefox */
+    -webkit-border-radius: 0; /* Safari 和 Chrome */
+    border-radius: 0; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    background: #427FED url(../../assets/images/icon-search-box.png) no-repeat center center;
+    width:50px;
+    height:28px;
+    text-indent: -10000px;
+    vertical-align: middle;
+}
+/* 搜索框 end */
+
+/* 全局loading符 start */
+.global-loading-1{
+    height:38px;
+    line-height: 38px;
+    background: #fff1a8;
+    border:1px solid #e1e1e1;
+    text-align: center;
+    font-weight: bold;
+    -moz-box-shadow:2px 2px 2px #c8c8c8;
+    -webkit-box-shadow:2px 2px 2px #c8c8c8;
+    box-shadow:2px 2px 2px #c8c8c8;
+}
+/* 全局loading符 end */
+
+
+/* select 控件 start */
+.fs-select-container{
+    height: 33px;
+    width: 200px;
+}
+
+.fs-select{
+    -moz-border-radius: 4px; /* Firefox */
+    -webkit-border-radius: 4px; /* Safari 和 Chrome */
+    border-radius: 4px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    width: 80px;
+    border: 1px #d8d8d8 solid;
+    padding: 5px 15px;
+    cursor: pointer;
+    background-color: #fff;
+    height: 20px; 
+    overflow: hidden; 
+}
+
+.fs-select-drop{
+    background: url(../../assets/images/dropdown.png) no-repeat center;
+    width: 12px;
+}
+
+.fs-select-option-container{
+    position:absolute;
+    background-color: #fff;
+    border: 1px #d8d8d8 solid;
+    -moz-box-shadow: 1px 2px 4px #d8d8d8;
+    -webkit-box-shadow: 1px 2px 4px #d8d8d8;
+    box-shadow: 1px 2px 4px #d8d8d8;
+    z-index: 9999;
+    max-height: 200px;
+    overflow: auto;
+    width: 198px;
+}
+
+.fs-select-option{
+    padding: 5px 15px 5px 40px;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-top: 1px transparent solid;
+    border-bottom: 1px transparent solid;
+}
+
+.fs-select-selected{
+    background: url(../../assets/images/selected_item.png) no-repeat 20px center;
+}
+
+.fs-select-active{
+    border-top: 1px #eee solid;
+    border-bottom: 1px #eee solid;
+    background-color: #f5f5f5;
+}
+
+
+/* select 控件 end */
+
+/* pagination 控件 start */
+.fs-pagination-prev,.fs-pagination-next,.fs-pagination-select-title-container{
+    background-color: #fff;
+    display: inline-block;
+    padding: 5px 10px; 
+    border: 1px #d8d8d8 solid;
+    cursor: pointer;
+}
+
+
+.fs-pagination-select{
+    display: inline-block;
+}
+
+.fs-pagination-select-title{
+    display: inline-block;
+    width: 60px;
+}
+
+.fs-pagination-select-drop{
+    background: url(../../assets/images/drop.png) no-repeat center;
+    display: inline-block;
+    width: 10px;
+}
+
+.fs-pagination-button-disable{
+    color: #c7c7c7;
+    cursor: auto;
+}
+
+.fs-pagination-option-container{
+    position: absolute;
+    border: 1px #d8d8d8 solid;
+    background-color: #fff;
+    margin-top: 1px;
+    z-index: 9999;
+    width: 99px;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.fs-pagination-select-option{
+    padding: 5px;
+    cursor: pointer;
+    border: 1px transparent solid;
+    margin: 2px;
+}
+
+.fs-pagination-option-active{
+    background-color: #eee;
+    border: 1px #ddd solid;
+}
+
+.fs-pagination-option-selected{
+    border: 1px #ddd solid;
+}
+
+/* pagination 控件 end */
+
+/* currency input start */
+
+.crm-currency-input-container{
+    position: static;
+}
+
+.crm-currency-input{
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    color: #999;
+    display: block;
+}
+
+.crm-currency-mask{
+    color: #c8c8c8;
+}
+
+.crm-currency-done{
+    color: #999;
+}
+
+.crm-currency-display{
+    position: absolute;
+    background-color: #fff;
+    color: #9e9e9e;
+    padding: 10px;
+    max-width: 100px;
+    width: 100px;
+    z-index: 10000;
+    -moz-box-shadow: 1px 2px 4px #d8d8d8;
+    -webkit-box-shadow: 1px 2px 4px #d8d8d8;
+    box-shadow: 1px 2px 4px #d8d8d8;
+    border: 1px #d8d8d8 solid;
+}
+
+/* currency input end */
+
+
+
+/* remind start */
+
+.global-remind-1{
+    font-weight: bold;
+    position: fixed;
+    top: 200px;
+    left: 45%;
+    padding: 10px 30px;
+    background-color: #fff1a8;
+    -moz-box-shadow: 1px 2px 4px #d8d8d8;
+    -webkit-box-shadow: 1px 2px 4px #d8d8d8;
+    box-shadow: 1px 2px 4px #d8d8d8;
+     -moz-border-radius: 4px; /* Firefox */
+    -webkit-border-radius: 4px; /* Safari 和 Chrome */
+    border-radius: 4px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    z-index: 9999;
+}
+
+.global-remind-2{
+    font-weight: bold;
+    width: auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    -moz-box-shadow: 1px 2px 4px #d8d8d8;
+    -webkit-box-shadow: 1px 2px 4px #d8d8d8;
+    box-shadow: 1px 2px 4px #d8d8d8;
+     -moz-border-radius: 4px; /* Firefox */
+    -webkit-border-radius: 4px; /* Safari 和 Chrome */
+    border-radius: 4px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    z-index: 9999;
+}
+
+.global-remind-mask{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    display: block;
+    filter:alpha(opacity=50);  
+    -moz-opacity:0.5;  
+    -khtml-opacity: 0.5;  
+    opacity: 0.5;
+    background-color: #000;
+}
+
+.global-remind-3 .ui-dialog-close{
+    display: none;
+}
+
+
+/* remind end */

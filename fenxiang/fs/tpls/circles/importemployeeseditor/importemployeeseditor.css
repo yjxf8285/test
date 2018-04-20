@@ -1,0 +1,118 @@
+.importemployeeseditor{
+    padding: 20px 20px 30px 20px;
+    background: #fff;
+}
+.importemployeeseditor-head .resubmit-btn{
+    margin-left: 5px;
+}
+.importemployeeseditor-head label,.importemployeeseditor-head button,.importemployeeseditor-head span{
+    vertical-align: middle;
+}
+.importemployeeseditor-head input{
+    vertical-align: middle;
+    margin: 0 6px 0 12px;
+}
+.importemployeeseditor-body{
+    border: solid 1px #d5d5d5;
+    margin-top: 10px;
+    border-bottom:none;
+}
+.importemployeeseditor-tabletit{
+    padding-left: 22px;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: solid 1px #d5d5d5;
+    background: #f1f1f1;
+}
+.importemployeeseditor-tabletit .tit{
+    font-weight: bold;
+    font-size: 14px;
+}
+.importemployeeseditor-tabletit .info{
+    color: #999;
+}
+.importemployeeseditor-tabletit .info b{
+    /*font-weight: normal;*/
+    color: #E03D59;
+    font-size: 14px;
+    padding: 0 2px;
+}
+.importemployeeseditor-tabletit .info b.green{
+    color: #6BA200;
+}
+.importemployeeseditor-table{
+    width: 100%;
+}
+.importemployeeseditor-table tr.cur,.importemployeeseditor-table tr.odd.cur{
+    background: #DAEAFA;
+}
+
+.importemployeeseditor-table tr.odd{
+    background: #F3F3F3;
+}
+.importemployeeseditor-table th{
+    height: 23px;
+    line-height: 23px;
+    border-top: solid 1px #fff;
+    border-left: solid 1px #d5d5d5;
+    background: #F2F4F6;
+    padding-left: 6px;
+    border-bottom: solid 1px #d5d5d5;
+}
+.importemployeeseditor-table th.first{
+    border-left: none;
+}
+.importemployeeseditor-table td{
+    cursor: pointer;
+    color: #999;
+    height: 32px;
+    padding-left: 6px;
+    border-bottom: solid 1px #d5d5d5;
+}
+.importemployeeseditor-table .data-input{
+    cursor: pointer;
+    border: solid 1px transparent;
+    width: 90%;
+    height: 26px;
+    line-height: 26px;
+    font-family: "宋体";
+    color: #999;
+    background: transparent;
+    padding-left: 4px;
+}
+.importemployeeseditor-table .data-input.cur{
+    background: #FDFBC0;
+    color: #000;
+    border:solid 1px #000;
+}
+.importemployeeseditor-table .data-input.err{
+    border: solid 1px #E0000E;
+    background-image: url(../../../assets/images/input_err.gif);
+    background-repeat:  no-repeat;
+    background-position:  right top;
+}
+.importemployeeseditor-table .data-input.err.cur{
+    border: solid 1px #E0000E;
+    background-color: #FDFBC0;
+}
+.errtip{
+    position: absolute;
+    height: 28px;
+    background: #FFDBDB;
+    padding:0 10px 0 22px;
+    color: #E0000E;
+    display: none;
+    line-height: 28px;
+    background-image: url(../../../assets/images/error.png);
+    background-repeat:  no-repeat;
+    background-position:  5px 7px;
+}
+.pagination-box {
+    padding-top: 10px;
+    padding-right: 0;
+}
+/* 去掉ie10的x */
+input::-ms-clear { display: none; }
+::-ms-reveal { display: none; }
+
+

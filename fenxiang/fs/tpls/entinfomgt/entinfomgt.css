@@ -1,0 +1,109 @@
+
+.admin-inptext{border:#cbcbcb solid 1px;height:30px;line-height:30px;padding-left:4px;}
+.admin-btn-grey{border:#cbcbcb solid 1px;color:#000;height:25px;line-height:25px;cursor:pointer;padding:0 12px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#e0e0e0));
+    background: -moz-linear-gradient(top,  #fdfdfd,  #e0e0e0);
+    background: -o-linear-gradient(top, #fdfdfd, #e0e0e0);
+    background: linear-gradient(to bottom, #fdfdfd, #e0e0e0);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#e0e0e0');
+    _background-color:#e0e0e0;
+}
+.admin-btn-grey:hover{
+    background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#eeeeee));
+    background: -moz-linear-gradient(top,  #fefefe,  #eeeeee);
+    background: -o-linear-gradient(top, #fefefe, #eeeeee);
+    background: linear-gradient(to bottom, #fefefe, #eeeeee);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#eeeeee');
+    _background-color:#eeeeee;
+}
+
+.entinfomgt{background-color:#FFF;border:#d5d5d5 solid 1px;margin-top:12px;}
+
+.entinfomgt .tpl-l{background-color:#f4f7fa;}
+
+.entinfomgt .tpl-c .ent-setup-wrap,.entinfomgt .tpl-c .login-setup-wrap{padding:20px;}
+.entinfomgt .tpl-c .ent-setup-wrap .flag-title-wrap{height:45px;border-bottom:#cccccc dotted 1px;}
+.entinfomgt .tpl-c .ent-setup-wrap .flag-title-wrap strong{font-size:16px;color:#333333;}
+.entinfomgt .tpl-c .ent-setup-wrap .ent-setup{border-bottom:#cccccc dotted 1px;padding-top:20px;}
+.entinfomgt .tpl-c .ent-setup-wrap .ent-setup dl dt{font-size:14px;}
+.entinfomgt .tpl-c .ent-setup-wrap .ent-setup dl dd{margin-bottom:15px;margin-left:72px;}
+.entinfomgt .tpl-c .ent-setup-wrap .ent-setup dl dd > button{margin-right:20px;}
+.entinfomgt .tpl-c .ent-setup-wrap .ent-setup dl dd.ent-logo-wrap{border:#ebebeb solid 1px;padding-top:5px;height:40px;width:342px;}
+.entinfomgt .tpl-c .ent-setup-wrap .ent-name{border-bottom:#cccccc dotted 1px;padding:20px 0;font-size:14px;}
+.entinfomgt .tpl-c .ent-setup-wrap .ent-name > input.admin-inptext{width:255px;margin-right:10px;vertical-align:middle;}
+.entinfomgt .tpl-c .ent-setup-wrap .ent-title{padding:20px 0;font-size:14px;}
+.entinfomgt .tpl-c .ent-setup-wrap .ent-title > input.admin-inptext{width:200px;margin-right:10px;vertical-align:middle;}
+.entinfomgt .tpl-c .ent-setup-wrap .ent-name > button,
+.entinfomgt .tpl-c .ent-setup-wrap .ent-title > button{vertical-align:middle;}
+
+.entinfomgt .tpl-c .login-setup-wrap .flag-title-wrap{height:45px;border-bottom:#cccccc dotted 1px;}
+.entinfomgt .tpl-c .login-setup-wrap .flag-title-wrap strong{font-size:16px;color:#333333;}
+.entinfomgt .tpl-c .login-setup-wrap .ent-setup{border-bottom:#cccccc dotted 1px;padding-top:20px;}
+.entinfomgt .tpl-c .login-setup-wrap .ent-setup dl dt{font-size:14px;}
+.entinfomgt .tpl-c .login-setup-wrap .ent-setup dl dd{margin-bottom:15px;margin-left:85px;}
+.entinfomgt .tpl-c .login-setup-wrap .ent-setup dl dd.lsu-bgdd{margin-left:100px;}
+.entinfomgt .tpl-c .login-setup-wrap .ent-setup dl dd.ent-logo-wrap{border:#ebebeb solid 1px;height:169px;width:300px;}
+
+.entinfomgt .tpl-c .login-setup-wrap .ent-setup dl dd .lsu-inp-text{width:95px;vertical-align:middle;margin-right:15px;}
+.entinfomgt .tpl-c .login-setup-wrap .ent-setup dl dd .lsu-view-color{display:inline-block;width:95px;height:35px;background-color:#9c5a3c;vertical-align:middle;margin-right:10px;}
+
+.entinfomgt .tpl-c .login-setup-wrap .ent-setup dl dd .lsu-sel-wrap{display:inline-block;width:98px;height:35px;position:relative;vertical-align:middle;*zoom:1;*display:inline;}
+.entinfomgt .tpl-c .login-setup-wrap .ent-setup dl dd .lsu-sel-wrap .lsu-sel-view{
+display:inline-block;width:98px;height:30px;padding-top:5px;text-align:center;
+background:url(../../assets/images/admin/lsu-sel-bg.png) no-repeat;	
+}
+.entinfomgt .tpl-c .login-setup-wrap .ent-setup dl dd .lsu-sel-wrap .lsu-sel-view:hover{
+background-position:0 -35px;	
+}
+.entinfomgt .tpl-c .login-setup-wrap .ent-setup dl dd .lsu-sel-wrap .lsu-sel-view:active{
+background-position:0 -70px;	
+}
+.entinfomgt .tpl-c .login-setup-wrap .ent-setup dl dd .lsu-sel-wrap .lsuvcon{
+background-position:0 -70px;	
+}
+.entinfomgt .tpl-c .login-setup-wrap .ent-setup dl dd .lsu-sel-wrap .lsuvcon:hover{
+background-position:0 -70px;	
+}
+.entinfomgt .tpl-c .login-setup-wrap .ent-setup dl dd .lsu-sel-wrap .lsu-sel-view .lsu-view-cvalue{
+display:inline-block;width:88px;height:25px;
+}
+.entinfomgt .tpl-c .login-setup-wrap .ent-setup dl dd .lsu-sel-wrap .lsu-sel-list{position:absolute;left:0;bottom:35px;border:#6b7e8f solid 1px;border-radius:3px;padding:1px;background-color:#FFF;}
+.entinfomgt .tpl-c .login-setup-wrap .ent-setup dl dd .lsu-sel-wrap .lsu-sel-list li{width:92px;height:27px;padding-top:2px;background-color:#ffffff;border:#ffffff solid 1px;text-align:center;}
+.entinfomgt .tpl-c .login-setup-wrap .ent-setup dl dd .lsu-sel-wrap .lsu-sel-list li:hover{background-color:#e5f2f6;border:#e5f2f6 solid 1px;}
+.entinfomgt .tpl-c .login-setup-wrap .ent-setup dl dd .lsu-sel-wrap .lsu-sel-list li.lslon{background-color:#cae5ee;border:#6dbdd1 solid 1px;}
+.entinfomgt .tpl-c .login-setup-wrap .ent-setup dl dd .lsu-sel-wrap .lsu-sel-list li span{display:inline-block;width:88px;height:25px;background-color:#9c5a3c;}
+
+.entinfomgt .tpl-c .up-logobtn-wrap{display:inline-block;position:relative;overflow:hidden;vertical-align:middle;}
+.entinfomgt .tpl-c .up-logobtn-wrap:hover{text-decoration:none;}
+.entinfomgt .tpl-c .up-logobtn-wrap .up-logo-file,
+.entinfomgt .tpl-c .up-logobtn-wrap .up-mainimg-file{position:absolute;left:0;top:0;opacity:0;filter:alpha(opacity:0);cursor:pointer;width:80px;height:25px;}
+.entinfomgt .tpl-c .up-logo-default-btn,
+.entinfomgt .tpl-c .up-mainimg-default-btn,
+.entinfomgt .tpl-c .enterprise-bgc-default-btn{vertical-align:middle;margin-left:15px;}
+.entinfomgt .tpl-c .enterprise-bgcolor-btn{vertical-align:middle;}
+
+/* 客户管理start */
+.entinfomgt .custom-manage-wrap{
+    padding: 20px;
+}
+.entinfomgt .custom-manage-wrap .flag-title-wrap{height:45px;border-bottom:#cccccc dotted 1px;}
+.entinfomgt .custom-manage-wrap .flag-title-wrap strong{font-size:16px;color:#333333;}
+.entinfomgt .custom-manage-wrap .f-field{
+    margin-top: 25px;
+}
+.entinfomgt .custom-manage-wrap .ff-label{
+    color:#999999;
+    font-size:14px;
+    line-height: 1.9em;
+	line-height:30px\9;
+}
+.entinfomgt .custom-manage-wrap .disable-modify-parent{
+    margin-bottom: 20px;
+    font-size:14px;
+}
+/* 上传 */
+.entinfomgt .tpl-c .upload-shadow-wrapper{
+    position: absolute;
+    top:0;
+    left:0;
+}

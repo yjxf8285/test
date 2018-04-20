@@ -1,0 +1,54 @@
+<script class="external-list-tpl">
+    ## if(data.length > 0) { ##
+        ## _.each(data, function(source, index){ ##
+        <tr>
+            <td><input type="checkbox" data-userid="{{source.UserId}}" class="j-checkitem"/></td>
+            <td class="f-black">{{source.Name}}</td>
+            <td>{{source.Position}}</td>
+            <td>{{source.Mobile}}</td>
+            <td>{{source.WeiXinId}}</td>
+            <td>{{source.Email}}</td>
+            <td>{{source.Company}}</td>
+            
+            ## if(source.Status == 1) { ##
+                <td class="f-green">已加入</td>
+            ## } else if (source.Status == 4){ ##
+                <td class="f-red">{{source.StatusText}}</td>
+            ## } else { ##
+                <td>{{source.StatusText}}</td>
+            ## } ##
+            
+            <td>
+                <a href="#" class="j-edite" data-infoindex="{{index}}">编辑</a>&nbsp;&nbsp;
+                <a href="#" class="j-del" data-userid="{{source.UserId}}">删除</a>
+            </td>
+        </tr>
+        ## }) ##
+        
+    ## } else { ##
+        <tr>
+            <td colspan="9" class="td-nodata">没有获取到数据</td>
+        </tr>
+    ## } ##
+</script>
+
+
+<script class="external-authorize-tpl">
+    <div class="authorize-box">
+        <h3>批量授权</h3>
+        <div class="authorize-con">
+            <p><span class="label">已选择：</span><span class="num">{{num}}</span>位外部参与人</p>
+            <p>
+                <span class="label">授权应用：</span>
+                <input type="checkbox" name="atritem" value="1" />
+                <span class="cheaklabel">合作伙伴</span>
+                <input type="checkbox" name="atritem" value="2" />
+                <span class="cheaklabel">报数系统</span>
+            </p>
+            <p class="btn-box">
+                <button class="button-submit j-btn-enter">确定</button>
+                <button class="button-cancel j-btn-cancel">取消</button>
+            </p> 
+        </div>
+    </div>
+</script>  

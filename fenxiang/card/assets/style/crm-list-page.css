@@ -1,0 +1,269 @@
+﻿/**
+ * 列表页公共样式
+ * Liuxiaofan
+ * 2014-05-07
+ */
+/* 布局 开始 */
+.crm-list-inner {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1400px;
+    min-height: 277px;
+    min-width: 800px;
+}
+
+.crm-list-inner-noleft .crm-tpl-c {
+    margin: 0 auto;
+    max-width: 1400px;
+    min-height: 277px;
+    min-width: 800px;
+    position: relative;
+}
+
+.crm-list-fd .pagination-wrapper {
+    margin-top: 16px;
+    float: right;
+}
+
+/* 布局 结束 */
+
+/* 左侧菜单 开始 */
+.crm-list-left-nav {
+    border: 1px solid #d8d8d8;
+    position: relative;
+    z-index: 10;
+}
+
+.crm-list-left-nav .nav-item {
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #f0f0f0;
+    background: #ffffff;
+}
+
+.crm-list-left-nav .nav-item a {
+    display: block;
+    text-indent: 20px;
+    color: #414141;
+    text-decoration: none;
+}
+.crm-list-left-nav .nav-item span{
+    text-indent:0;
+    float:left;
+}
+.crm-list-left-nav .nav-item .employee-name{
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    text-indent: 20px;
+}
+.crm-list-left-nav .nav-item a.tnavon {
+    color: #427fed;
+}
+
+.crm-list-left-nav .nav-item .arrow-right {
+    position: relative;
+    left: 80px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #d1d1d1;
+    float: inherit;
+}
+
+.crm-list-left-nav .nav-item a.state-active {
+    background: #eeeeee;
+    border-left: 2px solid #427fed;
+    font-weight: bold;
+    text-indent: 18px;
+}
+
+.crm-list-left-nav .label-manage-list a.state-active {
+    border-left: none;
+    background: #427FED;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.crm-list-left-nav .label-manage-item {
+    position: relative;
+}
+
+.crm-list-left-nav .label-manage-item .label-manage-list {
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+
+.crm-list-left-nav .label-manage-list {
+    border: 1px solid #d8d8d8;
+}
+
+.crm-list-left-nav .label-nav-item {
+    width: 180px;
+    height: 36px;
+    line-height: 36px;
+    text-indent: 20px;
+    background: #ffffff;
+}
+
+/* 左侧菜单 结束 */
+
+/* 左侧说明列表 开始 */
+.crm-list-left-explain {
+    background: #fff;
+    margin-top: 16px;
+    border: solid 1px #d8d8d8;
+}
+
+.crm-list-left-explain .left-explain-title {
+    padding: 10px 18px;
+    color: #414141;
+    border-bottom: solid 1px #d8d8d8;
+}
+
+.crm-list-left-explain .left-explain-list {
+    padding-bottom: 10px;
+}
+
+.crm-list-left-explain .left-explain-list li {
+    padding: 10px 16px 0;
+    color: #999;
+}
+
+/* 左侧说明列表 结束 */
+
+/* 表格开始 */
+.crm-com-table .is-new{
+   color: #f60;
+}
+.crm-com-table .crm-table-list-warp {
+    background: #fff;
+    border: 1px solid #D8D8D8;
+}
+
+.crm-com-table .crm-table-list-hd {
+    background: #F6F7F8;
+    padding: 10px 10px 10px 20px;
+}
+
+.crm-com-table .crm-table-list-hd .tit {
+    color: #999;
+    vertical-align: middle;
+}
+
+.crm-com-table .crm-table-list-hd .select-tit {
+    vertical-align: middle;
+}
+
+.crm-com-table .crm-table-list-warp {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D8D8D8;
+    margin-top: 16px;
+}
+
+.crm-com-table .crm-table-bd{
+    *border-top: 1px #d8d8d8 solid;
+    overflow: auto;
+}
+.crm-com-table .crm-table-bd .crm-datatable {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.crm-com-table .crm-table-bd .crm-datatable thead {
+    background: #F2F4F6;
+    border-top: solid 1px #d8d8d8;
+}
+
+.crm-com-table .crm-table-bd .crm-datatable thead th {
+    padding: 2px 8px 2px 7px;
+    border-right: solid 1px #d8d8d8;
+    white-space: nowrap;
+    cursor: inherit;
+    overflow: hidden;
+    height: 24px;
+}
+
+.crm-com-table .crm-table-bd .crm-datatable thead th.sorting {
+    background: url('../../assets/images/sort_both.png') no-repeat center right 3px;
+    *background-color: #f3f4f6;
+    padding-right: 18px;
+}
+
+.crm-com-table .crm-table-bd .crm-datatable thead th.sorting_asc {
+    background: url('../../assets/images/sort_asc.png') no-repeat center right 3px; 
+    *background-color: #f3f4f6;
+    padding-right: 18px;
+}
+
+.crm-com-table .crm-table-bd .crm-datatable thead th.sorting_desc {
+    background: url('../../assets/images/sort_desc.png') no-repeat center right 3px;
+    *background-color: #f3f4f6;
+    padding-right: 18px;
+}
+
+.crm-com-table .crm-table-bd .crm-datatable thead th.th-blank {
+    border-right: none;
+}
+
+.crm-com-table .crm-table-bd .crm-datatable tbody td {
+    border-top: solid 1px #d8d8d8;
+    padding: 6px 8px 6px 7px;
+    color: #999;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.crm-com-table .crm-table-bd .crm-datatable tbody td .iscontact-yes {
+    padding-left: 16px;
+    background: url('../../assets/images/crm_icons.png') no-repeat 0 -154px;
+}
+
+.crm-com-table .crm-table-bd .crm-datatable tbody tr:hover {
+    background: #F3F3F3;
+}
+
+.crm-com-table .crm-table-bd .crm-datatable tbody tr.row_selected {
+    background: #FFFFCC;
+}
+
+.crm-com-table .crm-table-bd .crm-datatable tbody td.black-name {
+    color: #000;
+}
+
+.crm-com-table .crm-table-bd .crm-datatable tbody td.dataTables_empty {
+    text-align: center;
+    padding: 30px;
+}
+
+.crm-com-table .crm-table-bd .crm-datatable .checkbox-for-comtable .mn-checkbox-item {
+    /*vertical-align: middle;*/
+    margin-top: 5px;
+}
+
+.crm-com-table .customers-follow {
+    margin: auto auto;
+    /*居中，td -> padding-left: 8px;*/
+    width: 22px;
+    height: 22px;
+}
+
+.crm-com-table .customers-following {
+    background: url("../../assets/images/crm_icons.png") no-repeat 4px -70px;
+}
+
+.crm-com-table .customers-nofollow {
+    background: url(../../assets/images/crm_icons.png) no-repeat 3px -198px;
+}
+.crm-com-table .birthday-ico {
+    background: url("../../assets/images/remind_birthday.png") no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-left: 6px;
+    display: inline-block;
+    vertical-align: middle;
+}
+/* 表格结束 */
+

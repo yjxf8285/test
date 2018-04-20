@@ -1,0 +1,93 @@
+<div id="approve-allapproves" class="approve-allapproves tpl department" tplname="approve-allapproves" js="true" css="true" iscached="true">
+    <!-- 三列式 自适应宽度 -->
+    <div class="tpl-l">
+        <div class="tpl-inner">
+            &nbsp;
+        </div>
+    </div>
+
+    <div class="tpl-c">
+        <div class="tpl-inner">
+            <!-- department center start -->
+            <div class="department-wrapper">
+                <div class="tpl-title bg-white card-border-rad">
+                    <h2 class="depw-title"><span class="staffing-title fn-hide">人事</span><span class="finance-title fn-hide">财务</span>审批管理</h2>
+                    <p class="depw-text color-999999">审批管理员可以查看并管理全公司的审批内容</p>
+                </div>
+                <div class="tpl-filter bg-white margt16 card-border-rad">
+                    <div class="approve-type-field fn-clear fn-hide">
+                        <div class="ff-label fn-left">审批类型：</div>
+                        <div class="ff-value fn-left"><a href="#" class="approve-type depw-tabs-a depw-tabs-aon" approvetype="0">全部</a><a href="#" class="approve-type depw-tabs-a" approvetype="1">普通审批</a><a href="#" class="approve-type depw-tabs-a" approvetype="2">请假单</a><a href="#" class="approve-type depw-tabs-a" approvetype="3">报销单</a><a href="#" class="approve-type depw-tabs-a" approvetype="4">差旅单</a><a href="#" class="approve-type depw-tabs-a" approvetype="5">借款单</a></div>
+                    </div>
+                    <div class="send-field f-field fn-clear">
+                        <div class="ff-label fn-left">发出时间：</div>
+                        <div class="ff-value fn-left"><span class="start-date"></span>&nbsp;-&nbsp;<span class="end-date"></span>&nbsp;&nbsp;<a href="#" class="clear-h">清空</a></div>
+                    </div>
+                    <div class="approve-field f-field fn-clear">
+                        <div class="ff-label fn-left">批复时间：</div>
+                        <div class="ff-value fn-left"><span class="start-date"></span>&nbsp;-&nbsp;<span class="end-date"></span>&nbsp;&nbsp;<a href="#" class="clear-h">清空</a></div>
+                    </div>
+                    <div class="sys-no-field f-field fn-clear">
+                        <div class="ff-label fn-left">关键词：</div>
+                        <div class="ff-value fn-left"><input type="text" class="query approve-textfield" placeholder="检索审批正文" />&nbsp;&nbsp;
+                        <span class="ff-value-label">系统编号：</span><input type="text" class="sys-no approve-textfield" maxlength="8" />&nbsp;&nbsp;<a href="#" class="clear-h">清空</a>
+                        </div>
+                    </div>
+                    <div class="f-field fn-clear">
+                        <div class="ff-label fn-left">同事范围：</div>
+                        <div class="ff-value fn-left"><span class="range-sb"></span></div>
+                    </div>
+                    <div class="last-f-field f-field fn-clear">
+                        <div class="ff-label fn-left">&nbsp;</div>
+                        <div class="ff-value fn-left"><button class="f-sub button-green" type="button">查询</button><span class="ff-desc">（只能查询批复意见为同意的审批）</span></div>
+                    </div>
+                </div>
+                <!-- center bottom start -->
+                <div class="home-center-list fn-clear">
+                    <div class="search-bar fn-clear fn-hide">
+                        <div class="search-summary fn-left">共搜索到<span class="result-num color-red">0</span>条信息</div>
+                        <div class="return-back fn-right"><a href="#" class="return-back-l">&#171;返回查看全部</a></div>
+                    </div>
+                    <div class="feed-list"></div>
+                    <div class="feed-list-pagination"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="tpl-r">
+        <div class="tpl-inner">
+        
+            <div class="export-excel widget-box bg-white card-border-rad">
+                <h4 class="box-title card-border-radtop">统计报表导出</h4>
+                <div class="box-content">
+                	<p class="export-approve-field export-field fn-hide"><a href="#" class="export-approve-l">导出审批汇总统计表</a></p>
+                    <p class="export-month-field export-field"><a href="#" class="export-month-l">导出月度考勤统计表</a></p>
+                    <p class="export-approve-field export-field fn-hide"><a href="#" class="export-leave-l">导出请假单汇总统计表</a></p>
+                    <p class="export-approve-field export-field fn-hide"><a href="#" class="export-approve-baoxiao-l">导出报销单汇总统计表</a></p>
+                    <p class="export-approve-field export-field fn-hide"><a href="#" class="export-approve-trip-l">导出差旅单汇总统计表</a></p>
+                    <p class="export-approve-field export-field fn-hide"><a href="#" class="export-approve-loan-l">导出借款单汇总统计表</a></p>
+                </div>
+            </div>
+            
+            <aside class="home-right-content bg-white margt16 card-border-rad">
+                <h4 class="rightc-title card-border-radtop">使用帮助</h4>
+                <div class="help-readme">
+                    <p class="rq-user-help rs-test">
+                        什么是人事审批管理？<br/>
+                        人事审批管理是纷享销客平台为人事管理者提供的专属权限，开放此功能后可以查看公司全部的请假单，还可以导出员工月度考勤统计表。为公司进行集中高效的人事管理提供便捷。
+
+                    </p>
+                    <p class="rq-user-help cw-text">
+                        什么是财务审批管理？<br/>
+                        财务审批管理不仅能让具有此项管理权限的人，轻松查看全公司审批内容，还能按照类型、批复时间、同事范围批量导出相关审批，能集中看到审批和批复内容的同时，还能查看涉及的金额与时间，报批与批复的时间。<br/>
+                        此功能为公司进行规范化的审批归档管理提供了便捷。
+
+                    </p>
+                </div>
+            </aside>
+            
+        </div>
+    </div>
+</div>

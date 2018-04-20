@@ -1,0 +1,268 @@
+﻿{
+
+    "pageCount": 11,
+    "pageNumber": 1,
+    "pageSize": 10,
+    "totalCount": 106,
+    "items": [
+        {
+            "sender": {
+                "employeeID": 9,
+                "name": "刘晨",
+                "profileImage": "201304_17_4e985981-201d-4a45-a4a7-654cac1953ae"
+            },
+            "feedID": 182,
+            "employeeID": 9,
+            "feedContent": [
+                {
+                    "dataID": "10",
+                    "dataTitle": "齐述绪",
+                    "text": "@齐述绪",
+                    "type": 3
+                },
+                {
+                    "text": " ",
+                    "type": 0
+                },
+                {
+                    "text": "http://www.baidu.com",
+                    "type": 2
+                },
+                {
+                    "text": " 阿斯蒂芬 阿斯蒂芬",
+                    "type": 0
+                }
+            ],
+            "feedContentLength": 37,
+            "source": 1,
+            "sourceDescription": "纷享平台",
+            "createTime": "2013-04-18T02:09:10.973Z",
+            "feedType": 2,
+            "feedTypeDescription": "日志",
+            "isPublic": false,
+            "replyCount": 0,
+            "isUnRead": false
+        },
+        {
+            "sender": {
+                "employeeID": 9,
+                "name": "刘晨",
+                "profileImage": "201304_17_4e985981-201d-4a45-a4a7-654cac1953ae"
+            },
+            "feedID": 181,
+            "employeeID": 9,
+            "feedContent": [
+                {
+                    "text": "http://www.baidu.com",
+                    "type": 2
+                },
+                {
+                    "text": "\r",
+                    "type": 0
+                }
+            ],
+            "feedContentLength": 21,
+            "source": 1,
+            "sourceDescription": "纷享平台",
+            "createTime": "2013-04-18T02:07:34.393Z",
+            "feedType": 2,
+            "feedTypeDescription": "日志",
+            "isPublic": false,
+            "replyCount": 0,
+            "isUnRead": false
+        },
+        {
+            "sender": {
+                "employeeID": 10,
+                "name": "齐述绪",
+                "profileImage": "201304_17_f4f89977-29fd-4d38-9c37-03061585b49c"
+            },
+            "feedID": 180,
+            "employeeID": 10,
+            "feedContent": [
+                {
+                    "text": "213213",
+                    "type": 0
+                }
+            ],
+            "feedContentLength": 6,
+            "source": 502,
+            "sourceDescription": "企业QQ",
+            "createTime": "2013-04-17T10:16:33.553Z",
+            "feedType": 3,
+            "feedTypeDescription": "任务",
+            "isPublic": false,
+            "replyCount": 0,
+            "isUnRead": false
+        },
+        {
+            "sender": {
+                "employeeID": 10,
+                "name": "齐述绪",
+                "profileImage": "201304_17_f4f89977-29fd-4d38-9c37-03061585b49c"
+            },
+            "feedID": 179,
+            "employeeID": 10,
+            "feedContent": [
+                {
+                    "text": "213213",
+                    "type": 0
+                }
+            ],
+            "feedContentLength": 6,
+            "source": 502,
+            "sourceDescription": "企业QQ",
+            "createTime": "2013-04-17T10:16:24.700Z",
+            "feedType": 3,
+            "feedTypeDescription": "任务",
+            "isPublic": false,
+            "replyCount": 0,
+            "isUnRead": false
+        },
+        {
+            "sender": {
+                "employeeID": 10,
+                "name": "齐述绪",
+                "profileImage": "201304_17_f4f89977-29fd-4d38-9c37-03061585b49c"
+            },
+            "feedID": 178,
+            "employeeID": 10,
+            "feedContent": [
+                {
+                    "text": "213213",
+                    "type": 0
+                }
+            ],
+            "feedContentLength": 6,
+            "source": 502,
+            "sourceDescription": "企业QQ",
+            "createTime": "2013-04-17T10:16:21.600Z",
+            "feedType": 3,
+            "feedTypeDescription": "任务",
+            "isPublic": false,
+            "replyCount": 0,
+            "isUnRead": false
+        },
+        {
+            "sender": {
+                "employeeID": 10,
+                "name": "齐述绪",
+                "profileImage": "201304_17_f4f89977-29fd-4d38-9c37-03061585b49c"
+            },
+            "feedID": 176,
+            "employeeID": 10,
+            "feedContent": [
+                {
+                    "text": "213213",
+                    "type": 0
+                }
+            ],
+            "feedContentLength": 6,
+            "source": 502,
+            "sourceDescription": "企业QQ",
+            "createTime": "2013-04-17T09:56:40.233Z",
+            "feedType": 3,
+            "feedTypeDescription": "任务",
+            "isPublic": false,
+            "replyCount": 0,
+            "isUnRead": false
+        },
+        {
+            "sender": {
+                "employeeID": 9,
+                "name": "刘晨",
+                "profileImage": "201304_17_4e985981-201d-4a45-a4a7-654cac1953ae"
+            },
+            "feedID": 175,
+            "employeeID": 9,
+            "feedContent": [
+                {
+                    "text": "的撒撒旦法",
+                    "type": 0
+                }
+            ],
+            "feedContentLength": 5,
+            "source": 1,
+            "sourceDescription": "纷享平台",
+            "createTime": "2013-04-17T06:29:58.517Z",
+            "feedType": 3,
+            "feedTypeDescription": "任务",
+            "isPublic": false,
+            "replyCount": 0,
+            "isUnRead": false
+        },
+        {
+            "sender": {
+                "employeeID": 9,
+                "name": "刘晨",
+                "profileImage": "201304_17_4e985981-201d-4a45-a4a7-654cac1953ae"
+            },
+            "feedID": 174,
+            "employeeID": 9,
+            "feedContent": [
+                {
+                    "text": "的撒撒旦法",
+                    "type": 0
+                }
+            ],
+            "feedContentLength": 5,
+            "source": 1,
+            "sourceDescription": "纷享平台",
+            "createTime": "2013-04-17T06:29:58.370Z",
+            "feedType": 3,
+            "feedTypeDescription": "任务",
+            "isPublic": false,
+            "replyCount": 0,
+            "isUnRead": false
+        },
+        {
+            "sender": {
+                "employeeID": 9,
+                "name": "刘晨",
+                "profileImage": "201304_17_4e985981-201d-4a45-a4a7-654cac1953ae"
+            },
+            "feedID": 173,
+            "employeeID": 9,
+            "feedContent": [
+                {
+                    "text": "的撒撒旦法",
+                    "type": 0
+                }
+            ],
+            "feedContentLength": 5,
+            "source": 1,
+            "sourceDescription": "纷享平台",
+            "createTime": "2013-04-17T06:29:58.220Z",
+            "feedType": 3,
+            "feedTypeDescription": "任务",
+            "isPublic": false,
+            "replyCount": 0,
+            "isUnRead": false
+        },
+        {
+            "sender": {
+                "employeeID": 9,
+                "name": "刘晨",
+                "profileImage": "201304_17_4e985981-201d-4a45-a4a7-654cac1953ae"
+            },
+            "feedID": 172,
+            "employeeID": 9,
+            "feedContent": [
+                {
+                    "text": "的撒撒旦法",
+                    "type": 0
+                }
+            ],
+            "feedContentLength": 5,
+            "source": 1,
+            "sourceDescription": "纷享平台",
+            "createTime": "2013-04-17T06:29:58.083Z",
+            "feedType": 3,
+            "feedTypeDescription": "任务",
+            "isPublic": false,
+            "replyCount": 0,
+            "isUnRead": false
+        }
+    ]
+
+}

@@ -1,0 +1,16 @@
+.app-workmessage .status-ico {
+    width: 18px;
+    height: 16px;
+    background: url(../../../assets/images/unread.png);
+    margin-left: 6px;
+}
+.send-notices .status-ico-ctner {
+	display: none;
+}
+.app-workmessage .status-ico.read {
+    background: url(../../../assets/images/read.png);
+}
+
+.app-workmessage .status-ico.confirm {
+    background: url(../../../assets/images/confirm.png);
+}

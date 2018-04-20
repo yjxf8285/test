@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>页面标题</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+    <link rel="stylesheet" href="#">
+
+    <style type="text/css">
+    	.page-item {
+			margin: 0 auto 10px;
+			border: 1px solid #737277;
+			-webkit-box-shadow: #777 0 0 8px;
+			-moz-box-shadow: #777 0 0 8px;
+			box-shadow: #777 0 0 8px;
+			/*background: #fff url(../../assets/images/loading.gif) no-repeat center center;*/
+		}
+		.page-img{
+			font-size: 500px;
+			/*opacity: .4;*/
+			text-align: center;
+			/*font: 40px Impact; */
+			line-height: 1105px;
+		}
+		.fixed-banner{
+			position: fixed;
+			bottom: 0;
+			right: 0;
+		}
+
+    </style>
+    
+</head>
+<body>
+
+<div class="page-list">
+	<div class="page-list-wrapper">
+<!--
+	<div class="page-item" style="width:780px">
+		<img src="http://www.fxiaoke.com/H/Doc/Page?path=201404_14_e8b29750-4818-470e-b343-b942ffa67851.doc&amp;pageIndex=0&amp;width=780&amp;maxContentLength=0" alt="1" class="page-img page-box" width="780" height="1105">
+	</div>
+	<div class="page-item" style="width:780px">
+		<img src="http://www.fxiaoke.com/H/Doc/Page?path=201404_14_e8b29750-4818-470e-b343-b942ffa67851.doc&amp;pageIndex=1&amp;width=780&amp;maxContentLength=0" alt="2" class="page-img page-box" width="780" height="1105">
+	</div>
+	<div class="page-item" style="width:780px">
+		<img src="http://www.fxiaoke.com/H/Doc/Page?path=201404_14_e8b29750-4818-470e-b343-b942ffa67851.doc&amp;pageIndex=2&amp;width=780&amp;maxContentLength=0" alt="3" class="page-img page-box" width="780" height="1105">
+	</div>
+-->
+	</div>
+</div>
+
+<script type="text/javascript" src="jquery-2.1.0.js"></script>
+<!-- <script type="text/javascript" src="jquery.mobile-1.4.2.js"></script> -->
+<script type="text/javascript">
+
+	var $doc = $(document),
+		$body = $(document.body),
+		HEITH = 1105,
+		timeoutId,
+		urlList = [],
+		firstImg,
+		fixedBanner,
+		listContainer = $('.page-list'),
+		listWrapper = $('.page-list-wrapper');
+
+	// urlList.push('http://www.fxiaoke.com/H/Doc/Page?path=201404_14_e8b29750-4818-470e-b343-b942ffa67851.doc&amp;pageIndex=0&amp;width=780&amp;maxContentLength=0');
+	// urlList.push('http://www.fxiaoke.com/H/Doc/Page?path=201404_14_e8b29750-4818-470e-b343-b942ffa67851.doc&amp;pageIndex=1&amp;width=780&amp;maxContentLength=0');
+	// urlList.push('http://www.fxiaoke.com/H/Doc/Page?path=201404_14_e8b29750-4818-470e-b343-b942ffa67851.doc&amp;pageIndex=2&amp;width=780&amp;maxContentLength=0');
+	urlList.push('01.png');
+	urlList.push('02.png');
+	urlList.push('03.png');
+	urlList.push('04.png');
+
+	urlList.push('04.png');urlList.push('04.png');urlList.push('04.png');urlList.push('04.png');urlList.push('04.png');urlList.push('04.png');urlList.push('04.png');urlList.push('04.png');urlList.push('04.png');
+
+	urlList.push('05.png');
+	
+
+	console.log(listContainer);
+	for(var i=0, length=urlList.length; i<length; i++){
+		var tempImg, tempSpan;
+		if(i===0){
+			tempImg = $('<img alt="1" class="page-img page-box" width="780" height="1105">').attr('src', urlList[0]);
+		}else{
+			tempImg = $('<img alt="'+(i+1)+'" class="page-img page-box" width="780" height="1105px">');
+		}
+		// tempSpan = $('<span class="page-span">').html(i+1);
+		var item = $('<div class="page-item" style="width: 780px; height: 1105px;">').append(tempImg)//.append(tempSpan);
+		listWrapper.append(item);
+
+	}
+
+	listContainer.append(listWrapper);
+
+	firstImg = listWrapper.find('img').first();
+	var fixedRight = $doc.width()-(firstImg.offset().left+firstImg.width());
+	
+	fixedBanner = $('<div class="fixed-banner"/>').css('right', fixedRight+'px').html('当前第1页');
+	$body.append(fixedBanner);
+
+	$doc.scroll(function(){
+		clearTimeout(timeoutId);
+		timeoutId = setTimeout(function(){
+			var scrollTop = $doc.scrollTop();
+			var imgs = listWrapper.children('.page-item');
+
+			for(var j=0, lh=imgs.length; j<lh-1; j++ ){
+				var imgTop = $(imgs[j]).offset().top;
+				var nextImgTop = $(imgs[j+1]).offset().top;
+				if(scrollTop>imgTop && scrollTop<nextImgTop){
+					$(imgs[j]).children().eq(0).attr('src', urlList[j]);
+					$(imgs[j+1]).children().eq(0).attr('src', urlList[j+1]);
+					fixedBanner.html('当前第'+(j+1)+'页');
+					break;
+					// $(imgs[j+2]).children().eq(0).attr('src', urlList[j+2]);
+					
+				}
+				if(j === lh-2){
+					$(imgs[j+1]).children().eq(0).attr('src', urlList[j+1]);
+				}
+			}
+
+		}, 200)
+	});
+
+	
+
+	// $doc.bind('scrollstart', function(event) { 
+	// 	// console.log('start');
+	// }); 
+	// $doc.bind('scrollend', function(event) {
+	// 	console.log('end');
+		
+	// }); 
+
+</script>
+</body>
+</html>

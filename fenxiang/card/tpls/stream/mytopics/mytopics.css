@@ -1,0 +1,11 @@
+@import "../stream-common.css";
+.stream-mytopics .topic-list-tbar{
+    padding:10px 16px !important;
+    /*margin:0 20px;*/
+    border-bottom: 1px solid #dddddd;
+}
+.stream-mytopics .topic-list-tbar .topic-num{line-height:24px;}
+.topic-list-pagination{
+    padding-left: 16px;
+    padding-right: 16px;
+}

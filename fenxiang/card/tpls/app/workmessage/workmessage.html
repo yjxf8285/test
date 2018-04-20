@@ -1,0 +1,92 @@
+<div id="app-workmessage" class="tpl department app-workmessage" tplname="app-workmessage" js="true" css="true"
+     iscached="false" data-lighted="app|workmessage">
+    <!-- 三列式 自适应宽度 -->
+    <div class="tpl-l">
+        <div class="tpl-inner">
+            <div class="head-img-wrap fn-clear bg-white card-border-rad">
+                <script class="head-img-wrap-tpl" type="text/html">
+                    <a href="#profile"><img class="fn-left" src="{{profileImage}}"/>{{userName}}</a>
+                </script>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="tpl-c">
+        <div class="tpl-inner">
+            <!-- department center start -->
+            <div class="department-wrapper">
+                <div class="bg-white card-border-rad">
+                    <h2 class="depw-title">我的群通知
+                        <button type="button" class="add-workmessage-btn button-green" tabindex="-1">发群通知</button>
+                    </h2>
+                    <p class="depw-text color-999999">这些是您所有的群通知，包括未读、已读和已确认的通知。</p>
+                    <div class="warp" style="position:relative;">
+                        <ul class="filter depw-menu fn-clear marg10">
+                            <li><a replytype="receive" class="filter-field depw-menu-aon" href="javascript:;" val="1">我收到的群通知</a></li>
+                            <li><a replytype="send" class="filter-field" href="javascript:;" val="2">我发出的群通知</a></li>
+                        </ul>
+                        <label class="search-wrap" style="position:absolute;top:5px;right:16px;">
+                            <span class="list-search-input-wrapper"><input type="text" maxlength="100" placeholder="搜索标题或内容" class="search-inp"><span class="empty-h" style="display: none;">✕</span></span><button class="search-btn"></button>
+                        </label>
+                    </div>
+                    <nav class="depw-tabs fn-clear marg10">
+                        <div class="filter-field">
+                            <span class="color-999999">状态：</span>
+                            <a val="0" class="sort-date important depw-tabs-a depw-tabs-aon" href="javascript:;">全部</a>
+                            <a val="1" class="sort-date important depw-tabs-a" href="javascript:;">未读</a>
+                            <a val="2" class="sort-date important depw-tabs-a" href="javascript:;">已读</a>
+                            <a val="3" class="sort-date important depw-tabs-a" href="javascript:;">已确认</a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="depw-content-list">
+                    <div class="workmessage-list">
+                        <div class="crm-com-table">
+                            <div style="border: solid 1px #d8d8d8;border-top: none;background: #fff;margin-top: 20px;" class="crm-table-bd">
+                                <div class="dataTables_wrapper">
+                                    <table cellspacing="0" cellpadding="0" border="0" class="crm-datatable dataTable"
+                                           id="DataTables_Table_3">
+                                        <thead>
+                                        <tr>
+                                            <th style="width: 25px;">状态</th>
+                                            <th style="width: 250px;">标题</th>
+                                            <th>发送人</th>
+                                            <th class="th-blank">发送时间</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" colspan="4" class="dataTables_empty"><span class="empty-tip">正在加载...</span></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="workmessage-list-pagination"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="tpl-r">
+        <div class="tpl-inner">
+
+            <aside class="home-right-content">
+                <div class="bg-white card-border-rad">
+                    <h4 class="rightc-title card-border-radtop">使用帮助</h4>
+
+                    <div class="rq-user-help">
+                        什么是群通知？
+                        <br/>
+                        如果需要向同事们传达某些事项，如召开会议、举行活动等，可以发送一条群通知，即可方便的知晓通知传达情况（已读人数、确认人数），纷享销客手机客户端及web端都可以使用这个功能。
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+</div>

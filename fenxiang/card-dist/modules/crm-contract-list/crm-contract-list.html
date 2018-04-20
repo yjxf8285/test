@@ -1,0 +1,113 @@
+<script type="text/html" class="crm-contract-list-template"><!--身-->
+    <div class="products-product-bd fn-clear">
+        <div class="product-list-warp crm-com-table">
+            <div class="top-fn-btns">
+                <button class="crm-button-blue create-contract-btn mr6">新建合同...</button>
+                <button class="crm-button-blue update-contract-sowner-btn mr6">变更负责人</button>
+                <button class="crm-button-blue delete-contract-btn">删除</button>
+            </div>
+            <div class="crm-table-list-warp">
+                <div class="crm-table-list-hd fn-clear">
+                    <div class="fn-left">
+                        <span class="select-tit">状态</span>
+                        <span class="mn-select-box states-select-list crm-select-list-short"
+                              select-cls="crm-select-list-short">
+                            <span class="mn-select-title-wrapper"><span class="mn-select-title">全部</span><span
+                                    class="title-icon"></span></span>
+                             <ul class="mn-select-list">
+                                 <li class="mn-select-item" data-value="0" data-selected="true">全部</li>
+                                 <li class="mn-select-item" data-value="1">执行前</li>
+                                 <li class="mn-select-item" data-value="2">执行中</li>
+                                 <li class="mn-select-item" data-value="3">结束</li>
+                                 <li class="mn-select-item" data-value="4">意外终止</li>
+                             </ul>
+                        </span>
+                        
+                        <span class="select-tit" style="margin-left: 20px;">归属</span>
+                        <span class="mn-select-box isowner-select-list crm-select-list-short"
+                              select-cls="crm-select-list-short">
+                            <span class="mn-select-title-wrapper"><span class="mn-select-title">全部</span><span
+                                    class="title-icon"></span></span>
+                             <ul class="mn-select-list">
+                                 <li class="mn-select-item" data-value="-1" data-selected="true">全部</li>
+                                 <li class="mn-select-item" data-value="0">参与的</li>
+                                 <li class="mn-select-item" data-value="1">负责的</li>
+                             </ul>
+                        </span>
+                        <span class="select-tit" style="margin-left: 20px;">结束于</span>
+                        <span class="mn-select-box dealdaytype-select-list crm-select-con-date" select-cls="crm-select-con-date">
+                            <span class="mn-select-title-wrapper"><span class="mn-select-title">不限</span><span
+                                    class="title-icon"></span></span>
+                             <ul class="mn-select-list">
+                                 <li class="mn-select-item" data-value="0">不限</li>
+                                 <li class="mn-select-item" data-value="1">本月</li>
+                                 <li class="mn-select-item" data-value="2">下月</li>
+                                 <li class="mn-select-item" data-value="3">本季度</li>
+                                 <li class="mn-select-item" data-value="4">下季度</li>
+                                 <li class="mn-select-item" data-value="5">本年度</li>
+                                 <li class="mn-select-item" data-value="6">自定义</li>
+                             </ul>
+                            </span>
+                    </div>
+                    <div class="fn-right">
+                <span class="mn-select-box sort-select-list" select-cls="sort-select-list-optionwarp">
+                    <span class="mn-select-title-wrapper"><span class="mn-select-title">发生变化的在最前面</span><span
+                            class="title-icon"></span></span>
+                    <ul class="mn-select-list">
+                        <li class="mn-select-item" data-value="0" data-selected="true">发生变化的在最前面</li>
+                        <li class="mn-select-item" data-value="2">按名称排序</li>
+                    </ul>
+                </span>
+                    </div>
+                </div>
+                <div class="crm-table-bd">
+                    <table border="0" cellpadding="0" cellspacing="0"
+                           class="crm-datatable crm-marketing-list-datatable">
+                        <thead>
+                        <tr>
+                            <th>
+                                <div class="mn-checkbox-box checkbox-for-comtable">
+                                    &nbsp;&nbsp;<span data-value="2"
+                                                      class="mn-checkbox-item  checkbox-selectall-btn"></span></div>
+                            </th>
+                            <th></th>
+                            <th class="sorting">标题</th>
+                            <th>负责人</th>
+                            <th>客户</th>
+                            <th>合同编号</th>
+                            <th>状态</th>
+                            <th>结束日期</th>
+                            <th>合同金额</th>
+                            <th>折扣</th>
+                            <th>回款金额</th>
+                            <!--<th>开始日期</th>-->
+                            <!--<th>结束日期</th>-->
+                            <th class="th-blank"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--脚-->
+    <div class="crm-list-fd fn-clear">
+        <!--分页-->
+        <div class="pagination-wrapper"></div>
+    </div></script>

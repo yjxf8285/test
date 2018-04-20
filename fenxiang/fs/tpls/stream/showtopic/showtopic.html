@@ -1,0 +1,211 @@
+<div id="stream-showtopic" class="tpl stream-showtopic department" tplname="stream-showtopic" js="true" css="true" iscached="true">
+    <!-- 三列式 自适应宽度 -->
+    <div class="tpl-l">
+        <div class="tpl-inner">
+            &nbsp;
+        </div>
+    </div>
+
+    <div class="tpl-c">
+        <div class="tpl-inner">
+            <!-- department center start -->
+            <div class="department-wrapper">
+                <div class="tpl-summary fn-clear">
+                    <div class="title-l fn-left">
+                        <h2 class="depw-title">话题：<span class="topic-name"></span><span style="font-size:14px;" class="color-999999">(<span class="topic-num">0</span>)</span>&nbsp;&nbsp;<a href="#" class="topic-desc-edit-l fn-hide">修改描述</a></h2>
+                        <p class="topic-desc"></p>
+                    </div>
+                    <div class="follow-wrapper fn-right">
+                      <button class="follow-btn button-green">+ 关注话题</button>
+                      <span class="cancel-follow" style="display:none;"><span class="follow-tip">已关注</span><span class="separator">|</span><a class="cancel-follow-l fna-blue" href="javascript:;">取消关注</a></span>
+                    </div>
+                </div>
+                <div class="publish-wrapper">
+                    <div class="fs-publish-share">
+                        <form class="fs-publish-share-form fs-publish-form" action="#" method="post">
+                            <div class="publish-input-box">
+                                <div class="publish-input-wrapper">
+                                    <fieldset>
+                                        <textarea class="publish-input" name="content"></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="media"></div>
+                                <div class="publish-tip">输入话题表示您授权公司对话题进行知识管理，请不要在敏感和机密信息中加入话题！</div>
+                            </div>
+                            <div class="ksfw marg10">
+                                <div class="selectbar"></div>
+                            </div>
+                            <div class="f-ft fn-clear marg10">
+                                <div class="sms-wrapper fn-left">
+                                    <span class="label-for"><input type="checkbox" name="is_receipt" class="is-receipt" />&nbsp;<label>需要回执</label></span>&nbsp;&nbsp;
+                        <span class="receipt-range"><input type="hidden" name="circle" class="send-sms-g"/><input type="hidden" name="employee" class="send-sms-p"/><input
+                                type="hidden" class="is-send-sms" /><span class="receipt-tip"></span></span>
+                                </div>
+                                <div class="sub-wrapper fn-right">
+                                    <button type="submit" class="button-green f-sub">发布</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="feed-list home-center-list fn-clear">
+                    <label class="search-wrap">
+                        <input type="text" class="search-inp" placeholder="搜索信息"/><button class="search-btn"></button>
+                    </label>
+                    <div class="feed-tabs">
+                        <ul class="ui-switchable-nav ui-tab-items tag_wrap padL20 marg10">
+                            <li class="feed-main-item ui-tab-item ui-tab-item-current"><a href="javascript:;">全部</a></li>
+                            <li class="feed-main-item ui-tab-item"><a href="javascript:;">分享</a></li>
+                            <li class="feed-main-item ui-tab-item"><a href="javascript:;">日志</a></li>
+                            <li class="feed-main-item ui-tab-item"><a href="javascript:;">指令</a></li>
+                            <li class="feed-main-item ui-tab-item"><a href="javascript:;">审批</a></li>
+                        </ul>
+                        <div class="ui-switchable-content">
+                            <!-- 日志:2,审批:4,分享:1,任务:3 -->
+                            <div class="feed-main-panel ui-tab-panel" feedtype="0" feedname="all">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="feed-main-panel ui-tab-panel" feedtype="1" feedname="share">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="feed-main-panel ui-tab-panel" feedtype="2" feedname="plan">
+                                <div class="feed-plan-list feed-sub-list">
+                                    <ul class="ui-switchable-nav ui-tab-items tag_wrap padL20 fn-hide">
+                                        <li class="feed-plan-item ui-tab-item ui-tab-item-current"><a href="javascript:;">全部日志</a></li>
+                                        <li class="feed-plan-item ui-tab-item"><a href="javascript:;">日志</a></li>
+                                        <li class="feed-plan-item ui-tab-item"><a href="javascript:;">周计划</a></li>
+                                        <li class="feed-plan-item ui-tab-item"><a href="javascript:;">月计划</a></li>
+                                    </ul>
+                                    <div class="ui-switchable-content">
+                                        <div class="feed-plan-panel ui-tab-panel" subtype="0">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-plan-panel ui-tab-panel" subtype="1">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-plan-panel ui-tab-panel" subtype="2">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-plan-panel ui-tab-panel" subtype="3">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feed-main-panel ui-tab-panel" feedtype="3" feedname="work">
+                                <div class="feed-work-list feed-sub-list">
+                                    <ul class="ui-switchable-nav ui-tab-items tag_wrap padL20 fn-hide">
+                                        <li class="feed-work-item ui-tab-item ui-tab-item-current"><a href="javascript:;">全部任务</a></li>
+                                        <li class="feed-work-item ui-tab-item"><a href="javascript:;">执行中</a></li>
+                                        <li class="feed-work-item ui-tab-item"><a href="javascript:;">已完成</a></li>
+                                        <li class="feed-work-item ui-tab-item"><a href="javascript:;">已取消</a></li>
+                                    </ul>
+                                    <div class="ui-switchable-content">
+                                        <div class="feed-work-panel ui-tab-panel" subtype="0">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-work-panel ui-tab-panel" subtype="1">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-work-panel ui-tab-panel" subtype="2">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-work-panel ui-tab-panel" subtype="3">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feed-main-panel ui-tab-panel" feedtype="4" feedname="approve">
+                                <div class="feed-approve-list feed-sub-list">
+                                    <ul class="ui-switchable-nav ui-tab-items tag_wrap padL20 fn-hide">
+                                        <li class="feed-approve-item ui-tab-item ui-tab-item-current"><a href="javascript:;">全部审批</a></li>
+                                        <li class="feed-approve-item ui-tab-item"><a href="javascript:;">待审批</a></li>
+                                        <li class="feed-approve-item ui-tab-item"><a href="javascript:;">同意</a></li>
+                                        <li class="feed-approve-item ui-tab-item"><a href="javascript:;">不同意</a></li>
+                                        <li class="feed-approve-item ui-tab-item"><a href="javascript:;">已取消</a></li>
+                                    </ul>
+                                    <div class="ui-switchable-content">
+                                        <div class="feed-approve-panel ui-tab-panel" subtype="0">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-approve-panel ui-tab-panel" subtype="1">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-approve-panel ui-tab-panel" subtype="2">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-approve-panel ui-tab-panel" subtype="3">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                        <div class="feed-approve-panel ui-tab-panel" subtype="4">
+                                            <div class="feed-list"></div>
+                                            <div class="feed-list-pagination"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="tpl-r">
+        <div class="tpl-inner">
+            <aside class="home-right-content">
+                <div class="mytopics-type">
+                    <h4 class="rightc-title">
+                    	话题类型
+                        <span class="rt-apv"><a class="topic-setting-l fn-hide" href="#">设置</a></span>
+                    </h4>
+                    <ul class="rightc-fontlist">
+                    	<li class="color-999999 topic-type-r"></li>
+                	</ul>
+                </div>
+                
+                <div class="fixedtopics-wrapper">
+					<h4 class="rightc-title">固定话题<span class="rt-apv"><a href="#stream/mytopics/=/topictype-1" class="fna-blue">更多</a></span></h4>
+                    <ul class="right-fixedtopics-wrap rightc-fontlist">
+                	</ul>
+				</div>
+                
+                <div class="followtopics-wrapper">
+					<h4 class="rightc-title">关注的话题<span class="rt-apv"><a href="#stream/mytopics/=/topictype-0" class="fna-blue">更多</a></span></h4>
+                    <ul class="right-followtopics-wrap rightc-fontlist">
+                	</ul>
+				</div>
+                
+                <div class="newtopics-wrapper">
+					<h4 class="rightc-title">最新话题<span class="rt-apv"><a href="#stream/mytopics/=/topictype-2" class="fna-blue">更多</a></span></h4>
+                    <ul class="right-newtopics-wrap rightc-fontlist">
+                	</ul>
+				</div>
+                
+                <div class="mosttopics-wrapper">
+					<h4 class="rightc-title">热门话题<span class="rt-apv"><a href="#stream/mytopics/=/topictype-3" class="fna-blue">更多</a></span></h4>
+                    <ul class="right-mosttopics-wrap rightc-fontlist">
+                	</ul>
+				</div>
+            </aside>
+
+        </div>
+    </div>
+</div>

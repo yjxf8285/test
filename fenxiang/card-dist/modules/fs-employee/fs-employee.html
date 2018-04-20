@@ -1,0 +1,10 @@
+<script type="text/html" class="fs-employee-item-tpl"><div class="ccl-img-wrap"><a href="#profile/=/empid-{{employeeID}}"><img class="fn-left" src="{{profileImage}}" /></a></div>
+    <div class="ccl-text-wrap">
+	<a href="#profile/=/empid-{{employeeID}}" class="tpl-nav-l ccl-name fna-blue sex-{{gender}}">{{name}}</a><br/>
+    <em class="ccl-job">{{post}}</em><br/>
+	<em class="ccl-job">{{department}}</em><br/>
+    <strong class="ccl-mobile">手机<span class="ccl-mobile-num">{{mobile}}</span></strong>
+    ## if(isStop){ ##
+	    <span class="fel-leave color-999999">已离职</span>
+    ## } ##
+	</div></script>

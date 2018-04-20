@@ -1,0 +1,156 @@
+.report-setting-options .options-name-ctner {
+	height: 28px;
+	padding: 28px 24px 12px 34px;
+	border-bottom: 1px solid #D8D8D8;  
+}
+.report-setting-options .options-lbl {
+	width: 74px;
+	height: 30px;
+	line-height: 30px;
+	color: #999;
+	font-size: 12px;
+	float: left;
+	text-align: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.report-setting-options .lbl-vtype {
+	width: 52px;
+} 
+.report-setting-options .options-ipt-wrapper {
+	width: 240px;
+	height: 30px;
+	float: left;
+}
+.report-setting-options .options-name-ctner .name-wrapper {
+	line-height: 30px;
+	color: #AAA;
+	width: 600px;
+}
+.report-setting-options .options-ipt {
+	line-height: 28px;
+	width: 200px;
+	padding: 0 10px;
+	height: 28px;
+	font-size: 13px;
+	color: #646464;
+	border: 1px solid #D1D1D1;
+}
+.report-setting-options .name-ipt {
+	margin-right: 20px;
+	width: 147px;
+}
+
+.report-setting-options .options-fields-ctner {
+	margin-top: 36px;
+	position: relative;
+	padding: 0 24px 0 34px;
+}
+.report-setting-options .options-fields-ctner .options-field-ctner {
+	height: 30px;
+	margin-top: 26px;
+}
+.report-setting-options .field-wrapper {
+	margin-right: 20px;
+}
+.report-setting-options .options-field-wrapper {
+	float: left;
+}
+.report-setting-options .mn-select-box .mn-select-title {
+	color: #646464;
+}
+.report-setting-options .options-operate-ctner {
+	float: left;
+	height: 30px;
+}
+.report-setting-options .options-operate-ctner a {
+	display: inline-block;
+	height: 23px;
+	line-height: 23px;
+	margin-left: 20px;
+	width: 37px;
+	font-size: 15px;
+	color: #808080;
+	border: 1px solid #D8D8D8;
+	text-align: center;
+	text-decoration: none;
+	background: url("../../../assets/images/reportsetting_options.png") no-repeat;
+	vertical-align: top;
+	margin-top: 3px;
+}
+.report-setting-options .options-operate-ctner a.btn-add {
+	border-right: none;
+}
+.report-setting-options .options-operate-ctner a.btn-del {
+	background-position: -38px 0;
+	margin-left: 0;
+}
+.report-setting-options .options-operate-ctner a.btn-disabled {
+	border-color: #F3F3F3;
+	color: #CCC;
+	border-left: 1px solid #D8D8D8;
+	border-right: 1px solid #D8D8D8;
+}
+.report-setting-options .options-operate-ctner a.btn-add.btn-disabled {
+	background-position: 0 -24px;
+	border-right: none;
+	border-left: 1px solid #F3F3F3;
+}
+.report-setting-options .options-operate-ctner a.btn-del.btn-disabled {
+	background-position: -38px -24px;
+	border-left: 1px solid #D8D8D8;
+	border-right: 1px solid #F3F3F3;
+}
+.report-setting-options .options-preview-ctner {
+	padding: 12px 24px 0 24px;
+}
+.report-setting-options .options-preview-ctner .preview-tip {
+	color: #999;
+	font-size: 12px;
+	text-align: left;
+	padding-left: 10px;
+	height: 26px;
+	line-height: 26px;
+}
+.report-setting-options .options-preview-ctner .preview-table-ctner {
+	overflow: auto;
+	*overflow-y: hidden;
+}
+.report-setting-options .options-preview-ctner .preview-table-ctner table {
+	border: solid 1px #d8d8d8;
+	border-right: none;
+	border-bottom: none;
+	width: 100%;
+}
+.report-setting-options .options-preview-ctner .preview-table-ctner table thead {
+	border-bottom: solid 1px #d8d8d8;
+	border-right: solid 1px #d8d8d8;
+}
+.report-setting-options .options-preview-ctner .preview-table-ctner table th, .report-setting-options .options-preview-ctner .preview-table-ctner table td {
+	height: 38px;
+	background: #F5F5F5;
+	line-height: 38px;
+	color: #646464;
+	font-size: 13px;
+	text-align: center;
+	padding: 0 10px;
+	border-right: solid 1px #d8d8d8;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.report-setting-options .options-preview-ctner .preview-table-ctner table tbody tr {
+	border-right: solid 1px #d8d8d8;
+}
+.report-setting-options .options-preview-ctner .preview-table-ctner table td {
+	background: white;
+	border-right: 1px solid white;
+	border-bottom: solid 1px #d8d8d8;
+}
+.report-setting-options .options-preview-ctner .preview-table-ctner table td.last {
+	border-right: 1px solid #d8d8d8;
+}
+.report-setting-options .options-preview-ctner .preview-table-ctner table tbody td {
+	*border-top: 1px solid #d8d8d8;
+}

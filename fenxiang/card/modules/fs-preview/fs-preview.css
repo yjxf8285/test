@@ -1,0 +1,64 @@
+.fs-preview-info{
+	padding:10px;
+}
+.fs-preview-user .avater-wrapper{
+	width:50px;
+	height:50px;
+	float:left;
+}
+.fs-preview-user .user-info{
+	margin-left:60px;
+}
+.fs-preview-reply-tbar .create-time{
+	float:left;
+}
+.fs-preview-reply-tbar .reply-btn-wrapper{
+	float:right;
+}
+.fs-preview-reply .reply-input{
+	width:258px;
+	padding:5px 10px;
+	height:20px;
+	border:1px solid #dddddd;
+}
+.fs-preview-reply .inputting .reply-input{
+	height:30px;
+}
+.fs-preview-reply .f-actions{
+	display: none;
+	text-align: right;
+	margin-top:10px;
+}
+.fs-preview-reply .inputting .f-actions{
+	display: block;
+}
+.fs-preview-reply-item{
+	border-top:1px dotted #d1d1d1;
+	padding:5px 0;
+}
+.fs-preview-reply-main .reply-avater-wrapper{
+	width:50px;
+	height:50px;
+	float:left;
+}
+.fs-preview-reply-main .reply-content-wrapper{
+	margin-left:60px;
+}
+.fs-preview-reply-ft{
+	text-align: right;
+}
+.fs-preview-reply-tbar{
+	padding:10px 0;
+}
+.fs-preview-reply-list{
+	margin-top:10px;
+}
+
+/* 附件只可单张预览 */
+.ui-preview-attach-panel .ui-preview-nav-wrapper{
+	display: none;
+}
+.ui-preview-attach-panel .ui-preview-switch-l,
+.ui-preview-attach-panel .ui-preview-switch-r{
+	display: none;
+}

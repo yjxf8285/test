@@ -1,0 +1,184 @@
+<div id="settings-planremindconfig" class="tpl settings" tplname="settings-planremindconfig" js="true" css="tpls/settings/settings-common.css" iscached="true">
+    <div class="tpl-p">
+        
+        <section class="settings-wraper">
+        	<ul class="swtab-list fn-clear">
+               
+            </ul>
+            <div class="sw-main">
+            	
+                <div class="planremindconfig-text"><span style="font-size:14px">日志短信提醒</span>&nbsp; <span class="color-666666">每周或每月短信提醒填写工作日志</span></div>
+                <div class="planremindconfig-control">
+                	<input id="weekIsRemaid" type="checkbox" class="chk-week"> 使用周提醒 
+                    <select id="dayOfWeek" class="sel-week-list">
+                      <option value="0" selected="selected"></option>
+                      <option value="1">每周一</option>
+                      <option value="2">每周二</option>
+                      <option value="3">每周三</option>
+                      <option value="4">每周四</option>
+                      <option value="5">每周五</option>
+                      <option value="6">每周六</option>
+                      <option value="7">每周日</option>
+                    </select> 
+                    <input id="weekTime" type="text" placeholder="选择时间" class="chose-time-input" readonly="readonly">
+                    <div class="chose-time-apv" style="display:none">
+                    	<p>请选择时间</p>
+                        <div class="chose-time-item">
+                        	<a href="javascript:;">08:00</a>
+                            <a href="javascript:;">08:30</a>
+                            <a href="javascript:;">09:00</a>
+                            <a href="javascript:;">09:30</a>
+                            <a href="javascript:;">10:00</a>
+                            <a href="javascript:;">10:30</a>
+                            <a href="javascript:;">11:00</a>
+                            <a href="javascript:;">11:30</a>
+                            <a href="javascript:;">12:00</a>
+                            <a href="javascript:;">12:30</a>
+                            <a href="javascript:;">13:00</a>
+                            <a href="javascript:;">13:30</a>
+                            <a href="javascript:;">14:00</a>
+                            <a href="javascript:;">14:30</a>
+                            <a href="javascript:;">15:00</a>
+                            <a href="javascript:;">15:30</a>
+                            <a href="javascript:;">16:00</a>
+                            <a href="javascript:;">16:30</a>
+                            <a href="javascript:;">17:00</a>
+                            <a href="javascript:;">17:30</a>
+                            <a href="javascript:;">18:00</a>
+                            <a href="javascript:;">18:30</a>
+                            <a href="javascript:;">19:00</a>
+                            <a href="javascript:;">19:30</a>
+                            <a href="javascript:;">20:00</a>
+                            <a href="javascript:;">20:30</a>
+                            <a href="javascript:;">21:00</a>
+                            <a href="javascript:;">21:30</a>
+                            <a href="javascript:;">22:00</a>
+                            <a href="javascript:;">22:30</a>
+                            <a href="javascript:;">23:00</a>
+                            <a href="javascript:;">23:30</a>
+                            <a href="javascript:;">00:00</a>
+                            <a href="javascript:;">00:30</a>
+                            <a href="javascript:;">01:00</a>
+                            <a href="javascript:;">01:30</a>
+                            <a href="javascript:;">02:00</a>
+                            <a href="javascript:;">02:30</a>
+                            <a href="javascript:;">03:00</a>
+                            <a href="javascript:;">03:30</a>
+                            <a href="javascript:;">04:00</a>
+                            <a href="javascript:;">04:30</a>
+                            <a href="javascript:;">05:00</a>
+                            <a href="javascript:;">05:30</a>
+                            <a href="javascript:;">06:00</a>
+                            <a href="javascript:;">06:30</a>
+                            <a href="javascript:;">07:00</a>
+                            <a href="javascript:;">07:30</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="planremindconfig-control">
+                	<input id="monthIsRemaid" type="checkbox" class="chk-week"> 使用月提醒 
+                    <select id="dayOfMonth" class="sel-week-list">
+                      <option value="0" selected="selected"></option>
+                      <option value="-1">每月第一天</option>
+                      <option value="-2">每月最后一天</option>
+                      <option value="1">每月1日</option>
+                      <option value="2">每月2日</option>
+                      <option value="3">每月3日</option>
+                      <option value="4">每月4日</option>
+                      <option value="5">每月5日</option>
+                      <option value="6">每月6日</option>
+                      <option value="7">每月7日</option>
+                      <option value="8">每月8日</option>
+                      <option value="9">每月9日</option>
+                      <option value="10">每月10日</option>
+                      <option value="11">每月11日</option>
+                      <option value="12">每月12日</option>
+                      <option value="13">每月13日</option>
+                      <option value="14">每月14日</option>
+                      <option value="15">每月15日</option>
+                      <option value="16">每月16日</option>
+                      <option value="17">每月17日</option>
+                      <option value="18">每月18日</option>
+                      <option value="19">每月19日</option>
+                      <option value="20">每月20日</option>
+                      <option value="21">每月21日</option>
+                      <option value="22">每月22日</option>
+                      <option value="23">每月23日</option>
+                      <option value="24">每月24日</option>
+                      <option value="25">每月25日</option>
+                      <option value="26">每月26日</option>
+                      <option value="27">每月27日</option>
+                      <option value="28">每月28日</option>
+                      <option value="29">每月29日</option>
+                      <option value="30">每月30日</option>
+                      <option value="31">每月31日</option>
+                    </select> 
+                    <input id="monthTime" type="text" placeholder="选择时间" class="chose-time-input" readonly="readonly">
+                    <div class="chose-time-apv" style="display:none">
+                    	<p>请选择时间</p>
+                        <div class="chose-time-item">
+                        	<a href="javascript:;">08:00</a>
+                            <a href="javascript:;">08:30</a>
+                            <a href="javascript:;">09:00</a>
+                            <a href="javascript:;">09:30</a>
+                            <a href="javascript:;">10:00</a>
+                            <a href="javascript:;">10:30</a>
+                            <a href="javascript:;">11:00</a>
+                            <a href="javascript:;">11:30</a>
+                            <a href="javascript:;">12:00</a>
+                            <a href="javascript:;">12:30</a>
+                            <a href="javascript:;">13:00</a>
+                            <a href="javascript:;">13:30</a>
+                            <a href="javascript:;">14:00</a>
+                            <a href="javascript:;">14:30</a>
+                            <a href="javascript:;">15:00</a>
+                            <a href="javascript:;">15:30</a>
+                            <a href="javascript:;">16:00</a>
+                            <a href="javascript:;">16:30</a>
+                            <a href="javascript:;">17:00</a>
+                            <a href="javascript:;">17:30</a>
+                            <a href="javascript:;">18:00</a>
+                            <a href="javascript:;">18:30</a>
+                            <a href="javascript:;">19:00</a>
+                            <a href="javascript:;">19:30</a>
+                            <a href="javascript:;">20:00</a>
+                            <a href="javascript:;">20:30</a>
+                            <a href="javascript:;">21:00</a>
+                            <a href="javascript:;">21:30</a>
+                            <a href="javascript:;">22:00</a>
+                            <a href="javascript:;">22:30</a>
+                            <a href="javascript:;">23:00</a>
+                            <a href="javascript:;">23:30</a>
+                            <a href="javascript:;">00:00</a>
+                            <a href="javascript:;">00:30</a>
+                            <a href="javascript:;">01:00</a>
+                            <a href="javascript:;">01:30</a>
+                            <a href="javascript:;">02:00</a>
+                            <a href="javascript:;">02:30</a>
+                            <a href="javascript:;">03:00</a>
+                            <a href="javascript:;">03:30</a>
+                            <a href="javascript:;">04:00</a>
+                            <a href="javascript:;">04:30</a>
+                            <a href="javascript:;">05:00</a>
+                            <a href="javascript:;">05:30</a>
+                            <a href="javascript:;">06:00</a>
+                            <a href="javascript:;">06:30</a>
+                            <a href="javascript:;">07:00</a>
+                            <a href="javascript:;">07:30</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="planremindconfig-btn-wraper">
+               		<button class="planremindconfig-btn save-success-btn button-green">保存</button>
+                    <div class="save-success-wraper"><div class="save-success-apv">保存成功</div></div>
+                </div>
+                
+            </div>
+        </section>
+        
+    </div>
+</div>

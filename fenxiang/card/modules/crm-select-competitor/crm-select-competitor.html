@@ -1,0 +1,122 @@
+<div class="crm-select-dialog crm-select-competitor-dialog">
+    <div class="title">选择对手</div>
+
+    <div class="content">
+
+        <div class="search-wrapper fn-clear">
+            <div class="search-button fn-right">
+                <div class='search-icon'>
+                </div>
+            </div>
+            <div class="search-input-wrapper">
+                <input class="search-input" placeholder='按名称搜索'/>
+            </div>
+
+        </div>
+
+        <div class="crm-com-table" style="height: 386px;">
+            <div class="crm-table-list-warp" style="border-top: none;">
+                <div class="crm-table-bd">
+                    <table border="0" cellpadding="0" cellspacing="0" class="crm-datatable crm-competitor-list-datatable">
+                        <thead>
+                        <tr>
+                            <th>名称</th>
+                            <th>联系信息</th>
+                            <th>竞争力</th>
+                            <th>规模</th>
+                            <th class="th-blank"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="table-footer fn-clear">
+                <div class="pagination-wrapper fn-right"></div>
+            </div>
+        </div>
+
+        <div class="footer fn-clear fn-hide">
+            <div class="fn-right">
+                <button class='fs-col-select-button-cancel crm-button-gray'>取消</button>
+                <button class='fs-col-select-button-ok crm-button-blue'>确定</button>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer fn-clear" style="background-color: #fff;padding: 20px 36px; border-top: solid 1px #ededed;">
+        <div class="fn-right">
+            <button class='fs-col-select-button-close crm-button-gray' style="border: solid 1px #d3d3d3;">关闭</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="crm-select-add-dialog crm-add-competitor-dialog">
+    <div class="title">&nbsp;</div>
+
+    <div class="content">
+        <button class="crm-button-submit add-product-back">返回</button>
+        <ul>
+            <li>
+                <div class="form-label">名称：</div>
+                <div class="form-field">
+                    <input class="competitorName" readonly="true" style="background-color: #fcfcfc"/>
+                </div>
+            </li>
+            <li>
+                <div class="form-label">报价：</div>
+                <div class="form-field">
+                    <input class="price"/>
+                </div>
+            </li>
+            <li>
+                <div class="form-label">赢率：</div>
+                <div class="form-field">
+                    <span class="mn-select-box sort-select-list winRate" select-cls="">
+                        <span class="mn-select-title-wrapper select-for-dialog">
+                            <span class="mn-select-title">2</span>
+                            <span class="title-icon"></span>
+                        </span>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="form-label" style="vertical-align: top;">优势：</div>
+                <div class="form-field" style="height: auto;">
+                    <textarea class="h90 advantage" placeholder=""></textarea>
+                </div>
+            </li>
+            <li>
+                <div class="form-label" style="vertical-align: top;">劣势：</div>
+                <div class="form-field" style="height: auto;">
+                    <textarea class="h90 disadvantage" placeholder=""></textarea>
+                </div>
+            </li>
+            <li>
+                <div class="form-label" style="vertical-align: top;">产品描述：</div>
+                <div class="form-field" style="height: auto;">
+                    <textarea class="h90 productDescription" placeholder="请填写产品描述"></textarea>
+                </div>
+            </li>
+            <li>
+                <div class="form-label" style="vertical-align: top;">对应策略：</div>
+                <div class="form-field" style="height: auto;">
+                    <textarea class="h90 strategies" placeholder="请填写对应策略"></textarea>
+                </div>
+            </li>
+        </ul>
+        <div style="margin-left: 54px;">
+            <button class="crm-button-submit add-product-submit">确定</button>
+            <button class="crm-button-submit add-product-cancel" style="margin-left: 12px;">取消</button>
+        </div>
+    </div>
+</div>

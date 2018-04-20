@@ -1,0 +1,136 @@
+<div id="employeemgtformarketing" class="tpl employeemgtformarketing" tplname="employeemgtformarketing" js="true" css="true" iscached="true" tpltitle="部门与员工">
+<div class="tpl-c">
+<div class="tpl-inner">
+<div class="employee-main">
+    <div class="employee-tbar fn-clear">
+        <div class="department-info fn-left">
+            <div class="info-t">
+                <h3 class="department-title">帐号管理</h3>
+                <p class="department-summary">这些是您的公司的帐号，在这里您可以管理和分配您的帐号</p>
+            </div>
+            <div class="info-b">
+                <p class="employee-num-info"><span class="employee-num">0</span>个员工</p>
+            </div>
+        </div>
+        <div class="action-box fn-right">
+            <button class="add-employee-btn button-default">新建员工</button>&nbsp;<span class="search-box"><input
+                type="text" class="search-field" placeholder="搜索同事" /><span class="icon-search"></span></span>
+        </div>
+    </div>
+    <div class="employee-list-box">
+        <div class="first-pagination pagination-box"></div>
+        <div class="filter-tabs">
+            <ul class="filter-list fn-clear">
+                <li class="filter-item state-active" filtertype="0"><a href="#">在职的员工</a></li>
+                <li class="filter-item" filtertype="1"><a href="#">已停用的员工</a></li>
+            </ul>
+        </div>
+        <div class="employee-list-inner">
+            <div class="employee-list-action">
+                <table cellpadding="0" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <td class="first-td">
+                            <input type="checkbox" class="all-ck" />
+                        </td>
+                        <td class="action-wrapper">
+                            <button class="stop-btn action-btn button-default button-state-disabled">停用</button>&nbsp;<button class="start-btn action-btn button-default button-state-disabled">启用</button>&nbsp;<button class="delete-btn action-btn button-default button-state-disabled">删除</button>
+                        </td>
+                        <td class="last-td">
+
+                        </td>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="first-char-wrapper">
+                <a href="javascript:;" class="first-char-field first-char-all state-active" filtervalue="0">全部</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="A">A</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="B">B</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="C">C</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="D">D</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="E">E</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="F">F</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="G">G</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="H">H</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="I">I</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="J">J</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="K">K</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="L">L</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="M">M</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="N">N</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="O">O</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="P">P</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="Q">Q</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="R">R</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="S">S</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="T">T</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="U">U</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="V">V</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="W">W</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="X">X</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="Y">Y</a>
+                <a href="javascript:;" class="first-char-field" filtervalue="Z">Z</a>
+            </div>
+            <div class="employee-list-wrapper">
+                <table class="employee-list" cellpadding="0" cellspacing="0">
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="last-pagination pagination-box"></div>
+    </div>
+</div>
+<div class="employee-edit fn-hide">
+    <div class="detail-tbar fn-clear">
+        <button class="return-back-btn button-default">返回</button>
+    </div>
+    <h3 class="employee-detail-title employee-name">编辑员工</h3>
+    <div class="detail-info-wrapper fs-validate">
+        <div class="f-field fn-clear">
+            <div class="ff-label fn-left"><span class="f-field-star">*</span>&nbsp;姓名：</div>
+            <div class="ff-value fn-left"><input type="text" class="employee-name fs-validate-field" emptytip="请输入姓名" inputtip="请填写真实姓名，方便他人识别" /></div>
+        </div>
+        <div class="account-field-wrapper f-field fn-clear">
+            <div class="ff-label fn-left"><span class="f-field-star">*</span>&nbsp;帐号：</div>
+            <div class="ff-value fn-left"><input type="text" class="account fs-validate-field" emptytip="此项应为2-50个字符，英文和数字开头的英文、数字和下划线的组合" regstr="^[a-zA-Z\d]\w{1,49}$" inputtip="2-50个字符，英文和数字开头的英文、数字和下划线的组合" /></div>
+        </div>
+        <div class="f-field fn-clear">
+            <div class="ff-label fn-left"><span class="f-field-star">*</span>&nbsp;手机：</div>
+            <div class="ff-value fn-left"><input type="text" class="mobile fs-validate-field" emptytip="手机号应为11位的数字" regstr="^\d{11}$" inputtip="请填写手机号，输入后直接绑定" /></div>
+        </div>
+        <div class="f-actions">
+            <button class="f-sub button-submit">确定</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="f-cancel button-cancel">取消</button>
+        </div>
+    </div>
+</div>
+<div class="employee-add fn-hide">
+    <div class="detail-tbar fn-clear">
+        <button class="return-back-btn button-default">返回</button>
+    </div>
+    <h3 class="employee-detail-title employee-name">添加员工</h3>
+    <div class="detail-info-wrapper fs-validate">
+        <div class="f-field fn-clear">
+            <div class="ff-label fn-left"><span class="f-field-star">*</span>&nbsp;姓名：</div>
+            <div class="ff-value fn-left"><input type="text" class="employee-name fs-validate-field" emptytip="请输入姓名" inputtip="请填写真实姓名，方便他人识别" /></div>
+        </div>
+        <div class="account-field-wrapper f-field fn-clear">
+            <div class="ff-label fn-left"><span class="f-field-star">*</span>&nbsp;帐号：</div>
+            <div class="ff-value fn-left"><input type="text" class="account fs-validate-field" emptytip="此项应为2-50个字符，英文和数字开头的英文、数字和下划线的组合" regstr="^[a-zA-Z\d]\w{1,49}$" inputtip="2-50个字符，英文和数字开头的英文、数字和下划线的组合" /></div>
+        </div>
+        <div class="f-field fn-clear">
+            <div class="ff-label fn-left"><span class="f-field-star">*</span>&nbsp;初始密码：</div>
+            <div class="ff-value fn-left"><input type="text" class="pwd fs-validate-field" emptytip="请输入初始密码" inputtip="请输入初始密码，用户首次登录时使用" /></div>
+        </div>
+        <div class="f-field fn-clear">
+            <div class="ff-label fn-left"><span class="f-field-star">*</span>&nbsp;手机：</div>
+            <div class="ff-value fn-left"><input type="text" class="mobile fs-validate-field" emptytip="手机号应为11位的数字" regstr="^\d{11}$" inputtip="请填写手机号，输入后直接绑定" /></div>
+        </div>
+        <div class="f-actions">
+            <button class="f-sub button-submit">确定</button>&nbsp;&nbsp;&nbsp;&nbsp;<button class="f-cancel button-cancel">取消</button>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>

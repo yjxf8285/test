@@ -1,0 +1,36 @@
+<script class="crm-detaillists-tpl" type="text/html"><div class="crm-detail-bd-baseinfo plan-warp">
+        <div class="fn-clear baseinfo-hd">
+            <div class="fn-left">
+                <h1>{{title}}</h1>
+            </div>
+            <div class="fn-right">
+                <a class="{{operationClass}} {{operation}} fn-hide" href="javascript:;">{{rightTopBTnText}}</a>
+            </div>
+        </div>
+        <!--通用表格-->
+        <div class="crm-com-table">
+            <div class="crm-table-bd" style="border: solid 1px #d8d8d8;border-top: none;">
+                <table border="0" cellpadding="0" cellspacing="0" class="crm-datatable">
+                    <thead>
+                    <tr>
+                        ## for (var i = 0; i < thDatas.length; i++) {##
+                        <th>{{thDatas[i]}}</th>
+                        ## };##
+                        <th class="th-blank"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        ## for (var i = 0; i < thDatas.length; i++) {##
+                        <td></td>
+                        ## };##
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="fn-hide fn-clear" style="margin-top: 10px;">
+            <div class="pagination-wrapper fn-right"></div>
+        </div>
+    </div></script>

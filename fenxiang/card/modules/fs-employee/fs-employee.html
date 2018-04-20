@@ -1,0 +1,16 @@
+<script type="text/html" class="fs-employee-item-tpl">
+    <div class="ccl-img-wrap"><a href="#profile/=/empid-{{item.employeeID}}"><img class="fn-left" src="{{item.profileImage}}" /></a></div>
+    <div class="ccl-text-wrap">
+	<a href="#profile/=/empid-{{item.employeeID}}" class="tpl-nav-l ccl-name fna-blue sex-{{item.gender}}">{{item.name}}</a><br/>
+    <em class="ccl-job">{{item.post}}</em><br/>
+	<em class="ccl-job">{{item.department}}</em><br/>
+    <strong class="ccl-mobile">手机<span class="ccl-mobile-num">{{item.mobile}}</span></strong>
+    ## if(item.isStop){ ##
+	    <span class="fel-leave color-999999">已离职</span>
+    ## } ##
+    
+    ## if(item.employeeID != curEmployeeId){ ##
+    <span class="star-small j-starred {{item.starred}}" data-employeeid="{{item.employeeID}}" title="{{item.starredTit}}"></span>
+    ## } ##
+	</div>
+</script>

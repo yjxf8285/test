@@ -1,0 +1,23 @@
+<!-- 系统通知列表的模板 -->
+
+<div class="fs-notice-list-tpl">
+  <div class="notice-item-warp {{noticeType}}">
+    <div class="item-face" feedid="">
+    {{newico}}
+      <div class="item-face-img"></div>
+    </div>
+    <div class="item-detail">
+      <div class="item-info">
+        <div class="noticetypetit fn-clear"><span class="noticetypetit-l">{{noticeTypeDesc}}</span><span class="noticetypetit-r">{{noticeTime}}</span>
+        </div>
+        <div class="noticetitle">{{title}}</div>
+      </div>
+      <!-- feed text -->
+      <div class="item-text">
+        <div class="content">{{noticeContent}}</div>
+      </div>
+      <!--item-media-->
+      <div class="item-media">{{feedPic}}</div>
+    </div>
+  </div>
+</div>

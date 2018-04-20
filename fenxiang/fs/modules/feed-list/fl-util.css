@@ -1,0 +1,36 @@
+.fs-successtip {
+    padding: 10px 40px;
+    color: #333;
+    font-size: 14px;
+}
+
+.fs-successtip * {
+    vertical-align: middle;
+}
+
+.show-slide-up-tip-warp {
+
+    overflow: hidden;
+}
+
+.show-slide-up-tip-conent {
+    background: #fff;
+    border: solid 4px #ccc;
+    padding: 10px 15px;
+    position: absolute;
+    display: block;
+    color: #666;
+}
+.show-slide-up-tip-conent img{
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.show-slide-up-tip-conent .button-warp {
+    text-align: center;
+    margin-top: 6px;
+}
+
+.show-slide-up-tip-conent .button-warp button{
+    line-height: 24px;
+    padding: 0 12px;
+}

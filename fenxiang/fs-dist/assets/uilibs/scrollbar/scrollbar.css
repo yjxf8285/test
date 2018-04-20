@@ -1,0 +1,19 @@
+.fs-scrollbar .viewport {overflow: hidden; position: relative; }
+.fs-scrollbar .overview { position: absolute; left: 0; top: 0;}
+.fs-scrollbar .scrollbar{ background: #ffffff; position: relative; float: right; width: 10px; }
+.fs-scrollbar .track { background: #ffffff; height: 100%; width:10px; position: relative; }
+.fs-scrollbar .thumb {
+    display: block;
+    background: #e2e2e2; height: 20px; width: 6px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: 0px; }
+.fs-scrollbar .thumb:hover{
+    background: #b5b5b5;
+}
+.fs-scrollbar .thumb .end { background: #b5b5b5; overflow: hidden; height: 0px; width: 6px; }
+.fs-scrollbar .disable { display: none; }
+.noSelect {
+    user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}

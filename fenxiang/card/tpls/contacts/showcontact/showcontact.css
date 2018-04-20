@@ -1,0 +1,23 @@
+.contacts-card-container{
+	width: 360px;
+	box-sizing:border-box;
+	padding-top: 15px !important;
+	padding-bottom: 15px !important;
+}
+.contacts-card-container-box{
+	width: 326px;
+	overflow: hidden;
+}
+.contacts-card-container-box img{
+	display: block;
+	margin:0 auto;
+    width: 326px;
+}
+
+.birthday-info{
+    font-size: 13px;
+    color: #FE9E09;
+    margin-left: 6px;
+    background: url("../../../assets/images/remind_birthday.png") no-repeat right center;
+    padding-right: 16px;
+}

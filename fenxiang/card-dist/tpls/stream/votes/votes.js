@@ -1,0 +1,6 @@
+/**
+ * 纷享页面逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+define("tpls/stream/votes/votes",["modules/feed-list/feed-list","../stream-common","util","assets/zclip/1.1.1/zclip","dialog","../stream-common.html"],function(a,b){var c=window,d=c.FS,e=d.tpl,f=e.event,g=a("modules/feed-list/feed-list"),h=a("../stream-common");b.init=function(){var a=b.tplEl,c=b.tplName,d=$(".feed-list",a),e=$(".feed-list-pagination",a),i=$(".filter",a),j=$(".search-inp",a),k=$(".search-btn",a);h.init(a,c);var l=new g({element:d,pagSelector:e,pagOpts:{pageSize:20,visiblePageNums:7},loadSize:15,listPath:"/feedextend/getFeedsOfVote",defaultRequestData:function(){var a=$(".depw-menu-aon",i).attr("val");return{voteType:a,feedType:1,keyword:_.str.trim(j.val())}},searchOpts:{inputSelector:j,btnSelector:k}});i.on("click",".filter-field",function(a){$(".filter-field",i).removeClass("depw-menu-aon"),$(this).addClass("depw-menu-aon"),l.reload(),a.preventDefault()}),k.click(function(a){l.reload(),a.preventDefault()}),f.on("switched",function(a){a==c?($(".filter-field",i).removeClass("depw-menu-aon").eq(0).addClass("depw-menu-aon"),l.reload()):l&&l.loadKill()})}});

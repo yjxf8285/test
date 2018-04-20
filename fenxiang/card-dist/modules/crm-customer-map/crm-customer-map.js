@@ -1,0 +1,6 @@
+/**
+ * 纷享模块逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+define("modules/crm-customer-map/crm-customer-map",["widget","util","modules/crm-customer-map/crm-customer-map.html"],function(a,b,c){var d=a("widget"),e=window;e.FS,a("util");var f=a("modules/crm-customer-map/crm-customer-map.html"),g=d.extend({attrs:{element:null,address:"",mapWidth:320},setup:function(){var a=g.superclass.setup.apply(this,arguments);return this._init(),a},_init:function(){this.element.html(f);var a=this.get("address");this.refresh(a)},refresh:function(a){if(!a)return this.element.hide(),void 0;this.element.show(),window.location.protocol;var b=this.get("mapWidth"),c=a.split(" ").join(""),d="http://api.map.baidu.com/staticimage?center="+c+"&markers="+c+"&width="+b+"&height=280&zoom=15",e="http://api.map.baidu.com/geocoder?address="+a+"&output=html";$(".crm-customer-map-image-container",this.element),$(".crm-customer-map-image",this.element).attr("src",d),$(".crm-customer-map-image-link",this.element).text(a),$(".crm-customer-map-image-link",this.element).attr("href",e),$(".crm-customer-map-image-link",this.element).attr("title",a),$(".crm-customer-map-image-info",this.element).css({left:(b-270)/2})},destroy:function(){var a=g.superclass.destroy.apply(this,arguments);return a}});c.exports=g});

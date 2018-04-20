@@ -1,0 +1,11 @@
+<script type="text/html" class="circles-tpl-left"><div class="bg-white card-border-rad">
+    <div class="head-img-wrap fn-clear">
+        <a href="#profile"><img class="fn-left" src="{{profileImage}}"/>{{userName}}</a>
+    </div>
+    <ul class="circles-nav-list">
+        <li groupid="999999" class="files-nav-item"><a href="#circles/allcolleague" class="tpl-nav-lb">全公司的同事</a></li>
+        ## _.each(groups,function(group){ ##
+        <li groupid="{{group.groupID}}" class="files-nav-item fni-dep-con"><a href="#circles/allcolleague/=/id-{{group.groupID}}/name-{{group.groupNameEncoded}}" class="tpl-nav-lb tpl-nav-lbq">{{group.groupName}}</a></li>
+        ## }); ##
+    </ul>
+</div></script>

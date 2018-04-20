@@ -1,0 +1,6 @@
+/**
+ * 纷享页面逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-09-02
+ */
+define("tpls/shortmessage/showsession/showsession",["util","../shortmessage-common","moment","../shortmessage-common.html","modules/fs-qx/fs-showsession-list"],function(a,b){var c=window,d=c.FS,e=d.tpl,f=(e.store,e.event),g=a("util"),h=a("../shortmessage-common"),i=a("modules/fs-qx/fs-showsession-list"),j=0;b.init=function(){var a=b.tplName,c=b.tplEl,d=$(".session-list",c),e=$(".session-list-pagination",c),k=$(".nav-info .session-title",c),l=new i({element:d,pagSelector:e,listPath:"/ShortMessage/GetShortMessagesBySessionID",searchOpts:{},defaultRequestData:function(){var a=g.getTplQueryParams(),b=a?a.id:0;return j=b,{sessionID:b}},listCb:function(a){var b,c;a.success&&(b=a.value,c=b.session,c.isDiscussion?k.html(c.name):k.html("我与"+(c.name||"")+"的对话"))},listEmptyText:"当前会话内没有对话"});h.init(c,a),c.on("click",".clear-session-btn",function(){g.confirm("你确定要清空该对话的所有信息吗？","提示",function(){l.emptyToService(j)},{onCancel:function(){},width:338})});var m=!0;f.on("switched",function(b){b==a&&(m?(m=!1,l.load()):l.reload())})}});

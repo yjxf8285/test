@@ -1,0 +1,73 @@
+/*
+*日历选择
+*/
+.m-recordcalendar{
+	position: absolute;
+	background:#fff;
+	border:1px #ccc solid;
+	border-radius: 4px;
+	width: 166px;
+	padding: 0 6px;
+}
+.m-recordcalendar-title{
+	height: 26px;
+}
+.m-recordcalendar-title span{
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+}
+.m-recordcalendar-vecl{
+	display: block;
+	float: left;
+	width: 20%;
+	cursor: pointer;
+	font-weight: bold;
+	font-family: arial;
+}
+.m-recordcalendar-vecr{
+	display: block;
+	float: right;
+	width: 20%;
+	cursor: pointer;
+	font-weight: bold;
+	font-family: arial;
+}
+.m-recordcalendar-date{
+	display:block;
+	float: left;
+	width: 60%;
+}
+.m-recordcalendar-table{
+	position: relative;
+	display: block;
+	height: 100px;
+	overflow: hidden;
+}
+.m-recordcalendar-table-current{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	background: #fff;
+}
+.m-recordcalendar-table-next{
+	position: absolute;
+	width: 100%;
+	left:100%;
+	display: none;
+	background: #fff;
+}
+.m-recordcalendar table td{
+	width: 25%;
+	padding: 6px 0;
+	text-align: center;
+	cursor: pointer;
+}
+.m-recordcalendar table td.active{
+	color: #0a70a5;
+}
+.m-recordcalendar table td:hover{
+	color: #0a70a5;
+}
+

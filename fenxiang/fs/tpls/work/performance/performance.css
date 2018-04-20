@@ -1,0 +1,69 @@
+.performance{
+    padding-top: 15px;
+}
+.performance .performance-tit{
+    border-bottom: 1px solid #EBEBEB;
+    padding: 0 20px 6px 20px;
+}
+.performance .performance-tit h1{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.performance .performance-tit p{
+    color: #999;
+}
+.performance .performance-content{
+    padding: 10px 20px;
+}
+.performance .performance-form{
+    color: #999;
+}
+.performance .performance-form label{
+    padding-top: 4px;
+    width: 65px;
+    float: left;
+    font-family: 宋体;
+}
+.performance .performance-form dd{
+    margin-bottom: 10px;
+}
+.performance .performance-status{
+    padding-top: 4px;
+    font-family: 宋体;
+}
+.performance .performance-status a{
+    padding: 4px 8px;
+    margin-right: 4px;
+    text-decoration: none;
+}
+.performance .performance-status a.cur{
+    background: #0082CB;
+    color: #fff;
+}
+.performance .performance-status a:hover{
+    background: #0082CB;
+    color: #fff;
+}
+.performance .performance-form .sender-sb{
+    width: 468px;
+    float: left;
+}
+.performance .performance-form .executor-sb{
+    width: 468px;
+    float: left;
+}
+.performance .performance-form .downbtntip{
+    margin-left: 8px;
+    vertical-align: middle;
+}
+.performance .performance-form .downbtntip.loading{
+    color: #999;
+    background: url(../../../assets/images/loading.gif) no-repeat 0 0;
+    padding-left: 20px;
+    text-decoration: none;
+}
+.performance  .readme-list{
+    margin-top: 10px;
+    margin-left: 70px;
+    color: #999;
+}

@@ -1,0 +1,133 @@
+<!--标签列表模板-->
+<script type="text/html" class="crm-contract-list-template">
+
+    <!--身-->
+    <div class="products-product-bd fn-clear">
+        <div class="product-list-warp crm-com-table">
+            <div class="top-fn-btns">
+                <button class="crm-button-blue create-opportunity-btn mr6">新建机会...</button>
+                <button class="crm-button-blue update-opportunity-sowner-btn mr6">变更负责人</button>
+                <button class="crm-button-blue update-opportunity-isreview-yes-btn mr6">同意</button>
+                <button class="crm-button-blue update-opportunity-isreview-no-btn mr6">不同意</button>
+                <button class="crm-button-blue update-opportunity-states-un-btn mr6">作废</button>
+                <button class="crm-button-blue update-opportunity-states-on-btn mr6">启用</button>
+                <button class="crm-button-blue delete-opportunity-btn">删除</button>
+            </div>
+            <div class="crm-table-list-warp">
+                <div class="crm-table-list-hd fn-clear">
+                    <div class="fn-left">
+
+                        <span class="isreview-list-warp">
+                            <span class="select-tit">是否审核</span>
+                            <span class="mn-select-box isreview-select-list crm-select-list-short" select-cls="crm-select-list-short" style="margin-right: 10px;">
+                                <span class="mn-select-title-wrapper"><span class="mn-select-title">不限</span><span
+                                        class="title-icon"></span></span>
+                                 <ul class="mn-select-list">
+                                     <li class="mn-select-item" data-value="-1">不限</li>
+                                     <li class="mn-select-item" data-value="0">未审核</li>
+                                     <li class="mn-select-item" data-value="1">已审核</li>
+                                 </ul>
+                            </span>
+                        </span>
+
+                        <span class="select-tit">预计成交于</span>
+                        <span class="mn-select-box dealdaytype-select-list crm-select-opp-date" select-cls="crm-select-opp-date" style="margin-right: 10px;">
+                            <span class="mn-select-title-wrapper"><span class="mn-select-title">不限</span><span
+                                    class="title-icon"></span></span>
+                             <ul class="mn-select-list">
+                                 <li class="mn-select-item" data-value="0">不限</li>
+                                 <li class="mn-select-item" data-value="1">本月</li>
+                                 <li class="mn-select-item" data-value="2">下月</li>
+                                 <li class="mn-select-item" data-value="3">本季度</li>
+                                 <li class="mn-select-item" data-value="4">下季度</li>
+                                 <li class="mn-select-item" data-value="5">本年度</li>
+                                 <li class="mn-select-item" data-value="6">自定义</li>
+                             </ul>
+                        </span>
+
+                        <span class="select-tit">销售阶段处于</span>
+                        <span class="mn-select-box salesstagenos-select-list" select-cls="" style="margin-right: 10px;">
+                            <span class="mn-select-title-wrapper"><span class="mn-select-title" style="width: 130px;">不限</span><span
+                                    class="title-icon"></span></span>
+                             <ul class="mn-select-list">
+                                 <li class="mn-select-item" data-value="0">不限</li>
+                                 <li class="mn-select-item" data-value="1">进行中（赢单之前）</li>
+                                 <li class="mn-select-item" data-value="2">已结束（赢单和输单）</li>
+                                 <li class="mn-select-item" data-value="3">本季度</li>
+                                 <li class="mn-select-item" data-value="4">下季度</li>
+                                 <li class="mn-select-item" data-value="5">本年度</li>
+                             </ul>
+                        </span>
+
+                        <span class="isowner-list-warp">
+                            <span class="select-tit">归属</span>
+                            <span class="mn-select-box isowner-select-list crm-select-list-short" select-cls="crm-select-list-short">
+                                <span class="mn-select-title-wrapper"><span class="mn-select-title">全部</span><span
+                                        class="title-icon"></span></span>
+                                 <ul class="mn-select-list">
+                                     <li class="mn-select-item" data-value="-1">全部</li>
+                                     <li class="mn-select-item" data-value="0">参与</li>
+                                     <li class="mn-select-item" data-value="1">负责</li>
+                                 </ul>
+                            </span>
+                        </span>
+
+                    </div>
+                    <div class="fn-right">
+                <span class="mn-select-box sort-select-list" select-cls="sort-select-list-optionwarp">
+                    <span class="mn-select-title-wrapper"><span class="mn-select-title">发生变化的在最前面</span><span
+                            class="title-icon"></span></span>
+                    <ul class="mn-select-list">
+                        <li class="mn-select-item" data-value="0">发生变化的在最前面</li>
+                        <li class="mn-select-item" data-value="3">预计成交金额大在前</li>
+                        <li class="mn-select-item" data-value="4">预计成交日期早在前</li>
+                        <li class="mn-select-item" data-value="7">销售阶段晚的在最前</li>
+                    </ul>
+                </span>
+                    </div>
+                </div>
+                <div class="crm-table-bd">
+                    <table border="0" cellpadding="0" cellspacing="0" class="crm-datatable crm-marketing-list-datatable">
+                        <thead>
+                        <tr>
+                            <th>
+                                <div class="mn-checkbox-box checkbox-for-comtable"> &nbsp;&nbsp;<span data-value="2" class="mn-checkbox-item checkbox-selectall-btn"></span></div>
+                            </th>
+                            <th></th>
+                            <th class="sorting">名称</th>
+                            <th>负责人</th>
+                            <th>客户</th>
+                            <!--<th>类型</th>-->
+                            <th class="sorting">金额</th>
+                            <th class="sorting">预计成交日期</th>
+                            <th class="sorting">销售阶段</th>
+                            <th>赢率</th>
+                            <!--<th>来源</th>-->
+                            <th class="th-blank"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <!--<td>3</td>-->
+                            <!--<td>4</td>-->
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--脚-->
+    <div class="crm-list-fd fn-clear">
+        <!--分页-->
+        <div class="pagination-wrapper"></div>
+    </div>
+</script>
+

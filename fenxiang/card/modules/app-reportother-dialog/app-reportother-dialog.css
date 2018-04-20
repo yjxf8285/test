@@ -1,0 +1,91 @@
+.m-reportother {
+    width: 100%;
+}
+
+.m-reportother-con {
+    padding: 20px 30px;
+    line-height: 34px;
+}
+.m-reportother-con p {
+    width: 100%;
+    padding: 8px 0;
+    overflow: hidden;
+}
+.m-reportother-con label {
+    float: left;
+    width: 3em;
+    padding-right: 10px;
+    text-align: right;
+}
+.m-reportother-con input {
+    float: left;
+    width: 290px;
+    padding: 9px 10px;
+    line-height: 14px;
+    border: 1px solid #d8d8d8;
+}
+.m-reportother-con .inp-short {
+    width: 190px;
+}
+.m-reportother-con .btn-box {
+    width: 300px;
+    padding: 15px 3em;
+}
+.m-reportother-con .btn-box button {
+    min-width: 60px;
+    margin-left: 10px;
+}
+.add-reportother-dialog .m-reportother h3 {
+    height: 40px;
+    border: 1px solid #f0f0f0;
+    background-color: #888;
+    color: #fff;
+    font-size: 13px;
+    line-height: 40px;
+    text-indent: 20px;    
+}
+.add-reportother-dialog .button-submit,
+.add-reportother-dialog .button-cancel {
+    display: inline-block;
+    width: 40px;
+    height: 30px;
+    padding: 0 16px;
+    border: none;
+    border-radius: 3px;
+    line-height: 28px;
+    cursor: pointer;    
+}
+.add-reportother-dialog .button-submit {
+    border: 1px solid #427fed;
+    background-color: #427fed;
+    color: #fff;
+}
+.add-reportother-dialog .button-cancel {
+    background-color: #f2f2f2;
+    color: #999;
+    border: 1px solid #d8d8d8;
+}
+.add-external-dialog .m-reportother h3 {
+    padding: 12px 10px;
+    background-color: #315ca1;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 15px;
+}
+.add-external-dialog .ui-dialog-close {
+    top: 10px;
+}
+
+.add-external-dialog .showauthorize,
+.add-reportother-dialog .showauthorize {
+    display: none;
+}
+.add-external-dialog .showauthorize input {
+    width: 14px;
+    margin-top: 11px;
+}
+.add-external-dialog .cheaklabel {
+    float: left;
+    margin: 0 25px 0 8px;
+}

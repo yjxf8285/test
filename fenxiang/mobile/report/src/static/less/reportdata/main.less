@@ -1,0 +1,76 @@
+.p-rdata-bg{
+    .img-retina("@{image-base-url}/bg.png", "@{image-base-url}/bg.retina.png", 125px, 53px);
+}
+.p-rdata {
+	height: 100%;
+	section{
+	    width: 100%;
+	    height: 100%;
+	    box-sizing: border-box;
+	    overflow: auto;
+	    position:relative;
+	};
+    
+	/*上报列表*/
+	.rdata-list{
+	    color:#222;
+	    padding:10px;
+	    ul{
+            width: 100%;
+            font-size:14px;
+            li{
+                background: #FFFFFF;
+                margin-bottom: 10px;
+                border: 1px #ccc solid;
+                border-radius:4px;
+                padding: 10px 10px 10px 40px;
+                position: relative;
+                i{
+                    &:extend(.p-rdata-bg);
+                    position:absolute;
+                    left:10px;
+                    top:14px;
+                    width: 21px;
+                    height: 23px;
+                    background-position: -60px -33px;
+                }
+                h3{
+                    font-size: 1rem;
+                    color: #313131;
+                    font-weight: normal;
+                }
+                p{
+                    color: #969bab;
+                    font-size:0.8rem;
+                    padding-top: 4px;
+                }
+            }
+            .unrep{
+                i{
+                    margin-top: -4px;
+                    background-position:-85px -30px;
+                }
+            }
+        }
+	};
+    
+    .m-detail .footer  {
+        .edite {
+            display: none;
+        }
+        .add {
+            display: block;
+            width: 100%;
+            border-right: none;
+        }
+    }
+    
+    .m-detail .sub-on {
+        .add {
+            width: 70%;
+            border-right: 1px solid #d3d3d3;
+        }        
+    }
+
+}
+

@@ -1,0 +1,282 @@
+.p-external .con-wp {
+    padding: 20px;
+}
+
+.con-wp h2 {
+    font-weight: 900;
+    font-size: 16px;
+    color: #333;
+}
+
+
+.filter-b {
+    padding: 25px 0 20px;
+    border-bottom: 1px dotted #ccc;
+    line-height: 26px;
+}
+
+.filter-b input {
+    float: left;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #d3d3d3;
+    margin-right: 14px;
+    line-height: 14px;
+}
+.filter-b label {
+    float: left;
+}
+.filter-b select {
+    float: left;
+    margin: 3px 14px 0 0;
+}
+
+.btns-b {
+    padding: 20px 0;
+}
+
+.btns-b button {
+    float: left;
+    min-width: 80px;
+    margin-right: 8px;
+}
+
+
+
+.tb-b table {
+    width: 100%;
+    line-height: 38px;
+    text-align: center;
+    table-layout: fixed;
+}
+.tb-b input {
+    width: 14px;
+    height: 14px;
+    margin-left: 12px;
+    vertical-align: middle;
+}
+.tb-b thead {
+    background-color: #f1f1f1;
+}
+.tb-b th,
+.tb-b td {
+    border: 1px solid #E1E2E4;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+    vertical-align: middle;
+}
+.tb-b td {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden; 
+    color: #999;
+}
+.tb-b a {
+    margin-right: 10px;
+}
+
+.tb-b .f-black {
+    color: #333;
+}
+.tb-b .f-red {
+    color: red;
+}
+.tb-b .f-green {
+    color: green;
+}
+.tb-b .td-loading {
+   text-align: center;
+   padding: 10px 0;
+}
+.tb-b .td-nodata {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.external-pages {
+    padding: 15px 0!important;
+}
+
+/* 授权弹框
+===============================*/
+.authorize-dialog .ui-dialog-close {
+    top: 10px;
+}
+.authorize-box h3 {
+    padding: 12px 10px;
+    background-color: #315ca1;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 15px;
+}
+.authorize-con {
+    padding: 10px 30px;
+}
+.authorize-con p {
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+}
+.authorize-con .label {
+    display: inline-block;
+    width: 5em;
+    padding-right: 8px;
+    text-align: right;
+    vertical-align: middle;
+}
+.authorize-con .cheaklabel {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 15px 0 5px;
+}
+.authorize-con input {
+    vertical-align: middle;
+}
+.authorize-con .btn-box {
+    padding: 20px 0;
+}
+.authorize-con button {
+    width: 80px;
+}
+/* 导入文件样式
+===============================
+.crm-object-import-container {
+	padding: 0px 20px 20px;
+	background-color: #fff;
+}
+
+.crm-object-import-title{
+	font-size: 18px;
+	padding: 10px 0px;
+}
+
+.crm-object-import-table td{
+	padding: 5px 0px;
+	position: relative;
+}
+
+.crm-object-import-file-name{
+	border: 1px #d8d8d8 solid;
+	width: 360px;
+	height: 33px;
+	line-height: 33px;
+	color: #a0a0a0;
+	padding-left:5px; 
+	white-space: nowrap; 
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.crm-object-import-error-container{
+	border-top: 1px #d8d8d8 solid;
+	margin-top: 20px;
+	padding-top:20px; 
+}
+
+.crm-object-import-error-info2{
+	color: #a0a0a0;
+	padding: 10px 0px;
+}
+
+.crm-object-import-error-info3{
+	border: 1px #d8d8d8 solid;
+	line-height: 20px;
+	padding: 5px;
+}
+
+.crm-button-disable{
+    cursor: default;
+    background-color: #c6d8f9;
+    border: 1px #c6d8f9 solid;
+}
+
+.crm-object-import-file-div object{
+	position: absolute;
+	background-color:rgba(255,255,255,0);
+	cursor: pointer;
+}
+.crm-import-loading {
+	position:absolute;
+	z-index:1000;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	background:white;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	text-align:center;
+}
+.crm-import-loading span {
+	display:inline-block;
+	margin-top:95px;
+	color:black;
+	width:16px;
+	height: 16px;
+	background: url("../../assets/images/loading.gif") no-repeat;
+}
+.crm-object-import-button-select {
+	margin-right: 5px;
+}
+*/
+.global-remind-1{
+    font-weight: bold;
+    position: fixed;
+    top: 200px;
+    left: 45%;
+    padding: 10px 30px;
+    background-color: #fff1a8;
+    -moz-box-shadow: 1px 2px 4px #d8d8d8;
+    -webkit-box-shadow: 1px 2px 4px #d8d8d8;
+    box-shadow: 1px 2px 4px #d8d8d8;
+     -moz-border-radius: 4px; /* Firefox */
+    -webkit-border-radius: 4px; /* Safari 和 Chrome */
+    border-radius: 4px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    z-index: 9999;
+}
+.global-remind-2{
+    font-weight: bold;
+    width: auto;
+    padding: 20px 30px;
+    background-color: #fff;
+    -moz-box-shadow: 1px 2px 4px #d8d8d8;
+    -webkit-box-shadow: 1px 2px 4px #d8d8d8;
+    box-shadow: 1px 2px 4px #d8d8d8;
+     -moz-border-radius: 4px; /* Firefox */
+    -webkit-border-radius: 4px; /* Safari 和 Chrome */
+    border-radius: 4px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    z-index: 9999;
+}
+
+.global-remind-mask{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1100;
+    display: block;
+    filter:alpha(opacity=50);  
+    -moz-opacity:0.5;  
+    -khtml-opacity: 0.5;  
+    opacity: 0.5;
+    background-color: #000;
+}
+
+.global-mask{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: block;
+    filter:alpha(opacity=50);  
+    -moz-opacity:0.5;  
+    -khtml-opacity: 0.5;  
+    opacity: 0.5;
+    background-color: #fff;
+}
+

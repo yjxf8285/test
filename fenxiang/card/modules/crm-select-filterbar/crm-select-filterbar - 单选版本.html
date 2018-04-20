@@ -1,0 +1,30 @@
+<!--条件筛选工具条模板-->
+<script type="text/html" class="select-filterbar-template">
+    <div class="select-filterbar-hd">
+        <h1>{{title}}</h1>
+    </div>
+    <div class="select-filterbar-bd">
+        <div class="isselect-rows fn-clear fn-hide">
+            <div class="select-tit">已选择：</div>
+            <div class="select-option-warp fn-clear"></div>
+            <a href="javascript:;" class="clear-option-btn">清空</a>
+        </div>
+        <div class="rows-warp">
+            ## _.each(tags,function(tag,i) { ##
+            <div class="rows fn-clear" data-tagid="{{tag.fBusinessTagID}}">
+                <div class="row-tit">{{tag.name}}</div>
+                <div class="mh">：</div>
+                <div class="row-option-warp">
+                    ## _.each(tag.options,function(option,i) { ##
+                    <a class="row-option" href="javascript:;" data-optionid="{{option.fBusinessTagOptionID}}">{{option.name}}</a>
+                    ## }); ##
+                    <a href="javascript:;" class="more-option-btn fn-hide">更多</a>
+                </div>
+
+            </div>
+            ## }); ##
+        </div>
+        <div class="more-rows fn-hide"><a href="javascript:;" class="more-rows-btn">更多筛选条件</a></div>
+    </div>
+
+</script>

@@ -1,0 +1,62 @@
+.crm-high-seas-container{
+	position: absolute;
+	background-color: #fff;
+	border: 1px #d8d8d8 solid;
+	width: 180px;
+}
+
+.crm-high-seas-container ul{
+	max-height: 400px;
+	overflow-y: auto;
+}
+
+.crm-high-seas-container-ul li a{
+	cursor: pointer;
+	padding: 12px;
+	display: inline-block;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	width: 100%;
+	color: #000;
+}
+
+.crm-high-seas-container-ul li a:hover{
+	color: #fff;
+	background-color: #4285f4;
+	text-decoration: none;
+
+}
+
+.crm-high-seas-to-list-font{
+	width: 150px;
+}
+
+.crm-high-seas-active{
+	color: #fff;
+	background-color: #4285f4;	
+}
+
+.crm-high-seas-active a{
+	color: #fff !important;
+}
+
+.crm-high-seas-create{
+	cursor: pointer;
+	display: inline-block;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	width: 100%;
+	padding: 10px;
+}
+
+.crm-high-seas-create-ul{
+	border-top:1px #d8d8d8 solid; 
+}
+
+.crm-no-high-seas{
+	padding: 12px;
+	color: #999;
+	cursor: default;
+}

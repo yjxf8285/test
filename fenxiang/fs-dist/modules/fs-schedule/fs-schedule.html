@@ -1,0 +1,100 @@
+<div class="fs-schedule-add-dialog">
+	<form action="#" method="post">
+		<div class="fs-schedule-add-title ui-dialog-title">发布日程</div>
+		<div class="fs-schedule-add-content ui-dialog-content">
+			<div class="f-field fn-clear">
+				<div class="ff-label">日程范围：</div>
+				<div class="ff-value"><div class="schedule-range"></div></div>
+			</div>
+			<div class="f-field fn-clear" style="margin-bottom: 3px">
+				<div class="ff-label" style="line-height:40px\9\0">起始时间：</div>
+				<div class="ff-value">
+					<span class="start-date-wrapper"></span>
+					<span class="start-time-wrapper"></span>
+				</div>
+			</div>
+			<div class="sms-alert-wrapper f-field fn-clear">
+				<div class="ff-label">提醒方式：</div>
+				<div class="ff-value">
+					<select name="sms_alert" class="sms-alert">
+						<option value="1">不提醒</option>
+                        <option value="2">提前15分钟</option>
+                        <option value="3">提前30分钟</option>
+                        <option value="4">提前1小时</option>
+                        <option value="5">提前2小时</option>
+                        <option value="6">提前6小时</option>
+                        <option value="7">提前1天</option>
+					</select>
+				</div>
+                <div class="custom-alert-wrapper fn-hide">
+                    <span class="label-for"><input type="checkbox" class="custom-alert" name="custom_alert">&nbsp;<label>同时为客户添加日程提醒</label></span>
+                </div>
+			</div>
+			<div class="schedule-input-wrapper f-field">
+				<textarea name="schedule_content" class="schedule-input"></textarea>
+			</div>
+			<div class="media"></div>
+			<div class="f-actions fn-clear">
+				<div class="sms-notice-wrapper">
+					<input type="checkbox" name="is_sms" class="is-sms" id="stream-send-sms-schedule">&nbsp;<label for="stream-send-sms-schedule" class="form-label" style="vertical-align:inherit">立即发送通知日程范围内的同事</label>
+				</div>
+				<div class="fs-schedule-add-actions">
+					<button type="submit" class="f-sub button-green">发布</button><button type="reset" class="f-cancel button-gray margl-btn">取消</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+<div class="fs-schedule-manage-dialog">
+	<div class="fs-schedule-manage-title ui-dialog-title">{{createDate}}的日程</div>
+	<div class="fs-schedule-manage-inner">
+		<div class="fs-schedule-manage-tbar">
+			<button type="button" class="create-btn button-green">新建</button>
+		</div>
+		<div class="fs-schedule-manage-content">
+			<!--<ul class="fs-schedule-manage-list">
+				<script type="text/html" class="fs-schedule-manage-item-tpl">
+					<div class="fs-schedule-manage-item-content">
+						<div class="fs-schedule-mange-item-title"><em>{{createTime}}</em>-<span class="fs-schedule-range">{{range}}</span>-<span>{{alertInfo}}</span></div>
+						<div class="fs-schedule-content">{{content}}</div>
+						<div class="fs-schedule-mange-item-bbar">
+							<a href="#" class="reply-l">同事回复</a><span class="fs-separator">|<span><a href="#" class="del-l">删除</a>
+						</div>
+						<div class="fs-schedule-reply-wrapper"></div>
+					</div>
+				</script>
+			</ul>-->
+            <div class="fs-schedule-manage-list"></div>
+		</div>
+		<div class="fs-schedule-manage-bbar">
+			<button type="button" class="close-btn button-gray">关闭</button>
+		</div>
+	</div>
+</div>
+<script type="text/html" class="fs-schedule-custom-alert-tpl">
+    <div class="ui-dialog-title">设置客户日程提醒</div>
+    <div class="ui-dialog-body">
+        <div class="f-field fn-clear">
+            <div class="ff-label fn-left">客户范围：</div>
+            <div class="ff-value fn-left">
+                <div class="range-selectbar"></div>
+            </div>
+        </div>
+        <div class="sms-alert-wrapper f-field fn-clear">
+            <div class="ff-label fn-left">客户短信提醒：</div>
+            <div class="ff-value fn-left">
+                <select class="sms-alert-list">
+                    <option value="0">提前15分钟提醒</option>
+                    <option value="0">提前30分钟提醒</option>
+                    <option value="0">提前1小时提醒</option>
+                    <option value="0">提前2小时提醒</option>
+                    <option value="0">提前6小时提醒</option>
+                    <option value="0">提前1天提醒</option>
+                </select>
+                <div class="ui-dialog-bbar">
+                    <button class="f-sub button-green">确定</button>&nbsp;<button class="f-cancel button-gray">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

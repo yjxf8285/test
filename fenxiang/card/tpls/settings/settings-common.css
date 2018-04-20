@@ -1,0 +1,543 @@
+.settings {
+    color: #646464;
+}
+
+.settings .tpl-c {
+    width: 914px;
+}
+
+.settings-wraper {
+    margin: 0 auto;
+    min-height: 800px;
+}
+.settings-wraper .set-leader-box{
+    margin: 20px 0 20px;
+    width: 260px;
+    height: 80px;
+    background-color: #f6f6f6;
+    position: relative;
+}
+.settings-wraper .set-leader-box-border{
+    border: 3px #ededed dashed;
+}
+.settings-wraper .set-leader-box .colleague-spell{
+    text-indent: 10px;
+}
+.settings-wraper .set-leader-box .spell-wrapper{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+.settings-wraper .set-leader-box .leader-box-inner{
+    cursor: pointer;
+}
+.settings-wraper .set-leader-box span{
+    height: 20px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.settings-wraper .settings-c-title {
+    font-size: 18px;
+    font-weight: normal;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 16px;
+    border-bottom: #f5bf85 solid 2px;
+}
+
+.settings-wraper .swtab-list {
+    border-bottom: #cccccc solid 1px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.settings-wraper .swtab-list li {
+    float: left;
+    margin-right: 5px;
+}
+
+.settings-wraper .swtab-list li a {
+    display: block;
+    _display: inline-block;
+    border: #e1e1e1 solid 1px;
+    border-bottom: #cccccc solid 1px;
+    border-radius: 2px 2px 0 0;
+    padding: 0 8px;
+    line-height: 30px;
+    margin-bottom: -1px;
+    zoom: 1;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#efefef));
+    background: -moz-linear-gradient(top, #fdfdfd, #efefef);
+    background: -o-linear-gradient(top, #fdfdfd, #efefef);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#efefef');
+    background: linear-gradient(to bottom, #fdfdfd, #efefef);
+}
+
+.settings-wraper .swtab-list li a.swtab-item-aon {
+    text-decoration: none;
+    color: #000000 ! important;
+    border: #cccccc solid 1px;
+    border-bottom: #ffffff solid 1px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f1f1f1), to(#fdfdfd));
+    background: -moz-linear-gradient(top, #f1f1f1, #fdfdfd);
+    background: -o-linear-gradient(top, #f1f1f1, #fdfdfd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f1f1', endColorstr='#fdfdfd');
+    background: linear-gradient(to bottom, #f1f1f1, #fdfdfd);
+}
+
+.settings-wraper .sw-main {
+    padding: 15px 0;
+    margin-left: 32px;
+}
+
+.settings-wraper .sw-main dl {
+    margin-top: 20px;
+}
+
+.settings-wraper .sw-main dt,
+.settings-wraper .sw-main dd {
+    float: left;
+}
+
+.settings-wraper .sw-main dt {
+    width: 80px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.settings-wraper .sw-main .sw-main-item {
+}
+
+.settings-input, .settings-textarea {
+    font-size: 14px;
+}
+
+.settings-input {
+    width: 270px;
+    height: 28px;
+    line-height: 28px;
+    border: #e4e4e4 solid 1px;
+    border-radius: 0px;
+    padding: 0 4px;
+    color: #444444;
+    *vertical-align: middle;
+}
+
+.settings-input-on {
+    border: #a5c760 solid 1px;
+    background-color: #f4ffd4;
+}
+
+.settings-input-onerror {
+    border: #ff0000 solid 1px;
+    background-color: #ffcccc;
+}
+
+.settings-textarea {
+    width: 270px;
+    height: 64px;
+    border: #e4e4e4 solid 1px;
+    border-radius: 0px;
+    padding: 3px 4px;
+    color: #444444;
+    vertical-align: top;
+}
+
+.settings-input-prompt {
+    background-color: #f4ffd4;
+    line-height: 26px;
+    padding: 0 8px;
+    margin-left: 4px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.settings-input-error {
+    background: #ffdbdb url(../../assets/images/error.png) no-repeat 5px 7px;
+    line-height: 26px;
+    padding: 0 8px 0 25px;
+    margin-left: 4px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.s-sex-wraper {
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.s-sex-wraper input {
+    vertical-align: middle;
+}
+
+#settings-resetpassword .pwd-space {
+    display: inline-block;
+    width: 7px;
+}
+
+/*绑定手机*/
+.bindphone-sn {
+    font-size: 18px;
+    color: #ed891e;
+    padding: 20px 20px 20px 0px;
+}
+
+.bindphone-main {
+}
+
+.bindphone-main .bpm-number {
+    font-size: 14px;
+}
+
+.bindphone-main .bpm-button {
+    margin: 20px 0;
+    padding-left: 56px;
+}
+
+.bpmn-input {
+    border: #dddddd solid 1px;
+    border-radius: 0px;
+}
+
+.bindphone-success {
+    padding: 0 20px 0px 80px;
+    width: 340px;
+    line-height: 60px;
+    border: #d8d8d8 solid 1px;
+    border-radius: 0px;
+    background: #f7f7f7 url(../../assets/images/set-success-d.png) no-repeat 20px 15px;
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #757575;
+}
+
+.bindphone-success a {
+    margin-left: 15px;
+}
+
+/*免打扰设置*/
+.setupnodisturb-wraper {
+}
+
+.setupnodisturb-wraper input {
+    vertical-align: middle;
+}
+
+.setupnodisturb-wraper table {
+    width: 390px;
+}
+
+.setupnodisturb-wraper table td {
+    height: 35px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.setupnodisturb-wraper table td.start-radios, .setupnodisturb-wraper table td.end-radios {
+    height: 110px;
+}
+
+.setupnodisturb-wraper table td.head-time {
+    background-color: #f7f7f7;
+    border-top: #e6e6e6 solid 1px;
+    border-bottom: #e6e6e6 solid 1px;
+}
+
+.setupnodisturb-wraper table td.cen-rad {
+    border-bottom: #e6e6e6 solid 1px;
+}
+
+.setupnodisturb-wraper .se-time-wraper {
+    color: #ED891E;
+    font-size: 18px;
+    height: 60px;
+    line-height: 50px;
+}
+
+.save-success-wraper {
+    position: relative;
+    overflow: hidden;
+    height: 54px;
+    bottom: 40px;
+    margin-left: 65px;
+}
+
+.save-success-apv {
+    width: 75px;
+    height: 44px;
+    line-height: 44px;
+    border: #dfdfdf solid 5px;
+    padding-left: 35px;
+    position: absolute;
+    left: 10px;
+    top: 54px;
+    background: url(../../assets/images/dot_r.png) no-repeat 15px 16px;
+}
+
+/*个性设置*/
+.personalclientconfig-text,
+.personalclientconfig-control,
+.personalclientconfig-btn-wraper {
+    margin-top: 20px;
+}
+
+.personalclientconfig-control,
+.personalclientconfig-btn-wraper {
+}
+
+.personalclientconfig-btn-wraper {
+    padding-top: 10px;
+}
+
+.personalclientconfig-control input {
+    vertical-align: middle;
+}
+
+.personalclientconfig-control .label-for {
+    vertical-align: inherit;
+    padding-right: 15px;
+}
+
+.personalclientconfig-control a.play-l {
+    vertical-align: middle;
+}
+
+/*日志提醒设置*/
+.planremindconfig-text,
+.planremindconfig-control,
+.planremindconfig-btn-wraper {
+    margin-top: 20px;
+}
+
+.planremindconfig-control,
+.planremindconfig-btn-wraper {
+}
+
+.planremindconfig-btn-wraper {
+    padding-top: 10px;
+}
+
+.planremindconfig-control input {
+    vertical-align: middle;
+}
+
+.sel-week-list {
+    width: 185px;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: middle;
+}
+
+.chose-time-input {
+    width: 90px;
+    height: 24px;
+    line-height: 24px;
+    border: #dddddd solid 1px;
+    padding-left: 4px;
+}
+
+.planremindconfig-control {
+    position: relative;
+}
+
+.chose-time-apv {
+    width: 200px;
+    height: 260px;
+    border: #cccccc solid 1px;
+    position: absolute;
+    left: 275px;
+    top: 25px;
+    z-index: 1;
+    background-color: #FFF;
+}
+
+.chose-time-apv p {
+    line-height: 35px;
+    padding-left: 20px;
+    border-bottom: #ebebeb solid 1px;
+    color: #999999;
+}
+
+.chose-time-apv .chose-time-item {
+    padding: 7px 2px;
+    overflow-y: scroll;
+    height: 210px;
+}
+
+.chose-time-apv .chose-time-item a {
+    display: block;
+    padding-left: 30px;
+    line-height: 24px;
+    color: #666666;
+}
+
+.chose-time-apv .chose-time-item a:hover {
+    background-color: #eeeeee;
+    color: #333333;
+    text-decoration: none;
+}
+
+/* 头像编辑 */
+#settings-avatarsetting .avatar-wrapper {
+    width: 750px;
+    height: 550px;
+    margin: 20px auto 0 40px;
+    padding: 10px;
+
+}
+
+/* 绑定邮箱 */
+.bemain {
+}
+
+.bemn-input {
+    width: 220px;
+}
+
+.bemain .bpm-number {
+}
+
+#settings-boundexmail .bindphone-sn {
+}
+
+#settings-boundexmail .bemb-code-font {
+    color: #ff8228;
+}
+
+.bemn-code-input {
+    border-color: #ff8228;
+    width: 220px;
+}
+
+.bebtn-disabled {
+    opacity: .8;
+}
+
+#settings-boundexmail .bindphone-success {
+    width: inherit;
+    display: inline-block;
+}
+
+.resetpassword-form .settings-input-prompt {
+    font-size: 12px;
+}
+
+/*20131017 by haibo*/
+
+.settings h4.rightc-title {
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #E1E1E1;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 16px;
+    position: relative;
+}
+
+.settings .settings-nav-list {
+    padding: 10px 0;
+}
+
+/* crm 左侧边栏 start */
+#settings-businesstags .tpl-l {
+    position: relative;
+    z-index: 10;
+}
+
+.crm-settings-left-nav {
+    border: 1px solid #d8d8d8;
+    position: relative;
+    z-index: 10;
+}
+
+.crm-settings-left-nav .nav-item {
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #f0f0f0;
+    background: #ffffff;
+}
+
+.crm-settings-left-nav .nav-item a {
+    display: block;
+    text-indent: 20px;
+    color: #414141;
+    text-decoration: none;
+}
+
+.crm-settings-left-nav .nav-item a.state-active {
+    background: #eeeeee;
+    border-left: 2px solid #427fed;
+    /*border-top:1px solid #f5f5f5;
+    border-bottom:1px solid #f5f5f5;*/
+    font-weight: bold;
+}
+
+.crm-settings-left-nav .label-manage-list a.state-active {
+    border-left: none;
+    background: #427FED;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.crm-settings-left-nav .label-manage-item {
+    position: relative;
+}
+
+.crm-settings-left-nav .label-manage-item .label-manage-list {
+    position: absolute;
+    top: 0;
+    left: 219px;
+}
+
+.crm-settings-left-nav .label-manage-list {
+    border: 1px solid #d8d8d8;
+}
+
+.crm-settings-left-nav .label-nav-item {
+    width: 180px;
+    height: 36px;
+    line-height: 36px;
+    text-indent: 20px;
+    background: #ffffff;
+}
+
+/*销售阶段设置的弹框模板样式*/
+.crm-salesstagedialog-warp {
+    padding: 40px;
+    padding-right: 30px;
+}
+
+.crm-salesstagedialog-warp .tit {
+    font-size: 32px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.crm-salesstagedialog-warp .salesstagedialog-table {
+    width: 100%;
+}
+
+.crm-salesstagedialog-warp .salesstagedialog-table td, .crm-salesstagedialog-warp .salesstagedialog-table th{
+    padding: 10px 10px 0 0;
+}
+
+.crm-salesstagedialog-warp .salesstagedialog-table .input-name {
+    width: 254px;
+
+}.crm-salesstagedialog-warp .salesstagedialog-table .input-winrate {
+    width: 76px;
+
+}
+
+.crm-salesstagedialog-warp .fn-warp {
+
+    margin-top: 30px;
+    padding-left: 36px;
+}
+

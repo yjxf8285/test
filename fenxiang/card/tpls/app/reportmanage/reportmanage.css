@@ -1,0 +1,99 @@
+.report .report-title-list h2, .report .report-title-setting h2 {
+	padding: 0px 0 13px 2px;
+	font-size: 20px;
+	color: #555;
+	border-bottom: 1px solid #d8d8d8;
+	letter-spacing: 1px;
+}
+.report .report-title-setting h2 {
+	border-bottom: none;
+}
+
+.report-setting-step {
+	height: 42px;
+	background: url("../../../assets/images/app-reportmanage-bg.png") no-repeat;
+}
+.report-setting-step.cur-layer {
+	background-position: 0 -42px;
+}
+.report-setting-step.cur-rules {
+	background-position: 0 -84px;
+}
+.report-setting-step span {
+    float: left;
+    color: #505150;
+    text-align: center;
+    font-size: 16px;
+    line-height: 42px;
+}
+.report-setting-step .step-options {
+	width: 305px;
+}
+.report-setting-step .step-layer {
+	width: 323px;
+}
+.report-setting-step .step-rules {
+	width: 283px;
+}
+.cur-options .step-options, .cur-rules .step-rules, .cur-layer .step-layer {
+    color: #fff;
+}
+
+/*
+     上报管理 步骤的标题 按钮等公用样式
+--------------------------------------------------------*/
+.report-setting-options,
+.report-setting-layers,
+.report-setting-rules,
+.report-setting-list {
+    background: #FFF;
+}
+.report-setting-content {
+    min-height: 200px;
+    border: 1px solid #d8d8d8;
+	border-top: none;
+}
+.report-setting-title {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+    color: #555
+}
+
+.report .report-back-ctner {
+	display: none;
+}
+#report-reportmanage .report-btn-box, #report-reportmanage .report-edit-btn-box {
+	bottom: -56px;
+}
+
+/**编辑表头*/
+.report .report-edit-header {
+	background: #FFF;
+}
+.report .report-edit-tplname {
+	font-size: 18px;
+	color: #414141;
+	height: 24px;
+	line-height: 24px;
+	padding: 27px 0;
+	text-align: left;
+	padding-left: 15px;
+}
+.report .report-edit-tabs {
+	border-top: 1px solid #d8d8d8;
+	border-bottom: 1px solid #d8d8d8;
+	margin-bottom: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

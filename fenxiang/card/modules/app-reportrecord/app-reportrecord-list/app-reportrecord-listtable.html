@@ -1,0 +1,10 @@
+<tr>
+    <!--<td>{{index+1}}</td>-->
+    <td>{{ob.templateName}}</td>
+    <td>{{ob.creator.name}}</td>
+    <td>{{ob.timeStr}}</td>
+    <td class="{{ob.statusCss}}">{{ob.statusStr}}</td>
+    <td>
+    	<a href="javascript:void(0)" onclick="return false;" class="reportrecord-list-view" data-status="{{ob.status}}" data-tableid="{{ob.templateID}}" data-tablename="{{ob.templateName}}">查看</a>
+    </td>
+</tr>

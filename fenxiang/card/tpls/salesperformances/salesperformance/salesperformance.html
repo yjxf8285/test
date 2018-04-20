@@ -1,0 +1,320 @@
+﻿<div id="salesperformances-salesperformance" class="tpl department" tplname="salesperformances-salesperformance" tpltitle="纷享销客平台-仪表盘" js="true" css="true" iscached="true" data-lighted="crm|salesperformances">
+    <!-- 三列式 自适应宽度 -->
+    <div class="crm-chart">
+        <div class="crm-chart-title fn-clear">
+            <span class="crm-chart-title-name">仪表盘</span>
+            <span class="crm-chart-title-description">仪表盘数据源于销售预测、销售机会与合同数据的录入</span>
+        </div>
+        <div class="crm-chart-setting fn-clear">
+            <div class="crm-chart-settingperson-wrapper fn-left"></div>
+            <div class="mn-checkbox-box crm-chart-setting-checkbox fn-left ">
+                <span class="label-for"><span class="mn-checkbox-item mn-selected" data-value="1"></span>&nbsp;<label>包含下属</label></span>
+            </div>
+            <button class='crm-chart-setting-target button-green fn-right'>设置我的业务目标</button>
+        </div>
+        <div class="crm-chart-header fn-clear">
+            <div class="crm-chart-header-span">
+                <p>本月成交金额</p>
+                <p class="crm-chart-header-spanc">￥ <span></span></p>
+            </div>
+
+            <div class="crm-chart-header-span">
+                <p>本月完成率</p>
+                <p class="crm-chart-header-spanc"><span></span></p>
+            </div>
+
+            <div class="crm-chart-header-spanr">
+                <p>本月目标金额</p>
+                <p class="crm-chart-header-spanc">￥ <span></span></p>
+            </div>
+
+            <div class="crm-chart-header-span">
+                <p>本月回款金额</p>
+                <p class="crm-chart-header-spanc">￥ <span></span></p>
+            </div>
+
+            <div class="crm-chart-header-spanl">
+                <p>本月剩余</p>
+                <p class="crm-chart-header-spanc"><span></span><b>天</b></p>
+            </div>
+        </div>
+        <div class="crm-chart-list fn-clear">
+            <!--任务完成情况-->
+            <div class="crm-chart-list-card">
+                <h4>
+                    <span class="crm-chart-list-card-title">任务完成情况</span>
+                    <div class="crm-chart-list-card-select">
+                        
+                        <span class="mn-select-box crm-chart-a" id="crm-chart-a-year" select-cls="crm-chart-select-year">
+                            <span class="mn-select-title-wrapper">
+                                <span class="mn-select-title">2014年</span><span class="title-icon"></span>
+                            </span>
+                            <ul class="mn-select-list">
+                                <li class="mn-select-item" data-value="2013">2013年</li>
+                                <li class="mn-select-item" data-value="2014" data-selected="true">2014年</li>
+                                <li class="mn-select-item" data-value="2015">2015年</li>
+                            </ul>
+                        </span>
+
+                        <span class="mn-select-box crm-chart-a" id="crm-chart-a-time" select-cls="crm-chart-select-month">
+                            <span class="mn-select-title-wrapper">
+                                <span class="mn-select-title">全年</span><span class="title-icon"></span>
+                            </span>
+                            <ul class="mn-select-list">
+                                <li class="mn-select-item" data-value="4">一季度</li>
+                                <li class="mn-select-item" data-value="5">二季度</li>
+                                <li class="mn-select-item" data-value="6">三季度</li>
+                                <li class="mn-select-item" data-value="7">四季度</li>
+                                <li class="mn-select-item" data-value="2">上半年</li>
+                                <li class="mn-select-item" data-value="3">下半年</li>
+                                <li class="mn-select-item" data-value="1" data-selected="true">全年</li>
+                            </ul>
+                        </span>
+                        
+                        <span class="mn-checkbox-box crm-chart-a-chekbox" id="crm-chart-a-involve">
+                            <span class="label-for">
+                                <span class="mn-checkbox-item mn-selected" data-value="1"></span>&nbsp;
+                                <label>包含下属</label>
+                            </span>
+                        </span>
+
+                    </div>
+                </h4>
+                <div id="crm-chart-a"></div>
+            </div>
+            <!--销售漏斗-->
+            <div class="crm-chart-list-card crm-chart-list-cardb">
+                <h4>
+                    <span class="crm-chart-list-card-title">销售漏斗</span>
+                    <div class="crm-chart-list-card-select">
+                        
+                        <span class="mn-select-box crm-chart-b" id="crm-chart-b-year" select-cls="crm-chart-select-year">
+                            <span class="mn-select-title-wrapper">
+                                <span class="mn-select-title">2014年</span><span class="title-icon"></span>
+                            </span>
+                            <ul class="mn-select-list">
+                                <li class="mn-select-item" data-value="2013">2013年</li>
+                                <li class="mn-select-item" data-value="2014" data-selected="true">2014年</li>
+                                <li class="mn-select-item" data-value="2015">2015年</li>
+                            </ul>
+                        </span>
+
+                        <span class="mn-select-box crm-chart-b" id="crm-chart-b-time"select-cls="crm-chart-select-month">
+                            <span class="mn-select-title-wrapper">
+                                <span class="mn-select-title">全年</span><span class="title-icon"></span>
+                            </span>
+                            <ul class="mn-select-list">
+                                <li class="mn-select-item" data-value="4">一季度</li>
+                                <li class="mn-select-item" data-value="5">二季度</li>
+                                <li class="mn-select-item" data-value="6">三季度</li>
+                                <li class="mn-select-item" data-value="7">四季度</li>
+                                <li class="mn-select-item" data-value="2">上半年</li>
+                                <li class="mn-select-item" data-value="3">下半年</li>
+                                <li class="mn-select-item" data-value="1" data-selected="true">全年</li>
+                            </ul>
+                        </span>
+                        
+                        <span class="mn-checkbox-box crm-chart-b-chekbox" id="crm-chart-b-involve">
+                            <span class="label-for">
+                                <span class="mn-checkbox-item mn-selected" data-value="1"></span>&nbsp;
+                                <label>包含下属</label>
+                            </span>
+                        </span>
+                        
+                    </div>
+                </h4>
+                <div id="crm-chart-b">
+                </div>
+            </div>
+            <!--未赢单机会赢率-->
+            <div class="crm-chart-list-smallcard">
+                <h4>
+                    <span class="crm-chart-list-card-title">未赢单机会赢率-时间分布</span>
+                    <div class="crm-chart-list-card-select">
+                        
+                        <span class="mn-select-box crm-chart-c" id="crm-chart-c-year" select-cls="crm-chart-select-year">
+                            <span class="mn-select-title-wrapper">
+                                <span class="mn-select-title">2014年</span><span class="title-icon"></span>
+                            </span>
+                            <ul class="mn-select-list">
+                                <li class="mn-select-item" data-value="2013">2013年</li>
+                                <li class="mn-select-item" data-value="2014" data-selected="true">2014年</li>
+                                <li class="mn-select-item" data-value="2015">2015年</li>
+                            </ul>
+                        </span>
+
+                        <span class="mn-select-box crm-chart-c" id="crm-chart-c-time"select-cls="crm-chart-select-month">
+                            <span class="mn-select-title-wrapper">
+                                <span class="mn-select-title">全年</span><span class="title-icon"></span>
+                            </span>
+                            <ul class="mn-select-list">
+                                <li class="mn-select-item" data-value="4">一季度</li>
+                                <li class="mn-select-item" data-value="5">二季度</li>
+                                <li class="mn-select-item" data-value="6">三季度</li>
+                                <li class="mn-select-item" data-value="7">四季度</li>
+                                <li class="mn-select-item" data-value="2">上半年</li>
+                                <li class="mn-select-item" data-value="3">下半年</li>
+                                <li class="mn-select-item" data-value="1" data-selected="true">全年</li>
+                            </ul>
+                        </span>
+                        
+                        <span class="mn-checkbox-box crm-chart-c-chekbox" id="crm-chart-c-involve">
+                            <span class="label-for">
+                                <span class="mn-checkbox-item mn-selected" data-value="1"></span>&nbsp;
+                                <label>包含下属</label>
+                            </span>
+                        </span>
+
+                    </div>
+                </h4>
+                <div id="crm-chart-c"></div>
+            </div>
+            <!--未赢单机会金额-->
+            <div class="crm-chart-list-smallcard crm-chart-list-cardb">
+                <h4>
+                    <span class="crm-chart-list-card-title">未赢单机会金额-时间分布</span>
+                    <div class="crm-chart-list-card-select">
+                        
+                        <span class="mn-select-box crm-chart-d" id="crm-chart-d-year" select-cls="crm-chart-select-year">
+                            <span class="mn-select-title-wrapper">
+                                <span class="mn-select-title">2014年</span><span class="title-icon"></span>
+                            </span>
+                            <ul class="mn-select-list">
+                                <li class="mn-select-item" data-value="2013">2013年</li>
+                                <li class="mn-select-item" data-value="2014" data-selected="true">2014年</li>
+                                <li class="mn-select-item" data-value="2015">2015年</li>
+                            </ul>
+                        </span>
+
+                        <span class="mn-select-box crm-chart-d" id="crm-chart-d-time"select-cls="crm-chart-select-month">
+                            <span class="mn-select-title-wrapper">
+                                <span class="mn-select-title">全年</span><span class="title-icon"></span>
+                            </span>
+                            <ul class="mn-select-list">
+                                <li class="mn-select-item" data-value="4">一季度</li>
+                                <li class="mn-select-item" data-value="5">二季度</li>
+                                <li class="mn-select-item" data-value="6">三季度</li>
+                                <li class="mn-select-item" data-value="7">四季度</li>
+                                <li class="mn-select-item" data-value="2">上半年</li>
+                                <li class="mn-select-item" data-value="3">下半年</li>
+                                <li class="mn-select-item" data-value="1" data-selected="true">全年</li>
+                            </ul>
+                        </span>
+                        
+                        <span class="mn-checkbox-box crm-chart-d-chekbox" id="crm-chart-d-involve">
+                            <span class="label-for">
+                                <span class="mn-checkbox-item mn-selected" data-value="1"></span>&nbsp;
+                                <label>包含下属</label>
+                            </span>
+                        </span>
+
+                    </div>
+                </h4>
+                <div id="crm-chart-d"></div>
+            </div>
+            <!--合同回款金额-->
+            <div class="crm-chart-list-smallcard">
+                <h4>
+                    <span class="crm-chart-list-card-title">合同回款金额-时间分布</span>
+                    <div class="crm-chart-list-card-select">
+                        <span class="mn-select-box crm-chart-e" id="crm-chart-e-year" select-cls="crm-chart-select-year">
+                            <span class="mn-select-title-wrapper">
+                                <span class="mn-select-title">2014年</span><span class="title-icon"></span>
+                            </span>
+                            <ul class="mn-select-list">
+                                <li class="mn-select-item" data-value="2013">2013年</li>
+                                <li class="mn-select-item" data-value="2014" data-selected="true">2014年</li>
+                                <li class="mn-select-item" data-value="2015">2015年</li>
+                            </ul>
+                        </span>
+                        <span class="mn-checkbox-box crm-chart-e-chekbox" id="crm-chart-e-involve">
+                            <span class="label-for">
+                                <span class="mn-checkbox-item mn-selected" data-value="1"></span>&nbsp;
+                                <label>包含下属</label>
+                            </span>
+                        </span>
+                    </div>
+                </h4>
+                <div id="crm-chart-e"></div>
+            </div>
+            <!--合同回款比例-->
+            <div class="crm-chart-list-smallcard crm-chart-list-cardb">
+                <h4>
+                    <span class="crm-chart-list-card-title">合同回款比例-时间分布</span>
+                    <div class="crm-chart-list-card-select">
+                        <span class="mn-select-box crm-chart-f" id="crm-chart-f-year" select-cls="crm-chart-select-year">
+                            <span class="mn-select-title-wrapper">
+                                <span class="mn-select-title">2014年</span><span class="title-icon"></span>
+                            </span>
+                            <ul class="mn-select-list">
+                                <li class="mn-select-item" data-value="2013">2013年</li>
+                                <li class="mn-select-item" data-value="2014" data-selected="true">2014年</li>
+                                <li class="mn-select-item" data-value="2015">2015年</li>
+                            </ul>
+                        </span>
+                        <span class="mn-checkbox-box crm-chart-f-chekbox" id="crm-chart-f-involve">
+                            <span class="label-for">
+                                <span class="mn-checkbox-item mn-selected" data-value="1"></span>&nbsp;
+                                <label>包含下属</label>
+                            </span>
+                        </span>
+
+                    </div>
+                </h4>
+                <div id="crm-chart-f"></div>
+            </div>
+            <!--赢单数量-时间分布-->
+            <div class="crm-chart-list-mediumcard">
+                <h4>
+                    <span class="crm-chart-list-card-title">赢单数量-时间分布</span>
+                    <div class="crm-chart-list-card-select">
+                        <span class="mn-select-box crm-chart-g" id="crm-chart-g-year" select-cls="crm-chart-select-year">
+                            <span class="mn-select-title-wrapper">
+                                <span class="mn-select-title">2014年</span><span class="title-icon"></span>
+                            </span>
+                            <ul class="mn-select-list">
+                                <li class="mn-select-item" data-value="2013">2013年</li>
+                                <li class="mn-select-item" data-value="2014" data-selected="true">2014年</li>
+                                <li class="mn-select-item" data-value="2015">2015年</li>
+                            </ul>
+                        </span>
+                        <span class="mn-checkbox-box crm-chart-g-chekbox" id="crm-chart-g-involve">
+                            <span class="label-for">
+                                <span class="mn-checkbox-item mn-selected" data-value="1"></span>&nbsp;
+                                <label>包含下属</label>
+                            </span>
+                        </span>
+
+                    </div>
+                </h4>
+                <div id="crm-chart-g"></div>
+            </div>
+            <!--新增客户联系人的数量时间分布-->
+            <div class="crm-chart-list-mediumcard crm-chart-list-cardb">
+                <h4>
+                    <span class="crm-chart-list-card-title">新增客户联系人的数量-时间分布</span>
+                    <div class="crm-chart-list-card-select">
+                        <span class="mn-select-box crm-chart-h" id="crm-chart-h-year" select-cls="crm-chart-select-year">
+                            <span class="mn-select-title-wrapper">
+                                <span class="mn-select-title">2014年</span><span class="title-icon"></span>
+                            </span>
+                            <ul class="mn-select-list">
+                                <li class="mn-select-item" data-value="2013">2013年</li>
+                                <li class="mn-select-item" data-value="2014" data-selected="true">2014年</li>
+                                <li class="mn-select-item" data-value="2015">2015年</li>
+                            </ul>
+                        </span>
+                        <span class="mn-checkbox-box crm-chart-h-chekbox" id="crm-chart-h-involve">
+                            <span class="label-for">
+                                <span class="mn-checkbox-item mn-selected" data-value="1"></span>&nbsp;
+                                <label>包含下属</label>
+                            </span>
+                        </span>
+
+                    </div>
+                </h4>
+                <div id="crm-chart-h"></div>
+            </div>
+        </div>
+    </div>
+</div>

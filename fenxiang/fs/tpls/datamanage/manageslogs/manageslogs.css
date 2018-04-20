@@ -1,0 +1,56 @@
+.manageslogs-tit{
+    font-size: 16px;
+    color: #333;
+    border-bottom:#cccccc dotted 1px;
+    height: 68px;
+    line-height: 68px;
+    font-weight: bold;
+    margin: 0 24px;
+}
+.manageslogs-content{
+    margin: 0 24px;
+    margin-top: 20px;
+}
+.manageslogs-table{
+    width: 100%;
+}
+.manageslogs-table thead{
+    background: #f1f1f1;
+}
+.manageslogs-table th{
+    border:solid 1px #E1E2E4;
+    padding: 10px;
+    border-left: none;
+    border-right: none;
+}
+.manageslogs-table td{
+    border:solid 1px #E1E2E4;
+    padding: 10px;
+    border-left: none;
+    border-right: none;
+    background: #fff;
+}
+.manageslogs-table-gray{
+    color: #999;
+    vertical-align: top;
+}
+.manageslogs-table-content{
+    /*white-space: pre;*/
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.manageslogs-pagination{
+    padding: 10px 0 50px;
+}
+/** 
+ * 兼容chorme
+ * 输入框光标位置和黄色边框
+ * 这段放到最后面
+ * Class名称要保持一致才会重置到样式 
+ **/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .exmails-form .form-input-text {
+        line-height: 15px;
+        outline: none;
+    }
+}

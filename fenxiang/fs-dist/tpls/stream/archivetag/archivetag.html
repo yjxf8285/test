@@ -1,0 +1,94 @@
+<div id="stream-archivetag" class="tpl department" tplname="stream-archivetag" js="true" css="modules/tpl-portal/tpl-portal.css" iscached="false">
+    <!-- 三列式 自适应宽度 -->
+    <div class="tpl-l">
+        <div class="tpl-inner">
+			&nbsp;
+        </div>
+    </div>
+    
+    <div class="tpl-c">
+        <div class="tpl-inner">
+            <!-- archivetag center start -->
+            <div class="department-wrapper">
+                <h2 class="depw-title">我的归档</h2>
+                <p class="depw-text color-999999">您可以通过添加标签将重要的信息进行分类归档</p>
+                <ul class="depw-menu fn-clear marg10 border-top-none">
+                </ul>
+                
+                <!-- center bottom start -->
+                <div class="home-center-list fn-clear">
+                    <div class="tag-filter-result"><a class="to-back-all-l" href="#" title="返回全部归档">返回全部归档</a>><span class="tag-name"></span></div>
+                   <label class="search-wrap">
+                       <input type="text" class="search-inp" placeholder="搜索信息"><button class="search-btn"></button>
+                   </label>
+                    <div class="feed-tabs">
+                        <ul class="ui-switchable-nav ui-tab-items tag_wrap padL20 marg10">
+                            <li class="ui-tab-item ui-tab-item-current"><a href="javascript:;">全部</a></li>
+                            <li class="ui-tab-item"><a href="javascript:;">分享</a></li>
+                            <li class="ui-tab-item"><a href="javascript:;">日志</a></li>
+                            <li class="ui-tab-item"><a href="javascript:;">指令</a></li>
+                            <li class="ui-tab-item"><a href="javascript:;">审批</a></li>
+
+                        </ul>
+                        <div class="ui-switchable-content">
+                            <div class="ui-tab-panel" feedtype="0">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="ui-tab-panel" feedtype="1">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="ui-tab-panel" feedtype="2">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="ui-tab-panel" feedtype="3">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                            <div class="ui-tab-panel" feedtype="4">
+                                <div class="feed-list"></div>
+                                <div class="feed-list-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- center bottom end -->
+                
+            </div>
+            <!-- archivetag center end -->
+        </div>
+    </div>
+    
+    <div class="tpl-r">
+        <div class="tpl-inner">
+        
+           <aside class="home-right-content">
+           		<h4 class="rightc-title" style="border:none">视频帮助</h4>
+                <div class="r-use-help-wrap">
+                	<a href="http://v.ku6vms.com/player/default_0.0029.swf?vid=-CoWucPvDV096oKN&style=gRiQ5K9giiL4EUzq&sn=DyMsxOJIt5vmJE3s3q0LBg..&sp=http://v.ku6vms.com/~" target="_blank" class="r-use-help-text">归档的使用方法</a>
+                </div>
+               <h4 class="rightc-title">归档标签</h4>
+               <ul class="right-archive-list-wrap rightc-fontlist">
+                   <script type="text/html" class="tag-item-tpl">
+					   <li class="right-archive-list right-archive-item color-999999" tagid="{{tagId}}">
+						 <div class="tag-show-panel right-archive-title color-999999">
+						  <a href="javascript:;" class="tag-name fna-blue">{{tagName}}</a>({{count}})
+						  <span class="right-archive-control" style="display:none;"><a href="javascript:;" class="right-ac-edit fna-blue">编辑</a> <a href="javascript:;" class="right-ac-del fna-blue">删除</a></span>
+						 </div>
+						 <div class="tag-edit-panel right-archive-label" style="display:none;">
+							<input type="text" class="right-archive-text" value="" />
+							<span class="tag-actions">
+							   <button class="rarchive-btn-save button-green">保存</button><button class="rarchive-btn-cancel button-grey">取消</button>
+							</span>
+						 </div>
+					   </li>
+				   </script>
+              </ul>
+              
+           </aside>
+           
+        </div>
+    </div>
+</div>

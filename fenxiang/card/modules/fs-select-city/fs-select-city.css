@@ -1,0 +1,48 @@
+.fs-select-city-dialog-bd {
+    padding: 0 20px 16px;
+}
+
+.fs-select-city-dialog-bd .fnbar {
+    border-bottom: solid 2px #ccc;
+}
+
+.fs-select-city-dialog-bd .ui-tab-item a {
+    height: 42px;
+}
+
+.fs-select-city-dialog-bd .city-list .l {
+    float: left;
+    width: 20px;
+    color: #dd4b39;
+    padding-top: 1px;
+}
+
+.fs-select-city-dialog-bd .city-list .r {
+    margin-left: 20px;
+}
+
+.fs-select-city-dialog-bd .city-list {
+    margin-top: 10px;
+}
+
+.fs-select-city-dialog-bd .city-list li {
+    float: left;
+    margin-right: 5px;
+    width: 60px;
+    padding: 2px 0;
+}
+
+.fs-select-city-dialog-bd .city-list li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.fs-select-city-dialog-bd .city-list li a:hover {
+    color: #dd4b39;
+}
+.clear-btn{
+    position: absolute;
+    top: 59px;
+    right: 22px;
+    z-index: 3;
+}

@@ -1,0 +1,79 @@
+<!--标签列表模板-->
+<script type="text/html" class="crm-customer-baseinfo-template">
+
+    <div class="crm-detail-bd-baseinfo">
+        <div class="fn-clear baseinfo-hd border-bottom">
+            <div class="fn-left">
+                <h1>基本信息</h1>
+            </div>
+            <div class="fn-right">
+                <a href="javascript:;" class="edit-customer">编辑</a>
+            </div>
+        </div>
+
+        <div class="fn-clear baseinfo-bd">
+            <div class="left-inner">
+                <div class="border-bottom baseinfo-module">
+                    <ul class="">
+                        <li class="fn-clear">
+                            <div class="input-tip">名称</div>
+                            <div class="input-wrapper">{{fullName}}</div>
+                        </li>
+                        <li class="fn-clear">
+                            <div class="input-tip">简称</div>
+                            <div class="input-wrapper">{{name}}</div>
+                        </li>  <li class="fn-clear">
+                            <div class="input-tip">编号</div>
+                            <div class="input-wrapper">{{customerNo}}</div>
+                        </li>
+                        <li class="fn-clear">
+                            <div class="input-tip">地址</div>
+                            <div class="input-wrapper">{{address}}</div>
+                        </li>
+                        <li class="fn-clear">
+                            <div class="input-tip">网址</div>
+                            <div class="input-wrapper">{{webSite}}</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="border-bottom baseinfo-module">
+                    <ul class="customer-baseinfo-tag-ul">
+
+                    </ul>
+                </div>
+                <div class="border-bottom baseinfo-module">
+                    <ul class="customer-define-field-tag-ul">
+
+                    </ul>
+                </div>
+                <div class="baseinfo-module">
+                    <ul class="">
+                        <li class="fn-clear">
+                            <div class="input-tip">简介</div>
+                            <div class="input-wrapper-nofloat">{{introduction}}</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="customer-baseinfo-bd-right right-inner">
+                <div class="baseinfo-module">
+                    <ul class="">
+                        <li class="fn-clear">
+                            <div class="input-tip">负责人</div>
+                            <div class="input-wrapper">{{ownerName}}</div>
+                        </li>
+                        <li class="fn-clear">
+                            <div class="input-tip">创建时间</div>
+                            <div class="input-wrapper">{{createTime}}</div>
+                        </li>
+                        <li class="fn-clear">
+                            <div class="input-tip">最后修改时间</div>
+                            <div class="input-wrapper">{{lastChangedTime}}</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

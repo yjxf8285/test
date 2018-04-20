@@ -1,0 +1,86 @@
+.app-reportsetting-rules {
+    padding: 30px;
+}
+
+.app-reportsetting-rules .rules-table {
+    color: #646464;
+}
+
+.app-reportsetting-rules .rules-table .rules-table-left {
+    float: left;
+    width: 70px;
+}
+
+.app-reportsetting-rules .rules-table dd {
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+.app-reportsetting-rules .rules-table dd.border-top{
+    border-top:solid 1px #d8d8d8;
+    padding-top: 20px;
+}
+.app-reportsetting-rules .rules-table dd .l{
+    float: left;
+}.app-reportsetting-rules .rules-table dd .r{
+    float: left;
+    margin-left:140px;
+}
+.app-reportsetting-rules .rules-table .select-date-week {
+    float: left;
+    margin-top: -2px;
+}
+
+.app-reportsetting-rules .rules-table .select-isneedapprove {
+    float: left;
+    margin-top: -2px;
+}
+
+.app-reportsetting-rules .rules-table .rules-table-right {
+    margin-left: 60px;
+}
+
+.app-reportsetting-rules .rules-table .label-for {
+    margin-right: 20px;
+}
+
+.app-reportsetting-rules .rules-table .label-for label {
+    margin-left: 8px;
+}
+
+.app-reportsetting-rules .rules-table label {
+    vertical-align: middle;
+}
+
+.app-reportsetting-rules .rules-table .rules-remendlis {
+    padding-top: 5px;
+    padding-left: 10px;
+    line-height: 20px;
+}
+
+.app-reportsetting-rules .rules-table .tip-text {
+    color: #aaa;
+    margin-left: 20px;
+    cursor: inherit;
+}
+
+.app-reportsetting-rules .rules-table .fn-warp {
+    display: none;
+    padding: 15px 0 0 10px;
+}
+
+.app-reportsetting-rules .rules-table .fn-list-warp {
+
+    padding-top: 20px;
+}
+.app-reportsetting-rules .data-senddeadline-tip{
+    background: none repeat scroll 0 0 #fffddd;
+    border: 1px solid #eadfa7;
+    border-radius: 3px;
+    color: #a37419;
+    font-size: 13px;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 18px;
+    width: 290px;
+    margin: 12px 0 0 70px;
+}

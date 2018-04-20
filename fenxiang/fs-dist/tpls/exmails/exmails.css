@@ -1,0 +1,7 @@
+/**
+ * 纷享页面样式
+ * @Author: 纷享网页前端部
+ * @Date: 2014-09-02
+ */
+
+.exmails-tit{font-size:16px;color:#333;border-bottom:#ccc dotted 1px;height:68px;line-height:68px;font-weight:700;margin:0 24px}.exmails-content{margin:0 24px;margin-top:20px}.exmails-form .hide{display:none}.exmails-form dd{line-height:36px}.exmails-form .form-input-tit{font-size:14px;color:#999;width:70px;display:inline-block;vertical-align:middle}.exmails-form .form-input-text{width:390px;height:30px;border:solid 1px #ddd;vertical-align:middle;font-size:13px;color:#999;line-height:30px;padding-left:10px}.exmails-form .form-button{margin-left:70px}@media screen and (-webkit-min-device-pixel-ratio:0){.exmails-form .form-input-text{line-height:15px;outline:0}}

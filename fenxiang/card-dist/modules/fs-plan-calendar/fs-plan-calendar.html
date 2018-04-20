@@ -1,0 +1,41 @@
+<script type="text/html" class="fs-plan-calendar-dialog-tpl"><div class="fs-plan-calendar-dialog-title ui-dialog-title">{{createDate}}的日志</div>
+    <div class="fs-plan-calendar-dialog-inner">
+        <div class="fs-plan-calendar-dialog-content">
+            <div class="plan-list"></div>
+        </div>
+        <div class="fs-plan-calendar-dialog-bbar">
+            <button type="button" class="close-btn button-gray">关闭</button>
+        </div>
+    </div></script><script type="text/html" class="fs-plan-export-tpl"><div class="ui-dialog-title">导出日志</div>
+    <div class="ui-dialog-body">
+		<div class="pc-selct-pp">
+			<div class="selectbar">
+			</div>
+		</div>
+        <div class="f-field fn-clear">
+            <div class="ff-label fn-left">日志类型：</div>
+            <div class="ff-value fn-left">
+                <span class="label-for"><input type="radio" value="0" name="plan_type" checked="checked" />&nbsp;<label>全部</label></span>&nbsp;&nbsp;&nbsp;<span class="label-for"><input name="plan_type" type="radio" value="1" />&nbsp;<label>日志</label></span>&nbsp;&nbsp;&nbsp;<span class="label-for"><input name="plan_type" type="radio" value="2" />&nbsp;<label>周计划</label></span>&nbsp;&nbsp;&nbsp;<span class="label-for"><input name="plan_type" type="radio" value="3" />&nbsp;<label>月计划</label></span>
+            </div>
+        </div>
+        <div class="f-field fn-clear">
+            <div class="ff-label fn-left">起止时间：</div>
+            <div class="ff-value fn-left">
+                <div class="date-range-wrapper">
+                    <span class="start-date"></span>&nbsp;-&nbsp;<span class="end-date"></span>
+                </div>
+                <div class="date-shortcut-wrapper">
+                    <a href="#" class="current-week date-shortcut">本周</a>&nbsp;&nbsp;&nbsp;<a href="#" class="last-week date-shortcut">上周</a>&nbsp;&nbsp;&nbsp;<a href="#" class="current-month date-shortcut">本月</a>&nbsp;&nbsp;&nbsp;<a href="#" class="last-month date-shortcut">上月</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-field fn-clear">
+            <div class="ff-label fn-left">&nbsp;</div>
+            <div class="ff-value fn-left">
+                <button class="f-sub button-green">生成报表</button><a class="ff-success-a" target="_blank" href="javascript:;">生成完毕，点击下载报表</a>
+            </div>
+        </div>
+        <div class="ui-dialog-bbar fn-clear">
+            <button type="reset" class="button-gray f-cancel">取消</button>
+        </div>
+    </div></script>

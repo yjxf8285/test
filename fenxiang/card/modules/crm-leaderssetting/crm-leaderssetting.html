@@ -1,0 +1,100 @@
+<!--标签列表模板-->
+<script type="text/html" class="leaders-setting-list-template">
+    <div class="leaders-settings-hd fn-clear">
+        <div class="l">
+            <span class="tit-name">在职同事</span><span class="count">共0个</span>
+        </div>
+        <div class="r">
+            <div class="search-warp"></div>
+        </div>
+    </div>
+    <div class="leaders-settings-more-fn fn-clear">
+        <div class="select-warp">更多操作</div>
+    </div>
+    <div class="leaders-settings-bd fn-clear">
+        <ul class="l leaders-settings-keyword-btn"> <li class="cur">全部</li> <li>A</li> <li>B</li> <li>C</li> <li>D</li> <li>E</li> <li>F</li> <li>G</li> <li>H</li> <li>I</li> <li>J</li> <li>K</li> <li>L</li> <li>M</li> <li>N</li> <li>O</li> <li>P</li> <li>Q</li> <li>R</li> <li>S</li> <li>T</li> <li>U</li> <li>V</li> <li>W</li> <li>X</li> <li>Y</li> <li>Z</li> </ul>
+        <div class="r leaders-settings-list-warp">
+            <ul class="leaders-setting-list">
+            ## if(value.employees.length ===0 ){ ##
+                ## if(isFirstChar){ ##
+                    <div class="nodata-tip">没有字母“{{keyWord}}”开头的同事</div>
+                    ## }else{ 
+                        if(keyWord.length==0){## 
+                                <div class="nodata-tip">还没有同事</div>
+                            ##}else{##
+                                <div class="nodata-tip">没有搜索到关键词为“{{keyWord}}”的同事</div>
+                            ##}##
+                ## } ##
+            ## }else{ ##
+                ## _.each(value.employees,function(item,index){ ##
+                <li class="leaders-setting-list-item" data-employeeid="{{item.employeeID}}" data-employeename="{{item.name}}">
+                    <div class="l">
+                        <img src="{{item.profileImage}}" alt="" class="item-img"/>
+                    </div>
+                    <div class="r item-con">
+                        <div class="item-names">
+                            <div class="item-employee-name">{{item.name}}</div>
+                            ## if(item.leader.employeeID!=0){ ##
+                            <div class="item-Leaders-name">上级：{{item.leader.name}}</div>
+                            ## } ##
+                            ## if(item.lowerCount!=0){ ##
+                            <div class="item-lower-name">共有{{item.lowerCount}}个下属</div>
+                            ## } ##
+                        </div>
+
+                    </div>
+                </li>
+                ## }); ##
+            ## } ##
+            </ul>
+        </div>
+    </div>
+    <div class="leaders-settings-fd fn-clear">
+        <!--分页-->
+        <div class="pagination-wrapper"></div>
+    </div>
+
+
+</script>
+
+<!--修改标签弹框模板-->
+<div class="dialog-modifyleader-template">
+    <div class="dialog-modifyleader-warp" style="padding-right: 22px;">
+        <div class="hd"><h1>设置<span class="my-name">xxx</span>的直接上下属</h1></div>
+        <div class="bd">
+            <div class="set-leader-warp fn-clear">
+                <div class="l">直接上级</div>
+                <div class="r">
+                    <ul class="leaders-setting-list fn-clear">
+                        <div class="leader-list-warp">
+                            <li class="leaders-setting-list-item">
+
+                            </li>
+                        </div>
+                    </ul>
+                    <div class="set-leader-tip">您可以<a class="set-leader-modify-btn" href="javascript:;">修改</a>或<a
+                            class="set-leader-unset-btn"
+                            href="javascript:;">不设置上级</a></div>
+                    <button class="button-blue set-leader-updatebtn button-state-disabled">保存</button>
+                </div>
+            </div>
+            <div class="set-lower-warp fn-clear">
+                <div class="l">直接下属</div>
+                <div class="r">
+                    <ul class="leaders-setting-list fn-clear">
+                        <li data-employeename="" data-employeeid="" class="leaders-setting-list-item add">
+                            <a class="tip select-colleague-lower-btn" href="javascript:;"> 点击选择下属 </a>
+                        </li>
+                        <div class="lower-list-warp">
+
+                        </div>
+                    </ul>
+                    <div class="lower-btn-warp"><button class="button-blue button-state-disabled set-lower-updatebtn">保存</button><span class="lowers-count">0人</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="fd">
+            <button class="button-cancel">取消</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+/**
+ * 纷享资源脚本
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+!function(a){var b="<li data-value='${name}'>${name}</li>";a.fn.atwho.View.prototype.create_view=function(){var b,c,d,e=this;return this.exist()?void 0:(d="<div class='tip'>轻敲空格完成输入</div>",c="<div id='"+this.id+"' class='at-view'>"+d+"<ul id='"+this.id+"-ul'></ul></div>",a("body").append(c),this.$el=a("#"+this.id),b=this.$el.find("ul"),b.on("mouseenter.view","li",function(c){return b.find(".cur").removeClass("cur"),a(c.currentTarget).addClass("cur")}).on("click",function(a){return a.stopPropagation(),a.preventDefault(),e.$el.data("_view").choose()}))},a.fn.atwho.View.prototype.render=function(c){var d,e,f=this;if(!a.isArray(c))return!1;this.clear(),this.$el.data("_view",this),d=this.$el.find("ul"),e=this.controller.get_opt("tpl",b),a.each(c,function(b,c){var g,h;return h=f.controller.callbacks("tpl_eval").call(f.controller,e,c),g=a(f.controller.callbacks("highlighter").call(f.controller,h,f.controller.query.text)),g.data("info",c),d.append(g)});var g=this.controller.get_opt("emptyTipTpl","轻敲空格完成输入"),h=this.controller.get_opt("withEmptyTip",!0);return this.$el.find(".tip").html(g),c.length<=0?h?this.$el.find(".tip").show():this.hide():(this.show(),this.$el.find(".tip").hide()),d.find("li:eq(0)").addClass("cur")}}(jQuery);

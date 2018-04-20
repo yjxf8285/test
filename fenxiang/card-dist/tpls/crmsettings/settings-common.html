@@ -1,0 +1,67 @@
+<script type="text/html" class="settings-tpl-left"><div class="bg-white card-border-rad">
+        <h4 class="rightc-title card-border-radtop">帐号设置</h4>
+        <ul class="settings-nav-list">
+            <li class="files-nav-item"><a href="#settings/personalsetting" class="tpl-nav-lb" notracenav="true">个人信息</a>
+            </li>
+            <li class="files-nav-item"><a href="#settings/resetpassword" class="tpl-nav-lb"
+                                          lightnav="#settings">修改密码</a></li>
+            <li class="files-nav-item"><a href="#settings/avatarsetting" class="tpl-nav-lb"
+                                          lightnav="#settings">修改头像</a></li>
+            <li class="files-nav-item"><a href="#settings/setleader" class="tpl-nav-lb fn-hide"
+                                          lightnav="#settings">设置上级</a></li>
+            <li class="files-nav-item"><a href="#settings/bindphone" class="tpl-nav-lb" lightnav="#settings">绑定手机</a>
+            </li>
+            <li class="files-nav-item"><a href="#settings/setupnodisturb" class="tpl-nav-lb"
+                                          lightnav="#settings">免打扰设置</a></li>
+            <li class="files-nav-item"><a href="#settings/personalclientconfig" class="tpl-nav-lb" lightnav="#settings">个性设置</a>
+            </li>
+            <li class="files-nav-item"><a href="#settings/planremindconfig" class="tpl-nav-lb" lightnav="#settings">日志提醒设置</a>
+            </li>
+            <li class="files-nav-item bind-email-l-wrapper fn-hide"><a href="#settings/boundexmail" class="tpl-nav-lb"
+                                                                       lightnav="#settings">绑定邮箱</a></li>
+        </ul>
+    </div></script><script type="text/html" class="crm-settings-left-tpl"><ul class="crm-settings-left-nav">
+        <li class="nav-item"><a href="#crmsettings/leaderssetting" class="tpl-nav-l" notracenav="true">同事上下级</a></li>
+        <li class="nav-item"><a href="#crmsettings/allcustomers" class="tpl-nav-l" lightnav="#settings/allcustomers">全部客户</a></li>
+        <li class="nav-item"><a href="#crmsettings/allcontacts" class="tpl-nav-l" lightnav="#settings/allcontacts">全部联系人</a></li>
+        <li class="nav-item"><a href="#crmsettings/unallocatedcustomers" class="tpl-nav-l" lightnav="#settings/unallocatedcustomers">未分配客户</a></li>
+        <li class="nav-item"><a href="#crmsettings/commoncustomers" class="tpl-nav-l" lightnav="#settings/commoncustomers">已归属客户</a></li>
+        <li class="nav-item"><a href="#crmsettings/highseas" class="tpl-nav-l nav-highseas" lightnav="#settings/highseas">公海客户</a></li>
+        <li class="label-manage-item nav-item"><a href="#crmsettings/businesstags" class="label-manage-l tpl-nav-l" lightmodel="ignore">标签管理</a>
+            <ul class="label-manage-list ul-list fn-hide">
+                ## _.each(tagData,function(itemData){ ##
+                <li class="label-nav-item"><a href="#crmsettings/businesstags/=/tagtype-{{itemData.tagType}}" class="label-item-l">{{itemData.tagName}}</a></li>
+                ## }); ##
+            </ul>
+        </li>
+        <li class="nav-item"><a href="javascript:;" class="label-salesstage-l  tpl-nav-l" lightnav="#crmsettings/leaderssetting">销售阶段设置</a></li>
+        <li class="label-manage-item nav-item"><a href="#crmsettings/userdefinefield" class="user-define-field-l tpl-nav-l" lightmodel="ignore">自定义字段管理</a>
+            <ul class="user-define-field-list ul-list fn-hide">
+                ## _.each(userDefineFieldData,function(itemData){ ##
+                <li class="label-nav-item">
+                    <a href="#crmsettings/userdefinefield/=/tagtype-{{itemData.tagType}}" class="label-item-l">{{itemData.tagName}}</a>
+                </li>
+                ## }); ##
+            </ul>
+        </li>
+    </ul></script><script type="text/html" class="crm-salesstagedialog-tpl"><div class="crm-salesstagedialog-warp">
+        <h1 class="tit">销售阶段设置</h1>
+        <table class="salesstagedialog-table">
+            <thead>
+                <th>启用</th>
+                <th>销售阶段名称</th>
+                <th>赢率 （%）</th>
+            </thead>
+            <tbody>
+                <tr data-salesstageno="1">
+                    <td><div class="mn-checkbox-box checkbox-for-comtable">&nbsp;&nbsp;<span class="mn-checkbox-item" data-value="ture"></span> </div></td>
+                    <td><input type="text" class="textfield" value="阿道夫"></td>
+                    <td><input type="text" class="textfield" value="10"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="fn-warp">
+            <button class="button-submit" style="margin-right: 6px;">保存</button>
+            <button class="button-cancel">关闭</button>
+        </div>
+    </div></script>

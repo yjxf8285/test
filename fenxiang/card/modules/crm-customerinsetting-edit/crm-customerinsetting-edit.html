@@ -1,0 +1,138 @@
+<div class="dialog-customerinsetting-template">
+    <div class="dialog-create-warp fn-clear crm-customerinsetting-edit" style="position: relative;">
+        <div class="l" style="width: 170px;position: absolute;">
+            <ul class="left-list">
+                <li class="base-info">基本资料</li>
+                <li class="unselected customer-modify-record-wrapper-btn" style="border-top: none;">修改记录</li>
+                <li class="unselected customer-owner-history-wrapper-btn" style="border-top: none;">归属人历史</li>
+            </ul>
+        </div>
+        <div class="r">
+            <div class="fn-warp button-wrapper">
+                <button class="crm-button-cancel dialog-button-back fn-hide">返回</button>
+                <button class="crm-button-cancel dialog-button-close">关闭</button>
+                <button class="crm-button-cancel dialog-button-edit" >编辑</button>
+                <button class="crm-button-submit dialog-button-submit fn-hide">保存</button>
+                <button class="crm-button-cancel dialog-button-cancel fn-hide" >取消</button>
+            </div>
+            <div class="customer-view-wrapper">
+                <ul class="right-list bg-green">
+                    <li class="fn-clear">
+                        <span class="owner-name-wrapper ">归属人11</span>
+                        <span class="buttons-wrapper" style="float: right;margin: 10px;">
+                            <button class="crm-button-cancel follow-time fn-hide">延期</button>
+                            <button class="crm-button-cancel owner-edit-btn fn-hide">修改归属人</button>
+                            <button class="crm-button-cancel owner-cancel-btn fn-hide">取消归属人</button>
+                            <button class="crm-button-cancel owner-set-btn fn-hide">设置归属人</button>
+                            <button class="crm-button-cancel move-highseas-btn fn-hide">移动到公海</button>
+                            <button class="crm-button-cancel follow-edit-btn fn-hide">修改跟进人</button>
+                            <button class="crm-button-cancel follow-cancel-btn fn-hide">取消跟进人</button>
+                            <button class="crm-button-cancel follow-set-btn fn-hide">设置跟进人</button>
+                            <button class="crm-button-cancel follow-get">领取</button>
+                        </span>
+                    </li>
+                </ul>
+                <ul class="right-list">
+                    <li>
+                        <div class="one-column fullName" style="word-wrap: break-word;"></div>
+                    </li>
+                    <li class="fn-clear">
+                        <div class="inputs-tit">简称</div>
+                        <div class="input-warp">
+                            <div class="long-view-text name"></div>
+                        </div>
+                    </li>
+                    <li class="fn-clear">
+                        <div class="inputs-tit">编号</div>
+                        <div class="input-warp">
+                            <div class="long-view-text number"></div>
+                        </div>
+                    </li>
+                    <li class="fn-clear">
+                        <div class="inputs-tit">地址</div>
+                        <div class="input-warp">
+                            <div class="long-view-text address"></div>
+                        </div>
+                    </li>
+                    <li class="fn-clear">
+                        <div class="inputs-tit">网址</div>
+                        <div class="input-warp">
+                            <div class="long-view-text webSite"></div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="right-list">
+                    <li class="fn-clear customer-infos-li">
+                        <div class="inputs-tit"></div>
+                        <div class="input-warp">
+                            <div class="long-view-text customer-status"></div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="right-list">
+                    <li class="fn-clear">
+                        <div class="inputs-tit">简介</div>
+                        <div class="input-warp">
+                            <div class="long-view-text introduction"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="customer-edit-wrapper fn-hide">
+                <ul class="right-list">
+                    <li class="fn-clear">
+                        <div class="inputs-tit">全称</div>
+                        <div class="input-warp">
+                            <input class="dialog-input-text fullName" placeholder="请填写客户全称"/>
+                        </div>
+                    </li>
+                    <li class="fn-clear">
+                        <div class="inputs-tit">简称<span class="red">*</span></div>
+                        <div class="input-warp">
+                            <input class="dialog-input-text name" placeholder="请填写客户简称"/>
+                        </div>
+                    </li>
+                    <li class="fn-clear">
+                        <div class="inputs-tit">编号</div>
+                        <div class="input-warp">
+                            <input class="dialog-input-text number" placeholder="请填写客户编号"/>
+                        </div>
+                    </li>
+                    <li class="fn-clear">
+                        <div class="inputs-tit">地址</div>
+                        <div class="input-warp">
+                            <input class="dialog-input-text address" placeholder="请填写联系地址"/>
+                        </div>
+                    </li>
+                    <li class="fn-clear">
+                        <div class="inputs-tit">网址</div>
+                        <div class="input-warp">
+                            <input class="dialog-input-text webSite" placeholder="请填写网址"/>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="right-list customer-tags-list-warp"></ul>
+                <ul class="right-list customer-define-fields-list-warp fn-hide"></ul>
+                <ul class="right-list">
+                    <li class="fn-clear">
+                        <div class="inputs-tit">简介</div>
+                        <div class="input-warp">
+                            <textarea class="area-auto-height introduction" placeholder="请填写客户简介" style="height: 100px;"></textarea>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="customer-modify-record-wrapper fn-hide">
+            </div>
+            <div class="customer-owner-history-wrapper fn-hide">
+                <div class="history-inner"></div>
+                <div class="fn-clear">
+                    <div class="fn-right">
+                        <a href="javascript:;" class="page-button prev-page page-btn-disabled">上一页</a>
+                        <a href="javascript:;" class="page-button next-page">下一页</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

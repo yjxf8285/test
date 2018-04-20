@@ -1,0 +1,42 @@
+<!-- 提醒FEED主列表模板 -->
+<script type="text/html" class="feed-list-myremind">
+    ##_.each(value.timingMessageRemainds,function(timingMessageRemaind){##
+    <div class="list-item fn-clear card-border-rad fs-feed-item">
+        <div class="fs-list-item">
+            <div class="feed-main-warp">
+                <div class="item-face vote">
+                    <img src="../../html/card/assets/images/alert_icon.png"
+                         class="voteico-img"/>
+                </div>
+                <div class="item-detail detail-vote">
+                    <div class="item-info">
+                        <div class="item-name vote-info">
+                            <div class="rc-time">{{timingMessageRemaind.remaindTime}}</div>
+                            ##if(timingMessageRemaind.sourceEmployee){##
+                            <div>
+                                来自<a class="" href="#profile/=/empid-{{timingMessageRemaind.sourceEmployee.employeeID}}">{{timingMessageRemaind.sourceEmployee.name}}</a>的{{timingMessageRemaind.subTypeDescription}}：“<a
+                                    href="#stream/showfeed/=/id-{{timingMessageRemaind.dataID}}">{{timingMessageRemaind.sourceMessage}}</a>”
+                            </div>
+                            ## }##
+                        </div>
+                    </div>
+                    <!-- FEED内容 -->
+                    <div class="item-text">
+                        <div class="content"></div>
+                        <!--{{timingMessageRemaind.remaindTime}}：-->
+                        {{timingMessageRemaind.message}}
+                    </div>
+                    <!-- item function -->
+                    <div class="item-func vote fn-clear">
+                        <span class="item-func-left {{timingMessageRemaind.hideCreator}}">该提醒由<a class="" href="#profile/=/empid-{{timingMessageRemaind.creator.employeeID}}">{{timingMessageRemaind.creator.name}}</a>为我创建</span>
+                        <div class="handle">
+                            <a href="javascript:;" class="aj-myremind-delete"
+                               data-listid="{{timingMessageRemaind.trimingMessageRemaindID}}"> 删除</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    ## });##
+</script>

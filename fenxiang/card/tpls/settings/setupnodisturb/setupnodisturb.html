@@ -1,0 +1,64 @@
+<div id="settings-setupnodisturb" class="tpl settings" tplname="settings-setupnodisturb" js="true" css="tpls/settings/settings-common.css" iscached="false">
+
+	<!-- 三列式 自适应宽度 -->
+    <div class="tpl-l">
+       <div class="tpl-inner">
+			&nbsp;
+       </div>
+    </div>
+    
+    <div class="tpl-c">
+        <div class="tpl-inner">
+        	
+            <section class="settings-wraper bg-white card-border-rad">
+                <!--<ul class="swtab-list fn-clear"></ul>-->
+                <h4 class="settings-c-title">免打扰设置</h4>
+                <div class="sw-main">
+            	
+                    <div class="setupnodisturb-wraper">
+                        <table>
+                            <tr><td colspan="3" height="80" style="height:60px;text-align:left;"><input type="checkbox" id="setupnodisturb-open" /> 启用消息免打扰功能</td></tr>
+                            
+                            <tbody class="setupnodisturb-main-tpl fn-hide">
+                                <tr>
+                                    <td class="head-time" style="border-left:#e6e6e6 solid 1px;width:150px;">开始时间</td>
+                                    <td class="head-time" style="width:40px;text-align:right;">至</td>
+                                    <td class="head-time" style="border-right:#e6e6e6 solid 1px;">结束时间</td>
+                                </tr>
+                                <tr>
+                                    <td class="start-radios cen-rad" style="border-left:#e6e6e6 solid 1px;">
+                                        <label><input type="radio" id="start-time-a" name="start_time" value="22" class="start-time" /> 当日 22：00 </label><br/>
+                                        <label><input type="radio" id="start-time-b" name="start_time" value="23" checked="checked" class="start-time" /> 当日 23：00 </label><br/>
+                                        <label><input type="radio" id="start-time-c" name="start_time" value="00" class="start-time" /> 当日 00：00 </label>
+                                    </td>
+                                    <td class="cen-rad"></td>
+                                    <td class="end-radios cen-rad" style="border-right:#e6e6e6 solid 1px;">
+                                        <label><input type="radio" id="end-time-a" name="end_time" value="6" class="end-time" /> 次日 6：00 </label><br/>
+                                        <label><input type="radio" id="end-time-b" name="end_time" value="7" checked="checked" class="end-time" /> 次日 7：00 </label><br/>
+                                        <label><input type="radio" id="end-time-c" name="end_time" value="8" class="end-time" /> 次日 8：00 </label>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                        
+                        <div class="se-time-wraper setupnodisturb-main-tpl fn-hide">
+                            每日夜间<span class="s-time-text">23</span>点至次日早晨<span class="e-time-text">7</span>点，将不会收取到系统发送的信息。
+                        </div>
+                        
+                        <div class="">
+                            <button class="setupnodisturb-btn save-success-btn button-green">保存</button>
+                            <div class="save-success-wraper"><div class="save-success-apv">保存成功</div></div>
+                        </div>
+                        
+                    </div>
+                    
+                    
+ 
+                </div>
+            </section>
+            
+        </div>
+    </div>
+    
+</div>

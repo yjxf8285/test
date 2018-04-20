@@ -1,0 +1,153 @@
+<script type="text/html" class="app-reportsetting-rules-tpl">
+    <dl class="rules-table">
+        <dd class="fn-clear">
+            <div class="rules-table-left"><label>设置周期：</label></div>
+            <div class="rules-table-right" style="display: inline;">
+                <div class="mn-checkbox-box select-date-week">
+                    <span class="label-for"><span class="mn-checkbox-item {{isAllday}} select-allweek"
+                                                  data-value="8"></span><label>全选</label></span>
+                    <span class="week-item">
+                    <span class="label-for"><span class="mn-checkbox-item {{isMonday}} data-monday"
+                                                  data-value="{{isMondayValue}}"></span><label>周一</label></span>
+                    <span class="label-for"><span class="mn-checkbox-item {{isTuesday}} data-tuesday"
+                                                  data-value="{{isTuesdayValue}}"></span><label>周二</label></span>
+                    <span class="label-for"><span class="mn-checkbox-item {{isWednesday}} data-wednesday"
+                                                  data-value="{{isWednesdayValue}}"></span><label>周三</label></span>
+                    <span class="label-for"><span class="mn-checkbox-item {{isThursday}} data-thursday"
+                                                  data-value="{{isThursdayValue}}"></span><label>周四</label></span>
+                    <span class="label-for"><span class="mn-checkbox-item {{isFriday}} data-friday"
+                                                  data-value="{{isFridayValue}}"></span><label>周五</label></span>
+                    <span class="label-for"><span class="mn-checkbox-item {{isSaturday}} data-saturday"
+                                                  data-value="{{isSaturdayValue}}"></span><label>周六</label></span>
+                    <span class="label-for"><span class="mn-checkbox-item {{isSunday}} data-sunday"
+                                                  data-value="{{isSundayValue}}"></span><label>周日</label></span>
+                    </span>
+                </div>
+            </div>
+        </dd>
+        <dd class="fn-clear">
+            <div class="rules-table-left"><label>报表时间：</label></div>
+            <div class="rules-table-right">
+                <label>报表日</label>
+                <span select-cls="crm-select-list-short" class="mn-select-box crm-select-list-short data-senddeadline">
+                    <span class="mn-select-title-wrapper">
+                        <span class="mn-select-title" style="width: 72px;">{{sendDeadline}}</span>
+                        <span class="title-icon"></span>
+                        <ul class="mn-select-list">
+                            ## for(var i=1;i<24;i++){ ##
+                            <li class="mn-select-item" data-value="{{i+1}}">{{i}}:00</li>
+                            ## } ##
+                        </ul>
+                    </span>
+                </span>
+                <label>前，可以上报数据</label>
+            </div>
+            <div class="data-senddeadline-tip">提示：报表日 <span class="report-data-time">{{sendDeadline}}</span>
+                汇总当日数据，生成报表。
+            </div>
+        </dd>
+        <dd class="fn-clear border-top">
+            <div class="l">
+                <div class="rules-table-left"><label>提醒上报：</label></div>
+                <div class="rules-table-right">
+                    <label>报表日</label>
+                           <span select-cls="crm-select-list-short"
+                                 class="mn-select-box crm-select-list-short data-sendremindertime">
+                               <span class="mn-select-title-wrapper">
+                                   <span class="mn-select-title" style="width: 72px;">{{sendReminderTime}}</span>
+                                   <span class="title-icon"></span>
+                                   <ul class="mn-select-list">
+                                       ## for(var i=0;i<24;i++){ ##
+                                       <li class="mn-select-item" data-value="{{i+1}}">{{i}}:00</li>
+                                       ## } ##
+                                   </ul>
+                               </span>
+                           </span>
+                    <ul class="rules-remendlis mn-checkbox-box data-sendremindertypelist">
+                        <li><span class="label-for"><span class="mn-checkbox-item {{sendReminderTimea}}"
+                                                          data-value="1"></span><label>手机客户端与PC端提醒</label><span
+                                class="tip-text">内部上报人</span></span></li>
+                        <li><span class="label-for"><span class="mn-checkbox-item {{sendReminderTimeb}}"
+                                                          data-value="2"></span><label>微信提醒</label><span
+                                class="tip-text">外部上报人</span></span>
+                        </li>
+                        <li><span class="label-for"><span class="mn-checkbox-item {{sendReminderTimec}}"
+                                                          data-value="4"></span><label>邮件提醒</label></span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="r">
+                <div class="rules-table-left"><label>提醒查看：</label></div>
+                <div class="rules-table-right">
+                    <label>报表日</label>
+                            <span select-cls="crm-select-list-short"
+                                  class="mn-select-box crm-select-list-short data-viewingdeadline">
+                                <span class="mn-select-title-wrapper">
+                                    <span class="mn-select-title" style="width: 72px;">{{viewingDeadline}}</span>
+                                    <span class="title-icon"></span>
+                                    <ul class="mn-select-list">
+                                        ## for(var i=0;i<24;i++){ ##
+                                        <li class="mn-select-item" data-value="{{i+1}}">{{i}}:00</li>
+                                        ## } ##
+                                        ## for(var i=0;i<24;i++){ ##
+                                        <li class="mn-select-item" data-value="{{i+25}}">次日{{i}}:00</li>
+                                        ## } ##
+                                    </ul>
+                                </span>
+                            </span>
+                    <ul class="rules-remendlis mn-checkbox-box data-viewingremindertypelist">
+                        <li><span class="label-for"><span class="mn-checkbox-item {{viewingReminderTypeLista}}"
+                                                          data-value="1"></span><label>手机客户端与PC端提醒</label></span></li>
+                        <!--<li><span class="label-for"><span class="mn-checkbox-item {{viewingReminderTypeListb}}"-->
+                        <!--data-value="2"></span><label>微信提醒</label>&lt;!&ndash;<span class="tip-text">会产生费用</span>&ndash;&gt;
+                        </span>-->
+                        <!--</li>-->
+                        <li><span class="label-for"><span class="mn-checkbox-item {{viewingReminderTypeListc}}"
+                                                          data-value="4"></span><label>邮件提醒</label></span></li>
+                    </ul>
+                </div>
+            </div>
+        </dd>
+
+
+        <dd class="fn-clear border-top">
+            <div class="rules-table-left"><label>审核设置：</label></div>
+            <div class="rules-table-right">
+                <div class="mn-checkbox-box select-isneedapprove data-isneedapprove">
+                    <span class="label-for"><span class="mn-checkbox-item  {{isNeedApprove}} select-isneedapprove-btn"
+                                                  data-value="1"></span><label>开启</label><span class="tip-text">上报人补报或修改历史数据，需经过以下审核人审核，审核通过后生效</span></span>
+                </div>
+                <div class="fn-clear"></div>
+
+                <div class="fn-warp">
+                    <div class="fn-btn-warp">
+                        <ul class="report-pics-warp fn-clear">
+                            <li>
+                                <div class="img add-auditor-btn">+</div>
+                                <div class="tit">审核人</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="fn-list-warp fn-hide">
+                        <div class="report-tb-box">
+                            <table class="report-tb">
+                                <thead>
+                                <tr>
+                                    <th width="76">序号</th>
+                                    <th width="106">姓名</th>
+                                    <th width="106">手机</th>
+                                    <th width="188">职位</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </dd>
+    </dl>
+</script>

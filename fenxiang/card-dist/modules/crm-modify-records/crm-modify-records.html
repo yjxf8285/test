@@ -1,0 +1,45 @@
+<script class="crm-modifyrecords-tpl" type="text/html"><div class="crm-modify-records-container">
+	<div class="fn-clear modify-records border-bottom">
+        <div class="fn-left">
+            <h1>修改记录</h1>
+        </div>
+    </div>
+    <div class="modify-records-options">
+    	<a class="options-btn btn-left ##if(records[0].selected){## btn-disabled ##}##" href="#" onclick="return false;"></a>
+		<div class="mn-select-box crm-modify-records-select" select-cls="crm-modify-records-select">
+       		<span class="mn-select-title-wrapper"><span class="mn-select-title">{{snapShotTitle}}</span><span class="title-icon"></span></span>
+        	<ul class="mn-select-list">
+				## for (var i=0,len=records.length; i<len; i++) {##
+					<li class="mn-select-item" data-value="{{records[i].snapshotID}}" ##if(records[i].selected){## data-selected="true" ##}##>{{records[i].title}}</li>
+				## };##
+        	</ul>
+    	</div>
+    	<a class="options-btn btn-right ##if(records[records.length-1].selected){## btn-disabled ##}##" href="#" onclick="return false;"></a>
+		<a class="options-btn btn-back" href="#" onclick="return false;">恢复此记录</a>
+    </div> 
+	<div class="modify-records-content content-main" ##if(main.length==0){## style="display:none;" ##};##>
+		## for (var i=0,len=main.length; i<len; i++) {##
+				<div class="record-item ##if(main[i].state){## item-{{main[i].state}} ##};## ##if(i==len-1){## item-last ##};##"><div class="item-title">{{main[i].name}}</div><div class="item-content"><p class="old">{{main[i].value0}}</p><p class="new">{{main[i].value1}}</p></div></div>
+		## };##
+	</div>
+	<div class="modify-records-content content-other" ##if(other.length==0){## style="display:none;" ##};##>
+		## for (var i=0,len=other.length; i<len; i++) {##
+				<div class="record-item ##if(other[i].state){## item-{{other[i].state}} ##};## ##if(i==len-1){## item-last ##};##"><div class="item-title">{{other[i].name}}</div><div class="item-content"><p class="old">{{other[i].value0}}</p><p class="new">{{other[i].value1}}</p></div></div>
+		## };##
+	</div>
+	<div class="modify-records-content content-phone" ##if(phone.length==0){## style="display:none;" ##};##>
+		## for (var i=0,len=phone.length; i<len; i++) {##
+				<div class="record-item ##if(phone[i].state){## item-{{phone[i].state}} ##};## ##if(i==len-1){## item-last ##};##"><div class="item-title">{{phone[i].name}}</div><div class="item-content"><p class="old">{{phone[i].value0}}</p><p class="new">{{phone[i].value1}}</p></div></div>
+		## };##
+	</div>
+	<div class="modify-records-content content-addr" ##if(addr.length==0){## style="display:none;" ##};##>
+		## for (var i=0,len=addr.length; i<len; i++) {##
+				<div class="record-item ##if(addr[i].state){## item-{{addr[i].state}} ##};## ##if(i==len-1){## item-last ##};##"><div class="item-title">{{addr[i].name}}</div><div class="item-content"><p class="old">{{addr[i].value0}}</p><p class="new">{{addr[i].value1}}</p></div></div>
+		## };##
+	</div>
+	<div class="modify-records-content content-desc" ##if(desc.length==0){## style="display:none;" ##};##>
+		## for (var i=0,len=desc.length; i<len; i++) {##
+				<div class="record-item ##if(desc[i].state){## item-{{desc[i].state}} ##};## ##if(i==len-1){## item-last ##};##"><div class="item-title">{{desc[i].name}}</div><div class="item-content"><p class="old">{{desc[i].value0}}</p><p class="new">{{desc[i].value1}}</p></div></div>
+		## };##
+	</div>
+</div></script>

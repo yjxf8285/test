@@ -1,0 +1,96 @@
+.m-edite-bg {
+    .img-retina("@{image-base-url}/bg.png", "@{image-base-url}/bg.retina.png", 250px, 106px);
+}
+// 编辑模块
+.m-edite {
+    
+    // 编辑列表
+    .edite-list {
+        padding: 0 10px;
+        background-color: #fff;
+        border-bottom: 1px solid #d3d3d3;
+        li {
+            padding: 15px 5px;
+            border-bottom: 1px solid #d3d3d3;
+            line-height: 24px;
+            overflow: hidden;
+            position: relative;
+            &:last-child {
+                border-bottom: none;
+            }
+            &.layers-select {
+                span {
+                    color: #2294fc;
+                }
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 18px;
+                    height: 18px;
+                    position: absolute;
+                        top: 19px;
+                        right:6px;
+                    &:extend(.m-edite-bg);
+                    background-position: -196px -30px;                    
+                }
+            }
+            span {
+                display: inline-block;
+                width: 52%;
+                padding-right: 8px;
+                word-wrap: break-word;
+                word-break: break-all;
+                vertical-align: middle;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            em {
+                color: #999;
+                font-weight: normal;
+            }
+            input {
+                width: 48%;
+                height: 24px;
+                border: none;
+                text-align: right;
+                vertical-align: middle;
+                background-color: #fff;
+            }
+        }
+    }
+    
+    // 底部区域
+    .footer {
+        display: none;
+        width: 100%;
+        height: 45px;
+        line-height: 45px;
+        position: fixed;
+        bottom: 0; left: 0;
+        background-color: #eee;
+        border-top: 1px solid #d3d3d3;
+        overflow:hidden;
+        span {
+            float: left;
+            text-align: center; 
+            cursor: pointer;  
+        }
+        .del {
+            width: 54%;
+            border-left: 1px solid #d3d3d3;
+            border-right: 1px solid #d3d3d3;
+            -webkit-box-sizing: border-box;
+            color: #f64744;
+            font-sizing: 110%;
+        }
+        .center, .back {
+            width: 23%;
+        }
+        .center {
+            color: #2294fc;
+        }
+        .back {
+            color: #777980;
+        }
+    }
+}

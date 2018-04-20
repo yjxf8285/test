@@ -1,0 +1,51 @@
+{
+    "success": true,
+    "value": {
+        "inCircleEmployeeIDs": [123456, 10, 123456, 10,123456, 10,123456, 10,123456, 10,123456, 10,123456, 10,123456, 10,123456, 10,123456, 10,123456, 10,123456, 10,123456, 10,123456, 10,123456, 10,123456, 10,123456, 10],
+        "scheduleDates": [
+            {
+                "creatorID": 10,
+                "startTime": "1368673692"
+            }
+        ],
+        "thisCircle": {
+            "circleID": 1,
+            "name": "G2开通2355",
+            "memberCount": 200
+        },
+        "toDoList": [
+            {
+                "createTime": 1368662400,
+                "creatorID": 1,
+                "creatorName": "Lucy",
+                "employeeID": [1, 123456],
+                "feedID": 13,
+                "feedType": "plan",
+                "isCompleted": true,
+                "isImportant": true,
+                "title": "第三方扣篮打算发生的克",
+                "workToDoListID": 1
+            },{
+                "createTime": 1368662400,
+                "creatorID": 1,
+                "creatorName": "Lucy",
+                "employeeID": [1, 123456],
+                "feedID": 13,
+                "feedType": "plan",
+                "isCompleted": true,
+                "isImportant": true,
+                "title": "第三方扣篮打算发生的克",
+                "workToDoListID": 2
+            }
+        ],
+        "votes": [
+            {
+                "title": "发钱了",
+                "voteEmpCount": "1000"
+            },{
+                "title": "发钱了",
+                "voteEmpCount": "1000"
+            }
+        ]
+    }
+}

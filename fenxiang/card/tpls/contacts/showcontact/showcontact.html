@@ -1,0 +1,299 @@
+<div id="contacts-showcontact" class="crm-tpl showcontract crm-inner crm-detail-inner fs-tpl-active" tplname="contacts-showcontact" tpltitle="纷享销客平台-联系人详情"
+     js="true" css="true"
+     iscached="false" data-lighted="crm|contacts">
+
+
+<div class="crm-detail-content">
+<div>
+    <button class="crm-button-back">返回</button>
+</div>
+<!--头部-->
+<div class="crm-detail-tab">
+    <h1 class="hd-titname"></h1>
+
+    <div class="toolbar fn-clear">
+        <!--左侧功能-->
+        <div class="fn-left">
+<div class="isbatch-warp">尚未关联到客户</div>
+        </div>
+        <!--右侧功能-->
+        <div class="fn-right">
+            <div class="detail-edit-btns">
+                <button class="crm-button-modify create-btn fn-hide">创建客户</button>
+                <button class="crm-button-modify batchcombinecontactandfcustomer-btn fn-hide">关联客户</button>
+                <button class="crm-button-modify uncombinecontactandfcustomer-btn fn-hide">取消关联客户</button>
+                <button class="crm-button-modify modify-btn fn-hide">编辑</button>
+                <button class="crm-button-delete delete-btn fn-hide" style="margin-left: 6px;">删除</button>
+            </div>
+        </div>
+
+    </div>
+    <!--TAB菜单-->
+    <div class="tab-menu"></div>
+</div>
+<!--身体-->
+<div class="crm-detail-bd">
+    <!--时间线-->
+    <div class="tab-time-line-box">
+        <div class="left-inner left-warp flaot-left-menu">
+            <div class="base-box">
+                <div class="left-name-tit jdata-customername"></div>
+                <ul class="base-box-bd">
+                    <li class="fn-clear"><span class="input-tip">职务</span>
+
+                        <div class="input-wrapper jdata-post"></div>
+                    </li>
+                    <li class="fn-clear"><span class="input-tip">部门</span>
+
+                        <div class="input-wrapper jdata-department"></div>
+                    </li>
+
+                </ul>
+            </div>
+            <!--名片-->
+            <div class="base-box contacts-card-box fn-hide">
+                <div class="base-box-hd border-bottom fn-clear">
+                    <div class="fn-left">
+                        <h1 class="">名片</h1>
+                    </div>
+                    <div class="fn-right">
+                    </div>
+                </div>
+                <div class="base-box-bd contacts-card-container">
+                    <div class="contacts-card-container-box">
+                        <img src="" class="contacts-card-image"/>
+                    </div>
+                </div>
+            </div>
+            <div class="base-box">
+                <div class="base-box-hd border-bottom fn-clear">
+                    <div class="fn-left">
+                        <h1 class="">联系方式</h1>
+                    </div>
+                    <div class="fn-right">
+                    </div>
+                </div>
+                <div class="base-box-bd contactwayobject-warp">
+
+                </div>
+            </div>
+
+            <div class="l-files-warp crm-attachment-simple-warp">
+            </div>
+        </div>
+        <div class="right-warp">
+            <div class="feed-submit-box-warp">
+            </div>
+            <!--feed类型筛选-->
+            <div class="feed-tabs">
+                <div class="feed-tabs-hd">
+                    <label class="search-wrap">
+                        <input type="text" class="search-inp" placeholder="搜索信息" maxlength="100" /><button class="search-btn"></button>
+                    </label>
+                    <ul class="ui-switchable-nav ui-tab-items tag_wrap">
+                        <li class="feed-main-item ui-tab-item ui-tab-item-current"><a href="javascript:;"
+                                                                                      class="fs-prevent-default">全部</a>
+                        </li>
+                        <li class="feed-main-item ui-tab-item"><a href="javascript:;" class="fs-prevent-default">分享</a>
+                        </li>
+                        <li class="feed-main-item ui-tab-item"><a href="javascript:;" class="fs-prevent-default">日志</a>
+                        </li>
+                        <li class="feed-main-item ui-tab-item"><a href="javascript:;" class="fs-prevent-default">指令</a>
+                        </li>
+                        <li class="feed-main-item ui-tab-item"><a href="javascript:;" class="fs-prevent-default">审批</a>
+                        </li>
+                        <li class="feed-main-item ui-tab-item"><a href="javascript:;"
+                                                                  class="fs-prevent-default">销售记录</a></li>
+                    </ul>
+                </div>
+                <div class="ui-switchable-content">
+                    <!-- 全部:0,分享:1,日志:2,指令:3,审批:4,销售记录:5 -->
+                    <div class="feed-main-panel ui-tab-panel" feedtype="0" feedname="all">
+                        <div class="crm-feed-list-warp"></div>
+                        <div class="feed-list-pagination"></div>
+                    </div>
+                    <div class="feed-main-panel ui-tab-panel" feedtype="1" feedname="share">
+                        <div class="crm-feed-list-warp"></div>
+                        <div class="feed-list-pagination"></div>
+                    </div>
+                    <div class="feed-main-panel ui-tab-panel" feedtype="2" feedname="plan">
+                        <div class="crm-feed-list-warp"></div>
+                        <div class="feed-list-pagination"></div>
+                    </div>
+                    <div class="feed-main-panel ui-tab-panel" feedtype="3" feedname="work">
+                        <div class="crm-feed-list-warp"></div>
+                        <div class="feed-list-pagination"></div>
+                    </div>
+                    <div class="feed-main-panel ui-tab-panel" feedtype="4" feedname="approve">
+                        <div class="crm-feed-list-warp"></div>
+                        <div class="feed-list-pagination"></div>
+                    </div>
+                    <div class="feed-main-panel ui-tab-panel" feedtype="9998" feedname="salesrecord">
+                        <div class="crm-feed-list-warp"></div>
+                        <div class="feed-list-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--基本信息-->
+    <div class="tab-base-info-box">
+        <div class="crm-detail-bd-baseinfo">
+            <div class="fn-clear baseinfo-hd border-bottom">
+                <div class="fn-left">
+                    <h1>基本信息</h1>
+                </div>
+                <div class="fn-right">
+                    <a class="modify-btn" href="javascript:;">编辑</a>
+                </div>
+            </div>
+            <div class="fn-clear baseinfo-bd">
+                <div class="left-inner">
+                    <ul class="baseinfo-module border-bottom">
+                        <li class="fn-clear">
+                            <span class="input-tip">姓名</span>
+
+                            <div class="input-wrapper jdata-name"></div>
+                        </li>
+                        <li class="fn-clear">
+                            <span class="input-tip">职务</span>
+
+                            <div class="input-wrapper jdata-post"></div>
+                        </li>
+                        <li class="fn-clear">
+                            <span class="input-tip">部门</span>
+
+                            <div class="input-wrapper jdata-department"></div>
+                        </li>
+                        <li class="fn-clear">
+                            <span class="input-tip">公司</span>
+
+                            <div class="input-wrapper jdata-company"></div>
+                        </li>
+                        <li class="fn-clear">
+                            <span class="input-tip">网址</span>
+
+                            <div class="input-wrapper jdata-website"></div>
+                        </li>
+
+                    </ul>
+
+                    <ul class="baseinfo-module border-bottom contactwayobject-warp-baseinfo">
+
+                    </ul>
+                    <ul class="baseinfo-module border-bottom addressobject-warp">
+
+                    </ul>
+
+                    <ul class="baseinfo-module border-bottom birthday-warp">
+
+                    </ul>
+
+                    <ul class="border-bottom baseinfo-module product-fbusinesstagrelations">
+
+                    </ul>
+
+                    <ul class="border-bottom baseinfo-module contact-define-field-tag-ul">
+                    </ul>
+
+
+                    <ul class="baseinfo-module">
+                        <li class="fn-clear"><span class="input-tip">备注</span>
+
+                            <div class="input-wrapper-nofloat jdata-remark"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-inner">
+                    <ul class="baseinfo-module">
+                        <li class="fn-clear">
+                            <span class="input-tip">归属人</span>
+
+                            <div class="input-wrapper jdata-creatorname"></div>
+                        </li>
+
+                        <li class="fn-clear">
+                            <span class="input-tip">创建时间</span>
+
+                            <div class="input-wrapper jdata-createtime"></div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--共享联系人-->
+    <div class="tab-share-contact-box">
+    </div>
+    <!--客户信息-->
+    <div class="tab-customer-info-box">
+        <div class="crm-detail-bd-baseinfo">
+            <div class="fn-clear baseinfo-hd border-bottom">
+                <div class="fn-left">
+                    <h1>客户信息</h1>
+                </div>
+                <div class="fn-right">
+
+                </div>
+            </div>
+            <div class="nocustomer-info-warp">暂无相关客户，您可以立即<a class="create-btn" href="javascript:;">创建客户</a> 或 <a
+                    class="batchcombinecontactandfcustomer-btn" href="javascript:;">关联客户</a></div>
+            <div class="fn-clear baseinfo-bd havecustomer-info-warp">
+                <div class="left-inner">
+                    <ul class="baseinfo-module border-bottom">
+                        <li class="fn-clear">
+                            <span class="input-tip">全称</span>
+
+                            <div class="input-wrapper jdata-customer-fullname"></div>
+                        </li>
+                        <li class="fn-clear">
+                            <span class="input-tip">简称</span>
+
+                            <div class="input-wrapper jdata-customer-name"></div>
+                        </li>
+                        <li class="fn-clear">
+                            <span class="input-tip">地址</span>
+
+                            <div class="input-wrapper jdata-customer-address"></div>
+                        </li>
+                        <li class="fn-clear">
+                            <span class="input-tip">网址</span>
+
+                            <div class="input-wrapper jdata-customer-website"></div>
+                        </li>
+
+
+                    </ul>
+
+
+                    <ul class="border-bottom baseinfo-module customerfbusinesstagrelations">
+
+                    </ul>
+
+                    <ul class="baseinfo-module">
+                        <li class="fn-clear"><span class="input-tip">简介</span>
+
+                            <div class="input-wrapper-nofloat jdata-customer-introduction"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-inner">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--修改记录-->
+    <div class="tab-modify-records-box crm-modifyrecords-wrap" >
+    </div>
+
+    <!--附件-->
+    <div class="tab-files-box crm-attachmentlist-simple-warp"></div>
+</div>
+
+</div>
+
+
+</div>

@@ -1,0 +1,36 @@
+.crm-subordinate-select-container{
+	border: 1px #d8d8d8 solid;
+	padding: 8px;
+	background-color: #fff;
+	cursor: pointer;
+	height: 32px;
+	line-height: 32px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.crm-subordinate-select-disable{
+	cursor: default;
+}
+
+.crm-subordinate-select-image{
+	width: 32px;
+	height: 32px;
+}
+
+.crm-subordinate-select-name{
+	width: 140px;
+	margin-left: 5px;
+	white-space: nowrap; 
+	text-overflow: ellipsis;
+	overflow: hidden;
+	position: absolute;
+	*margin-top: -8px;
+}
+
+.crm-subordinate-select-guide{
+	color: #bebebe;
+	position: absolute;
+	right: 0;
+	*margin-top: -8px;
+}

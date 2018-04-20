@@ -1,0 +1,503 @@
+.crm-publish-container{
+	border-top:2px #e46f61 solid;
+	border-bottom: 1px #d8d8d8 solid;
+	border-left: 1px #d8d8d8 solid;
+	border-right: 1px #d8d8d8 solid; 
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:20px; 
+	background-color: #fff;
+}
+
+.crm-publish-title{
+	font-size: 16px;
+	padding: 20px 0px;
+}
+
+.crm-publish-content{
+	padding:10px;
+	font-size: 14px;
+	border: 1px #d8d8d8 solid;
+	width: 100%;
+	*width:518px;
+	height: 42px;
+	box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+display: block;
+}
+
+.crm-publish-content-active{
+	min-height: 110px;
+	overflow-y: visible;
+}
+
+.crm-publish-operation{
+	border-left: 1px #d8d8d8 solid;
+	border-right: 1px #d8d8d8 solid;
+	border-bottom: 1px #d8d8d8 solid;
+	height: 40px;
+	background-color: #fafafa;
+}
+
+.crm-publish-operation{
+	padding: 0px 10px;
+}
+
+.crm-publish-operation-time,.crm-publish-operation-contact,.crm-publish-operation-picture,.crm-publish-operation-attach,.crm-publish-operation-tag,.crm-publish-operation-at,.crm-publish-operation-topic{
+	height: 100%;
+	width: 40px;
+	cursor: pointer;
+	border-left: 1px transparent solid;
+	border-right: 1px transparent solid;
+	
+}
+
+.crm-publish-operation-time:hover,.crm-publish-operation-contact:hover,.crm-publish-operation-picture:hover,.crm-publish-operation-attach:hover,.crm-publish-operation-tag:hover,.crm-publish-operation-at:hover,.crm-publish-operation-topic:hover{
+	background-color: #f2f2f2;
+}
+
+.crm-publish-operation-time{
+	background: url(../../assets/images/icon_addcalender_g.png) no-repeat center;
+}
+.crm-publish-operation-time-selected{
+	background: url(../../assets/images/icon_addcalender_b.png) no-repeat center;
+}
+.crm-publish-operation-contact{
+	background: url(../../assets/images/contact_gray.png) no-repeat center;
+}
+.crm-publish-operation-contact-selected{
+	background: url(../../assets/images/contact_blue.png) no-repeat center;
+}
+.crm-publish-operation-picture{
+	background: url(../../assets/images/pic_gray.png) no-repeat center;
+}
+.crm-publish-operation-picture-selected{
+	background: url(../../assets/images/pic_blue.png) no-repeat center;
+}
+.crm-publish-operation-attach{
+	background: url(../../assets/images/attach_gray.png) no-repeat center;
+}
+.crm-publish-operation-attach-selected{
+	background: url(../../assets/images/attach_blue.png) no-repeat center;
+}
+.crm-publish-operation-attach-num,.crm-publish-operation-picture-num,.crm-publish-operation-contact-num{
+	position: relative;
+	top: 3px;
+	right: 3px;
+	background-color: #cb4437;
+	color: #fff;
+	min-width: 16px;
+	height: 16px;
+	text-align: center;
+	line-height: 14px;
+	border: 1px #fff solid;
+	-moz-border-radius: 1px; /* Firefox */
+    -webkit-border-radius: 1px; /* Safari 和 Chrome */
+    border-radius: 1px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+}
+.crm-publish-operation-tag{
+	background: url(../../assets/images/label_normal.png) no-repeat center;
+}
+
+.crm-publish-operation-at{
+	background: url(../../assets/images/crm_publish_bg.png) no-repeat 12px 10px;
+}
+.crm-publish-operation-topic{
+	background: url(../../assets/images/crm_publish_bg.png) no-repeat -27px 10px;
+}
+
+.crm-publish-operation-tag-selected{
+	background: url(../../assets/images/label.png) no-repeat center;
+}
+
+.crm-publish-operation-active{
+	background-color: #fff;
+	border-left: 1px #d8d8d8 solid;
+	border-right: 1px #d8d8d8 solid;
+	border-bottom: 1px #fff solid;
+}
+
+.crm-publish-operation-active:hover{
+	background-color: #fff;
+}
+
+.crm-publish-operation-time-container{
+	border-left: 1px #d8d8d8 solid;
+	border-right: 1px #d8d8d8 solid;
+	border-bottom: 1px #d8d8d8 solid;
+	padding: 10px;
+}
+
+.crm-publish-operation-contact-container{
+	border-left: 1px #d8d8d8 solid;
+	border-right: 1px #d8d8d8 solid;
+	border-bottom: 1px #d8d8d8 solid;
+}
+
+.crm-publish-operation-picture-container{
+	border-left: 1px #d8d8d8 solid;
+	border-right: 1px #d8d8d8 solid;
+	border-bottom: 1px #d8d8d8 solid;
+}
+
+.crm-publish-operation-attach-container{
+	border-left: 1px #d8d8d8 solid;
+	border-right: 1px #d8d8d8 solid;
+	border-bottom: 1px #d8d8d8 solid;
+}
+
+.crm-publish-operation-tag-container{
+	border: 1px #d8d8d8 solid;
+	width: 200px;
+	padding: 5px 0px;
+	position: absolute;
+	z-index: 99;
+	background-color: #fff;
+}
+
+/*time start*/
+
+.crm-publish-operation-time-label{
+	color: #999;
+	height: 26px;
+	width: 65px;
+	line-height: 26px;
+	text-align: left;
+	padding-left: 6px;
+}
+
+.crm-publish-operation-time-start-date input{
+	width: 160px;
+	height: 28px;
+}
+
+.crm-publish-operation-time-start-time{
+	margin-left: 5px;
+}
+.crm-publish-operation-time-start-time .fs-publish-timeselect-input {
+	height: 28px;
+	line-height: 28px;
+	width: 190px;
+}
+
+.crm-publish-operation-time-alarm{
+	margin-top: 10px;
+}
+
+.crm-publish-operation-time-alarm-date{
+	margin-left: 5px;
+}
+
+.crm-publish-operation-time-alarm-date input{
+	width: 155px;
+	height: 28px;
+}
+
+.crm-publish-operation-time-alarm-time{
+	margin-left: 5px;
+}
+
+.crm-publish-operation-time-alarm-minute{
+	margin-left: 5px;
+}
+
+.crm-publish-operation-time-alarm-info{
+	margin-left: 10px;
+	color: #999;
+	height: 28px;
+	line-height: 28px;
+}
+
+
+/*time end*/
+
+/*contact start*/
+
+.crm-publish-operation-contact-list{
+	padding-left: 10px;
+}
+
+.crm-publish-operation-contact-box{
+	width: 129px;
+	height: 60px;
+	margin-top: 10px;
+	margin-right: 10px;
+	border: 1px #d8d8d8 solid;
+	padding: 5px;
+	background-color: #f5f5f5;
+}
+
+
+.crm-publish-operation-contact-close{
+	width: 18px;
+	height: 18px;
+	font-size: 21px;
+	background-color: #000;
+	position: absolute;
+	color: #fff;
+	line-height: 13px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.crm-publish-operation-contact-close:hover{
+	cursor: pointer;
+	color: #ccc;
+}
+
+.crm-publish-operation-contact-img{
+    width: 45px;
+    height: 45px;
+}
+
+.crm-publish-operation-contact-info{
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+.crm-publish-operation-contact-name{
+    width: 70px;
+}
+
+.crm-publish-operation-contact-department{
+    width: 70px;
+    color: #999;
+}
+
+.crm-publish-operation-contact-company{
+    color: #999;
+    margin-top: -4px;
+    width: 110px;
+}
+
+.crm-publish-operation-contact-operation{
+	padding: 20px 10px;
+}
+
+.crm-publish-operation-contact-add, .crm-publish-operation-contact-add:hover{
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/*contact end*/
+
+/*picture start*/
+
+.crm-publish-operation-picture-list{
+	padding-left: 10px;
+}
+
+.crm-publish-operation-picture-box{
+	width: 139px;
+	height: 103px;
+	margin-top: 10px;
+	margin-right: 10px;
+	border: 1px #d8d8d8 solid;
+	text-align: center;
+	padding: 5px 0px;
+	background-color: #f5f5f5;
+	line-height: 103px;
+	position: static;
+	overflow: hidden;
+}
+
+
+.crm-publish-operation-picture-close{
+	width: 18px;
+	height: 18px;
+	font-size: 21px;
+	background-color: #000;
+	position: absolute;
+	color: #fff;
+	line-height: 13px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.crm-publish-operation-picture-close:hover{
+	cursor: pointer;
+	color: #ccc;
+}
+
+.crm-publish-operation-picture-image{
+	width: 100%;
+}
+
+.crm-publish-operation-picture-operation{
+	padding: 20px 10px;
+}
+
+.crm-publish-operation-picture-add{
+	cursor: pointer;
+	display: inline-block;
+}
+
+.crm-publish-operation-picture-info{
+	color: #999;
+}
+
+/*picture end*/
+
+/*attach start*/
+
+.crm-publish-operation-attach-list{
+	padding-left: 10px;
+}
+
+.crm-publish-operation-attach-box{
+	width: 205px;
+	margin-top: 10px;
+	margin-right: 10px;
+	padding: 5px;
+	border: 1px #d8d8d8 solid;
+}
+
+.crm-publish-operation-attach-name{
+	width: 150px;
+	height: 50px;
+	padding-left: 10px;
+}
+
+.crm-publish-operation-attach-close{
+	width: 18px;
+	height: 18px;
+	font-size: 21px;
+	background-color: #000;
+	position: relative;
+	top: -5px;
+	right: -5px;
+	color: #fff;
+	line-height: 13px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.crm-publish-operation-attach-close:hover{
+	cursor: pointer;
+	color: #ccc;
+}
+
+.crm-publish-operation-attach-image{
+	width: 16px;
+	height: 16px;
+}
+
+.crm-publish-operation-attach-operation{
+	padding: 20px 10px;
+}
+
+.crm-publish-operation-attach-add{
+	cursor: pointer;
+	display: inline-block;
+}
+
+.crm-publish-operation-attach-info{
+	color: #999;
+}
+
+.crm-publish-operation-attach-div object{
+	background-color:rgba(255,255,255,0);
+	cursor: pointer;
+	position: absolute;
+}
+
+.crm-publish-operation-container{
+	position: relative;
+}
+
+/*attach end*/
+
+/*tag start*/
+.crm-publish-operation-event-tag{
+	padding: 5px 20px 5px 35px;
+	border-top: 1px transparent solid;
+	border-bottom: 1px transparent solid;
+	cursor: pointer;
+}
+
+.crm-publish-operation-event-tag:hover{
+	background-color: #f5f5f5;
+	border-top: 1px #eee solid;
+	border-bottom: 1px #eee solid;
+	cursor: pointer;
+}
+
+.crm-publish-operation-event-tag-name{
+	width: 115px;
+	display: inline-block;
+}
+
+.crm-publish-operation-event-tag-selected{
+	background: url("../../assets/images/selected_item.png") no-repeat scroll 15px center rgba(0, 0, 0, 0);
+}
+
+.crm-publish-operation-event-tag-icon{
+	color: #999;
+	float: right;
+	*margin-top: -27px;
+	*margin-right: 10px;
+}
+
+.crm-publish-operation-tag-option{
+	position: absolute;
+	background-color: #fff;
+	border: 1px #d8d8d8 solid;
+	width: 150px;
+	padding:5px 0px;
+}
+
+.crm-publish-operation-tag-option-item{
+	padding: 5px 10px 5px 10px;
+	border-top: 1px transparent solid;
+	border-bottom: 1px transparent solid;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.crm-publish-operation-tag-option-item span{
+	vertical-align: middle;
+}
+
+.crm-publish-operation-tag-option-item:hover{
+	background-color: #f5f5f5;
+	border-top: 1px #eee solid;
+	border-bottom: 1px #eee solid;
+	cursor: pointer;
+}
+
+.crm-publish-operation-tag-option-radio{
+	margin-right: 10px;
+	position: relative;
+	top: -1px;
+}
+
+.crm-publish-operation-tag-option-name{
+	display: inline-block;
+	position: relative;
+    width: 80px;
+}
+
+.crm-publish-operation-tag-option-default{
+	position: relative;
+	color: #999;
+	top: 1px;
+	*top: -26px;
+}
+
+/*tag end*/
+
+.crm-publish-foot{
+	margin-top:10px;
+}
+
+.crm-publish-button-ok{
+	margin-right: 10px;
+}
+
+.crm-publish-button-disable{
+	background-color: #cbe5c5;
+	border: 1px #cbe5c5 solid;
+	cursor: default;
+}

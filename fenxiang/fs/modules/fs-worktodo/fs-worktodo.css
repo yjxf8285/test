@@ -1,0 +1,106 @@
+.fs-worktodo-item{
+    padding:0 15px;
+}
+.fs-worktodo-item-inner{
+    border-bottom:1px dotted #d1d1d1;
+    padding:15px 0;
+}
+.fs-worktodo-item-tbar .tbar-l{
+    color:#0082CB;
+}
+.fs-worktodo-item-tbar .tbar-r{
+    color:#999999;
+}
+.fs-worktodo-item-tbar input,
+.fs-worktodo-item-tbar span{
+    vertical-align: middle;
+}
+.fs-worktodo-item-title{
+    font-size:14px;
+    color:#333333;
+    padding:0.5em 0;
+    word-break: break-all;
+}
+.fs-worktodo-item-content .fs-feed-item{
+    background: #f1f1f1;
+    border:1px solid #EBEBEB;
+    margin-bottom: 10px;
+}
+.fs-worktodo-item-content .fs-list-item{
+    padding-bottom: 0;
+    margin:10px 15px 0;
+}
+
+.fs-worktodo-modify-dialog .ui-dialog-body{
+    padding:10px 15px;
+}
+.fs-worktodo-modify-dialog .worktodo-title-wrapper{
+    margin-bottom: 10px;
+}
+.fs-worktodo-modify-dialog .worktodo-title{
+    width:468px;
+    height:30px;
+    /*line-height: 30px;*/
+    padding-left:4px;
+    border:1px solid #d1d1d1;
+}
+.fs-worktodo-modify-dialog .is-important-wrapper input,
+.fs-worktodo-modify-dialog .is-important-wrapper span{
+    vertical-align: middle;
+}
+.fs-worktodo-item .fs-worktodo-item-actions{
+    position: relative;
+}
+.fs-worktodo-item .cancelmenu {
+    position: absolute;
+    top: -86px;
+    right:-84px;
+    width: 210px;
+    height: 90px;
+    display: none;
+    overflow: hidden;
+    z-index: 3;
+}
+.fs-worktodo-item .cancelmenu .cancelmenu-box {
+    position: absolute;
+    right: 0px;
+    top: 120px;
+    width: 174px;
+    border: solid 5px #DFDFDF;
+    background: #fff;
+    padding: 5px 10px;
+}
+.fs-worktodo-item .cancelmenu-box td {
+    padding: 3px 0;
+    color: #666;
+}
+.fs-worktodo-item .cancelmenu-box button {
+    padding: 0 10px;
+    line-height: 22px;
+}
+.fs-worktodo-item .state-keyword-hl{
+    color:#ff0000;
+}
+
+/* 创建待办 start */
+.fs-worktodo-new-dialog .ui-dialog-body{
+    padding:10px 15px;
+}
+.fs-worktodo-new-dialog .worktodo-range,
+.fs-worktodo-new-dialog .worktodo-title-wrapper{
+    margin-bottom: 10px;
+}
+.fs-worktodo-new-dialog .worktodo-title{
+    width:458px;
+    padding:5px;
+    height:20px;
+    border:1px solid #d1d1d1;
+}
+.fs-worktodo-new-dialog .is-important-wrapper input,
+.fs-worktodo-new-dialog .is-important-wrapper span{
+    vertical-align: middle;
+}
+.fs-worktodo-new-dialog .worktodo-sstate-undone{
+    text-decoration: line-through;
+}
+/* 创建待办 end */

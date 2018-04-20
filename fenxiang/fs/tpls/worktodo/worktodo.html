@@ -1,0 +1,58 @@
+<div id="worktodo" class="tpl department" tplname="worktodo" js="true" css="true" iscached="true">
+    <!-- 三列式 自适应宽度 -->
+    <div class="tpl-l">
+        <div class="tpl-inner">
+            &nbsp;
+            <div class="head-img-wrap fn-clear">
+                <script class="head-img-wrap-tpl" type="text/html">
+                    <a href="#profile"><img class="fn-left" src="{{profileImage}}"/>{{userName}}</a>
+                </script>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tpl-c">
+        <div class="tpl-inner">
+            <!-- department center start -->
+            <div class="department-wrapper">
+                <h2 class="depw-title">我的待办列表<button class="add-worktodo-btn button-green" type="button">新建待办事项</button></h2>
+                <p class="depw-text color-999999">这些是您所有的待办事项，包括已完成和未完成的。</p>
+                <ul class="depw-menu fn-clear marg10 border-top-none">
+                </ul>
+                <nav class="filter depw-tabs fn-clear marg10">
+                   <div class="filter-field">
+                       <span class="color-999999">重要情况：</span>
+                       <a href="javascript:;" class="important depw-tabs-a depw-tabs-aon" val="-1">全部</a>
+                       <a href="javascript:;" class="important depw-tabs-a" val="0">不重要</a>
+                       <a href="javascript:;" class="important depw-tabs-a" val="1">重要</a>
+                       <label class="search-wrap">
+                         <input type="text" class="search-inp" placeholder="搜索待办事项标题" /><button class="search-btn"></button>
+                       </label>
+                   </div>
+                   <div class="filter-field">
+                      <span class="color-999999">完成情况：</span>
+                      <a href="javascript:;" class="complete depw-tabs-a depw-tabs-aon" val="-1">全部</a>
+                      <a href="javascript:;" class="complete depw-tabs-a" val="0">未完成</a>
+                      <a href="javascript:;" class="complete depw-tabs-a" val="1">已完成</a>
+                   </div>
+                </nav>
+                
+                <div class="depw-content-list">
+                   <div class="worktodo-list"></div>
+                    <div class="worktodo-list-pagination"></div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="tpl-r">
+        <div class="tpl-inner">
+        
+           <aside class="home-right-content">
+               
+           </aside>
+           
+        </div>
+    </div>
+</div>

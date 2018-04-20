@@ -1,0 +1,56 @@
+@import url(../../modules/tpl-portal/tpl-portal.css);
+#search .search-nav-list .tpl-nav-l,
+#search-attachs .search-nav-list .tpl-nav-l,
+#search-audios .search-nav-list .tpl-nav-l,
+#search-images .search-nav-list .tpl-nav-l,
+#search-shortmessage .search-nav-list .tpl-nav-l,
+#search-colleagues .search-colleagues-nav-list .tpl-nav-l{
+    font-size:14px;
+}
+
+/* 自定义发送人自动完成搜索 start */
+.custom-sender-search-ac{
+    background: #F6F6F6;
+}
+.custom-sender-search-ac .ui-autocomplete-item a{
+    display: block;
+    height:30px;
+    line-height: 30px;
+    padding:0 10px;
+    cursor: pointer;
+}
+.custom-sender-search-ac .ui-autocomplete-query-title{
+    padding:5px 10px;
+    color:#A2A2A2;
+}
+/* 自定义发送人自动完成搜索 end */
+.department .state-mouse-over{
+    border-color:#35a5e5;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    -webkit-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    -moz-box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+.department .search-nav-list,
+.department .search-colleagues-nav-list,
+.department .search-include-nav-list{margin-top:0 !important;border-top:0 !important;}
+
+.department .rightc-title{
+	background-color: #FAFAFA;
+    border-bottom: 1px solid #E1E1E1;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 16px;
+    position: relative;
+}
+.department h4.rightc-title span.rt-apv {
+    position: absolute;
+    right: 16px;
+    top: 0;
+}
+
+.department .search-r-list li a{display:block;line-height:48px;height:48px;border-bottom:#e8e8e8 solid 1px;text-decoration:none;padding:0 16px;color:#646464;word-break:break-all;overflow:hidden;}
+.department .search-r-list li a:hover{text-decoration:underline;}
+.department .search-r-list li:last-child a{border-bottom:none;}
+.department .search-r-list li a .srl-icon{display:inline-block;width:14px;height:14px;background:url(../../assets/images/home-icons.png?1) no-repeat -34px -62px;vertical-align:-5%;margin-right:10px;}
+
+#search-shortmessage .tpl-l .search-nav-list{border-bottom-left-radius:0;border-bottom-right-radius:0;border-bottom:0px;}

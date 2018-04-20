@@ -1,0 +1,528 @@
+<div id="profile" class="tpl department" tplname="profile" js="true" css="true" iscached="false">
+    <!-- 三列式 自适应宽度 -->
+    <div class="tpl-l">
+        <div class="tpl-inner">
+           &nbsp;
+          <div class="head-img-wrap fn-clear">
+          </div>
+          <div class="profile-limgbot-wrap">
+          	 <p class="nodisturb"></p>
+             <p class="sms-alert"></p>
+          </div>
+          <script class="puser-left-info-tpl" type="text/html">
+              <dl class="profile-left-dl marg10">
+                 <dt class="color-orange fn-left">分享</dt>
+                 <dd class="color-999999">数量<span class="number-padl01 color-blue">{{shareTotalCount}}</span></dd>
+              </dl>
+              
+              <dl class="profile-left-dl marg10">
+                 <dt class="color-orange fn-left">日志</dt>
+                 <dd class="color-999999">平均分
+                    <span><img class="profile-star-img" src="../../html/fs/assets/images/rating/{{planStarImgName}}.png" /></span>
+                 </dd>
+                 <dd class="pld-pad-left color-999999">点评响应时间</dd>
+                 <dd class="pld-text-right color-blue">{{planAverageMinutes}}</dd>
+              </dl>
+              
+              <dl class="profile-left-dl marg10">
+                 <dt class="color-orange fn-left">指令</dt>
+                 <dd class="color-999999">准时率<span class="number-padl02 color-blue">{{workCompletePrencet}}%</span></dd>
+                 <dd class="pld-pad-left color-999999">平均分
+                    <span><img class="profile-star-img" src="../../html/fs/assets/images/rating/{{workStarImgName}}.png" /></span>
+                 </dd>
+                 <dd class="pld-pad-left color-999999">点评响应时间</dd>
+                 <dd class="pld-text-right color-blue">{{workAverageMinutes}}</dd>
+              </dl>
+              
+              <dl class="profile-left-dl marg10">
+                 <dt class="color-orange fn-left">审批</dt>
+                 <dd class="color-999999">响应时间</dd>
+                 <dd class="pld-text-right color-blue">{{approveAverageMinutes}}</dd>
+                 <dd class="pld-text-right"><a href="javascript:;" class="fna-blue show-tj-detail-l">查看详细数据</a></dd>
+              </dl>
+          </script>
+          <div class="puser-left-info-wrap">
+              
+          </div>
+           
+        </div>
+    </div>
+    
+    <div class="tpl-c" style="">
+        <div class="tpl-inner">
+            <!-- department center start -->
+            <div class="department-wrapper">
+                <h1 class="user-center-info-wrap depw-title">
+                    <span class="employee-name"></span>
+                    <span class="profile-name-note color-999999"><span class="circle-job"></span>（手机：<span class="employee-mobile"></span>）</span>
+                    <a href="javascript:;" class="edit-user-profile-l fn-hide">
+                    	<button onclick="location.href='#settings/personalsetting'" class="btn-user-profile button-blue" type="button">编辑个人信息</button>
+                    </a>
+                    <a href="javascript:;" class="chat-l fn-hide">发企业微信</a>
+                </h1>
+                <p class="working-state depw-text color-999999">外出办事，请联系手机</p>
+                <div class="profile-tabs">
+                    <ul class="ui-switchable-nav ui-tab-items depw-menu fn-clear marg10">
+                        <li class="ui-tab-item ui-tab-item-current"><a href="javascript:;">工作信息</a></li>
+                        <li class="ui-tab-item"><a href="javascript:;">工作回复</a></li>
+                        <li class="ui-tab-item"><a href="javascript:;">工作文档</a></li>
+                        <li class="ui-tab-item"><a href="javascript:;">个人资料</a></li>
+                        <li class="ui-tab-item"><a href="javascript:;" id="eff-inf">统计信息</a></li>
+                    </ul>
+                    <div class="ui-switchable-content">
+                        <div class="feed-panel ui-tab-panel" action="feed">
+                            <div class="filter">
+                                <div class="feed-type filter-section">
+                                    <label>信息类型：</label>
+                                    <span class="filter-value-wrapper">
+                                        <a href="#" val="0" class="filter-value state-active depw-tabs-a">全部</a>
+                                        <a href="#" val="1" class="filter-value depw-tabs-a" subtypename="share">分享</a>
+                                        <a href="#" val="2" class="filter-value depw-tabs-a" subtypename="plan">日志</a>
+                                        <a href="#" val="3" class="filter-value depw-tabs-a" subtypename="work">指令</a>
+                                        <a href="#" val="4" class="filter-value depw-tabs-a" subtypename="approve">审批</a>
+                                    </span>
+                                </div>
+                                <div class="sub-type">
+                                    <div class="share-type filter-field">
+                                        <label>分享类型：</label>
+                                        <span class="filter-value-wrapper">
+                                            <a href="#" val="0" class="filter-value state-active depw-tabs-a">全部</a>
+                                            <a href="#" val="1" class="filter-value depw-tabs-a">公告</a>
+                                            <a href="#" val="2" class="filter-value depw-tabs-a">日程</a>
+                                            <a href="#" val="3" class="filter-value depw-tabs-a">投票</a>
+                                        </span>
+                                    </div>
+                                    <div class="plan-type filter-field">
+                                        <label>日志类型：</label>
+                                        <span class="filter-value-wrapper">
+                                            <a href="#" val="0" class="filter-value state-active depw-tabs-a">全部</a>
+                                            <a href="#" val="1" class="filter-value depw-tabs-a">日志</a>
+                                            <a href="#" val="2" class="filter-value depw-tabs-a">周计划</a>
+                                            <a href="#" val="3" class="filter-value depw-tabs-a">月计划</a>
+                                        </span>
+                                    </div>
+                                    <div class="approve-type filter-field">
+                                        <label>审批结果：</label>
+                                        <span class="filter-value-wrapper">
+                                            <a href="#" val="0" class="filter-value state-active depw-tabs-a">全部</a>
+                                            <a href="#" val="1" class="filter-value depw-tabs-a">待审批</a>
+                                            <a href="#" val="2" class="filter-value depw-tabs-a">同意</a>
+                                            <a href="#" val="3" class="filter-value depw-tabs-a">不同意</a>
+                                            <a href="#" val="4" class="filter-value depw-tabs-a">已取消</a>
+                                        </span>
+                                    </div>
+                                    <div class="work-type filter-field">
+                                        <label>指令状态：</label>
+                                        <span class="filter-value-wrapper">
+                                            <a href="#" val="0" class="filter-value state-active depw-tabs-a">全部</a>
+                                            <a href="#" val="1" class="filter-value depw-tabs-a">执行中</a>
+                                            <a href="#" val="2" class="filter-value depw-tabs-a">已完成</a>
+                                            <a href="#" val="3" class="filter-value depw-tabs-a">已取消</a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="attach filter-field">
+                                    <label>包含附件：</label>
+                                    <span class="filter-value-wrapper">
+                                        <a href="#" val="0" class="filter-value state-active depw-tabs-a">不限</a>
+                                        <a href="#" val="2" class="filter-value depw-tabs-a">含图片</a>
+                                        <a href="#" val="3" class="filter-value depw-tabs-a">含文件</a>
+                                        <a href="#" val="1" class="filter-value depw-tabs-a">含录音</a>
+                                    </span>
+                                </div>
+                                <div class="search-wrapper search-wrap">
+                                    <input type="text" class="search search-inp" placeholder="搜索信息" name="search"><button class="search-btn"></button>
+                                </div>
+                            </div>
+                            <div class="profile-remind">提示：以下为工作中发给您的信息</div>
+                            <div class="feed-list"></div>
+                            <div class="feed-list-pagination"></div>
+                        </div>
+                        <div class="ui-tab-panel reply-panel" action="reply">
+                            <div class="filter">
+                                <div class="feed-type filter-section">
+                                    <label>信息类型：</label>
+                                    <span class="filter-value-wrapper">
+                                        <a href="#" val="0" class="filter-value state-active depw-tabs-a">全部</a>
+                                        <a href="#" val="1" class="filter-value depw-tabs-a">分享</a>
+                                        <a href="#" val="2" class="filter-value depw-tabs-a" subtypename="plan">日志</a>
+                                        <a href="#" val="3" class="filter-value depw-tabs-a" subtypename="work">指令</a>
+                                        <a href="#" val="4" class="filter-value depw-tabs-a" subtypename="approve">审批</a>
+                                    </span>
+                                </div>
+                                <div class="attach filter-field">
+                                    <label>包含附件：</label>
+                                    <span class="filter-value-wrapper">
+                                        <a href="#" val="0" class="filter-value state-active depw-tabs-a">不限</a>
+                                        <a href="#" val="2" class="filter-value depw-tabs-a">含图片</a>
+                                        <a href="#" val="3" class="filter-value depw-tabs-a">含文件</a>
+                                        <a href="#" val="1" class="filter-value depw-tabs-a">含录音</a>
+                                    </span>
+                                </div>
+                                <div class="search-wrapper search-wrap">
+                                    <input type="text" class="search search-inp" placeholder="搜索信息" name="search"><button class="search-btn"></button>
+                                </div>
+                            </div>
+                            <div class="profile-remind">提示：以下为工作中回复您的信息</div>
+                            <div class="reply-list"></div>
+                            <div class="reply-list-pagination"></div>
+                        </div>
+                        <div class="ui-tab-panel attach-panel" action="attach">
+                            <div class="filter">
+                                <div class="attach filter-field">
+                                    <label>文档类型：</label>
+                                    <span class="filter-value-wrapper">
+                                        <!--<a href="#" val="0" class="filter-value depw-tabs-a">不限</a>-->
+                                        <a href="#" val="2" class="filter-value state-active depw-tabs-a">图片</a>
+                                        <a href="#" val="3" class="filter-value depw-tabs-a">文件</a>
+                                        <a href="#" val="1" class="filter-value depw-tabs-a">录音</a>
+                                    </span>
+                                </div>
+                                
+                            </div>
+                            <div class="profile-remind">提示：以下为工作中发送给您的文档</div>
+                            <div class="attach-list-wrapper fn-hide">
+                                <div class="attach-list"></div>
+                                <div class="attach-list-pagination"></div>
+                                <div class="search-wrapper search-wrap">
+                                    <input type="text" class="search search-inp" placeholder="搜索信息" name="search"><button class="search-btn"></button>
+                                </div>
+                            </div>
+                            <div class="img-list-wrapper">
+                                <div class="img-list"></div>
+                                <div class="img-list-pagination"></div>
+                                <div class="search-wrapper search-wrap">
+                                    <input type="text" class="search search-inp" placeholder="搜索信息" name="search"><button class="search-btn"></button>
+                                </div>
+                            </div>
+                            <div class="audio-list-wrapper fn-hide">
+                                <div class="audio-list"></div>
+                                <div class="audio-list-pagination"></div>
+                                <div class="search-wrapper search-wrap">
+                                    <input type="text" class="search search-inp" placeholder="搜索信息" name="search"><button class="search-btn"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="userinfo-panel ui-tab-panel" action="userinfo">
+                            <script class="cen-user-info-tpl" type="text/html"> 
+                                <dl class="userinfo-list fn-clear marg40">
+                                    <dt class="fn-left">性别</dt>
+                                    <dd class="fn-left">{{gender}}</dd>
+                                </dl>
+                                <dl class="userinfo-list fn-clear">
+                                    <dt class="fn-left">部门</dt>
+                                    <dd class="fn-left">{{department}}</dd>
+                                </dl>
+                                <dl class="userinfo-list fn-clear">
+                                    <dt class="fn-left">职务</dt>
+                                    <dd class="fn-left">{{post}}</dd>
+                                </dl>
+                                <dl class="userinfo-list fn-clear">
+                                    <dt class="fn-left">QQ</dt>
+                                    <dd class="fn-left">{{qq}}</dd>
+                                </dl>
+                                <dl class="userinfo-list fn-clear">
+                                    <dt class="fn-left">MSN</dt>
+                                    <dd class="fn-left">{{msn}}</dd>
+                                </dl>
+                                <dl class="userinfo-list fn-clear">
+                                    <dt class="fn-left">工作邮箱</dt>
+                                    <dd class="fn-left">{{email}}</dd>
+                                </dl>
+                                <dl class="userinfo-list fn-clear">
+                                    <dt class="fn-left">办公电话</dt>
+                                    <dd class="fn-left">{{tel}}</dd>
+                                </dl>
+                                <dl class="userinfo-list fn-clear">
+                                    <dt class="fn-left">移动电话</dt>
+                                    <dd class="fn-left">{{mobile}}</dd>
+                                </dl>
+                                <dl class="userinfo-list fn-clear">
+                                    <dt class="fn-left">工作描述</dt>
+                                    <dd class="fn-left">{{description}}</dd>
+                                </dl>
+                            </script>
+                            <div class="cen-user-info-wrap"></div>
+                        </div>
+                        <div class="tj-panel profile-count ui-tab-panel" action="tj">
+                            <script type="text/html" class="tjp-person-list-tpl">
+                                <tr class="">
+                                    <td class="td-bg-white">{{month}}</td>
+                                    <td class="td-bg-white">{{shareTotalCount}}</td>
+                                    <td class="td-bg-white">{{planTotalCount}}</td>
+                                    <td class="td-bg-white">
+                                        <img src="../../html/fs/assets/images/rating/{{planStarImgName}}.png" />
+                                    </td>
+                                    <td class="td-bg-white">{{workCompleteTotalCount}}</td>
+                                    <td class="td-bg-white">{{workTimeoverCompleteTotalCount}}</td>
+                                    <td class="td-bg-white">
+                                        <img src="../../html/fs/assets/images/rating/{{workStarImgName}}.png" />
+                                    </td>
+                                </tr>
+                            </script>
+                            <script type="text/html" class="tjp-manage-list-tpl">
+                                <tr>
+                                    <td class="td-bg-white">{{month}}</td>
+                                    <td class="td-bg-white">{{planAverageMinutes}}</td>
+                                    <td class="td-bg-white color-blue"><a href="javascript:;" month="{{month}}" type="1" class="pamrk-adialog fna-blue">{{planAverageMinuteRanking}}</a></td>
+                                    <td class="td-bg-white">{{workAverageMinutes}}</td>
+                                    <td class="td-bg-white color-blue"><a href="javascript:;" month="{{month}}" type="2" class="pamrk-adialog fna-blue">{{workAverageMinuteRanking}}</a></td>
+                                    <td class="td-bg-white">{{approveAverageMinutes}}</td>
+                                    <td class="td-bg-white color-blue"><a href="javascript:;" month="{{month}}" type="3" class="pamrk-adialog fna-blue">{{approveAverageMinuteRanking}}</a></td>
+                                </tr>
+                            </script>
+                            <div class="panel-tbar">
+                                <select class="year-select">
+                                    <option value="2013">2013年</option>
+                                </select>
+                            </div>
+                            <table class="person-eff marg10" cellspacing="1">
+                            	<thead>
+                                	<tr>
+                                        <th colspan="7">个人工作效率分析表</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-bg-title" rowspan="2" style="width:75px">
+                                            <span class="project-title-r">项目</span><span class="month-title-l">月份</span>
+                                        </td>
+                                        <td class="td-bg-title">分享</td>
+                                        <td class="td-bg-title" colspan="2">日志</td>
+                                        <td class="td-bg-title" colspan="3">指令</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-bg-title">发出</td>
+                                        <td class="td-bg-title">发出</td>
+                                        <td class="td-bg-title">平均分</td>
+                                        <td class="td-bg-title">完成</td>
+                                        <td class="td-bg-title">超时完成</td>
+                                        <td class="td-bg-title">平均分</td>
+                                    </tr>
+                                </thead>
+                                <tbody class="tjp-person-wrap">
+
+                                </tbody>
+                                <tbody class="total-summary">
+                                    <tr>
+                                        <td class="td-bg-bot">合计</td>
+                                        <td class="td-bg-bot"><span id="shareTcount"></span></td>
+                                        <td class="td-bg-bot"><span id="planTcount"></span></td>
+                                        <td class="td-bg-bot">
+                                            <span id="plansrathtml"></span>
+                                        </td>
+                                        <td class="td-bg-bot"><span id="workCompleteTCount"></span></td>
+                                        <td class="td-bg-bot"><span id="workTimeoverCompleteTCount"></span></td>
+                                        <td class="td-bg-bot">
+                                            <span id="worksrathtml"></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                            <table class="person-eff marg10" cellspacing="1">
+                               <thead>
+                                    <tr>
+                                        <th colspan="7">管理效率分析表</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-bg-title" rowspan="2" style="width:75px">
+                                            <span class="project-title-r">项目</span><span class="month-title-l">月份</span>
+                                        </td>
+                                        <td class="td-bg-title" colspan="2">日志点评</td>
+                                        <td class="td-bg-title" colspan="2">指令点评</td>
+                                        <td class="td-bg-title" colspan="2">我审批的工作</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-bg-title">点评响应时间</td>
+                                        <td class="td-bg-title">公司效率排名</td>
+                                        <td class="td-bg-title">点击响应时间</td>
+                                        <td class="td-bg-title">公司效率排名</td>
+                                        <td class="td-bg-title">审批响应时间</td>
+                                        <td class="td-bg-title">公司效率排名</td>
+                                    </tr>
+                                </thead>
+                                <tbody class="tjp-manage-wrap">
+
+                                </tbody>
+                                <tbody class="total-summary">
+                                    <tr>
+                                        <td class="td-bg-bot">平均</td>
+                                        <td class="td-bg-bot"><span id="planAmTCount"></span></td>
+                                        <td class="td-bg-bot color-blue"><span id="planAMRkTCount"></span></td>
+                                        <td class="td-bg-bot"><span id="workAmTCount"></span></td>
+                                        <td class="td-bg-bot color-blue"><span id="workAMRkTCount"></span></td>
+                                        <td class="td-bg-bot"><span id="approveAmTCount"></span></td>
+                                        <td class="td-bg-bot color-blue"><span id="approveAMRkTCount"></span></td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                            <div class="list-repeat">
+                                <div style="display:none" class="list-empty-tip">
+                                    <img class="icon-empty" alt="loading" src="../../html/fs/assets/images/info.png">&nbsp;&nbsp;<span class="empty-text">还没有本年度的统计信息</span>
+                                </div>
+                        	</div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!--<ul class="depw-menu fn-clear marg10">
+                   <li><a href="javascript:;" class="depw-menu-aon">工作信息</a></li>
+                   <li><a href="javascript:;">工作回复</a></li>
+                   <li><a href="javascript:;">工作文档</a></li>
+                   <li><a href="javascript:;" id="eff-inf">统计信息</a></li>
+                </ul>
+                
+               <div id="profile-work">
+                <nav class="depw-tabs fn-clear marg10"> 
+                   <span class="color-999999">信息类型：</span>
+                   <a href="javascript:;" class="depw-tabs-a depw-tabs-aon">全部</a>
+                   <a href="javascript:;" class="depw-tabs-a">日志</a>
+                   <a href="javascript:;" class="depw-tabs-a">审批</a>
+                   <a href="javascript:;" class="depw-tabs-a">任务</a>
+                   <a href="javascript:;" class="depw-tabs-a">分享</a>
+                   <label class="search-wrap">
+                     <input type="text" class="search-inp" placeholder="搜索信息" /><button class="search-btn"></button>
+                   </label>
+                   <div>
+                      <span class="color-999999">包含附件：</span>
+                      <a href="javascript:;" class="depw-tabs-a depw-tabs-aon">不限</a>
+                      <a href="javascript:;" class="depw-tabs-a">含图片</a>
+                      <a href="javascript:;" class="depw-tabs-a">含文件</a>
+                   </div>
+                </nav>
+                <em class="profile-remind">提示：此信息仅为工作中分享给您的可视信息</em>
+                <div class="depw-content-list">
+                   content list
+                </div>
+                
+               </div>
+               
+               <div id="profile-eff" style="display:none;">
+                 <div class="profile-select marg20 padL20">
+                   <select>
+                     <option value="0" selected="selected">2013年</option>
+                     <option value="1">2011年</option>
+                     <option value="1">2012年</option>
+                     <option value="1">2014年</option>
+                   </select>
+                 </div>
+                 <div class="profile-count">
+                    <table class="person-eff" cellspacing="1">
+                      <tr>
+                        <th colspan="7">个人工作效率分析表</th>
+                      </tr>
+                      <tr>
+                        <td class="td-bg-title" rowspan="2" style="width:75px;">
+                           <span class="project-title-r">项目</span><span class="month-title-l">月份</span>
+                        </td>
+                        <td class="td-bg-title">分享</td>
+                        <td class="td-bg-title" colspan="2">日志</td>
+                        <td class="td-bg-title" colspan="3">任务</td> 
+                      </tr>
+                      <tr>
+                        <td class="td-bg-title">发出</td>
+                        <td class="td-bg-title">发出</td>
+                        <td class="td-bg-title">平均分</td>
+                        <td class="td-bg-title">完成</td>
+                        <td class="td-bg-title">超时完成</td>
+                        <td class="td-bg-title">平均分</td>
+                      </tr>
+                      <tr>
+                        <td class="td-bg-white">4月</td>
+                        <td class="td-bg-white">-</td>
+                        <td class="td-bg-white">-</td>
+                        <td class="td-bg-white">
+                          <img src="http://push.oa.b.qq.com/QQ00000011/content/fs/assets/images/rating/star3.png" />
+                        </td>
+                        <td class="td-bg-white">1</td>
+                        <td class="td-bg-white">-</td>
+                        <td class="td-bg-white">
+                          <img src="http://push.oa.b.qq.com/QQ00000011/content/fs/assets/images/rating/star3.png" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="td-bg-bot">合计</td>
+                        <td class="td-bg-bot">-</td>
+                        <td class="td-bg-bot">-</td>
+                        <td class="td-bg-bot">
+                          <img src="http://push.oa.b.qq.com/QQ00000011/content/fs/assets/images/rating/star3.png" />
+                        </td>
+                        <td class="td-bg-bot">1</td>
+                        <td class="td-bg-bot">-</td>
+                        <td class="td-bg-bot">
+                          <img src="http://push.oa.b.qq.com/QQ00000011/content/fs/assets/images/rating/star3.png" />
+                        </td>
+                      </tr>
+                    </table>
+                 </div>
+                 <div class="profile-count">
+                    <table class="person-eff" cellspacing="1">
+                      <tr>
+                        <th colspan="7">管理效率分析表</th>
+                      </tr>
+                      <tr>
+                        <td class="td-bg-title" rowspan="2" style="width:75px;">
+                           <span class="project-title-r">项目</span><span class="month-title-l">月份</span>
+                        </td>
+                        <td class="td-bg-title" colspan="2">日志点评</td>
+                        <td class="td-bg-title" colspan="2">任务点评</td>
+                        <td class="td-bg-title" colspan="2">我审批的工作</td> 
+                      </tr>
+                      <tr>
+                        <td class="td-bg-title">点评响应时间</td>
+                        <td class="td-bg-title">公司效率排名</td>
+                        <td class="td-bg-title">点击响应时间</td>
+                        <td class="td-bg-title">公司效率排名</td>
+                        <td class="td-bg-title">审批响应时间</td>
+                        <td class="td-bg-title">公司效率排名</td>
+                      </tr>
+                      <tr>
+                        <td class="td-bg-white">4月</td>
+                        <td class="td-bg-white">-</td>
+                        <td class="td-bg-white color-blue">0</td>
+                        <td class="td-bg-white">1分钟</td>
+                        <td class="td-bg-white color-blue">0</td>
+                        <td class="td-bg-white">-</td>
+                        <td class="td-bg-white color-blue">0</td>
+                      </tr>
+                      <tr>
+                        <td class="td-bg-bot">合计</td>
+                        <td class="td-bg-bot">-</td>
+                        <td class="td-bg-bot color-blue">0</td>
+                        <td class="td-bg-bot">-</td>
+                        <td class="td-bg-bot color-blue">0</td>
+                        <td class="td-bg-bot">-</td>
+                        <td class="td-bg-bot color-blue">0</td>
+                      </tr>
+                    </table>
+                 </div>
+               </div>-->
+               
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="tpl-r">
+        <div class="tpl-inner">
+        
+           <aside class="home-right-content">
+           		<h4 class="rightc-title" style="border:none">视频帮助</h4>
+                <div class="r-use-help-wrap">
+                	<a href="http://v.ku6vms.com/player/default_0.0029.swf?vid=C6K-w_7E1rUIRt8e&style=gRiQ5K9giiL4EUzq&sn=n8d0dpo6uwaMOsHCLjo1sA..&sp=http://v.ku6vms.com/~" target="_blank" class="r-use-help-text">个人列表的使用方法</a>
+                </div>
+                
+                <h4 class="rightc-title">日志日历<span class="rt-apv"><a href="javascript:;" class="export-plan-l fna-blue">导出</a></span></h4>
+                <div class="plan-calendar" style="margin-top:5px"></div>
+                
+                <h4 class="rightc-title">签到地图（共<span class="r-map-count">0</span>次）</h4>
+                <div class="r-map-sign-wrap">
+                	没有签到信息
+                </div>
+                
+           </aside>
+           
+        </div>
+    </div>
+</div>

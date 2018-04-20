@@ -1,0 +1,33 @@
+.dialog-crm .crm-customerinsetting-edit .r{
+	min-height: 560px;
+	padding-bottom: 56px;
+}
+.dialog-crm .crm-customerinsetting-edit .r .right-list .inputs-tit{
+	padding: 10px 8px;
+	width: 70px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.dialog-crm .crm-customerinsetting-edit .r .right-list .input-warp{
+	margin-left: 86px;
+}
+.crm-customerinsetting-edit .buttons-wrapper .crm-button-cancel{
+    padding:0 10px;
+}
+.crm-customerinsetting-edit .owner-name-wrapper {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.crm-customerinsetting-edit .right-list{
+	position: relative;
+}
+.crm-customerinsetting-edit .right-list .buttons-wrapper{
+	position: absolute;
+	right: 0;
+	top: -5px;
+}
+.crm-customerinsetting-edit .right-list .buttons-wrapper .crm-button-cancel{
+	line-height: 26px;
+}

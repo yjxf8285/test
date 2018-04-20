@@ -1,0 +1,23 @@
+@import "../../modules/tpl-portal/tpl-portal.css";
+
+.add-worktodo-dialog .ui-dialog-body{
+    padding:10px 15px;
+}
+.add-worktodo-dialog .worktodo-range,
+.add-worktodo-dialog .worktodo-title-wrapper{
+    margin-bottom: 10px;
+}
+.add-worktodo-dialog .worktodo-title{
+    width:458px;
+    padding:0 5px;
+    height:30px;
+    line-height: 30px;
+
+    border:1px solid #d1d1d1;
+}
+.add-worktodo-dialog .is-important-wrapper input,
+.add-worktodo-dialog .is-important-wrapper span{
+    vertical-align: middle;
+}
+
+

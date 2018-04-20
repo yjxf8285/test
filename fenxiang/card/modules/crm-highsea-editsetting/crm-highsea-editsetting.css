@@ -1,0 +1,118 @@
+.crm-highsea-editsetting-container{
+	width: 550px;
+	padding: 20px;
+	background: #E5E5E5;
+}
+.crm-highsea-editsetting-container a{cursor: pointer;}
+.crm-highsea-editsetting-container input{
+	border: none;
+	color: #676767;
+}
+.crm-highsea-editsetting-container .-highsea-ul{
+	background: #fff;
+	border-radius: 5px;
+	border: solid 1px #d8d8d8;
+	border-bottom: none;
+	margin-bottom: 20px;
+	color: #676767;
+}
+.crm-highsea-editsetting-container .-highsea-ul li{
+	border-bottom: 1px #d8d8d8 solid;
+}
+.crm-highsea-editsetting-container .-highsea-head{
+	margin-bottom: 20px;
+}
+.crm-highsea-editsetting-container .-highsea-setting-title{
+	padding: 0 10px;
+	line-height: 40px;
+	color: #999;
+}
+.crm-highsea-editsetting-container .-highsea-content li{
+	height:39px;
+	line-height: 39px;
+}
+.crm-highsea-editsetting-container .-highsea-content li span{
+	display: block;
+	float: left;
+	color: #999;
+}
+.crm-highsea-editsetting-container .-highsea-content-tit{
+	width: 60px;
+	padding: 0 16px;
+}
+.crm-highsea-editsetting-container .-highsea-content-input input{
+	width: 420px;
+}
+.crm-highsea-editsetting-container .-highsea-setting p{
+	line-height:30px;
+}
+.crm-highsea-editsetting-container .-highsea-setting-con li{
+	height: 30px;
+	padding: 4px 0;
+	line-height: 30px;
+}
+.crm-highsea-editsetting-container .-highsea-info{
+	width: 250px;
+	padding:0 10px;
+	float: left;
+}
+.crm-highsea-editsetting-container .-highsea-info img,
+.crm-highsea-editsetting-container .-highsea-info span{
+	display:block;
+	float: left;
+}
+.crm-highsea-editsetting-container .-highsea-info span{
+    padding-left: 10px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+}
+.crm-highsea-editsetting-container .-highsea-edit{
+	float: right;
+	padding: 0 10px;
+}
+.crm-highsea-editsetting-container .-highsea-edit a{
+	display: none;
+}
+.crm-highsea-editsetting-container .-highsea-setting-con li:hover .-highsea-edit span{
+	display: none;
+}
+.crm-highsea-editsetting-container .-highsea-setting-con li:hover .-highsea-edit a{
+	display: inline;
+}
+
+
+
+/*=====================highsea checkbox=================*/
+.-highsea-checkbox-box{
+
+}
+.-highsea-checkbox-box .-highsea-checkbox-item{
+    display: inline-block;
+    width:14px;
+    height:14px;
+    background: url(../../assets/images/mn-form-icon.png) no-repeat 0 -28px;
+    cursor: pointer;
+}
+.-highsea-checkbox-box .-highsea-checkbox-item:hover{
+    background: url(../../assets/images/mn-form-icon.png) no-repeat 0 -14px;
+}
+.-highsea-selected .-highsea-checkbox-item{
+    background: url(../../assets/images/mn-form-icon.png) no-repeat 0 0px;
+}
+.-highsea-selected .-highsea-checkbox-item:hover{
+    background: url(../../assets/images/mn-form-icon.png) no-repeat 0 0px;
+}
+.-highsea-btn-delete{
+	padding: 0 14px;
+    line-height:30px;
+    cursor:pointer;
+    background-color:#D73D32;
+    color:#fff;
+    -moz-border-radius: 4px; /* Firefox */
+    -webkit-border-radius: 4px; /* Safari 和 Chrome */
+    border-radius: 4px;
+    border:none;
+}

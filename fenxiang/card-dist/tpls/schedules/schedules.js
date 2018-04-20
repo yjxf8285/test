@@ -1,0 +1,6 @@
+/**
+ * 纷享页面逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+define("tpls/schedules/schedules",["util","modules/feed-list/feed-list"],function(a,b){var c=window,d=c.FS,e=d.tpl,f=e.event,g=a("util"),h=a("modules/feed-list/feed-list");b.init=function(){var a=b.tplEl,c=b.tplName,d=$(".schedule-list",a),e=$(".schedule-list-pagination",a),i=$(".sort-date",a),j=$(".search-inp",a),k=$(".search-btn",a),l=new h({element:d,pagSelector:e,pagOpts:{pageSize:20,visiblePageNums:7},loadSize:15,scheduleStyle:2,listPath:"/Schedule/GetHistoryScheduleInfos",defaultRequestData:function(){var a=i.filter(".depw-tabs-aon").attr("sort")||0;return{orderType:a,keyword:_.str.trim(j.val())}},searchOpts:{inputSelector:j,btnSelector:k}});i.click(function(){i.removeClass("depw-tabs-aon"),$(this).addClass("depw-tabs-aon"),l.reload()}),k.click(function(a){l.reload(),a.preventDefault()}),f.on("switched",function(a){var b,d;a==c?(b=g.getTplQueryParams(),d=b?b.tabindex:0,i.removeClass("depw-tabs-aon").eq(d).addClass("depw-tabs-aon"),l.reload()):l&&l.loadKill()});var m=g.getContactData(),n=m.u,o=$(".head-img-wrap",a),p=$(".head-img-wrap-tpl",o).html(),q=_.template(p),r=q({userName:n.name,profileImage:n.profileImage});o.html(r)}});

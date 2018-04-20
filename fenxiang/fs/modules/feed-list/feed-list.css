@@ -1,0 +1,2413 @@
+@charset "utf-8";
+/**
+* common
+*/
+.feed-list .fs-feed-item {
+    
+}
+.fs-list-item .disk-model {
+    background: #fff;
+}
+.fs-list-item .hide{
+    display: none;
+}
+.fs-list-item a {
+    color: #0082cb;
+}
+
+.fs-list-item .red {
+    color: #DD4B39;
+}
+
+.fs-list-item .mt10 {
+    margin-top: 10px;
+}
+
+.fs-list-item .vm {
+    vertical-align: middle;
+}
+
+.fs-list-item .disable {
+    color: #999;
+    text-decoration: none;
+    cursor: default;
+}
+
+.fs-list-item .item-func a.disable {
+    color: #999;
+    text-decoration: none;
+    cursor: default;
+}
+
+/* List item */
+.fs-list-item {
+    margin: 18px;
+    border-bottom: dashed 1px #EBEBEB;
+}
+
+/* 日程弹出框列表重置 */
+.fs-schedule-manage-dialog .fs-list-item {
+    margin: 0;
+}
+
+.fs-list-item .highlight {
+    color: red;
+}
+
+.fs-list-item .feed-content-visible-h {
+    font-size: 12px;
+}
+
+.fs-list-item .feed-content-title {
+    font-size: 14px;
+    color: #999999;
+}
+
+.fs-reply-ico {
+    vertical-align: middle;
+}
+
+.fs-list-item .followtimeinfo {
+    color: #999999;
+}
+
+.fs-list-item .item-name a.printer {
+    right: 0;
+    _right: 85px;
+    top: 2px;
+    position: absolute;
+    font-size: 12px;
+}
+/* 审批-打印模板 */
+.fs-list-item .item-name span.print-sendername{
+    margin: 0;
+    font-size: 14px;
+    color: #0082CB;
+}
+.fs-list-item .print-approvername{
+    color: #0082CB;
+}
+.fs-list-item .item-name .printer-numinfo {
+    right: 0;
+    _right: 85px;
+    top: 2px;
+    position: absolute;
+    font-size: 12px;
+}
+
+.fs-list-item .item-name .printer-numinfo i{
+    color: #ff0000;
+    margin-left: 10px;
+    font-style: normal;
+}
+.fs-list-item .print-img-item{
+    font-size: 0;
+    display: block;
+}.fs-list-item .print-img-warp{
+    position: relative;
+    display: inline-block;
+    *zoom:1;
+    *display: inline;
+}
+.fs-list-item .print-del-pic-ico{
+    position: absolute;
+    top:6px;
+    right: 6px;
+    cursor: pointer;
+    border: solid 1px #ccc;
+}
+.fs-list-item .item-media img.print-pictures{
+    cursor: default;
+    max-width: 732px;
+    _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<732?"732px":"");
+    overflow:hidden;
+}
+.fs-list-item .printreplys-item-media{
+    font-size: 0;
+    margin-top: 6px;
+}
+.fs-list-item .printreplys-item-media img.print-pictures{
+    cursor: default;
+    max-width: 732px;
+    _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<732?"732px":"");
+    overflow:hidden;
+}
+.fs-list-item .print-feedfile{
+    color: #444;
+    font-size: 14px;
+    margin-top: 2px;
+}
+.fs-list-item .printreplys{
+    margin-top: 30px;
+}
+.fs-list-item .printreplys-item{
+    color: #707070;
+    font-size: 12px;
+    margin-top: 2px;
+    border-bottom: 1px dashed #EBEBEB;
+    padding: 10px 0 20px;
+}
+.fs-list-item .printreplys-item i{
+    color:#0082CB;
+    font-style: normal;
+}
+.fs-list-item .archive-remind {
+    padding: 6px 10px;
+    color: #777;
+    background: #F3F3F3;
+    margin-bottom: 16px;
+}
+
+.fs-list-item .archive-remind .ar-time {
+    float: right;
+}
+
+.fs-list-item .archive-remind .ar-tit {
+    margin-right: 16px;
+}
+
+.fs-list-item .archive-remind .ar-tip {
+    margin-right: 20px;
+}
+
+.fs-list-item .item-face {
+    float: left;
+    width: 50px;
+    position: relative;
+}
+
+.fs-list-item .img-new {
+    top: -4px;
+    right: -9px;
+    position: absolute;
+    width: 17px;
+    height: 14px;
+    display: block;
+    background: url(../../assets/images/new.gif);
+}
+
+.fs-list-item .item-face img {
+    width: 50px;
+    height: 50px;
+}
+
+.fs-list-item .item-detail {
+    margin-left: 62px;
+    color: #444;
+    /*注释掉因为IE10会影响回复新加范围小黄条*/
+    /*word-wrap: break-word;
+    */
+    word-break: break-all;
+}
+
+
+.fs-list-item .item-detail .contnet-isencrypted .isencrypted-tit {
+    font-weight: bold;
+    color: #333;
+}
+
+.fs-list-item .item-detail .contnet-isencrypted .isencrypted-con {
+    padding: 10px 0 14px 22px;
+}
+.fs-list-item .item-detail .contnet-isencrypted .isencrypted-con img{
+    margin-top: 3px;
+}
+.fs-list-item .item-detail .contnet-isencrypted img {
+    display: inline-block;
+    float: left;
+    margin-right: 4px;
+    margin-top: 1px;
+}
+
+.fs-list-item .item-detail .contnet-isencrypted {
+    display: none;
+    background: #F1F1F1;
+    color: #999;
+    margin-top: 10px;
+    padding: 8px;
+}
+
+.fs-list-item .item-detail .contnet-isencrypted.onencrypted {
+    display: block;
+}
+
+.fs-list-item .item-detail .info-all-contnet.onencrypted {
+    display: none;
+}
+.fs-list-item .item-detail .info-all-contnet-unlocktit{
+    background: #F1F1F1;
+    font-weight: bold;
+    color: #333;
+    padding: 8px;
+    margin-top: 10px;
+}
+.fs-list-item .item-detail .info-all-contnet-unlocktit img{
+    display: inline-block;
+    float: left;
+    margin-right: 4px;
+    margin-top: 1px;
+}
+.fs-list-item .item-detail .reply-content {
+    color: #707070;
+}
+.fs-list-item .item-detail .myreply-content {
+    margin-top: 20px;
+    font-family: "宋体",serif;
+    color: #707070;
+}
+
+.fs-list-item .item-detail .myreply-content a {
+    font-family: "tahoma", "arial", "宋体","serif",serif;
+}
+
+.fs-list-item .item-detail .myreply-content span {
+    margin-top: 20px;
+    /*color: #0082cb;
+    */;
+}
+.fs-list-item .item-detail .feed-reply{
+    display: none;
+}
+.fs-list-item .item-name {
+    color: #999;
+    position: relative;
+    z-index: 0;
+}
+
+.fs-list-item .item-detail.detail-vote {
+    margin-left: 40px;
+}
+.fs-list-item .item-face.vote{
+    width: 40px;
+}
+.fs-list-item .item-func.vote{
+    color: #999;
+}
+.fs-list-item .item-name.vote-info {
+    margin-top: 3px;
+}
+.fs-list-item .item-name.vote-info img{
+    vertical-align: middle;
+}
+.fs-list-item .item-face.voteico {
+    float: left;
+    display: inline;
+    vertical-align: middle;
+    margin-right: 12px;
+    position: relative;
+    width: 26px;
+}
+.fs-list-item .item-face .voteico .img-new{
+    right: 5px;
+}
+.fs-list-item .item-face img.voteico-img{
+    width: 26px;
+    height: 28px;
+}
+
+.fs-list-item .item-name a {
+    font-size: 14px;
+    color: #0082cb;
+    line-height: 16px;
+    z-index: 0;
+}
+
+.fs-list-item .item-name span {
+    margin-left: 8px;
+}
+
+.fs-list-item .item-name .group a, .fs-list-item .item-name .schedulesgroup a, .item-name .source a, .item-name .con a {
+    color: #999;
+    font-size: 12px;
+}
+
+.fs-list-item .item-name .rc-time {
+    margin-left: 0;
+    color: #444;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.fs-list-item .item-name .five-star {
+    cursor: pointer;
+    width: 67px;
+    height: 12px;
+    display: inline-block;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    _right: 85px;
+    background: url(../../assets/images/five_star.gif);
+}
+
+.fs-list-item .item-name .five-star.num1 {
+    background-position: 0 0;
+}
+
+.fs-list-item .item-name .five-star.num2 {
+    background-position: 0 -15px;
+}
+
+.fs-list-item .item-name .five-star.num3 {
+    background-position: 0 -30px;
+}
+
+.fs-list-item .item-name .five-star.num4 {
+    background-position: 0 -45px;
+}
+
+.fs-list-item .item-name .five-star.num5 {
+    background-position: 0 -60px;
+}
+
+.fs-list-item .item-text {
+    color: #444;
+    font-size: 14px;
+    margin-top: 6px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.fs-list-item .item-text .content.cur {
+    max-height: 275px;
+    overflow: hidden;
+}
+
+.fs-list-item .item-text a {
+    color: #0082cb;
+}
+
+.fs-list-item .item-text .open-text-more {
+    font-size: 13px;
+    display: block;
+    margin: 20px 0;
+}
+
+.fs-list-item .item-text .plan-leader {
+    line-height: 30px;
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.fs-list-item .item-text .plan-leader img {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 6px;
+}
+
+.fs-list-item .item-text .work-tit {
+    color: #ccc;
+}
+
+.fs-list-item .item-text .fs-list-item-tit {
+    color: #999;
+}
+
+/* 录音 */
+.fs-list-item .audio-btn {
+    width: 52px;
+    height: 28px;
+    line-height: 28px;
+    display: block;
+    cursor: pointer;
+    background: url(../../assets/images/audio_ico.png) no-repeat;
+    margin-top: 10px;
+    padding-left: 118px;
+}
+
+.fs-list-item .audio-warp {
+    display: none;
+    border-radius: 3px;
+    border: solid 1px #ccc;
+    background: #f6f6f6;
+    padding: 16px;
+    margin-top: 10px;
+}
+.fs-list-item .audio-warp .audio-box{
+    width:100%;
+    height:30px;
+}
+.fs-list-item .audio-warp .audio-close {
+    cursor: pointer;
+    color: #0082cb;
+    margin: 0 0 8px;
+}
+
+.fs-list-item .audio-warp .audio-close img {
+    vertical-align: middle;
+}
+
+.fs-list-item .audio-warp audio {
+    margin-top: 10px;
+    width: 300px;
+    display: block;
+}
+
+/* 图片和附件*/
+.fs-list-item .item-media {
+    /*margin-top: 10px;
+    */;
+}
+
+.fs-list-item .item-media img {
+    display: block;
+    cursor: pointer;
+}
+
+.fs-list-item .item-media .pic-num {
+    margin: 2px 0 0 42px;
+    color: #999;
+}
+
+.fs-list-item .item-media .feedpics-bor {
+    position: relative;
+    height: 120px;
+}
+
+.fs-list-item .item-media .img-warp {
+    text-align: center;
+    width: 150px;
+    height: 112px;
+    background: #fff;
+    padding: 3px;
+    border: #949494 solid 1px;
+}
+
+.fs-list-item .item-media .img-warp td {
+    width: 150px;
+    height: 112px;
+}
+
+.fs-list-item .item-media .feed-files {
+    border-top: dotted 1px #ccc;
+    border-bottom: dotted 1px #ccc;
+    border-left: solid 1px #A7C7F7;
+    margin-top: 10px;
+    padding: 10px 10px 0;
+}
+
+.fs-list-item .feed-files dl {
+    width: 218px;
+    margin-right: 8px;
+    float: left;
+    padding-bottom: 10px;
+}
+/* 为了网盘带来的附件重置样式 */
+.fs-list-item .feed-files.netdiskfile{
+    padding-right: 0;
+}
+.fs-list-item .feed-files.netdiskfile .networklink-btn{
+    float: right;
+}
+.fs-list-item .feed-files.netdiskfile dl {
+    width: 390px;
+}
+.fs-list-item .feed-files.netdiskfile dl dd{
+    height: auto;
+}
+.fs-list-item .feed-files.netdiskfile dl dd p{
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.fs-list-item .feed-files dl dt {
+    float: left;
+}
+
+.fs-list-item .feed-files dl dd {
+    margin-left: 38px;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 60px;
+}
+.fs-list-item .feed-files dl dd p{
+    overflow: hidden;
+    height: 40px;
+}
+
+.fs-list-item .feed-files dl dd a {
+    color: #0082cb;
+}
+
+.fs-list-item .feed-files dl dd a.v {
+    margin-left: 10px;
+}
+
+.fs-list-item .item-func {
+    color: #666;
+    margin-top: 30px;
+    position: relative;
+    height: 30px;
+    z-index: 3;
+}
+.fs-list-item .item-func.preview-feed {
+    height: auto;
+}
+.fs-list-item .item-func.preview-feed .handle{
+    height: auto;
+}
+/*定位信息*/
+.fs-list-item .feed-location {
+    margin-top: 16px;
+}
+
+.fs-list-item .feed-location .istokenchenged-ico {
+    vertical-align: middle;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.fs-list-item .feed-location .feed-location-ico {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.fs-list-item .feed-location-text {
+    display: inline-block;
+    white-space: nowrap;
+    /*强制不换行*/
+    text-overflow: ellipsis;
+    /*/超出部分变成...*/
+    overflow: hidden;
+    color: #999;
+    max-width: 290px;
+    vertical-align: middle;
+    _zoom:1;
+    *display:inline;
+    _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<290?"290px":"");
+}
+
+.fs-list-item .feed-location-fn {
+    display: inline-block;
+    color: #e4e4e4;
+    margin-left: 8px;
+    vertical-align: middle;
+    _zoom:1;
+    *display:inline;
+}
+
+/*功能按钮*/
+.fs-list-item .item-func.myreply {
+    margin-top: 0;
+}
+
+.fs-list-item .item-func a {
+    display: inline-block;
+    _zoom:1;
+    *display:inline;
+    color: #0082cb;
+    height: 30px;
+    line-height: 20px;
+}
+.fs-list-item .item-func .handle .fl-common-up-arrow{
+    /*display: block;
+    */
+    background: url("../../assets/images/fl_common_up_arrow.gif") no-repeat center bottom;
+}
+.fs-list-item .item-func .handle .islike-btn.fl-common-up-arrow{
+    background: url("../../assets/images/fl_common_up_arrow.gif") no-repeat 2px 21px;
+}
+.fs-list-item .item-func .handle .receiptfnwarp{
+    float: left;
+}
+
+.fs-list-item .item-func .handle {
+    float: right;
+    position: relative;
+    margin-right: 4px;
+    height: 30px;
+    vertical-align: top;
+}
+
+.fs-list-item .item-func .action-btn-summary {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.fs-list-item .handle .cancelmenu {
+    position: absolute;
+    top: -92px;
+    right: 10px;
+    width: 210px;
+    height: 96px;
+    overflow: hidden;
+    display: none;
+}
+
+.fs-list-item .cancelmenu .cancelmenu-box {
+    position: absolute;
+    right: 0;
+    top: 120px;
+    width: 172px;
+    border: solid 5px #DFDFDF;
+    background: #fff;
+    padding: 2px 10px;
+}
+
+.fs-list-item .cancelmenu-box td {
+    padding: 3px 0;
+    color: #666;
+}
+
+.fs-list-item .cancelmenu-box button {
+    padding: 0 10px;
+    line-height: 22px;
+}
+.fs-list-item .handle{
+    z-index: 3;
+}
+.fs-list-item .handle .more {
+    position: relative;
+    padding-right: 8px;
+    display: inline-block;
+    _zoom: 1;
+    *display: inline;
+    z-index: 3;
+    height: 30px;
+    float: left;
+}
+
+.fs-list-item .handle .more .arrow {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    border: 3px dashed transparent;
+    border-top: solid #0082cb;
+}
+
+.fs-list-item .handle .more-menu {
+    z-index: 3;
+    position: absolute;
+    top: 22px;
+    left: -12px;
+    border: solid 1px #E4E4E4;
+    padding: 6px 12px;
+    display: block;
+    line-height: 180%;
+    background: #fff;
+    box-shadow: 1px 1px 4px #ccc;
+}
+
+.fs-list-item .handle .more-menu a {
+    color: #0082cb;
+    display: block;
+    white-space: nowrap;
+    height: auto;
+}
+.fs-list-item .item-func .handle .islike-btn .S_txt3{
+    float: right;
+    *float: none;
+}
+.fs-list-item .item-func .handle .S_txt3 {
+    font-style: normal;
+    color: #E4E4E4;
+    margin: 0 4px;
+    height: 30px;
+}
+.fs-list-item .item-func.vote .handle .S_txt3 {
+    float: left;
+}
+.fs-list-item .item-func .handle .fl-fn-btn{
+    float: left;
+}
+.fs-list-item .item-func .handle .fl-fn-btn i{
+    vertical-align: top;
+    float: left;
+}
+
+.fs-list-item .item-func .f-date {
+    margin-right: 10px;
+}
+
+.fs-list-item .handle .islike {
+    position: relative;
+    float: left;
+    z-index: 3;
+    *display: inline;
+    *zoom:1;
+}
+
+.fs-list-item .handle .islike .islike-btn {
+    cursor: pointer;
+    float: left;
+    *display: inline;
+    *zoom:1;
+}
+
+.fs-list-item .handle .islike b {
+    margin-top: 3px;
+    float: left;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../../assets/images/islike_no.gif) no-repeat;
+}
+.fs-list-item .handle .islike .likecount{
+    overflow: hidden;
+}
+
+.fs-list-item .handle .islike.cur b {
+    background: url(../../assets/images/islike_yes.gif) no-repeat;
+}
+
+.fs-list-item  .islike-tip {
+    position: absolute;
+    width: 200px;
+    padding: 10px 0 10px 10px;
+    border: solid 1px #CCC;
+    background: #fff;
+    z-index: 9999;
+    box-shadow: 2px 2px 4px #ccc;
+    top: 28px;
+    left: -35px;
+}
+.fs-list-item .islike-tip .hide{
+    display: none;
+}
+.fs-list-item .islike-tip .toparrow {
+    position: absolute;
+    top: -8px;
+    left: 46px;
+}
+
+.fs-list-item .islike-tip .toparrow * {
+    font-family: "SimSun",serif;
+    font-size: 12px;
+    line-height: 1.231;
+    display: block;
+    height: 12px;
+}
+
+.fs-list-item .islike-tip .toparrow em {
+    color: #CCC;
+}
+
+.fs-list-item .islike-tip .toparrow span {
+    margin-top: -11px;
+    *margin-top: -14px;
+    _margin-top: -13px;
+    color: #FFF;
+}
+.fs-list-item .islike-tip .js-empids{
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.fs-list-item .islike-tip img {
+    width: 30px;
+    height: 30px;
+}
+
+.fs-list-item  .islike-tip .islike-more {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: url(../../assets/images/islike_more.gif);
+}
+
+.fs-list-item .islike-tip .islike-more:hover {
+    background: url(../../assets/images/islike_more_cur.gif);
+}
+
+/* preview */
+.fs-list-item.preview {
+    border: none;
+    margin: 0;
+    padding: 18px;
+    /*overflow-x: hidden;
+    */;
+}
+
+.fs-list-item .item-name.preview {
+    color: #000;
+}
+
+.fs-list-item .item-name.preview a {
+    color: #000;
+}
+
+.fs-list-item .preview-time {
+    margin-top: 10px;
+}
+
+.fs-list-item .preview-time a {
+    color: #000;
+}
+
+.fs-list-item .preview-reply {
+    height: 20px;
+    float: right;
+    padding: 4px 10px 5px 10px;
+    width: 91%;
+    border: solid 1px #ccc;
+    display: block;
+    outline: none;
+    resize:none;
+}
+
+.fs-list-item .preview-reply-bbar {
+    margin-top: 10px;
+    display: none;
+}
+
+.fs-list-item .preview-reply-bbar button {
+    float: right;
+    padding: 0 20px;
+    line-height: 22px;
+}
+
+/* vote */
+.fs-list-item .item-vote {
+    margin-top: 10px;
+}
+
+.fs-list-item .item-vote .vote-inlet {
+    border: solid 1px #ccc;
+    padding: 10px;
+    display: inline-block;
+    width: 262px;
+}
+
+.fs-list-item .item-vote .vote-inlet .l {
+    float: left;
+    margin-right: 10px;
+}
+
+.fs-list-item .item-vote .vote-inlet .l img {
+    width: 124px;
+    height: 53px;
+    display: block;
+}
+
+.fs-list-item .item-vote .vote-inlet .r {
+    float: left;
+}
+
+.fs-list-item .item-vote .vote-inlet .r .tit {
+    color: #999;
+    text-align: center;
+}
+
+.fs-list-item .item-vote .vote-inlet .r .vote-inlet-btn {
+    padding: 0 36px;
+    margin-top: 5px;
+}
+
+.fs-list-item .item-vote .vote-main {
+    border: solid 1px #ccc;
+    padding: 10px 16px 16px;
+}
+
+.fs-list-item .item-vote .vote-main .tit {
+    text-align: center;
+    font-size: 14px;
+}
+
+.fs-list-item .item-vote .vote-main .cantsee {
+    display: none;
+    text-align: center;
+    padding: 30px 0;
+    font-weight: bold;
+}
+
+.fs-list-item .item-vote .vote-main .seleinfo {
+    text-align: center;
+    color: #999;
+}
+
+.fs-list-item .item-vote .vote-main .time {
+    border: solid 1px #F7F2D5;
+    background: #FFFCDC;
+    color: #986600;
+    padding: 4px 8px;
+}
+
+.fs-list-item .item-vote .vote-main .selecter label {
+    float: left;
+    width: 100%;
+    margin-top: 16px;
+    padding-left: 8px;
+}
+
+.fs-list-item .item-vote .vote-main .selecter label input {
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.fs-list-item .item-vote .vote-main .selecter label div {
+    margin-left: 20px;
+    padding-top: 1px;
+    margin-top: -4px;
+    _margin-top: 1px;
+}
+
+.fs-list-item .item-vote .vote-main .vote-fn {
+    text-align: center;
+}
+
+.fs-list-item .item-vote .vote-main .vote-fn button {
+    width: 84px;
+}
+
+.fs-list-item .item-vote .selertitle {
+    text-align: left;
+    display: inline-block;
+}
+
+.fs-list-item .item-vote .downloadresult {
+    text-align: center;
+}
+
+.fs-list-item .item-vote .schedulebar {
+    width: 160px;
+    background: #F0F0F0;
+    border: solid 1px #E1E1E1;
+    height: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+.fs-list-item .item-vote .schedulebar.green{
+    /*border: solid 1px #72AD4B;
+    */;
+}
+.fs-list-item .item-vote .schedulebar.green .othervotebar{
+    background: #95D95A;
+}
+
+.fs-list-item .item-vote .schedulebar.red{
+    /*border: solid 1px #BA245D;
+    */;
+}
+.fs-list-item .item-vote .schedulebar.red .othervotebar{
+    background: #FF6BA1;
+}
+.fs-list-item .item-vote .schedulebar.orange{
+    /*border: solid 1px #DC893E;
+    */;
+}
+.fs-list-item .item-vote .schedulebar.orange .othervotebar{
+    background: #FFB557;
+}
+.fs-list-item .item-vote .schedulebar.pink{
+    /*border: solid 1px #C773C1;
+    */;
+}
+.fs-list-item .item-vote .schedulebar.pink .othervotebar{
+    background: #E59AE7;
+}
+.fs-list-item .item-vote .schedulebar.blue{
+    /*border: solid 1px #567D92;
+    */;
+}
+.fs-list-item .item-vote .schedulebar.blue .othervotebar{
+    background: #70CBF8;
+}
+
+.fs-list-item .item-vote .schedulebar .myvotebar {
+    width: 0;
+    background: #FF6BA1;
+    height: 10px;
+    display: inline-block;
+    float: left;
+}
+
+.fs-list-item .item-vote .schedulebar .othervotebar {
+    width: 0;
+    background: #95D95A;
+    height: 10px;
+    display: inline-block;
+    float: left;
+}
+
+.fs-list-item .item-vote .num {
+    display: inline-block;
+    vertical-align: middle;
+    color: #999;
+    margin-left: 4px;
+}
+
+.fs-list-item .item-vote .vote-main .seemore {
+    position: relative;
+}
+
+.fs-list-item .item-vote .vote-main .seemore .seemore-info {
+    display: none;
+}
+
+.fs-list-item .item-vote td {
+    padding: 10px 0;
+}
+
+/* reply content */
+.fs-list-item .reply-content {
+    border: solid 1px #E4E4E4;
+    border-radius: 3px;
+    display: block;
+    margin-top: 12px;
+    background: #F6F6F6;
+}
+.fs-list-item .reply-content .open-replies-imgorfile{
+    text-align: right;
+}
+.fs-list-item .reply-content .replies-imgorfile{
+    margin-left: 40px;
+    display: none;
+}
+
+.fs-list-item .reply-content .RC-arrow {
+    margin-left: 34px;
+    margin-top: -8px;
+}
+
+.fs-list-item .reply-content .RC-arrow * {
+    font-family: "SimSun",serif;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1.231;
+    display: block;
+    height: 12px;
+}
+
+.fs-list-item .reply-content .RC-arrow span {
+    margin: -11px 0 0;
+    color: #F6F6F6;
+}
+
+.fs-list-item .reply-content .RC-tit {
+    color: #A2A2A2;
+    padding-left: 16px;
+}
+
+.fs-list-item .reply-content .RC-feed {
+    padding: 0 16px 16px;
+}
+
+.fs-list-item .RC-feed .comment-list {
+    margin-top: 10px;
+}
+
+.fs-list-item .RC-feed .comment-list a {
+    color: #0082cb;
+}
+
+.fs-list-item .RC-feed .comment-list dt {
+    float: left;
+    margin: 4px 8px 0 0;
+}
+
+.fs-list-item .RC-feed .comment-list dt img {
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    display: block;
+    float: left;
+}
+.fs-list-item .RC-feed .comment-list dt img.approve-isagree {
+    width: 40px;
+    height: 32px;
+    margin-right: 4px;
+    display: block;
+    float: left;
+}
+
+.fs-list-item .fs-reply-main-wrapper .RC-feed .comment-list dt img.approve-isagree {
+    width: 40px;
+    height: 32px;
+    margin-right: 4px;
+    display: block;
+}
+.fs-list-item img.approve-isagree {
+    display: none;
+}
+.fs-list-item .RC-feed .comment-list dd {
+    float: left;
+    width: 400px;
+    margin-bottom: 10px;
+}
+.fs-list-item .reply-content .audio-el{
+    margin-left: 40px;
+}
+.fs-list-item .reply-content .audio-el .audio-btn{
+    margin-top:0;
+}
+.fs-list-item .RC-feed .comment-list.isappr dd {
+    float: left;
+    width: 350px;
+}
+.fs-list-item .RC-feed .comment-list.isappr-print dd {
+    float: left;
+    width: 640px;
+}
+/* 列表重写*/
+.fs-list-item .list-repeat {
+    border: solid 1px #E4E4E4;
+    border-radius: 3px;
+    display: block;
+    margin-top: -1px;
+    background: #F6F6F6;
+    margin-bottom: 16px;
+}
+.fs-list-item .list-repeat .feedlike-list{
+    padding: 6px 2px 24px 6px;
+}
+
+.fs-list-item .list-repeat .js-empids img {
+    width: 30px;
+    height: 30px;
+    margin-left: 16px;
+    margin-top: 18px;
+    float: left;
+}
+
+.fs-list-item .sar-action-tbar .list-repeat {
+    border: none;
+    margin: 0;
+}
+
+.fs-list-item .list-repeat .LR-arrow {
+    width: 16px;
+    margin-left: 450px;
+    margin-top: -8px;
+}
+
+.fs-list-item .list-repeat.reply-cc .LR-arrow {
+    margin-left: 343px;
+}
+
+.fs-list-item .list-repeat.reply-modifyapprer .LR-arrow {
+    margin-left: 398px;
+}
+
+.fs-list-item .list-repeat.reply-modifyapprer .selectapprer {
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.fs-list-item .list-repeat .LR-feed {
+    padding: 10px 16px 16px;
+}
+
+.fs-list-item .list-repeat .LR-arrow * {
+    font-family: "SimSun",serif;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1.231;
+    display: block;
+    height: 12px;
+}
+
+.S_line1_c {
+    color: #E4E4E4;
+}
+
+.fs-list-item .list-repeat .LR-arrow span {
+    margin: -11px 0 0;
+    color: #F6F6F6;
+}
+
+.fs-list-item .LR-feed .comment-list {
+    color: #0082cb;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: dotted 1px #ccc;
+}
+
+.fs-list-item .LR-feed .comment-list a {
+    color: #0082cb;
+}
+
+.fs-list-item .LR-feed .comment-list dt {
+    float: left;
+    margin: 4px 8px 0 0;
+}
+
+.fs-list-item .LR-feed .comment-list dt img {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.fs-list-item .LR-feed .comment-list dd {
+    margin: 0 0 0 40px;
+}
+
+.fs-list-item .LR-feed .comment-list dd .rp {
+    text-align: right;
+}
+
+.fs-list-item .LR-feed .reply-commen {
+    color: #333;
+}
+
+.fs-list-item .LR-feed .reply-commen button {
+    padding: 0 40px;
+}
+
+/* 公告 */
+.fs-list-item .announce-tit {
+    margin-top: 8px;
+}
+
+.fs-list-item .announce-tit .tit-text {
+    color: #999;
+    padding-left: 8px;
+}
+
+/* 分享范围弹出层的tpl */
+.share-group-warp {
+    width: 190px;
+    max-height: 190px;
+    _height:200px;
+    overflow-y: auto;
+}
+
+.share-group-warp .share-group-items {
+    margin-bottom: 4px;
+}
+
+.share-group-warp .share-group-items * {
+    vertical-align: middle;
+}
+
+.share-group-warp .share-group-items .profileimage img {
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+.share-group-warp .share-group-items .name {
+    float: left;
+    margin-left: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100px;
+}
+
+.share-group-warp .share-group-items .infotype {
+    margin-right: 10px;
+    float: right;
+    color: #EA9305;
+}
+
+.share-group-countman {
+    margin-top: 10px;
+    color: #999;
+}
+
+.share-group-countman .num {
+    margin: 0 4px;
+}
+
+/* 短信已读弹出层的tpl */
+.sms-isread-warp {
+    width: 360px;
+    max-height: 192px;
+    overflow-y: auto;
+}
+
+.sms-isread-warp .sms-isread-items {
+    margin-bottom: 4px;
+}
+
+.sms-isread-warp .sms-isread-items * {
+    vertical-align: middle;
+}
+
+.sms-isread-warp .sms-isread-items .profileimage img {
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+
+.sms-isread-warp .sms-isread-items .name {
+    float: left;
+    margin-left: 8px;
+}
+
+.sms-isread-warp .sms-isread-items .isread {
+    margin-right: 10px;
+    float: right;
+    color: #999;
+}
+
+.sms-isread-warp .sms-isread-items .isread-receipt {
+    margin-left: 10px;
+    float: left;
+    color: #999;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    /*强制不换行*/
+    text-overflow: ellipsis;
+    max-width: 240px;
+    /*/超出部分变成...*/;
+}
+
+.sms-isread-countman {
+    margin-top: 4px;
+    color: #666;
+}
+
+.sms-isread-countman .num {
+    margin: 0 4px;
+}
+
+/* SMSRemaindCount */
+.fs-list-item .receiptfnwarp{
+    border-top: dotted 1px #D1D1D1;
+    padding-top: 3px;
+    margin-top: 10px;
+    width: 86%;
+}
+.fs-list-item .receiptfnBtnwarp{
+    float: left;
+}
+.fs-list-item .alertlistbtn {
+    color: #999;
+}
+
+/* func block */
+/* 归档 */
+
+
+
+.fs-feed-comment-dialog .place-onfile-content {
+    padding: 1px;
+}
+
+.fs-feed-comment-dialog .place-onfile-content .input-text {
+    width: 271px;
+    border: solid 1px #C6C6C6;
+    height: 24px;
+    float: left;
+    padding-left: 4px;
+}
+
+.fs-feed-comment-dialog .place-onfile-content .input-help {
+    width: 263px;
+    border: solid 1px #C6C6C6;
+    height: 40px;
+    float: left;
+    background: #c6c6c6;
+    color: #fff;
+    padding: 0 6px;
+}
+
+.fs-feed-comment-dialog .place-onfile-content .place-table {
+    margin: 18px 0;
+}
+
+.fs-feed-comment-dialog .place-onfile-content .place-table td {
+    padding-left: 5px;
+    padding-bottom: 8px;
+}
+
+.fs-feed-comment-dialog .place-onfile-content .place-tap {
+    float: left;
+    height: 30px;
+    background: #EAEAEA;
+    padding: 0 8px;
+    line-height: 30px;
+    color: #0082cb;
+    margin: 0 3px 3px 0;
+}
+
+
+
+.fs-feed-comment-dialog .place-onfile-content .place-tap.cur {
+    color: #999;
+}
+
+.fs-feed-comment-dialog .place-onfile-content .place-tap.cur:hover {
+    text-decoration: none;
+}
+
+/*转发*/
+.fs-feed-comment-dialog .forward-content .aj-forwarder {
+    margin: 6px 0;
+}
+
+.fs-feed-comment-dialog .forward-content {
+    padding: 2px;
+}
+
+.fs-feed-comment-dialog .forward-content .forward-warp {
+    padding: 8px 10px;
+    /*height: 224px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    */;
+}
+
+.fs-feed-comment-dialog .forward-content .forward-warp p {
+    margin-bottom: 4px;
+}
+
+.fs-feed-comment-dialog .forward-content .forward-help {
+    background: #FFFCDC;
+    border: solid 1px #F7F2D5;
+    height: 28px;
+    padding: 0 10px;
+    color: #BA851C;
+    line-height: 28px;
+}
+
+.fs-feed-comment-dialog .forward-content .forward-text {
+    border: solid 1px #ddd;
+    width: 99%;
+    border-radius: 2px;
+    padding-top: 4px;
+    padding-left: 4px;
+    height: 100px;
+}
+
+.fs-feed-comment-dialog .forward-content .forward-btnwarp {
+    text-align: right;
+}
+
+/*待办*/
+.fs-feed-comment-dialog .pending-content {
+    padding: 2px;
+}
+
+.fs-feed-comment-dialog .pending-content .pending-warp {
+    padding: 8px 10px;
+}
+
+.fs-feed-comment-dialog .pending-content .pending-warp .input-text {
+    padding-top: 4px;
+    width: 469px;
+    border: solid 1px #C6C6C6;
+    height: 24px;
+    float: left;
+    padding-left: 5px;
+    margin-bottom: 8px;
+    font-family: "宋体",serif;
+    white-space: nowrap;
+}
+.fs-feed-comment-dialog .pending-content .pending-warp .input-text.ped-title {
+    white-space: normal;
+}
+
+.fs-feed-comment-dialog .pending-content .pending-warp p {
+    margin-bottom: 8px;
+}
+
+.fs-feed-comment-dialog .pending-content .pending-warp p .frominfowarp {
+    white-space: nowrap;
+    max-width: 470px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.fs-feed-comment-dialog .pending-content .pending-from {
+    color: #999;
+    font-family: "宋体",serif;
+}
+
+.fs-feed-comment-dialog .pending-content .pending-btnwarp {
+    position: relative;
+    height: 30px;
+    padding-top: 5px;
+}
+.fs-feed-comment-dialog .pending-content .pending-btnwarp .is-important-wrapper {
+    float: left;
+}
+.fs-feed-comment-dialog .pending-content .pending-btnwarp .dialog-buttonwrap {
+    float: right;
+}
+
+.fs-feed-comment-dialog .pending-content .pending-btnwarp .is-important-wrapper * {
+    vertical-align: middle;
+}
+
+/*点评弹出框*/
+.fs-feed-comment-dialog .commenton-content {
+    padding: 2px;
+}
+
+.fs-feed-comment-dialog .commenton-content .selectcommentoner {
+    margin-bottom: 10px;
+}
+
+.fs-feed-comment-dialog .commenton-content .dialog-l-tit {
+    font-size: 14px;
+    position: relative;
+    color: #444;
+}
+
+.fs-feed-comment-dialog .commenton-content .commenton-warp {
+    padding: 8px 10px;
+}
+
+.fs-feed-comment-dialog .commenton-content .dialog-l-tit .name {
+    font-size: 16px;
+}
+
+.fs-feed-comment-dialog .commenton-content .dialog-l-tit img {
+    vertical-align: middle;
+}
+
+.fs-feed-comment-dialog .commenton-content .dialog-l-tit .look-history {
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 4px;
+}
+
+.fs-feed-comment-dialog .commenton-content .dialog-l-tit .dialy-history {
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 4px;
+}
+
+.fs-feed-comment-dialog .commenton-content .dialog-l-tit .dialy-history i {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background: url(../../assets/images/feed_list.png) no-repeat 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.fs-feed-comment-dialog .commenton-content .dialog-l-tit .dialy-history i.cur {
+    background: url(../../assets/images/feed_list.png) no-repeat 0 -115px;
+    cursor: auto;
+}
+
+.fs-feed-comment-dialog .commenton-content .dialog-l-tit .dialy-history b {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background: url(../../assets/images/feed_list.png) no-repeat 0 -27px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.fs-feed-comment-dialog .commenton-content .dialog-l-tit .dialy-history b.cur {
+    background: url(../../assets/images/feed_list.png) no-repeat 0 -142px;
+    cursor: auto;
+}
+
+.fs-feed-comment-dialog .commenton-content .dialog-l-tit .dialy-history span {
+    padding: 0 10px;
+}
+
+.fs-feed-comment-dialog .commenton-content .commenton-warp .dialog-left {
+    float: left;
+    width: 430px;
+    border-right: 1px dotted #CCCCCC;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.fs-feed-comment-dialog .commenton-content .comment-feedcontent {
+    height: 195px;
+    border: 1px solid #C6C6C6;
+    border-radius: 3px 3px 3px 3px;
+    padding-left: 5px;
+    width: 423px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+}
+
+.fs-feed-comment-dialog .commenton-content .comment-feedcontent .work-tit {
+    color: #999999;
+}
+
+.fs-feed-comment-dialog .commenton-content .commenton-warp .dialog-right {
+    float: left;
+    width: 430px;
+    /*border-left: dotted 1px #ccc;
+    margin-left: 10px;
+    padding-left: 10px;
+    */;
+}
+
+.fs-feed-comment-dialog .commenton-content .commenton-warp .input-text {
+    width: 423px;
+    border: solid 1px #C6C6C6;
+    padding-left: 5px;
+    border-radius: 3px;
+}
+
+.fs-feed-comment-dialog .commenton-content .commenton-warp .daily-r {
+    height: 400px;
+    border: 1px solid #C6C6C6;
+    border-radius: 3px 3px 3px 3px;
+    padding: 0 5px;
+    width: 423px;
+    margin-bottom: 10px;
+    overflow-y: auto;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.fs-feed-comment-dialog .commenton-content .commenton-warp .daily-r .work-tit {
+    color: #999;
+}
+
+.fs-feed-comment-dialog .commenton-content .commenton-warp .input-text.daily-lb {
+    height: 94px;
+}
+
+.fs-feed-comment-dialog .commenton-content .commenton-warp p {
+    margin-bottom: 8px;
+}
+
+.fs-feed-comment-dialog .commenton-content .commenton-warp .send-message {
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.fs-feed-comment-dialog .commenton-content .commenton-warp .button-r {
+    position: absolute;
+    right: 0;
+}
+
+.fs-feed-comment-dialog .commenton-content .commenton-warp .send-message input {
+    vertical-align: middle;
+}
+
+.fs-feed-comment-dialog .commenton-content .commenton-btnwarp {
+    position: relative;
+    height: 26px;
+}
+
+.fs-feed-comment-dialog .commenton-content .reply-content {
+    border: solid 1px #E4E4E4;
+    border-radius: 3px;
+    display: block;
+    margin-top: 12px;
+    background: #F6F6F6;
+}
+
+.fs-feed-comment-dialog .commenton-content .reply-content .RC-arrow {
+    margin-left: 34px;
+    margin-top: -8px;
+}
+
+.fs-feed-comment-dialog .commenton-content .reply-content .RC-arrow * {
+    font-family: "SimSun",serif;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1.231;
+    display: block;
+    height: 12px;
+}
+
+.fs-feed-comment-dialog .commenton-content .reply-content .RC-arrow span {
+    margin: -11px 0 0;
+    color: #F6F6F6;
+}
+
+.fs-feed-comment-dialog .commenton-content .reply-content .RC-tit {
+    color: #A2A2A2;
+    padding-left: 16px;
+}
+
+.fs-feed-comment-dialog .commenton-content .reply-content .RC-feed {
+    padding: 0 16px 16px;
+}
+
+.fs-feed-comment-dialog .commenton-content .RC-feed .comment-list {
+    margin-top: 10px;
+}
+
+.fs-feed-comment-dialog .commenton-content .RC-feed .comment-list a {
+    color: #0082cb;
+}
+
+.fs-feed-comment-dialog .commenton-content .RC-feed .comment-list dt {
+    float: left;
+    margin: 4px 8px 0 0;
+}
+
+.fs-feed-comment-dialog .commenton-content .RC-feed .comment-list dt img {
+    float: left;
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.fs-feed-comment-dialog .commenton-content .RC-feed .comment-list dt img.approve-isagree {
+    width: 40px;
+    height: 32px;
+    margin-right: 4px;
+}
+
+.fs-feed-comment-dialog .commenton-content .RC-feed .comment-list dd {
+    margin: 0 0 0 40px;
+}
+
+/*批复同意*/
+.fs-feed-comment-dialog .appryes-content {
+    padding: 2px;
+}
+
+.fs-feed-comment-dialog .appryes-content .appryes-warp {
+    padding: 8px 10px;
+}
+
+.fs-feed-comment-dialog .appryes-content .appryes-warp .input-text {
+    width: 491px;
+    border: solid 1px #C6C6C6;
+    padding: 3px 4px;
+    border-radius: 3px;
+    height: 90px;
+}
+
+.fs-feed-comment-dialog .appryes-content .appryes-warp p {
+    margin-bottom: 8px;
+}
+
+.fs-feed-comment-dialog .appryes-content .appryes-warp .send-message {
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.fs-feed-comment-dialog .appryes-content .appryes-warp .button-r {
+    position: absolute;
+    right: 0;
+}
+
+.fs-feed-comment-dialog .appryes-content .appryes-warp .send-message input {
+    vertical-align: middle;
+}
+
+.fs-feed-comment-dialog .appryes-content .appryes-btnwarp {
+    position: relative;
+    height: 26px;
+}
+
+.fs-feed-comment-dialog .appryes-content .appryes-btnwarp .place-btn {
+    padding: 0 24px;
+}
+
+/*批复不同意*/
+.fs-feed-comment-dialog .apprno-content {
+    padding: 2px;
+}
+
+.fs-feed-comment-dialog .apprno-content .apprno-warp {
+    padding: 8px 10px;
+}
+
+.fs-feed-comment-dialog .apprno-content .apprno-warp .input-text {
+    width: 491px;
+    border: solid 1px #C6C6C6;
+    padding: 3px 4px;
+    border-radius: 3px;
+    height: 90px;
+}
+
+.fs-feed-comment-dialog .apprno-content .apprno-warp p {
+    margin-bottom: 8px;
+}
+
+.fs-feed-comment-dialog .apprno-content .apprno-warp .send-message {
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.fs-feed-comment-dialog .apprno-content .apprno-warp .button-r {
+    position: absolute;
+    right: 0;
+}
+
+.fs-feed-comment-dialog .apprno-content .apprno-warp .send-message input {
+    vertical-align: middle;
+}
+
+.fs-feed-comment-dialog .apprno-content .apprno-btnwarp {
+    position: relative;
+    height: 26px;
+}
+
+.fs-feed-comment-dialog .apprno-content .apprno-btnwarp .place-btn {
+    padding: 0 24px;
+}
+
+/*批复复议*/
+.fs-feed-comment-dialog .apprre-content {
+    padding: 2px;
+}
+
+.fs-feed-comment-dialog .apprre-content .apprre-warp {
+    padding: 8px 10px;
+}
+
+.fs-feed-comment-dialog .apprre-content .apprre-warp .input-text {
+    width: 100%;
+    border: solid 1px #C6C6C6;
+    padding-left: 5px;
+    border-radius: 3px;
+    height: 90px;
+}
+
+.fs-feed-comment-dialog .apprre-content .apprre-warp p {
+    margin-bottom: 8px;
+}
+
+.fs-feed-comment-dialog .apprre-content .apprre-warp .send-message {
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.fs-feed-comment-dialog .apprre-content .apprre-warp .send-message input {
+    vertical-align: middle;
+}
+
+.fs-feed-comment-dialog .apprre-content .apprre-btnwarp {
+    height: 26px;
+    text-align: right;
+}
+
+.fs-feed-comment-dialog .apprre-content .apprre-btnwarp .place-btn {
+    padding: 0 24px;
+}
+
+/*批复历史*/
+.fs-feed-comment-dialog .apprhis-content {
+    padding: 2px;
+}
+
+.fs-feed-comment-dialog .apprhis-content .apprhis-warp {
+    padding: 8px 10px;
+}
+
+.fs-feed-comment-dialog .apprhis-content .apprhis-warp .input-text {
+    width: 100%;
+    border: solid 1px #C6C6C6;
+    padding-left: 5px;
+    border-radius: 3px;
+    height: 550px;
+}
+
+.fs-feed-comment-dialog .apprhis-content .apprhis-warp p {
+    margin-bottom: 8px;
+}
+
+/**/
+.fs-feed-comment-dialog .working-content {
+    padding: 2px;
+}
+
+.fs-feed-comment-dialog .working-content .working-warp {
+    padding: 8px 10px;
+}
+
+.fs-feed-comment-dialog .working-content .working-warp .input-text {
+    width: 550px;
+    border: solid 1px #C6C6C6;
+    padding-left: 4px;
+    border-radius: 3px;
+    height: 90px;
+}
+
+.fs-feed-comment-dialog .working-content .working-warp p {
+    margin-bottom: 8px;
+}
+
+.fs-feed-comment-dialog .working-content .working-warp .send-message {
+    position: absolute;
+    top: 4px;
+    left: 0;
+}
+
+.fs-feed-comment-dialog .working-content .working-warp .button-r {
+    position: absolute;
+    right: 0;
+}
+
+.fs-feed-comment-dialog .working-content .working-warp .send-message input {
+    vertical-align: middle;
+}
+
+.fs-feed-comment-dialog .working-content .working-btnwarp {
+    position: relative;
+    height: 26px;
+}
+
+.fs-feed-comment-dialog .working-content .working-btnwarp .place-btn {
+    padding: 0 24px;
+}
+
+/* loading start */
+/* 特殊回复 start */
+.feed-rwr-complete-dialog .ui-dialog-body, .feed-rwr-normal-dialog .ui-dialog-body, .feed-swr-undone-dialog .ui-dialog-body, .feed-swr-done-dialog .ui-dialog-body, .feed-swr-cancel-dialog .ui-dialog-body, .feed-sar-normal-dialog .ui-dialog-body {
+    padding: 10px;
+}
+
+/************************************************
+* 取消指令，转他人执行 ****************************
+*/
+.feed-swr-cancel-dialog .swr-cancel-input-wrapper {
+    border: solid 1px #ddd;
+    position: relative;
+    /*height: 125px;
+    */
+    padding: 10px;
+}
+.feed-swr-cancel-dialog .sms-warn-item{
+    display: none;
+}
+.feed-swr-cancel-dialog .swr-cancel-input-wrapper .swr-cancel-input-wrapper-ps {
+    position: absolute;
+    bottom:0;
+    right: 88px;
+    color: #a2a2a2;
+    height: 30px;
+    display: block;
+}
+
+.feed-swr-cancel-dialog .swr-cancel-input-wrapper .swr-cancel-input {
+    width: 100%;
+    height: 100px;
+    border: medium none;
+}
+
+.feed-swr-cancel-dialog .setother-wrapper {
+    border: solid 1px #ddd;
+    margin-top: 6px;
+    color: #999999;
+    padding: 8px 10px;
+}
+
+.feed-swr-cancel-dialog .setother-table {
+    width: 100%;
+    line-height: 40px;
+}
+
+.feed-swr-cancel-dialog .swr-cancel-input-media {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    height: 30px;
+    display: block;
+}
+
+.feed-swr-cancel-dialog .swr-cancel-input-media .fs-publish-action-btns {
+    border: none;
+}
+
+.feed-swr-cancel-dialog .setother-table .selectdatawrap input {
+    width: 156px;
+    height: 25px;
+    border: solid 1px #ddd;
+    /*color: #999;
+    */
+    padding-left: 10px;
+}
+
+.feed-swr-cancel-dialog .setother-table .selecttimewrap input {
+    border: solid 1px #ddd;
+    width: 296px;
+    height: 25px;
+    margin-left: 6px;
+    padding-left: 10px;
+    /*color: #666;
+    */;
+}
+
+.feed-swr-cancel-dialog .setother-table label {
+    margin-right: 5px;
+    color: #000;
+}
+
+.feed-swr-cancel-dialog .setother-table label input {
+    vertical-align: middle;
+}
+
+.feed-swr-cancel-dialog .copyto-wrapper {
+    margin-top: 6px;
+}
+
+.feed-swr-cancel-dialog .ui-dialog-bbar {
+    margin-top: 6px;
+}
+
+.feed-swr-cancel-dialog .ui-dialog-bbar .is-send-sms-wrapper {
+    margin-top: 6px;
+}
+
+.feed-swr-cancel-dialog .ui-dialog-bbar .is-send-sms-wrapper .is-send-sms {
+    vertical-align: middle;
+}
+
+.feed-swr-cancel-dialog .ui-dialog-bbar button {
+    padding: 0 20px;
+}
+
+/***********************************************/
+/***********************************************/
+.rwr-normal-input-wrapper, .rwr-complete-input-wrapper, .swr-undone-input-wrapper, .swr-done-input-wrapper, .sar-normal-input-wrapper {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid #D1D1D1;
+    padding-bottom: 20px;
+}
+
+.swr-undone-input-wrapper, .swr-done-input-wrapper {
+    padding-bottom: 0;
+}
+
+.rwr-normal-input, .rwr-complete-input, .swr-undone-input, .swr-done-input, .sar-normal-input {
+    height: 28px;
+    width: 470px;
+    border: none;
+    padding: 3px 4px;
+    background: transparent;
+}
+
+.rwr-complete-input {
+}
+.feed-rwr-complete-dialog .fs-publish-media-panel-wrapper{
+    border-top: none;
+}
+.feed-rwr-complete-dialog .media, .feed-rwr-normal-dialog .media, .feed-sar-normal-dialog .media {
+    margin-top: -30px;
+}
+
+.feed-rwr-complete-dialog .ui-dialog-bbar, .feed-rwr-normal-dialog .ui-dialog-bbar, .feed-swr-undone-dialog .ui-dialog-bbar, .feed-swr-done-dialog .ui-dialog-bbar, .feed-sar-normal-dialog .ui-dialog-bbar {
+    margin-top: 10px;
+}
+
+.feed-rwr-complete-dialog .ui-dialog-bbar span, .feed-rwr-complete-dialog .ui-dialog-bbar input, .feed-rwr-complete-dialog .ui-dialog-bbar label, .feed-rwr-normal-dialog .ui-dialog-bbar span, .feed-rwr-normal-dialog .ui-dialog-bbar input, .feed-rwr-normal-dialog .ui-dialog-bbar label, .feed-swr-undone-dialog .ui-dialog-bbar span, .feed-swr-undone-dialog .ui-dialog-bbar input, .feed-swr-undone-dialog .ui-dialog-bbar label, .feed-swr-done-dialog .ui-dialog-bbar span, .feed-swr-done-dialog .ui-dialog-bbar input, .feed-swr-done-dialog .ui-dialog-bbar label, .feed-sar-normal-dialog .ui-dialog-bbar span, .feed-sar-normal-dialog .ui-dialog-bbar input, .feed-sar-normal-dialog .ui-dialog-bbar label {
+    vertical-align: middle;
+}
+
+.feed-swr-done-dialog .copyto-wrapper {
+    margin: 10px 0;
+}
+
+.feed-sar-normal-dialog .fs-publish-action-btns {
+    border-bottom: none;
+}
+
+/* 特殊回复 end */
+.fs-list-item .feed-img {
+    width: 160px;
+    position: relative;
+    margin-top: 10px;
+}
+
+/* 查看审批历史 start */
+.feed-approve-history-dialog .ui-dialog-body {
+    overflow: auto;
+    height: 519px;
+}
+
+/* 我发出的任务点评tbar */
+.fs-list-item .swr-action-tbar .button-green{
+    height: auto;
+}
+.fs-list-item .swr-action-tbar {
+    padding: 10px 0 8px 0;
+}
+
+.fs-list-item .swr-action-tbar label {
+    margin-right: 10px;
+}
+
+.fs-list-item .swr-action-tbar * {
+    vertical-align: middle;
+}
+
+/* 打印预览 start */
+.feed-print-preview-dialog .ui-dialog-content {
+    position: relative;
+}
+
+.feed-print-preview-dialog .ui-dialog-body {
+    position: relative;
+    overflow: hidden;
+}
+
+.feed-print-preview-dialog .ui-dialog-bbar {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: right;
+}
+
+.feed-print-preview-dialog .ui-dialog-bbar-inner {
+    padding: 10px;
+}
+
+.feed-print-preview-dialog .preview-mask {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: #ffffff url(../../assets/images/loading.gif) no-repeat center center;
+}
+/* 新消息提醒 */
+.feed-remind {
+    display: none;
+    background-color: #fffddd;
+    text-align: center;
+    _height:30px;
+    line-height: 30px;
+    color: #bb861c;
+    border: 1px solid #f8f3d6;
+    margin: 18px 18px 0 18px;
+    cursor: pointer;
+}
+
+.feed-remind:hover {
+    background-color: #fff9b7;
+    border: #eee4aa solid 1px;
+    color: #996600;
+    text-decoration: underline;
+}
+
+.rwr-action-tbar {
+    margin-top: 5px;
+}
+
+/*2013-6-24 by haibo*/
+
+/*公告显示时间的弹出层*/
+.announce-on-time .ui-dialog-body {
+    padding: 10px 15px;
+}
+
+.announce-on-time .ui-dialog-body .tit {
+    color: #999;
+    float: left;
+}
+
+.announce-on-time .ui-dialog-body .selectlist {
+    width: 116px;
+    height: 22px;
+    border: solid 1px #ccc;
+    float: left;
+    margin-right: 8px;
+}
+
+.announce-on-time .ui-dialog-body .selecttimediv {
+    display: none;
+    float: left;
+    border: solid 1px #ccc;
+    width: 116px;
+    line-height: 20px;
+    color:   #999;
+    padding-left: 8px;
+}
+
+.announce-on-time .ui-dialog-body .selecttimediv .fs-publish-dateselect-input {
+    border: none;
+    height: 20px;
+    line-height: 20px;
+    width: 100px;
+}
+
+/* Dialog common*/
+.ui-dialog.common-style-richard .red {
+    color: #ff0000;
+}
+
+.ui-dialog.common-style-richard .mt10 {
+    margin-top: 10px;
+}
+.ui-dialog.common-style-richard .mr10 {
+    margin-right: 10px;
+}
+.ui-dialog.common-style-richard .pr10 {
+    padding-right: 10px;
+}
+.ui-dialog.common-style-richard .ml10 {
+    margin-left: 10px;
+}
+
+.ui-dialog.common-style-richard .vm {
+    vertical-align: middle;
+}
+
+.ui-dialog.common-style-richard .disable {
+    color: #999;
+    text-decoration: none;
+    cursor: default;
+}
+
+.ui-dialog.common-style-richard .item-func a.disable {
+    color: #999;
+    text-decoration: none;
+    cursor: default;
+}
+
+/* 定位信息-查看设备-弹出层 */
+.feedlocationfn-equipment-dialog {
+    background: #fff;
+    padding: 0;
+}
+.feedlocationfn-equipment-dialog .ui-dialog-content{
+    position: relative;
+    display: block;
+    *zoom:1;
+}
+.feedlocationfn-equipment-dialog .ui-dialog-content .equipment-arrow{
+    position: absolute;
+    bottom: -8px;
+    right: 70px;
+    display: block;
+    background: url(../../assets/images/fl_common_up_down.gif) no-repeat;
+    width: 14px;
+    height: 8px;
+    font-size: 0;
+}
+.feedlocationfn-equipment-dialog .ui-dialog-content .equipment-arrow.up{
+    bottom: 0;
+    top:-8px;
+    background: url(../../assets/images/fl_common_up_down_up.gif) no-repeat;
+}
+.feedlocationfn-equipment-dialog .ui-dialog-close {
+    color: #000;
+}
+
+.feedlocationfn-equipment-dialog .equipment-titwarp {
+    height: 36px;
+    background: #F6F6F6;
+}
+
+.feedlocationfn-equipment-dialog .equipment-titwarp a {
+    margin-top: 9px;
+    width: 70px;
+    height: 26px;
+    color: #333;
+    border: solid 1px #E4E4E4;
+    background: #f1f1f1;
+    border-bottom: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 24px;
+}
+.feedlocationfn-equipment-dialog .equipment-titwarp a:hover{
+    background: #fff;
+    color: #DD4B39;
+}
+
+.feedlocationfn-equipment-dialog .equipment-titwarp a.cur {
+    background: #fff;
+    color: #DD4B39;
+}
+
+.feedlocationfn-equipment-dialog .equipment-titwarp .equipment-tit-account {
+    margin-left: 16px;
+}
+
+.feedlocationfn-equipment-dialog .equipment-titwarp .equipment-tit-equipment {
+    margin-left: 2px;
+}
+
+.feedlocationfn-equipment-dialog .equipment-topinfo {
+    height: 33px;
+    border-bottom: solid 1px #e4e4e4;
+    line-height: 30px;
+    color: #999;
+}
+
+.feedlocationfn-equipment-dialog .equipment-listwarp {
+    height: 160px;
+    overflow-y: auto;
+    margin: 0 8px;
+}
+
+.feedlocationfn-equipment-dialog .equipment-listitem {
+    margin-top: 6px;
+}
+
+.feedlocationfn-equipment-dialog .equipment-listitem-l {
+    float: left;
+    width: 46px;
+}
+
+.feedlocationfn-equipment-dialog .equipment-listitem-r {
+    width: 336px;
+    float: left;
+}
+
+.equipment-listitem-l-img {
+    width: 35px;
+    height: 35px;
+    display: block;
+}
+
+.feedlocationfn-equipment-dialog .equipment-bottominfo-l {
+    float: left;
+    color: #999;
+}
+
+.feedlocationfn-equipment-dialog .equipment-bottominfo-r {
+    float: right;
+}
+
+.feedlocationfn-equipment-dialog .equipment-bottominfo {
+    margin: 0 8px;
+    border-top: solid 1px #e4e4e4;
+    height: 34px;
+    line-height: 34px;
+}
+
+.feedlocationfn-equipment-dialog .equipment-listitem-r-bottom {
+    color: #999;
+}
+
+.feedlocationfn-equipment-dialog .equipment-bottominfo-r button {
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    color: #999;
+    cursor: pointer;
+    border-radius: 2px;
+    border: solid 1px #999;
+}
+
+.feedlocationfn-equipment-dialog .equipment-bottominfo-r button.disable {
+    border: solid 1px #e3e3e3;
+    color: #e3e3e3;
+    text-decoration: none;
+    cursor: default;
+    background: #fff;
+    border-radius: 2px;
+}
+
+.feedlocationfn-equipment-dialog .equipment-bottominfo-r select {
+    width: 66px;
+    height: 22px;
+    color: #999;
+    cursor: pointer;
+}
+
+.fs-feed-mask{
+    background: #ffffff;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+.tpl-hichart{
+	margin-top: 20px;
+	width: 1200px;
+	background: #fff;
+}
+.tpl-hichart .-hichart-line{
+	margin-top: 20px;
+	height: 400px;
+}
+.tpl-hichart .-hichart-pie{
+	margin-top: 20px;
+	height: 400px;
+}

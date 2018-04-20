@@ -1,0 +1,24 @@
+
+<!-- 地图列表的模板 -->
+<div class="fs-maplist-receive-item-tpl">
+	<div class="item-l" feedid="{{feedID}}"><div class="map-num-ico">{{listNum}}</div></div>
+	<div class="item-r">
+		<div class="item-topinfo">{{slocation}}</div>
+		<div class="item-bottominfo fn-clear">
+			<div class="item-bottominfo-l">{{createTime}}</div>
+			<div class="item-bottominfo-r">
+				<a href="javascript:;" class="map-showdetail" feedid="{{feedID}}">详情</a>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+<!-- 地图详情的弹出框 -->
+<div class="map-showdetail-dialog-templet">
+    <div class="ui-dialog-title">查看信息源</div>
+    <div class="ui-dialog-body">
+        <div class="feed-wrapper"></div>
+    </div>
+</div>

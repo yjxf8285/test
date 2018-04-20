@@ -1,0 +1,19 @@
+.feed{padding-top:1px;}
+#stream-showfeed .feed .feed-reply .fs-reply-list-wrapper .fs-reply-pagination{padding-right:0;}
+/* 打印模式样式调整 start */
+html.fs-print-html{
+    height: 100%;
+}
+body.fs-print-body{
+    width: 787px;
+    height: 100%;
+    overflow:auto;
+}
+.fs-print-body #sub-tpl,
+.fs-print-body .tpl-c{
+    width: 100%;
+}
+.fs-print-body .tpl-c .tpl-inner{
+    min-height: 0;
+}
+/* 打印模式样式调整 end */

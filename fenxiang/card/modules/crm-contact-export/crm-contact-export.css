@@ -1,0 +1,25 @@
+.crm-contact-export-container{
+	padding: 0 20px 20px;
+	background-color: #fff;
+}
+
+.crm-contact-export-title{
+	font-size: 18px;
+	padding: 16px 0;
+}
+
+.crm-contact-export-table{
+	margin:20px;
+}
+
+.crm-contact-export-table td{
+	padding: 10px 0;
+}
+
+.crm-contact-export-keyword-input{
+	width: 300px;
+	border: 1px #c6c6c6 solid;
+	height: 28px;
+	padding-left: 10px;
+}
+

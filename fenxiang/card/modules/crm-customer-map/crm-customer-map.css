@@ -1,0 +1,38 @@
+.crm-customer-map-container{
+	padding: 0px 20px 20px 20px;
+	background-color: #fff;
+	border: 1px #d8d8d8 solid;
+	border-top:2px #e46f61 solid;
+}
+
+.crm-customer-map-title{
+	font-size: 18px;
+	padding: 10px 0px;
+}
+
+.crm-customer-map-image-info{
+	height: 50px;
+	width: 270px;
+	position: absolute;
+	top: 50px;
+	left: 90px;
+	vertical-align: middle;
+	text-align: center;
+	background-color: #fff;
+	-moz-box-shadow:1px 2px 2px #cccccc;
+    -webkit-box-shadow:1px 2px 2px #cccccc;
+    box-shadow:1px 2px 2px #cccccc;
+    line-height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.crm-customer-map-image-link{
+	width: 270px;
+}
+
+.crm-customer-map-image-container{
+	height: 240px;
+	overflow: hidden;
+	position: relative;
+}

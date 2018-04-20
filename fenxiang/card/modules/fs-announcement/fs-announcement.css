@@ -1,0 +1,74 @@
+/*公告发布弹框*/
+.fs-announcement-new-dialog .ui-dialog-body{
+    padding:16px;
+	font-size:12px;
+}
+.fs-announcement-new-dialog .announcement-dialog-mainscroll{max-height:400px;overflow:auto;margin-bottom:5px;}
+.fs-announcement-new-dialog .announcement-range,
+.fs-announcement-new-dialog .announcement-title-wrapper,
+.fs-announcement-new-dialog .announcement-content-wrapper,
+.fs-announcement-new-dialog .announcement-content-wrapper{
+    margin-bottom: 10px;
+}
+.fs-announcement-new-dialog input{vertical-align:middle;}
+
+.fs-announcement-new-dialog .announcement-title{
+/*width:495px;*/width:470px;
+height:25px;line-height:25px;border:#dddddd solid 1px;padding-left:3px;}
+.fs-announcement-new-dialog .announcement-content{/*width:495px;*width:494px;*/width:470px;*width:469px;
+height:50px;border:#dddddd solid 1px;border-bottom:none;padding:3px 0 0 4px;vertical-align:top;background: transparent;}
+
+.fs-announcement-new-dialog .announcement-sel-day{vertical-align:middle;margin-right:5px;height:27px;}
+.fs-announcement-new-dialog .announcement-free-time{width:120px;height:25px;line-height:25px;border:#dddddd solid 1px;display:none;}
+
+.fs-announcement-new-dialog .range-selectbar{
+    display: inline-block;
+    /*width:500px;
+	_width:495px;*/
+	width:475px;
+	_width:470px;
+    vertical-align: middle;
+}
+.fs-announcement-new-dialog .announcement-free-time{
+    display: inline-block;
+}
+.fs-announcement-new-dialog .media{
+    border:1px solid #dddddd;
+    border-top:none;
+    margin-top:-36px;
+}
+.fs-announcement-new-dialog .media .fs-publish-action-btns{
+}
+.fs-announcement-new-dialog .media .fs-publish-action-panels{width:450px;}
+.fs-announcement-new-dialog .media .fs-publish-media-panel-wrapper{}
+.fs-announcement-new-dialog .fs-publish-dateselect-input{width:115px;padding-left:5px;border:none;height:25px;line-height:25px;position: relative;vertical-align:top;}
+.fs-announcement-new-dialog .announcement-content-wrapper .content-input-wrapper .content-input{
+    padding-bottom: 36px;
+}
+.fs-announcement-new-dialog .media .fs-publish-h5attachupload-panel .fs-publish-upload-list{
+    width:400px;
+}
+/* 公告banner */
+.fs-announcement-banner .fs-announcement-banner-item{
+    display: none;
+    width:460px;
+	color:#424242;
+	word-wrap:break-word;
+}
+.fs-announcement-banner .fs-announcement-banner-content .state-active{
+    display: block;
+}
+/* 公告banner start */
+.fs-announcement-banner{border:#e4e4e4 solid 1px;background-color:#f6f6f6;position:relative;height:72px;}
+.fs-announcement-banner .fs-announcement-banner-content{padding-left:20px;margin:10px 0 0 14px;background:url(../../assets/images/home-icons.png?1) no-repeat -170px -60px;}
+.fs-announcement-banner .close-h{position:absolute;right:7px;top:0px;color:#cccccc;font-size:16px;font-weight:bold;cursor:pointer;}
+.fs-announcement-banner.fs-announcement-banner-nav .nav-list{padding: 20px 10px 0 0;}
+.fs-announcement-banner .fs-announcement-banner-nav .nav-list li{float:left;color:#999999;line-height:14px;height:14px;display:inline-block;padding:0 3px;margin-left:5px;border:#f6f6f6 solid 1px;line-height:12px\9\0;}
+.fs-announcement-banner .fs-announcement-banner-nav .nav-list li.state-active{color:#ffffff;border:#c7c7c7 solid 1px;background-color:#999999;}
+.fs-announcement-banner .fs-announcement-banner-nav{position: absolute;right:10px;bottom: 6px;}
+.fs-announcement-banner .fs-announcement-banner-nav li.nav-item{cursor:pointer;}
+.fs-announcement-new-dialog .receipt-tip{
+    position: relative;
+    top:3px;
+}
+/* 公告banner end */

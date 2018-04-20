@@ -1,0 +1,1357 @@
+<!-- 分享 -->
+
+<script type="text/html" class="feed-list-share">
+    <div class="fs-list-item"> {{archive}}
+        <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}">
+            <img src="{{listprofileImage}}"
+                 alt=""></a></div>
+        <div class="item-detail">
+            <div class="item-info">
+                {{oftimetext}}
+                <div class="item-name">{{sendername}}{{feedRangeDescription}}<span>-</span> <span class="source"> <a href="javascript:;"> {{feedTypeDescription}}</a> </span> {{isWhat}}{{fiveStar}}
+                </div>
+            </div>
+            <div class="contnet-isencrypted {{onencrypted}}">
+                <div class="isencrypted-tit"><img src="../../html/fs/assets/images/lock_red.png" alt=""/>{{isencryptedTit}}</div>
+                <div class="isencrypted-con"><img src="../../html/fs/assets/images/info2.png" alt=""/>该信息已加密，<a href="javascript:;" class="feedlist-open-ecrypt aj-feed-fn-com-btn">点击解密查看</a></div>
+            </div>
+            <div class="info-all-contnet {{onencrypted}}">
+                <!-- FEED内容 -->
+
+                <div class="item-text"> {{leaderinfo}}
+                    <div class="content">
+                        <span class="feed-summary-text">{{feedFormatContent.summaryHtml}}</span>
+                        ## if(feedFormatContent.leftHtml.length>0){ ##
+                        <span class="feed-content-ellipsis">&#8230;</span><br/><br/><a href="#" class="feed-content-visible-h">展开正文，（共{{feedFormatContent.feedWordNum}}个字）</a>
+                        ## } ##
+                    </div>
+                </div>
+
+                <!-- 录音 -->
+                <div class="audio-el">
+                    {{audioBtn}}
+                    {{audioWarp}}
+                </div>
+                <!--图片和附件-->
+                <div class="item-media"> {{ feedPic}}{{feedFiles}}</div>
+                <!--定位信息-->
+                {{feedLocationStr}}
+                <!--关键回复-->
+                {{replyContent}}
+                <!-- 短信提醒 -->
+                {{smsRemaind}}
+                <!-- 回执信息 -->
+                {{receiptRemaind}}
+                <div class="item-func fn-clear">
+                    <div class="handle">
+                    <div class="cancelmenu" style="right:-30px;">
+                            <div class="cancelmenu-box">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td><img src="../../html/fs/assets/images/question_ico.gif" width="16" height="16"/>
+                                        </td>
+                                        <td valign="top" class="cancel-text">确定删除这条信息吗(信息仅限24小时内可以删除)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align="center">
+                                            <button class="f-submit button-green del-submit">确定</button>
+                                            &nbsp;
+                                            <button class="f-cancel button-green">取消</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        {{receiptfn}}
+                        {{islike}}
+                        <div class="more">
+                            <div class="more-menu" style="display: none;">
+                                {{morePendingW}}
+                                {{fnDeleteW}}{{fnUnplaceonfileW}}
+                                {{fnUnattentionW}}<a href="javascript:;" class="aj-feed-fn-com-btn aj-forward">转发</a></div>
+                            <a href="javascript:;"> 更多 <i class="arrow"></i> </a>
+                        </div>
+                        {{fnApprovalW}}{{fnCcW}}{{fnModifyapprovalW}}{{fnPendingW}}{{fnCommentonW}}{{fnReplyW}}{{fnWorkingReW}}{{fnWorkSendW}}
+                        
+                    </div>
+                    <div class="from"><span class="create-time">{{createTime}}</span><span class="from-source">来自 <a href="javascript:;"> {{sourceDescription}}</a></span></div>
+                </div>
+                <div class="replay-section"></div>
+                <div class="feed-reply"></div>
+                <div class="function-menu"></div>
+            </div>
+        </div>
+    </div>
+</script>
+<!-- 日志 -->
+<script type="text/html" class="feed-list-plan">
+    <div class="fs-list-item"> {{archive}}
+        <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"> <img src="{{listprofileImage}}" alt=""></a></div>
+        <div class="item-detail"> {{oftimetext}}
+            <div class="item-info">
+                <div class="item-name">{{sendername}}{{feedRangeDescription}}<span>-</span> <span class="source"> <a href="javascript:;"> {{feedTypeDescription}}</a> </span> {{isWhat}}{{fiveStar}}
+                </div>
+            </div>
+            <div class="contnet-isencrypted {{onencrypted}}">
+                <div class="isencrypted-tit"><img src="../../html/fs/assets/images/lock_red.png" alt=""/>{{isencryptedTit}}</div>
+                <div class="isencrypted-con"><img src="../../html/fs/assets/images/info2.png" alt=""/>该信息已加密，<a href="javascript:;" class="feedlist-open-ecrypt aj-feed-fn-com-btn">点击解密查看</a></div>
+            </div>
+            <div class="info-all-contnet {{onencrypted}}">
+                <!-- FEED内容 -->
+                <div class="item-text"> {{leaderinfo}}
+                    <div class="content">
+                        <span class="feed-summary-text">{{feedFormatContent.summaryHtml}}</span>
+                        ## if(feedFormatContent.leftHtml.length>0){ ##
+                        <span class="feed-content-ellipsis">&#8230;</span><br/><br/><a href="#" class="feed-content-visible-h">展开正文，（共{{feedFormatContent.feedWordNum}}个字）</a>
+                        ## } ##
+                    </div>
+                </div>
+                <!-- 录音 -->
+                <div class="audio-el"> {{audioBtn}}
+                    {{audioWarp}}
+                </div>
+                <!--图片和附件-->
+                <div class="item-media"> {{ feedPic}}{{feedFiles}}</div>
+                <!--定位信息-->
+                {{feedLocationStr}}
+                <!--关键回复-->
+                {{replyContent}}
+                <!-- item function -->
+                <div class="item-func fn-clear">
+                    <div class="handle">
+                        {{islike}}
+                        <div class="cancelmenu" style="right:-30px;">
+                            <div class="cancelmenu-box">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td><img src="../../html/fs/assets/images/question_ico.gif" width="16" height="16"/>
+                                        </td>
+                                        <td valign="top" class="cancel-text">确定删除这条信息吗(信息仅限24小时内可以删除)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align="center">
+                                            <button class="f-submit button-green del-submit">确定</button>
+                                            &nbsp;
+                                            <button class="f-cancel button-green">取消</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+                        <div class="more">
+                            <div class="more-menu" style="display: none;">
+                                {{morePendingW}}
+                                {{fnDeleteW}}{{fnUnplaceonfileW}}
+                                {{fnUnattentionW}}<a href="javascript:;" class="aj-feed-fn-com-btn aj-forward">转发</a></div>
+                            <a href="javascript:;"> 更多 <i class="arrow"></i> </a>
+                        </div>
+                        {{fnApprovalW}}{{fnCcW}}{{fnModifyapprovalW}}{{fnPendingW}}{{fnCommentonW}}{{fnReplyW}}{{fnWorkingReW}}{{fnWorkSendW}}
+                    </div>
+                    <div class="from">{{createTime}}来自 <a href="javascript:;"> {{sourceDescription}}</a></div>
+                </div>
+                <!-- feed repeat -->
+                <div class="replay-section"></div>
+                <div class="feed-reply"></div>
+                <!-- feed function menu -->
+                <div class="function-menu"></div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<!-- 工作 -->
+<script type="text/html" class="feed-list-work">
+    <div class="fs-list-item"> {{archive}}
+        <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"> <img src="{{listprofileImage}}" alt=""></a></div>
+        <div class="item-detail"> {{oftimetext}}
+            <div class="item-info">
+                <div class="item-name">{{sendername}}{{feedRangeDescription}}<span>-</span> <span class="source"> <a href="javascript:;"> {{feedTypeDescription}}</a> </span> {{isWhat}}{{fiveStar}}
+                </div>
+            </div>
+            <div class="contnet-isencrypted {{onencrypted}}">
+                <div class="isencrypted-tit"><img src="../../html/fs/assets/images/lock_red.png" alt=""/>{{isencryptedTit}}</div>
+                <div class="isencrypted-con"><img src="../../html/fs/assets/images/info2.png" alt=""/>该信息已加密，<a href="javascript:;" class="feedlist-open-ecrypt aj-feed-fn-com-btn">点击解密查看</a></div>
+            </div>
+            <div class="info-all-contnet {{onencrypted}}">
+                <!-- FEED内容 -->
+                <div class="item-text"> {{leaderinfo}}
+                    <div class="content">
+                        <span class="feed-summary-text">{{feedFormatContent.summaryHtml}}</span>
+                        ## if(feedFormatContent.leftHtml.length>0){ ##
+                        <span class="feed-content-ellipsis">&#8230;</span><br/><br/><a href="#" class="feed-content-visible-h">展开正文，（共{{feedFormatContent.feedWordNum}}个字）</a>
+                        ## } ##
+                    </div>
+                </div>
+                <!-- 录音 -->
+                <div class="audio-el">{{audioBtn}}
+                    {{audioWarp}}
+                </div>
+                <!--图片和附件-->
+                <div class="item-media"> {{ feedPic}}{{feedFiles}}</div>
+                <!--定位信息-->
+                {{feedLocationStr}}
+                <!--关键回复-->
+                {{replyContent}}
+                <!-- item function -->
+                <div class="item-func fn-clear">
+                    <div class="handle">
+                        {{islike}}
+                        <div class="cancelmenu" style="right:-30px;">
+                            <div class="cancelmenu-box">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td><img src="../../html/fs/assets/images/question_ico.gif" width="16" height="16"/>
+                                        </td>
+                                        <td valign="top" class="cancel-text">确定删除这条信息吗(信息仅限24小时内可以删除)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align="center">
+                                            <button class="f-submit button-green del-submit">确定</button>
+                                            &nbsp;
+                                            <button class="f-cancel button-green">取消</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="more">
+                            <div class="more-menu" style="display: none;">
+                                {{morePendingW}}
+                                {{fnDeleteW}}{{fnUnplaceonfileW}}
+                                {{fnUnattentionW}}<a href="javascript:;" class="aj-feed-fn-com-btn aj-forward">转发</a></div>
+                            <a href="javascript:;"> 更多 <i class="arrow"></i> </a>
+                        </div>
+                        {{fnApprovalW}}{{fnCcW}}{{fnModifyapprovalW}}{{fnPendingW}}{{fnCommentonW}}{{fnReplyW}}{{fnWorkingReW}}{{fnWorkSendW}}
+                    </div>
+                    <div class="from">{{createTime}}来自 <a href="javascript:;"> {{sourceDescription}}</a></div>
+                </div>
+                <!-- feed repeat -->
+                <div class="replay-section"></div>
+                <div class="feed-reply"></div>
+                <!-- feed function menu -->
+                <div class="function-menu"></div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<!-- 审批 -->
+<script type="text/html" class="feed-list-approve">
+    <div class="fs-list-item"> {{archive}}
+        <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"> <img
+                src="{{listprofileImage}}" alt=""></a></div>
+        <div class="item-detail"> {{oftimetext}}
+            <div class="item-info">
+                <div class="item-name">{{sendername}}{{feedRangeDescription}}<span>-</span> <span class="source"> <a
+                        href="javascript:;"> {{feedTypeDescription}}</a> </span> {{isWhat}}{{fiveStar}} <a
+                        href="#" class="printer {{isHide}}">打印</a></div>
+            </div>
+            <div class="contnet-isencrypted {{onencrypted}}">
+                <div class="isencrypted-tit"><img src="../../html/fs/assets/images/lock_red.png" alt=""/>{{isencryptedTit}}</div>
+                <div class="isencrypted-con"><img src="../../html/fs/assets/images/info2.png" alt=""/>该信息已加密，<a href="javascript:;" class="feedlist-open-ecrypt aj-feed-fn-com-btn">点击解密查看</a></div>
+            </div>
+            <div class="info-all-contnet {{onencrypted}}">
+                <!-- FEED内容 -->
+                <div class="item-text"> {{leaderinfo}}
+                    <div class="content">
+                        <span class="feed-summary-text">{{feedFormatContent.summaryHtml}}</span>
+                        ## if(feedFormatContent.leftHtml.length>0){ ##
+                        <span class="feed-content-ellipsis">&#8230;</span><br/><br/><a href="#" class="feed-content-visible-h">展开正文，（共{{feedFormatContent.feedWordNum}}个字）</a>
+                        ## } ##
+                    </div>
+                </div>
+                <!-- 录音 -->
+                <div class="audio-el">
+                    {{audioBtn}}
+                    {{audioWarp}}
+                </div>
+                <!--图片和附件-->
+                <div class="item-media"> {{ feedPic}}{{feedFiles}}</div>
+                <!--定位信息-->
+                {{feedLocationStr}}
+                <!--关键回复-->
+                {{replyContent}}
+                <!-- item function -->
+                <div class="item-func fn-clear">
+                    <div class="handle">
+                        {{islike}}
+                        <div class="cancelmenu" style="right:-30px;">
+                            <div class="cancelmenu-box">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td><img src="../../html/fs/assets/images/question_ico.gif" width="16" height="16"/>
+                                        </td>
+                                        <td valign="top" class="cancel-text">确定删除这条信息吗(信息仅限24小时内可以删除)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align="center">
+                                            <button class="f-submit button-green del-submit">确定</button>
+                                            &nbsp;
+                                            <button class="f-cancel button-green">取消</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="more">
+                            <div class="more-menu" style="display: none;">
+                                {{morePendingW}}
+                                {{fnDeleteW}}{{fnUnplaceonfileW}}
+                                {{fnUnattentionW}}<a href="javascript:;" class="aj-feed-fn-com-btn aj-forward">转发</a></div>
+                            <a href="javascript:;"> 更多 <i class="arrow"></i> </a>
+                        </div>
+                        {{fnCcW}}{{fnModifyapprovalW}}{{fnPendingW}}{{fnCommentonW}}{{fnApprovalW}}{{fnReplyW}}{{fnWorkingReW}}{{fnWorkSendW}}
+                    </div>
+                    <div class="from">{{createTime}}来自 <a href="javascript:;"> {{sourceDescription}}</a></div>
+                </div>
+                <!-- feed repeat -->
+                <div class="replay-section"></div>
+                <div class="feed-reply"></div>
+                <!-- feed function menu -->
+                <div class="function-menu"></div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<!-- 审批-打印模板 -->
+<script type="text/html" class="feed-list-approve-print">
+    <div class="fs-list-item">  
+        <div class="item-info">
+                <div class="item-name">{{printSendername}}<span>-</span><span class="con">审批</span><span>-</span> <span class="con">发出时间：{{printCTime}}</span><span class="printer-numinfo">系统编号：<i>{{feedID}}</i></span></div>
+        </div>           
+        <!-- FEED内容 -->
+        <div class="item-text">
+            <div class="content">
+                {{printText}}
+            </div>
+        </div>   
+         
+        <!-- 图片和附件 -->
+        <div class="item-media">
+                {{printPictures}}
+                {{printFiles}}
+        </div>
+        <!-- 关键回复 -->   
+                {{printReplyContent}} 
+        <!-- 回复内容-->
+        <div class="printreplys">
+                
+        </div>
+            
+    </div>
+</script>
+
+<!-- 公告详情页模板 -->
+<script type="text/html" class="feed-list-announce">
+    <div class="fs-list-item"> {{archive}}
+        <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"> <img
+                src="{{listprofileImage}}" alt=""></a></div>
+        <div class="item-detail">
+            <div class="item-info"> {{oftimetext}}
+                <div class="item-name">{{sendername}}{{feedRangeDescription}}<span>-</span> <span class="source"> <a
+                        href="javascript:;"> {{feedTypeDescription}}</a> </span> {{isWhat}}{{fiveStar}}
+                </div>
+            </div>
+            <div class="contnet-isencrypted {{onencrypted}}">
+                <div class="isencrypted-tit"><img src="../../html/fs/assets/images/lock_red.png" alt=""/>{{isencryptedTit}}</div>
+                <div class="isencrypted-con"><img src="../../html/fs/assets/images/info2.png" alt=""/>该信息已加密，<a href="javascript:;" class="feedlist-open-ecrypt aj-feed-fn-com-btn">点击解密查看</a></div>
+            </div>
+            <div class="info-all-contnet {{onencrypted}}">
+                <!-- 公告标题 -->
+                <div class="announce-tit fn-clear">
+                    <table>
+                        <tr>
+                            <td><img src="../../html/fs/assets/images/announce_tit.gif" alt=""></td>
+                            <td class="tit-text">{{announcetit}}</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <!-- FEED内容 -->
+                <div class="item-text"> {{leaderinfo}}
+                    <div class="content">
+                        <span class="feed-summary-text">{{feedFormatContent.summaryHtml}}</span>
+                        ## if(feedFormatContent.leftHtml.length>0){ ##
+                        <span class="feed-content-ellipsis">&#8230;</span><br/><br/><a href="#" class="feed-content-visible-h">展开正文，（共{{feedFormatContent.feedWordNum}}个字）</a>
+                        ## } ##
+                    </div>
+                </div>
+                <div class="item-media"> {{ feedPic}}{{feedFiles}}</div>
+                <!--关键回复-->
+                {{replyContent}}
+                <!-- SMSRemaindCount -->
+                {{smsRemaind}}
+                <!-- 回执信息 -->
+                {{receiptRemaind}}
+                <!-- item function -->
+                <div class="item-func fn-clear">
+                    <div class="handle">
+                    {{receiptfn}}
+                        {{islike}}
+                        <div class="cancelmenu">
+                            <div class="cancelmenu-box">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td><img src="../../html/fs/assets/images/question_ico.gif" width="16" height="16"/>
+                                        </td>
+                                        <td valign="top" class="cancel-text">确定删除这条信息吗(信息仅限24小时内可以删除)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align="center">
+                                            <button class="f-submit button-green del-submit">确定</button>
+                                            &nbsp;
+                                            <button class="f-cancel button-green">取消</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="more">
+                            <div class="more-menu" style="display: none;">
+                                {{morePendingW}}
+                                {{fnDeleteW}}{{fnUnplaceonfileW}}
+                                {{fnUnattentionW}}<a href="javascript:;" class="aj-feed-fn-com-btn aj-forward">转发</a></div>
+                            <a href="javascript:;"> 更多 <i class="arrow"></i> </a>
+                        </div>
+                        {{fnApprovalW}}{{fnCcW}}{{fnModifyapprovalW}}{{fnPendingW}}{{fnCommentonW}}{{fnReplyW}}{{fnWorkingReW}}{{fnWorkSendW}}
+                    </div>
+                    <div class="from"><span class="create-time">{{createTime}}</span><span class="from-source">来自 <a
+                            href="javascript:;"> {{sourceDescription}}</a></span></div>
+                </div>
+                <!-- feed repeat -->
+                <div class="replay-section"></div>
+                <div class="feed-reply"></div>
+                <!-- feed function menu -->
+                <div class="function-menu"></div>
+            </div>
+        </div>
+    </div>
+</script>
+<!-- 公告列表页模板 -->
+<script type="text/html" class="feed-list-announce-page">
+    <div class="fs-list-item"> {{archive}}
+        <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"> <img
+                src="{{listprofileImage}}" alt=""></a></div>
+        <div class="item-detail">
+            <div class="item-info"> {{oftimetext}}
+                <div class="item-name">{{sendername}}{{feedRangeDescription}}<span>-</span> <span class="source"> <a
+                        href="javascript:;"> {{feedTypeDescription}}</a> </span> {{isWhat}}{{fiveStar}}
+                </div>
+            </div>
+            <!-- 公告标题 -->
+            <div class="announce-tit fn-clear">
+                <table>
+                    <tr>
+                        <td><img src="../../html/fs/assets/images/voteico.gif" alt=""></td>
+                        <td class="tit-text">公告：{{announcetit}}</td>
+                    </tr>
+                </table>
+
+            </div>
+            <!-- FEED内容 -->
+            <div class="item-text"> {{leaderinfo}}
+                <div class="content {{textcur}}"> {{feedText}}</div>
+                {{textbtn}}
+            </div>
+            <div class="item-media"> {{ feedPic}}{{feedFiles}}</div>
+            <!--关键回复-->
+            {{replyContent}}
+            <!-- SMSRemaindCount -->
+            {{smsRemaind}}
+            <!-- 回执信息 -->
+                {{receiptRemaind}}
+            <!-- item function -->
+            <div class="item-func fn-clear">
+                <div class="handle">
+                {{receiptfn}}
+                        <div class="cancelmenu" style="right:-30px;">
+                            <div class="cancelmenu-box">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td><img src="../../html/fs/assets/images/question_ico.gif" width="16" height="16"/>
+                                        </td>
+                                        <td valign="top" class="cancel-text">确定删除这条信息吗(信息仅限24小时内可以删除)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align="center">
+                                            <button class="f-submit button-green del-submit">确定</button>
+                                            &nbsp;
+                                            <button class="f-cancel button-green">取消</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    {{deletegg}}
+                        
+                        
+                    
+                        <a href="javascript:;" class="istimeshow">{{isShowText}}</a>
+                    
+                </div>
+                <div class="from"><span class="create-time">{{createTime}}</span><span class="from-source">来自 <a
+                        href="javascript:;"> {{sourceDescription}}</a></span></div>
+            </div>
+            <!-- feed repeat -->
+            <div class="replay-section"></div>
+            <div class="feed-reply"></div>
+            <!-- feed function menu -->
+            <div class="function-menu"></div>
+        </div>
+    </div>
+</script>
+<!-- 日程主列表模板 -->
+<script type="text/html" class="feed-list-schedule">
+    <div class="fs-list-item"> {{archive}}
+        <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"><img
+                src="{{listprofileImage}}" alt=""></a></div>
+        <div class="item-detail"> {{oftimetext}}
+            <div class="item-info">
+                <div class="item-name">{{sendername}}{{feedRangeDescription}}<span>-</span> <span class="source"> <a
+                        href="javascript:;"> {{feedTypeDescription}}</a> </span> {{isWhat}}{{fiveStar}}
+                </div>
+                <div class="item-name vote-info"><img src="../../html/fs/assets/images/{{voteico}}" width="26"
+                                                      height="28" class="voteico"/> <span
+                        class="rc-time"> {{startTime}}</span><span>-</span><span>{{smsRemindTypeText}}</span></div>
+            </div>
+            <!-- FEED内容 -->
+            <div class="item-text"> {{leaderinfo}}
+                <div class="content {{textcur}}">{{feedText}}</div>
+                {{textbtn}}
+            </div>
+            <!--图片和附件-->
+            <div class="item-media">{{feedPic}}{{feedFiles}}</div>
+            <!--关键回复-->
+            {{replyContent}}
+            <!-- item function -->
+            <div class="item-func fn-clear">
+                <div class="handle">
+                    <div class="cancelmenu">
+                        <div class="cancelmenu-box">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td><img src="../../html/fs/assets/images/question_ico.gif" width="16" height="16"/>
+                                    </td>
+                                    <td valign="top" class="cancel-text">确定删除这条日程吗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <button class="f-submit button-green submit-cancelschedule">确定</button>
+                                        &nbsp;
+                                        <button class="f-cancel button-green">取消</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="more">
+                        <div class="more-menu" style="display: none;">
+                            {{morePendingW}}
+                            {{fnDeleteW}}{{fnUnplaceonfileW}}
+                            {{fnUnattentionW}}<a href="javascript:;" class="aj-feed-fn-com-btn aj-forward">转发</a></div>
+                        <a href="javascript:;"> 更多 <i class="arrow"></i> </a>
+                    </div>
+                    {{fnApprovalW}}{{fnCcW}}{{fnModifyapprovalW}}{{fnPendingW}}{{fnCommentonW}}{{fnReplyW}}{{fnWorkingReW}}{{fnWorkSendW}}
+                </div>
+                <div class="from">{{createTime}}来自 <a href="javascript:;"> {{sourceDescription}}</a></div>
+            </div>
+            <!-- feed repeat -->
+            <div class="replay-section"></div>
+            <div class="feed-reply"></div>
+            <!-- feed function menu -->
+            <div class="function-menu"></div>
+        </div>
+    </div>
+</script>
+
+<!-- 日程弹出框模板 -->
+<script type="text/html" class="feed-list-schedule-tip">
+    <div class="fs-list-item"> {{archive}}
+        <div class="item-face vote" feedid="{{feedID}}"><em class="voteico"> <img src="../../html/fs/assets/images/{{voteico}}" width="26" height="28" class="voteico-img"/> {{newico}} </em></div>
+        <div class="item-detail detail-vote"> {{oftimetext}}
+            <div class="item-info">
+                <div class="item-name vote-info">
+                    
+                    <span class="rc-time"> {{startTime}}</span>{{feedRangeDescription}}<span>-</span><span>{{smsRemindTypeText}}</span>
+                </div>
+            </div>
+            <!-- FEED内容 -->
+            <div class="item-text"> {{leaderinfo}}
+                <div class="content {{textcur}}">{{feedText}}</div>
+                {{textbtn}}
+            </div>
+            <!--图片和附件-->
+            <div class="item-media"> {{feedPic}}{{feedFiles}}</div>
+            <!--关键回复-->
+            {{replyContent}}
+            <!-- item function -->
+            <div class="item-func vote fn-clear">
+                <!-- 框里面用的 -->
+                <div class="handle">
+                    <div class="cancelmenu">
+                        <div class="cancelmenu-box">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td><img src="../../html/fs/assets/images/question_ico.gif" width="16" height="16"/>
+                                    </td>
+                                    <td valign="top" class="cancel-text">确定删除这条日程吗</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <button class="f-submit button-green submit-cancelschedule">确定</button>
+                                        <button class="f-cancel button-green">取消</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    {{fnReplyRcW}}<i class="S_txt3">|</i> <a href="javascript:;" class="aj-schedule-delete"> 删除</a></div>
+                {{voteSenderInfo}}
+            </div>
+            <!-- feed repeat -->
+            <div class="replay-section"></div>
+            <div class="feed-reply"></div>
+            <!-- feed function menu -->
+            <div class="function-menu"></div>
+        </div>
+    </div>
+</script>
+
+<!-- 投票 -->
+<script type="text/html" class="feed-list-voteitem">
+    <div class="fs-list-item"> {{archive}}
+        <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"> <img
+                src="{{listprofileImage}}" alt=""></a></div>
+        <div class="item-detail"> {{oftimetext}}
+            <div class="item-info">
+                <div class="item-name">{{sendername}}{{feedRangeDescription}}<span>-</span> <span class="source"> <a
+                        href="javascript:;"> {{feedTypeDescription}}</a> </span> {{isWhat}}{{fiveStar}}
+                </div>
+            </div>
+            <div class="contnet-isencrypted {{onencrypted}}">
+                <div class="isencrypted-tit"><img src="../../html/fs/assets/images/lock_red.png" alt=""/>{{isencryptedTit}}</div>
+                <div class="isencrypted-con"><img src="../../html/fs/assets/images/info2.png" alt=""/>该信息已加密，<a href="javascript:;" class="feedlist-open-ecrypt aj-feed-fn-com-btn">点击解密查看</a></div>
+            </div>
+            <div class="info-all-contnet {{onencrypted}}">
+               <!-- FEED内容 -->
+                    <div class="item-text"> {{leaderinfo}}
+                        <div class="content">
+                            <span class="feed-summary-text">{{feedFormatContent.summaryHtml}}</span>
+                            ## if(feedFormatContent.leftHtml.length>0){ ##
+                            <span class="feed-content-ellipsis">&#8230;</span><br/><br/><a href="#" class="feed-content-visible-h">展开正文，（共{{feedFormatContent.feedWordNum}}个字）</a>
+                            ## } ##
+                        </div>
+                    </div>
+                <div class="item-media"> {{feedPic}}{{feedFiles}}</div>
+                <!-- vote item -->
+                <div class="item-vote">
+                    <!-- inlet -->
+                    <div class="vote-inlet fn-clear">
+                        <div class="l"><img src="../../html/fs/assets/images/vote_e.jpg" alt=""></div>
+                        <div class="r">
+                            <div class="tit">{{votecount}}人已投票</div>
+                            <button type="submit" class="button-green vote-inlet-btn aj-open-vote-btn">查看详情</button>
+                        </div>
+                    </div>
+                    <div class="vote-main fn-clear" style="display:none;">
+                        <div class="vote-close"><a href="javascript:;" class="aj-close-vote-btn">收起</a></div>
+                        <div class="tit">标题</div>
+                        <div class="seleinfo marg10">最多选择2项</div>
+                        <div class="time marg10">提示：匿名投票，截止时间6月11日 09:00:03。</div>
+                        <div class="cantsee aj-cantsee-con">
+                            您没有权限查看
+                        </div>
+                        <!-- status def -->
+                        <div class="aj-status-def">
+                            <div class="selecter fn-clear marg10">
+                                <label for="">
+                                    <input type="checkbox" id="">
+
+                                    <div>长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长</div>
+                                </label>
+                                <label for="">
+                                    <input type="checkbox">
+
+                                    <div>选项2</div>
+                                </label>
+                                <label for="">
+                                    <input type="radio" name="voteinput">
+
+                                    <div>我是单选项</div>
+                                </label>
+                            </div>
+                            <div class="vote-fn marg10">
+                                <button type="submit" class="button-green vote-inlet-btn aj-sendvote-btn">投票</button>
+                                <button type="submit" class="button-orange vote-inlet-btn aj-seevote-btn">查看结果</button>
+                            </div>
+                        </div>
+                        <!-- status vote -->
+                        <div class="aj-status-vote marg10" style="display:none;">
+                            <table class="status-table">
+                                <tr>
+                                    <td width="112" align="right"><span class="selertitle">长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长</span>
+                                    </td>
+                                    <td width="256"><span class="schedulebar"></span><span class="num">0 (0%)</span></td>
+                                    <td>
+                                        <div class="seemore"><span><a href="#">查看详情1</a></span>
+
+                                            <div class="seemore-info"> 12</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right"><span class="selertitle">选项2</span></td>
+                                    <td><span class="schedulebar"><span class="myvotebar"></span></span><span class="num">1 (100%)</span>
+                                    </td>
+                                    <td><span><a href="#">查看详情</a></span></td>
+                                </tr>
+                            </table>
+                            <div class="vote-fn marg10">
+                                <button type="submit" class="button-orange vote-inlet-btn aj-backvote-btn">返回投票</button>
+                            </div>
+                            <div class="downloadresult marg10"><a href="">下载投票结果</a></div>
+                        </div>
+                        <!-- result vote-->
+                        <div class="aj-status-result marg10" style="display:none;">
+                            <table class="result-table">
+                                <tr>
+                                    <td width="112" align="right"><span class="selertitle">选项2</span></td>
+                                    <td width="256"><span class="schedulebar"><span class="othervotebar"></span></span><span
+                                            class="num">1 (100%)</span></td>
+                                    <td><span><a href="#">查看详情</a></span></td>
+                                </tr>
+                            </table>
+                            <div class="downloadresult marg10"><a href="{{votedownurl}}" target="_blank">下载投票结果</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!--关键回复-->
+                {{replyContent}}
+                <!-- 短信提醒 -->
+                {{smsRemaind}}
+                <!-- 回执信息 -->
+                {{receiptRemaind}}
+                <!-- item function -->
+                <div class="item-func fn-clear">
+                    <div class="handle">
+                     {{receiptfn}}
+                        {{islike}}
+                        <div class="cancelmenu">
+                            <div class="cancelmenu-box">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td><img src="../../html/fs/assets/images/question_ico.gif" width="16" height="16"/>
+                                        </td>
+                                        <td valign="top" class="cancel-text">确定删除这条信息吗(信息仅限24小时内可以删除)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align="center">
+                                            <button class="f-submit button-green del-submit">确定</button>
+                                            &nbsp;
+                                            <button class="f-cancel button-green">取消</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="more">
+                            <div class="more-menu" style="display: none;">
+                                {{morePendingW}}
+                                {{fnDeleteW}}{{fnUnplaceonfileW}}
+                                {{fnUnattentionW}}<a href="javascript:;" class="aj-feed-fn-com-btn aj-forward">转发</a></div>
+                            <a href="javascript:;"> 更多 <i class="arrow"></i> </a>
+                        </div>
+                        {{fnApprovalW}}{{fnCcW}}{{fnModifyapprovalW}}{{fnPendingW}}{{fnCommentonW}}{{fnReplyW}}{{fnWorkingReW}}{{fnWorkSendW}}
+                    </div>
+                    <div class="from">{{createTime}}来自 <a href="javascript:;"> {{sourceDescription}}</a></div>
+                </div>
+                <!-- feed repeat -->
+                <div class="replay-section"></div>
+                <div class="feed-reply"></div>
+                <!-- feed function menu -->
+                <div class="function-menu"></div>
+            </div>
+        </div>
+    </div>
+</script>
+<!-- 预览 -->
+<script type="text/html" class="preview-feed">
+    <div class="fs-list-item preview">
+        <div class="item-face" feedid="{{feedID}}"><a href="#profile/=/empid-{{employeeID}}"><img
+                src="{{listprofileImage}}" alt=""></a></div>
+        <div class="item-detail fn-clear">
+            <div class="item-info"> {{oftimetext}}
+                <div class="item-name preview">{{sendername}}<span>-</span> <span class="source"> <a
+                        href="javascript:;" class="black"> {{feedTypeDescription}}</a> </span></div>
+                <div class="preview-time">{{createTime}}</div>
+            </div>
+
+        </div>
+
+        <!-- FEED内容 -->
+        <div class="item-text">
+            <div class="content">
+                <span class="feed-summary-text">{{feedFormatContent.summaryHtml}}</span>
+                ## if(feedFormatContent.leftHtml.length>0){ ##
+                <span class="feed-content-ellipsis">&#8230;</span><br/><br/><a href="#" class="feed-content-visible-h">展开正文，（共{{feedFormatContent.feedWordNum}}个字）</a>
+                ## } ##
+            </div>
+            {{textbtn}}
+        </div>
+        <!-- item function -->
+        <div class="item-func fn-clear">
+            <div class="handle">{{fnReplyPre}}</div>
+            <div class="from"><span class="create-time">{{nolinkcreateTime}}</span></div>
+        </div>
+        <!-- feed repeat -->
+        <div class="fn-clear">
+            <textarea placeholder="回复原文..." class="preview-reply aj-replyinput"></textarea>
+            <div class="media fn-hide"></div>
+        </div>
+
+        <div class="preview-reply-bbar fn-clear">
+            <button type="button" class="button-green aj-replysubmit">回复</button>
+        </div>
+        <!-- replylist start -->
+        <div class="feed-reply"></div>
+        <!-- replylist end -->
+
+    </div>
+</script>
+<!-- dialogs 弹出框模板 -->
+<!-- 归档弹出框 -->
+<script type="text/html" class="place-on-file-box">
+    <div class="place-onfile-content">
+        <h1 class="ui-dialog-title">归档信息</h1>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="place-table">
+            <tr>
+                <td width="70" align="right" valign="top">输入标签：</td>
+                <td>
+                    <input type="text" class="input-text tagnamesel">
+                    <span class="input-help">单个标签最多12个字符或6个汉字，最多可以输入3个标签，标签之间用空格分割</span>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" valign="top">我的标签：</td>
+                <td class="aj-mytagnames"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td align="right" class="pr10">
+                    <button type="submit" class="button-green place-btn aj-pof-btn mr10">确定</button><button type="submit" class="button-grey place-btn close-btn">取消</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</script>
+
+<!-- 转发弹出框 -->
+
+<div class="forward-box">
+    <div class="forward-content">
+        <h1 class="ui-dialog-title">转发</h1>
+        <div class="forward-warp">
+            <p>
+            <div class="forward-help">提示：转发内容将作为原工作信息的回复内容</div>
+            <div class="aj-forwarder">添加转发人+</div>
+            </p><p>
+                <textarea rows="4" class="forward-text fwd-title" placeholder="添加内容……"></textarea>
+            </p>
+            <p class="forward-btnwarp">
+                <button type="submit" class="button-green place-btn fwdsend-btn mr10">转发</button><button type="submit" class="button-grey place-btn close-btn">取消</button>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- 待办弹出框 -->
+<div class="pending-box">
+    <div class="pending-content">
+        <h1 class="ui-dialog-title">创建待办事项</h1>
+        <div class="pending-warp">
+            <div class="aj-peder">齐述绪X +选择同事</div>
+            <textarea rows="1" placeholder="请填写待办标题" class="input-text marg10 ped-title"></textarea>
+            <p class="pending-from marg10">
+                <span class="frominfowarp">来自于<span class="ped-feedtype">分享</span>：“<a href="javascript:;" class="ped-feedContent"></a>”</span>
+            </p>
+            <div class="pending-btnwarp">
+                <div class="is-important-wrapper">
+                    <label><input class="is-important" type="checkbox" name="is_important"> 重要事项</label>
+                </div>
+                <div class="dialog-buttonwrap">
+                    <button type="submit" class="button-green place-btn pedsend-btn mr10">创建待办</button><button type="submit" class="button-grey place-btn close-btn">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 点评弹出框 -->
+<div class="commenton-box">
+    <div class="commenton-content">
+        <h1 class="ui-dialog-title">点评日志</h1>
+        <div class="commenton-warp fn-clear">
+            <div class="dialog-left">
+                <p class="dialog-l-tit">
+                    <img src="../../html/fs/assets/images/tx.jpg" alt="" width="30" height="30" class="name-img">
+                    <span class="name">错误！</span>的日志原文(<span class="aj-ctime">4月28日</span>) <a href="javascript:;" class="look-history">收起历史日志&lt;&lt;</a>
+                </p>
+                <div class="comment-feedcontent"></div>
+                <p>
+                    <textarea class="input-text daily-lb aj-commenton-replycontent" placeholder="添加回复..."></textarea>
+                </p>
+                <div class="aj-selectcommentoner selectcommentoner">+添加抄送人</div>
+                <p>评分
+                    <select class="commenton-select">
+                        <option value="5">五分：非常满意</option>
+                        <option value="4">四分：超过预期</option>
+                        <option value="3" selected="selected">三分：符合要求</option>
+                        <option value="2">二分：不合格</option>
+                        <option value="1">一分：严重批评</option>
+                    </select>
+                </p>
+                <p class="commenton-btnwarp">
+                    <span class="send-message fn-hide">
+                        <input name="" type="checkbox" value="" class="aj-issend" id="is-sendms-ppf">
+                        <label for="is-sendms-ppf" class="form-label">立即发送短息信息到日志发出人的手机上</label>
+                    </span> 
+                    <span class="button-r">
+                        <button type="submit" class="button-green place-btn commentonsend-btn mr10">点评</button><button type="submit" class="button-grey place-btn close-btn">取消</button>
+                    </span>
+                </p>
+            </div>
+            <div class="dialog-right">
+                <p class="dialog-l-tit">
+                    <span class="user-info">
+                        <img src="../../html/fs/assets/images/tx.jpg" alt="" width="30" height="30" class="name-img">
+                        <span class="name">错误！</span>
+                    </span>
+                    <a href="#" title="" class="change-user-l">换人</a> 
+                    <span class="dialy-history"><i></i><span class="aj-histime"> 4月23日(星期二) </span><b></b></span>
+                </p>
+                <div class="daily-r aj-hisplanel"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 批复同意弹出框 -->
+<div class="appryes-box">
+    <div class="appryes-content">
+        <h1 class="ui-dialog-title">同意</h1>
+        <div class="appryes-warp fn-clear">
+            <p>
+                <textarea class="input-text daily-lt appryes-content-input">同意。</textarea>
+            </p>
+            <div class="media fn-hide"></div>
+            <div class="appryes-apper">+添加下一个审批人（一个）</div>
+            <div class="appryes-ccer marg10">+添加抄送人</div>
+            <p class="appryes-btnwarp marg10">
+                <span class="send-message fn-hide">
+                    <input name="" type="checkbox" value="" class="is-sendms" id="is-sendms-appyes">
+                    <label for="is-sendms-appyes" class="form-label">立即发送短信息到审批发出人和下一审批人的手机上</label>
+                </span> 
+                <span class="button-r">
+                    <button type="submit" class="button-green place-btn appryes-btn mr10">批复</button><button type="submit" class="button-grey place-btn close-btn">取消</button>
+                </span>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- 批复不同意弹出框 -->
+<div class="apprno-box">
+    <div class="apprno-content">
+        <h1 class="ui-dialog-title">不同意</h1>
+        <div class="apprno-warp fn-clear">
+            <p>
+                <textarea class="input-text daily-lt apprno-content-input">不同意。</textarea>
+            </p>
+            <div class="media fn-hide"></div>
+            <div class="apprno-ccer marg10">+添加抄送人<a href="#">test</a>”</div>
+            <p class="apprno-btnwarp marg10"> 
+                <span class="send-message fn-hide">
+                    <input name="" type="checkbox" value="" class="is-sendms" id="is-sendms-appno">
+                    <label for="is-sendms-appno" class="form-label">立即发送短信息到审批发出人的手机上</label>
+                </span>
+                <span class="button-r">
+                    <button type="submit" class="button-green place-btn apprno-btn mr10">批复</button><button type="submit" class="button-grey place-btn close-btn">取消</button>
+                </span>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- 批复历史审批弹出框 -->
+<div class="apprhis-box">
+    <div class="apprhis-content">
+        <h1 class="ui-dialog-title">XXX的历史审批</h1>
+        <div class="apprhis-warp fn-clear">
+            <p>
+                <textarea class="input-text daily-lt">历史</textarea>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- workingNormDialog -->
+<div class="working-box">
+    <div class="working-content">
+        <h1 class="ui-dialog-title">普通回复</h1>
+        <div class="working-warp fn-clear">
+            <p>
+                <textarea class="input-text daily-lt">添加回复...
+                </textarea>
+            </p>
+            <p class="working-btnwarp"> 
+                <span class="send-message fn-hide">
+                    <input name="" type="checkbox" value="" id="is-sendms-wrep">
+                    <label for="is-sendms-wrep" class="form-label">立即发送短信息给：王海波</label>
+                </span> 
+                <span class="button-r">
+                    <button type="submit" class="button-green place-btn mr10">回复</button><button type="submit" class="button-grey place-btn close-btn">取消</button>
+                </span>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- workingFiniDialog -->
+<div class="workingfini-box">
+    <div class="working-content">
+        <h1 class="ui-dialog-title">汇报结果</h1>
+        <div class="working-warp fn-clear">
+            <p>
+                <textarea class="input-text daily-lt">添加回复...
+                </textarea>
+            </p>
+            <p class="working-btnwarp"> 
+                <span class="send-message fn-hide">
+                    <input name="" type="checkbox" value="" id="is-sendms-wfini">
+                    <label for="is-sendms-wfini" class="form-label">立即发送短信息到指令发出人的手机上</label>
+                </span>
+                <span class="button-r">
+                    <button type="submit" class="button-green place-btn mr10">回复</button><button type="submit" class="button-grey place-btn close-btn">取消</button>
+                </span>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- workUnFiniDialog -->
+<div class="workunfini-box">
+    <div class="working-content">
+        <h1 class="ui-dialog-title">未完成继续执行</h1>
+        <div class="working-warp fn-clear">
+            <p>
+                <textarea class="input-text daily-lt">添加回复...
+                </textarea>
+            </p>
+
+            <p class="working-btnwarp"> 
+                <span class="send-message fn-hide">
+                    <input name="" type="checkbox" value="" id="is-sendms-wunfini">
+                    <label for="is-sendms-wunfini" class="form-label">立即发送短信息到指令执行人的手机上</label>
+                </span>
+                <span class="button-r">
+                    <button type="submit" class="button-green place-btn mr10">回复</button><button type="submit" class="button-grey place-btn close-btn">取消</button>
+                </span>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- workFiniDialog -->
+<div class="workfini-box">
+    <div class="working-content">
+        <h1 class="ui-dialog-title">点评指令</h1>
+        <div class="working-warp fn-clear">
+            <p>
+                <textarea class="input-text daily-lt">添加回复...
+                </textarea>
+            </p>
+            <div class="aj-addworker">+添加抄送人</div>
+            <p class="marg10">评分
+                <select class="commenton-select">
+                    <option value="5">五分：非常满意</option>
+                    <option value="4">四分：超过预期</option>
+                    <option value="3" selected="selected">三分：符合要求</option>
+                    <option value="2">二分：不合格</option>
+                    <option value="1">一分：严重批评</option>
+                </select>
+            </p>
+            <p class="working-btnwarp">
+                <span class="send-message fn-hide">
+                    <input name="" type="checkbox" value="" id="is-sendms-wfini2">
+                    <label for="is-sendms-wfini2" class="form-label">立即发送短信息到指令发出人的手机上</label>
+                </span> 
+                <span class="button-r">
+                    <button type="submit" class="button-green place-btn mr10">回复</button><button type="submit" class="button-grey place-btn close-btn">取消</button>
+                </span>
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- 公告显示时间弹出框 -->
+<div class="announce-on-time-templet">
+    <div class="ui-dialog-title">设置公示期</div>
+    <div class="ui-dialog-body">
+        <div class="fn-clear mt10">
+            <div class="tit">公示期：</div>
+            <select name="" class="selectlist" style="height: 24px">
+                <option value="1">一天</option>
+                <option value="2" selected="selected">三天</option>
+                <option value="3">一周</option>
+                <option value="4">二周</option>
+                <option value="12">自定义时间...</option>
+            </select>
+            <div class="selecttimediv">选择日期</div>
+        </div>
+        <div class="ui-dialog-bbar fn-clear mt10">
+            <div class="add-worktodo-actions fn-right">
+                <button type="button" class="f-sub button-green mr10">确定</button><button type="reset" class="button-gray f-cancel">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 指令特殊回复item tpl,发出指令未完成 -->
+<div class="swr-undone-tpl">
+    <form action="#" class="swr-undone-form">
+        <div class="ui-dialog-title">未完成，继续执行</div>
+        <div class="ui-dialog-body">
+            <div class="swr-undone-input-wrapper">
+                <textarea class="swr-undone-input" placeholder="添加回复" style="height:78px"></textarea>
+            </div>
+            <div class="ui-dialog-bbar fn-clear">
+                <div class="is-send-sms-wrapper fn-left fn-hide">
+                    <input type="checkbox" name="is_send_sms" class="is-send-sms" id="is-sendms-aumdone">
+                    <label for="is-sendms-aumdone" class="form-label">立即发送短信息到指令执行人的手机上</label>
+                </div>
+                <div class="swr-undone-actions fn-right">
+                    <button type="submit" class="f-sub button-green mr10">回复</button><button type="reset" class="button-gray f-cancel">取消</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- 指令特殊回复item tpl,发出指令已完成,点评结果 -->
+<div class="swr-done-tpl">
+    <form action="#" class="swr-done-form">
+        <div class="ui-dialog-title">点评指令</div>
+        <div class="ui-dialog-body">
+            <div class="swr-done-input-wrapper">
+                <textarea class="swr-done-input" placeholder="添加回复" style="height:78px"></textarea>
+            </div>
+            <div class="media fn-hide"></div>
+            <div class="copyto-wrapper">
+                <div class="copyto-sb"></div>
+            </div>
+            <div class="rate-wrapper">评分：
+                <select name="rate" class="rate">
+                    <option value="5">五分：非常满意</option>
+                    <option value="4">四分：超过预期</option>
+                    <option value="3" selected="selected">三分：符合要求</option>
+                    <option value="2">二分：不合格</option>
+                    <option value="1">一分：严重批评</option>
+                </select>
+            </div>
+            <div class="ui-dialog-bbar fn-clear">
+                <div class="is-send-sms-wrapper fn-left fn-hide">
+                    <input type="checkbox" name="is_send_sms" class="is-send-sms" id="is-sendms-aumdone2">
+                    <label for="is-sendms-aumdone2" class="form-label">立即发送短信息到指令执行人的手机上</label>
+                </div>
+                <div class="swr-undone-actions fn-right">
+                    <button type="submit" class="f-sub button-green mr10">点评</button><button type="reset" class="button-gray f-cancel">取消</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- 指令特殊回复item tpl,发出指令 取消指令,转他人执行 -->
+<div class="swr-cancel-tpl">
+    <div class="ui-dialog-title">转他人执行</div>
+    <div class="ui-dialog-body">
+        <div class="swr-cancel-input-wrapper">
+            <div class="swr-cancel-input-wrapper-ps">附件自动使用原指令的附件</div>
+            <textarea class="swr-cancel-input"></textarea>
+            <div class="swr-cancel-input-media"></div>
+        </div>
+        <div class="setother-wrapper">
+            <div>当上级给下属布置工作时，请使用指令功能。</div>
+            <table class="setother-table">
+                <tr>
+                    <td width="140">1、选择指令执行人：</td>
+                    <td>
+                        <div class="copyto-wrapper">
+                            <div class="workto-sb"></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2、选择指令完成时间：</td>
+                    <td><span class="setother-selectdata selectdatawrap"></span><span class="setother-selecttime selecttimewrap"></span></td>
+                </tr>
+                <tr class="fn-hide">
+                    <td>3、事中短信提醒次数：</td>
+                    <td>
+                        <div class="sms-warn-radio">
+                            <label>
+                                <input type="radio" checked="checked" value="1" name="sms_warn_counts">
+                                不提醒</label>
+                            <label>
+                                <input type="radio" value="2" name="sms_warn_counts">
+                                提醒一次</label>
+                            <label>
+                                <input type="radio" value="3" name="sms_warn_counts">
+                                提醒两次</label>
+                            <label>
+                                <input type="radio" value="4" name="sms_warn_counts">
+                                提醒三次</label>
+                        </div>
+
+                    </td>
+                </tr>
+                <tr class="sms-warn-item">
+                    <td align="right">第一次短信提醒：</td>
+                    <td><span class="sms-one-selectdata selectdatawrap"></span><span class="sms-one-selecttime selecttimewrap"></span></td>
+                </tr>
+                <tr class="sms-warn-item">
+                    <td align="right">第二次短信提醒：</td>
+                    <td><span class="sms-two-selectdata selectdatawrap"></span><span class="sms-two-selecttime selecttimewrap"></span></td>
+                </tr>
+                <tr class="sms-warn-item">
+                    <td align="right">第三次短信提醒：</td>
+                    <td><span class="sms-three-selectdata selectdatawrap"></span><span class="sms-three-selecttime selecttimewrap"></span></td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="copyto-wrapper">
+            <div class="copyto-sb"></div>
+        </div>
+        <div class="ui-dialog-bbar fn-clear">
+            <div class="is-send-sms-wrapper fn-left fn-hide">
+                <label class="form-label">
+                    <input type="checkbox" name="is_send_sms" class="is-send-sms">
+                    立即发送短信息到指令执行人的手机上 </label>
+            </div>
+            <div class="fn-right">
+                <button class="f-sub button-green mr10">发布</button><button class="button-gray f-cancel">取消</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 指令特殊回复item tpl,收到指令普通回复 -->
+<div class="rwr-normal-tpl">
+    <form action="#" class="rwr-normal-form">
+        <div class="ui-dialog-title">普通回复</div>
+        <div class="ui-dialog-body">
+            <div class="rwr-normal-input-wrapper">
+                <textarea class="rwr-normal-input" placeholder="添加回复"></textarea>
+            </div>
+            <div class="media"></div>
+            <div class="ui-dialog-bbar fn-clear">
+                <div class="is-send-sms-wrapper fn-left fn-hide">
+                    <input type="checkbox" name="is_send_sms" class="is-send-sms" id="is-sendms-aumdone3">
+                    <label for="is-sendms-aumdone3" class="form-label">立即发送短信息给：<span class="user-name"></span></label>
+                </div>
+                <div class="rwr-normal-actions fn-right">
+                    <button type="submit" class="f-sub button-green mr10">回复</button><button type="reset" class="button-gray f-cancel">取消</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- 指令特殊回复item tpl,收到指令已完成 -->
+<div class="rwr-complete-tpl">
+    <form action="#" class="rwr-complete-form">
+        <div class="ui-dialog-title">汇报结果</div>
+        <div class="ui-dialog-body">
+            <div class="rwr-complete-input-wrapper">
+                <textarea class="rwr-complete-input" placeholder="添加回复"></textarea>
+            </div>
+            <div class="media"></div>
+            <div class="ui-dialog-bbar fn-clear">
+                <div class="is-send-sms-wrapper fn-left fn-hide" style="line-height:0">
+                    <input type="checkbox" name="is_send_sms" class="is-send-sms" id="is-send-sms-hbjg">
+                    <label for="is-send-sms-hbjg" class="form-label">立即发送短信息到指令发出人的手机上</label>
+                </div>
+                <div class="rwr-complete-actions fn-right">
+                    <button type="submit" class="f-sub button-green mr10">回复</button><button type="reset" class="button-gray f-cancel">取消</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- 审批特殊回复item tpl,复议 -->
+<div class="sar-normal-tpl">
+    <form action="#" class="sar-normal-form">
+        <div class="ui-dialog-title">复议</div>
+        <div class="ui-dialog-body">
+            <div class="sar-normal-input-wrapper">
+                <textarea class="sar-normal-input" placeholder="添加回复"></textarea>
+            </div>
+            <div class="media fn-hide-abs"></div>
+            <div class="ui-dialog-bbar fn-clear">
+                <div class="is-send-sms-wrapper fn-left fn-hide"><!-- 暂时隐藏，不确定是否带短信发送功能 -->
+                    <input type="checkbox" name="is_send_sms" class="is-send-sms" id="is-sendms-apprepb">
+                    <label for="is-sendms-apprepb" class="form-label">立即发送短信息给：<span class="user-name"></span></label>
+                </div>
+                <div class="sar-normal-actions fn-right">
+                    <button type="submit" class="f-sub button-green mr10">回复</button><button type="reset" class="button-gray f-cancel">取消</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- 审批获取历史记录tpl -->
+<div class="approve-history-tpl">
+    <div class="ui-dialog-title"><span class="user-name"></span>的历史审批</div>
+    <div class="ui-dialog-body">
+        <div class="feed-list"></div>
+    </div>
+</div>
+
+<!-- feed打印预览tpl -->
+<div class="print-preview-tpl">
+    <div class="ui-dialog-title">打印预览</div>
+    <div class="ui-dialog-body">
+        <div class="preview-mask"></div>
+    </div>
+    <div class="ui-dialog-bbar">
+        <div class="ui-dialog-bbar-inner">
+            <button class="f-sub button-green mr10" type="button">打印</button><button class="f-cancel button-gray" type="button">取消</button>
+        </div>
+    </div>
+</div>
+<div class="feedlocationfn-equipment-tpl">
+<div class="equipment-arrow"></div>
+    <div class="equipment-titwarp"><a href="javascript: ;" class="equipment-tit-account cur">帐号信息</a><a href="javascript: ;" class="equipment-tit-equipment">设备信息</a></div>
+    <div class="equipment-topinfo"><span class="ml10">该帐号共使用<b class="red topinfo-cont">1</b>个设备进行过签到（最近30次）</span></div>
+    <div class="equipment-listwarp"></div>
+    <div class="equipment-bottominfo fn-clear">
+        <div class="equipment-bottominfo-l"><span class="employee-name-info">帐号：王威</span></div>
+        <div class="equipment-bottominfo-r equipment-pagewarp">
+            <button class="equipment-btn-l">&lt;</button>
+            <select class="equipment-select-btn">
+                <option value="1">第1页</option>
+                <option value="2">第2页</option>
+                <option value="3">第3页</option>
+                <option value="4">第4页</option>
+                <option value="5">第5页</option>
+            </select>
+            <button class="equipment-btn-r">&gt;</button>
+        </div>
+    </div>
+</div>

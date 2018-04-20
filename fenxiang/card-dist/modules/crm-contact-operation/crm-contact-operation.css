@@ -1,0 +1,7 @@
+/**
+ * 纷享模块样式
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+
+.crm-contact-operation{cursor:pointer}.crm-contact-operation:hover{color:#000}.crm-contact-operation-container{border:1px #d8d8d8 solid;background-color:#fff;-moz-box-shadow:1px 2px 2px #ccc;-webkit-box-shadow:1px 2px 2px #ccc;box-shadow:1px 2px 2px #ccc;position:absolute;width:200px;z-index:1}.crm-contact-operation-container ul{padding:5px 0}.crm-contact-operation-container li{padding-left:30px;cursor:pointer;color:#000;line-height:30px}.crm-contact-operation-container li:hover{background-color:#f5f5f5}

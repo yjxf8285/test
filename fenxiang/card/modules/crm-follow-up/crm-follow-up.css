@@ -1,0 +1,56 @@
+.crm-follow-up-box{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D8D8D8;
+    border-radius: 3px;
+    color: #999999;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.crm-follow-up-box-header{
+	padding: 0 16px;
+	background: #fafafa;
+	border-bottom: 1px solid #D8D8D8;
+}
+
+.crm-follow-up-box-header h1{
+	color: #333333;
+    display: inline-block;
+}
+
+.crm-follow-up-content{
+	overflow: hidden;
+    padding: 16px 16px 0px 20px;
+}
+
+.crm-follow-up-image-container{
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	margin-top: 3px;
+	margin-right: 3px;
+}
+
+.crm-follow-up-image{
+	width: 50px;
+	height: 50px;	
+}
+
+.crm-follow-up-add{
+	width: 46px;
+	height: 46px;
+	border: 2px #d8d8d8 dashed;
+	line-height: 40px;
+	text-align: center;
+	font-size: 30px;
+	color: #d8d8d8;
+	cursor: pointer;
+	margin-top: 3px;
+	margin-right: 3px;
+}
+
+.crm-follow-up-info{
+	color: #999;
+	padding-left: 16px;
+}
+

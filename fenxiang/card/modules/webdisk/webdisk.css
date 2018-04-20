@@ -1,0 +1,787 @@
+/* common*/
+.disk {
+    position: relative;
+}
+.disk .webdisk-header{
+    background: #fff;
+}
+.disk .webdisk-body{
+    background: #fff;
+    /*margin-top: 16px;*/
+    border-radius: 3px;
+}
+.disk .disk-model {
+    background: #fff;
+}
+
+.disk a {
+    color: #0082CB;
+}
+
+.disk .red {
+    color: #DD4B39;
+}
+
+/* tit */
+.disk .disk-tit {
+    padding: 20px 20px 25px;
+    color: #999;
+}
+
+.disk .disk-tit-l {
+    float: left;
+    font-size: 14px;
+}
+.disk .disk-tit-l .nav-label a{
+    font-size: 16px;
+    color: #999;
+}
+.disk .disk-tit-r {
+    float: right;
+    color: #DD4B39;
+}
+
+/* topmenu */
+.disk .disk-topmenu {
+    padding: 5px 20px 4px;
+}
+
+.disk .disk-topmenu .disk-topmenu-fn {
+    float: left;
+}
+
+.disk .disk-topmenu-fn a {
+    display: inline-block;
+    width: 59px;
+    height: 30px;
+    margin-right: 6px;
+    background-image: url(../../assets/images/disk/disk_topmenu.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+.disk .disk-topmenu-fn .topmenu-fn-new:hover {
+    background-position: 0px -70px;
+}
+
+.disk .disk-topmenu-fn .topmenu-fn-new.disable {
+    background-position: 0px -35px;
+}
+
+.disk .disk-topmenu-fn .topmenu-fn-upload {
+    background-position: -65px 0px;
+}
+
+.disk .disk-topmenu-fn .topmenu-fn-upload:hover {
+    background-position: -65px -70px;
+}
+
+.disk .disk-topmenu-fn .topmenu-fn-upload.disable {
+    background-position: -65px -35px;
+}
+
+.disk .disk-topmenu-fn .topmenu-fn-del {
+    background-position: -130px 0px;
+}
+
+.disk .disk-topmenu-fn .topmenu-fn-del:hover {
+    background-position: -130px -70px;
+}
+
+.disk .disk-topmenu-fn .topmenu-fn-del.disable {
+    background-position: -130px -35px;
+    cursor: auto;
+}
+
+.disk .disk-topmenu-fn .topmenu-fn-reload {
+    background-position: -195px 0px;
+}
+
+.disk .disk-topmenu-fn .topmenu-fn-reload:hover {
+    background-position: -195px -70px;
+}
+
+.disk .disk-topmenu-fn .topmenu-fn-goback {
+    background-position: -260px 0px;
+}
+
+.disk .disk-topmenu-fn .topmenu-fn-goback:hover {
+    background-position: -260px -70px;
+}
+
+.disk .disk-topmenu-fn .topmenu-fn-goback.disable {
+    background-position: -260px -35px;
+    cursor: auto;
+}
+
+.disk .disk-topmenu .disk-topmenu-search {
+    float: right;
+}
+
+/* disktable */
+.disk .disktable .webdisk-createTime {
+   
+    overflow: hidden;
+    white-space: nowrap; /*强制不换行*/
+    text-overflow: ellipsis; /*/超出部分变成...*/
+    display: inline-block;
+}
+.disk .disktable .webdisk-createPerson{
+    display: inline-block;
+    max-width: 82px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.disk .disktable a.rightmenu-fn-viewdetails {
+    color: #999;
+}
+
+.disk .disktable {
+    border-collapse: collapse;
+    border-top: none;
+    border-bottom: none;
+    border-right: solid 1px #fff;
+    border-left: solid 1px #fff;
+    *border: none;
+}
+
+.disk .dataTables_filter {
+    display: none;
+}
+
+.disk .disktable thead {
+    line-height: 38px;
+    /**line-height: 29px;*/
+    border-bottom: 1px solid #EBEBEB; 
+}
+.disk .disktable thead th{
+    text-align: center;
+    color: #646464;
+}
+
+.disk .disktable thead th a {
+    width: 100%;
+    text-decoration: none;
+    color: #646464;
+    border-right: solid 1px #ebebeb;
+    cursor: default;
+    position: relative;
+    zoom: 1;
+    display: block;
+    text-indent: 5px;
+}
+
+.disk .disktable thead th a:hover {
+
+
+}
+
+.disk .disktable thead th .sorting-arrow {
+    width: 6px;
+    height: 6px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    font-size: 0px;
+}
+
+.disk .disktable thead th.sorting_desc .sorting-arrow {
+    top: -3px;
+    width: 0px;
+    height: 2px;
+    line-height: 0px;
+    overflow: hidden;
+    border-width: 3.5px;
+    border-bottom: #6D89BC 5px solid;
+    border-color: transparent transparent #6D89BC transparent;
+    border-style: dashed dashed solid dashed;
+}
+
+.disk .disktable thead th.sorting_asc .sorting-arrow {
+    top: 3px;
+    width: 0px;
+    height: 2px;
+    line-height: 0px;
+    overflow: hidden;
+    border-width: 3.5px;
+    border-top: #6D89BC 5px solid;
+    border-color: #6D89BC transparent transparent transparent;
+    border-style: solid dashed dashed dashed;
+}
+
+.disk .disktable .dataTables_scrollBody {
+    padding-right: 1px;
+}
+
+.disk .dataTables_processing {
+    display: none;
+}
+
+.disk .disktable tbody td {
+    text-align: center;
+    color: #999;
+    border-top: solid 1px #fff;
+    /*ie7 边框bug*/
+    *border-top: none;
+    *border-bottom: solid 1px #fff;
+    _border-bottom: none;
+    _border-top: solid 1px #fff;
+}
+.disk .disktable tbody td.file-name,.disk .disktable th.file-name{
+    text-align: left;
+    padding-left: 4px;
+}
+.disk .disktable tbody td.border-blue-l {
+    border-left: solid 1px #3399FF;
+}
+
+.disk .disktable tbody td.border-blue-r {
+    border-right: solid 1px #3399FF;
+}
+
+.disk .disktable tbody tr {
+    line-height: 20px;
+}
+.disk .disktable .operatingwarp{
+    text-align: left;
+    margin-left: 36px;
+}
+.disk .disktable tbody tr.row_selected td {
+    border-bottom: solid 1px #3399FF;
+    border-top: solid 1px #3399FF;
+    background: #DAEAFA;
+}
+
+.disk .disktable .isPublic-img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    padding-top: 2px;
+    margin-left: 12px;
+}
+
+.disk .disktable .new-img {
+    vertical-align: middle;
+}
+
+.disk .disktable .attachName-img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    padding-top: 2px;
+    margin-right: 6px;
+}
+.common-style-richard .attachName-img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    padding-top: 2px;
+    margin-right: 6px;
+}
+
+.disk .disktable .attachName-a {
+    vertical-align: middle;
+    color: #333;
+    text-decoration: none;
+    cursor: default;
+    white-space: nowrap;
+    width: 250px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.disk .disktable .attachName-text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 220px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* diskstatus */
+.disk .disk-status {
+    /*position: absolute; left:0; bottom: 0px; */
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    border-top:1px solid #F2F2F2; 
+    background: #fff;
+}
+.disk .disk-status .status-tip{
+    margin-left: 40px;
+    color: #646464;
+}
+/* 右键菜单 */
+.jsrightmenu {
+    position: absolute;
+    display: none;
+    width: 200px;
+    background-color: #F6F6F6;
+    box-shadow: 3px 3px 3px #ccc;
+    border: solid 1px #6593CF;
+    border-radius: 3px;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 1px;
+    background-image: url(../../assets/images/cm/line_vertical.png);
+    background-repeat: repeat-y;
+    background-position: 28px 0;
+}
+
+.jsrightmenu a {
+    border-radius: 3px;
+    border: solid 1px transparent;
+    _border: solid 1px #F6F6F6;
+    height: 20px;
+    line-height: 20px;
+    cursor: default;
+    color: #000;
+    text-decoration: none;
+    display: block;
+}
+
+.jsrightmenu a:hover {
+    background: #FFE7A2;
+    border: solid 1px #FFBD69;
+    text-decoration: none;
+}
+
+.jsrightmenu .ico {
+    width: 16px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(../../assets/images/cm/opendirectory.png);
+    margin-left: 6px;
+    margin-right: 20px;
+    background-position: 0 -1px;
+    background-repeat: no-repeat;
+}
+
+.jsrightmenu .rightmenu-fn-new .ico {
+    background-image: url(../../assets/images/cm/createfolder.png);
+}
+
+.jsrightmenu .rightmenu-fn-upload .ico {
+    background-image: url(../../assets/images/cm/uploadfile.png);
+}
+
+.jsrightmenu .rightmenu-fn-preview .ico {
+    background-image: url(../../assets/images/cm/preview.png);
+}
+
+.jsrightmenu .rightmenu-fn-download .ico {
+    background-image: url(../../assets/images/cm/download.png);
+}
+
+.jsrightmenu .rightmenu-fn-modif .ico {
+    background-image: url(../../assets/images/cm/modifyfolder.png);
+}
+
+.jsrightmenu .rightmenu-fn-del .ico {
+    background-image: url(../../assets/images/cm/delete.png);
+}
+
+.jsrightmenu .rightmenu-fn-sendco .ico {
+    background-image: url(../../assets/images/cm/sendshare.png);
+}
+
+.jsrightmenu .rightmenu-fn-sendclient .ico {
+    background-image: url(../../assets/images/cm/sendinteractive.png);
+}
+
+.jsrightmenu .rightmenu-fn-viewwho .ico {
+    background-image: url(../../assets/images/cm/viewuserallfile.png);
+}
+
+.jsrightmenu .rightmenu-fn-viewdetails .ico {
+    background-image: url(../../assets/images/cm/viewdownloaddetails.png);
+}
+
+.jsrightmenu .x-line, .jsrightmenu .x-line-after {
+    background-image: url(../../assets/images/cm/line_x.png);
+    height: 2px;
+    width: 170px;
+    display: block;
+    font-size: 0px;
+    margin: 1px 0 1px 30px;
+}
+
+/* Dialogs Common*/
+.common-style-richard .ui-dialog-body {
+    padding: 16px;
+}
+
+.common-style-richard .vm {
+    vertical-align: middle;
+}
+
+.common-style-richard .gray {
+    color: #999;
+}
+
+.common-style-richard .redstar {
+    color: red;
+    font-family:"宋体",serif;
+    margin-right: 4px;
+}
+
+.common-style-richard .mt10 {
+    margin-top: 10px;
+}
+
+.common-style-richard .ml10 {
+    margin-left: 10px;
+}
+
+/* fn-new */
+.disk-fn-new-dialog .fn-new-table td {
+    padding: 5px 0;
+}
+
+.disk-fn-new-dialog .fn-new-tit {
+    width: 220px;
+    height: 26px;
+    padding-left: 6px;
+    border-radius: 3px;
+    border: 1px solid #A5C760;
+    background: #F4FFD4;
+    vertical-align: middle;
+}
+
+.disk-fn-new-dialog .fn-new-tit.warn {
+    border: 1px solid #FF0000;
+    background: #FFCCCC;
+}
+
+.disk-fn-new-dialog .fn-new-tit-ps {
+    color: #333;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    background: #F4FFD4;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+
+.disk-fn-new-dialog .fn-new-tit-ps.warn {
+    padding-left: 24px;
+    background: #FFCCCC url(../../assets/images/error.png) no-repeat 7px 7px;
+}
+
+/* fn-upload */
+.disk-fn-upload-dialog .fn-upload-table-warp {
+    height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-top: medium none;
+}
+
+.disk-fn-upload-dialog .fn-upload-table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-top: none;
+    border-bottom: none;
+    border-right: solid 1px #FFF;
+    border-left: solid 1px #FFF;
+}
+
+.disk-fn-upload-dialog .fn-upload-table td {
+    border-top: 1px solid #FFFFFF;
+    color: #999999;
+    padding-left: 5px;
+}
+.disk-fn-upload-dialog .fn-upload-table td.border-blue-l {
+    border-left: solid 1px #3399FF;
+}
+
+.disk-fn-upload-dialog .fn-upload-table td.border-blue-r {
+    border-right: solid 1px #3399FF;
+}
+
+.disk-fn-upload-dialog .fn-upload-table  tr {
+}
+
+.disk-fn-upload-dialog .fn-upload-table tr.row_selected td {
+    border-bottom: solid 1pt #3399FF;
+    border-top: solid 1px #3399FF;
+    background: #DAEAFA;
+}
+
+.disk-fn-upload-dialog .fn-upload-table .tbodywarp {
+    height: 50px;
+}
+
+.disk-fn-upload-dialog .fn-upload-table tbody {
+    /*height: 50px;*/
+}
+
+.disk-fn-upload-dialog .upload-input-txt {
+    margin-left: 10px;
+    float: left;
+    padding-top: 4px;
+}
+
+.disk-fn-upload-dialog .upload-input-btn {
+    float: left;
+}
+
+.disk-fn-upload-dialog button.fixwidth {
+    width: 72px;
+    padding: 0;
+}
+
+.disk-fn-upload-dialog .fn-upload-table thead {
+    height: 30px;
+    line-height: 30px;
+    background: url(../../assets/images/disk/disk_datatalbe_ui.png);
+}
+
+.disk-fn-upload-dialog .fn-upload-table td {
+    padding: 2px 10px;
+    text-align: left;
+    line-height: 20px;
+    border-top: 1px solid #FFFFFF;
+}
+
+.disk-fn-upload-dialog .fn-upload-table tbody td.file-ext, .disk-fn-upload-dialog .fn-upload-table tbody td.file-size {
+    color: #999;
+}
+
+.disk-fn-upload-dialog .fn-upload-table thead th a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding-left: 5px;
+    border-right: 1px solid #EBEBEB;
+    cursor: default;
+}
+
+.disk-fn-upload-dialog .fn-upload-table thead th a:hover {
+    background: url(../../assets/images/disk/disk_datatalbe_ui.png) 0px -33px;
+}
+
+.disk-fn-upload-dialog .filedragwarp {
+    height: 120px;
+    display: block;
+    border: dashed 3px #ccc;
+    background: #eee;
+    line-height: 120px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.disk-fn-upload-dialog .fn-upload-table .file-name {
+    padding-left: 1em;
+    width: 240px;
+
+}
+
+.disk-fn-upload-dialog .fn-upload-table tbody td span.file-names {
+    white-space: nowrap; /*强制不换行*/
+    text-overflow: ellipsis; /*/超出部分变成...*/
+    overflow: hidden;
+    width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.disk-fn-upload-dialog .empty-tip {
+    padding: 10px;
+
+}
+
+.disk-fn-upload-dialog .upload-item-icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.disk-fn-upload-dialog .ui-dialog-body {
+    position: relative;
+}
+
+.disk-fn-upload-dialog .progress-wrapper {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.disk-fn-upload-dialog .progress-bar {
+    width: 300px;
+    top: 80px;
+    left: 130px;
+    position: absolute;
+}
+
+.disk-fn-upload-dialog .progress-bar .fs-progressbar-pipe {
+    width: 100%;
+}
+
+.disk-fn-upload-dialog .progress-wrapper .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+}
+
+/* fn-del */
+.disk-fn-del-dialog .content {
+    line-height: 30px;
+    font-size: 14px;
+}
+
+/* fn-sendco */
+.disk-fn-sendco-dialog .sendco-input-warp {
+    width: 566px;
+    border: solid 1px #ccc;
+}
+
+.disk-fn-sendco-dialog .sendco-input {
+    width: 512px;
+    height: 90px;
+    border: none;
+    padding: 8px;
+}
+.disk-fn-sendco-dialog .publish-topic-tip {
+    display: none;
+    border-top: 1px solid #DDD;
+    color: #DD4B39;
+    line-height: 35px;
+    padding: 0 10px 0 25px;
+    background: url(../../assets/images/info2.png) no-repeat 7px center;
+}
+
+.disk-fn-sendco-dialog .sendco-file-info {
+    border-top: solid 1px #ccc;
+    padding: 5px 8px;
+}
+
+.disk-fn-sendco-dialog .sendco-input-media {
+}
+
+.disk-fn-sendco-dialog .sendco-file-info-tit {
+    color: #999;
+}
+
+.disk-fn-sendco-dialog .sendco-file-info-cont {
+    margin-top: 6px;
+}
+
+.disk-fn-sendco-dialog .info-cont-img {
+    float: left;
+    margin-right: 6px;
+}
+
+/* fn-sendco-receipt */
+.disk-fn-sendcoreceipt-dialog .form-label {
+    color: #999;
+}
+
+.disk-fn-sendcoreceipt-dialog .addmen {
+    color: #999;
+}
+
+/* fn-sendclient */
+.disk-fn-sendclient-dialog .sendco-input-warp {
+
+    border: solid 1px #ccc;
+}
+
+.disk-fn-sendclient-dialog .sendco-input {
+    width: 512px;
+    height: 90px;
+    border: none;
+}
+
+.disk-fn-sendclient-dialog .sendco-file-info {
+    border-top: solid 1px #ccc;
+    padding: 5px 8px;
+}
+
+.disk-fn-sendclient-dialog .sendco-input-media {
+    margin-top: -26px;
+}
+
+.disk-fn-sendclient-dialog .sendco-file-info-tit {
+    color: #999;
+}
+
+.disk-fn-sendclient-dialog .sendco-file-info-cont {
+    margin-top: 6px;
+}
+
+.disk-fn-sendclient-dialog .info-cont-img {
+    float: left;
+    margin-right: 6px;
+}
+
+/* fn-viewdetails */
+.disk-fn-viewdetails-dialog .viewdetails-tabs .noinfotip {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.disk-fn-viewdetails-dialog .filedownrecords-employee-table {
+    width: 100%;
+    color: #999;
+    line-height: 30px;
+}
+
+.disk-fn-viewdetails-dialog .filedownrecords-employee-table img {
+    vertical-align: middle;
+    width: 22px;
+    height: 22px;
+}
+
+.disk-fn-viewdetails-dialog .viewdetails-tabs .ui-switchable-content {
+    border: solid 1px #EBEBEB;
+    height: 230px;
+    padding: 4px 10px;
+    overflow-y: auto;
+}
+
+/* 导航 start */
+.disk .disk-breadcrumbs .enable-click {
+    color: #0082CB;
+    cursor: pointer;
+}
+
+.disk .dataTables_empty {
+    text-align: center;
+}
+
+.disk .dataTables_empty .empty-tip {
+    display: inline-block;
+    zoom: 1;
+    height: 33px;
+    line-height: 33px;
+    padding-left: 45px;
+    margin-top: 10px;
+    background: url(../../assets/images/info.png) no-repeat 0 0;
+    font-size: 14px;
+    color: #333333;
+}
+
+.disk .flag-entity-type,
+.disk .field-value {
+    display: none;
+}
+
+/* 导航 end */
+
+.disk .dataTables_scrollHead{background-color:#fafafa;border-radius:3px 3px 0 0;}

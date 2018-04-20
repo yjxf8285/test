@@ -1,0 +1,7 @@
+/**
+ * 纷享模块样式
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+
+.fs-maplist-item{padding:10px}.fs-maplist-item .item-l{float:left;width:25px}.fs-maplist-item .item-l .map-num-ico{width:17px;height:20px;line-height:18px;text-align:center;color:#fff;background:url(../../assets/images/home-icons.png?1) no-repeat -62px -60px}.fs-maplist-item .item-r{margin-left:25px;color:#444;word-break:break-all}.fs-maplist-item .item-r .item-topinfo{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;width:240px}.fs-maplist-item.cur{background:#E5E5E5}.fs-maplist-item.cur:hover{background:#E5E5E5}.fs-maplist-item:hover{background:#FAFAFA}.fs-maplist-item .item-bottominfo-l{color:#999;float:left}.fs-maplist-item .item-bottominfo-r{float:right}

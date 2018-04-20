@@ -1,0 +1,17 @@
+.tpl-test{
+	margin-top: 20px;
+}
+.tpl-module{
+	background: #fefefe;
+	border: 1px #ccc solid;
+}
+.mn-select-box .mn-select-title{
+	width: 272px;
+}
+.test .ui-select-item{
+	width: 300px;
+}
+.tpl-pagenation{
+	height: 30px;
+	background: #fff;
+}

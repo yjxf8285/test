@@ -1,0 +1,58 @@
+<script type="text/html" class="stream-tpl-left">
+    <div class="head-img-wrap fn-clear">
+        <a href="#profile"><img class="fn-left" src="{{profileImage}}"/>{{userName}}</a>
+    </div>
+    <div class="online-status-wrap">
+    	<input class="online-status-text" placeholder="请输入工作状态" title="请输入工作状态" /><button class="online-status-drop" type="button"></button>
+        <p class="online-status-list" style="display:none;">
+        	<!--<a href="javascript:;">忙碌中，请勿打扰</a>
+            <a href="javascript:;">外出办事，请手机联系</a>
+            <a href="javascript:;">就餐中，很快回来</a>
+            <a href="javascript:;">休假中，无紧急事件勿扰</a>
+            <a href="javascript:;">不在电脑旁，有事留言</a>-->
+            <a href="javascript:;">忙碌中，请勿打扰</a>
+            <a href="javascript:;">外出中，请手机联系</a>
+            <a href="javascript:;">就餐中，很快回来</a>
+            <a href="javascript:;">休假中，非急勿扰</a>
+            <a href="javascript:;">临时离开，有事留言</a>
+        </p>
+    </div>
+    <ul class="group-list">
+        <li class="files-nav-item"><a href="#stream" class="tpl-nav-lb" notracenav="true">全部信息</a></li>
+        <li class="files-nav-item fni-dep-con"><a href="#department/=/cid-999999/ctitle-%E5%85%A8%E5%85%AC%E5%8F%B8" class="tpl-nav-lb tpl-nav-lbq" title="抄送全公司的信息">{{allCompanyDefaultString}}</a></li>
+        ## _.each(groups,function(group){ ##
+        <li class="files-nav-item fni-dep-con"><a href="#department/=/cid-{{group.groupID}}/ctitle-{{group.cTitle}}" class="tpl-nav-lb tpl-nav-lbq" title="抄送{{group.groupName}}的信息">{{group.groupName}}</a></li>
+        ## }); ##
+        <li style="padding-left:25px;line-height:30px;display:none;" class="left-deplist-tpl"><a href="javascript:;" class="fna-blue"><span class="deplist-control deplist-open">展开</span>部门...</a></li>
+    </ul>
+    <ul class="files-nav-list">
+        <li style="height:25px;">&nbsp;</li>
+        <li class="files-nav-item"><a href="#stream/atmefeeds" class="tpl-nav-lb" lightnav="#stream" lightmodel="ignore">@提到我的</a></li>
+        <li class="files-nav-item"><a href="#stream/followedfeeds" class="tpl-nav-lb" lightnav="#stream">我关注的</a></li>
+        <li class="files-nav-item"><a href="#stream/receivedreplies" class="tpl-nav-lb" lightnav="#stream" lightmodel="ignore">我的回复</a></li>
+        <li class="files-nav-item"><a href="#stream/myreceipt" class="tpl-nav-lb" lightnav="#stream">我的回执</a></li>
+        <li class="files-nav-item"><a href="#stream/mylikes" class="tpl-nav-lb" lightnav="#stream">我的赞</a></li>
+        <li class="files-nav-item"><a href="#stream/archivetag" class="tpl-nav-lb" lightnav="#stream">我的归档</a></li>
+        <li class="files-nav-item"><a href="#stream/mytopics" class="tpl-nav-lb" lightnav="#stream">我的话题</a></li>
+        <li class="files-nav-item"><a href="#stream/votes" class="tpl-nav-lb" lightnav="#stream">我的投票</a></li>
+    </ul>
+    <div class="two-code-wrap">
+    	<strong>扫描获取客户端</strong><br/>
+        <span class="two-code-img-wrap"><img class="two-code-img" src="../../html/fs/assets/images/erweima.jpg" /></span><br/>
+        <a href="http://www.fxiaoke.com/downloadsection.html" target="_blank" class="fna-blue">官网下载</a>
+    </div>
+</script>
+<script class="invite-apv-tpl" type="text/html">
+    <div class="ui-dialog-title">通过邮箱或者手机号邀请您的同事</div>
+    <div class="ui-dialog-text">
+        <div class="invite-list-wrap">
+            <div class="invite-item">手机或邮箱：<input type="text" class="invite-inp" /><span class="invite-inp-cerror" style="display:none;">格式错误</span></div>
+            <div class="invite-item">手机或邮箱：<input type="text" class="invite-inp" /><span class="invite-inp-cerror" style="display:none;">格式错误</span></div>
+            <div class="invite-item">手机或邮箱：<input type="text" class="invite-inp" /><span class="invite-inp-cerror" style="display:none;">格式错误</span></div>
+            <div class="invite-amore"><a href="javascript:;" class="invite-amore-add fna-blue">+邀请更多</a></div>
+        </div>
+        <div class="invite-btn-wrap marg20">
+            <button class="f-sub button-green" data-role="confirm">立即邀请</button><button class="f-cancel button-grey f-cancel" data-role="cancel">取消</button>
+        </div>
+    </div>
+</script>

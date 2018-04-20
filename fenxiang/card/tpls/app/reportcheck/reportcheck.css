@@ -1,0 +1,68 @@
+#report-reportcheck .report-title-check {
+	width: 100%;
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+#report-reportcheck .report-title-check h2 {
+	font-size: 20px;
+	color: #555;
+}
+#report-reportcheck .tab-receive {
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+#report-reportcheck .tab-send {
+	border-left: none;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+#report-reportcheck .report-search-wrap {
+	text-align: right;
+	background: #f6f7f8;
+	margin-top: 6px;
+	padding: 12px 0 11px 0;
+	border: 1px solid #d8d8d8;
+	border-bottom: none;
+	padding-right: 13px;
+}
+#report-reportcheck .report-check-ctner .report-list-ctner {
+	padding-bottom: 30px;
+}
+#report-reportcheck .report-check-ctner .report-list-ctner .report-send-ctner {
+	display: none;
+}
+#report-reportcheck .report-check-ctner .report-check-item-content {
+	display: none;
+}
+#report-reportcheck .rc-receive-tb tbody tr, #report-reportcheck .rc-send-tb tbody tr {
+	cursor: pointer;
+}
+#report-reportcheck .rc-receive-tb tbody tr:hover, #report-reportcheck .rc-send-tb tbody tr:hover {
+	background: #F3F3F3;
+}
+#report-reportcheck .rc-receive-tb tbody tr.blank, #report-reportcheck .rc-send-tb tbody tr.blank {
+	cursor: default;
+	line-height: 70px;
+	height: 70px;
+}
+#report-reportcheck .page-ctner {
+	float: right;
+	padding-top: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

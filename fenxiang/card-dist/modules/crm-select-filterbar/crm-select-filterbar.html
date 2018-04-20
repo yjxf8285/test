@@ -1,0 +1,23 @@
+<script type="text/html" class="select-filterbar-template"><div class="select-filterbar-hd">
+        <h1>{{title}}</h1>
+        <a href="javascript:;" class="clear-all-btn fn-hide">清空</a>
+    </div>
+    <div class="select-filterbar-bd">
+        <div class="rows-warp">
+            ## _.each(tags,function(tag,i) { ##
+            <div class="rows fn-clear" data-tagid="{{tag.fBusinessTagID}}">
+                <div class="row-tit">{{tag.name}}</div>
+                <div class="mh">：</div>
+                <div class="row-option-warp">
+                    ## _.each(tag.options,function(option,i) { ##
+                        <span class="mn-checkbox-box row-option">
+                            <span class="label-for"><span data-value="{{tag.fBusinessTagID}},{{option.fBusinessTagOptionID}}" class="mn-checkbox-item"></span><a href="javascript:;" title="{{option.name}}"><label class="label" style="color: #333;">{{option.name}}</label></a></span>
+                        </span>
+                    ## }); ##
+                    <a href="javascript:;" class="more-option-btn fn-hide">更多</a>
+                </div>
+            </div>
+            ## }); ##
+        </div>
+        <div class="more-rows fn-hide"><a href="javascript:;" class="more-rows-btn">更多筛选条件</a></div>
+    </div></script>

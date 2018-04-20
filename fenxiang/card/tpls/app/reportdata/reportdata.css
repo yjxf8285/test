@@ -1,0 +1,194 @@
+
+#report-reportdata .tpl-inner {
+    padding-bottom: 20px;
+}
+
+.rpt-dt .report-btn {
+    padding: 0 20px;
+}
+
+.rpt-dt-tips {
+    width: 100%;
+    padding-top: 8px;
+    line-height: 22px;
+    overflow: hidden;
+}
+
+.rpt-dt-tips p {
+    float: left;
+    color: #afafaf;
+}
+
+.rpt-dt-tips .report-search-wrap {
+    float: right;
+}
+
+.rpt-dt-tbox {
+    width: 100%;
+    overflow: auto;
+    position: relative;
+}
+
+.rpt-dt-tbox .report-btn-box {
+    padding-top: 30px;
+}
+
+.rpt-dt-tbox .rpt-dt-tb,
+.rpt-dt-input-tb {
+    width: 825px;
+}
+
+.rpt-dt-tbox a {
+    display: inline-block;
+    width: 70px;
+}
+
+/*历史记录 日期搜索区域*/
+.rpt-dt-summary {
+    width: 100%;
+    padding: 22px 0 16px;
+    line-height: 30px;
+    border-bottom: 1px solid #dedede;
+    overflow: hidden;
+}
+
+.rpt-dt-summary p {
+    float: left;
+}
+
+.rpt-dt-summary p span {
+    margin-right: 35px;
+}
+
+.rpt-dt-summary label {
+    width: 60px;
+    float: left;
+}
+
+.rpt-dt-summary .date-inp-warp {
+    padding-right: 10px;
+}
+
+.date-inp-warp .date {
+    padding: 4px 10px;
+    border: solid 1px #d8d8d8;
+    width: 148px;
+}
+
+.rpt-dt-summary .date-inp-warp .fs-publish-dateselect-input {
+    vertical-align: inherit;
+}
+
+.rpt-dt-summary .report-btn-ok {
+    width: 72px;
+    padding: 0;
+    text-align: center;
+}
+
+.rpt-dt-excel-box {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.export-excel-btn {
+    display: inline-block;
+    width: 108px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.export-excel-btn:hover {
+    text-decoration: none;
+}
+
+.export-excel-btn.disabled {
+    border: 1px solid #d8d8d8;
+    cursor: default !important;
+    opacity: 0.5;
+}
+
+/*修改*/
+.report-tb .mn-radio-item {
+    vertical-align: middle;
+}
+
+.rpt-dt-input-tb tbody {
+    border: none;
+}
+
+.rpt-dt-input-tb td {
+    border: 1px solid #e6e6e6;
+}
+
+.rpt-dt-input-tb input {
+    width: 105px;
+    padding: 0 10px;
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    height: 28px;
+    background-color: #fff;
+    text-align: center;
+    vertical-align: 1px;
+}
+
+.rpt-dt-input-tb .mn-select-box {
+    width: 127px;
+    display: inline-block;
+    vertical-align: 1px;
+    line-height: 28px;
+}
+
+.rpt-dt-input-tb .mn-select-box .mn-select-title {
+    width: 98px;
+    border-radius: 3px;
+}
+
+.rpt-dt-select .ui-select-item {
+    width: 88px !important;
+}
+
+.reportdata-list-warps {
+    padding-bottom: 15px;
+}
+
+.rpt-dt-search-wrap {
+    background: #f5f5f5;
+    border: solid 1px #d8d8d8;
+    border-bottom: none;
+    padding: 12px;
+}
+
+.rpt-dt-search-wrap .date-inp {
+
+    width: 100px;
+    height: 28px;
+    padding: 0 10px;
+    border: 1px solid #dedede;
+    margin-right: 10px;
+}
+
+.reportdata-list-warps .submit-warp {
+    padding-top: 30px;
+}
+
+.reportdata-list-warps .page-warp {
+    float: right;
+    padding-top: 14px;
+}
+
+/* 审核人列表 */
+.approvemployees-list-title {
+    padding: 30px 0 15px 0;
+}
+
+.approvemployees-list-talbe {
+    /*width: 860px;*/
+}
+
+.report-edit-header {
+	background: #FFF;
+}

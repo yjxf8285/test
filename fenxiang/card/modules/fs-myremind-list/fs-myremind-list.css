@@ -1,0 +1,19 @@
+.myremind-list-item .fs-list-item .item-face img.voteico-img {
+    width: 28px;
+    height: 26px;
+}
+
+.myremind-list-item .fs-list-item .item-func a {
+    padding: 0;
+}
+
+.myremind-list-item .fs-list-item .item-detail.detail-vote .item-name.vote-info {
+    margin-top: 0;
+}
+
+.myremind-list-item .fs-list-item .item-info {
+    /*height: 40px;*/
+}
+.myremind-list-item .fs-list-item .item-name .rc-time{
+    margin-bottom: 2px;
+}

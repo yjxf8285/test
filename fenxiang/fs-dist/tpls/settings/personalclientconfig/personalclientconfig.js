@@ -1,0 +1,6 @@
+/**
+ * 纷享页面逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-09-02
+ */
+define("tpls/settings/personalclientconfig/personalclientconfig",["tabs","util","../settings-common","../settings-common.html"],function(a,b){var c=window,d=c.FS,e=d.tpl;e.event;var f=(a("tabs"),a("util")),g=a("../settings-common");b.init=function(){var a=b.tplEl,c=b.tplName,e=$(".is-play-notice-sound",a),h=$(".play-l",a),i=$(".save-success-btn",a),j=_.extend({IsShowInviteEmployeeTask:!1,IsShowReceiptTip:!1,IsShowReceiptionGuide:!1,IsSkipApproveGuide:!1,IsSkipNMSMarketing:!1,IsSkipPlan:!0,IsSkipPlanGuide:!1,IsSkipSMSMarketing:!1,IsSkipShareGuide:!1,IsSkipWorkGuide:!1,PlayNotificationSound:!1},f.getEnterpriseConfig(107,!0));j.PlayNotificationSound?e.prop("checked",!0):e.prop("checked",!1),i.click(function(b){j.PlayNotificationSound=e.prop("checked")?!0:!1,f.setEnterpriseConfig(107,j,!0),f.updateEnterpriseConfig(107,function(b){b.success&&g.saveSuccessAnimated(a,c)}),b.preventDefault()}),h.click(function(a){d.remindSoundPlayer&&d.remindSoundPlayer.play(),a.preventDefault()}),g.init(a,c)}});

@@ -1,0 +1,141 @@
+/* select-colleague 控件 start */
+
+.crm-select-contacts-title{
+    color: #858585;
+    padding: 10px 15px;
+    font-size: 15.5px;
+    font-weight: bold;
+}
+
+.crm-select-contacts-content{
+    border-top: 1px #e5e5e5 solid;
+    border-bottom: 1px #e5e5e5 solid;
+    padding: 15px 0px;
+    background-color: #f5f5f5;
+    height: 466px;
+}
+
+.crm-select-contacts-result-info{
+    padding: 15px 15px 15px 0px;
+}
+
+.crm-contacts-multiselect-info{
+    margin-top: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.crm-select-contacts-search-container{
+    padding: 0px 40px 0px 55px;
+}
+
+.crm-select-contacts-unselect-all {
+    margin-right: 5px;
+}
+
+.crm-select-contacts-search-box{
+}
+
+.crm-select-contacts-search-input{
+    height: 28px;
+    border: 1px #e5e5e5 solid;
+    padding: 0px 10px;
+    width: 619px;
+}
+
+.crm-select-contacts-search-button{
+    width: 50px;
+    height: 30px;
+    background-color: #427fed;
+    cursor: pointer;
+}
+
+.crm-select-contacts-search-button-active{
+    background-color: #000;
+}
+
+.crm-select-contacts-search-icon{
+    background: url(../../assets/images/crm_icons.png) no-repeat 0 0;
+    position: relative;
+    left: 15px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.crm-select-contacts-colleague{
+    padding: 10px;
+    width: 198px;
+    height: 60px;
+    border: 1px #d8d8d8 solid;
+    margin-right: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.crm-select-contacts-colleague-active{
+    border: 1px #4285f4 solid;
+}
+
+.crm-select-contacts-colleague-img{
+    width: 45px;
+    height: 45px;
+}
+
+.crm-select-contacts-colleague-info{
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
+}
+
+.crm-select-contacts-colleague-name{
+    font-size: 15px;
+    width: 100px;
+}
+
+.crm-select-contacts-colleague-department{
+    width: 100px;
+    color: #999;
+}
+
+.crm-select-contacts-colleague-select{
+    display: none;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: url(../../assets/images/crm_select.png) no-repeat center;
+}
+
+.crm-select-contacts-colleague-company{
+    color: #999;
+    margin-top: -4px;
+    width: 200px;
+}
+
+.crm-select-contacts-colleague-selected .crm-select-contacts-colleague-select{
+    display: inline-block;
+}
+
+.crm-select-contacts-result-container,.crm-select-contacts-result-selected-box{
+    height: 390px;
+    max-height: 390px;
+    overflow-y: auto;
+    width: 722px;
+    
+}
+
+
+.crm-select-contacts-result-pagination{
+    
+}
+
+.crm-select-contacts-footer-container{
+    padding: 15px;
+}
+
+.crm-select-contacts-button-ok,.crm-select-contacts-button-cancel{
+    margin-right: 15px;
+}
+
+/* select-colleague 控件 end */

@@ -1,0 +1,295 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+	font-family:'Microsoft YaHei';
+    font-size: 1em;
+    line-height: 1.4;
+	
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+a {
+    color: #00e;
+}
+
+a:visited {
+    color: #551a8b;
+}
+
+a:hover {
+    color: #06e;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/* Prevent callout */
+
+.nocallout {
+    -webkit-touch-callout: none;
+}
+
+.pressed {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+
+textarea[contenteditable] {
+    -webkit-appearance: none;
+}
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+   they have been set as display: none */
+
+.gifhidden {
+    position: absolute;
+    left: -100%;
+}
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+    direction: ltr;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+}
+
+.ir br {
+    display: none;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+input[type="text"], input[type="email"], input[type="search"], input[type="password"], input[type="number"] {
+   -webkit-appearance: none;/*去 input 默认样式*/
+   -moz-appearance: none; /* mobile firefox too! */
+   outline:none;
+   padding:0;
+ }
+h1,h2,h3,h4,strong{font-weight:normal;}
+.marg20{margin-top:20px !important;}
+.marg40{margin-top:40px !important;}
+.color-grey{color:#999999 !important;}
+
+/*请假单*/
+.abs-wrap{padding:10px 10px;width:396px;padding-right:40px;}
+.abs-wrap table{
+	width:100%;
+	border-collapse:inherit;
+	border-spacing:1px;
+	background-color:#c0c0c0;
+	font-size:80%;
+}
+
+.abs-wrap table th,.abs-wrap table td{line-height:26px;height:28px;text-align:center;}
+.abs-wrap table th{background-color:#dfdfdf;color:#444444;}
+.abs-wrap table td{background-color:#f6f6f6;pading:0 2px;}
+
+.abs-wrap .sel-pub{height:24px;border:#c1c1c1 solid 1px;border-radius:2px;}
+.abs-wrap .cate-wrapper select.cate{outline:none;}
+
+.abs-wrap input{border-radius:0px;}
+.abs-wrap .inp-text,.abs-wrap .text-edit{
+	border:1px solid #DDDDDD;
+    height:22px;
+    padding-left:2px;
+    width:120px;
+}
+.abs-wrap .inp-text{
+    width:135px;
+}
+.abs-wrap .text-sel{width:60px;}
+.abs-wrap .time-span{
+	line-height:normal;
+}/*解决input number 安卓里 不垂直居中*/
+.abs-wrap .time-close-wrap{position:relative;}
+.abs-wrap .time-close-wrap a.close{position:absolute;top:0px;right:-30px;font-size:100%;font-weight:bold;color:#00F;text-decoration:none;line-height:2;}
+.abs-wrap .text-edit{
+    width:30px;
+}
+.abs-wrap .leave-summary{margin-top:5px;font-size:80%;}
+
+.abs-wrap .start-date-wrapper .date-inner,
+.abs-wrap .end-date-wrapper .date-inner{
+    position: relative;
+    display: inline-block;
+}
+.abs-wrap .start-date-wrapper .date-input-overlay,
+.abs-wrap .end-date-wrapper .date-input-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+}
+
+/*报销单*/
+.exp-wrap{padding:10px 10px;width:405px;padding-right:35px;font-size:80%;}
+.exp-wrap table{
+	width:100%;
+	border-collapse:inherit;
+	border-spacing:1px;
+	background-color:#c0c0c0;
+}
+.exp-wrap .baoxiao-wrapper{}
+.exp-wrap .baoxiao-wrapper table th,
+.exp-wrap .baoxiao-wrapper table td{line-height:26px;height:28px;text-align:center;}
+.exp-wrap .baoxiao-wrapper table th{background-color:#dfdfdf;color:#444444;}
+.exp-wrap .baoxiao-wrapper table td{background-color:#ffffff;}
+
+.exp-wrap .baoxiao-wrapper table td input{border:none;*border-color:#ffffff;}
+.exp-wrap .baoxiao-wrapper table td input.amount{
+    text-align: right;
+}
+.exp-wrap .baoxiao-wrapper table td input.amount,
+.exp-wrap .baoxiao-wrapper table td input.mark{width:80px;}
+.exp-wrap .baoxiao-wrapper table td input.cate{width:210px;height:20px;}
+.exp-wrap .baoxiao-wrapper table td input{height:20px;}/*2013.11.18 by haibo*/
+
+.exp-wrap .baoxiao-summary{line-height:20px;padding-top:5px;}
+.exp-wrap .baoxiao-summary .upper-text-w,.exp-wrap .baoxiao-summary .num-text-w{color:#999999;}
+.exp-wrap .baoxiao-summary .num-text-w{white-space:nowrap;}
+.exp-wrap .baoxiao-summary .upper-text-w span,.exp-wrap .baoxiao-summary .num-text-w span{color:#444444;}
+.exp-wrap .baoxiao-summary .upper-text-w{
+
+}
+.exp-wrap .baoxiao-wrapper .mark-close-wrap{position:relative;}
+.exp-wrap .baoxiao-wrapper .mark-close-wrap a.close{position:absolute;top:0px;right:-30px;font-size:100%;font-weight:bold;color:#00F;text-decoration:none;line-height:2;}
+
+@media only screen and (-webkit-device-pixel-ratio:2) and (device-width:320px){
+
+}
+@media only screen and (-webkit-device-pixel-ratio:2) and (min-device-width:360px){ 
+
+}
+@media only screen and (min-width: 800px) {
+    /* Style adjustments for viewports that meet the condition */
+	
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for viewports that meet the condition */
+	
+}

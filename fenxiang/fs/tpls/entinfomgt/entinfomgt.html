@@ -1,0 +1,113 @@
+<div id="entinfomgt" class="tpl entinfomgt" tplname="entinfomgt" js="true" css="true" iscached="true" tpltitle="纷享管理平台">
+    <div class="tpl-l">
+        <div class="tpl-inner">
+        
+			<ul class="flag-left-list">
+            	<li><a href="javascript:;" class="fl-item-on">企业设置</a></li>
+                <li class="login-setting-item fn-hide"><a href="javascript:;">登录页设置</a></li>
+                <li class="custom-manage-item"><a href="javascript:;">客户管理设置</a></li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <div class="tpl-c">
+        <div class="tpl-inner">
+			<section class="ent-setup-wrap">
+                <h2 class="flag-title-wrap">
+                    <strong>企业设置</strong>
+                </h2>
+                <div class="ent-setup"> 
+                    <dl class="fn-clear">
+                        <dt class="fn-left color-999999" style="padding-top:10px;">企业Logo:</dt>
+                        <dd class="ent-logo-wrap"><img class="logo-img" src="../../html/fs/assets/images/admin/logo.png" width="332" height="35" /></dd>
+                        <dd>
+                            <a href="javascript:;" class="up-logobtn-wrap">
+                            	<button class="up-logo-btn button-gray">上传Logo</button>
+                                <span class="upload-shadow-wrapper"><input class="up-logo-file" type="file" /></span>
+                            </a>
+                            <button class="up-logo-default-btn button-gray">恢复默认</button>
+                        </dd>
+                        <dd class="color-999999">企业Logo的大小为 332px * 35px，格式必须为png、jpg或gif</dd>
+                    </dl>
+                </div>
+                <div class="ent-name color-999999">
+                    企业名称：<input type="text" class="sms-enterprise-name admin-inptext" value="纷享科技" maxlength="25" /><button class="sms-enterprise-btn button-gray">保存</button>
+                </div> 
+                <div class="ent-title color-999999">
+                    全公司默认字符串：<input type="text" class="all-company-inp admin-inptext" value="全公司" maxlength="25" /><button class="all-company-btn button-gray">保存</button>
+                </div>
+            </section>
+            
+            <section class="login-setup-wrap" style="display:none;">
+            	<h2 class="flag-title-wrap">
+                    <strong>登录页设置</strong>
+                </h2>
+                <div class="ent-setup">
+                    <dl class="fn-clear">
+                        <dt class="fn-left color-999999" style="padding-top:75px;">登录页主图:</dt>
+                        <dd class="ent-logo-wrap"><img class="login-img" src="../../html/fs/assets/images/admin/login-main.jpg" width="300" height="169" /></dd>
+                        <dd>
+                            <a href="javascript:;" class="up-logobtn-wrap">
+                            	<button class="up-mainimg-btn button-gray">上传主图</button>
+                                <span class="upload-shadow-wrapper"><input class="up-mainimg-file" type="file" /></span>
+                            </a>
+                            <button class="up-mainimg-default-btn button-gray">恢复默认</button>
+                        </dd>
+                        <dd class="color-999999">企业登录页主图的大小为 480px * 270px，格式必须为png、jpg或gif</dd>
+                    </dl>
+                </div>
+                <div class="ent-setup" style="border-bottom:none;">
+                    <dl class="fn-clear">
+                        <dt class="fn-left color-999999" style="line-height:30px;">登录页背景色:</dt>
+                        <dd class="lsu-bgdd">
+                        	<input type="text" class="lsu-inp-text admin-inptext" style="height:33px;" value="9c5a3c" maxlength="6" />
+                            <span class="lsu-view-color"></span>
+                            <label style="vertical-align:middle;">选择颜色：</label>
+                            <div class="lsu-sel-wrap">
+                            	<span class="lsu-sel-view"><i class="lsu-view-cvalue"></i></span>
+                                <ul class="lsu-sel-list" style="display:none;">
+                                	<li color="#a6ce39"><span style="background-color:#a6ce39;"></span></li>
+                                    <li color="#469ec6"><span style="background-color:#469ec6;"></span></li>
+                                    <li color="#ff7e00"><span style="background-color:#ff7e00;"></span></li>
+                                    <li color="#6f3198"><span style="background-color:#6f3198;"></span></li>
+                                    <li color="#787878"><span style="background-color:#787878;"></span></li>
+                                    <li color="#9c5a3c"><span style="background-color:#9c5a3c;"></span></li>
+                                    <li color="#ffc20e"><span style="background-color:#ffc20e;"></span></li>
+                                    <li color="#222dff"><span style="background-color:#222dff;"></span></li>
+                                    <li color="#4d6df3"><span style="background-color:#4d6df3;"></span></li>
+                                    <li color="#990030"><span style="background-color:#990030;"></span></li>
+                                </ul>
+                            </div>
+                        </dd>
+                        <dd class="lsu-bgdd">
+                            <button class="enterprise-bgcolor-btn button-gray">保存</button>
+                            <button class="enterprise-bgc-default-btn button-gray">恢复默认</button>
+                        </dd>
+                        <dd class="color-999999 lsu-bgdd">背景色为：6位字母或数字字符，例如：a6ce39</dd>
+                    </dl>
+                </div>
+            </section>
+
+            <section class="custom-manage-wrap" style="display:none;">
+                <h2 class="flag-title-wrap">
+                    <strong>客户管理设置</strong>
+                </h2>
+                <div class="ent-setup">
+                    <div class="f-field fn-clear">
+                        <div class="ff-label fn-left">修改上级权限：</div>
+                        <div class="ff-value fn-left">
+                            <div class="disable-modify-parent">
+                                <span class="label-for"><input type="checkbox" class="control-modify-parent" />&nbsp;<label>禁止个人修改自己的直属上级</label></span>
+                            </div>
+                            <div class="f-actions">
+                                <button class="f-sub button-default">保存</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+</div>

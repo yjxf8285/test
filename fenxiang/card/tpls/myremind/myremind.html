@@ -1,0 +1,53 @@
+<div id="myremind" class="tpl department" tplname="myremind" js="true" css="false" iscached="false">
+    <!-- 三列式 自适应宽度 -->
+    <div class="tpl-l">
+        <div class="tpl-inner">
+            <div class="head-img-wrap fn-clear bg-white card-border-rad">
+                <script class="head-img-wrap-tpl" type="text/html">
+                    <a href="#profile"><img class="fn-left" src="{{profileImage}}"/>{{userName}}</a>
+                </script>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="tpl-c">
+        <div class="tpl-inner">
+            <!-- department center start -->
+            <div class="department-wrapper">
+            	<div class="bg-white card-border-rad">
+                    <h2 class="depw-title">查看我的定时提醒</h2>
+                    <p class="depw-text color-999999">这些是您的提醒记录。</p>
+                    <ul class="depw-menu fn-clear marg10 border-top-none">
+                    </ul>
+                    <nav class="depw-tabs fn-clear marg10"> 
+                       <a href="javascript:;" class="sort-date depw-tabs-a depw-tabs-aon" sort="1">已提醒</a>
+                       <a href="javascript:;" class="sort-date depw-tabs-a" sort="0">待提醒</a>
+
+                       <label class="search-wrap list-search-input-wrapper">
+                         <input type="text" class="search-inp" placeholder="搜索提醒内容" maxlength="100" /><button class="search-btn"></button>
+                       </label>
+                    </nav>
+                </div>
+                <div class="depw-content-list">
+                    <div class="list-search-bar fn-clear fn-hide"><span class="words">共搜到</span><span class="num">0</span>条记录<a onclick="return false;" href="#" class="btn-close"></a></div>
+                    <div class="myremind-list"></div>
+                    <div class="myremind-list-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tpl-r">
+        <div class="tpl-inner">
+           <aside class="home-right-content">
+           		<div class="bg-white card-border-rad">
+                    <h4 class="rightc-title card-border-radtop">什么是定时提醒？</h4>
+                    <div class="r-use-help-wrap  color-999999">
+                        你可以设置一项定时提醒，在预设的时间提醒你或同事查看、处理某项工作，纷享销客手机客户端及PC客户端都可以收到提醒。
+                    </div>
+                </div>
+           </aside>
+        </div>
+    </div>
+</div>

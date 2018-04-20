@@ -1,0 +1,78 @@
+<script type="text/html" class="fs-showsession-item-tpl"><div class="fs-showsession-item-l">{{profileImage}}</div>
+    <div class="fs-showsession-item-m {{sessiontype}}">
+        <div class="session-arrow"></div>
+        {{content}}
+    </div>
+    <div class="fs-showsession-item-r">{{myProfileImage}}</div>
+    <div class="fn-clear"></div>
+    <div class="fs-showsession-item-my-dialog"></div></script><script type="text/html" class="fs-showsession-text-tpl"><div class="session-content">
+        <a href="#profile/=/empid-{{senderId}}">{{name}}</a>&nbsp;&nbsp;说：{{content}}
+        <span class="createtime">{{createTime}}</span>
+    </div></script><script type="text/html" class="fs-showsession-audio-tpl"><div class="session-content">
+        <a href="#profile/=/empid-{{senderId}}">{{name}}</a>&nbsp;&nbsp;说：<span class="createtime">{{createTime}}</span>
+        <div class="audio-box" data-src="{{File}}" data-duration="{{Duration}}"></div>
+    </div></script><script type="text/html" class="fs-showsession-image-tpl"><div class="session-content">
+        <a href="#profile/=/empid-{{senderId}}">{{name}}</a>&nbsp;&nbsp;说：
+        <span class="createtime">{{createTime}}</span>
+    </div>
+    <div class="session-attachs">
+        <div class="fs-list-item">
+            <div class="item-media">
+                <div class="feed-img-only">
+                    <div class="feed-img-thumb img-num" data-Thumbnail="{{Thumbnail}}" data-HDImg="{{HDImg}}" data-Image="{{Image}}" data-name="{{fileName}}">
+                        <img class="feed-img-item" src="{{ThumbnailUrl}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div></script><script type="text/html" class="fs-showsession-emotion-tpl"><div class="session-content">
+        <a href="#profile/=/empid-{{senderId}}">{{name}}</a>&nbsp;&nbsp;说：
+        <span class="createtime">{{createTime}}</span>
+    </div></script><script type="text/html" class="fs-showsession-news-tpl"><div class="session-content">
+        <a href="#profile/=/empid-{{senderId}}">{{name}}</a>&nbsp;&nbsp;说：
+        <span class="createtime">{{createTime}}</span>
+    </div></script><script type="text/html" class="fs-showsession-webPage-tpl"><div class="session-content">
+        <a href="#profile/=/empid-{{senderId}}">{{name}}</a>&nbsp;&nbsp;说：
+        <span class="createtime">{{createTime}}</span>
+    </div></script><script type="text/html" class="fs-showsession-systemPrompt-tpl"><div class="session-content">
+        <a href="#profile/=/empid-{{senderId}}">{{name}}</a>&nbsp;&nbsp;{{content}}
+        <span class="createtime">{{createTime}}</span>
+    </div></script><script type="text/html" class="fs-showsession-systemTextPrompt-tpl"><div class="session-content">{{content}}<span class="createtime">{{createTime}}</span></div></script><script type="text/html" class="fs-showsession-document-tpl"><div class="session-content">
+        <a href="#profile/=/empid-{{senderId}}">{{name}}</a>&nbsp;&nbsp;说：
+        <span class="createtime">{{createTime}}</span>
+    </div>
+    <div class="session-attachs">
+        <div class="item-media">
+            <div class="feed-files feed-attach fn-clear">
+                <dl>
+                    <dt class="fs-attach-{{FileType}}-icon attach-icon"></dt>
+                    <dd>
+                        <p>{{Name}}({{Size}})</p>
+
+                        <p>
+                            <a href="{{DownloadUrl}}" class="d" title="" target="_blank">下载</a>
+                            ## if(Prv){ ##
+                            <a href="javascript:void(0)" class="attach-preview-l v" data-name="{{Name}}" data-file="{{File}}">预览</a>
+                            ## } ##
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div></script><script type="text/html" class="fs-showsession-location-tpl"><div class="session-content">
+        <a href="#profile/=/empid-{{senderId}}">{{name}}</a>&nbsp;&nbsp;说：
+        <span class="createtime">{{createTime}}</span>
+    </div>
+    <div class="feed-location"><img src="../../html/fs/assets/images/feedlocation_ico.gif" alt="" class="feed-location-ico"><span class="feed-location-text">{{Text}}</span><span class="feed-location-fn"><a action-data="latitude={{Latitude}}&longitude={{Longitude}}&address={{Text}}&createTime={{messageTime}}" href="javascript:void(0)" class="feed-location-fn-map">显示地图</a> |</span></div></script><script type="text/html" class="fs-showsession-remind-tpl"><div class="session-content">
+        <a href="#profile/=/empid-{{senderId}}">{{name}}</a>&nbsp;&nbsp;说：
+        <span class="createtime">{{createTime}}</span>
+    </div></script><script type="text/html" class="fs-showsession-workNotice-tpl"><div class="session-content">
+        <a href="#profile/=/empid-{{senderId}}">{{name}}</a>&nbsp;&nbsp;说：<span class="worknotice-content-wrap" data-id="{{feedid}}">[企信通知]{{title}}</span>
+        <span class="createtime">{{createTime}}</span>
+    </div></script><script type="text/html" class="fs-showsession-linkWorkItem-tpl"><div class="session-content">
+        <a href="#profile/=/empid-{{senderId}}">{{name}}</a>&nbsp;&nbsp;说：<span class="workItem-content-wrap" data-id="{{feedid}}">[{{title}}]{{desc}}</span>
+        <span class="createtime">{{createTime}}</span>
+    </div></script><script type="text/html" class="fs-showsession-linkWorkSchdule-tpl"><div class="session-content">
+        <a href="#profile/=/empid-{{senderId}}">{{name}}</a>&nbsp;&nbsp;说：<span class="workSchdule-content-wrap" data-id="{{feedid}}">[{{title}}]{{desc}}</span>
+        <span class="createtime">{{createTime}}</span>
+    </div></script>

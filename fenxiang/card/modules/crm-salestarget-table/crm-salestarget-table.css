@@ -1,0 +1,207 @@
+/*table start*/
+.crm-salestarget-table{
+	border: 1px #d8d8d8 solid;
+}
+
+.crm-salestarget-table-header{
+	padding: 0 20px;
+	border-bottom: 1px #d8d8d8 solid;
+	height: 50px;
+	background-color: #f6f7f8;
+	vertical-align: middle;
+}
+
+
+.crm-salestarget-select-list-year,.crm-salestarget-select-list-this-year{	
+	margin-right: 5px;
+}
+
+.crm-salestarget-select-label{
+	display: inline-block;
+	margin-top: 15px !important;
+}
+
+.crm-salestarget-table-body{
+	padding: 20px;
+	background-color: #fff;
+}
+
+.crm-salestarget-group-button{
+    width: 80px;
+    border: 1px #d8d8d8 solid;
+    cursor: pointer;
+    height: 28px;
+    line-height: 27px;
+    text-align: center;
+    background-color: #fff;
+    display: inline-block;
+    *border:none;
+}
+
+.crm-salestarget-group-button:hover{
+    -moz-box-shadow:1px 2px 2px #cccccc;
+    -webkit-box-shadow:1px 2px 2px #cccccc;
+    box-shadow:1px 2px 2px #cccccc;
+}
+
+.crm-salestarget-group-button-selected{
+	background-color: #f3f3f3;
+}
+
+.crm-salestarget-group-button-table,.crm-salestarget-group-button-detail{
+	-moz-border-radius: 4px 0px 0px 4px; /* Firefox */
+    -webkit-border-radius: 4px 0px 0px 4px; /* Safari 和 Chrome */
+    border-radius: 4px 0px 0px 4px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+}
+
+.crm-salestarget-group-button-chart,.crm-salestarget-group-button-prediction{
+	-moz-border-radius: 0px 4px 4px 0px; /* Firefox */
+    -webkit-border-radius: 0px 4px 4px 0px; /* Safari 和 Chrome */
+    border-radius: 0px 4px 4px 0px; /* Opera 10.5+, 以及使用了IE-CSS3的IE浏览器 */
+    border-left: 0px;
+}
+
+.crm-salestarget-group-button-box{
+	margin-right: 20px;
+	*border: 1px #d8d8d8 solid;
+}
+
+.crm-salestarget-table-info{
+	margin-top: 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+.crm-salestarget-table-container{
+	width: 100%;
+}
+
+.crm-salestarget-month-table-container{
+	width: 80px;
+	position: relative;
+	z-index: 20;
+	background: #fff;
+}
+
+.crm-salestarget-month-table{
+	width: 80px;
+}
+
+.crm-salestarget-month-table th{
+	border: 1px #d8d8d8 solid;
+	background-color: #eee;
+	height: 40px;
+	line-height: 40px;
+}
+
+.crm-salestarget-month-table td{
+	border-left: 1px #d8d8d8 solid;
+	border-right: 1px #d8d8d8 solid;
+	border-bottom: 1px #d8d8d8 solid;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	cursor: pointer;
+}
+
+.crm-salestarget-info-table-container{
+	width: 1028px;
+	display: block;
+	position: relative;
+	z-index: 10;
+	/*position: absolute;*/
+	overflow: hidden;
+}
+
+.crm-salestarget-detail-table-container{
+	width: 1028px;
+	position: relative;
+	left: -1028px;
+	top: 0px;
+}
+
+.crm-salestarget-detail-table{
+	width: 100%;
+}
+
+.crm-salestarget-detail-table th{
+	border-top: 1px #d8d8d8 solid;
+	border-right: 1px #d8d8d8 solid;
+	border-bottom: 1px #d8d8d8 solid;
+	background-color: #eee;
+	padding: 0px 20px;
+	height: 40px;
+	line-height: 40px;
+	text-align: right;
+}
+.crm-salestarget-detail-table th div{
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.crm-salestarget-detail-table td{
+	border-right: 1px #d8d8d8 solid;
+	border-bottom: 1px #d8d8d8 solid;
+	height: 40px;
+	line-height: 40px;
+	padding: 0px 20px;
+	text-align: right;
+	cursor: pointer;
+}
+
+.crm-salestarget-prediction-table-container{
+	width: 1028px;
+	position: relative;
+	left: -1028px;
+	top: 0px;
+}
+
+.crm-salestarget-prediction-table{
+	width: 100%;
+}
+
+.crm-salestarget-prediction-table th{
+	border-top: 1px #d8d8d8 solid;
+	border-right: 1px #d8d8d8 solid;
+	border-bottom: 1px #d8d8d8 solid;
+	background-color: #eee;
+	height: 40px;
+	line-height: 40px;
+	text-align: right;
+	padding: 0px 20px;
+}
+
+.crm-salestarget-prediction-table td{
+	border-right: 1px #d8d8d8 solid;
+	border-bottom: 1px #d8d8d8 solid;
+	height: 40px;
+	line-height: 40px;
+	padding: 0px 20px;
+	text-align: right;
+	cursor: pointer;
+}
+
+.crm-salestarget-table-cell-hover{
+	background-color: #f3f3f3;
+}
+
+.crm-salestarget-table-cannot-hover-cell{
+	cursor: default !important;
+}
+
+.crm-salestarget-table-cell-selected{
+	background-color: #FFFFCC;
+}
+
+.crm-salestarget-table-chart{
+	margin-top: 20px;
+	width: 500px;
+}
+
+.crm-salestarget-table-explaination{
+	margin-top: 20px;
+	color: #999;
+}
+

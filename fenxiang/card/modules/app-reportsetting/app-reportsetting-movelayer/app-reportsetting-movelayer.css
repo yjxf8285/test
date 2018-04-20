@@ -1,0 +1,63 @@
+.app-reportsetting-movelayer-hd {
+	height: 40px;
+	display: block;
+	background: #888888;
+	color: #ffffff;
+	font-size: 13px;
+	line-height: 40px;
+	text-indent: 20px;
+	border: 1px solid #f0f0f0;
+}
+.app-reportsetting-movelayer-bd {
+	padding: 20px 36px 16px 50px;
+}
+.app-reportsetting-movelayer-bd .parent-node {
+	height: 38px;
+	padding-bottom: 120px;
+}
+.app-reportsetting-movelayer-bd .lbl {
+	display: inline-block;
+	width: 58px;
+	text-align: right;
+	line-height: 38px;
+	height: 38px;
+	color: #333;
+	font-size: 14px;
+}
+.app-reportsetting-movelayer-bd .content {	
+	display: inline-block;
+	width: 204px;
+}
+.app-reportsetting-movelayer-bd .content input {
+	width: 220px;
+	height: 24px;
+	padding: 6px 9px;
+	line-height: 24px;
+	border: 1px solid #D8D8D8;
+}
+.app-reportsetting-movelayer-bd .opts-ctner {
+	height: 30px;
+	text-align: right;
+}
+.app-reportsetting-movelayer-bd .opts-ctner a {	
+	width: 84px;
+	height: 30px;
+	display: inline-block;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: none;
+	margin-left: 19px;
+	border-radius: 3px;
+}
+.app-reportsetting-movelayer-bd .opts-ctner a.btn-ok {
+	color: #FFF;
+	background: #4682EA;
+}
+.app-reportsetting-movelayer-bd .opts-ctner a.btn-cancel {
+	color: #999;
+	background: #FFF;
+	height: 28px;
+	line-height: 28px;
+	width: 82px;
+	border: 1px solid #D8D8D8;
+}

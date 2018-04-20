@@ -1,0 +1,58 @@
+/**
+ * 全局动画效果
+ * author: qigb
+ */
+.appear{
+    animation:trslte 1s;
+    -moz-animation:trslte 1s;
+    -webkit-animation:trslte 1s;
+}
+@keyframes trslte{
+    0% {transform:scale(0);}
+    75% {transform:scale(1);}
+    75% {transform:scale(1.05);}
+    100% {transform:scale(1);}
+}
+@-webkit-keyframes trslte{
+    0% {transform:scale(0);}
+    75% {transform:scale(1);}
+    75% {transform:scale(1.05);}
+    100% {transform:scale(1);}
+}
+
+.slidein {
+    -webkit-animation: slideInRight 0.5s;
+    -webkit-animation: slideInRight 0.5s;
+}
+@-webkit-keyframes slideInRight {
+    from {-webkit-transform: translate3d(100%, 0, 0);}
+    to {-webkit-transform: translate3d(0, 0, 0);}
+}
+
+.slidedown {
+    -webkit-animation: slideDown 0.3s;
+    -webkit-animation: slideDown 0.3s;
+}
+@-webkit-keyframes slideDown {
+    from { -webkit-transform: translateY(-100%);}
+    to { -webkit-transform: translateY(0);}
+}
+
+.slideup {
+    -webkit-animation: slideUp 0.2s;
+    -webkit-animation: slideUp 0.2s;
+}
+@-webkit-keyframes slideUp {
+    from { -webkit-transform: translateY(100%);}
+    to { -webkit-transform: translateY(0);}
+}
+
+.slideupdown {
+    -webkit-animation: slideUpDown 0.2s;
+    -webkit-animation: slideUpDown 0.2s;
+}
+@-webkit-keyframes slideUpDown {
+    from { -webkit-transform: translate3d(-50%, 160%, 0);}
+    to { -webkit-transform: translate3d(-50%, 0, 0);}
+}
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="北京易动纷享科技有限公司" />
+		<meta name="keywords" content="纷享,纷享科技,纷享销客,销售团队管理,分享,企业社会化,办公自动化,CRM,移动办公,移动互联网,移动审批,手机办公,移动签批,明道,Yammer" />
+		<meta name="description" content="销售外勤管理，专业销售日志，移动CRM，销售协同管理，将公司装进手机里，随时随地进行销售管理和业务沟通，助力企业销售业绩倍增。" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+		<title>审核记录</title>
+		<link rel="stylesheet" href="../static/css/approvehistory.css">
+	</head>
+
+	<body>
+		<div class="p-arv">
+            
+            
+            <!--
+                列表页面
+            -->
+			<section class="sec arv-l" id="js_arv_l">
+                <table><tbody></tbody></table>
+                <div class="load-more"><span></span>点击加载更多</div>
+			</section>
+
+            
+            <!--
+                详情页面
+            -->
+			<section class="sec arv-d" id="js_arv_d"></section>            
+            
+            
+            
+            <!--
+                网络错误页面
+            -->
+            <section class="sec g-p-error">
+                <p><span></span>哎呦~ 网络出错了！</p>
+            </section>
+            
+            
+            <!--
+                首次进入页面显示加载状态条
+            -->
+            <section class="sec g-ld"><span>LOADING...</span></section>
+
+            
+            <!--无数据提示-->
+            <div class="sec g-no-data">
+                <p><span></span>您没有任何审核记录</p>
+            </div>
+
+		</div>
+        
+        
+        <!--
+            请求时loading
+        -->
+        <div class="g-req-ld"><span></span></div>
+        
+        
+        
+        <!--
+            全局toast
+        -->
+        <div class="g-toast"></div>
+
+        
+		<!--
+            模板审核记录列表
+        -->
+		<script type="text/template" id="arv-l-tpl">
+            ## _.each(data, function(item) { ##
+                <tr class="{{item.Cls}}" data-templateid="{{item.TemplateID}}" data-batchno="{{item.BatchNo}}">
+                    <td class="list-state">
+                        <i></i>
+                        <span>{{item.Txt}}</span>
+                    </td>
+                    <td class="list-info">
+                        <p>{{item.TemplateName}}</p>
+                        <p>
+                            <span>审核人：{{item.DataApproverName}}</span>&nbsp;&nbsp;<span>{{item.UpdateTime}}</span>
+                        </p>
+                    </td>
+                </tr>
+            ## }) ##
+		</script>
+        
+        
+		<!--
+            模板审核记录详情
+        -->
+		<script type="text/template" id="arv-d-tpl">
+            ## if (items.length > 0) { ##
+            <div class="data-wrapper">
+                <table class="m-datatable">
+                    <thead>
+                        <tr>
+                            <th class="-upload-order"></th>
+                            <th class="-upload-order">状态</th>
+                            <th width="80">层级</th>
+                            ## _.each(items[0].CompareInfos, function(item) { ##  
+                                <th>{{item.FieldDesc}}</th>
+                            ## }) ##
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ## _.each(items, function(item, index){ ##
+                            <tr>
+                                <td>{{index+1}}</td>
+                                <td class="{{item.statusCls}}">{{item.statusText}}</td>
+                                <td>{{item.NodeName}}</td>
+                                
+                                ## _.each(item.CompareInfos , function(info) { ##
+                                    ## if (info.status == 2) { ##
+                                    <td>
+                                        <p class="v-b">{{info.ValueBefore}}</p>
+                                        <p class="v-a">{{info.ValueAfter}}</p>
+                                    </td>
+                                    
+                                    ## } else if (info.status == 1) { ##
+                                       <td>{{info.ValueAfter}}</td>
+                                    ## } else { ##
+                                        <td>{{info.ValueBefore}}</td>
+                                    ## } ##
+                                    
+                                ## }) ##
+                            </tr>
+                        ## }) ##                     
+                    </tbody>
+                </table>
+            </div>
+            ## } ##
+            
+            <div class="info">
+                <ul>
+                    <li><span>状　　态</span><em class="orange">{{info.status}}</em></li>
+                    <li><span>上&nbsp; 报&nbsp;人</span><em class="black">{{info.name}}</em></li>
+                    <li><span>申请时间</span><em>{{info.createTime}}</em></li>
+                    <li><span>审&nbsp; 核&nbsp;人</span><em class="black">{{info.approverName}}</em></li>
+                    <li><span>审核时间</span><em>{{info.updateTime}}</em></li>
+                </ul>
+            </div>
+        </script>
+        
+        
+        
+		<script src="../static/js/lib/zepto.js"></script>
+		<script src="../static/js/lib/routie.js"></script>
+		<script src="../static/js/lib/underscore.js"></script>
+        <script src="../static/js/lib/common.js"></script>
+		<script type="text/javascript" src="../static/js/approvehistory.js"></script>
+	</body>
+</html>

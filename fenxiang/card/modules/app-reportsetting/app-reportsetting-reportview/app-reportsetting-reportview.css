@@ -1,0 +1,31 @@
+.reportview-report-opts {
+	height: 32px;
+	padding: 12px 15px 14px 15px;
+	border-bottom: 1px solid #D8D8D8;
+}
+.reportview-report-opts a {
+	display: inline-block;
+	width: 124px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #D8D8D8;
+	border-radius: 2px;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	font-size: 12px;
+	margin-right: 16px;
+	float: left;
+}
+.reportview-report-opts .search-warp {
+	float: right;
+	margin-top: 2px;
+	position: relative;
+}
+.report-layers-reportview .reportview-list-ctner {
+	padding: 15px;
+}
+.report-layers-reportview .reportview-list-ctner .page-ctner {
+	float: right;
+	padding: 14px 0;
+}

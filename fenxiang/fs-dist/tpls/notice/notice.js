@@ -1,0 +1,6 @@
+/**
+ * 纷享页面逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-09-02
+ */
+define("tpls/notice/notice",["util","modules/fs-notice-list/fs-notice-list"],function(a,b){var c=window,d=c.FS,e=d.tpl,f=(e.store,e.event),g=a("util"),h=a("modules/fs-notice-list/fs-notice-list");b.init=function(){var a=b.tplName,c=b.tplEl,d=$(".notice-list",c),e=$(".notice-list-pagination",c),i=$(".filter",c),j=new h({element:d,pagSelector:e,listPath:"/GlobalInfo/GetNoticeRecords",defaultRequestData:function(){var a=$(".depw-tabs-aon",i).attr("noticetype");return{noticeType:a}}});i.on("click",".filter-field",function(a){var b=$(this);$(".filter-field",i).removeClass("depw-tabs-aon"),b.addClass("depw-tabs-aon"),j.reload(),a.preventDefault()});var k=!0;f.on("switched",function(b){b==a&&(k?j.load():(k=!1,j.reload()))});var l=$(".clear-notice-l",c),m=$(".clear-alert-wrap",c),n=$(".clear-alert-main",c),o=$(".clear-btn-confirm",c),p=$(".clear-btn-canncel",c);l.click(function(a){$(".fs-notice-list-item",j.element).length>0&&(m.show(),n.animate({top:"0px"},500)),a.preventDefault()}),o.click(function(){g.api({type:"post",data:{},url:"/GlobalInfo/ClearNoticeRecords",success:function(a){a.success&&(j.empty(),n.animate({top:"100px"},500),setTimeout(function(){m.hide()},500))}})}),p.click(function(){n.animate({top:"100px"},500),setTimeout(function(){m.hide()},500)})}});

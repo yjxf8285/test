@@ -1,0 +1,6 @@
+/**
+ * 纷享页面逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+define("arale/events/1.0.0/events-debug",[],function(){function a(){}var b=/\s+/;a.prototype.on=function(a,c,d){var e,f,g;if(!c)return this;for(e=this.__events||(this.__events={}),a=a.split(b);f=a.shift();)g=e[f]||(e[f]=[]),g.push(c,d);return this},a.prototype.off=function(a,d,e){var f,g,h,i;if(!(f=this.__events))return this;if(!(a||d||e))return delete this.__events,this;for(a=a?a.split(b):c(f);g=a.shift();)if(h=f[g])if(d||e)for(i=h.length-2;i>=0;i-=2)d&&h[i]!==d||e&&h[i+1]!==e||h.splice(i,2);else delete f[g];return this},a.prototype.trigger=function(a){var c,d,e,f,g,h,i,j=[];if(!(c=this.__events))return this;for(a=a.split(b),g=1,h=arguments.length;h>g;g++)j[g-1]=arguments[g];for(;d=a.shift();){if((e=c.all)&&(e=e.slice()),(f=c[d])&&(f=f.slice()),f)for(g=0,h=f.length;h>g;g+=2)f[g].apply(f[g+1]||this,j);if(e)for(i=[d].concat(j),g=0,h=e.length;h>g;g+=2)e[g].apply(e[g+1]||this,i)}return this},a.mixTo=function(b){b=b.prototype||b;var c=a.prototype;for(var d in c)c.hasOwnProperty(d)&&(b[d]=c[d])};var c=Object.keys;return c||(c=function(a){var b=[];for(var c in a)a.hasOwnProperty(c)&&b.push(c);return b}),a});

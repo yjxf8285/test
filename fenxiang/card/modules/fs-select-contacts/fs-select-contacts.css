@@ -1,0 +1,32 @@
+.fs-select-contacts {
+	width: 300px;
+	height:302px;
+	background: #FFF;
+	border: 1px solid #333;
+	box-shadow: 5px 5px 5px #000;
+}
+.fs-select-contacts .title {
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+.fs-select-contacts .customers-ctner {
+	height: 240px;
+	overflow: auto;
+	padding-left: 10px;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+}
+.fs-select-contacts .customers-ctner ul li {
+	height: 24px;
+	line-height: 24px;
+	cursor:pointer;
+}
+.fs-select-contacts .customers-ctner ul li:hover {
+	background: #2882d2;
+}
+.fs-select-contacts .btns {
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}

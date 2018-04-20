@@ -1,0 +1,44 @@
+<script type="text/html" class="businesstags-template"><div class="hd fn-clear">
+        <div class="l">
+            <h1><span class="titname">{{tagTitle}}标签</span><span>共有标签{{tagsLength}}项</span>
+                ## if(value.tags.length === 0){ ##
+                ，<a class="backtoall-btn" href="javascript:;">返回查看全部</a>
+                ## } ##
+            </h1>
+        </div>
+        <div class="r">
+            <div class="search-warp"></div>
+        </div>
+    </div>
+    <ul class="bd">
+        <li>
+            <div class="createtags-ps">没有合适的标签？</div>
+            <div class="createtags-btn">+创建新标签</div>
+        </li>
+        ## if(value.tags.length === 0){ ##
+            <p class="nodata-tip"><span>没有搜索到关键词为“</span><span class="nodata-tip-keyword" title="{{keyWord}}">{{keyWord}}</span><span>”的标签</span></p>
+        ## }else{##
+            ## _.each(value.tags,function(tag){ ##
+            <li class="tag-item" data-id="{{tag.fBusinessTagID}}" data-name="{{tag.name}}">
+                <div class="tag-name">{{tag.name}}</div>
+                <dl class="tag-options">
+                    ## _.some(tag.options,function(option,index){ ##
+                        ## if(index < 6){ ##
+                        <dd>
+                            {{option.name}}
+                        </dd>
+                        ## }else{ ##
+                        <dd>
+                            ......
+                        </dd>
+                        ## return true; ##
+                        ## } ##
+                    ## }); ##
+                </dl>
+                ## if(!tag.isSystemTag){ ##
+                <div class="tag-delbtn">删除标签</div>
+               ## } ##
+            </li>
+            ## }); ##
+        ## } ##
+    </ul></script><div class="dialog-createnewtags-template"><div class="dialog-businesstags-warp"><div class="hd"><h1>新建标签</h1></div><div class="bd"><div class="tit fn-clear"><div class="l"><span class="tit-name">标题</span><input type="text" placeholder="请填写标题" maxlength="20" class="crm-textfield tit-input"></div><div class="r">*必填</div></div><div class="con fn-clear"><div class="l"><span class="tit-name">选项</span><textarea name="" placeholder="请填写选项" class="crm-textfield con-textarea"></textarea><div class="ps">*每行一个选项，选项最多20个字</div></div><div class="r">*必填</div></div></div><div class="fd"><button class="crm-button-submit">确定</button> <button class="crm-button-cancel">取消</button></div></div></div><div class="dialog-modifytags-template"><div class="dialog-businesstags-warp"><div class="hd"><h1>修改标签</h1></div><div class="bd"><div class="tit fn-clear"><div class="l"><span class="tit-name">标题</span><input type="text" placeholder="请填写标题" class="crm-textfield tit-input"><span class="modifytitname-btn-warp"><button class="crm-button-blue modifytitname-btn small-btn">保存</button></span></div></div><div class="con fn-clear"><div class="item-defpotion"><span class="tit-name">默认选项</span>  <span class="mn-select-box set-default-mn-warp" select-cls="crm-setting-tageditselect"><span class="mn-select-title-wrapper"><span class="mn-select-title potion-mn-select-list-title">不设置</span> <span class="title-icon"></span></span><ul class="mn-select-list potion-mn-select-list-warp"><li class="mn-select-item" data-value="1">test1</li><li class="mn-select-item" data-value="2" data-selected="true">test2</li></ul></span> <button class="crm-button-blue set-def-potion-btn small-btn">设置</button></div><div class="item-allpotion fn-clear"><div class="l"><span class="tit-name">选项</span></div><div class="c-warp"><div class="c"><input type="text" placeholder="" value="" class="crm-textfield potion-tit-input"><button class="crm-button-blue save-potion-btn small-btn">保存</button> <button class="crm-button-gray del-potion-btn small-btn">删除</button></div></div></div><div class="add-potion fn-clear"><div class="l"><span class="tit-name">添加选项</span><input type="text" placeholder="" class="crm-textfield potion-tit-input add-tag-potion-input" maxlength="20">&nbsp;<button class="crm-button-blue add-potion-btn small-btn">添加</button></div></div></div></div><div class="fd"><button class="crm-button-cancel">关闭</button></div></div></div>

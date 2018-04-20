@@ -1,0 +1,93 @@
+<script type="text/html" class="add-worktodo-tpl">
+    <form action="#" class="add-worktodo-form">
+        <div class="ui-dialog-title">创建待办事项</div>
+        <div class="ui-dialog-body">
+            <div class="worktodo-range"></div>
+            <div class="worktodo-title-wrapper">
+                <textarea name="worktodo_title" class="worktodo-title auto-focus" placeholder="填写待办标题"></textarea>
+            </div>
+            <div class="ui-dialog-bbar fn-clear">
+                <div class="is-important-wrapper fn-left">
+                    <input type="checkbox" name="is_important" class="is-important" id="is-important-cjdb" />&nbsp;<label for="is-important-cjdb" class="form-label">重要事项</label>
+                </div>
+                <div class="add-worktodo-actions fn-right">
+                    <button type="button" class="f-sub button-green">创建待办</button><button type="reset" class="button-gray f-cancel margl-btn">取消</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</script>
+<div class="fs-worktodo-item-wrapper">
+    <div class="fs-worktodo-item">
+        <div class="fs-worktodo-item-inner">
+            <div class="fs-worktodo-item-tbar fn-clear">
+                <div class="tbar-l fn-left">
+                    ## if(isCompleted){ ##
+                    <span class="label-for"><input type="checkbox" name="is_complete" class="is-complete" checked="checked" />&nbsp;<label class="form-label">已完成</label></span>
+                    ## }else{ ##
+                    <span class="label-for"><input type="checkbox" name="is_complete" class="is-complete" />&nbsp;<label class="form-label">未完成</label></span>
+                    ## } ##
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    ## if(isImportant){ ##
+                    <span class="is-important-wrapper" style="display: inline;"><input type="radio" class="is-important" checked="checked" />&nbsp;<label class="color-red">重要</label></span>
+                    ## }else{ ##
+                    <span class="is-important-wrapper" style="display: none;"><input type="radio" class="is-important" checked="checked" />&nbsp;<label>重要</label> </span>
+                    ## } ##
+                </div>
+                <div class="tbar-r fn-right">
+                    ## if(!isBelongToMe){ ##
+                    由<a href="#profile/=/empid-{{creatorID}}">{{creatorName}}</a>创建
+                    ## } ##
+                </div>
+            </div>
+            <h3 class="fs-worktodo-item-title">{{title}}</h3>
+            <div class="fs-worktodo-item-content"></div>
+            <div class="fs-worktodo-item-bbar fn-clear">
+                <div class="create-time fn-left"><a href="#worktodo/tododetail/=/id-{{workToDoListID}}" title="">{{createTime}}</a></div>
+                <div class="fs-worktodo-item-actions fn-right">
+                    <a class="edit-l" href="#">编辑</a><span class="separator">&nbsp;|</span>
+                    ## if(isCompleted){ ##
+                        <a class="mark-l" href="#">标记为未完成</a>
+                    ## }else{ ##
+                        <a class="mark-l" href="#">标记为已完成</a>
+                    ## } ##
+                    <span class="separator">|&nbsp;</span><a class="del-l-parent" href="javascript:void(0);">删除</a>
+                     <div class="cancelmenu">
+            <div class="cancelmenu-box">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td><img src="../../html/fs/assets/images/question_ico.gif" width="16" height="16" /></td>
+                  <td valign="top" class="cancel-text">确定删除这条待办事项吗？</td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="center">
+                      <button class="del-l button-green">确定</button>
+                      <button class="f-cancel button-green">取消</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fs-worktodo-modify-wrapper">
+    <form action="#" class="fs-worktodo-modify-form">
+        <div class="ui-dialog-title">修改待办事项</div>
+        <div class="ui-dialog-body">
+            <div class="worktodo-title-wrapper">
+                <textarea type="text" name="worktodo_title" class="worktodo-title auto-focus" placeholder="填写待办标题"></textarea>
+            </div>
+            <div class="ui-dialog-bbar fn-clear">
+                <div class="is-important-wrapper fn-left">
+                    <input type="checkbox" name="is_important" class="is-important" />&nbsp;<label>重要事项</label>
+                </div>
+                <div class="add-worktodo-actions fn-right">
+                    <button type="submit" class="f-sub button-green">修改待办</button><button type="reset" class="button-gray f-cancel margl-btn">取消</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,44 @@
+#approve-allapproves .tpl-filter{
+    border-top:1px solid #ebebeb;
+    border-bottom:1px solid #ebebeb;
+    padding:10px 20px;
+}
+#approve-allapproves .tpl-filter .f-field{
+    margin-bottom: 10px;
+}
+#approve-allapproves .tpl-filter .ff-label{
+    width:74px;
+    line-height: 25px;
+    color:#999999;
+}
+#approve-allapproves .tpl-filter .range-sb{
+    display: block;
+    width:400px;
+}
+#approve-allapproves .tpl-filter .approve-textfield{
+    border:1px solid #dddddd;
+    height:26px;
+    line-height: 26px;
+    padding-left:10px;
+}
+#approve-allapproves .tpl-filter .last-f-field{
+    margin-bottom: 0;
+}
+#approve-allapproves .tpl-filter .ff-value-label,
+#approve-allapproves .tpl-filter .ff-desc{
+    color:#999999;
+}
+#approve-allapproves .widget-box{
+    padding:20px;
+}
+#approve-allapproves .widget-box .box-title{
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+#approve-allapproves .widget-box .export-field{
+    margin-bottom: 15px;
+}
+#approve-allapproves .search-bar{
+    padding: 10px 15px;
+}

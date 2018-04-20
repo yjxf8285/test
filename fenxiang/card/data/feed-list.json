@@ -1,0 +1,174 @@
+{
+    "success": true,
+    "value": {
+        "sinceID": 0,
+        "maxID": 0,
+        "pageSize": 10,
+        "totalCount": 222,
+        "items": [{
+                "sender": {
+                    "employeeID": 10,
+                    "name": "齐述绪",
+                    "profileImage": "201304_17_f4f89977-29fd-4d38-9c37-03061585b49c"
+                },
+                "feedID": 292,
+                "employeeID": 10,
+                "feedContent": [{
+                        "text": "日程schedule",
+                        "type": 0
+                    }
+                ],
+                "feedContentLength": 2,
+                "source": 1,
+                "sourceDescription": "纷享平台",
+                "createTime": "2013-05-03T03:55:16.993Z",
+                "feedType": 1,
+                "feedTypeDescription": "分享",
+                "isPublic": false,
+                "replyCount": 0,
+                "isUnRead": false,
+                "feedRangeDescription": "刘晨",
+                "feedRangeTip": "刘晨1",
+                "schedule": {
+                    "smsRemindType": 0,
+                    "startTime": "2013-05-03T03:55:16.993Z"
+                },
+                "archive": {
+                    "archiveTime": "2013-05-03T03:55:16.993Z",
+                    "tags": [{
+                            "feedArchiveTagID": 6,
+                            "tagName": "6月归档"
+                        },{
+                            "feedArchiveTagID": 7,
+                            "tagName": "7月归档"
+                        }]
+                    
+                }
+            }, {
+                "sender": {
+                    "employeeID": 10,
+                    "name": "齐述绪",
+                    "profileImage": "201304_17_f4f89977-29fd-4d38-9c37-03061585b49c"
+                },
+                "feedID": 291,
+                "employeeID": 10,
+                "feedContent": [{
+                        "text": "任务任务",
+                        "type": 0
+                    }
+                ],
+                "feedContentLength": 4,
+                "source": 1,
+                "sourceDescription": "纷享平台",
+                "createTime": "2013-05-03T03:48:54.353Z",
+                "feedType": 3,
+                "feedTypeDescription": "任务",
+                "isPublic": false,
+                "replyCount": 0,
+                "isUnRead": false,
+                "feedRangeDescription": "江涛",
+                "feedRangeTip": "江涛",
+                "archive":[],
+                "schedule":[],
+                "work": {
+                    "assignerID": 10,
+                    "executerID": 7,
+                    "deadline": "2013-04-30T00:00:00.000Z",
+                    "status": 1,
+                    "endTime": "2013-05-03T03:48:54.380Z",
+                    "lastUpdateTime": "2013-05-03T03:48:54.380Z",
+                    "rate": 0,
+                    "isComment": false,
+                    "smsRemindType": 1,
+                    "smsRemindTime1": "1999-12-31T16:00:00.000Z",
+                    "smsRemindTime2": "1999-12-31T16:00:00.000Z",
+                    "smsRemindTime3": "1999-12-31T16:00:00.000Z",
+                    "canCancel": true,
+                    "canCancelAndAssignToOther": true,
+                    "canComment": true,
+                    "canContinue": true,
+                    "canSubmit": false,
+                    "assigner": {
+                        "employeeID": 10,
+                        "name": "齐述绪",
+                        "profileImage": "201304_17_f4f89977-29fd-4d38-9c37-03061585b49c"
+                    },
+                    "executer": {
+                        "employeeID": 7,
+                        "name": "江涛",
+                        "profileImage": "201303_19_bff1c54d-a430-44f0-89e0-30ae32ad75e0"
+                    },
+                    "sMSRemindInfo": "短信不提醒",
+                    "feedStatusDescription": "执行中"
+                }
+            }, {
+                "sender": {
+                    "employeeID": 10,
+                    "name": "齐述绪",
+                    "profileImage": "201304_17_f4f89977-29fd-4d38-9c37-03061585b49c"
+                },
+                "feedID": 290,
+                "employeeID": 10,
+                "feedContent": [{
+                        "text": "测试测试啊",
+                        "type": 0
+                    }
+                ],
+                "feedContentLength": 5,
+                "source": 1,
+                "sourceDescription": "纷享平台",
+                "createTime": "2013-05-03T02:45:19.687Z",
+                "feedType": 4,
+                "feedTypeDescription": "审批",
+                "isPublic": false,
+                "replyCount": 0,
+                "isUnRead": false,
+                "feedRangeDescription": "刘晨",
+                "feedRangeTip": "刘晨",
+                "archive":[],
+                "schedule":[],
+                "approve": {
+                    "currentApproverID": 9,
+                    "status": 1,
+                    "lastUpdateTime": "2013-05-03T02:45:19.737Z",
+                    "feedStatusDescription": "待审批",
+                    "currentApprover": {
+                        "employeeID": 9,
+                        "name": "刘晨",
+                        "profileImage": "201304_17_4e985981-201d-4a45-a4a7-654cac1953ae"
+                    },
+                    "canAddAtEmployees": true,
+                    "canApprove": false,
+                    "canCancel": true,
+                    "canChangeApprover": true
+                }
+            }, {
+                "sender": {
+                    "employeeID": 10,
+                    "name": "齐述绪",
+                    "profileImage": "201304_17_f4f89977-29fd-4d38-9c37-03061585b49c"
+                },
+                "feedID": 289,
+                "employeeID": 10,
+                "feedContent": [{
+                        "text": "fdsfd",
+                        "type": 0
+                    }
+                ],
+                "feedContentLength": 5,
+                "source": 1,
+                "sourceDescription": "纷享平台",
+                "createTime": "2013-05-02T09:39:53.910Z",
+                "feedType": 1,
+                "feedTypeDescription": "分享",
+                "isPublic": true,
+                "replyCount": 4,
+                "isUnRead": false,
+                "feedRangeDescription": "全公司",
+                "archive":[],
+                "schedule":[],
+                "feedRangeTip": "全公司"
+            }
+        ]
+    }
+}

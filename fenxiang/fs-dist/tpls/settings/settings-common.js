@@ -1,0 +1,6 @@
+/**
+ * 纷享页面逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-09-02
+ */
+define("tpls/settings/settings-common",["util","./settings-common.html"],function(a,b){var c=window,d=c.FS,e=d.tpl;e.event;var f=a("util"),g=a("./settings-common.html"),h=$(g),i=f.getContactData(),j=i.u;b.init=function(a){var b,c=h.filter(".settings-tpl-tab").html(),d=$(".swtab-list",a);d.html(c),b=$(".bind-email-l-wrapper",d);var e=$(".swtab-list",a);e.find("li > a").click(function(){var a=$(this);e.find("li > a").removeClass("swtab-item-aon"),a.addClass("swtab-item-aon")}),j.exmailDomain&&b.show(),f.regTplNav($("a",e),"swtab-item-aon"),f.tplRouterReg("#settings/personalsetting"),f.tplRouterReg("#settings/resetpassword"),f.tplRouterReg("#settings/avatarsetting"),f.tplRouterReg("#settings/bindphone"),f.tplRouterReg("#settings/setupnodisturb"),f.tplRouterReg("#settings/personalclientconfig"),f.tplRouterReg("#settings/planremindconfig"),f.tplRouterReg("#settings/boundexmail")},b.saveSuccessAnimated=function(a){var b=$(".save-success-apv",a);b.animate({top:"0px"},300,function(){setTimeout(function(){b.animate({top:"54px"},300)},2e3)})}});

@@ -1,0 +1,270 @@
+<!-- 网盘主模块 -->
+
+<div class="webdisktpl-warp">
+    
+    <div class="webdisk-header card-border-rad">
+        <div class="disk-tit fn-clear"> <span class="disk-tit-l"> 目录： <span class="nav-label"></span><span class="disk-breadcrumbs"></span> </span> <span class="disk-tit-r"> 可见范围： <a href="javascript:void(0);" class="range-wrapper red"></a> </span> </div>
+        <div class="disk-topmenu fn-clear">
+            <div class="disk-topmenu-fn"> <a href="javascript:void(0);" class="topmenu-fn-new disable"></a> <a href="javascript:void(0);" class="topmenu-fn-upload disable"></a> <a href="javascript:void(0);" class="topmenu-fn-del disable"></a> <a href="javascript:void(0);" class="topmenu-fn-reload"></a> <a href="javascript:void(0);" class="topmenu-fn-goback disable"></a> </div>
+            <div class="disk-topmenu-search search-wrap"><span class="list-search-input-wrapper"><input class="search-inp" placeholder="搜索文件名称" type="text"></span><button class="search-btn"></button></div> </div>
+    </div>
+    
+  <div class="card-border-rad margt16">
+    <div class="webdisk-body">
+        <table border="0" cellpadding="0" cellspacing="0" class="disktable" style="width:100%;">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th> <a href="javascript:void(0);"><i class="sorting-arrow"></i>名称</a> </th>
+                    <th> <a href="javascript:void(0);"><i class="sorting-arrow"></i>下载次数</a> </th>
+                    <th> <a href="javascript:void(0);"><i class="sorting-arrow"></i>大小</a> </th>
+                    <th> <a href="javascript:void(0);"><i class="sorting-arrow"></i>创建人</a> </th>
+                    <th> <a href="javascript:void(0);"><i class="sorting-arrow"></i>创建时间</a> </th>
+                    <th style="padding-left:5px;">操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>新建文本文档</td>
+                    <td>71次</td>
+                    <td>1kb</td>
+                    <td>李全亮</td>
+                    <td>6月25日 15:55</td>
+                    <td><a href="javascript:void(0);">下载</a> <a href="javascript:void(0);">预览</a></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="disk-status"><div class="status-tip">状态：文件夹总数 <span class="dir-num">0</span> 个&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文件总数 <span class="file-num">0</span> 个</div></div>
+    
+ </div>
+    
+</div>
+<!-- 右键菜单模板 -->
+<div class="rightmenu-templet">
+  <div class="jsrightmenu">
+    <a href="javascript:void(0);" class="rightmenu-fn-new"><i class="ico"></i>新建文件夹</a>
+    <a href="javascript:void(0);" class="rightmenu-fn-upload"><i class="ico"></i>上传文件</a>
+    <a href="javascript:void(0);" class="rightmenu-fn-open"><i class="ico"></i>打开</a>
+    <a href="javascript:void(0);" class="rightmenu-fn-preview"><i class="ico"></i>预览</a>
+    <a href="javascript:void(0);" class="rightmenu-fn-download"><i class="ico"></i>下载</a>
+    <a href="javascript:void(0);" class="rightmenu-fn-modif"><i class="ico"></i>修改</a>
+    <a href="javascript:void(0);" class="rightmenu-fn-del"><i class="ico"></i>删除</a>
+    <a href="javascript:void(0);" class="rightmenu-fn-sendco"><i class="ico"></i>发同事</a>
+    <!--<a href="javascript:void(0);" class="rightmenu-fn-sendclient"><i class="ico"></i>发客户</a>-->
+    <span class="x-line"></span>
+    <a href="javascript:void(0);" class="rightmenu-fn-viewwho"><i class="ico"></i>查看刘晓帆的文件</a>
+    <a href="javascript:void(0);" class="rightmenu-fn-view-dir"><i class="ico"></i>打开文件所属目录</a>
+    <span class="x-line"></span>
+    <a href="javascript:void(0);" class="rightmenu-fn-viewdetails"><i class="ico"></i>查看下载详情</a>
+  </div>
+</div>
+
+<!-- Dialogs --> 
+<!-- 网盘功能-新建 -->
+<div class="disk-fn-new-dialog-templet">
+  <div class="ui-dialog-title">新建文件夹信息</div>
+  <div class="ui-dialog-body">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="fn-new-table">
+      <tr>
+        <td align="right" width="90"><span class="redstar">*</span>名称：</td>
+        <td><input type="text" class="fn-new-tit auto-focus" maxlength="20" />
+          <span class="fn-new-tit-ps">文件夹名称，例如：销售部文档</span></td>
+      </tr>
+      <tr>
+        <td align="right"><span class="redstar">*</span>可见范围：</td>
+        <td class="selectbar"></td>
+      </tr>
+      <tr>
+        <td align="right">类型：</td>
+        <td>
+          <span class="label-for"><input name="radio" type="radio" value="share" checked="checked" class="is-read-only-radio vm"/>&nbsp;<label>开放目录</label></span>
+          <span class="label-for"><input type="radio" name="radio" value="read_only" class="is-read-only-radio vm ml10"/>&nbsp;<label>只读目录</label><span class="read-dir-info gray ml10">说明：可见范围内的同事都可以上传和删除文件</span></span>
+             
+        </td>
+      </tr>
+      <tr>
+        <td align="right">&nbsp;</td>
+        <td><button type="button" class="f-sub button-green">创建文件夹</button>
+          &nbsp;&nbsp;
+          <button type="reset" class="button-gray f-cancel">取消</button></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+<!-- 网盘功能-上传 -->
+<div class="disk-fn-upload-dialog-templet" >
+  <div class="ui-dialog-title">文件上传</div>
+  <div class="ui-dialog-body">
+    <div class="upload-input-warp fn-clear"><div class="upload-input-btn">
+      <button type="button" class="select-file-btn button-green">选择文件</button>
+    </div>
+      <input class="upload-input" type="file" multiple="multiple" style="display:none"/><span class="gray upload-input-txt">类型为 Word、Excel、PPT、Pdf的文件支持在线预览。</span>
+    </div>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="fn-upload-table mt10">
+        <thead class="dataTables_scrollHead">
+          <tr>
+            <th class="file-name" style="border-left: solid 1px #ddd;"  width="240"><a href="javascript: void(0);">文件名</a></th>
+            <th class="file-ext"><a href="javascript: void(0);">类型</a></th>
+            <th class="file-size"><a href="javascript: void(0);">大小</a></th>
+            <th class="file-opera"><a href="javascript: void(0);">操作</a></th>
+          </tr>
+        </thead>
+      </table>
+    <div class="fn-upload-table-warp">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" class="upload-file-list fn-upload-table">
+        <thead class="dataTables_scrollHead" style="display:none;">
+          <tr>
+            <th class="file-name" width="240"><a href="javascript: void(0);">文件名</a></th>
+            <th class="file-ext"><a href="javascript: void(0);">类型</a></th>
+            <th class="file-size"><a href="javascript: void(0);">大小</a></th>
+            <th class="file-opera"><a href="javascript: void(0);">操作</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="empty-tip">
+            <td colspan="4">
+                <div class="filedragwarp">将文件拖拽到这里上传</div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
+    <div class="selectbar mt10"></div>
+    <div class="ui-dialog-bbar fn-clear mt10">
+      <div class="fn-left">
+        <span class="label-for"><input type="checkbox" name="is_important" class="is-receipt vm" />&nbsp;<label class="form-label">需要回执</label></span>&nbsp;&nbsp;
+        <span class="receipt-range"><input type="hidden" name="circle" class="send-sms-g"/><input type="hidden" name="employee" class="send-sms-p"/><input
+                  type="hidden" class="is-send-sms" /><span class="receipt-tip"></span></span>
+      </div>
+      <div class="add-worktodo-actions fn-right">
+        <button type="button" class="fixwidth f-sub button-green button-state-disabled mr10">上传文件</button>
+        <button type="reset" class="fixwidth button-gray f-cancel">取消</button>
+      </div>
+    </div>
+    <div class="progress-wrapper">
+        <div class="overlay"></div>
+        <div class="progress-bar"></div>
+    </div>
+  </div>
+</div>
+<!-- 网盘功能-删除 -->
+<div class="disk-fn-del-dialog-templet">
+  <div class="ui-dialog-title">提示</div>
+  <div class="ui-dialog-body">
+    <div class="content">是否确定删除该文件？</div>
+    <div class="ui-dialog-bbar fn-clear">
+      <div class="add-worktodo-actions fn-right">
+        <button type="button" class="f-sub button-green">确定</button>
+        &nbsp;&nbsp;
+        <button type="reset" class="button-gray f-cancel">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 网盘功能-发同事 -->
+<div class="disk-fn-sendco-dialog-templet">
+  <div class="ui-dialog-title">发分享</div>
+  <div class="ui-dialog-body">
+    <div class="sendco-input-warp">
+    <textarea class="sendco-input autosize-animated"></textarea>
+    <div class="sendco-input-media"></div>
+    <div class="publish-topic-tip" style="display: none;">输入话题表示您授权公司对话题进行知识管理，请不要在敏感和机密信息中加入话题！</div>
+    <div class="sendco-file-info">
+      <div class="sendco-file-info-tit">分享给同事的网盘文件如下：</div>
+      <div class="sendco-file-info-cont fn-clear"></div>
+    </div>
+    </div>
+    <div class="selectbar mt10"></div>
+    <div class="ui-dialog-bbar fn-clear mt10">
+      <div class="fn-left">
+          <span class="label-for"><input type="checkbox" name="is_important" class="is-receipt vm" />&nbsp;<label class="form-label">需要回执</label></span>&nbsp;&nbsp;
+          <span class="receipt-range"><input type="hidden" name="circle" class="send-sms-g"/><input type="hidden" name="employee" class="send-sms-p"/><input
+                type="hidden" class="is-send-sms" /><span class="receipt-tip"></span></span>
+      </div>
+      <div class="add-worktodo-actions fn-right">
+        <button type="button" class="f-sub button-green">发布</button>
+        &nbsp;&nbsp;
+        <button type="reset" class="button-gray f-cancel">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 网盘功能-发同事-选择回执提交同事 -->
+<div class="disk-fn-sendcoreceipt-dialog-templet">
+  <div class="ui-dialog-title">选择提交回执同事</div>
+  <div class="ui-dialog-body">
+    <div class="selectbar mt10"></div>
+    <div class="addmen mt10">快捷选择：添加正文中<a href="javascript:void(0);">@</a>提到的<a href="javascript:void(0);">(0)</a> 或 添加发送范围<a href="javascript:void(0);">(0)</a></div>
+    <div class="ui-dialog-bbar fn-clear mt10">
+      <div class="fn-left">
+        <span class="label-for"><input type="checkbox" name="is_important" class="is-important vm">&nbsp;<label class="form-label">立即发送短息通知回执人</label></span>
+      </div>
+      <div class="add-worktodo-actions fn-right">
+        <button type="button" class="f-sub button-green">发布</button>
+        &nbsp;&nbsp;
+        <button type="reset" class="button-gray f-cancel">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 网盘功能-发客户 -->
+<div class="disk-fn-sendclient-dialog-templet">
+  <div class="ui-dialog-title">发互动</div>
+  <div class="ui-dialog-body">
+    <div class="sendco-input-warp">
+    <textarea class="sendco-input autosize-animated"></textarea>
+    <div class="sendco-input-media"></div>
+    <div class="sendco-file-info">
+      <div class="sendco-file-info-tit">分享给同事的网盘文件如下：</div>
+      <div class="sendco-file-info-cont fn-clear"></div>
+    </div>
+    </div>
+    <div class="selectbar mt10"></div>
+    <div class="selectbar-two mt10"></div>
+    <div class="ui-dialog-bbar fn-clear mt10">
+      <div class="add-worktodo-actions fn-right">
+        <button type="button" class="f-sub button-green">确定</button>
+        &nbsp;&nbsp;
+        <button type="reset" class="button-gray f-cancel">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 网盘功能-查看下载详情 -->
+<div class="disk-fn-viewdetails-dialog-templet">
+  <div class="ui-dialog-title">查看下载详情</div>
+  <div class="ui-dialog-body">
+    <div class="viewdetails-tabs">
+      <ul class="ui-switchable-nav ui-tab-items tag_wrap">
+        <li class="ui-tab-item ui-tab-item-current">
+          <a href="javascript:;">同事下载</a>
+        </li>
+        <li class="ui-tab-item fn-hide"><!-- 客户下载和客群相关，已去掉 -->
+          <a href="javascript:;">客户下载</a>
+        </li>
+      </ul>
+      <div class="ui-switchable-content">
+        <div class="ui-tab-panel filedownrecords-employee" approvetype="1">
+         <div class="noinfotip">没有文件的下载记录</div>
+        </div>
+        <div class="ui-tab-panel filedownrecords-client" approvetype="2">
+          <div class="noinfotip">没有文件的下载记录</div>
+        </div>
+      </div>
+    </div>
+    <div class="ui-dialog-bbar fn-clear mt10">
+      <div class="add-worktodo-actions fn-right">
+        <!-- <button type="button" class="f-sub button-green">确定</button>
+        &nbsp;&nbsp; -->
+        <button type="reset" class="button-gray f-cancel">取消</button>
+      </div>
+    </div>
+  </div>
+</div>

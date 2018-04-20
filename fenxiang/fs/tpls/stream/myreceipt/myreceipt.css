@@ -1,0 +1,13 @@
+.stream-myreceipt .filter-wrapper{
+    position: relative;
+}
+.stream-myreceipt .filter-wrapper .search-wrap{
+    position: absolute;
+    right:20px;
+    top:6px;
+}
+.stream-myreceipt .filter-wrapper .sub-filter{
+    margin:0 20px;
+    padding:10px 0;
+    border-bottom: 1px solid #EBEBEB;
+}

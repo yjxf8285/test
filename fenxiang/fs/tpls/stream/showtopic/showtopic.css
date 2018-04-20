@@ -1,0 +1,50 @@
+@import "../stream-common.css";
+.stream-showtopic .tpl-summary{
+    padding:0 20px 20px 20px;
+}
+.stream-showtopic .tpl-summary .depw-title{
+    padding-left:0;
+}
+.stream-showtopic .publish-wrapper{
+    padding:20px;
+    border-top:1px solid #dddddd;
+    border-bottom:1px solid #dddddd;
+}
+.stream-showtopic .publish-input-box{
+    border:1px solid #dddddd;
+}
+.stream-showtopic .publish-input-box fieldset{
+    padding:5px 10px 10px;
+}
+.stream-showtopic .publish-input{
+    width:100%;
+    border:none;
+    *border-color:#ffffff;
+    font-size:14px;
+}
+.stream-showtopic .publish-tip{
+    color:#DD4B39;
+    line-height: 35px;
+    padding:0 10px 0 25px;
+    background: url(../../../assets/images/info2.png) no-repeat 8px center;
+    border-top: 1px solid #dddddd;
+}
+.stream-showtopic .fs-publish-share-form .fs-publish-media-panel-wrapper{
+    border-left:none;
+    border-right:none;
+    border-bottom:none;
+}
+.stream-showtopic .follow-btn{padding:0 10px;}
+
+.stream-showtopic .cancel-follow{border:#d7d7d7 solid 1px;display:inline-block;background-color:#eaeaea;line-height:28px;padding:0 8px;}
+.stream-showtopic .cancel-follow .follow-tip{color:#666666;background:url(../../../assets/images/right_gray.png) no-repeat 0 5px;padding-left:12px;}
+.stream-showtopic .cancel-follow .separator{color:#d5ccd5;padding:0 5px;}
+
+.stream-showtopic .topic-desc-edit-l{
+    font-size: 12px;
+}
+.stream-showtopic .topic-desc{
+    color:#999999;
+}
+.stream-showtopic .label-for{vertical-align:inherit;}
+.stream-showtopic .receipt-range .receipt-tip{vertical-align:middle;color:#999999;}

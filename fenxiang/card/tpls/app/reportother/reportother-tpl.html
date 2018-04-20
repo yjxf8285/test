@@ -1,0 +1,32 @@
+<script class="reportother-list-tpl">
+    ## if(data.length > 0) { ##
+        ## _.each(data, function(source, index){ ##
+        <tr>
+            <td class="td-black">{{source.Name}}</td>
+            <td>{{source.Position}}</td>
+            <td>{{source.Mobile}}</td>
+            <td>{{source.WeiXinId}}</td>
+            <td>{{source.Email}}</td>
+            <td>{{source.Company}}</td>
+            
+            ## if(source.Status == 1) { ##
+                <td class="f-green">已加入</td>
+            ## } else if (source.Status == 4){ ##
+                <td class="f-red">{{source.StatusText}}</td>
+            ## } else { ##
+                <td>{{source.StatusText}}</td>
+            ## } ##
+            
+            <td>
+                <a href="#" class="j-edite" data-infoindex="{{index}}">编辑</a>&nbsp;&nbsp;
+                <a href="#" class="j-del" data-userid="{{source.UserId}}">删除</a>
+            </td>
+        </tr>
+        ## }) ##
+        
+    ## } else { ##
+        <tr>
+            <td colspan="8" class="td-nodata">没有获取到数据</td>
+        </tr>
+    ## } ##
+</script>    

@@ -1,0 +1,13 @@
+<script class="fs-select-contacts-tpl" type="text/html">
+<div class="fs-select-contacts">
+	<div class="title">选择联系人</div>
+	<div class="customers-ctner">
+		<ul class="customers">
+			## for (var i=0,len=contacts.length; i<len; i++) {##
+				<li class="customer" data-id="{{contacts[i].contactID}}" data-name="{{contacts[i].name}}" >{{contacts[i].name}}</li>
+			## };##
+		</ul>
+	</div>
+	<div class="btns"><a class="btn-close" href="#" onclick="return false;">关闭</a></div>
+</div>
+</script>

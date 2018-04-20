@@ -1,0 +1,53 @@
+<script class="report-layers-reportview-tpl">
+	<div class="report-layers-reportview">
+		<div class="reportview-report-opts">
+			<a href="#" onclick="return false;" class="btn-create">新建上报节点</a>
+			<a href="#" onclick="return false;" class="btn-move">移动</a>
+			<a href="#" onclick="return false;" class="btn-del">删除</a>
+			<div class="search-warp">
+			</div>
+		</div>
+		<div class="reportview-list-ctner fn-clear">
+			<table class="report-tb report-view-tb">
+		        <thead>
+			        <tr>
+			            <th width="50">
+			            	<div class="mn-checkbox-box checkbox-for-comtable">&nbsp;&nbsp;<span data-value="{{id}}" class="mn-checkbox-item checkbox-selectall-btn"></span></div></th>
+			            <th width="100">节点名称</th>
+			            <th width="100">所属管理节点</th>
+			            <th width="100">查看人</th>
+			            <th width="100">内部上报人</th>
+			            <th width="100">外部上报人</th>
+			            <th width="100">操作</th>
+			        </tr>
+		        </thead>
+		        <tbody>
+		            <tr>
+		                <td></td>
+		                <td></td>
+		                <td></td>
+		                <td></td>
+		                <td></td>
+		                <td></td>
+		                <td></td>
+		            </tr>
+		        </tbody>
+		    </table>
+		    <div class="page-ctner">
+		    </div>
+		</div>
+	</div>
+</script>
+<script class="reportview-list-tbody-tpl">
+	<tr>
+		<td>
+			<div class="mn-checkbox-box checkbox-for-comtable">&nbsp;&nbsp;<span data-value="{{id}}" class="mn-checkbox-item"></span></div>
+		</td>
+		<td class="node-name">{{name}}</td>
+		<td>{{parentName}}</td>
+		<td>{{viewers}}</td>
+		<td>{{inners}}</td>
+		<td>{{outers}}</td>
+		<td><a href="#" onclick="return false;" data-id="{{id}}" class="btn-edit">编辑</a></td>	
+	</tr>
+</script>

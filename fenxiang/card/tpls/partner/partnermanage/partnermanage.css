@@ -1,0 +1,148 @@
+.partnermanage-hd {
+    padding-bottom: 16px;
+    border-bottom: solid 1px #d8d8d8;
+}
+
+.partnermanage-hd .l {
+    float: left;
+}
+
+.partnermanage-hd h2 {
+    color: #414141;
+    font-size: 20px;
+}
+
+.partnermanage-hd .r {
+    float: right;
+}
+
+.partnermanage-hd-fn {
+    margin-top: 10px;
+}
+
+.partnermanage-bd {
+    margin-top: 10px;
+}
+
+.partnermanage-bd .l {
+    float: left;
+    background: #fff;
+    border: solid 1px #d8d8d8;
+    width: 280px;
+}
+
+.partnermanage-bd .r {
+    margin-left: 290px;
+}
+
+.partnermanage-member-list-hd {
+    height: 74px;
+    background: #fff;
+    border: solid 1px #d8d8d8;
+}
+
+.partnermanage-member-list-hd .tit {
+    color: #414141;
+    font-size: 20px;
+    padding: 8px 0 0 16px;
+}
+
+.partnermanage-member-list-hd .menbernum {
+    color: #999;
+    padding: 4px 0 0 16px;
+}
+
+.partnermanage-member-list-hd .partner-add-member {
+    margin: 22px 16px 0 0;
+}
+
+.partnermanage-member-list-bd {
+    margin-top: 10px;
+}
+
+.partnermanage-member-list-fn {
+    height: 50px;
+    background: #F6F7F8;
+    border: solid 1px #d8d8d8;
+    border-bottom: none;
+}
+
+.partnermanage-member-list-fn .select-status-warp {
+    margin: 9px 0 0 16px;
+}
+
+.partnermanage-member-list-paginationwarp {
+    text-align: right;
+    padding: 10px 0;
+}
+
+.partnermanage-list-title {
+    padding: 10px;
+    border-bottom: solid 1px #d8d8d8;
+}
+
+.partnermanage-list-title .selet-city-btn {
+    padding: 4px 8px;
+    border: solid 1px #d8d8d8;
+    cursor: pointer;
+    position: relative;
+}
+
+.partnermanage-list-title .selet-city-btn .title-icon {
+    background: url("../../../assets/images/ico-right-open.png") no-repeat scroll 0 0;
+    height: 4px;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    width: 7px;
+}
+
+.partnermanage-list {
+    padding: 0 10px;
+    max-height: 810px;
+    overflow-y: auto;
+}
+
+.partnermanage-list li {
+    border-bottom: solid 1px #d8d8d8;
+    padding: 15px 10px 0;
+    height: 65px;
+}
+
+.partnermanage-list li:hover {
+    background: #F2F4F4;
+    cursor: pointer;
+}
+
+.partnermanage-list li.cur {
+    background: #F3FAFF;
+}
+
+.partnermanage-list li .partner-name {
+}
+
+.partnermanage-list li .partner-info {
+    margin-top: 10px;
+    color: #999;
+}
+
+.partnermanage-list li .partner-info-city {
+    float: left;
+
+}
+
+.partnermanage-list li .partner-info-member {
+    float: right;
+
+}
+.partnermanage-search{
+    float: left;
+    margin-top: 1px;
+}
+.partnermanage-search .ui-search-field{
+    height: 28px;
+    border-left: medium none;
+}
+.select-partnermanage-warp .mn-select-title{
+    border-right: none;
+}

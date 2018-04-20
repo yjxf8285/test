@@ -1,0 +1,133 @@
+<script class="report-list-html" type="text/html">
+    <div class="report-list-operate">
+        <a class="btn-create" href="#" onclick="return false;" hidefocus>创建报表</a>
+    </div>
+    <div class="report-list-ctner">
+        <div class="report-list-tip">提示：开始上报数据30天以后，报表不可删除。</div>
+		<div class="report-list-condition fn-clear">
+              <div class="l">
+                   <span class="select-tit">报表状态：</span>
+                   <span class="mn-select-box states-list-select-list crm-select-list-short" select-cls="crm-select-list-short">
+                        <span class="mn-select-title-wrapper">
+                            <span class="mn-select-title" style="width: 72px;">全部</span>
+                            <span class="title-icon"> </span>
+                        </span>
+                        <ul class="mn-select-list">
+                             <li class="mn-select-item" data-value="0">全部</li>
+                             <li class="mn-select-item" data-value="3">已启用</li>
+                             <li class="mn-select-item" data-value="1">未启用</li>
+                             <li class="mn-select-item" data-value="2">暂停</li>
+                        </ul>
+                   </span>
+                   <span class="mn-select-box order-select-list crm-select-list-long" select-cls="crm-select-list-long">
+                        <span class="mn-select-title-wrapper">
+                            <span class="mn-select-title">按创建时间倒序</span>
+                            <span class="title-icon"> </span>
+                        </span>
+                        <ul class="mn-select-list">
+                            <li class="mn-select-item ui-select-selected" data-defaultselected="true" data-selected="true" data-value="1">按创建时间倒序</li>
+                            <li class="mn-select-item" data-value="2">按状态排序</li>
+                            <li class="mn-select-item" data-value="3">按创建人排序</li>
+                        </ul>
+                   </span>
+             </div>
+             <div class="r">
+                   <div class="search-warp"></div>
+             </div>
+        </div>
+        <div class="report-tb-box">
+            <table class="report-tb">
+                <thead>
+                <tr>
+                    <!--<th width="50">序号</th>-->
+                    <th width="210">报表名称</th>
+                    <th width="140">创建人</th>
+                    <th width="176">创建时间</th>
+                    <th width="120">状态</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody class="reportsetting-tbody">
+                ## if(templates){ ##
+                ## _.each(templates,function(item,i){ ##
+                <tr data-templateid="{{item.templateID}}" data-templatename="{{item.templateName}}">
+                    <!--<td>{{i+1}}</td>-->
+                    <td class="text-left">{{item.templateName}}</td>
+                    <td>{{item.creator.name}}</td>
+                    <td class="f-gray">{{item['createTime']}}</td>
+                    <td><span class="list-status-txt">
+                        ## if(item.status==1){ ##
+                            <span class="gray">{{item.statusDesc}}</span>
+                        ## }else if(item.status==2){ ##
+                            <span class="orange">{{item.statusDesc}}</span>
+                        ## }else if(item.status==3){ ##
+							<span class="green">{{item.statusDesc}}</span>
+						## } ##
+                    </span></td>
+                    <td>
+                        <a href="javascript:;" class="list-edit-btn">详情</a>&nbsp;&nbsp;
+                        ## if(item.status==3){ ##
+                            <a href="javascript:;" class="list-stop-btn">暂停</a>
+                        ## }else{ ##
+                            <a href="javascript:;" class="list-start-btn">启用</a>
+                        ## } ##
+                        &nbsp;&nbsp;
+                        <a href="javascript:;" class="list-del-btn">删除</a>
+                    </td>
+                </tr>
+                ## }); ##
+                ## }else { ##
+                <td colspan="5" class="empty-tip">
+				## if(keyword) { ##
+					未搜索到符合条件的结果
+				## } else { ##
+					还没有创建报表
+				## } ##
+				</td>
+                ## } ##
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</script>
+
+<script class="report-talbe-list-html" type="text/html">
+    ## if(templates){ ##
+    ## _.each(templates,function(item,i){ ##
+    <tr data-templateid="{{item.templateID}}" data-templatename="{{item.templateName}}">
+        <!--<td>{{i+1}}</td>-->
+        <td class="text-left">{{item.templateName}}</td>
+        <td>{{item.creator.name}}</td>
+        <td class="f-gray">{{item['createTime']}}</td>
+        <td><span class="list-status-txt">
+                        ## if(item.status==1){ ##
+                            <span class="gray">{{item.statusDesc}}</span>
+                        ## }else if(item.status==2){ ##
+                            <span class="orange">{{item.statusDesc}}</span>
+                        ## }else if(item.status==3){ ##
+							<span class="green">{{item.statusDesc}}</span>
+						## } ##
+                    </span></td>
+        <td>
+            <a href="javascript:;" class="list-edit-btn">详情</a>&nbsp;&nbsp;
+            ## if(item.status==3){ ##
+            <a href="javascript:;" class="list-stop-btn">暂停</a>
+            ## }else{ ##
+            <a href="javascript:;" class="list-start-btn">启用</a>
+            ## } ##
+            &nbsp;&nbsp;
+            <a href="javascript:;" class="list-del-btn">删除</a>
+        </td>
+    </tr>
+    ## }); ##
+    ## }else { ##
+    <td colspan="5" class="empty-tip">
+        ## if(keyword) { ##
+        未搜索到符合条件的结果
+        ## } else { ##
+        还没有创建报表
+        ## } ##
+    </td>
+    ## } ##
+</script>

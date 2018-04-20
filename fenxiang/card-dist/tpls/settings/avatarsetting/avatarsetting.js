@@ -1,0 +1,6 @@
+/**
+ * 纷享页面逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+define("tpls/settings/avatarsetting/avatarsetting",["util","../settings-common","dialog","../settings-common.html","../settings-common.css"],function(a,b){var c=window,d=c.FS,e=d.tpl;e.event;var f=a("util"),g=a("../settings-common"),h=d.ASSETS_PATH+"/avatar/avatarUpload.swf",i=d.ASSETS_PATH+"/avatar/expressInstall.swf",j=f.getContactData(),k=j.u;b.init=function(){var a=b.tplEl,e=b.tplName,j={js_handler:"avatarCb",swfID:"avatar-edit",sourceAvatar:f.getDfLink(k.profileImagePath+"1",k.name,!1,"jpg"),avatarLabel:"您上传的头像会自动生成三种尺寸，请注意小尺寸的头像是否清晰",sourceLabel:"仅支持JPG、PNG图片文件，且文件小于2M",sourcePicAPI:d.API_PATH+"/",avatarAPI:d.API_PATH+"/File/UploadFile",avatarSize:"180,180|50,50|30,30",avatarSizeLabel:"大尺寸150x150|中尺寸50x50|小尺寸30x30"},l={menu:"false",scale:"noScale",allowFullscreen:"true",allowScriptAccess:"always",bgcolor:"",wmode:"opaque"},m={id:"AvatarUpload"};swfobject.embedSWF(h,"settings-avatarsetting-avatar","100%","100%","10.0.0",i,j,l,m),c.avatarCb=function(a){var b,c,d=a.data;d.success&&(b=d.value,c=b.filePath,f.api({type:"post",url:"/Account/UploadAvatar",data:{path:c},success:function(a){a.success&&f.alert("保存头像成功",function(){location.reload()})}}))},g.init(a,e)}});

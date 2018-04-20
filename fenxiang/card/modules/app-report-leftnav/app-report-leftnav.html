@@ -1,0 +1,15 @@
+<div class="report-photo-box">
+    <span><img src="{{profileImage}}"/>{{userName}}</span>
+</div>
+<div class="report-left-nav">
+    <ul>    
+        <li><a href="#app/reportdata" class="reportdata-list">上报数据</a></li>
+        <li><a href="#app/reportrecord" class="leftnav-reportrecord-list">报表记录</a></li>
+        <li><a href="#app/reportcheck" class="reportcheck-list">审核记录</a></li>
+        
+        ## if (permissions) { ##
+        <li><a href="#app/reportmanage" class="reportmanage-list">报表管理</a></li>
+        <li><a href="#app/reportother">外部上报人</a></li>
+        ## } ##
+    </ul>
+</div>

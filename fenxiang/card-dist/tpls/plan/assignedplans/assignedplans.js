@@ -1,0 +1,6 @@
+/**
+ * 纷享页面逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+define("tpls/plan/assignedplans/assignedplans",["util","modules/feed-list/feed-list","../plan-common","moment","../plan-common.html"],function(a,b){var c=window,d=c.FS,e=d.tpl,f=(e.store,e.event),g=(a("util"),a("modules/feed-list/feed-list")),h=a("../plan-common");b.init=function(){var a,c=b.tplName,d=b.tplEl,e=$(".feed-list",d),i=$(".feed-list-pagination",d),j=$(".plan-status-type",d),k=$(".search-inp",d),l=$(".search-btn",d);h.init(d,c),a=new g({element:e,pagSelector:i,pagOpts:{pageSize:10,visiblePageNums:7},listPath:"/FeedPlan/GetFeedPlanOfISend",defaultRequestData:function(){var a=$(".plan-status",j),b=$(".plan-type",j),c=a.filter(".depw-tabs-aon").attr("val"),d=b.filter(".depw-tabs-aon").attr("val");return{type:c,planType:d,keyword:_.str.trim(k.val())}},searchOpts:{inputSelector:k,btnSelector:l}}),j.on("click",".plan-status,.plan-type",function(b){var c=$(this);c.hasClass("plan-status")?($(".plan-status",j).removeClass("depw-tabs-aon"),c.addClass("depw-tabs-aon")):($(".plan-type",j).removeClass("depw-tabs-aon"),c.addClass("depw-tabs-aon")),a.reload(),b.preventDefault()}),l.click(function(b){a.reload(),b.preventDefault()});var m=function(){a.destroy()};f.one("beforeremove",function(a){a==c&&m()}),a.reload()}});

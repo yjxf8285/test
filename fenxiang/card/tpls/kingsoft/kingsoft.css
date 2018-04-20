@@ -1,0 +1,222 @@
+.hd {
+    display: none;
+}
+
+.ft {
+    display: none;
+}
+.err-page{
+    background: url(../../assets/images/kingsoft/error_img.png) no-repeat center 200px;
+    width: 100%;
+    height: 540px;
+}
+.app-inner {
+    width: 980px;
+}
+.tpl{
+    margin-top: 0;
+}
+.kingsoft {
+    border: none;
+    color: #333;
+    height: 740px;
+}
+
+.kingsoft .kingsoft-hd {
+    background: url(../../assets/images/kingsoft/banner_img.jpg);
+    width: 980px;
+    height: 150px;
+}
+
+.kingsoft .blank-position {
+    width: 980px;
+    height: 16px;
+    background: #EFEFEF;
+}
+
+.kingsoft .kingsoft-bd {
+    border: solid 1px #e7e7e7;
+    padding: 8px 10px 0;
+    background: #fff;
+    height: 580px;
+}
+
+.kingsoft .kingsoft-bd .title .l {
+    float: left;
+}
+
+.kingsoft .kingsoft-bd .title .company-name {
+    font-size: 24px;
+    color: #01a0e9;
+}
+
+.kingsoft .kingsoft-bd .title .r {
+    float: right;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.kingsoft .kingsoft-bd .filter-bar {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.kingsoft .kingsoft-bd .filter-bar .l {
+    float: left;
+}
+
+.kingsoft .kingsoft-bd .filter-bar .r {
+    float: right;
+    margin-top: 2px;
+}
+
+.kingsoft .kingsoft-bd .filter-bar .input-box {
+    height: 26px;
+    width: 138px;
+    display: inline-block;
+}
+
+.kingsoft .kingsoft-bd .filter-bar input {
+    border: solid 1px #d3d3d3;
+    height: 26px;
+    width: 106px;
+    margin: 0 10px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.kingsoft .list-warp {
+    width: 100%;
+    height: 438px;
+    position: relative;
+}
+
+.kingsoft .kingsoft-table {
+    width: 100%;
+    margin-top: 16px;
+    table-layout: fixed;
+}
+
+.btn-blue {
+    display: inline-block;
+    border: solid 1px #018ecf;
+    width: 58px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    background: #08a3ea;
+    color: #fff;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.btn-blue:hover {
+    background: #078dca;
+    text-decoration: none;
+}
+
+.btn-gray {
+    display: inline-block;
+    border: solid 1px #018ecf;
+    width: 58px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    background: #fff;
+    color: #08a3ea;
+    vertical-align: middle;
+}
+
+.btn-gray:hover {
+    background: #e0f5ff;
+    text-decoration: none;
+}
+
+.kingsoft .kingsoft-table thead {
+    background: #01a0e9;
+    color: #fff;
+}
+
+.kingsoft .kingsoft-table thead th {
+    font-size: 14px;
+    padding: 0 10px;
+    height: 38px;
+    line-height: 38px;
+}
+
+.kingsoft .kingsoft-table tbody td {
+    font-size: 14px;
+    padding: 0 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 40px;
+    line-height: 40px;
+}
+
+.kingsoft .kingsoft-table tbody tr.odd {
+    background: #edf8fd;
+}
+
+.kingsoft .totalnum {
+    color: #01a0e9;
+}
+
+.kingsoft .unusualnum {
+    color: #f54438;
+}
+
+/* pagination start */
+.ui-pagination {
+    color: #323335;
+    padding: 14px 0 0 0;
+
+}
+
+.ui-pagination-item {
+    float: left;
+    margin-left: 3px;
+    line-height: 26px;
+    height: 26px;
+    padding: 0 10px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.ui-pagination-active {
+    background-color: #f1f1f1;
+    border: 1px solid #ececec;
+    color: #c8c8c8;
+    cursor: default;
+}
+
+.ui-pagination-ellipsis {
+    border: 1px solid transparent;
+    background: transparent;
+    cursor: default;
+}
+
+.ui-pagination-disabled {
+    opacity: 0.45;
+    cursor: default;
+}
+
+/* pagination end */
+
+/* oading符 start */
+.loading-bar{
+    position: absolute;
+    top:220px;
+    left: 372px;
+    width: 200px;
+    height:38px;
+    line-height: 38px;
+    background: #fff1a8;
+    border:1px solid #e1e1e1;
+    text-align: center;
+    font-weight: bold;
+    box-shadow:2px 2px 2px #c8c8c8;
+}
+/* loading符 end */

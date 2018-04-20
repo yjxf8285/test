@@ -1,0 +1,84 @@
+<div id="reportother" class="report p-reportother" tplname="app-reportother" js="true" css="true" iscached="false" tpltitle="纷享销客-报数系统" data-lighted="app|reportdata">
+    
+    <!--左侧列表-->
+    <div class="tpl-l">
+    </div>
+    
+    
+    <!--右侧内容区域-->
+    <div class="tpl-c">
+        <div class="tpl-inner">
+        
+            <div class="rptother-con">
+                
+                <div class="rptother-title">
+                    <h2>外部上报人</h2>    
+                </div>
+                
+
+                <!--
+                    按钮区域
+                -->
+                <div class="btns-b fn-clear">
+                    <button class="report-btn report-btn-ok j-add-new">新增外部上报人</button>
+                    <!--<button class="report-btn report-btn-ok j-import">导入上报人</button>-->
+                </div>
+                
+                
+                <!--
+                    过滤条件
+                -->
+                <div class="filter-b fn-clear">
+
+                    <label>状态： </label>
+                    <span select-cls="reportohter-select-fstatus" class="mn-select-box select-fstatus">
+                        <span class="mn-select-title-wrapper">
+                            <span class="mn-select-title">全部</span>
+                            <span class="title-icon"></span>
+                            <ul class="mn-select-list">
+                                <li class="mn-select-item" data-value="0">全部</li>
+                                <li class="mn-select-item" data-value="1">已加入</li>
+                                <li class="mn-select-item" data-value="2">已冻结</li>
+                                <li class="mn-select-item" data-value="4">未加入</li>
+                            </ul>
+                        </span>
+                    </span>
+                    
+                    <div class="filter-search">
+                        <input type="text" id="fkeyword" placeholder="搜索" />
+                        <button class="report-btn report-btn-ok j-btn-search">搜索</button>
+                    </div>
+                </div>
+                
+                
+                <!--
+                    列表区域
+                -->
+                <div class="report-tb-box">
+                    <table class="report-tb">
+                        <thead>
+                            <tr>
+                                <th width="88">姓名</th>
+                                <th width="100">职位</th>
+                                <th width="100">手机</th>
+                                <th width="100">微信号</th>
+                                <th width="">邮箱</th>
+                                <th width="112">公司</th>
+                                <th width="75">状态</th>
+                                <th width="100">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="8" class="td-loading">正在加载中...</td>
+                            </tr>                           
+                        </tbody>
+                    </table>
+                    <div class="reportother-pages"></div>
+                </div>
+
+            </div><!-- 内容结束-->
+
+        </div>
+    </div>  
+</div>

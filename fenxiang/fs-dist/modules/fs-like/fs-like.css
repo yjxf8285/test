@@ -1,0 +1,7 @@
+/**
+ * 纷享模块样式
+ * @Author: 纷享网页前端部
+ * @Date: 2014-09-02
+ */
+
+.fs-likelist-item{border:0;margin:18px;border-bottom:dashed 1px #EBEBEB;padding-bottom:16px}.fs-likelist-item .item-face{float:left;width:50px;position:relative}.fs-likelist-item .item-face img{width:50px;height:50px}.fs-likelist-item .item-detail{margin-left:62px;color:#444;word-break:break-all}.fs-likelist-item .item-detail .myreply-content{font-family:"宋体";margin-top:20px;color:#707070}

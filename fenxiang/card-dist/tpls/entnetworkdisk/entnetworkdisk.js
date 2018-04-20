@@ -1,0 +1,6 @@
+/**
+ * 纷享页面逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+define("tpls/entnetworkdisk/entnetworkdisk",["util","./entnetworkdisk-common","moment","./entnetworkdisk-common.html","./entnetworkdisk-common.css","modules/webdisk/webdisk"],function(a,b){var c=window,d=c.FS,e=d.tpl,f=(e.store,e.event),g=a("util"),h=a("./entnetworkdisk-common"),i=a("modules/webdisk/webdisk");b.init=function(){var a=b.tplName,c=b.tplEl,d=$(".web-disk",c),e=$(".tpl-l .tpl-inner",c),j=new i({element:d,listPath:"/NetDisk/GetNDDirectoryInfos",searchPath:"/NetDisk/SearchFiles"});h.init(c,a);var k=!0;f.on("switched",function(b){var c,d,f,h,i,l;b==a&&(c=g.getTplQueryParams(),d=c?c.action:"",d.length>0?("view"==d?(f=c.empid,h=decodeURIComponent(c.empname),j.load({employeeID:f,keyword:"",pageSize:1e4,pageNumber:1},"/NetDisk/GetOneEmployeeSendFiles",function(a){var b=j.element,c=$(".disk-breadcrumbs",b);a.success&&c.html('&nbsp;/&nbsp;<span class="nav-item">'+h+"的上传文件</span>"),$(".topmenu-fn-new,.topmenu-fn-upload,.topmenu-fn-del",b).addClass("disable"),j._stateAtemployee=!0})):"fixed"==d&&(i=c.dirid,l=c.selectedid,j.load({directoryID:i},"",function(){var a=j.element;j.trHasCur($('[dataid="'+l+'"]',a).filter('[datatype="file"]').closest("tr")),j._stateAtemployee=!1})),$(".tpl-nav-lb",e).eq(0).addClass("depw-menu-aon")):k?(j.load(),k=!1):j.reset())})}});

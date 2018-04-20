@@ -1,0 +1,126 @@
+<script type="text/html" class="approve-tpl-left">
+<div class="bg-white card-border-rad">
+    <div class="head-img-wrap fn-clear">
+        <a href="#profile"><img class="fn-left" src="{{profileImage}}"/>{{userName}}</a>
+    </div>
+    <ul class="approve-nav-list">
+        <li class="files-nav-item"><a href="#approve" class="tpl-nav-lb" notracenav="true">我审批的事项</a></li>
+        <li class="files-nav-item">
+            <a href="#approve/sentapproves" class="tpl-nav-lb" lightnav="#approve">我发出的审批</a>
+            <a href="#approve/sentapproves/=/approvestatus-1" class="tpl-nav-lb" lightnav="#approve/sentapproves,#approve" style="display:none;"></a><!-- 待上级审批隐藏链，为高亮父链服务 -->
+        </li>
+        <li class="files-nav-item"><a href="#approve/followedapproves" class="tpl-nav-lb" lightnav="#approve">我关注的审批</a></li>
+        <li class="files-nav-item"><a href="#approve/receivedapprovereplies" class="tpl-nav-lb" lightnav="#approve">我的审批回复</a></li>
+        <li class="files-nav-item"><a href="#approve/atmeapproves" class="tpl-nav-lb" lightnav="#approve">@提到我的审批</a></li>
+        <li class="files-nav-item fn-hide"><a href="#approve/allapproves/=/atype-1" class="staffing-approve-l all-approve-l tpl-nav-lb" lightnav="#approve" router="#approve/allapproves/=/:atype-:value">人事审批管理</a></li>
+        <li class="files-nav-item fn-hide"><a href="#approve/allapproves/=/atype-0" class="finance-approve-l all-approve-l tpl-nav-lb" lightnav="#approve" router="#approve/allapproves/=/:atype-:value">财务审批管理</a></li>
+    </ul>
+</div>	
+</script>
+<script type="text/html" class="all-approve-valid-tpl">
+    <div class="ui-dialog-title">验证密码</div>
+    <div class="ui-dialog-body">
+        <div class="f-field fn-clear">
+            <div class="ff-label fn-left color-999999">请输入登录密码：</div>
+            <div class="ff-value fn-left"><input type="password" class="pwd auto-focus" /></div>
+        </div>
+        <div class="ui-dialog-bbar fn-clear">
+            <button class="f-sub button-green" type="button">确定</button><button type="reset" class="button-gray f-cancel margl-btn">取消</button>
+        </div>
+    </div>
+</script>
+<script type="text/html" class="all-approve-month-work-tpl">
+    <div class="ui-dialog-title">月度考勤统计</div>
+    <div class="ui-dialog-body">
+        <div class="f-field fn-clear">
+            <div class="ff-label fn-left" style="line-height:35px;">同事范围：</div>
+            <div class="ff-value fn-left">
+                <div class="range-sb"></div>
+            </div>
+        </div>
+        <div class="select-date-field f-field fn-clear">
+            <div class="ff-label fn-left">年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;月：</div>
+            <div class="ff-value fn-left">
+                <select class="year-select">
+                    <option value="0">年</option>
+                </select>&nbsp;&nbsp;<select class="month-select">
+                    <option value="0">月</option>
+                </select>
+            </div>
+        </div>
+        <div class="f-field fn-clear">
+            <div class="ff-label fn-left">&nbsp;</div>
+            <div class="ff-value fn-left">
+                <button class="f-sub button-submit">生成报表</button>
+                <a class="download-l fn-hide" href="#" target="_blank">生成完毕，点击下载报表</a>
+            </div>
+        </div>
+        <div class="free-download-readme fn-hide">
+            <ul class="readme-list">
+                <li class="readme-item">1、免费版可下载报表<span class="total-download-time">0</span>次；</li>
+                <li class="readme-item">2、只生成未下载不减少可用次数；</li>
+                <li class="readme-item">3、如希望不限制导出次数，请升级到商务版（<a href="http://www.fxiaoke.com/channel.html" target="_blank">如何升级？</a>）；</li>
+                <li class="readme-item">4、如有任何问题，请拨打400 668 9050。</li>
+            </ul>
+        </div>
+        <div class="ui-dialog-bbar fn-clear">
+            <button type="reset" class="button-gray f-cancel">取消</button>
+        </div>
+    </div>
+</script>
+<script type="text/html" class="all-approve-comp-tpl">
+    <div class="ui-dialog-title">审批汇总统计</div>
+    <div class="ui-dialog-body">
+        <div class="f-field approve-type-field fn-clear">
+            <div class="ff-label fn-left">审批类型：</div>
+            <div class="ff-value fn-left">
+                <span class="label-for"><input type="radio" name="approve_type" value="0" class="approve-type" checked="checked" />&nbsp;<label>全部</label></span>&nbsp;&nbsp;<span class="label-for"><input type="radio" name="approve_type" value="1" class="approve-type" />&nbsp;<label>普通审批</label></span>&nbsp;&nbsp;<span class="label-for"><input class="approve-type" type="radio" name="approve_type" value="2" />&nbsp;<label>请假单</label></span>&nbsp;&nbsp;<span class="label-for"><input class="approve-type" type="radio" name="approve_type" value="3" />&nbsp;<label>报销单</label></span>&nbsp;&nbsp;<span class="label-for"><input class="approve-type" type="radio" name="approve_type" value="4" />&nbsp;<label>差旅单</label></span>&nbsp;&nbsp;<span class="label-for"><input class="approve-type" type="radio" name="approve_type" value="5" />&nbsp;<label>借款单</label></span>
+            </div>
+        </div>
+        <div class="range-field f-field fn-clear">
+            <div class="ff-label fn-left" style="line-height:35px;">同事范围：</div>
+            <div class="ff-value fn-left">
+                <div class="range-sb"></div>
+            </div>
+        </div>
+		<div class="select-date-field send-date-field f-field fn-clear">
+            <div class="ff-label fn-left" style="line-height:28px;">发出日期：</div>
+            <div class="ff-value fn-left">
+                <div class="date-wrapper"><span class="send-start-date"></span>&nbsp;-&nbsp;<span class="send-end-date"></span></div>
+                <div class="send-date-shortcut">
+                    <a href="#" class="current-week date-shortcut">本周</a>&nbsp;&nbsp;&nbsp;<a href="#" class="last-week date-shortcut">上周</a>&nbsp;&nbsp;&nbsp;<a href="#" class="current-month date-shortcut">本月</a>&nbsp;&nbsp;&nbsp;<a href="#" class="last-month date-shortcut">上月</a>&nbsp;&nbsp;&nbsp;<a href="#" class="clear-l">清空</a>
+                </div>
+            </div>
+        </div>
+        <div class="select-date-field f-field fn-clear">
+            <div class="ff-label fn-left" style="line-height:28px;">批复日期：</div>
+            <div class="ff-value fn-left">
+                <div class="date-wrapper"><span class="start-date"></span>&nbsp;-&nbsp;<span class="end-date"></span></div>
+                <div class="approve-date-shortcut">
+                    <a href="#" class="current-week date-shortcut">本周</a>&nbsp;&nbsp;&nbsp;<a href="#" class="last-week date-shortcut">上周</a>&nbsp;&nbsp;&nbsp;<a href="#" class="current-month date-shortcut">本月</a>&nbsp;&nbsp;&nbsp;<a href="#" class="last-month date-shortcut">上月</a>&nbsp;&nbsp;&nbsp;<a href="#" class="clear-l">清空</a>
+                </div>
+                <div class="include-reply">
+                    <span class="label-for"><input type="checkbox" class="is-include-reply" />&nbsp;<label class="color-999999">导出的报表中包含回复内容</label></span>
+                </div>
+            </div>
+        </div>
+        <div class="f-field fn-clear">
+            <div class="ff-label fn-left">&nbsp;</div>
+            <div class="ff-value fn-left">
+                <button class="f-sub button-submit">生成报表</button>
+                <a class="download-l fn-hide" href="#" target="_blank">生成完毕，点击下载报表</a>
+            </div>
+        </div>
+        <div class="free-download-readme fn-hide">
+            <ul class="readme-list">
+                <li class="readme-item">1、免费版可下载报表<span class="total-download-time">0</span>次；</li>
+                <li class="readme-item">2、只生成未下载不减少可用次数；</li>
+                <li class="readme-item">3、如希望不限制导出次数，请升级到商务版（<a href="http://www.fxiaoke.com/channel.html" target="_blank">如何升级？</a>）；</li>
+                <li class="readme-item">4、如有任何问题，请拨打400 668 9050。</li>
+            </ul>
+        </div>
+        <div class="ui-dialog-bbar fn-clear">
+            <button type="reset" class="button-gray f-cancel">取消</button>
+        </div>
+    </div>
+</script>

@@ -1,0 +1,1334 @@
+<script type="text/html" class="feed-list-myremind"><div class="fs-list-item">
+            <div class="feed-main-warp">
+                <div class="item-face vote">
+                    <img src="../../html/card/assets/images/alert_icon.png"
+                         class="voteico-img-remind"/>
+                </div>
+                <div class="item-detail detail-vote">
+                    <div class="item-info">
+                        <div class="item-name vote-info">
+                            <div class="rc-time">{{timingMessageRemaind.remaindTime}}</div>
+                            ##if(timingMessageRemaind.sourceEmployee){##
+                            <div>
+                                来自<a class="" href="#profile/=/empid-{{timingMessageRemaind.sourceEmployee.employeeID}}">{{timingMessageRemaind.sourceEmployee.name}}</a>的{{timingMessageRemaind.subTypeDescription}}：“<a
+                                    href="#stream/showfeed/=/id-{{timingMessageRemaind.dataID}}">{{timingMessageRemaind.sourceMessage}}</a>”
+                            </div>
+                            ## }##
+                        </div>
+                    </div>
+                    <!-- FEED内容 -->
+                    <div class="item-text">
+                        <div class="content"></div>
+                        <!--{{timingMessageRemaind.remaindTime}}：-->
+                        {{timingMessageRemaind.message}}
+                    </div>
+                    <!-- item function -->
+                    <div class="item-func vote fn-clear">
+                        <span class="item-func-left {{timingMessageRemaind.hideCreator}}">该提醒由<a class="" href="#profile/=/empid-{{timingMessageRemaind.creator.employeeID}}">{{timingMessageRemaind.creator.name}}</a>为我创建</span>
+                        <div class="handle">
+                            <a href="javascript:;" class="aj-myremind-delete"
+                               data-listid="{{timingMessageRemaind.trimingMessageRemaindID}}"> 删除</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div></script><script type="text/html" class="feed-list-worknotice"><div class="fs-list-item">
+        <!--回执按钮-->
+        {{isNeedConfirm}}
+        <!--feed内容部分-->
+        <div class="feed-main-warp">
+            <!--crm顶部信息（合同，市场，产品……）-->
+            {{crmTopInfo}}
+            <!--归档顶部信息条-->
+            {{archive}}
+            <!--关注顶部信息条-->
+            {{oftimetext}}
+            <!--feed头部头像时间等部分-->
+            ## if(feedSource == 'crm'){ ##
+            <div class="item-top fn-clear">
+                <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"><img
+                        src="{{listprofileImage}}" alt=""></a></div>
+                <div class="item-info">
+                    <div class="item-name">{{sendername}}<span>-</span>
+                        <span class="source"> <a href="javascript:;"> {{feedTypeDescription}}</a> </span>
+                        {{isWhat}}{{fiveStar}}
+                    </div>
+                    <div class="item-time"><span class="create-time">{{createTime}}</span><span class="from-source">来自<a
+                            href="javascript:;">{{sourceDescription}}</a></span></div>
+                </div>
+            </div>
+            ## } else { ##
+            <div class="item-top fn-clear">
+                <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"><img
+                        src="{{listprofileImage}}" alt=""></a></div>
+                <div class="item-info">
+                    <div class="item-name">{{sendername}}
+                        {{feedRangeDescription}}<span>-</span> <span class="source"> <a
+                                href="javascript:;"> {{feedTypeDescription}}</a> </span> {{isWhat}}{{fiveStar}}
+
+                    </div>
+                    <div class="item-time"><span class="create-time">{{createTime}}</span><span class="from-source">来自<a
+                            href="javascript:;">{{sourceDescription}}</a></span></div>
+                </div>
+            </div>
+            ## } ##
+            <!--feed中部主内容部分-->
+            <div class="item-detail">
+                <div class="contnet-isencrypted {{onencrypted}}">
+                    <div class="isencrypted-tit"><img src="../../html/fs/assets/images/lock_red.png" alt=""/>{{isencryptedTit}}
+                    </div>
+                    <div class="isencrypted-con"><img src="../../html/fs/assets/images/info2.png" alt=""/>该信息已加密，<a
+                            href="javascript:;" class="feedlist-open-ecrypt aj-feed-fn-com-btn">点击解密查看</a></div>
+                </div>
+                <div class="info-all-contnet {{onencrypted}}">
+                    <div class="work-notice-title">{{title}}</div>
+                    <!-- FEED内容 -->
+                    <div class="item-text"> {{leaderinfo}}
+                        <div class="content">
+                            <span class="feed-summary-text">{{feedFormatContent.summaryHtml}}</span>
+                            ## if(feedFormatContent.leftHtml.length>0){ ##
+                            <span class="feed-content-ellipsis">&#8230;</span><br/><br/>
+                            <a href="#" class="feed-content-visible-h"> 展开正文（共{{feedFormatContent.feedWordNum}}个字）</a>
+                            ## } ##
+                        </div>
+                    </div>
+
+                    <!--图片和附件-->
+                    <div class="item-media">{{ feedPic}}{{feedFiles}}</div>
+                    <!-- 录音 -->
+                    <div class="audio-btn"></div>
+                    <div class="item-func fn-clear">
+                        <div class="item-func-left">
+                            <!--关键回复按钮-->
+                            <div class="work-notice-status-btn">未读 ({{feedWorkNoticeRangesUnread.length}})
+                                ## if(feedWorkNoticeRangesUnread.length>0){ ##
+                                <div class="work-notice-status-tip">
+                                    <div class="toparrow"><em>◆</em> <span>◆</span></div>
+                                    <div class="item-warp">{{feedWorkNoticeRangesUnreadItemStr}}</div>
+                                    <div class="share-group-countman">共 {{feedWorkNoticeRangesUnread.length}} 人</div>
+                                </div>
+                                ## } ##
+                            </div>
+
+                            <div class="work-notice-status-btn">已读 ({{feedWorkNoticeRangesReaded.length}})
+                                ## if(feedWorkNoticeRangesReaded.length>0){ ##
+                                <div class="work-notice-status-tip">
+                                    <div class="toparrow"><em>◆</em> <span>◆</span></div>
+                                    <div class="item-warp">{{feedWorkNoticeRangesReadedItemStr}}</div>
+                                    <div class="share-group-countman">共 {{feedWorkNoticeRangesReaded.length}} 人</div>
+                                </div>
+                                ## } ##
+                            </div>
+
+                            ## if(isNeedConfirm){ ##
+                            <div class="work-notice-status-btn">已确认 ({{feedWorkNoticeRangesConfirmed.length}})
+                                ## if(feedWorkNoticeRangesConfirmed.length>0){ ##
+                                <div class="work-notice-status-tip">
+                                    <div class="toparrow"><em>◆</em> <span>◆</span></div>
+                                    <div class="item-warp">{{feedWorkNoticeRangesConfirmedItemStr}}</div>
+                                    <div class="share-group-countman">共 {{feedWorkNoticeRangesConfirmed.length}} 人</div>
+                                </div>
+                                ## } ##
+                            </div>
+                           ## } ##
+                        </div>
+                        <div class="handle">
+                            <!--提醒下拉菜单-->
+                            {{feedRemind}}
+                            <!--抄送，修改审批人，待办，点评，回复，指令中回复，指令的回复，批复-->
+                            {{fnCcW}}{{fnModifyapprovalW}}{{fnPendingW}}{{fnCommentonW}}
+                            <!--赞-->
+                            {{islike}}
+                            {{fnReplyW}}
+                            {{fnWorkingReW}}{{fnWorkSendW}}{{fnApprovalW}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--feed下部回复部分-->
+        <div class="replay-section"></div>
+        <div class="feed-reply list-repeat"></div>
+    </div></script><script type="text/html" class="feed-list-crm"><div class="fs-list-item">
+        <!--回执按钮-->
+        {{receiptfn}}
+        <!--feed内容部分-->
+        <div class="feed-main-warp">
+            <!--crm顶部信息（合同，市场，产品……）-->
+            {{crmTopInfo}}
+            <!--归档顶部信息条-->
+            {{archive}}
+            <!--关注顶部信息条-->
+            {{oftimetext}}
+            <!--feed头部头像时间等部分-->
+            ## if(feedSource == 'crm'){ ##
+            <div class="item-top fn-clear">
+                <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"><img
+                        src="{{listprofileImage}}" alt=""></a></div>
+                <div class="item-info">
+                    <div class="item-name">{{sendername}}<span>-</span>
+                        <span class="source"> <a href="javascript:;"> {{feedTypeDescription}}</a> </span>
+                        {{isWhat}}{{fiveStar}}
+                    </div>
+                    <div class="item-time"><span class="create-time">{{createTime}}</span><span class="from-source">来自<a
+                            href="javascript:;">{{sourceDescription}}</a></span></div>
+                </div>
+            </div>
+            ## } else { ##
+            <div class="item-top fn-clear">
+                <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"><img
+                        src="{{listprofileImage}}" alt=""></a></div>
+                <div class="item-info">
+                    <div class="item-name">{{sendername}}
+                        {{feedRangeDescription}}<span>-</span> <span class="source"> <a
+                                href="javascript:;"> {{feedTypeDescription}}</a> </span> {{isWhat}}{{fiveStar}}
+
+                    </div>
+                    <div class="item-time"><span class="create-time">{{createTime}}</span><span class="from-source">来自<a
+                            href="javascript:;">{{sourceDescription}}</a></span></div>
+                </div>
+            </div>
+            ## } ##
+            <!--feed中部主内容部分-->
+            <div class="item-detail">
+                <div class="contnet-isencrypted {{onencrypted}}">
+                    <div class="isencrypted-tit"><img src="../../html/fs/assets/images/lock_red.png" alt=""/>{{isencryptedTit}}
+                    </div>
+                    <div class="isencrypted-con"><img src="../../html/fs/assets/images/info2.png" alt=""/>该信息已加密，<a
+                            href="javascript:;" class="feedlist-open-ecrypt aj-feed-fn-com-btn">点击解密查看</a></div>
+                </div>
+                <div class="info-all-contnet {{onencrypted}}">
+                    <!-- FEED内容 -->
+                    <div class="item-text"> {{leaderinfo}}
+                        <div class="content">
+                            <span class="feed-summary-text">{{feedFormatContent.summaryHtml}}</span>
+                            ## if(feedFormatContent.leftHtml.length>0){ ##
+                            <span class="feed-content-ellipsis">&#8230;</span><br/><br/>
+                            <a href="#" class="feed-content-visible-h"> 展开正文（共{{feedFormatContent.feedWordNum}}个字）</a>
+                            ## } ##
+                        </div>
+                    </div>
+                    <!--图片和附件-->
+                    <div class="item-media">{{ feedPic}}{{feedFiles}}</div>
+                    <!-- 录音 -->
+                    <div class="audio-btn"></div>
+                    <!--定位信息-->
+                    {{feedLocationStr}}
+                    <!-- 短信提醒 -->
+                    {{smsRemaind}}
+                    <!-- 回执信息 -->
+                    {{receiptRemaind}}
+                    <!--事件标签-->
+                    {{crmfBusinessTagRelationsStr}}
+                    <!--startTime-->
+                    {{crmStartTime}}
+                    <!--关联的客户-->
+                    <div class="crm-feedinfo">{{crmCustomersInfo}}</div>
+                    <!--关联的联系人-->
+                    <div class="crm-feedinfo">{{crmContactsInfo}}</div>
+                    <div class="item-func fn-clear">
+                        <div class="handle">
+
+                            <!--更多下拉菜单-->
+                            <div class="fl-fn-btn more">
+                                <div class="more-menu" style="display: none;">
+                                    {{morePendingW}}{{fnDeleteW}}{{fnUnplaceonfileW}}{{fnUnattentionW}}<a
+                                        href="javascript:;" class="aj-feed-fn-com-btn aj-forward">转发</a></div>
+                                <a href="javascript:;"> 更多 <i class="arrow"></i> </a>
+                            </div>
+                            <!--提醒下拉菜单-->
+                            {{feedRemind}}
+                            <!--抄送，修改审批人，待办，点评，回复，指令中回复，指令的回复，批复-->
+                            {{fnCcW}}{{fnModifyapprovalW}}{{fnPendingW}}
+                            <!--赞-->
+                            {{islike}}
+                            {{fnCommentonW}}{{fnReplyW}}{{fnWorkingReW}}{{fnWorkSendW}}{{fnApprovalW}}
+                            <!--  {{fnReplyW}}
+                              {{fnWorkingReW}}{{fnWorkSendW}}{{fnApprovalW}}-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--feed下部回复部分-->
+        <div class="replay-section"></div>
+        <div class="detail-islike-list-warp"></div>
+        <div class="feed-reply list-repeat"></div>
+    </div></script><script type="text/html" class="feed-list-share"><div class="fs-list-item">
+        <!--回执按钮-->
+        {{receiptfn}}
+        <!--feed内容部分-->
+        <div class="feed-main-warp">
+            <!--crm顶部信息（合同，市场，产品……）-->
+            {{crmTopInfo}}
+            <!--归档顶部信息条-->
+            {{archive}}
+            <!--关注顶部信息条-->
+            {{oftimetext}}
+            <!--feed头部头像时间等部分-->
+            ## if(feedSource == 'crm'){ ##
+            <div class="item-top fn-clear">
+                <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"><img
+                        src="{{listprofileImage}}" alt=""></a></div>
+                <div class="item-info">
+                    <div class="item-name">{{sendername}}<span>-</span>
+                        <span class="source"> <a href="javascript:;"> {{feedTypeDescription}}</a> </span>
+                        {{isWhat}}{{fiveStar}}
+                    </div>
+                    <div class="item-time"><span class="create-time">{{createTime}}</span><span class="from-source">来自<a
+                            href="javascript:;">{{sourceDescription}}</a></span></div>
+                </div>
+            </div>
+            ## } else { ##
+            <div class="item-top fn-clear">
+                <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"><img
+                        src="{{listprofileImage}}" alt=""></a></div>
+                <div class="item-info">
+                    <div class="item-name">{{sendername}}
+                        {{feedRangeDescription}}<span>-</span> <span class="source"> <a
+                                href="javascript:;"> {{feedTypeDescription}}</a> </span> {{isWhat}}{{fiveStar}}
+
+                    </div>
+                    <div class="item-time"><span class="create-time">{{createTime}}</span><span class="from-source">来自<a
+                            href="javascript:;">{{sourceDescription}}</a></span></div>
+                </div>
+            </div>
+            ## } ##
+            <!--feed中部主内容部分-->
+            <div class="item-detail">
+                <div class="contnet-isencrypted {{onencrypted}}">
+                    <div class="isencrypted-tit"><img src="../../html/fs/assets/images/lock_red.png" alt=""/>{{isencryptedTit}}
+                    </div>
+                    <div class="isencrypted-con"><img src="../../html/fs/assets/images/info2.png" alt=""/>该信息已加密，<a
+                            href="javascript:;" class="feedlist-open-ecrypt aj-feed-fn-com-btn">点击解密查看</a></div>
+                </div>
+                <div class="info-all-contnet {{onencrypted}}">
+                    <!-- FEED内容 -->
+                    <div class="item-text"> {{leaderinfo}}
+                        <div class="content">
+                            <span class="feed-summary-text">{{feedFormatContent.summaryHtml}}</span>
+                            ## if(feedFormatContent.leftHtml.length>0){ ##
+                            <span class="feed-content-ellipsis">&#8230;</span><br/><br/>
+                            <a href="#" class="feed-content-visible-h"> 展开正文（共{{feedFormatContent.feedWordNum}}个字）</a>
+                            ## } ##
+                        </div>
+                    </div>
+
+                    <!--图片和附件-->
+                    <div class="item-media">{{ feedPic}}{{feedFiles}}</div>
+                    <!-- 录音 -->
+                    <div class="audio-btn"></div>
+                    <!--定位信息-->
+                    {{feedLocationStr}}
+                    <!-- 短信提醒 -->
+                    {{smsRemaind}}
+                    <!-- 回执信息 -->
+                    {{receiptRemaind}}
+                    <!--关联的客户-->
+                    <div class="crm-feedinfo">{{crmCustomersInfo}}</div>
+                    <!--关联的联系人-->
+                    <div class="crm-feedinfo">{{crmContactsInfo}}</div>
+                    <div class="item-func fn-clear">
+                        <div class="handle">
+
+
+                            <!--更多下拉菜单-->
+                            <div class="fl-fn-btn more">
+                                <div class="more-menu" style="display: none;">
+                                    {{morePendingW}}{{fnDeleteW}}{{fnUnplaceonfileW}}{{fnUnattentionW}}<a
+                                        href="javascript:;" class="aj-feed-fn-com-btn aj-forward">转发</a></div>
+                                <a href="javascript:;"> 更多 <i class="arrow"></i> </a>
+                            </div>
+                            <!--提醒下拉菜单-->
+                            {{feedRemind}}
+                            <!--抄送，修改审批人，待办，点评，回复，指令中回复，指令的回复，批复-->
+                            {{fnCcW}}{{fnModifyapprovalW}}{{fnPendingW}}{{fnCommentonW}}
+                            <!--赞-->
+                            {{islike}}
+                            {{fnReplyW}}
+                            {{fnWorkingReW}}{{fnWorkSendW}}{{fnApprovalW}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--feed下部回复部分-->
+        <div class="replay-section"></div>
+        <div class="detail-islike-list-warp"></div>
+        <div class="feed-reply list-repeat"></div>
+    </div></script><script type="text/html" class="feed-list-plan"><div class="fs-list-item">
+        <!--feed内容部分-->
+        <div class="feed-main-warp">
+            <!--归档顶部信息条-->
+            {{archive}}
+            <!--关注顶部信息条-->
+            {{oftimetext}}
+            <!--feed头部头像时间等部分-->
+            ## if(feedSource == 'crm'){ ##
+            <div class="item-top fn-clear">
+                <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"><img
+                        src="{{listprofileImage}}" alt=""></a></div>
+                <div class="item-info">
+                    <div class="item-name">{{sendername}}<span>-</span>
+                        <span class="source"> <a href="javascript:;"> {{feedTypeDescription}}</a> </span>
+                        {{isWhat}}{{fiveStar}}
+                    </div>
+                    <div class="item-time"><span class="create-time">{{createTime}}</span><span class="from-source">来自<a
+                            href="javascript:;">{{sourceDescription}}</a></span></div>
+                </div>
+            </div>
+            ## } else { ##
+            <div class="item-top fn-clear">
+                <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"><img
+                        src="{{listprofileImage}}" alt=""></a></div>
+                <div class="item-info">
+                    <div class="item-name">{{sendername}}{{feedRangeDescription}}<span>-</span> <span class="source"> <a
+                            href="javascript:;"> {{feedTypeDescription}}</a> </span> {{isWhat}}{{fiveStar}}
+                    </div>
+                    <div class="item-time"><span class="create-time">{{createTime}}</span><span class="from-source">来自<a
+                            href="javascript:;">{{sourceDescription}}</a></span></div>
+                </div>
+            </div>
+            ## } ##
+            <!--feed中部主内容部分-->
+            <div class="item-detail">
+                <div class="contnet-isencrypted {{onencrypted}}">
+                    <div class="isencrypted-tit"><img src="../../html/fs/assets/images/lock_red.png" alt=""/>{{isencryptedTit}}
+                    </div>
+                    <div class="isencrypted-con"><img src="../../html/fs/assets/images/info2.png" alt=""/>该信息已加密，<a
+                            href="javascript:;" class="feedlist-open-ecrypt aj-feed-fn-com-btn">点击解密查看</a></div>
+                </div>
+                <div class="info-all-contnet {{onencrypted}}">
+                    <!-- FEED内容 -->
+                    <div class="item-text"> {{leaderinfo}}
+                        <div class="content">
+                            <span class="feed-summary-text">{{feedFormatContent.summaryHtml}}</span>
+                            ## if(feedFormatContent.leftHtml.length>0){ ##
+                            <span class="feed-content-ellipsis">&#8230;</span><br/><br/>
+                            <a href="#" class="feed-content-visible-h">展开正文（共{{feedFormatContent.feedWordNum}}个字）</a>
+                            ## } ##
+                        </div>
+                    </div>
+                    <!--图片和附件-->
+                    <div class="item-media">{{ feedPic}}{{feedFiles}}</div>
+                    <!-- 录音 -->
+                    <div class="audio-btn"></div>
+                    <!--定位信息-->
+                    {{feedLocationStr}}
+                    <!--关联的客户-->
+                    <div class="crm-feedinfo">{{crmCustomersInfo}}</div>
+                    <!--关联的联系人-->
+                    <div class="crm-feedinfo">{{crmContactsInfo}}</div>
+                    <div class="item-func fn-clear">
+                        <div class="item-func-left">
+                            <!--关键回复按钮-->
+                            {{repliesBtn}}
+                        </div>
+                        <div class="handle">
+
+                            <!--更多下拉菜单-->
+                            <div class="fl-fn-btn more">
+                                <div class="more-menu" style="display: none;">
+                                    {{morePendingW}}{{fnDeleteW}}{{fnUnplaceonfileW}}{{fnUnattentionW}}<a
+                                        href="javascript:;" class="aj-feed-fn-com-btn aj-forward">转发</a></div>
+                                <a href="javascript:;"> 更多 <i class="arrow"></i> </a>
+                            </div>
+                            <!--提醒下拉菜单-->
+                            {{feedRemind}}
+                            <!--抄送，修改审批人，待办，点评，回复，指令中回复，指令的回复，批复-->
+                            {{fnCcW}}{{fnModifyapprovalW}}{{fnPendingW}}
+                            <!--赞-->
+                            {{islike}}
+                            {{fnCommentonW}}{{fnReplyW}}{{fnWorkingReW}}{{fnWorkSendW}}{{fnApprovalW}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--feed下部回复部分-->
+        <div class="replay-section"></div>
+        <div class="detail-islike-list-warp"></div>
+        <div class="feed-reply list-repeat"></div>
+    </div></script><script type="text/html" class="feed-list-work"><div class="fs-list-item">
+        <!--feed内容部分-->
+        <div class="feed-main-warp">
+            <!--归档顶部信息条-->
+            {{archive}}
+            <!--关注顶部信息条-->
+            {{oftimetext}}
+            <!--feed头部头像时间等部分-->
+            ## if(feedSource == 'crm'){ ##
+            <div class="item-top fn-clear">
+                <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"><img
+                        src="{{listprofileImage}}" alt=""></a></div>
+                <div class="item-info">
+                    <div class="item-name">{{sendername}}<span>-</span>
+                        <span class="source"> <a href="javascript:;"> {{feedTypeDescription}}</a> </span>
+                        {{isWhat}}{{fiveStar}}
+                    </div>
+                    <div class="item-time"><span class="create-time">{{createTime}}</span><span class="from-source">来自<a
+                            href="javascript:;">{{sourceDescription}}</a></span></div>
+                </div>
+            </div>
+            ## } else { ##
+            <div class="item-top fn-clear">
+                <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"><img
+                        src="{{listprofileImage}}" alt=""></a></div>
+                <div class="item-info">
+                    <div class="item-name">{{sendername}}{{feedRangeDescription}}<span>-</span> <span class="source"> <a
+                            href="javascript:;"> {{feedTypeDescription}}</a> </span> {{isWhat}}{{fiveStar}}
+                    </div>
+                    <div class="item-time"><span class="create-time">{{createTime}}</span><span class="from-source">来自<a
+                            href="javascript:;">{{sourceDescription}}</a></span></div>
+                </div>
+            </div>
+            ## } ##
+            <!--feed中部主内容部分-->
+            <div class="item-detail">
+                <div class="contnet-isencrypted {{onencrypted}}">
+                    <div class="isencrypted-tit"><img src="../../html/fs/assets/images/lock_red.png" alt=""/>{{isencryptedTit}}
+                    </div>
+                    <div class="isencrypted-con"><img src="../../html/fs/assets/images/info2.png" alt=""/>该信息已加密，<a
+                            href="javascript:;" class="feedlist-open-ecrypt aj-feed-fn-com-btn">点击解密查看</a></div>
+                </div>
+                <div class="info-all-contnet {{onencrypted}}">
+                    <!-- FEED内容 -->
+                    <div class="item-text"> {{leaderinfo}}
+                        <div class="content">
+                            <span class="feed-summary-text">{{feedFormatContent.summaryHtml}}</span>
+                            ## if(feedFormatContent.leftHtml.length>0){ ##
+                            <span class="feed-content-ellipsis">&#8230;</span><br/><br/><a href="#"
+                                                                                           class="feed-content-visible-h">展开正文（共{{feedFormatContent.feedWordNum}}个字）</a>
+                            ## } ##
+                        </div>
+                    </div>
+                    <!--图片和附件-->
+                    <div class="item-media">{{ feedPic}}{{feedFiles}}</div>
+                    <!-- 录音 -->
+                    <div class="audio-btn"></div>
+                    <!--定位信息-->
+                    {{feedLocationStr}}
+                    <!--关联的客户-->
+                    <div class="crm-feedinfo">{{crmCustomersInfo}}</div>
+                    <!--关联的联系人-->
+                    <div class="crm-feedinfo">{{crmContactsInfo}}</div>
+                    <div class="item-func fn-clear">
+                        <div class="item-func-left">
+                            <!--关键回复按钮-->
+                            {{repliesBtn}}
+                        </div>
+                        <div class="handle">
+
+                            <!--更多下拉菜单-->
+                            <div class="fl-fn-btn more">
+                                <div class="more-menu" style="display: none;">
+                                    {{morePendingW}}{{fnDeleteW}}{{fnUnplaceonfileW}}{{fnUnattentionW}}<a
+                                        href="javascript:;" class="aj-feed-fn-com-btn aj-forward">转发</a></div>
+                                <a href="javascript:;"> 更多 <i class="arrow"></i> </a>
+                            </div>
+                            <!--提醒下拉菜单-->
+                            {{feedRemind}}
+                            <!--抄送，修改审批人，待办，点评，回复，指令中回复，指令的回复，批复-->
+                            {{fnCcW}}{{fnModifyapprovalW}}{{fnPendingW}}{{fnCommentonW}}
+                            <!--赞-->
+                            {{islike}}
+                            {{fnReplyW}}{{fnWorkingReW}}{{fnWorkSendW}}{{fnApprovalW}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--feed下部回复部分-->
+        <div class="replay-section"></div>
+        <div class="detail-islike-list-warp"></div>
+        <div class="feed-reply list-repeat"></div>
+    </div></script><script type="text/html" class="feed-list-approve"><div class="fs-list-item">
+        <!--feed内容部分-->
+        <div class="feed-main-warp">
+            <!--归档顶部信息条-->
+            {{archive}}
+            <!--关注顶部信息条-->
+            {{oftimetext}}
+            <!--feed头部头像时间等部分-->
+            ## if(feedSource == 'crm'){ ##
+            <div class="item-top fn-clear">
+                <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"><img
+                        src="{{listprofileImage}}" alt=""></a></div>
+                <div class="item-info">
+                    <div class="item-name">{{sendername}}<span>-</span>
+                        <span class="source"> <a href="javascript:;"> {{feedTypeDescription}}</a> </span>
+                        {{isWhat}}{{fiveStar}}<a
+                                href="#" class="printer {{isHide}}">打印</a>
+                    </div>
+                    <div class="item-time"><span class="create-time">{{createTime}}</span><span class="from-source">来自<a
+                            href="javascript:;">{{sourceDescription}}</a></span></div>
+                </div>
+            </div>
+            ## } else { ##
+            <div class="item-top fn-clear">
+                <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"><img
+                        src="{{listprofileImage}}" alt=""></a></div>
+                <div class="item-info">
+                    <div class="item-name">{{sendername}}{{feedRangeDescription}}<span>-</span> <span class="source"> <a
+                            href="javascript:;"> {{feedTypeDescription}}</a> </span> {{isWhat}}{{fiveStar}}<a
+                            href="#" class="printer {{isHide}}">打印</a></div>
+                    <div class="item-time"><span class="create-time">{{createTime}}</span><span class="from-source">来自<a
+                            href="javascript:;">{{sourceDescription}}</a></span></div>
+                </div>
+            </div>
+            ## } ##
+            <!--feed中部主内容部分-->
+            <div class="item-detail">
+                <div class="contnet-isencrypted {{onencrypted}}">
+                    <div class="isencrypted-tit"><img src="../../html/fs/assets/images/lock_red.png" alt=""/>{{isencryptedTit}}
+                    </div>
+                    <div class="isencrypted-con"><img src="../../html/fs/assets/images/info2.png" alt=""/>该信息已加密，<a
+                            href="javascript:;" class="feedlist-open-ecrypt aj-feed-fn-com-btn">点击解密查看</a></div>
+                </div>
+                <div class="info-all-contnet {{onencrypted}}">
+                    <!-- FEED内容 -->
+                    <div class="item-text"> {{leaderinfo}}
+                        <div class="content">
+                            <span class="feed-summary-text">{{feedFormatContent.summaryHtml}}</span>
+                            ## if(feedFormatContent.leftHtml.length>0){ ##
+                            <span class="feed-content-ellipsis">&#8230;</span><br/><br/><a href="#"
+                                                                                           class="feed-content-visible-h">展开正文（共{{feedFormatContent.feedWordNum}}个字）</a>
+                            ## } ##
+                        </div>
+                    </div>
+                    <!--图片和附件-->
+                    <div class="item-media">{{ feedPic}}{{feedFiles}}</div>
+                    <!-- 录音 -->
+                    <div class="audio-btn"></div>
+                    <!--定位信息-->
+                    {{feedLocationStr}}
+                    <!--关联的客户-->
+                    <div class="crm-feedinfo">{{crmCustomersInfo}}</div>
+                    <!--关联的联系人-->
+                    <div class="crm-feedinfo">{{crmContactsInfo}}</div>
+                    <div class="item-func fn-clear">
+                        <div class="item-func-left">
+                            <!--关键回复按钮-->
+                            {{repliesBtn}}
+                        </div>
+                        <div class="handle">
+
+                            <!--更多下拉菜单-->
+                            <div class="fl-fn-btn more">
+                                <div class="more-menu" style="display: none;">
+                                    {{morePendingW}}{{fnDeleteW}}{{fnUnplaceonfileW}}{{fnUnattentionW}}<a
+                                        href="javascript:;" class="aj-feed-fn-com-btn aj-forward">转发</a></div>
+                                <a href="javascript:;"> 更多 <i class="arrow"></i> </a>
+                            </div>
+                            <!--提醒下拉菜单-->
+                            {{feedRemind}}
+                            <!--抄送，修改审批人，待办，点评，回复，指令中回复，指令的回复，批复-->
+                            {{fnCcW}}{{fnModifyapprovalW}}{{fnPendingW}}{{fnCommentonW}}
+                            <!--赞-->
+                            {{islike}}
+                            {{fnReplyW}}{{fnWorkingReW}}{{fnWorkSendW}}{{fnApprovalW}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--feed下部回复部分-->
+        <div class="replay-section"></div>
+        <div class="detail-islike-list-warp"></div>
+        <div class="feed-reply list-repeat"></div>
+    </div></script><script type="text/html" class="feed-list-approve-print"><div class="fs-list-item">
+        <div class="item-info">
+            <div class="item-name">{{printSendername}}<span>-</span><span class="con">审批</span><span>-</span> <span
+                    class="con">发出时间：{{printCTime}}</span><span class="printer-numinfo">系统编号：<i>{{feedID}}</i></span>
+            </div>
+        </div>
+        <!-- FEED内容 -->
+        <div class="item-text">
+            <div class="content">
+                {{printText}}
+            </div>
+        </div>
+
+        <!-- 图片和附件 -->
+        <div class="item-media">
+            {{printPictures}}
+            {{printFiles}}
+        </div>
+        <!-- 关键回复 -->
+        {{printReplyContent}}
+        <!-- 回复内容-->
+        <div class="printreplys"></div>
+    </div></script><script type="text/html" class="feed-list-announce"><div class="fs-list-item">
+        <!--回执按钮-->
+        {{receiptfn}}
+        <!--feed内容部分-->
+        <div class="feed-main-warp">
+            <!--归档顶部信息条-->
+            {{archive}}
+            <!--关注顶部信息条-->
+            {{oftimetext}}
+            <!--feed头部头像时间等部分-->
+            <div class="item-top fn-clear">
+                <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"><img
+                        src="{{listprofileImage}}" alt=""></a></div>
+                <div class="item-info">
+                    <div class="item-name">{{sendername}}{{feedRangeDescription}}<span>-</span> <span class="source"> <a
+                            href="javascript:;"> {{feedTypeDescription}}</a> </span> {{isWhat}}{{fiveStar}}
+                    </div>
+                    <div class="item-time"><span class="create-time">{{createTime}}</span><span class="from-source">来自<a
+                            href="javascript:;">{{sourceDescription}}</a></span></div>
+                </div>
+            </div>
+            <!--feed中部主内容部分-->
+            <div class="item-detail">
+                <div class="contnet-isencrypted {{onencrypted}}">
+                    <div class="isencrypted-tit"><img src="../../html/fs/assets/images/lock_red.png" alt=""/>{{isencryptedTit}}
+                    </div>
+                    <div class="isencrypted-con"><img src="../../html/fs/assets/images/info2.png" alt=""/>该信息已加密，<a
+                            href="javascript:;" class="feedlist-open-ecrypt aj-feed-fn-com-btn">点击解密查看</a></div>
+                </div>
+                <div class="info-all-contnet {{onencrypted}}">
+                    <!-- 公告标题 -->
+                    <div class="announce-tit fn-clear">
+                        <table>
+                            <tr>
+                                <td><span class="announce-tit-icon"></span></td>
+                                <td class="tit-text">{{announcetit}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- FEED内容 -->
+                    <div class="item-text"> {{leaderinfo}}
+                        <div class="content">
+                            <span class="feed-summary-text">{{feedFormatContent.summaryHtml}}</span>
+                            ## if(feedFormatContent.leftHtml.length>0){ ##
+                            <span class="feed-content-ellipsis">&#8230;</span><br/><br/><a href="#"
+                                                                                           class="feed-content-visible-h">展开正文（共{{feedFormatContent.feedWordNum}}个字）</a>
+                            ## } ##
+                        </div>
+                    </div>
+                    <!--图片和附件-->
+                    <div class="item-media">{{ feedPic}}{{feedFiles}}</div>
+                    <!-- 录音 -->
+                    <div class="audio-btn"></div>
+                    <!--定位信息-->
+                    {{feedLocationStr}}
+                    <!-- 短信提醒 -->
+                    {{smsRemaind}}
+                    <!-- 回执信息 -->
+                    {{receiptRemaind}}
+                    <div class="item-func fn-clear">
+
+                        <div class="handle">
+
+                            <!--更多下拉菜单-->
+                            <div class="fl-fn-btn more">
+                                <div class="more-menu" style="display: none;">
+                                    {{morePendingW}}{{fnDeleteW}}{{fnUnplaceonfileW}}{{fnUnattentionW}}<a
+                                        href="javascript:;" class="aj-feed-fn-com-btn aj-forward">转发</a></div>
+                                <a href="javascript:;"> 更多 <i class="arrow"></i> </a>
+                            </div>
+                            <!--提醒下拉菜单-->
+                            {{feedRemind}}
+                            <!--抄送，修改审批人，待办，点评，回复，指令中回复，指令的回复，批复-->
+                            {{fnCcW}}{{fnModifyapprovalW}}{{fnPendingW}}{{fnCommentonW}}
+                            <!--赞-->
+                            {{islike}}
+                            {{fnReplyW}}{{fnWorkingReW}}{{fnWorkSendW}}{{fnApprovalW}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--feed下部回复部分-->
+        <div class="replay-section"></div>
+        <div class="detail-islike-list-warp"></div>
+        <div class="feed-reply list-repeat"></div>
+    </div></script><script type="text/html" class="feed-list-announce-page"><div class="fs-list-item">
+        <!--回执按钮-->
+        {{receiptfn}}
+        <!--feed内容部分-->
+        <div class="feed-main-warp">
+            <!--归档顶部信息条-->
+            {{archive}}
+            <!--关注顶部信息条-->
+            {{oftimetext}}
+            <!--feed头部头像时间等部分-->
+            <div class="item-top fn-clear">
+                <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"><img
+                        src="{{listprofileImage}}" alt=""></a></div>
+                <div class="item-info">
+                    <div class="item-name">{{sendername}}{{feedRangeDescription}}<span>-</span> <span class="source"> <a
+                            href="javascript:;"> {{feedTypeDescription}}</a> </span> {{isWhat}}{{fiveStar}}
+                    </div>
+                    <div class="item-time"><span class="create-time">{{createTime}}</span><span class="from-source">来自<a
+                            href="javascript:;">{{sourceDescription}}</a></span></div>
+                </div>
+            </div>
+            <!--feed中部主内容部分-->
+            <div class="item-detail">
+                <div class="contnet-isencrypted {{onencrypted}}">
+                    <div class="isencrypted-tit"><img src="../../html/fs/assets/images/lock_red.png" alt=""/>{{isencryptedTit}}
+                    </div>
+                    <div class="isencrypted-con"><img src="../../html/fs/assets/images/info2.png" alt=""/>该信息已加密，<a
+                            href="javascript:;" class="feedlist-open-ecrypt aj-feed-fn-com-btn">点击解密查看</a></div>
+                </div>
+                <div class="info-all-contnet {{onencrypted}}">
+                    <!-- 公告标题 -->
+                    <div class="announce-tit fn-clear">
+                        <table>
+                            <tr>
+                                <td><img src="../../html/fs/assets/images/voteico.gif" alt=""></td>
+                                <td class="tit-text">公告：{{announcetit}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- FEED内容 -->
+                    <div class="item-text"> {{leaderinfo}}
+                        <div class="content">
+                            <span class="feed-summary-text">{{feedFormatContent.summaryHtml}}</span>
+                            ## if(feedFormatContent.leftHtml.length>0){ ##
+                            <span class="feed-content-ellipsis">&#8230;</span><br/><br/><a href="#"
+                                                                                           class="feed-content-visible-h">展开正文（共{{feedFormatContent.feedWordNum}}个字）</a>
+                            ## } ##
+                        </div>
+                    </div>
+                    <!--图片和附件-->
+                    <div class="item-media">{{ feedPic}}{{feedFiles}}</div>
+                    <!-- 录音 -->
+                    <div class="audio-btn"></div>
+                    <!--定位信息-->
+                    {{feedLocationStr}}
+                    <!-- 短信提醒 -->
+                    {{smsRemaind}}
+                    <!-- 回执信息 -->
+                    {{receiptRemaind}}
+                    <div class="item-func fn-clear">
+                        <div class="handle">
+                            <!--显示时间-->
+                            {{deletegg}}
+                            <a href="javascript:;" class="istimeshow">{{isShowText}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--feed下部回复部分-->
+        <div class="replay-section"></div>
+        <div class="detail-islike-list-warp"></div>
+        <div class="feed-reply list-repeat"></div>
+    </div></script><script type="text/html" class="feed-list-schedule"><div class="fs-list-item"> {{archive}}
+        <div class="feed-main-warp">
+            <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"><img
+                    src="{{listprofileImage}}" alt=""></a></div>
+            <div class="item-detail"> {{oftimetext}}
+
+                <div class="item-info">
+                    ## if(feedSource == 'crm'){ ##
+                    <div class="item-name">{{sendername}}<span>-</span>
+                        <span class="source"> <a href="javascript:;"> {{feedTypeDescription}}</a> </span>
+                        {{isWhat}}{{fiveStar}}
+                    </div>
+                    <div class="item-time"><span class="create-time">{{createTime}}</span><span class="from-source">来自<a
+                            href="javascript:;">{{sourceDescription}}</a></span></div>
+                    ## } else { ##
+                    <div class="item-name" style="margin-bottom: 5px;">
+                        {{sendername}}{{feedRangeDescription}}<span>-</span> <span class="source"> <a
+                            href="javascript:;"> {{feedTypeDescription}}</a> </span> {{isWhat}}{{fiveStar}}
+                    </div>
+                    <div class="item-time"><span class="create-time">{{createTime}}</span><span class="from-source">来自<a
+                            href="javascript:;">{{sourceDescription}}</a></span></div>
+                    ## } ##
+                    <div class="item-name vote-info"><img src="../../html/fs/assets/images/{{voteico}}" width="26"
+                                                          height="28" class="voteico"/> <span
+                            class="rc-time"> {{startTime}}</span><span>-</span><span>{{smsRemindTypeText}}</span></div>
+                </div>
+
+                <!-- FEED内容 -->
+                <div class="item-text"> {{leaderinfo}}
+                    <div class="content {{textcur}}">{{feedText}}</div>
+                    {{textbtn}}
+                </div>
+                <!--图片和附件-->
+                <div class="item-media">{{feedPic}}{{feedFiles}}</div>
+                <!--关键回复-->
+                {{replyContent}}
+                <!--关联的客户-->
+                <div class="crm-feedinfo">{{crmCustomersInfo}}</div>
+                <!--关联的联系人-->
+                <div class="crm-feedinfo">{{crmContactsInfo}}</div>
+                <!-- item function -->
+                <div class="item-func fn-clear">
+                    <div class="handle">
+                        <div class="more">
+                            <div class="more-menu" style="display: none;">
+                                {{morePendingW}}
+                                {{fnDeleteW}}{{fnUnplaceonfileW}}
+                                {{fnUnattentionW}}<a href="javascript:;" class="aj-feed-fn-com-btn aj-forward">转发</a>
+                            </div>
+                            <a href="javascript:;"> 更多 <i class="arrow"></i> </a>
+                        </div>
+                        <!--提醒下拉菜单-->
+                        {{feedRemind}}
+                        {{fnApprovalW}}{{fnCcW}}{{fnModifyapprovalW}}{{fnPendingW}}
+                        {{islike}}
+						{{fnCommentonW}}{{fnReplyW}}{{fnWorkingReW}}{{fnWorkSendW}}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--feed下部回复部分-->
+        <div class="replay-section"></div>
+        <div class="detail-islike-list-warp"></div>
+        <div class="feed-reply list-repeat"></div>
+    </div></script><script type="text/html" class="feed-list-schedule-tip"><div class="fs-list-item">
+        <div class="feed-main-warp">
+            <div class="item-face vote" feedid="{{feedID}}"><em class="voteico"> <img
+                    src="../../html/fs/assets/images/{{voteico}}" width="26" height="28" class="voteico-img"/>
+                {{newico}} </em></div>
+            <div class="item-detail detail-vote">
+                <div class="item-info">
+                    <div class="item-name vote-info">
+                        <span class="rc-time">{{startTime}}</span>{{feedRangeDescription}}<span>-</span><span>{{smsRemindTypeText}}</span>
+                    </div>
+                </div>
+                <!-- FEED内容 -->
+                <div class="item-text"> {{leaderinfo}}
+                    <div class="content {{textcur}}">{{feedText}}</div>
+                    {{textbtn}}
+                </div>
+                <!--图片和附件-->
+                <div class="item-media"> {{feedPic}}{{feedFiles}}</div>
+                <!--关键回复-->
+                {{replyContent}}
+                <!--关联的客户-->
+                <div class="crm-feedinfo">{{crmCustomersInfo}}</div>
+                <!--关联的联系人-->
+                <div class="crm-feedinfo">{{crmContactsInfo}}</div>
+                <!-- item function -->
+                <div class="item-func vote fn-clear">
+                    <!-- 框里面用的 -->
+                    <div class="handle">
+                        <!--<div class="more">
+                            <div class="more-menu" style="display: none;">
+                                {{morePendingW}}
+                                {{fnDeleteW}}{{fnUnplaceonfileW}}
+                                {{fnUnattentionW}}<a href="javascript:;" class="aj-feed-fn-com-btn aj-forward">转发</a>
+                            </div>
+                            <a href="javascript:;"> 更多 <i class="arrow"></i> </a>
+                        </div>-->
+                        <!--提醒下拉菜单-->
+                        <span class="noStxt">{{feedRemind}}</span>
+                        <i class="S_txt3">|</i>
+                        {{fnReplyRcW}}
+
+                        {{islike}}
+                        <i class="S_txt3">|</i><a href="javascript:;" class="aj-schedule-delete"> 删除</a>
+                    </div>
+                    <!--该日程由谁为您创建-->
+                    {{voteSenderInfo}}
+                </div>
+
+
+            </div>
+        </div>
+        <!--feed下部回复部分-->
+        <div class="replay-section"></div>
+        <div class="detail-islike-list-warp"></div>
+        <div class="feed-reply list-repeat"></div>
+    </div></script><script type="text/html" class="feed-list-voteitem"><div class="fs-list-item">
+        <!--回执按钮-->
+        {{receiptfn}}
+        <!--feed内容部分-->
+        <div class="feed-main-warp">
+            <!--归档顶部信息条-->
+            {{archive}}
+            <!--关注顶部信息条-->
+            {{oftimetext}}
+            <!--feed头部头像时间等部分-->
+            ## if(feedSource == 'crm'){ ##
+            <div class="item-top fn-clear">
+                <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"><img
+                        src="{{listprofileImage}}" alt=""></a></div>
+                <div class="item-info">
+                    <div class="item-name">{{sendername}}<span>-</span><span class="source"> <a
+                            href="javascript:;"> {{feedTypeDescription}}</a> </span> {{isWhat}}{{fiveStar}}
+                    </div>
+                    <div class="item-time"><span class="create-time">{{createTime}}</span><span class="from-source">来自<a
+                            href="javascript:;">{{sourceDescription}}</a></span></div>
+                </div>
+            </div>
+            ## } else { ##
+            <div class="item-top fn-clear">
+                <div class="item-face" feedid="{{feedID}}">{{newico}}<a href="#profile/=/empid-{{employeeID}}"><img
+                        src="{{listprofileImage}}" alt=""></a></div>
+                <div class="item-info">
+                    <div class="item-name">{{sendername}}{{feedRangeDescription}}<span>-</span> <span class="source"> <a
+                            href="javascript:;"> {{feedTypeDescription}}</a> </span> {{isWhat}}{{fiveStar}}
+                    </div>
+                    <div class="item-time"><span class="create-time">{{createTime}}</span><span class="from-source">来自<a
+                            href="javascript:;">{{sourceDescription}}</a></span></div>
+                </div>
+            </div>
+            ## } ##
+            <!--feed中部主内容部分-->
+            <div class="item-detail">
+                <div class="contnet-isencrypted {{onencrypted}}">
+                    <div class="isencrypted-tit"><img src="../../html/fs/assets/images/lock_red.png" alt=""/>{{isencryptedTit}}
+                    </div>
+                    <div class="isencrypted-con"><img src="../../html/fs/assets/images/info2.png" alt=""/>该信息已加密，<a
+                            href="javascript:;" class="feedlist-open-ecrypt aj-feed-fn-com-btn">点击解密查看</a></div>
+                </div>
+                <div class="info-all-contnet {{onencrypted}}">
+                    <!-- FEED内容 -->
+                    <div class="item-text"> {{leaderinfo}}
+                        <div class="content">
+                            <span class="feed-summary-text">{{feedFormatContent.summaryHtml}}</span>
+                            ## if(feedFormatContent.leftHtml.length>0){ ##
+                            <span class="feed-content-ellipsis">&#8230;</span><br/><br/><a href="#"
+                                                                                           class="feed-content-visible-h">展开正文（共{{feedFormatContent.feedWordNum}}个字）</a>
+                            ## } ##
+                        </div>
+                    </div>
+
+                    <!--投票-->
+                    <div class="item-vote">
+                        <!-- inlet -->
+                        <div class="vote-inlet fn-clear">
+                            <div class="l"><img src="../../html/fs/assets/images/vote_e.jpg" alt=""></div>
+                            <div class="r">
+                                <button type="submit" class="button-green vote-inlet-btn aj-open-vote-btn">查看详情</button>
+                                <div class="tit">{{votecount}}人已投票</div>
+                            </div>
+                        </div>
+                        <div class="vote-main fn-clear" style="display:none;">
+                            <div class="vote-close"><a href="javascript:;" class="aj-close-vote-btn">收起</a></div>
+                            <div class="tit">标题</div>
+                            <div class="seleinfo">最多选择2项</div>
+                            <div class="time marg10">提示：匿名投票，截止时间6月11日 09:00:03。</div>
+                            <div class="cantsee aj-cantsee-con">
+                                您没有权限查看
+                            </div>
+                            <!-- status def -->
+                            <div class="aj-status-def">
+                                <div class="selecter fn-clear marg10">
+                                    <label for="">
+                                        <input type="checkbox" id="">
+
+                                        <div></div>
+                                    </label>
+                                    <label for="">
+                                        <input type="checkbox">
+
+                                        <div>选项2</div>
+                                    </label>
+                                    <label for="">
+                                        <input type="radio" name="voteinput">
+
+                                        <div>我是单选项</div>
+                                    </label>
+                                </div>
+                                <div class="vote-fn marg10">
+                                    <button type="submit" class="button-green vote-inlet-btn aj-sendvote-btn">立即投票
+                                    </button>
+                                    <button type="submit" class="button-orange vote-inlet-btn aj-seevote-btn">查看结果
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- status vote -->
+                            <div class="aj-status-vote marg10" style="display:none;">
+                                <table class="status-table">
+                                    <tr>
+                                    </tr>
+                                </table>
+                                <div class="vote-fn marg10">
+                                    <button type="submit" class="button-orange vote-inlet-btn aj-backvote-btn">返回投票
+                                    </button>
+                                </div>
+                                <div class="downloadresult marg10"><a href="">下载投票结果</a></div>
+                            </div>
+                            <!-- result vote-->
+                            <div class="aj-status-result marg10" style="display:none;">
+                                <table class="result-table">
+                                    <tr>
+                                        <td width="112" align="right"><span class="selertitle">选项2</span></td>
+                                        <td width="256"><span class="schedulebar"><span
+                                                class="othervotebar"></span></span><span
+                                                class="num">1 (100%)</span></td>
+                                        <td><span><a href="#">查看详情</a></span></td>
+                                    </tr>
+                                </table>
+                                <div class="downloadresult marg10"><a href="{{votedownurl}}" target="_blank">下载投票结果</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--图片和附件-->
+                    <div class="item-media">{{ feedPic}}{{feedFiles}}</div>
+                    <!-- 录音 -->
+                    <div class="audio-btn"></div>
+                    <!--定位信息-->
+                    {{feedLocationStr}}
+                    <!-- 短信提醒 -->
+                    {{smsRemaind}}
+                    <!-- 回执信息 -->
+                    {{receiptRemaind}}
+                    <!--关联的客户-->
+                    <div class="crm-feedinfo">{{crmCustomersInfo}}</div>
+                    <!--关联的联系人-->
+                    <div class="crm-feedinfo">{{crmContactsInfo}}</div>
+                    <div class="item-func fn-clear">
+                        <div class="handle">
+
+                            <!--更多下拉菜单-->
+                            <div class="fl-fn-btn more">
+                                <div class="more-menu" style="display: none;">
+                                    {{morePendingW}}{{fnDeleteW}}{{fnUnplaceonfileW}}{{fnUnattentionW}}<a
+                                        href="javascript:;" class="aj-feed-fn-com-btn aj-forward">转发</a></div>
+                                <a href="javascript:;"> 更多 <i class="arrow"></i> </a>
+                            </div>
+                            <!--提醒下拉菜单-->
+                            {{feedRemind}}
+                            <!--抄送，修改审批人，待办，点评，回复，指令中回复，指令的回复，批复-->
+                            {{fnCcW}}{{fnModifyapprovalW}}{{fnPendingW}}{{fnCommentonW}}
+                            <!--赞-->
+                            {{islike}}
+                            {{fnReplyW}}{{fnWorkingReW}}{{fnWorkSendW}}{{fnApprovalW}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--feed下部回复部分-->
+        <div class="replay-section"></div>
+        <div class="detail-islike-list-warp"></div>
+        <div class="feed-reply list-repeat"></div>
+    </div></script><script type="text/html" class="preview-feed"><div class="fs-list-item preview">
+        <!--feed内容部分-->
+        <div class="feed-main-warp">
+            <!--feed头部头像时间等部分-->
+            <div class="item-top fn-clear">
+                <div class="item-face" feedid="{{feedID}}">
+                    <a href="#profile/=/empid-{{employeeID}}">
+                        <img src="{{listprofileImage}}" alt=""></a>
+                </div>
+                <div class="item-info">
+                    <div class="item-name">
+                        {{sendername}}{{feedRangeDescription}}
+                        <span>-</span>
+                        <span class="source">
+                            <a
+                                    href="javascript:;">{{feedTypeDescription}}</a>
+                        </span>
+                    </div>
+                    <div class="item-time">
+                        <span class="create-time">{{createTime}}</span>
+                        <span class="from-source">
+                            来自
+                            <a
+                                    href="javascript:;">{{sourceDescription}}</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--feed中部主内容部分-->
+            <div class="item-detail">
+                <div class="contnet-isencrypted {{onencrypted}}">
+                    <div class="isencrypted-tit">
+                        <img src="../../html/fs/assets/images/lock_red.png" alt=""/>
+                        {{isencryptedTit}}
+                    </div>
+                    <div class="isencrypted-con">
+                        <img src="../../html/fs/assets/images/info2.png" alt=""/>
+                        该信息已加密，
+                        <a
+                                href="javascript:;" class="feedlist-open-ecrypt aj-feed-fn-com-btn">点击解密查看</a>
+                    </div>
+                </div>
+                <div class="info-all-contnet {{onencrypted}}">
+                    <!-- FEED内容 -->
+                    <div class="item-text">
+
+                        <div class="content">
+                            <span class="feed-summary-text">{{feedFormatContent.summaryHtml}}</span>
+                            ## if(feedFormatContent.leftHtml.length>0){ ##
+                            <span class="feed-content-ellipsis">&#8230;</span>
+                            <br/>
+                            <br/>
+                            <a href="#" class="feed-content-visible-h">展开正文（共{{feedFormatContent.feedWordNum}}个字）</a>
+                            ## } ##
+                        </div>
+                    </div>
+
+                    <div class="item-func fn-clear">
+                        <div class="handle">
+                            {{fnReplyPre}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--feed下部回复部分-->
+        <div class="feed-reply list-repeat">
+            <div class="replyfn-item fn-clear">
+                <div class="t"> 添加回复&nbsp;…</div>
+                <div class="b fn-clear">
+                    <div class="l"><a href="#profile"> <img src="{{meProfileImage}}" alt="头像"></a></div>
+                    <dl class="r">
+                        <dd><textarea class="input-text" placeholder="添加回复..."></textarea></dd>
+                        <dd class="btnwarp">
+                            <span class="button-r">
+                                <button type="submit" class="button-green f-submit">回复</button>&nbsp;&nbsp;<button
+                                    type="submit" class="button-grey f-cancel">取消
+                            </button>
+                            </span>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="feed-reply-listwarp fn-clear"></div>
+        </div>
+    </div></script><script type="text/html" class="place-on-file-box"><div class="place-onfile-content">
+        <h1 class="ui-dialog-title">归档信息</h1>
+
+        <div class="place-onfile-bd">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="place-table">
+                <tr>
+                    <td width="66" valign="top">输入标签：</td>
+                    <td>
+                        <input type="text" class="input-text tagnamesel">
+                        <span class="input-help">单个标签最多12个字符或6个汉字，最多可以输入3个标签，标签之间用空格分割</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">我的标签：</td>
+                    <td class="aj-mytagnames"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td align="right" class="pr10">
+                        <button type="submit" class="button-green place-btn aj-pof-btn mr10">确定</button>
+                        <button type="submit" class="button-grey place-btn close-btn">取消</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div></script><div class="forward-box"><div class="forward-content"><h1 class="ui-dialog-title">转发</h1><div class="forward-warp"><div class="forward-help">提示：转发内容将作为原工作信息的回复内容</div><div class="aj-forwarder">添加转发人+</div><p><textarea rows="4" class="forward-text fwd-title" placeholder="添加内容……"></textarea></p><p class="forward-btnwarp"><button type="submit" class="button-green place-btn fwdsend-btn mr10">转发</button> <button type="submit" class="button-grey place-btn close-btn">取消</button></p></div></div></div><div class="pending-box"><div class="pending-content"><h1 class="ui-dialog-title">创建待办事项</h1><div class="pending-warp"><div class="aj-peder">齐述绪X +选择同事</div><textarea rows="1" placeholder="请填输入待办内容" class="input-text marg10 ped-title"></textarea><p class="pending-from marg10"><span class="frominfowarp">来自于<span class="ped-feedtype">分享</span>：“<a href="javascript:;" class="ped-feedContent"></a>”</span></p><div class="pending-btnwarp"><div class="is-important-wrapper"><label><input class="is-important" type="checkbox" name="is_important">重要事项</label></div><div class="dialog-buttonwrap"><button type="submit" class="button-green place-btn pedsend-btn mr10">创建待办</button> <button type="submit" class="button-grey place-btn close-btn">取消</button></div></div></div></div></div><div class="commenton-box"><div class="commenton-content"><h1 class="ui-dialog-title">点评日志</h1><div class="commenton-warp fn-clear"><div class="dialog-left"><p class="dialog-l-tit"><img src="../../html/fs/assets/images/clear.gif" alt="" width="30" height="30" class="name-img"> <span class="name">错误！</span>的日志原文(<span class="aj-ctime">4月28日</span>) <a href="javascript:;" class="look-history">收起历史日志&lt;&lt;</a></p><div class="comment-feedcontent"></div><p><textarea class="input-text daily-lb aj-commenton-replycontent" placeholder="添加回复..."></textarea></p><div class="aj-selectcommentoner selectcommentoner">+添加抄送人</div><p>评分<select class="commenton-select"><option value="5">五分：非常满意</option><option value="4">四分：超过预期</option><option value="3" selected="selected">三分：符合要求</option><option value="2">二分：不合格</option><option value="1">一分：严重批评</option></select></p><p class="commenton-btnwarp"><span class="send-message fn-hide"><input name="" type="checkbox" value="" class="aj-issend" id="is-sendms-ppf"><label for="is-sendms-ppf" class="form-label">立即发送短息信息到日志发出人的手机上</label></span> <span class="button-r"><button type="submit" class="button-green place-btn commentonsend-btn mr10">点评</button><button type="submit" class="button-grey place-btn close-btn">取消</button></span></p></div><div class="dialog-right"><p class="dialog-l-tit"><span class="user-info"><img src="../../html/fs/assets/images/clear.gif" alt="" width="30" height="30" class="name-img"> <span class="name">错误！</span></span> <a href="#" title="" class="change-user-l">换人</a> <span class="dialy-history"><i></i><span class="aj-histime">4月23日(星期二)</span><b></b></span></p><div class="daily-r aj-hisplanel"><div class="hisplanel-loading-icon"></div></div></div></div></div></div><script type="text/html" class="command-template"><div class="command-hd">
+        <div class="swr-action-tbar">
+            <label>确认结果：</label>
+            <button type="button" class="ml10 undone-btn button-green topbtn"
+                    style="padding:6px 15px;line-height:16px;">未完成<br/>继续执行
+            </button>
+            <button type="button" class="ml10 cancel-btn button-green topbtn"
+                    style="padding:6px 15px;line-height:16px;">取消指令<br/>转他人执行
+            </button>
+            <button type="button" class="ml10 done-btn button-green topbtn" style="padding:6px 15px;line-height:16px;">
+                已完成<br/>点评结果
+            </button>
+        </div>
+        <div class="rwr-action-tbar">
+            <label>回复指令：</label>
+            <button type="button" class="ml10 normal-btn button-green topbtn">普通回复</button>
+            <button type="button" class="ml10 complete-btn button-green topbtn">已完成，汇报结果</button>
+        </div>
+    </div>
+    <div class="command-bd fn-clear">
+        <div class="l">
+            <a href="#profile"><img src="{{profileImage}}" alt="头像"></a>
+        </div>
+        <dl class="r">
+            <dd>
+                <textarea class="input-text" placeholder="添加回复..."></textarea>
+
+                <div class="media"></div>
+                <div class="m-warp">
+                    <span class="tip">附件自动使用原指令的附件</span>
+
+                    <div class="media2"></div>
+                </div>
+            </dd>
+            <dd class="setother-wrapper">
+                <div>当上级给下属布置工作时，请使用指令功能。</div>
+                <table class="setother-table">
+                    <tr>
+                        <td width="140">1、选择指令执行人：</td>
+                        <td>
+                            <div class="copyto-wrapper">
+                                <div class="workto-sb"></div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2、选择指令完成时间：</td>
+                        <td>
+                            <span class="setother-selectdata selectdatawrap fn-left"></span>
+                            <span class="setother-selecttime selecttimewrap fn-right"></span>
+                        </td>
+                    </tr>
+                </table>
+            </dd>
+            <dd class="ccer">+添加抄送人</dd>
+            <dd class="rater">
+                评分：
+                <select class="rate" name="rate">
+                    <option value="5">五分：非常满意</option>
+                    <option value="4">四分：超过预期</option>
+                    <option selected="selected" value="3">三分：符合要求</option>
+                    <option value="2">二分：不合格</option>
+                    <option value="1">一分：严重批评</option>
+                </select>
+            </dd>
+            <dd class="btnwarp">
+                <span class="send-message fn-hide">
+                    <input name="" type="checkbox" value="" class="is-sendms" id="is-sendms-appyes"/>
+                    <label for="is-sendms-appyes" class="form-label">立即发送短信息到审批发出人和下一审批人的手机上</label>
+                </span>
+                <span class="button-r">
+                    <button type="submit" class="button-green f-submit">回复</button>&nbsp;&nbsp;<button type="submit"
+                                                                                                       class="button-grey f-cancel">
+                    取消
+                </button>
+                </span>
+            </dd>
+        </dl>
+    </div></script><script type="text/html" class="approve-template"><div class="approve-hd fn-clear">
+        <div class="l">
+            <span class="tit">批复意见：</span>
+            <button type="submit" class="ml10 button-green aj-appr-com aj-appr-yes aj-feed-fn-com-btn"
+                    style="vertical-align:middle;">同意
+            </button>
+            &nbsp;&nbsp;
+            <button type="submit" class="button-green aj-appr-com aj-appr-no aj-feed-fn-com-btn"
+                    style="vertical-align:middle;">不同意
+            </button>
+            &nbsp;&nbsp;
+            <button type="submit" class="button-green aj-appr-com aj-appr-re aj-feed-fn-com-btn "
+                    style="vertical-align:middle;">复议
+            </button>
+        </div>
+        <a href="javascript:void(0);" class="aj-feed-fn-com-btn aj-appr-history">查看历史</a>
+    </div>
+    <div class="approve-bd fn-clear">
+        <div class="l">
+            <a href="#profile"><img src="{{profileImage}}" alt="头像"></a>
+        </div>
+        <dl class="r">
+            <dd>
+                <textarea class="input-text" placeholder="添加回复...">同意。</textarea>
+
+                <div class="media"></div>
+            </dd>
+            <dd class="apper">+添加下一个审批人（一个）</dd>
+            <dd class="ccer">+添加抄送人</dd>
+            <dd class="btnwarp">
+                <span class="button-r">
+                    <button type="submit" class="button-green f-submit">批复</button>&nbsp;&nbsp;<button type="submit"
+                                                                                                       class="button-grey f-cancel">
+                    取消
+                </button>
+                </span>
+            </dd>
+        </dl>
+    </div></script><div class="approve-history-tpl"><div class="ui-dialog-title"><span class="user-name"></span>的历史审批</div><div class="ui-dialog-body"><div class="feed-list"></div></div></div><div class="announce-on-time-templet"><div class="ui-dialog-title">设置公示期</div><div class="ui-dialog-body"><div class="fn-clear mt10"><div class="tit">公示期：</div><select name="" class="selectlist" style="height: 24px"><option value="1">一天</option><option value="2" selected="selected">三天</option><option value="3">一周</option><option value="4">二周</option><option value="12">自定义时间...</option></select><div class="selecttimediv">选择日期</div></div><div class="ui-dialog-bbar fn-clear mt10"><div class="add-worktodo-actions fn-right"><button type="button" class="f-sub button-green mr10">确定</button> <button type="reset" class="button-gray f-cancel">取消</button></div></div></div></div><div class="print-preview-tpl"><div class="ui-dialog-title">打印预览</div><div class="ui-dialog-body"><div class="preview-mask"></div></div><div class="ui-dialog-bbar"><div class="ui-dialog-bbar-inner"><button class="f-sub button-green mr10" type="button">打印</button> <button class="f-cancel button-gray" type="button">取消</button></div></div></div><div class="feedlocationfn-equipment-tpl"><div class="equipment-arrow"></div><div class="equipment-titwarp"><a href="javascript: ;" class="equipment-tit-account cur">帐号信息</a><a href="javascript: ;" class="equipment-tit-equipment">设备信息</a></div><div class="equipment-topinfo"><span class="ml10">该帐号共使用<b class="red topinfo-cont">1</b>个设备进行过签到（最近30次）</span></div><div class="equipment-listwarp"></div><div class="equipment-bottominfo fn-clear"><div class="equipment-bottominfo-l"><span class="employee-name-info">帐号：王威</span></div><div class="equipment-bottominfo-r equipment-pagewarp"><button class="equipment-btn-l">&lt;</button><select class="equipment-select-btn"><option value="1">第1页</option><option value="2">第2页</option><option value="3">第3页</option><option value="4">第4页</option><option value="5">第5页</option></select><button class="equipment-btn-r">&gt;</button></div></div></div>

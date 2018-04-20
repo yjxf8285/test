@@ -1,0 +1,9 @@
+ .entnetworkdisk .tpl-c{
+    width:80%;
+}
+.entnetworkdisk .tpl-c .tpl-inner {
+    min-height: 0;
+}
+.entnetworkdisk .entnetworkdisk-left-bot{
+    margin-top:20px;
+}

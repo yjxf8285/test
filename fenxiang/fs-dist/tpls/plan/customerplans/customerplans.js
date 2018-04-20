@@ -1,0 +1,6 @@
+/**
+ * 纷享页面逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-09-02
+ */
+define("tpls/plan/customerplans/customerplans",["util","modules/feed-list/feed-list","../plan-common","moment","../plan-common.html"],function(a,b){var c=window,d=c.FS,e=d.tpl,f=(e.store,e.event),g=(a("util"),a("modules/feed-list/feed-list")),h=a("../plan-common");b.init=function(){var a,c=b.tplName,d=b.tplEl,e=$(".feed-list",d),i=$(".feed-list-pagination",d),j=$(".filter",d),k=$(".plan-type",j),l=$(".business-tag-id",j),m=$(".search-inp",d),n=$(".search-btn",d);h.init(d,c),a=new g({element:e,pagSelector:i,pagOpts:{pageSize:45,visiblePageNums:7},loadSize:15,listPath:"/FeedPlan/GetFeedPlanOfIReceive",defaultRequestData:function(){var a=$(".filter-field",k).filter(".depw-tabs-aon").attr("val"),b=$(".filter-field",l).filter(".depw-tabs-aon").attr("val");return{keyword:_.str.trim(m.val()),businessTagID:b,planType:a}},searchOpts:{inputSelector:m,btnSelector:n}}),n.click(function(b){a.reload(),b.preventDefault()}),j.on("click",".filter-field",function(b){var c=$(this),d=c.closest(".filter-box");$(".filter-field",d).removeClass("depw-tabs-aon"),c.addClass("depw-tabs-aon"),a.reload(),b.preventDefault()});var o=function(){a.destroy()};f.one("beforeremove",function(a){a==c&&o()}),a.reload()}});

@@ -1,0 +1,41 @@
+<div class="fs-preview-info">
+	<div class="fs-preview-user fn-clear">
+		<div class="avater-wrapper"><img src="{{avaterPath}}" alt="{{userName}}"></div>
+		<div class="user-info">
+			<h3 class="user-name">{{userName}}-<span class="feed-range">{{feedRangeTip}}</span></h3>
+			<div class="create-time">{{createTime}}</div>
+		</div>
+	</div>
+	<div class="fs-preview-info-content">{{feedContent}}</div>
+	<div class="fs-preview-reply">
+		<div class="fs-preview-reply-tbar fn-clear">
+			<div class="create-time color-999999">{{createTime}}</div>
+			<div class="reply-btn-wrapper"><a class="reply-l" href="javascript:;">回复<span class="reply-counts">{{replyCounts}}</span></a></div>
+		</div>
+		<form action="#" class="reply-form">
+			<div class="f-field">
+				<textarea name="reply" class="reply-input" placeholder="回复原文"></textarea>
+			</div>
+			<div class="f-actions">
+				<button type="submit" class="f-sub">提交</button>
+			</div>
+		</form>
+		<ul class="fs-preview-reply-list">
+			##_.each(replyItems,function(item){ ##
+				<li class="fs-preview-reply-item">
+					<div class="fs-preview-reply-main fn-clear">
+						<div class="reply-avater-wrapper">
+							<img src="{{item.avaterPath}}" alt="{{item.userName}}">
+						</div>
+						<div class="reply-content-wrapper">
+							<em class="user-name">{{item.userName}}:</em><span class="reply-content">{{item.replyContent}}</span><span class="create-time">({{item.createTime}})</span>
+						</div>
+					</div>
+					<div class="fs-preview-reply-ft">
+						<a href="javascript:;" class="reply-l">回复</a>
+					</div>
+				</li>
+			## }); ##
+		</ul>
+	</div>
+</div>

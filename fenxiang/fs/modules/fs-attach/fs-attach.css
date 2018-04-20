@@ -1,0 +1,220 @@
+
+/*2013-6-5 BY haibo 图片和附件模块*/
+.fs-img-item-thumb-wrapper{position:relative;cursor:pointer;
+	border:#949494 solid 1px;
+	width:150px;
+	height:112px;
+	padding:3px;
+	text-align:center;
+	display:table;
+	line-height:110px;
+	background-color:#ffffff;
+}
+.fs-img-item{
+	float:left;
+    margin:25px 0 0 27px;
+    width:153px;
+    height:160px;
+	_display:inline;
+	position:relative;
+	z-index:2;
+}
+.fs-img-item-thumb{
+	position:relative;
+	z-index:1;
+	background-color:#ffffff;
+	vertical-align:middle;
+	_margin-top:expression((112 - this.height )/2);/*让IE6垂直对齐 */
+}
+.img-list{padding-bottom:15px;}
+.fs-attach-item,
+.fs-audio-item{width:210px;height:56px;padding:4px;border:transparent solid 1px;_border-color:#ffffff;
+    float:left;
+    margin:25px 0 0 27px;
+	_display:inline;
+	overflow:hidden;
+    position: relative;
+}
+.fs-img-list-inner,
+.fs-attach-list-inner,
+.fs-audio-list-inner{*position:relative;}/*解决ie6、7 margin-left失效问题*/
+
+.fs-attach-item:hover,
+.fs-audio-item:hover{cursor:pointer;
+    border:#b8d6fb solid 1px;border-radius:2px;cursor:pointer;
+    background:-webkit-gradient(linear,0% 0%,0% 100%,from(#fafcfd),to(#ebf2fc));
+    background: -moz-linear-gradient(top, #fafcfd, #ebf2fc);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafcfd', endColorstr='#ebf2fc');
+    background:-o-linear-gradient(top, #fafcfd, #ebf2fc);
+    background: linear-gradient(top, #fafcfd, #ebf2fc);
+	background: linear-gradient(to bottom, #fafcfd, #ebf2fc);
+}
+
+.fs-attach-item .fs-attach-item-thumb{margin-right:5px;width:32px;height:50px;}
+.fs-attach-item .fs-attach-item-thumb img.fs-attach-item-icon{width:30px;height:30px;}
+.fs-attach-item .fs-attach-item-title{color:#333333;display:block;overflow:hidden;word-break:break-all;height:35px;overflow:hidden;}
+.fs-attach-item .fs-attach-item-summary,
+.fs-img-item .fs-img-item-summary{color:#afafaf;display:block;}
+.fs-attach-item .fs-attach-item-summary{height:20px;overflow:hidden;}
+
+.fs-audio-item .fs-audio-item-thumb{margin-right:5px;width:32px;height:50px;}
+.fs-audio-item .fs-audio-item-thumb img.fs-audio-item-icon{width:30px;height:30px;}
+.fs-audio-item .fs-audio-item-title{color:#333333;display:block;overflow:hidden;word-break:break-all;height:35px;overflow:hidden;}
+.fs-audio-item .fs-audio-item-summary{color:#afafaf;display:block;}
+.fs-audio-item .fs-audio-item-summary{height:20px;overflow:hidden;}
+/* 附件预览 start */
+.ui-preview-info-attach{
+
+}
+
+/* 附件预览 end */
+
+/* 文件阅读器 start */
+.fs-attach-file-reader{
+    overflow: hidden;
+}
+.fs-attach-file-reader .file-reader-tbar{
+    position: relative;
+    z-index: 10;
+    height:40px;
+    border-top:1px solid #a9aaac;
+    border-bottom: 1px solid #717578;
+    -moz-box-shadow:1px 2px 3px #777777;
+    -webkit-box-shadow:1px 2px 3px #777777;
+    box-shadow:1px 2px 3px #777777;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f1f2f4), to(#dfe0e2));
+    background: -moz-linear-gradient(top,  #f1f2f4,  #dfe0e2);
+    background: -o-linear-gradient(top, #f1f2f4, #dfe0e2);
+    background: linear-gradient(to bottom, #f1f2f4, #dfe0e2);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f2f4', endColorstr='#dfe0e2');
+}
+.fs-attach-file-reader .file-reader-body{
+    height:100%;
+    margin-top: -42px;
+    background: #cacdd2;
+    padding:0 2px 2px 2px;
+}
+.fs-attach-file-reader .file-reader-body-inner{
+    height:100%;
+    border:1px solid #96999e;
+    background: #cacdd2;
+    position: relative;
+    top:-3px;
+}
+.fs-attach-file-reader .file-reader-body-inner-inner{
+    padding-top:42px;
+}
+.fs-attach-file-reader .file-reader-content{
+    /*width:798px;*/
+    margin:0 auto;
+}
+.fs-attach-file-reader .file-reader-tbar .file-name{
+    position: absolute;
+    left:15px;
+    top:10px;
+    color:#616161;
+}
+.fs-attach-file-reader .file-reader-tbar .action{
+    position: absolute;
+    right:15px;
+    top:5px;
+}
+.fs-attach-file-reader .file-reader-tbar .action a,
+.fs-attach-file-reader .file-reader-tbar .action a:hover,
+.fs-attach-file-reader .file-reader-tbar .action a:visited{
+    color:#000000;
+    font-size:16px;
+}
+.fs-attach-file-reader .file-reader-tbar .file-reader-content{
+    position: relative;
+    max-width: 90%;
+}
+.fs-attach-file-reader .pagination-wrapper{
+    text-align: center;
+    line-height: 40px;
+    height:40px;
+}
+.fs-attach-file-reader .download-l{
+    display: block;
+    position: absolute;
+    right:0;
+    top:10px;
+    height:20px;
+    color:#616161;
+    text-decoration: none;
+    padding-left:25px;
+    background: url(../../assets/images/preview-download.png) no-repeat;
+}
+.fs-attach-file-reader .current-page-num{
+    width:28px;
+    height:18px;
+    padding:0 5px;
+    border:1px solid #6b7073;
+}
+.fs-attach-file-reader .pagination-nav{
+    cursor: pointer;
+}
+.fs-attach-file-reader .pagination-wrapper .nav-l{
+    width:20px;
+    height:20px;
+    background: url(../../assets/images/preview-forward.png) no-repeat;
+    vertical-align: middle;
+}
+.fs-attach-file-reader .pagination-wrapper .nav-r{
+    width:20px;
+    height:20px;
+    background: url(../../assets/images/preview-backward.png) no-repeat;
+    vertical-align: middle;
+}
+.fs-attach-file-reader .page-list-wrapper{
+    overflow: auto;
+    background: url(../../assets/images/loading.gif) no-repeat center center;
+}
+.fs-attach-file-reader .page-list{
+    padding:8px 8px 0 8px;
+}
+.fs-attach-file-reader .page-item{
+    /*width:780px;*/
+    margin: 0 auto 10px auto;
+    border:1px solid #737277;
+    -webkit-box-shadow: #777777 0px 0px 8px;
+    -moz-box-shadow: #777777 0px 0px 8px;
+    box-shadow: #777777 0px 0px 8px;
+    background: #ffffff url(../../assets/images/loading.gif) no-repeat center center;
+}
+.fs-attach-file-reader .page-item img{
+    vertical-align: top;
+    background: transparent;
+}
+.fs-attach-file-reader .overflow-hidden{
+    overflow: hidden;
+}
+.fs-attach-file-reader .page-box{
+    background: #ffffff;
+}
+/* 文件阅读器 end */
+.fs-img-item-lockapv,
+.fs-attach-item-lockapv,
+.fs-audio-item-lockapv{position:absolute;left:0px;top:0px;border:1px solid #949494;background-color:#f1f1f1;width:156px;height:118px;z-index:1;}
+.fs-img-item-lockapv .lockapv-title,
+.fs-attach-item-lockapv .lockapv-title,
+.fs-audio-item-lockapv .lockapv-title{position:absolute;left:5px;top:35px;padding-left:20px;background:url(../../assets/images/menu/lock_red.png) no-repeat left;}
+.fs-img-item-lockapv .lockapv-open,
+.fs-attach-item-lockapv .lockapv-open,
+.fs-audio-item-lockapv .lockapv-open{position:absolute;right:5px;bottom:5px;padding-left:20px;background:url(../../assets/images/info2.png) no-repeat left;}
+.fs-img-item-lockapv{
+    width:156px;
+    height:118px;
+}
+.fs-attach-item-lockapv,
+.fs-audio-item-lockapv{
+    width:100%;
+    height:100%;
+    border:none;
+}
+.fs-attach-item-lockapv .lockapv-title,
+.fs-audio-item-lockapv .lockapv-title{
+    top:10px;
+}
+/*图片集 背景框*/
+.fs-img-item .fpt-group:before{content: "";border:#949494 solid 1px;display:inline-block;width:153px;height:115px;position:absolute;left:-3px;top:-3px;z-index:-1;}

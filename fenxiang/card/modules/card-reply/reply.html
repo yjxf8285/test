@@ -1,0 +1,91 @@
+<script type="text/html" class="feed-reply-tpl">
+    <div class="reply-header-wrapper">
+        <div class="reply-title"></div>
+        <div class="reply-tbar">
+            <div class="employee-ranges employee-ranges-ellipsis">
+                <span class="employee-ranges-content"></span><span class="visible-arrow visible-arrow-down"></span>
+            </div>
+        </div>
+        <div class="reply-header">
+
+        </div>
+    </div>
+    <div class="reply-body">
+        <ul class="reply-list fn-hide">
+
+        </ul>
+        <div class="reply-loading fn-hide"></div>
+        <div class="reply-list-status-bar fn-hide">
+
+        </div>
+    </div>
+</script>
+<script type="text/html" class="feed-reply-input-tpl">
+    <div class="input-box">
+        <div class="input-box-shown fn-clear fn-hide">
+            <div class="avatar-wrapper fn-left">
+                <img src="{{loginUserAvatar}}" alt="" class="login-user-avatar"/>
+            </div>
+            <div class="box-r fn-left">
+                <div class="input-wrapper">
+                    <fieldset>
+                        <textarea class="reply-input" placeholder="添加回复..."></textarea>
+                    </fieldset>
+                </div>
+                <div class="media"></div>
+                <div class="f-actions">
+                    <button type="button" class="f-sub button-submit">回复</button>
+                    &nbsp;&nbsp;
+                    <button type="button" class="f-cancel button-cancel">取消</button>
+                </div>
+            </div>
+        </div>
+        <div class="input-box-hidden">
+            <span class="placeholder-text">添加回复&nbsp;&#8230;</span>
+        </div>
+    </div>
+</script>
+<script type="text/html" class="feed-reply-item-tpl">
+    <li class="reply-item" data-feedreplyid="{{feedReplyID}}">
+        <div class="reply-content-wrapper fn-clear">
+            ## if(approveActionCls){ ##
+            <div class="approve-action-wrapper fn-left">
+                <img src="{{blankImgSrc}}" alt="" class="approve-action-icon {{approveActionCls}}"/>
+            </div>
+            ## } ##
+            <div class="avatar-wrapper fn-left">
+                <a href="#profile/=/empid-{{employeeID}}"><img src="{{employeeAvatar}}" alt="" class="employee-avatar"/></a>
+            </div>
+            ## if(approveActionCls){ ##
+            <div class="reply-content-inner reply-content-inner-with-aa fn-left">
+                ## }else{ ##
+                <div class="reply-content-inner fn-left">
+                    ## } ##
+                    <div class="reply-content-text">
+                        <label class="employee-name"><a
+                                href="#profile/=/empid-{{employeeID}}">{{employeeName}}</a>:</label>
+                    <span class="reply-content">
+                        <span class="reply-summary-text">{{replyFormatContent.summaryHtml}}</span>
+                    ## if(replyFormatContent.leftHtml.length>0){ ##
+                    <span class="reply-content-ellipsis">&#8230;</span><br/><br/><a href="#"
+                                                                                    class="reply-content-visible-h">展开正文，（共{{replyFormatContent.feedWordNum}}个字）</a>
+                    ## } ##
+                    </span><span class="reply-mark">（<span class="create-time">{{createTime}}</span>## if(replyStateDesc){ ##<span
+                            class="reply-state-desc">，{{replyStateDesc}}</span>## } ## ## if(replySource){ ##<span
+                            class="reply-source">，来自{{replySource}}</span>## } ## ）</span>
+                    </div>
+                    <div class="reply-content-audio"></div>
+                    <div class="reply-content-img"></div>
+                    <div class="reply-content-file"></div>
+                </div>
+            </div>
+            <div class="reply-to-reply">
+
+            </div>
+            <div class="fn-btn-warp">
+                {{islike}}
+                <a href="javascript:;" class="open-reply-btn">回复</a>
+            </div>
+            <!--</div>注释掉因为ie7会有问题-->
+    </li>
+</script>

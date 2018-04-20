@@ -1,0 +1,124 @@
+<!-- 企信列表的模板 -->
+<script type="text/html" class="fs-shortmessage-send-item-tpl">
+<div class="item-face" sessionid="{{sessionId}}">
+    {{newico}}<img src="{{profileImageUrl}}" alt="">
+</div>
+<div class="item-detail">{{content}}
+  <div class="bottom-content fn-clear">
+    <div class="bottom-content-l">
+      <span class="bottom-content-time">{{lastCreateTime}}</span>
+      <span class="bottom-content-fromName">来自<a href="#shortmessage/showsession/=/id-{{sessionId}}" title="{{sessionName}}">{{sessionName}}</a></span>
+    </div>
+    <div class="bottom-content-r">
+      <span>
+        <a href="javascript:;" class="shortcut-reply-l js-qx-quick-reply" data-sessionid="{{sessionId}}">快速回复</a> <i class="vline">|</i>
+        <a href="javascript:;" class="shortcut-del-btn" data-sessionid="{{sessionId}}" data-sessiontype="{{sessionType}}">删除</a>
+      </span>
+    </div>
+  </div>
+</div>
+</script>
+<script type="text/html" class="fs-shortmessage-text-tpl">
+    <div class="item-info">
+        <a href="#profile/=/empid-{{senderId}}">{{senderName}}</a>&nbsp;&nbsp;说：{{content}}
+    </div>
+</script>
+<script type="text/html" class="fs-shortmessage-systemTextPrompt-tpl">
+    <div class="item-info">{{content}}</div>
+</script>
+<script type="text/html" class="fs-shortmessage-audio-tpl">
+    <div class="item-info">
+        <a href="#profile/=/empid-{{senderId}}">{{senderName}}</a>&nbsp;&nbsp;说：
+    </div>
+    <div class="session-attachs">
+        <div class="audio-box" data-src="{{File}}" data-duration="{{Duration}}"></div>
+    </div>
+</script>
+<script type="text/html" class="fs-shortmessage-image-tpl">
+    <div class="item-info">
+        <a href="#profile/=/empid-{{senderId}}">{{senderName}}</a>&nbsp;&nbsp;说：
+    </div>
+    <div class="session-attachs">
+        <div class="fs-list-item">
+            <div class="item-media">
+                <div class="feed-img-only">
+                    <div class="feed-img-thumb img-num" data-Thumbnail="{{Thumbnail}}" data-HDImg="{{HDImg}}" data-Image="{{Image}}" data-name="{{fileName}}">
+                        <img class="feed-img-item" src="{{ThumbnailUrl}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/html" class="fs-shortmessage-emotion-tpl">
+    <div class="item-info fn-clear">
+        <div class="fn-left">
+            <a href="#profile/=/empid-{{senderId}}"> {{senderName}} </a>&nbsp;&nbsp;说：
+        </div>{{content}}
+    </div>
+</script>
+<script type="text/html" class="fs-shortmessage-news-tpl">
+    <div class="item-info">
+        <a href="#profile/=/empid-{{senderId}}">{{senderName}}</a>&nbsp;&nbsp;说：
+    </div>
+</script>
+<script type="text/html" class="fs-shortmessage-webPage-tpl">
+    <div class="item-info">
+        <a href="#profile/=/empid-{{senderId}}">{{senderName}}</a>&nbsp;&nbsp;说：
+    </div>
+</script>
+<script type="text/html" class="fs-shortmessage-systemPrompt-tpl">
+    <div class="item-info">
+        <a href="#profile/=/empid-{{senderId}}">{{senderName}}</a>&nbsp;&nbsp;{{content}}
+    </div>
+</script>
+<script type="text/html" class="fs-shortmessage-document-tpl">
+    <div class="item-info">
+        <a href="#profile/=/empid-{{senderId}}">{{senderName}}</a>&nbsp;&nbsp;说：
+    </div>
+    <div class="session-attachs">
+        <div class="item-media">
+            <div class="feed-files feed-attach fn-clear">
+                <dl>
+                    <dt class="fs-attach-{{FileType}}-icon attach-icon"></dt>
+                    <dd>
+                        <p>{{Name}}({{Size}})</p>
+
+                        <p>
+                            <a href="{{DownloadUrl}}" class="d" title="" target="_blank">下载</a>
+                            ## if(Prv){ ##
+                            <a href="javascript:void(0)" class="attach-preview-l v" data-name="{{Name}}" data-file="{{File}}">预览</a>
+                            ## } ##
+                        </p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/html" class="fs-shortmessage-location-tpl">
+    <div class="item-info">
+        <a href="#profile/=/empid-{{senderId}}">{{senderName}}</a>&nbsp;&nbsp;说：
+    </div>
+    <div class="feed-location"><img src="../../html/fs/assets/images/feedlocation_ico.gif" alt="" class="feed-location-ico"><span class="feed-location-text">{{Text}}</span><span class="feed-location-fn"><a action-data="latitude={{Latitude}}&longitude={{Longitude}}&address={{Text}}&createTime={{messageTime}}" href="javascript:void(0)" class="feed-location-fn-map">显示地图</a> |</span></div>
+</script>
+<script type="text/html" class="fs-shortmessage-remind-tpl">
+    <div class="item-info">
+        <a href="#profile/=/empid-{{senderId}}">{{senderName}}</a>&nbsp;&nbsp;说：
+    </div>
+</script>
+<script type="text/html" class="fs-shortmessage-workNotice-tpl">
+    <div class="item-info">
+        <a href="#profile/=/empid-{{senderId}}">{{senderName}}</a>&nbsp;&nbsp;说：<span class="worknotice-content-wrap" data-id="{{feedid}}">[群通知]{{title}}</span>
+    </div>
+</script>
+<script type="text/html" class="fs-shortmessage-linkWorkItem-tpl">
+    <div class="session-content">
+        <a href="#profile/=/empid-{{senderId}}">{{senderName}}</a>&nbsp;&nbsp;说：<span class="workItem-content-wrap" data-id="{{feedid}}">[{{title}}]{{desc}}</span>
+    </div>
+</script>
+<script type="text/html" class="fs-shortmessage-linkWorkSchdule-tpl">
+    <div class="session-content">
+        <a href="#profile/=/empid-{{senderId}}">{{senderName}}</a>&nbsp;&nbsp;说：<span class="workSchdule-content-wrap" data-id="{{feedid}}">[{{title}}]{{desc}}</span>
+    </div>
+</script>

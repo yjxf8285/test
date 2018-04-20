@@ -1,0 +1,6 @@
+/**
+ * 纷享页面逻辑
+ * @Author: 纷享网页前端部
+ * @Date: 2014-11-03
+ */
+define("tpls/shortmessage/showsession/showsession",["util","../shortmessage-common","moment","../shortmessage-common.html","modules/fs-qx/fs-showsession-list"],function(a,b){var c=window,d=c.FS,e=d.tpl,f=(e.store,e.event),g=a("util"),h=a("../shortmessage-common"),i=a("modules/fs-qx/fs-showsession-list"),j=0,k=null;b.init=function(){var a=b.tplName,c=b.tplEl,d=$(".session-list",c),e=$(".session-list-pagination",c),l=$(".nav-info .session-title",c),m=new i({element:d,pagSelector:e,listPath:"/V3Messenger/HistoricalViewMessages",searchOpts:{},defaultRequestData:function(){var a=g.getTplQueryParams(),b=a?a.id:0;return j=b,{sessionId:b}},listCb:function(a){a.success&&(k=a.value.sessionCategory,l.html(a.value.sessionName))},listEmptyText:"当前会话内没有对话"});h.init(c,a),c.on("click",".clear-session-btn",function(){return k&&j?(g.confirm("你确定要清空该对话的所有信息吗？","提示",function(){m.emptyToService(j,k)},{onCancel:function(){},width:338}),void 0):!1});var n=!0;f.on("switched",function(b){b==a&&(n?(n=!1,m.load()):m.reload())})}});

@@ -1,0 +1,39 @@
+.reportrecord-title{
+    border-bottom: 1px solid #d8d8d8;
+    font-family: "Microsoft Yahei",serif;
+    overflow: hidden;
+    padding-bottom: 14px;
+    width: 100%;
+}
+.reportrecord-title .l{
+    float: left;
+}.reportrecord-title .r{
+    float: right;
+}
+.reportrecord-title-info{
+}
+.reportrecord-title-info h2{
+	font-size: 17px;
+	color:#555;
+}
+.reportrecord-title-info p{
+	color: #afafaf;
+	padding-top: 10px;
+}
+.reportrecord-list {
+}
+.reportrecord-page{
+	float: right;
+    padding-top: 14px;
+}
+.reportdata-main-list-talbe-topfnwarp{
+    background: #F6F7F8;
+    padding:10px 20px;
+    border:solid 1px #d8d8d8;
+    border-bottom: none;
+}
+.reportdata-main-list-talbe-topfnwarp .l{
+    float: left;
+}.reportdata-main-list-talbe-topfnwarp .r{
+     float: right;
+ }

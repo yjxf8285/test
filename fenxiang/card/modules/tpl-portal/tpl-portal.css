@@ -1,0 +1,147 @@
+/*plan dialog start*/
+.plan-bat-remark-dialog .ui-dialog-text{
+    padding:15px 15px 10px;
+}
+.plan-bat-remark-dialog .ui-dialog{
+    border: #9aa8b4 solid 1px;
+    padding:1px;
+    background-color:inherit;
+}
+.rph-textarea{width:400px;height:90px;padding:4px;border:#c6c6c6 solid 1px;}
+.rph-list-wrap{padding:10px;}
+.rph-list-wrap .rph-list-table{width:100%;}
+.rph-list-wrap .rph-list-table td{line-height:30px;}
+.rph-list-wrap .rph-list-table td input{vertical-align:middle;}
+.rph-btn-wrap{position:relative;height:30px;padding-top:3px;}
+.rph-btn-wrap .rph-check-wrap input{vertical-align:middle;}
+.rph-btn-wrap button{position:absolute;top:0;right:0;}
+.rph-btn-wrap button.button-green{right:78px;}
+/*plan dialog end*/
+
+/*search.html*/
+.center-search-wrap{padding:16px;}
+.search-inp-s{border:#d3d3d3 solid 1px;height:27px;line-height:27px;padding-left:5px;width:448px;margin-right:16px;vertical-align:middle;}
+.search-btn-s{height:29px;line-height:29px;width:72px;border:0;vertical-align:middle;cursor:pointer;background-color:#66BB55;color:#fff;
+/*box-shadow:1px 1px 1px #ffffff inset,-1px -1px 1px #ffffff inset;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#dddddd));
+    background: -moz-linear-gradient(top,  #f6f6f6,  #dddddd);
+    background: -o-linear-gradient(top, #f6f6f6, #dddddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#dddddd');
+    background: linear-gradient(to bottom, #f6f6f6, #dddddd);*/
+}
+.left-bot-line{border-bottom:#ebebeb dashed 1px;height:0;overflow:hidden;margin-right:0px;}
+.search-remind{display:block;background-color:#fffddd;border:#f8f3d6 solid 1px;color:#bb861c;padding-left:16px;height:28px;line-height:28px;position:relative;}
+.search-remind a.sr-close{position:absolute;right:16px;top:0px;color:#ca9766;text-decoration:none;}
+
+#search-attachs .tpl-c,#search-colleagues .tpl-c,#search-images .tpl-c,#search-audios .tpl-c{width:914px;}
+#search-attachs .search-inp-s,#search-colleagues .search-inp-s,#search-images .search-inp-s,
+#search-audios .search-inp-s{width:784px;}
+
+a.tpl-nav-lcustom{font-weight:bold;}
+a.tpl-nav-lcustom:hover{background-color:#ffffff;text-decoration:underline;}
+
+.custom-send-person,.custom-data-range{padding-left:10px;color:#969696;}
+.custom-send-person .csp-user{}
+.custom-send-person .csp-remind{padding:5px 0 5px 36px;}
+.custom-send-person .csp-button{padding-left:36px;}
+.csp-input{border:#6e8193 solid 1px;width:90px;height:20px;line-height:20px;vertical-align:middle;}
+.csp-btn-search{padding:0 10px;*overflow:visible;height:25px;line-height:25px;border:#c1c1c1 solid 1px;border-radius:3px;vertical-align:middle;cursor:pointer;box-shadow:1px 1px 1px #ffffff inset,-1px -1px 1px #ffffff inset;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#dddddd));
+    background: -moz-linear-gradient(top,  #f6f6f6,  #dddddd);
+    background: -o-linear-gradient(top, #f6f6f6, #dddddd);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#dddddd');
+    background: linear-gradient(to bottom, #f6f6f6, #dddddd);}
+.csp-btn-reelect{margin-left:3px;}
+
+.custom-data-range .cdr-remind{padding-left:25px;}
+.custom-data-range .cdr-button{padding-left:25px;}
+
+.custom-data-range .cdr-from,
+.custom-data-range .cdr-to,
+.custom-data-range .cdr-remind,
+.custom-data-range .cdr-button{margin-bottom:5px;}
+
+#stream-votes .department-wrapper .home-center-list .search-wrap{top:-45px;}
+
+#stream-archivetag .tag-filter-result{
+    display: none;
+    padding:0 16px;
+	background-color:#f5f5f5;
+	border:#d8d8d8 solid 1px;
+	border-bottom:#ebebeb solid 1px;
+	border-top:none;
+	line-height:32px;
+	height:32px;
+}
+.pldp_tdimg_head{vertical-align:middle;margin-right:8px;}
+
+#btn-new-create{position:absolute;left:0px;top:0px;}
+
+/* 我的话题 start */
+.stream-mytopics .topic-list-tbar{
+    padding:0 20px;
+}
+/* 我的话题 end */
+
+/* 企信列表 start */
+.shortmessage .tpl-summary{
+    border-bottom: 1px solid #EBEBEB;
+    background: #fff;
+}
+.shortmessage-showsession .nav-info{
+    padding:20px;
+    border-top:1px solid #EBEBEB;
+    border-bottom:1px dotted #EBEBEB;
+	word-wrap: break-word;
+    word-break: break-all;
+}
+.shortmessage-showsession .nav-info .nav-info-l{
+    float: left;
+}
+.shortmessage-showsession .nav-info .nav-info-r{
+    float: right;
+}
+/* 企信列表 end */
+.worktodo-list .separator{color:#E4E4E4;}
+
+.home-right-content .work-mtr-width{width:140px;
+/*overflow:hidden;white-space:nowrap;text-overflow:ellipsis;display:inline-block;*/
+}
+
+.right-list-notext{padding-left:0px;line-height:20px;}
+
+.department .tpl-r .home-right-content .circle-name{
+    display: inline-block;
+
+}
+#circles-allcolleague .tpl-c .tpl-inner{border-left:none;}
+#circles-allcolleague .tpl-l .tpl-inner{/*border-right:1px solid #EBEBEB;*/min-height:900px;}
+#circles-allcolleague .tpl-c{width:914px;}
+#circles-allcolleague .depw-tabs{margin:0px;}
+#circles-allcolleague .depw-tabs .search-wrap{right:20px;top:28px;}
+#stream-votes .votes-fmenu-swrap{position:relative;}
+#stream-votes .votes-fmenu-swrap .search-wrap{position:absolute;right:16px;top:5px;}
+
+.department .work-performance-manage-l,
+.department .locations-statistics-l,
+.department .plan-statistics-l{
+    background: transparent url("../../assets/images/menu/lock_gray.png") no-repeat 190px 4px;
+}
+
+.department .plan-nav-list,
+.department .work-nav-list,
+.department .approve-nav-list,
+.department .circles-nav-list,
+.department .search-nav-list,
+.department .search-colleagues-nav-list,
+.department .search-include-nav-list{border-top:#e8e8e8 solid 1px;padding:16px 0;margin-top:10px;}
+
+.department .planr-my-list-wrap,
+.department .planr-ups-list-wrap,
+.department .workr-do-list-wrap,
+.department .workr-my-list-wrap,
+.department .workr-ups-list-wrap,
+.department .approver-my-list-wrap,
+.department .approver-ups-list-wrap{padding:16px;}
+
+.department .tpl-c .ui-tab-trigger-wrapper{border-radius:0 0 3px 3px;border:#d8d8d8 1px solid;border-top:none;}

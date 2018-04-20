@@ -1,0 +1,158 @@
+.p-arv-bg{
+    .img-retina("@{image-base-url}/bg.png", "@{image-base-url}/bg.retina.png", 125px, 53px);
+}
+
+.p-arv {
+   .arv-l {
+       background:#fff;
+       border-bottom:1px #ccc solid;
+       table{
+           width: 100%;
+           tr {
+              td {
+                vertical-align: middle;
+              }
+              &.hover {
+                background-color: red;
+              }
+              .list-state {
+                  width: 40px;
+                  padding: 8px 13px;
+                  font-size: 0.7rem;
+                  i {
+                      display: block;
+                      &:extend(.p-arv-bg);
+                  }
+                  span{
+                      display: block;
+                      text-align: center;
+                  }
+              }
+              .list-info {
+                   padding:14px 0;
+                   border-bottom: 1px #ccc solid;
+                   p:first-child{
+                        width: 100%;
+                        font-size: 1rem;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        -webkit-text-overflow: ellipsis;
+                        overflow: hidden; 
+                   }
+                   p:last-child{
+                       padding-top: 2px;
+                       font-size: 0.8rem;
+                       color: #b6b9c4;
+                   }
+               }
+               &:last-child{
+                 .list-info{
+                    border-bottom: none;
+                 }
+               }
+           }
+           
+           /*待审核*/
+           .list-trwait{
+               .list-state {
+                   i {
+                       background-position:-100px 0px;
+                       height: 3px;
+                       width: 16px;
+                       margin:11px auto;
+                   }
+               }
+           }
+           /*已通过*/
+           .list-trpass {
+               .list-state{
+                   i{
+                       background-position:-110px -25px;
+                       width: 11px;
+                       height: 8px;
+                       margin: 9px auto;
+                   }
+               }
+           }
+           /*驳回*/
+           .list-trreject {
+               .list-state{
+                   i{
+                       background-position:-110px -35px;
+                       width: 9px;
+                       height:9px;
+                       margin:8px auto;
+                   }
+               }
+           }
+       }
+       .load-more {
+            border-top: 1px solid #ccc;
+            padding: 10px 0;
+            line-height: 24px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 90%;
+            color: #666;
+       }
+       .start {
+            span {
+                width: 24px;
+                height: 24px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 5px;
+                background: url("@{image-base-url}/loading.gif") no-repeat 50% 49%;
+            }
+       }
+   }
+
+   .arv-d {
+        .m-datatable {
+            .changed {
+                background-color: #7fba00;
+                color: #fff;
+            }
+            .v-b {
+                color: #acb0bc;
+                padding-bottom: 2px;
+                text-decoration: line-through;
+            }
+            .v-a {
+                color: #78b600;
+            }
+        }
+        .info {
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px 0;
+            li {
+                width: 100%;
+                padding: 10px;
+                color: #9ca6b7;
+            }
+            span {
+                display: inline-block;
+                width: 4em;
+                padding-right: 30px;
+            }
+            em {
+                display: inline-block;
+                font-weight: normal;
+            }
+            .black {
+                color: #5f5f5e;
+            }
+            .orange {
+                color: #fe8814;
+            }        
+        }
+    }
+
+}
+
+
+
+
+
+
