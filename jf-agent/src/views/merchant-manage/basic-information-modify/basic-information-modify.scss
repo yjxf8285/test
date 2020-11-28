@@ -1,0 +1,35 @@
+@import "@/styles/common.scss";
+  .el-col-common {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .el-col-title {
+    padding-left: 40px;
+    label {
+      font-weight: normal;
+    }
+  }
+  .el-input-width {
+    width: 100%;
+  }
+  .pointer:hover {
+    cursor: pointer;
+  }
+
+  .annotation-red {
+    font-size: 5px;
+    color: red;
+    white-space: nowrap;
+  }
+
+.footer {
+  display: flex;
+  justify-content: center;
+
+  button {
+    margin-left: 48px;
+  }
+}

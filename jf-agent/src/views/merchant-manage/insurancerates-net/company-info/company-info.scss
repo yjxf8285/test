@@ -1,0 +1,64 @@
+@import "@/styles/common.scss";
+.bg-blue {
+    background: $blue-4;
+  }
+  
+  .bg-blue-light {
+    background: $blue-2;
+  }
+  
+.header{
+    text-align: center;
+    margin: 10px;
+}
+.content {
+    background-color: #f9fafc;
+    border: 1px solid rgb(201, 214, 229);
+    border-radius: 4px;
+    padding: 7px;
+    font-size: 14px;
+    .el-row-common {
+      margin-bottom: 5px;
+  
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  
+    .pointer:hover {
+      cursor: pointer;
+    }
+  
+    .annotation {
+      font-size: 5px;
+      color: grey;
+      white-space: nowrap;
+    }
+  
+    .star {
+      color: red;
+    }
+    .star-mini{
+      color: red;
+      font-size: 5px;
+    }
+  
+    .el-col-common {
+      height: 30px;
+      border-radius: 4px;
+      border: 1px dotted #f9fafc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .el-input-common {
+      width: 100%;
+    }
+  
+    .first-row_col {
+      height: 35px;
+      line-height: 35px;
+    }
+  }
+  

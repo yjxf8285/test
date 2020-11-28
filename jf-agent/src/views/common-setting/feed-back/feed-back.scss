@@ -1,0 +1,48 @@
+@import "@/styles/common.scss";
+
+.feed-back-content{
+    width: 100%;
+    overflow: hidden;
+    span{
+        height: 100px;
+        line-height: 100px;
+        margin-right: 15px;
+    }
+    .el-form-item{
+        margin-bottom: 0;
+    }
+    .textArea{
+        width: 500px;
+        height: 200px;
+        position: relative;
+        i{
+            position: absolute;
+            right: 10px;
+            bottom: 28px;
+            font-size: 12px;
+            color: #666;
+        }
+        /deep/.el-textarea{
+            width: 500px;
+            height: 180px;
+            textarea{
+                height: 100%;
+                resize: none;
+            }
+        }
+    }
+    
+    // display: flex;
+    // flex-direction: column;
+    // p{
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     span{
+    //         color: #666;
+    //         font-size: 14px;
+    //         white-space: nowrap;
+    //     }
+    //     
+    // }
+}

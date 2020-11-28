@@ -1,0 +1,27 @@
+@import "@/styles/common.scss";
+
+.perfer-merchant-import-content{
+    width: 97%;
+    margin: 0 auto;
+    font-size: 13px;
+    .perfer-merchant-import-header{
+        display: flex;
+        align-items: center;
+        color: $blue;
+        font-size: 14px;
+        padding-bottom: 7px;
+        border-bottom: 1px solid $blue-2;
+        margin-bottom: 20px;
+        span{
+            width: 8px;
+            height: 8px;
+            background: $blue;
+            border-radius: 100%;
+            margin-right: 8px;
+        }
+    }
+    .el-row{
+        margin-bottom: 20px;
+    }
+       
+}

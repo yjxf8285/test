@@ -1,0 +1,40 @@
+@import "@/styles/common.scss";
+
+.give-vip-content{
+    width: 96%;
+    overflow: hidden;
+    margin: 0 auto;
+    .data-download{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        .data-download-item{
+            flex: 1;
+            &:first-child{
+                margin-right: 80px;
+            }
+            h1{
+                font-size: 15px;
+                color: $blue;
+                margin-bottom: 25px;
+            }
+            p{
+                //width: 90%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 8px;
+                span{
+                    font-size: 13px;
+                    color: #666;
+                    cursor: pointer;
+                    &:hover{
+                        color: $blue;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+

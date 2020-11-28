@@ -1,0 +1,111 @@
+@import "@/styles/common.scss";
+
+.roles-manage-content{
+    width: 97%;
+    margin: 0 auto;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    .el-row{
+        margin-bottom: 20px;
+    }
+    .roles-manage-left{
+        width: 310px;
+        background: #fff;
+        box-shadow: 0 0 3px rgba(0,0,0,0.1);
+        border-radius: 4px;
+        overflow: hidden;
+        padding: 20px 0;
+        .roles-manage-left-header{
+            display: flex;
+            font-size: 12px;
+            width: calc(96% - 10px);
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            background: #e5e5e5;
+            padding: 5px;
+            border-radius: 4px;
+            .el-input{
+                flex: 1;
+                margin: 0 5px;
+            }
+            .el-button{
+                font-size: 12px;
+            }
+        }
+        .roles-manage-left-table{
+            width: 96%;
+            overflow: hidden;
+            margin: 0 auto;
+            .el-table-column{
+                font-size: 12px;
+                text-align: center;
+            }
+            .el-pagination{
+                margin-top: 10px;
+                width: 90%;
+            }
+        }
+
+        .roles-manage-left-addRole{
+            width: 96%;
+            overflow: hidden;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+        }
+    }
+
+    .roles-manage-right{
+        width: 600px;
+        background: #fff;
+        box-shadow: 0 0 3px rgba(0,0,0,0.1);
+        border-radius: 4px;
+        .roles-manage-right-menu{
+            clear: both;
+            width: 94%;
+            margin: 15px auto 10px;
+            color: #008800;
+            font-size: 14px;
+            /deep/.el-checkbox__label{
+                font-size: 14px;
+                color: #333;
+            }
+        }
+        .roles-manage-right-form{
+            clear: both;
+            width: 94%;
+            margin: 0 auto;
+            border-left: 1px solid #efefef;
+            border-top: 1px solid #efefef;
+            box-sizing: border-box;
+            overflow: hidden;
+            i{
+                width: 33.3333%;
+                float: left;
+                display: block;
+                border-right: 1px solid #efefef;
+                border-bottom: 1px solid #efefef;
+                box-sizing: border-box;
+                padding: 5px 1%;
+                overflow: hidden;
+                /deep/.el-checkbox__label{
+                    font-size: 13px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+}
+
+.addRoles{
+    .el-row{
+        margin-bottom: 8px;
+    }
+    .el-col{
+        font-size: 14px;
+    }
+}

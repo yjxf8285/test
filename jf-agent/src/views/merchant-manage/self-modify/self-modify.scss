@@ -1,0 +1,25 @@
+@import "@/styles/common.scss";
+
+.self-modify{
+    width: 100%;
+    overflow: hidden;
+    color: $blue;
+    .self-modify-head{
+        width: 100%;
+        overflow: hidden;
+        // padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            span{
+                font-size: 16px;
+                color: #333;
+            }
+            margin:0 5px;
+            .el-input{
+                width: 300px;
+            }
+        }
+    }
+}

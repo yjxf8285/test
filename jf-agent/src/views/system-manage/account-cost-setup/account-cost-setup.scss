@@ -1,0 +1,60 @@
+@import "@/styles/common.scss";
+
+.perfer-merchant-import-content{
+    width: 97%;
+    margin: 0 auto;
+    font-size: 13px;
+    .perfer-merchant-import-header{
+        display: flex;
+        align-items: center;
+        color: $blue;
+        font-size: 14px;
+        padding-bottom: 7px;
+        border-bottom: 1px solid $blue-2;
+        margin-bottom: 20px;
+        span{
+            width: 8px;
+            height: 8px;
+            background: $blue;
+            border-radius: 100%;
+            margin-right: 8px;
+        }
+    }
+    .el-row{
+        margin-bottom: 15px;
+    }
+    .receiveAddress{
+        border:1px solid $blue-2;
+        border-radius: 4px;
+        padding: 15px 15px 0 15px;
+    }
+    .roles-content{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .checkBox{
+            width: 20%;
+            padding-left: 5%;
+            .el-checkbox{
+                width: 100%;
+                margin-bottom: 15px;
+                display: block;
+                font-size: 12px;
+            }
+        }
+    }
+    .kaishua_form{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 20px;
+        .el-table{
+            font-size: 12px;
+            p{
+                margin: 7px 0;
+            }
+            .el-input{
+                width: 80px;
+            }
+        }
+    }
+}

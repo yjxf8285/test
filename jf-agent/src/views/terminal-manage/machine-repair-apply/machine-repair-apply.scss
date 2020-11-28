@@ -1,0 +1,46 @@
+@import "@/styles/common.scss";
+
+.el-col-common {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.el-col-title {
+    padding-left: 40px;
+
+    label {
+        font-weight: normal;
+    }
+}
+
+.el-input-width {
+    width: 100%;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+.annotation-red {
+    color: red;
+    white-space: nowrap;
+    float: left;
+    margin-left: 17px;
+    margin-bottom: 17px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    button {
+        margin-left: 48px;
+    }
+}
+.pagination{
+    float: right;
+    margin-top: 20px;
+}

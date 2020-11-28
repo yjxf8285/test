@@ -1,0 +1,35 @@
+@import "@/styles/common.scss";
+
+.md-24hours-content{
+    width: 96%;
+    overflow: hidden;
+    margin: 0 auto;
+    .md-24hours-row{
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        .item{
+            display: flex;
+            align-items: center;
+            span{
+                font-size: 14px;
+                color: #333;
+                margin-right: 10px;
+            }
+            i{
+                display: flex;
+            }
+        }
+    }
+
+    .md-24hours-footer{
+        width: 100%;
+        overflow: hidden;
+        padding: 20px 0 20px;
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    
+}

@@ -1,0 +1,91 @@
+@import "@/styles/common.scss";
+
+.el-row {
+    display: flex;
+    align-items: center;
+}
+
+// .el-col-common {
+//     // height: 30px;
+//     // display: flex;
+//     // align-items: center;
+//     // justify-content: flex-start;
+// }
+
+.el-col-title {
+    text-align: right;
+}
+
+.fill-width {
+    width: 100%;
+}
+
+.div-inline {
+    display: flex;
+    align-items: center;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+.annotation-red {
+    font-size: 5px;
+    color: red;
+    white-space: nowrap;
+}
+
+.annotation {
+    font-size: 12px;
+    color: grey;
+}
+
+
+.btns {
+    display: flex;
+    justify-content: center;
+    // margin-bottom: 28px;
+
+    button {
+        margin-left: 48px;
+    }
+}
+
+.output-apply {
+    margin-bottom: 16px;
+    height: 24px;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: rgba(24, 144, 255, 1);
+    line-height: 24px;
+}
+
+.pagination {
+    float: right;
+    margin: 17px auto 16px;
+}
+
+
+//表格上标签
+.table-top-label {
+    >div {
+        display: inline-block;
+        margin-bottom: 16px;
+        font-size: 16px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: rgba(24, 144, 255, 1);
+        line-height: 24px;
+
+        &:not(:first-child) {
+            border-left: 2px solid rgba(24, 144, 255, 1);
+            margin-left: 19px;
+            padding-left: 19px;
+        }
+
+        /deep/.el-button {
+            padding: 0;
+        }
+    }
+}

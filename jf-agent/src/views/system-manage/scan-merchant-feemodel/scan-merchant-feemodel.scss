@@ -1,0 +1,13 @@
+@import "@/styles/common.scss";
+
+.function-manage-content{
+    width: 97%;
+    margin: 0 auto;
+    font-size: 13px;
+    .el-row{
+        margin-bottom: 20px;
+    }
+    .addFunction{
+        margin-top: 50px;
+    }
+}

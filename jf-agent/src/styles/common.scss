@@ -1,0 +1,45 @@
+body, h1, h2, h3, p, dl, dd, ol, ul, th, td, form, fieldset, input, textarea { margin: 0; padding: 0; }
+ol, ul { list-style: none outside none; }
+table { border-collapse: collapse; border-spacing: 0; empty-cells: show; font-size: inherit; }
+fieldset, img { border: 0 none; }
+cite, em, s, i, b { font-style: normal; }
+input, textarea, select { font-size: 100%; background-color: transparent; }
+body, input, textarea, select, option { border:none; outline: none}
+a, input, textarea { outline: 0 none; text-decoration:none;}
+li, img, label, input { vertical-align: middle; }
+html{
+    font-family: "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 100%;
+}
+// body,#app,.jf-agent-container{
+//     height: 100%;
+// }
+
+$blue:rgba(64,157,255,1);
+$blue-8:rgba(64,157,255,0.8);
+$blue-6:rgba(64,157,255,0.6);
+$blue-4:rgba(64,157,255,0.4);
+$blue-2:rgba(64,157,255,0.2);
+$body-bg-color:#f1f2f5;
+$content-bg-color:#FFFFFF;
+
+.red{
+    color: #f00;
+}
+
+.jf-agent-container{
+    width:100%;
+    overflow: hidden;
+}
+
+.jf-main-content{
+    overflow: hidden;
+    margin: 18px 17px 24px;
+    padding: 40px;
+    background-color: #fff;
+    font-size: 14px;
+    .el-row{
+        margin-bottom: 40px;
+    }
+}
+

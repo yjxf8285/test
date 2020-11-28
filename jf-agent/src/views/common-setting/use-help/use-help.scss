@@ -1,0 +1,26 @@
+@import "@/styles/common.scss";
+
+.feed-back-content{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            color: #666;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+        /deep/.el-textarea{
+            width: 500px;
+            height: 100px;
+            textarea{
+                height: 100%;
+                resize: none;
+            }
+        }
+    }
+}

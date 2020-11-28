@@ -1,0 +1,59 @@
+@import "@/styles/common.scss";
+
+.operator-manage-content{
+    width: 97%;
+    margin: 0 auto;
+    font-size: 13px;
+    .el-row{
+        margin-bottom: 20px;
+    }
+    .operator-manage-query{
+        width: 100%;
+        overflow: hidden;
+        padding-top: 40px;
+        .el-table{
+            /deep/thead th{
+                font-size: 12px;
+                text-align: center;
+                color: #666;
+            }
+            /deep/td{
+                font-size: 12px;
+                text-align: center;
+                padding: 5px 0;
+                a{
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+    .operator-manage-pagination{
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+.notice-dialog{
+    height: 400px;
+    overflow: auto;
+    .notice-dialog-title{
+        margin-bottom: 50px;
+        font-size: 16px;
+        text-align: center;
+        color: #333;
+    }
+    .notice-dialog-content{
+        h1{
+            font-size: 14px;
+            margin: 10px 0;
+            color: #333;
+        }
+        p{
+            font-size: 12px;
+            color: #666;
+            line-height: 24px;
+        }
+    }
+}
+

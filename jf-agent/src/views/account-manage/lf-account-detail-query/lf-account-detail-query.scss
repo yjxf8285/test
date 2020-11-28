@@ -1,0 +1,12 @@
+.content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer{
+    margin: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    .btns{
+        margin-left: 50px;
+    }
+}

@@ -1,0 +1,64 @@
+@import "@/styles/common.scss";
+
+.operator-manage-content{
+    width: 97%;
+    margin: 0 auto;
+    font-size: 13px;
+    .el-row{
+        margin-bottom: 20px;
+    }
+    .operator-manage-query{
+        width: 100%;
+        overflow: hidden;
+        padding-top: 40px;
+        .el-table{
+            /deep/thead th{
+                font-size: 12px;
+                text-align: center;
+                color: #666;
+            }
+            /deep/td{
+                font-size: 12px;
+                text-align: center;
+                padding: 5px 0;
+                a{
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+    .operator-manage-pagination{
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+.right-manage{
+    .el-row{
+        margin-bottom: 10px;
+        .el-col{
+            margin-bottom: 10px;
+            .right-manage-form{
+                width: 100%;
+                overflow: hidden;
+                border-left: 1px solid #efefef;
+                border-top: 1px solid #efefef;
+                box-sizing: border-box;
+                i{
+                    width: 25%;
+                    display: block;
+                    float: left;
+                    border-right: 1px solid #efefef;
+                    border-bottom: 1px solid #efefef;
+                    padding:5px 1%;
+                    box-sizing: border-box;
+                    /deep/.el-checkbox__label{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+

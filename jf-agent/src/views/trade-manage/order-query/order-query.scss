@@ -1,0 +1,79 @@
+@import "@/styles/common.scss";
+
+//行通用
+.el-row {
+  display: flex;
+  align-items: center;
+
+  .el-col-common {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// 标题
+.el-col-title {
+  text-align: right;
+}
+
+//宽度100%
+.fill-width {
+  width: 100%;
+}
+
+//注释
+.annotation-red {
+  font-size: 5px;
+  color: red;
+  white-space: nowrap;
+}
+
+.annotation {
+  font-size: 12px;
+  color: grey;
+}
+
+
+//按钮
+.btns {
+  display: flex;
+  justify-content: center;
+  // margin-bottom: 28px;
+
+  button {
+    margin-left: 48px;
+  }
+}
+
+//表格上标签
+.table-top-label {
+  // display: flex;
+
+
+  >div {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: rgba(24, 144, 255, 1);
+    line-height: 24px;
+
+    &:not(:first-child) {
+      border-left: 2px solid rgba(24, 144, 255, 1);
+      margin-left: 19px;
+      padding-left: 19px;
+    }
+
+    /deep/.el-button {
+      padding: 0;
+    }
+  }
+}
+
+
+//分页
+.pagination {
+  float: right;
+  margin: 17px auto 16px;
+}

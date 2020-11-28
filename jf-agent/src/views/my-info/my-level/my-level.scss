@@ -1,0 +1,48 @@
+.my-level-content{
+    .my-level-header{
+        color: #666;
+        font-size: 14px;
+        b{
+            font-size: 20px;
+            color: orange;
+            margin-right: 10px;
+        }
+        i{
+            margin: 0 3px;
+        }
+    }
+    .my-level-tabs{
+        margin-top: 20px;
+        table{
+            width: 100%;
+            thead{
+                background: #e5e5e5;
+                th{
+                    font-size: 13px;
+                    font-weight: normal;
+                    padding: 6px 0;
+                    border-right: 1px solid #fff;
+                    border-bottom: 1px solid #fff;
+                    box-sizing: border-box;
+                    color: #333;
+                }
+            }
+            tr{
+                td{
+                    background: #f5f5f5;
+                    font-size: 13px;
+                    font-weight: normal;
+                    padding: 6px 0;
+                    border-right: 1px solid #fff;
+                    border-bottom: 1px solid #fff;
+                    box-sizing: border-box;
+                    color: #333;
+                    text-align: center;
+                    &.dark{
+                        background: #e5e5e5;
+                    }
+                }
+            }
+        }
+    }
+}

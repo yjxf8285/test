@@ -1,0 +1,35 @@
+@import "@/styles/common.scss";
+
+.give-vip-content{
+    width: 96%;
+    overflow: hidden;
+    margin: 0 auto;
+    .el-col{
+        font-size: 13px;
+        margin-bottom: 20px;
+        .el-select,.el-date-picker{
+            width: 100%;
+        }
+        &.right{
+            text-align: right;
+            padding-right: 5px;
+        }
+    }
+}
+
+.query-total{
+    width: 100%;
+    background: #f1f1f1;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-radius: 4px;
+    .el-row{
+        height: 100%;
+        .el-col{
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+}

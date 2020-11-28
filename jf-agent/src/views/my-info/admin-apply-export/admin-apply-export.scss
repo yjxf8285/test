@@ -1,0 +1,24 @@
+.give-vip-content{
+    width: 96%;
+    overflow: hidden;
+    margin: 0 auto;
+    .el-col{
+        font-size: 13px;
+        margin-bottom: 20px;
+        .el-input{
+            width: 220px;
+        }
+    }
+    span{
+        font-size: 13px;
+        width: 100px;
+        text-align: right;
+        display: block;
+    }
+}
+
+.add-export{
+    .el-input{
+        width: 300px;
+    }
+}

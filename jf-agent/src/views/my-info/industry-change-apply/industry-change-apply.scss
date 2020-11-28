@@ -1,0 +1,126 @@
+@import "@/styles/common.scss";
+
+.give-vip-content{
+    .agent-change{
+        width: 100%;
+        h1{
+            color: #f00;
+            font-size: 13px;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+        .agent-change-content{
+            width: 100%;
+            display: flex;
+            overflow: hidden;
+            margin-bottom: 20px;
+            .agent-change-left{
+                flex: 0.5;
+                background: #f1f1f1;
+                table{
+                    width: 100%;
+                    overflow: hidden;
+                    td{
+                        font-size: 13px;
+                        color: #666;
+                        padding: 0 10px;
+                        height: 40px;
+                        border-bottom: 1px solid #fff;
+                        border-right: 1px solid #fff;
+                        box-sizing: border-box;
+                        &:first-child{
+                            text-align: right;
+                        }
+                        textarea{
+                            width: 100%;
+                            margin: 5px auto;
+                            background: #fff;
+                            height: 100px;
+                        }
+                    }
+                }
+            }
+            .agent-change-right{
+                flex: 0.5;
+                table{
+                    width: 100%;
+                    overflow: hidden;
+                    border-top: 1px solid #e5e5e5;
+                    border-left: 1px solid #e5e5e5;
+                    box-sizing: border-box;
+                    td{
+                        font-size: 13px;
+                        color: #333;
+                        padding: 0 10px;
+                        height: 40px;
+                        border-bottom: 1px solid #e5e5e5;
+                        border-right: 1px solid #e5e5e5;
+                        box-sizing: border-box;
+                        &:first-child{
+                            text-align: right;
+                        }
+                        textarea{
+                            width: 100%;
+                            margin: 5px auto;
+                            background: #f1f1f1;
+                            height: 100px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+.qualification-info{
+    width: 100%;
+    overflow: hidden;
+    .el-row{
+        margin-bottom: 10px;
+        .el-col{
+            font-size: 13px;
+            &.right{
+                text-align: right;
+            }
+            .el-input{
+                width: 300px;
+            }
+            a{
+                margin-left: 30px;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            i{
+                margin-left: 5px;
+            }
+        }
+    }
+    
+}
+
+.perfer-merchant-import-header{
+    display: flex;
+    align-items: center;
+    color: $blue;
+    font-size: 14px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid $blue-2;
+    margin-bottom: 20px;
+    span{
+        width: 8px;
+        height: 8px;
+        background: $blue;
+        border-radius: 100%;
+        margin-right: 8px;
+    }
+}
+
+.business-change-dialog{
+    width: 100%;
+    img{
+        width: 100%;
+        display: block;
+    }
+}

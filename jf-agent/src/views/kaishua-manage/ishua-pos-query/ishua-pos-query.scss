@@ -1,0 +1,46 @@
+.give-vip-content{
+    .el-col{
+        font-size: 13px;
+        .el-input{
+            width: 220px;
+        }
+        .el-select{
+            width: 220px;
+        }
+    }
+    span{
+        font-size: 13px;
+        width: 100px;
+        text-align: right;
+        display: block;
+    }
+}
+
+.batch-change-config{
+    .el-form{
+        width: 100%;
+        border-top: 1px solid #f1f1f1;
+        box-sizing: border-box;
+        .el-form-item{
+            border-bottom: 1px solid #f1f1f1;
+            border-right: 1px solid #f1f1f1;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 1px;
+            box-sizing: border-box;
+            .el-col{
+                padding: 0 10px;
+                font-size: 12px;
+                .el-select{
+                    width: 100%;
+                }
+                &.grey{
+                    background: #f1f1f1;
+                    text-align: right;
+                    padding-right: 0;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
