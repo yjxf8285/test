@@ -1,0 +1,102 @@
+/*
+ * @Author: chengruiyang
+ * @Date: 2018-08-31 14:33:19
+ * @LastEditors: chengruiyang
+ * @LastEditTime: 2018-08-31 16:43:38
+ * @Description: 
+ */
+.container-mine{
+    background-color:#f1f1f1;
+    height: 100vh;
+    border-top: #f1f1f1 1px solid;
+}
+
+.header{
+    height: 280rpx;
+    background-color: #fff;
+    margin-top: 20rpx;
+    border-top: #fff 1px solid;
+
+}
+.header .icon-header-image{
+    display: flex;
+    justify-content: center;
+    width: 130rpx;
+    height: 130rpx;
+    margin: 30rpx auto;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #dedede;
+}
+
+.header .name{
+    height: 70rpx;
+    text-align: center;
+    color: #333;
+    font-size:38rpx;
+
+}
+
+.content-list{
+    margin-top: 30rpx;
+}
+
+.content-list .list-item{
+    box-shadow:  0 0 0 3rpx #f1f1f1;
+    position: relative;
+    background-color: #fff;
+    height: 100rpx;
+}
+
+.content-list .list-item .l{
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50rpx;
+    height: 50rpx;
+    padding: 25rpx 20rpx 25rpx 30rpx;
+}
+
+.content-list .list-item .r{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40rpx;
+    height: 40rpx;
+    padding: 30rpx 20rpx;
+}
+.content-list .list-item .value{
+    color: #999999;
+    font-size: 32rpx;
+    position: absolute;
+    right: 40rpx;
+    top: 0;
+    width: 40rpx;
+    height: 40rpx;
+    padding: 30rpx 20rpx;
+}
+.content-list .list-item .title{
+
+    color: #333333;
+    position: absolute;
+    left: 40rpx;
+    top: 0;
+    width: 220rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    padding: 10rpx;
+    vertical-align:middle;
+    font-size:32rpx;
+    text-align: left;
+}
+.contact-btn{
+    background:none !important;
+    padding: 0rpx;
+    height: 100rpx;
+    font-size: 26rpx;
+    color:#333;
+}
+.contact-btn::after{
+    border: none;
+}

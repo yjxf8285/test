@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "帮助",
+  "usingComponents": {
+    "modal-window": "/components/modal-window/modal-window"
+  }
+}

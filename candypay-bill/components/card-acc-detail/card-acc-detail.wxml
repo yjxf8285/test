@@ -1,0 +1,113 @@
+<card-acc-header cardData="{{cardData}}" />
+<view class="card-acc-detail">
+<!-- 废除左右滑动功能后这里的逻辑也去掉 -->
+    <!-- <view class="com-card" bind:tap="gotoCardList"
+     wx:if="{{!cardData.operateEnable}}"
+     > -->
+    <view class="com-card" bind:tap="gotoCardList">
+        <view class="com-card-header com-border-bottom">
+            <view class="com-card-header-icon"></view>
+            <view class="">上笔记账</view>
+        </view>
+        <view class="items-center pd20">
+            <view class="fl1 items-center">
+                <image class="next-icon" src="../../image/icons/icon_empity_bill@2x.png" style="width:90rpx;height:90rpx;margin-right:20rpx;" />
+                <view class="fl1 fz-28 " wx:if="{{lastTransactionData}}">
+                    <view class="">记账金额：{{lastTransactionData.amount}}</view>
+                    <view class="">记账时间：{{lastTransactionData.occurTime}}</view>
+                </view>
+                <view class="" wx:else>暂时没有记账信息</view>
+            </view>
+             <view class="btn-primary" bind:tap="gotoManualAccouting">记一笔</view>
+        </view>
+        <!-- <view class="fc-999 fz-28 pd20 com-border-top" wx:if="{{lastTransactionData}}">
+            <view>{{lastTransactionData.vendorName||lastTransactionData.transComments}}</view>
+        </view> -->
+    </view>
+    <view class="com-card card-acc-detail-plan mt20">
+        <view class="com-card-header com-border-bottom">
+            <view class="com-card-header-icon"></view>
+            <view>消费计划</view>
+        </view>
+        <view class="items-center pd20" style="height:108rpx;">
+            <image src="../../image/icons/icon_card_detail_plan_empity@2x.png" style="width:60rpx;height:60rpx" />
+            <view class="ml20 fl1">当前卡片未设置消费计划</view>
+            <view class="btn-primary disabled">添加计划</view>
+        </view>
+    </view>
+    <view class="com-card mt20 ">
+        <view class="com-card-header com-border-bottom">
+            <view class="fl1 items-center">
+                <view class="com-card-header-icon"></view>
+                <view class="fz-30">消费统计</view>
+                <!-- <view class="fc-999 fz-26">(共计{{monthSummary.transactions}}笔)</view> -->
+            </view>
+            <view class="items-center" bind:tap="showDataInstruction">
+                <view class="fc-999  fz-26">数据说明</view>
+                <image class="" src="../../image/icons/icon_card_detail_help@2x.png" style="width:56rpx;height:56rpx;" />
+            </view>
+        </view>
+        <view class="items-center com-border-bottom" style="padding:25rpx 0 25rpx 60rpx">
+            <view class="fl1 ">
+                <view class="fz-24 fc-999 items-center">
+                    <image src="../../image/icons/icon_card_mode_total_limit@2x.png" style="width:32rpx;height:32rpx;margin-right:6rpx;" />
+                    <view class="">授信额度</view>
+                </view>
+                <view class="fz-30 fc-333 fb">{{monthSummary.limitAmount}}</view>
+                <view class="fz-24 fc-999  items-center mt20">
+                    <image src="../../image/icons/icon_card_mode_total_money@2x.png" style="width:32rpx;height:32rpx;margin-right:6rpx;" />
+                    <view class="">费用合计</view>
+                </view>
+                <view class="fz-30 fc-333 fb">{{monthSummary.commissions}}</view>
+            </view>
+            <view class=" items-c">
+                <circle-progress-360 progress="{{monthSummary.progress}}" percent="{{monthSummary.percent}}" barColor="{{monthSummary.barColor}}" />
+            </view>
+            <view class="fl1 " style="padding-left:60rpx">
+                <view class="fz-24 fc-999 items-center">
+                    <view class="color-square " />
+                    <view class="">当前透支</view>
+                </view>
+                <view class="fz-30 fc-333 fb">{{monthSummary.debtAmount}}</view>
+                <view class="fz-24 fc-999  items-center mt20">
+                    <view class="color-square" style="background-image: linear-gradient(-134deg, #FFBB7E 0%, #F7943D 100%);"></view>
+                    <view class="">可用额度</view>
+                </view>
+                <view class="fz-30 fc-333 fb">{{monthSummary.availableLimit}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="com-card card-acc-detail-plan mt20">
+        <view class="com-card-header com-border-bottom" style="height:70rpx;">
+            <view class="com-card-header-icon"></view>
+            <view>消费分类统计</view>
+        </view>
+        <view class="pd20">
+            <bar-progress-list wx:if="{{categoryList.length>0}}" listData="{{categoryList}}" type="0" />
+            <view wx:else class="fc-999 fz-26 align-center">暂无数据</view>
+        </view>
+    </view>
+</view>
+<modal-window show="{{modalShow}}" width="100%" class="home-header-modal">
+    <view class="home-header-modal-warp">
+        <view class="header items-c">
+            <image class="home-header-icon" src="../../image/icons/icon_toast_remind@2x.png" style="width:42rpx;height:42rpx;margin-right:14rpx;" />
+            <view>提示</view>
+        </view>
+        <view class="body ">
+            <view class="items-center">
+                <view class="tit-icon"></view>
+                <view class="fc-333 fz-30">还款日：</view>
+            </view>
+            <view class="fc-999 fz-28">距当天日期最近的下一个的还款日</view>
+            <view class="items-center mt20">
+                <view class="tit-icon"></view>
+                <view class="fc-333 fz-30">免息期：</view>
+            </view>
+            <view class="fc-999 fz-28">距当期日期的最近的下一个还款日之间的日数</view>
+        </view>
+        <view class="footer">
+            <view class="fl1 items-c" style="color:#EB464E;" bind:tap="hideModal">我知道了</view>
+        </view>
+    </view>
+</modal-window>

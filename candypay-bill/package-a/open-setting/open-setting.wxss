@@ -1,0 +1,18 @@
+.con{
+    text-align:center;
+}
+.logo image{
+    margin-top: 80rpx;
+    width: 160rpx;
+    height: 160rpx;
+}
+.info{
+    margin-top: 100rpx;
+    color: #aaa;
+    font-size: 34rpx;
+}
+.authorization-btn{
+    background-color: #4fa938;
+    color:#fff;
+    margin: 20rpx 80rpx;
+}

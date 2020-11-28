@@ -1,0 +1,42 @@
+<view class="category-menu">
+    <view class="category-menu-topinfo">
+        <view class="top-con">
+            <view class="l">
+                <view class="search-btn" wx:if="{{0}}">
+                    <view class="fa fa-search"></view>
+                </view>
+            </view>
+            <view class="r">
+                <picker mode="multiSelector" bindchange="locationPickerConfirm" bindcolumnchange="locationPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" range-key="regname">
+                    <view class="picker-wrap">
+                        <text class="fa fa-map-marker" style="margin-right:6rpx;"></text>
+                        <text class="txt">{{curLocationData.cityName}}</text>
+                    </view>
+                </picker>
+                <view class="line"></view>
+                <view class="txt" bind:tap="onClickFilterBtn">
+                    <view class="fa fa-filter"></view>
+                    行业筛选
+                </view>
+            </view>
+        </view>
+        <view class="list-wrap">
+            <text class="item-tit">已选行业：</text>
+            <view class="list-btn" wx:key="index" wx:for="{{group}}" bind:tap="delItem" data-item="{{item}}">
+                {{item.name}}
+            </view>
+            <view class="refresh-btn" bind:tap="refresh">
+                <text class="fa fa-refresh"></text>
+                <text class="txt">换一批</text>
+            </view>
+        </view>
+        <!-- <view class="vendor-list-title">
+        <view class="title-name">下拉换一批</view>
+    </view> -->
+    </view>
+    <view class="bot-con">
+        <scroll-view scroll-y style="height:100%">
+            <c-vendor-list deviceData="{{deviceData}}" bind:onselect="onSelectVendor" bind:ongetvendor="onGetVendor" id="vendor-list" entryMode="{{formListIndex}}"></c-vendor-list>
+        </scroll-view>
+    </view>
+</view>

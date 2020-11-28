@@ -1,0 +1,44 @@
+.home-card-list {
+    padding: 0 20rpx;
+}
+.home-card-list .top-info {
+    font-size: 28rpx;
+    padding: 0 24rpx;
+
+    height: 100rpx;
+}
+.accouting-text-icon {
+    width: 90rpx;
+    height: 90rpx;
+    background-color: #ffe7e8;
+    margin-right: 20rpx;
+    text-align: center;
+    font-size: 28rpx;
+    color: #eb464e;
+    line-height: 40rpx;
+    padding-top: 4rpx;
+    box-sizing: border-box;
+    border-radius: 10rpx;
+    border: solid 1px #eb464e;
+}
+.calendar-card {
+    flex: 1;
+    background: #ffffff;
+    box-shadow: 0 -4px 8px 0 rgba(218, 218, 218, 0.5), 0 4px 8px 0 rgba(218, 218, 218, 0.5);
+    border-radius: 10rpx;
+    padding: 20rpx;
+}
+
+.data-statistic{
+    margin-left: 20rpx;
+    margin-top: -4rpx;
+}
+.data-statistic .t {
+    font-weight:500;
+    font-size: 30rpx;
+    color: #333;
+}
+.data-statistic .b {
+    font-size: 26rpx;
+    color: #999;
+}

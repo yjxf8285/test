@@ -1,0 +1,53 @@
+<view class="transaction-statistics-detail">
+    <view class="filters-bar">
+        <!-- <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange"> -->
+        <picker mode="date" end="{{endData}}" value="index" bindchange="selectToday">
+            <view class="filters-bar-item items-c">
+                <text class="">{{localDateStr}}</text>
+                <image style="width:16rpx;height:12rpx;margin-left:10rpx;" src="../../image/icons/icon_pos_mode_chose@2x.png" />
+            </view>
+        </picker>
+        <picker bindchange="selectCard" value="index" range="{{cardList}}" range-key="hidecardNo">
+            <view class="filters-bar-item items-c">
+                <text class="text-overflow-width align-center" style="max-width:160rpx;">
+                    <text>{{currentCard.hidecardNo||'全部卡片'}}</text>
+                </text>
+                <image style="width:16rpx;height:12rpx;margin-left:10rpx;" src="../../image/icons/icon_pos_mode_chose@2x.png" />
+            </view>
+        </picker>
+        <view class="com-search-bar disabled">
+            <image class="com-search-bar-icon" src="../../image/icons/icon_trade_count_seach@2x.png" />
+            <input type="text" class="com-search-bar-input" placeholder="输入参考号或卡号" placeholder-style="color:#fff;font-size:26rpx;" disabled="{{1}}" bindinput="noInput" bindconfirm="search" confirm-type="search" />
+        </view>
+    </view>
+    <view class="list-wrap">
+        <view class="list-no-data" wx:if="{{deviceTransactionlist.length<1}}">暂无数据</view>
+        <view class="device-transaction-list-item  com-card mb20" wx:key="index" wx:for="{{deviceTransactionlist}}">
+            <view class="list-header com-row items-c">
+                <image class="" style="width:40rpx;height:40rpx;margin-right:10rpx;" src="../../image/icon_bank/{{item.bankImg}}.png" binderror="imgErr" data-item="{{item}}"/>
+                <view class="l  text-overflow-width mr10">
+                    <text>{{item.bankName||'无'}}</text>
+                </view>
+                <view class="com-row-column column-center">{{item.hidecardNo||''}}</view>
+            </view>
+            <view class="list-body com-row">
+                <!-- <view class="ysf-icon" wx:if="{{item.styleType=='TRANS_SYTLE_YSF'||item.styleType=='TRANS_STYLE_YSFMM'}}">
+                    <image class="" style="width:89rpx;height:34rpx;" src="../../image/icons/icon_statistics_bill_list@2x.png" />
+                </view> -->
+                <view class="l com-row-column ">
+                    <view class="merchant-name text-overflow-width" >{{item.vendorName}}</view>
+                    <view hidden="{{item.type!='REGULAR'}}">
+                        <text class="mcc-tag-btn">{{item.vendorRegionName||'无'}}</text>
+                        <!-- <text class="mcc-tag-btn" wx:if="{{item.listType==1}}">{{item.mccCategoryName||'无'}}</text>
+                        <text class="mcc-tag-btn" wx:if="{{item.listType==1}}">{{item.mccGroupName||'无'}}</text> -->
+                    </view>
+                    <view class="time-str">{{item.occurTime}}</view>
+                </view>
+               <view class="r column-center">
+                    <view class=" typename  align-right">{{item.typeStr}}</view>
+                    <view class=" amountstr  align-right" style="color:{{item.amountColor}}">{{item.amountStr}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

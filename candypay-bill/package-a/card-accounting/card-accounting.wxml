@@ -1,0 +1,30 @@
+<!-- 废除左右滑动功能 -->
+<!-- <view class="card-accounting noscroll" wx:if="{{cardData.operateEnable}}">
+    <view wx:if="{{showSwiperBtn}}">
+        <view class="swipe-btn-left" decode="true" wx:if="{{swiperIndex==0}}" bind:tap="swipeClick" data-type="1">
+            <text wx:if="{{btnSmall}}">＜＜</text>
+            <text wx:else>左滑＜＜</text>
+        </view>
+        <view class="swipe-btn-right" wx:if="{{swiperIndex==1}}" bind:tap="swipeClick" data-type="0">
+            ＞＞
+        </view>
+    </view>
+     
+    <swiper duration="200" bindchange="swiperChange" current="{{swiperIndex}}" style="height:100%">
+        <swiper-item>
+            <scroll-view scroll-y style="height:100%">
+                <card-acc-detail wx:if="{{swiperIndex==0}}" cardData="{{cardData}}" cardNo="{{cardNo}}" />
+            </scroll-view>
+        </swiper-item>
+        <swiper-item>
+            <card-acc-accounting wx:if="{{swiperIndex==1}}" cardData="{{cardData}}" />
+        </swiper-item>
+    </swiper>
+</view> 
+<view class="card-accounting" wx:if="{{!cardData.operateEnable}}">
+    <card-acc-detail cardData="{{cardData}}" cardNo="{{cardNo}}" />
+</view>
+-->
+<view class="card-accounting" >
+    <card-acc-detail cardData="{{cardData}}" cardNo="{{cardNo}}" />
+</view>

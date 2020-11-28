@@ -1,0 +1,42 @@
+<view class="bj-wrap">
+    <image class="btn" bind:tap="showModal" src="../../image/help/btn.png" />
+    <view class="title">小程序 V{{verson}}</view>
+    <image mode="widthFix" style="width:100%;margin-bottom:164rpx;" src="../../image/help/help_bj.png" />
+    <view class="bottom-wrap">
+        <view bindtap='gotoIndex' class="gohome-btn">进入首页</view>
+        <p class="tips">进入小程序后，可在‘我’->‘帮助’中再次浏览此页面</p>
+    </view>
+</view>
+<modal-window show="{{showBindedTip}}" width="600rpx" class="com-modal">
+    <view class="com-modal-con">
+        <view class="com-modal-tit items-c">
+            <image class="" src="../../image/icons/icon_toast_remind@2x.png" style="width:42rpx;height:42rpx;margin-right:14rpx;" />
+            <view>模式切换</view>
+        </view>
+        <view class="com-modal-body ">
+            <view class="">
+                <view style="float:left;width:30rpx;">
+                    <text class="icon"></text>
+                </view>
+                <view style="margin-left:30rpx;" class="fb">此版本小程序简洁模式和卡片模式为相斥关系。</view>
+            </view>
+            <view class="mt10 fc-999">
+                <view style="float:left;width:30rpx;">
+                    <text class="icon"></text>
+                </view>
+                <view style="margin-left:30rpx;">
+                    举个例子：小张在简洁模式下选择速记 A商户，切到卡片模式后，A商户失效以卡片模式的速记B商户为准。
+                </view>
+            </view>
+            <view class="mt10 fc-999">
+                <view style="float:left;width:30rpx;">
+                    <text class="icon"></text>
+                </view>
+                <view style="margin-left:30rpx;">同理，切回简洁模式后，卡片模式的B商户失效，以简洁模式的A商户为准。</view>
+            </view>
+        </view>
+        <view class="com-modal-footer">
+            <view bind:tap="hideModal" class="fl1 items-c" style="color:#EB464E;">我知道了</view>
+        </view>
+    </view>
+</modal-window>

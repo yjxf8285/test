@@ -1,0 +1,31 @@
+<view class="tab-box">
+    <view class="list-title">
+        <view class="txt">
+            <p class="card-count-title">成员({{merchantCount}})</p>
+        </view>
+    </view>
+    <view class="vendor-listwrap">
+        <view class="vendor-list-group" wx:for="{{merchantList}}" wx:key="id">
+            <view class="vendor-item">
+                <view class="l {{item.cur?'cur':''}}" data-item="{{item}}" bind:tap="selectItem">
+                    <view class="fa fa-check vendor-check-icon"></view>
+                </view>
+                <view class="m" data-item="{{item}}" bind:tap="selectItem">
+                    <view class="top" >
+                        <view class="vendor-name">{{item.name}}</view>
+                    </view>
+                    <view class="bottom">
+                        <text style="margin-right:20rpx;">{{item.idCardName}}</text>
+                        <text>已绑定{{item.cardNum||0}}个卡片</text>
+                    </view>
+                </view>
+                <view class="vendorlist-vertical-line"></view>
+                <view class="r">
+                    <view class="detail-btn"  data-item="{{item}}"  bind:tap="goToDetail">编辑</view>
+                </view>
+            </view>
+            <view class="vendorlist-rowline"></view>
+        </view>
+    </view>
+</view>
+<view hidden="{{currentMerchant==null}}" class="save-btn" bind:tap="delMerchant">删除</view>

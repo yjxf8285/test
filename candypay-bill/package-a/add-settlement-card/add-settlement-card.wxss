@@ -1,0 +1,20 @@
+.label-w-t {
+    width: 140rpx;
+}
+.label-w-b {
+    width: 140rpx;
+}
+.title {
+    background: #fff;
+    color: #3a89e2;
+    font-size: 30rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    padding-left: 20rpx;
+}
+.random-code {
+    width: 120rpx;
+    background: #ccc;
+    padding: 4rpx 0;
+    text-align: center;
+}

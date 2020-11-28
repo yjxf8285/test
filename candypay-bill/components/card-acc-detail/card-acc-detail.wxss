@@ -1,0 +1,62 @@
+.card-acc-detail{
+	padding: 20rpx;
+}
+.card-acc-detail-plan{
+
+}
+.home-header-modal {
+   
+    color: #333;
+    font-size: 30rpx;
+}
+.home-header-modal-warp{
+    position: absolute;
+    top:200rpx;
+    left:80rpx;
+    right:80rpx;
+    background-color: #fff;
+    border-radius: 10rpx;
+}
+.home-header-modal .header {
+    height: 80rpx;
+    border-bottom: 1px dashed #c6c6c6;
+    font-size: 30rpx;
+    color: #ff8b46;
+}
+.home-header-modal .tit-icon{
+	margin-right: 20rpx;
+	width: 12rpx;
+    height: 12rpx;
+    border-radius:100%;
+	background-image: linear-gradient(-134deg, #EC686D 0%, #EB3C46 100%);
+}
+.home-header-modal .body {
+    padding: 40rpx;
+}
+.home-header-modal .footer {
+    height: 80rpx;
+    line-height: 80rpx;
+    border-top: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+    display: flex;
+}
+.top-info {
+    font-size: 28rpx;
+    padding: 0 24rpx;
+
+    height: 100rpx;
+}
+.accouting-text-icon {
+    width: 90rpx;
+    height: 90rpx;
+    background-color: #ffe7e8;
+    margin-right: 20rpx;
+    text-align: center;
+    font-size: 28rpx;
+    color: #eb464e;
+    line-height: 40rpx;
+    padding-top: 4rpx;
+    box-sizing: border-box;
+    border-radius:10rpx;
+    border:solid 1px #eb464e;
+}

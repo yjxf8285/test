@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "picker-mcc-single":"/components/picker-mcc-single/picker-mcc-single",
+        "picker-region":"/components/picker-region/picker-region",
+        "keypad":"/components/keypad/keypad"
+    }
+}

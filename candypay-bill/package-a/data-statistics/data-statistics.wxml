@@ -1,0 +1,12 @@
+<view class="tab-btn-wrap">
+    <view class="fl1 align-center {{index==0?'cur':''}}" bind:tap="tabMenu" data-index="0">
+        <view class="t">负债统计</view>
+        <view class="i"></view>
+    </view>
+    <view class="fl1 align-center {{index==1?'cur':''}}" bind:tap="tabMenu" data-index="1">
+        <view class="t">账单明细</view>
+        <view class="i"></view>
+    </view>
+</view>
+<debt-statistics style="display:{{index==0?'':'none'}}" />
+<bills-detail id="bills-detail" style="display:{{index==1?'':'none'}}" />

@@ -1,0 +1,9 @@
+page {
+    background: #fff;
+}
+.select-pos-row {
+    color: #666;
+    padding: 20rpx;
+    display: flex;
+    border: solid 1rpx #e3e3e3;
+}

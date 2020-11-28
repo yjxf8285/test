@@ -1,0 +1,7 @@
+<view class="arc-bg-wrap">
+    <view class="arc-bg-shape"></view>
+</view>
+<view class="page-content">
+    <view class="block"></view>
+    <home-card-list />
+</view>

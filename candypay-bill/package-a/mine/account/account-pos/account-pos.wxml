@@ -1,0 +1,51 @@
+<view class="editLabelWrap" wx:if="{{showEditWindow}}">
+    <view class="title">编辑名称</view>
+    <view class="txt mt20">商户：{{editMerchantName}}</view>
+    <view class="txt">SN：{{editLabeSn}}</view>
+    <input maxlength="10" bindinput="setlabelinputval" type="text" placeholder="请输入名称" class="editLabelInput" value="{{editLabeName}}" />
+    <view class="fn-wrap">
+        <button size="mini" type="primary" bind:tap="postSetLabel">确定</button>
+        <button size="mini" class="cancel" bind:tap="cancelEidt">取消</button>
+    </view>
+</view>
+<view class="tab-box">
+    <view class="card-section ">
+        <view class="cell horizontal-layout">
+            <p class="cell-name">商户名称</p>
+            <p class="cell-value">{{merchant.merchantDisplayName}}</p>
+        </view>
+        <view class="split-view"></view>
+        <view class="cell horizontal-layout">
+            <p class="cell-name">地区</p>
+            <p class="cell-value">{{merchant.regionName}}</p>
+        </view>
+    </view>
+    <view class="list-title">
+        <view class="txt">
+            <p class="card-count-title">绑定设备({{merchant.devices.length}})</p>
+        </view>
+    </view>
+    <view class="vendor-listwrap">
+        <view class="vendor-list-group" wx:for="{{merchant.devices}}" wx:for-item="item" wx:key="sn">
+            <view class="vendor-item">
+                <view class="m pos-area" style="margin-left:40rpx;">
+                    <view class="top">
+                        <view class="vendor-name">
+                            {{item.label==null || item.label==''?'无':item.label}}
+                        </view>
+                    </view>
+                    <view class="bottom">
+                        <text style="margin-right:20rpx;">SN:{{item.sn}}</text>
+                    </view>
+                </view>
+                <view class="vendorlist-vertical-line"></view>
+                <view class="r">
+                    <view class="detail-btn" bind:tap="editLabel" data-item="{{item}}" >
+                        编辑
+                    </view>
+                </view>
+            </view>
+            <view class="vendorlist-rowline"></view>
+        </view>
+    </view>
+</view>

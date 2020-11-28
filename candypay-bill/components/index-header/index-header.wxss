@@ -1,0 +1,103 @@
+.index-header {
+    display: flex;
+    position: relative;
+    margin-bottom: 34rpx;
+}
+.userinfo-wrap {
+    color: #fff;
+    margin: 0 20rpx;
+    display: flex;
+}
+.userinfo-avatar-wrap {
+    margin-right: 20rpx;
+}
+.userinfo-wrap-avatar {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 100%;
+    border: 6rpx solid rgba(255, 255, 255, 0.5);
+}
+.userinfo-right-section {
+    font-size: 32rpx;
+    flex: 1;
+}
+.userinfo-right-section .top {
+    margin-top: 10rpx;
+    display: flex;
+    align-items: center;
+}
+.userinfo-right-section .bottom {
+    margin-top: 20rpx;
+}
+
+.no-authenticate {
+    display: flex;
+    align-items: center;
+    padding: 0 20rpx;
+    width: 110rpx;
+    height: 44rpx;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 25rpx;
+    opacity: 0.8;
+}
+.no-authenticate .txt {
+    font-size: 28rpx;
+    color: rgba(240, 69, 79, 1);
+}
+.no-authenticate .icon {
+    width: 16rpx;
+    height: 26rpx;
+    margin-left: 10rpx;
+}
+.done-authenticate {
+    display: flex;
+    align-items: center;
+    padding: 0 20rpx;
+    width: 126rpx;
+    height: 44rpx;
+    border-radius: 25rpx;
+    border: 1rpx solid rgba(255, 255, 255, 1);
+}
+.done-authenticate .txt {
+    font-size: 28rpx;
+    margin-left: 10rpx;
+}
+.done-authenticate .icon {
+    width: 28rpx;
+    height: 30rpx;
+}
+
+.modetype-section {
+    font-size: 28rpx;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #f0454f;
+    height: 56rpx;
+    line-height: 56rpx;
+    padding: 0 24rpx;
+    background: linear-gradient(90deg, rgba(255, 218, 113, 1) 0%, rgba(247, 185, 42, 1) 100%);
+    border-radius: 100rpx 0 0 100rpx;
+}
+.modetype-section-icon {
+    width: 24rpx;
+    height: 21rpx;
+    margin-left: 8rpx;
+}
+.merchant-switch-btn {
+    display: flex;
+    align-items: center;
+    width: 110rpx;
+    height: 40rpx;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 20rpx;
+    opacity: 0.8;
+    color: #f0454f;
+    font-size: 24rpx;
+    margin-right: 10rpx;
+}
+.merchant-switch-icon {
+    width: 24rpx;
+    height: 21rpx;
+    margin: 0 6rpx 0 16rpx;
+}

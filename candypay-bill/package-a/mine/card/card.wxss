@@ -1,0 +1,59 @@
+@import "/style/com-list";
+.vendor-listwrap{
+    min-height: 100vh;
+    border-radius: 20rpx;
+    border-top:1px solid #cccccc ;
+    border-left:1px solid #cccccc ;
+    border-right:1px solid #cccccc ;
+    box-shadow: 0 0 20rpx #ccc;
+}
+.save-btn{
+    background-color: #d64340;
+    color: #fff;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    text-align: center;
+    height: 90rpx;
+    line-height: 90rpx;
+    box-shadow:0 0 30rpx #e06e6c;
+}
+.txt{
+    height: 80rpx;
+}
+.card-count-title{
+    height: 76rpx;
+    display: inline-block;
+    margin-left: 58rpx;
+    line-height: 76rpx;
+    font-size: 26rpx;
+    font-family: 'ArialMT','Arial';
+    color: #333333;
+    border-bottom: solid 2px #fa665e;
+}
+
+.add-card {
+    position:absolute;
+    top:18rpx;
+    right:50rpx;
+    background: #fa665e;
+    box-shadow:4rpx 4rpx 4rpx #ccc;
+    color:#fff;
+    text-align:center;
+    z-index: 2;
+    border-radius: 6rpx;
+    width: 70rpx;
+    height: 80rpx;
+    line-height:30rpx;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+.add-card .icon{
+    font-weight:bold;
+    font-size:56rpx;
+}
+.add-card .tit{
+    font-size:18rpx;
+}

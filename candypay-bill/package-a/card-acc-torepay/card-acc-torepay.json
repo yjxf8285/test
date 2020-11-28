@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "记账设置",
+    "usingComponents": {
+        "picker-region":"/components/picker-region/picker-region",
+        "keypad":"/components/keypad/keypad",
+        "card-acc-header": "/components/card-acc-header/card-acc-header"
+    }
+}

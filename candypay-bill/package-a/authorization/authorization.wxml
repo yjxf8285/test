@@ -1,0 +1,41 @@
+<view class="page-con">
+    <swiper style="height:100%" duration="300" current="{{swiperItemCurrent}}" bindchange="swiperChange">
+        <swiper-item>
+            <image mode="widthFix" class="pic" src="../../image/guide-page/image_01@2x.png" />
+            <view class="txt-content">
+                <view class="title">用款日历</view>
+                <view class="description">待还款项 一清二楚</view>
+            </view>
+            <view class="indicate-bar">
+                <view class="indecate-point cur"></view>
+                <view class="indecate-point"></view>
+                <view class="indecate-point"></view>
+            </view>
+        </swiper-item>
+        <swiper-item>
+            <image mode="widthFix" class="pic" src="../../image/guide-page/iamge_02@2x.png" />
+            <view class="txt-content">
+                <view class="title">交易明细</view>
+                <view class="description">多维度查看 交易明细</view>
+            </view>
+            <view class="indicate-bar">
+                <view class="indecate-point"></view>
+                <view class="indecate-point cur"></view>
+                <view class="indecate-point"></view>
+            </view>
+        </swiper-item>
+        <swiper-item>
+            <image mode="widthFix" class="pic" src="../../image/guide-page/image_03@2x.png" />
+            <image mode="widthFix" class="tip" src="../../image/guide-page/image_word@2x.png" />
+            <button disabled="{{!agreement}}" class="authorization-btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+                立即体验
+            </button>
+            <view class="agreement-section">
+                <image bindtap="switchAgreement" wx:if="{{agreement}}" class="agree-cion" src="../../image/icons/icon_count_seting_chose_pre@2x.png" />
+                <text bindtap="switchAgreement" wx:if="{{!agreement}}" class="agreement-icon"></text>
+                <text class="txt">同意</text>
+                <text class="txt fc-blue" bind:tap="gotoUserAgreement">《用户隐私政策》</text>
+            </view>
+        </swiper-item>
+    </swiper>
+</view>

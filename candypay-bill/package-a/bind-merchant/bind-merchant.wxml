@@ -1,0 +1,6 @@
+<view class="container vertical-layout">
+    <view class="section-area">
+        <input type="number" maxlength="19" bindinput="setCardNo" placeholder="请输入该商户的结算卡号" />
+    </view>
+    <button class="red-btn" bind:tap="onClickBtn">确定</button>
+</view>

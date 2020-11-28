@@ -1,0 +1,7 @@
+<view class='mask' wx:if='{{show}}' bindtap='clickMask' catchtouchmove="myCatchTouch">
+  <view class='modal-content' style='width:{{width}};height:{{height}}'>
+    <view class='main-content'>
+      <slot></slot>
+    </view>
+  </view>
+</view>

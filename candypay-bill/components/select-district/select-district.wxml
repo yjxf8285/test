@@ -1,0 +1,10 @@
+<picker mode="multiSelector" bindchange="locationPickerConfirm" bindcolumnchange="locationPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" range-key="name">
+    <view class="picker-wrap" >
+        <view class="txt" wx:if="{{curLocationData.districtName}}">
+            {{curLocationData.provinceName}}
+            {{curLocationData.cityName}}
+            {{curLocationData.districtName}}
+        </view>
+        <view class="txt" wx:else style="color:#999">请选择归属地</view>
+    </view>
+</picker>

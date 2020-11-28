@@ -1,0 +1,35 @@
+@import "/style/accounting";
+.card-accounting{
+    position: relative;
+}
+.swipe-btn-left {
+    height: 70rpx;
+    line-height: 70rpx;
+    color: #fff;
+    position: absolute;
+    bottom: 200rpx;
+    padding-left:30rpx;
+    padding-right:20rpx;
+    right: 0;
+    background: rgba(235, 70, 78, 0.7);
+    box-shadow: 0 6rpx 12rpx 0 rgba(255, 145, 145, 0.5);
+    border-radius: 100rpx 0 0 100rpx;
+    text-align: center;
+    z-index: 1;
+
+}
+.swipe-btn-right {
+    height: 70rpx;
+    line-height: 70rpx;
+    color: #fff;
+    position: absolute;
+    padding-left:10rpx;
+    padding-right:30rpx;
+    bottom: 200rpx;
+    left: 0;
+    background: rgba(235, 70, 78, 0.7);
+    box-shadow: 0 6rpx 12rpx 0 rgba(255, 145, 145, 0.5);
+    border-radius:0 100rpx 100rpx 0;
+    text-align: center;
+    z-index: 1;
+}

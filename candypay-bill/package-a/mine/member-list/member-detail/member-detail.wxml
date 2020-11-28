@@ -1,0 +1,38 @@
+<view class="tab-box" style="padding-bottom:100rpx;">
+    <view class="card-section ">
+        <view class="cell horizontal-layout">
+            <p class="cell-name">身份证号</p>
+              <input  value="{{merchant.idCard}}"  type="number"     disabled style="color:#ccc;text-align:right;"/>
+        </view>
+        <view class="split-view"></view>
+        <view class="cell horizontal-layout">
+            <p class="cell-name">别名</p>
+            <input  value="{{merchant.name}}" bindinput='inputName'   maxlength="10" style="color:#333;text-align:right;" />
+        </view>
+    </view>
+    <view class="list-title">
+        <view class="txt">
+            <p class="card-count-title">卡片({{cardCount}})</p>
+        </view>
+    </view>
+    <view class="vendor-listwrap" style="height:auto;">
+        <view class="vendor-list-group" wx:for="{{carInfoData}}" wx:key="id">
+            <view class="vendor-item pd20">
+               
+                <view class="m" data-item="{{item}}" bind:tap="selectItem" style="margin-left:20rpx;">
+                    <view class="top">
+                        <view class="">{{item.cardDisplayNo}}</view>
+                    </view>
+                    <view class="bottom">
+                        <text style="margin-right:20rpx;">{{item.bankName}}</text>
+                        <text>{{item.name}}</text>
+                    </view>
+                </view>
+                <view class="vendorlist-vertical-line"></view>
+               
+            </view>
+            <view class="vendorlist-rowline"></view>
+        </view>
+    </view>
+</view>
+<view  class="save-btn" bind:tap="putMember">保存</view>

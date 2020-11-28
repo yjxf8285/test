@@ -1,0 +1,20 @@
+<view class="split"></view>
+<view class="h1">
+    <text decode="{{true}}" space="{{true}}">
+        信用卡分期付款是指持卡人使用信用卡进行大额消费时，由银行向商户一次性支付持卡人所购商品（或服务）的消费资金，然后让持卡人分期向银行还款并支付手续费的过程。银行会根据持卡人申请，将消费资金和手续费分期通过持卡人信用卡账户扣收，持卡人按照每月入账金额进行偿还。
+    </text>
+</view>
+<view  class="ad">
+    <image class="ad-words" mode="aspectFit" src="../../image/icons/icon_installments_word.png" />
+</view>
+<view class="h1">
+    <text class="t1 red" decode="{{true}}" space="{{true}}">分期优势</text>
+    <text decode="{{true}}" space="{{true}}">1.善用分期可降低每月出帐时卡片的负债率
+</text>
+    <text decode="{{true}}" space="{{true}}">2.善用分期可有助于提额</text>
+</view>
+<view class="h1">
+    <text class="t1 blue" decode="{{true}}" space="{{true}}">分期劣势</text>
+    <text decode="{{true}}" space="{{true}}">1.实际支付利率高</text>
+</view>
+<button class="red-btn" bind:tap="onClickBtn">信用卡分期</button>

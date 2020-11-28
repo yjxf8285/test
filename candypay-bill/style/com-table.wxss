@@ -1,0 +1,22 @@
+.com-table {
+    border-top: solid 1px #e3e3e3;
+    border-left: solid 1px #e3e3e3;
+    text-align: center;
+    font-size: 26rpx;
+}
+.com-table .t-header {
+    background: #f2f2f2;
+}
+.com-table .t-body {
+    background: #fff;
+}
+.com-table .tr {
+    display: flex;
+}
+.com-table .td {
+    padding: 20rpx 10rpx;
+    box-sizing: border-box;
+    flex: 1;
+    border-right: solid 1px #e3e3e3;
+    border-bottom: solid 1px #e3e3e3;
+}

@@ -1,0 +1,45 @@
+<view class="device-accounting noscroll">
+    <view class="items-center device-accounting-header ">
+        <image class=" mr20" src="../../image/icons/icon_charge_equipment@2x.png" style="width:46rpx;height:46rpx" />
+        <view class="text-overflow-width mr10" style="max-width: 222rpx;">{{label||'设备名'}}</view>
+        <view class="fl1  align-right">SN:{{hideSn||''}}</view>
+    </view>
+    <view class=" available-merchant-info">
+        <view class="r">
+            <image class="" mode="aspectFit" src="../../image/icons/icon_count_seting_tag@2x.png" style="width:130rpx;height:130rpx" />
+        </view>
+        <view class="l mr20" wx:if="{{deviceData.vendorType=='DEFAULT'}}">
+            <view class="vendorname-wrap">
+                <view class="vendorname text-overflow-double">{{deviceData.merchantName}}</view>
+            </view>
+            <view class="tag-btn-wrap">
+                <text class="mcc-tag-btn">{{deviceData.merchantRegionName}}</text>
+                <text class="mcc-tag-btn">{{deviceData.merchantMccCategoryName}}</text>
+                <text class="mcc-tag-btn">{{deviceData.merchantMccGroupName}}</text>
+            </view>
+        </view>
+        <view class="l mr10" wx:if="{{deviceData.vendorType=='SPECIFIED'}}">
+            <view class="vendorname-wrap">
+                <view class="text-overflow-double">{{deviceData.vendorName}}</view>
+            </view>
+            <view class="tag-btn-wrap">
+                <text class="mcc-tag-btn">{{deviceData.vendorRegionName||'无'}}</text>
+                <text class="mcc-tag-btn">{{deviceData.vendorMccCategoryName||'无'}}</text>
+                <text class="mcc-tag-btn">{{deviceData.vendorMccGroupName||'无'}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="vendor-list-title items-c">
+        <image src="../../image/icons/icon_count_seting_flash_wriite_pre@2x.png" style="width:38rpx;height:38rpx" />
+        <view class="fc-red" style="font-size:32rpx;font-weight: bold;  margin: 10rpx;">速记</view>
+        <view class="fc-red" style="font-size:28rpx;">(快速选定商家记账)</view>
+    </view>
+    <view class="accounting-body " style="top:414rpx;">
+        <view class="vendor-wrap">
+            <c-category-menu id="c-category-menu" bind:onselect="onfinalSelcet" bind:ongetvendor="onGetVendor" merchantRegion="{{merchantRegionCode}}" formListIndex="{{entryMode}}" bind:onclickfilterbtn="onclickfilterbtn" deviceData="{{deviceData}}" />
+            <confirm-box id="confirm-box" />
+            <c-mcc-filter id="c-mcc-filter" bind:onmccfilterselected="onmccfilterselected" />
+        </view>
+        <view class="save-btn +{{canSave?'':'disabled'}}" bind:tap="save">保存</view>
+    </view>
+</view>

@@ -1,0 +1,23 @@
+<view class="section"></view>
+<view class="content">
+    <Autograph id="autograph"/>
+</view>
+<view class="section" id="abc" bind:tap="scroolTo">
+    <picker mode="date" value="{{date}}" start="2015-09-01" bindchange="bindDateChange">
+        <view class="picker">当前选择: {{date}}</view>
+    </picker>
+</view>
+<view class="list">
+    <button type="primary" class="button" bindtap="uploadImg">点击上传</button>
+</view>
+<view class="section">
+    <button bind:tap="clearCanvas">清除</button>
+    <view>-</view>
+    <button type="primary" bindtap="saveAutograph">保存</button>
+</view>
+<view bind:tap="selectImage">选择图片</view>
+<view>
+    <image id="imgId" src="{{tempFilePath}}" bind:tap="saveImage" />
+</view>
+ <button type="primary" class="button" bindtap="submit">提交</button>
+ <canvas canvas-id="cutImage"></canvas> 

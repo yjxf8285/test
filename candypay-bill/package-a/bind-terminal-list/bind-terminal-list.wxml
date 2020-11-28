@@ -1,0 +1,12 @@
+<view class="bind-terminal-list">
+    <view class="terminal-item" wx:key="index" wx:for="{{terminalList}}" bind:tap="gotoDetailPage" data-item="{{item}}">
+        <view class="header">
+            <view class="terminal-name text-overflow-nowidth">{{item.merchantName}}</view>
+            <view class="terminal-number">已绑定{{item.number}}台</view>
+        </view>
+        <view class="body">
+            <view class="sn">{{item.merchantId}}</view>
+            <view class="date">{{item.date}}</view>
+        </view>
+    </view>
+</view>

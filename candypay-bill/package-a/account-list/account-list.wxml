@@ -1,0 +1,27 @@
+<view class="account-list">
+    <view class="account-list-header">
+        <view class="left">已添加商户</view>
+        <view class="btn-primary noshadow" bind:tap="gotoMechantInfo">新增商户</view>
+    </view>
+    <view class="account-lis\t-wrap">
+        <view class="account-list-item" wx:for="{{accountInfos}}" wx:key="index" data-item="{{item}}">
+            <view class="section-left fl1">
+                <view class="top text-overflow-nowidth">
+                    {{item.merchantName}}
+                </view>
+                <view class="bottom mt20">{{item.merchantId}}-{{item.brandName}}</view>
+            </view>
+            <view class="section-right ">
+                <view class="top">
+                    <view class="status-btn " style="color:{{item.fontColor}};background:{{item.bgColor}}">
+                        {{item.statusName}}
+                    </view>
+                </view>
+                <view class="bottom mt20">
+                    <image class="def-icon" wx:if="{{item.def}}" src="../../image/index/icon_default_customer.png" />
+                    <image class="chose-icon" wx:else src="../../image/index/icon_chose_nor.png" bind:tap="setDefMerchant" data-item="{{item}}" />
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

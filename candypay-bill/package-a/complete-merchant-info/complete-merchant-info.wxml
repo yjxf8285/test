@@ -1,0 +1,66 @@
+<view class="border-top">
+    <view class="form-list-align-left">
+        <view class="label label-w-t">姓名</view>
+        <view class="input-area">
+            <text class="fc-999">{{name}}</text>
+        </view>
+    </view>
+    <view class="form-list-align-left">
+        <view class="label label-w-t">身份证号</view>
+        <view class="input-area">
+            <text class="fc-999">{{idCard}}</text>
+        </view>
+    </view>
+</view>
+<view class="block"></view>
+<view class="border-top">
+    <view class="form-list-align-left">
+        <view class="label label-w-b">手机号</view>
+        <view class="input-area">
+            <input placeholder="请输入手机号" type="number" placeholder-class="com-input-placeholder" value="{{mobile}}" maxlength="11" bindinput="setMobile" />
+        </view>
+    </view>
+    <view class="form-list-align-left">
+        <view class="label label-w-b">商户名称</view>
+        <view class="input-area">
+            <input placeholder="请输入商户名称" placeholder-class="com-input-placeholder" value="{{mechantName}}" maxlength="30" bindinput="setMechantName"  bindblur="checkMechatnName"/>
+        </view>
+    </view>
+    <view class="form-list-align-left">
+        <view class="label label-w-b">归属地</view>
+        <view class="input-area">
+            <selectDistrict style="width: 100%;" bind:onselect="onDistrictSelect" />
+        </view>
+        <image class="icon" src="../../image/icons/icon_next@3x.png" style="width:14rpx;height:26rpx;" />
+    </view>
+    <view class="form-list-align-left">
+        <view class="label label-w-b">POS使用地</view>
+        <view class="input-area">
+            <input placeholder="请输入POS使用地" placeholder-class="com-input-placeholder" value="{{posUsedRegion}}" maxlength="50" bindinput="setPosUsedRegion" />
+        </view>
+    </view>
+    <!-- <view class="form-list-align-left">
+        <view class="label label-w-b">终端TUSN(选填)</view>
+        <view class="input-area">
+            <input placeholder="请输入终端TUSN" placeholder-class="com-input-placeholder" value="{{tusn}}" maxlength="30" bindinput="setTusn"  />
+            <image class="icon" src="../../image/icons/icon_scan.png" style="width:42rpx;height:42rpx;" bind:tap="scanCode" />
+        </view>
+    </view> -->
+</view>
+<view class="block"></view>
+<view class="border-top">
+    <view class="title" bind:tap="gotoOpenAgreement">《小微商户开户许可协议》</view>
+    <view class="autograph-section border-top">
+        <image class="qutograph-bg-icon" src="../../image/index/icon_word.png" />
+        <Autograph id="autograph" />
+    </view>
+</view>
+<view class="clear-btn-section  border-top">
+    <text class="clear-btn" bind:tap="clearCanvas">清除</text>
+</view>
+<view class="items-c ">
+    <view class="btn-primary big" bind:tap="submit">提交</view>
+</view>
+<view class="block"></view>
+<view class="block"></view>
+<view class="block"></view>

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "卡片列表",
+  "navigationBarBackgroundColor": "#F0454F",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "circle-progress-360": "/components/circle-progress-360/circle-progress-360",
+    "circle-progress-180": "../../components/circle-progress-180/circle-progress-180"
+  }
+}

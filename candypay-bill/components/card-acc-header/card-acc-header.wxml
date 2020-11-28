@@ -1,0 +1,24 @@
+<view class="items-center card-accounting-header ">
+    <view class="card-ico-bg mr20 items-c">
+        <image style="width:80rpx;height:80rpx;" src="../../image/icon_bank/{{cardData.bankImg||'icon_default@2x'}}.png" />
+    </view>
+    <view class="fl1">
+        <view class="fb">{{cardData.hidecardNo||'无'}}</view>
+        <view class="fc-999 fz-28 ">卡产品：{{cardData.name||'无'}}</view>
+    </view>
+    <view class="align-right">
+        <view class="tip-b-r " wx:if="{{cardData.shareAmountEnabled&&!cardData.shareBillEnabled}}">
+            共额
+        </view>
+        <view class="tip-b-r " wx:if="{{cardData.shareBillEnabled&&!cardData.shareAmountEnabled}}">
+            共账
+        </view>
+        <view class="tip-b-r " wx:if="{{cardData.shareAmountEnabled&&cardData.shareBillEnabled}}">
+            共额 | 共账
+        </view>
+        <view class="fz-28 fc-333 mt10 items-center" bind:tap="editCard">
+            <image style="width:32rpx;height:32rpx;" src="../../image/icons/icon_charge_seting@2x.png" />
+            <view class="pl10">卡片设置</view>
+        </view>
+    </view>
+</view>

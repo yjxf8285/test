@@ -1,0 +1,38 @@
+<view class="arc-bg-wrap">
+    <view class="arc-bg-shape"></view>
+</view>
+<view class="page-content">
+    <index-header id="index-header" />
+    <view class="index-body">
+        <view class="block-section mainmenu-wrap">
+            <view class="mainmenu-item" bind:tap="addMerchant">
+                <image class="mainmenu-icon" src="../../image/index/add_merchant.png" />
+                <view class="mainmenu-text">商户开户</view>
+            </view>
+            <view class="mainmenu-item" bind:tap="transactionQuery">
+                <image class="mainmenu-icon" src="../../image/index/transaction_query.png" />
+                <view class="mainmenu-text">交易查询</view>
+            </view>
+            <view class="mainmenu-item" bind:tap="deviceQuery">
+                <image class="mainmenu-icon" src="../../image/index/device_query.png" />
+                <view class="mainmenu-text">绑定终端</view>
+            </view>
+            <view class="mainmenu-item" bind:tap="limitIncrease">
+                <image class="mainmenu-icon" src="../../image/index/limit_increase.png" />
+                <view class="mainmenu-text">交易提额</view>
+            </view>
+        </view>
+        <view class="block-section">
+            <view class="panel-left">
+                <view class="panel-title">记录消费明细{{name}}</view>
+                <view style="width:118rpx" class="btn-primary" bind:tap="gotoChargeUp">去记账</view>
+            </view>
+            <view class="float-r">
+                <image class="decorate-icon" src="../../image/index/image_homepage.png" />
+            </view>
+        </view>
+        <view class="ad-wrap mt20" wx:if="{{bannerIsShow}}">
+            <image class="ad-image" src="../../image/icons/icon_banner.png" bind:tap="gotoAdPage" />
+        </view>
+    </view>
+</view>

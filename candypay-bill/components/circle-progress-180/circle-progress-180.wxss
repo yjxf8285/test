@@ -1,0 +1,26 @@
+.circle-wrap {
+    overflow: hidden;
+}
+.circle-bar {
+    position: relative;
+    border-radius: 50%;
+}
+.mask {
+    background-color: #fff;
+}
+.circle-bar-top,
+.mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 50%;
+}
+
+/* 裁成半圆 */
+.circle-bar-top {
+    background-color: #e9e9e9; /* 底色 */
+    clip: rect(0, auto, 50rpx, auto);
+}

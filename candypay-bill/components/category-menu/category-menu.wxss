@@ -1,0 +1,104 @@
+.category-menu {
+    position: relative;
+    height: 100%;
+}
+.category-menu-topinfo {
+    height: 170rpx;
+}
+.category-menu .top-con {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20rpx;
+    height: 90rpx;
+    font-size: 28rpx;
+    align-items: center;
+}
+.category-menu .top-con .l {
+    width: 130rpx;
+}
+.category-menu .top-con .search-btn {
+    border: solid 1px #f3f3f3;
+    height: 60rpx;
+    line-height: 60rpx;
+    padding-left: 20rpx;
+    border-radius: 100rpx;
+    color: #e0e0e0;
+    font-size: 34rpx;
+}
+
+.category-menu .top-con .line {
+    border-right: solid 1px #ccc;
+    height: 40rpx;
+    margin: 0 20rpx;
+}
+.category-menu .top-con .r {
+    flex: 1;
+    font-size: 26rpx;
+    color: #333;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.category-menu .picker-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-menu .top-con > .r {
+    display: flex;
+    align-items: center;
+}
+
+.category-menu .top-con .icon {
+    width: 25rpx;
+    height: 15rpx;
+    margin-left: 14rpx;
+}
+.category-menu .top-con > .r .fa {
+    color: rgb(255, 102, 102);
+}
+
+.category-menu .list-wrap {
+    position: relative;
+    padding: 0 20rpx 20rpx 20rpx;
+}
+.category-menu .list-wrap .item-tit {
+    font-size: 26rpx;
+    color: #333;
+}
+.category-menu .list-wrap .list-btn {
+    white-space: nowrap;
+    color: #EB464E;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 0 20rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 26rpx;
+    display: inline-block;
+}
+.category-menu .list-wrap .refresh-btn {
+    position: absolute;
+    right: 20rpx;
+    top: 4rpx;
+    font-size: 26rpx;
+    color: #333;
+}
+.category-menu .list-wrap .refresh-btn .fa {
+    margin-right: 6rpx;
+    color: #EB464E;
+}
+
+.category-menu .bot-con {
+    border-top: solid 1px #f3f3f3;
+
+    position: absolute;
+    top: 170rpx;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

@@ -1,0 +1,88 @@
+<view class="con mt20" bind:tap="hideKeyPad">
+    <!-- <view class="card-acc-tab-title" wx:if="{{singleMode}}">
+        <view class="s fl1 items-c">
+            <view class="items-c mt10">
+                <image src="../../image/icons/icon_charge_hand_money@2x.png" style="width:38rpx;height:36rpx" />
+                <view class="fc-red" style="font-size:32rpx;font-weight: bold;  margin: 10rpx;">
+                    手账
+                </view>
+            </view>
+            <view class="fc-red fz-26" style="margin-top:10rpx;">(手动添加账单)</view>
+        </view>
+    </view> -->
+    <view class="card-acc-tab-title" wx:if="{{!singleMode}}">
+        <view class="m fl1 align-center " style=" border-radius:10rpx 0 10rpx 0;" bind:tap="onTabClick">
+            <view class="items-c">
+                <image src="../../image/icons/icon_count_seting_flash_wriite_nor@2x.png" style="width:38rpx;height:36rpx" />
+                <view class="fc-333" style="font-size:32rpx;font-weight: bold;  margin: 10rpx;">
+                    速记
+                </view>
+            </view>
+        </view>
+        <view class="s fl1 align-center ">
+            <view class="items-c mt10">
+                <image src="../../image/icons/icon_charge_hand_money@2x.png" style="width:38rpx;height:36rpx" />
+                <view class="fc-red" style="font-size:32rpx;font-weight: bold;  margin: 10rpx;">
+                    手账
+                </view>
+            </view>
+            <view class="fc-red fz-24" style="margin-top:-10rpx;">(手动添加账单)</view>
+        </view>
+    </view>
+    <view class="card-acc-tab-title-bottom " wx:if="{{!singleMode}}"></view>
+    <view class="list-wrap">
+        <view class="sub-wrap">
+            <!-- <view class="row">
+                <view class="l">选择地区：</view>
+                <view class="r">
+                    <picker-region bind:onselect="onRegionSelect" merchantRegion="{{cardData.merchantRegionCode}}" formListIndex="{{2}}" />
+                    <image src="/image/icons/icon_next@3x.png" class="icon" />
+                </view>
+            </view> -->
+            <view class="row">
+                <view class="l">记账类型：</view>
+                <view class="r">
+                    <picker bindchange="onTypeSelect" range="{{['消费支出','收入']}}">
+                        <view class="picker">{{typeStr}}</view>
+                    </picker>
+                    <image src="/image/icons/icon_next@3x.png" class="icon" />
+                </view>
+            </view>
+        
+            <!-- <view class="row" wx:if="{{showMccSelect}}">
+                <view class="l">消费分类：</view>
+                <view class="r">
+                    <picker-mcc-single id="picker-mcc" bind:onselect="onSelcetMcc" mccId="{{mccId}}" ></picker-mcc-single>
+                    <image src="/image/icons/icon_next@3x.png" class="icon" />
+                </view>
+            </view> -->
+            <view class="row">
+                <view class="l">日期：</view>
+                <view class="r">
+                    <picker mode="date" value="{{occurTime}}" start="{{startDate}}" end="{{endData}}" bindchange="bindDateChange">
+                        <view class="picker">
+                            {{occurTime||'请选择'}}
+                            <image src="/image/icons/icon_next@3x.png" class="icon" />
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class="row" catch:tap="bindAmountInput">
+                <view class="l">金额：</view>
+                <view class="r">
+                    <view class="r-input">{{amountNumber||'请输入金额'}}</view>
+                </view>
+            </view>
+            <view class="row">
+                <view class="l">备注：</view>
+                <view class="r">
+                    <input class="r-input" bindblur="checkCanSave" bindinput="bindiMerchantNameInput" value="{{merchantName=='null'?'':merchantName}}" placeholder="" maxlength="30"/>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="bottom-bar">
+    <view class="save-btn +{{canSave?'':'disabled'}}" bind:tap="save">保存</view>
+</view>
+<keypad id="keypad" bind:submit="keypadSubmit"></keypad>

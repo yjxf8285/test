@@ -1,0 +1,24 @@
+.bar-progress-list {
+    position: relative;
+    min-height: 100rpx;
+    border: solid 1px #eee;
+    border-left: none;
+    background: #fff;
+    background-image: linear-gradient(to right, #eee 1px, transparent 0);
+    background-size: 97rpx;
+}
+
+.txt {
+    font-size: 26rpx;
+    color: #333;
+    padding-left: 20rpx;
+}
+.list-item {
+    height: 100rpx;
+    padding-top: 30rpx;
+}
+.limitTxt{
+    font-size: 26rpx;
+    color:#333;
+    text-align: right;
+}

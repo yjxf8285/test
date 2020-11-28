@@ -1,0 +1,22 @@
+<view class="form-list-align-left border-top">
+    <view class="label label-w-t">终端TUSN</view>
+    <view class="input-area">
+        <input  placeholder="请输入终端TUSN" maxlength="50" style="width:420rpx;" placeholder-class="com-input-placeholder" value="{{tusn}}" bindinput="setTusn"  disabled="{{!editable}}"/>
+        <image class="icon" src="../../image/icons/icon_scan.png" style="width:42rpx;height:42rpx;" bind:tap="scanCode"/>
+    </view>
+</view>
+<view class="terminal-item">
+    <view class="header">
+        <view class="terminal-name text-overflow-nowidth">{{merchantName}}</view>
+    </view>
+    <view class="body">
+        <view class="sn">{{merchantId}}</view>
+        <view class="date">{{createTime}}</view>
+    </view>
+</view>
+<view class="items-c " style="margin-top:80rpx;">
+    <view class="btn-primary big" bind:tap="submit">提交</view>
+</view>
+<view class="items-c " style="margin-top:40rpx;" wx:if="{{sourcePage!='bindterminal'}}">
+    <view class="btn-normal big" bind:tap="skip">跳过</view>
+</view>

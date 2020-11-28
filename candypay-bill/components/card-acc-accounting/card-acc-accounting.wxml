@@ -1,0 +1,8 @@
+<card-acc-header cardData="{{cardData}}" />
+<view wx:if="{{cardData.operateEnable}}">
+    <card-acc-specified style="display:{{accountType==2?'none':''}}" cardData="{{cardData}}" bind:onTabClick="onTabClick" />
+    <card-acc-manual singleMode="{{false}}" style="display:{{accountType==1?'none':''}}" cardData="{{cardData}}" bind:onTabClick="onTabClick" />
+</view>
+<view wx:if="{{!cardData.operateEnable}}">
+    <card-acc-manual singleMode="{{true}}" cardData="{{cardData}}" bind:onTabClick="onTabClick" />
+</view>

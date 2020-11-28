@@ -1,0 +1,7 @@
+<view class="picker-mcc">
+    <picker mode="multiSelector" bindchange="pickerChange" bindcolumnchange="columnChange" value="{{multiIndex}}" range="{{rangeArray}}" >
+        <view class="picker">
+            {{groupName}}
+        </view>
+    </picker>
+</view>

@@ -1,0 +1,76 @@
+<view class="com-form-list">
+    <view class="label">卡号</view>
+    <view class="input-area">
+        <input type="text" class="fc-999" value="{{beautiCardNo}}" disabled="{{true}}" />
+    </view>
+</view>
+<view class="com-form-list">
+    <view class="label">银行</view>
+    <view class="input-area">
+        <input type="text" class="fc-999" value="{{bankName}}" disabled="{{true}}" />
+    </view>
+</view>
+<view class="com-form-list">
+    <view class="label">卡产品</view>
+    <view class="input-area">
+        <input type="text" class="fc-999" value="{{cardName}}" disabled="{{true}}" />
+    </view>
+</view>
+<view class="com-form-list mt-20">
+    <view class="label items-c">
+        <view>多卡共额</view>
+        <view class="fz-26 fc-999">(设定同行多卡片是否共用额度)</view>
+    </view>
+    <view class="input-area">
+        <switch checked="{{cardShared}}" bindchange="onCardShardChange" />
+    </view>
+</view>
+<view class="com-form-list">
+    <view class="label items-c">
+        <view>多卡同帐</view>
+        <view class="fz-26 fc-999">(设定同行多卡片是否共用一个账单)</view>
+    </view>
+    <view class="input-area">
+        <switch checked="{{billShared}}" disabled="{{!cardShared}}" bindchange="onBillShardChange" />
+    </view>
+</view>
+<view class="com-form-list">
+    <view class="label">授信额度</view>
+    <view class="input-area items-c">
+        <input type="number" placeholder="0.00" placeholder-class="com-input-placeholder" maxlength="7" value="{{cardCredit}}" bind:blur="onCardCreditBlur" />
+        <view>元</view>
+    </view>
+</view>
+<view class="com-form-list">
+    <view class="label">未还欠款</view>
+    <view class="input-area items-c">
+        <input type="digit" placeholder="0.00" placeholder-class="com-input-placeholder" maxlength="9" value="{{arrears}}" bindblur="onAvailableCreditBlur" />
+        <view>元</view>
+    </view>
+</view>
+<view class="com-form-list">
+    <view class="label">账单日</view>
+    <view class="input-area items-c">
+        <picker mode="selector" value="{{time}}" range="{{date}}" bindchange="onBillDayPicker">
+            <view class="picker fc-999 ">{{billDay== ''?'请选择日期':'每月'+billDay+'号'}}</view>
+        </picker>
+        <image class="next-icon ml-20" src="../../image/icons/icon_next@3x.png" style="width:16rpx;height:30rpx;" />
+    </view>
+</view>
+<view class="com-form-list">
+    <view class="label">还款日</view>
+    <view class="input-area items-c">
+        <!-- <picker mode="multiSelector" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{repayDate}}">
+            <view class="picker">
+                当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+            </view>
+        </picker> -->
+        <picker mode="multiSelector" bindcolumnchange="bindMultiPickerColumnChange" value="{{repayIndex}}" range="{{repayDate}}" bindchange="onRepayDayPicker">
+            <view class="picker fc-999 ">{{repayDisplayDay== ''?'请选择日期':repayDisplayDay}}</view>
+        </picker> 
+        <image class="next-icon ml-20" src="../../image/icons/icon_next@3x.png" style="width:16rpx;height:30rpx;" />
+    </view>
+</view>
+<view class="bottom-wrap">
+    <view class="btn-primary big" bind:tap="complete">完成</view>
+</view>

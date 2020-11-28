@@ -1,0 +1,65 @@
+{
+    "pages": [
+        "pages/index/index"
+    ],
+    "subpackages": [
+        {
+            "root": "package-a",
+            "pages": [
+                "bind-terminal-list/bind-terminal-list",
+                "bind-terminal-detail/bind-terminal-detail",
+                "data-statistics/data-statistics",
+                "card-list/card-list",
+                "charge-up/charge-up",
+                "add-settlement-card/add-settlement-card",
+                "complete-merchant-info/complete-merchant-info",
+                "real-name-authentication/real-name-authentication",
+                "account-list/account-list",
+                "user-agreement/user-agreement",
+                "account-opening-agreement/account-opening-agreement",
+                "transaction-statistics/transaction-statistics",
+                "transaction-query/transaction-query",
+                "device-accounting/device-accounting",
+                "setup-execution-device/setup-execution-device",
+                "card-accounting/card-accounting",
+                "manual-accounting/manual-accounting",
+                "card-acc-torepay/card-acc-torepay",
+                "data-instruction/data-instruction",
+                "repayment-docket-list/repayment-docket-list",
+                "repayment-docket-detail/repayment-docket-detail",
+                "add-card/add-card",
+                "authorization/authorization",
+                "mine/mine",
+                "register/user-register/user-register",
+                "mine/account/account",
+                "mine/member-list/member-list",
+                "mine/member-list/member-detail/member-detail",
+                "mine/card/card",
+                "bind-merchant/bind-merchant",
+                "open-setting/open-setting",
+                "mine/account/account-pos/account-pos",
+                "help/help",
+                "guide/guide",
+                "webview/webview",
+                "card-installments-ad/card-installments-ad",
+                "receipt-amount/receipt-amount",
+                "credit-card-authentication/credit-card-authentication",
+                "creditcard-authentication/creditcard-authentication",
+                "credit-card-perfect/credit-card-perfect",
+                "test/test"
+            ]
+        }
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "onReachBottomDistance": 50,
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "networkTimeout": {
+        "request": 30000
+    },
+    "sitemapLocation": "sitemap.json"
+  
+}

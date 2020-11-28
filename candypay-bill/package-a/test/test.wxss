@@ -1,0 +1,16 @@
+.header{
+    background:#fff;
+}
+.content{
+    background: #fff;
+    padding:20rpx;
+    margin:30rpx;
+    border:solid 1rpx #ccc;
+}
+.footer{
+    border-top: solid 1rpx #999;
+}
+.section{
+    background-color: #fff;
+    padding:20rpx;
+}

@@ -1,0 +1,54 @@
+<view class="transaction-statistics-detail">
+    <view class="filters-bar">
+        <!-- 按月 -->
+        <!-- <picker fields="month" mode="date" value="{{localDateStr}}" start="{{startData}}" end="{{endData}}" bindchange="selectToday">
+          <view class="filters-bar-item items-c" style="width:240rpx;">
+                <text class="">{{localDateStr}}</text>
+                <image style="width:16rpx;height:12rpx;margin-left:10rpx;" src="../../image/icons/icon_pos_mode_chose@2x.png" />
+            </view>
+        </picker> -->
+        <!-- 按天 -->
+        <picker mode="date" value="{{localDateStr}}" start="{{startData}}" end="{{endData}}" bindchange="selectToday">
+            <view class="filters-bar-item items-c" style="width:240rpx;">
+                <text class="">{{localDateStr}}</text>
+                <image style="width:16rpx;height:12rpx;margin-left:10rpx;" src="../../image/icons/icon_pos_mode_chose@2x.png" />
+            </view>
+        </picker>
+        <picker bindchange="selectDevice" value="index" range="{{merchantList}}" range-key="label">
+            <view class="filters-bar-item items-c no-border ">
+                <text class="text-overflow-width align-center text-overflow-nowidth" style="max-width:400rpx;">
+                    <text>{{currentMerchant.label}}</text>
+                </text>
+                <image style="width:16rpx;height:12rpx;margin-left:10rpx;" src="../../image/icons/icon_pos_mode_chose@2x.png" />
+            </view>
+        </picker>
+        <!-- <view class="com-search-bar disabled">
+            <image class="com-search-bar-icon" src="../../image/icons/icon_trade_count_seach@2x.png" />
+            <input type="text" class="com-search-bar-input" placeholder="输入参考号或卡号" placeholder-style="color:#fff;font-size:26rpx;" disabled="{{1}}" bindinput="noInput" bindconfirm="search" confirm-type="search" />
+        </view> -->
+    </view>
+    <view class="list-wrap">
+        <view class="list-no-data" wx:if="{{deviceTransactionlist.length<1}}">暂无数据</view>
+        <view class="device-transaction-list-item  com-card mb20" wx:key="index" wx:for="{{deviceTransactionlist}}">
+            <view class="l">
+                <image class="style-img" src="../../image/icon_bank/{{item.bankImg}}.png" binderror="imgErr" data-item="{{item}}" />
+            </view>
+            <view class="m fl1">
+                <view class="t">
+                    <text class="">{{item.titleStr}}</text>
+                </view>
+                <view class="b">
+                    <text class="time-str">{{item.occurTime}}</text>
+                </view>
+            </view>
+            <view class="r">
+                <view class=" amountstr align-right" style="color:{{item.amountColor}}">
+                    {{item.amountStr}}
+                </view>
+                <view class=" commissionsstr align-right" style="color:#41a206">
+                    {{item.commissionsStr}}
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

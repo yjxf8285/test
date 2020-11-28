@@ -1,0 +1,8 @@
+{
+    "component": true,
+    "usingComponents": {
+        "card-acc-specified": "/components/card-acc-specified/card-acc-specified",
+        "card-acc-manual": "/components/card-acc-manual/card-acc-manual",
+        "card-acc-header": "/components/card-acc-header/card-acc-header"
+    }
+}

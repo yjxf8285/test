@@ -1,0 +1,26 @@
+<view class="repayment-docket-detail" xmlns:wx="" xmlns:bind="">
+   <view class="hd">
+      <view class="pd20">还款金额</view>
+      <view class="huge-size">{{totalRepaymentAmountStr}}</view>
+      <view class="due-data-txt">还款日：{{repaymentDateStr}}(剩余{{remain}}天)</view>
+   </view>
+   <view class="list-wrap">
+      <scroll-view scroll-y="{{true}}" style="height:100%">
+         <view class="list-item items-center" wx:for="{{cardList}}" wx:key="index" bind:tap="selectItem" data-item="{{item}}">
+            <view class="card-ico-bg mr20 items-c">
+               <image style="width:80rpx;height:80rpx;" src="../../image/icon_bank/{{item.bankImg||'icon_default@2x'}}.png" />
+            </view>
+            <view class="fl1">
+               <view class="fb fz-34">{{item.hidecardNo||'无'}}</view>
+               <view class="fz-26 fc-999">当前欠款：{{item.repaymentAmountStr}}</view>
+            </view>
+            <view class="tip items-c">账单日：{{item.closingDate}}号</view>
+            <view class="select-icon">
+               <image style="width:50rpx;height:44rpx;" hidden="{{!item.selected}}" src="../../image/icons/icon_calendar_detail_pre@2x.png"></image>
+               <image style="width:50rpx;height:44rpx;" hidden="{{item.selected}}" src="../../image/icons/icon_calendar_detail_nor@2x.png" />
+            </view>
+         </view>
+      </scroll-view>
+   </view>
+   <view class="btn {{disabled}}" bind:tap="gotoRepay">去还款</view>
+</view>

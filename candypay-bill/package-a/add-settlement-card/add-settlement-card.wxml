@@ -1,0 +1,50 @@
+<view class="border-top">
+    <view class="form-list-align-left">
+        <view class="label label-w-t">姓名</view>
+        <view class="input-area">
+            <text class="fc-999">{{name}}</text>
+        </view>
+    </view>
+    <view class="form-list-align-left">
+        <view class="label label-w-t">身份证号</view>
+        <view class="input-area">
+            <text class="fc-999">{{idCard}}</text>
+        </view>
+    </view>
+</view>
+<view class="tip-wrap">
+    <image class="tip-icon" src="../../image/icons/icon_toast_remind@2x.png" />
+    <view class="">此银行卡持卡人姓名必须与以上姓名匹配</view>
+</view>
+<view class="border-top">
+    <view class="form-list-align-left">
+        <view class="label label-w-b">结算卡号</view>
+        <view class="input-area">
+            <input placeholder="请输入结算卡号" placeholder-class="com-input-placeholder" value="{{cardNo}}" maxlength="30" bindinput="setCardNo" type="number" />
+        </view>
+    </view>
+    <view class="form-list-align-left">
+        <view class="label label-w-b">开户行</view>
+        <view class="input-area" bind:tap="getBankName">
+            <input placeholder="点击识别开户行" disabled="{{true}}" placeholder-class="com-input-placeholder" value="{{bankName}}" maxlength="18" type="number" />
+        </view>
+    </view>
+    <view class="form-list-align-left">
+        <view class="label label-w-b">开户省市</view>
+        <view class="input-area">
+            <selectCity style="width: 100%;" bind:onselect="onRegionSelect" />
+            <image class="icon" src="../../image/icons/icon_next@3x.png" style="width:14rpx;height:26rpx;" />
+        </view>
+    </view>
+    <view class="form-list-align-left">
+        <view class="label label-w-b">验证码</view>
+        <view class="input-area">
+            <input placeholder="请输入验证码" placeholder-class="com-input-placeholder" value="{{vCode}}" maxlength="4" bindinput="setVcode" type="number" />
+            <view class="random-code" bind:tap="changeCode">{{randomCode}}</view>
+        </view>
+    </view>
+</view>
+<view class="block"></view>
+<view class="items-c " style="margin-top:80rpx;">
+    <view class="btn-primary big" bind:tap="submit">下一步</view>
+</view>

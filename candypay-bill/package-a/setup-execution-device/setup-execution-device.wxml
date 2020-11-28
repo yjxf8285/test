@@ -1,0 +1,28 @@
+<view class="pd-40">
+    <view class="txt-c fz-30 fb">计划名称： {{planName}}</view>
+    <view class="com-table mt-20">
+        <view class="t-header">
+            <view class="tr">
+                <view class="td">消费时间</view>
+                <view class="td">消费金额</view>
+                <view class="td">消费行业</view>
+            </view>
+        </view>
+        <view class="t-body">
+            <view class="tr" wx:for="{{planDetails}}" wx:key="index">
+                <view class="td">{{item.startTimeStr}}-{{item.endTimeStr}}</view>
+                <view class="td">{{item.minAmount}}-{{item.maxAmount}}</view>
+                <view class="td">{{item.mccGroupName}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="select-pos-row  mt-40">
+        <view class="label">选择POS：</view>
+        <picker class="fl1" bindchange="pickerPosChange" value="index" range="{{posArray}}" range-key="label">
+            <view class="picker">{{curPos.label}}</view>
+        </picker>
+    </view>
+    <view class="txt-c mt-40">
+        <button bind:tap="execute" type="warn" disabled="{{!executable}}">确定执行</button>
+    </view>
+</view>

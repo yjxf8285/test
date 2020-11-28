@@ -1,0 +1,47 @@
+.transaction-statistics-detail .filters-bar {
+  height: 85rpx;
+  background-image: linear-gradient(-225deg, #fb5e5e 0%, #f0454f 100%);
+  font-size: 30rpx;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.transaction-statistics-detail .filters-bar-item {
+  /* width: 200rpx; */
+  font-size: 26rpx;
+  color: #ffffff;
+  height: 40rpx;
+  border-right: solid 1px rgba(255, 255, 255, 0.4);
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.transaction-statistics-detail .list-wrap {
+  padding: 20rpx;
+}
+.device-transaction-list-item {
+  display: flex;
+}
+.device-transaction-list-item .l {
+  width: 80rpx;
+  padding: 20rpx;
+}
+.device-transaction-list-item .l .style-img {
+  width: 80rpx;
+  height: 80rpx;
+}
+.device-transaction-list-item .m {
+  padding-top: 20rpx;
+}
+.device-transaction-list-item .m .t {
+  font-size: 30rpx;
+  color: #333;
+}
+.device-transaction-list-item .m .b {
+  font-size: 28rpx;
+  color: #999;
+}
+.device-transaction-list-item .r {
+  /* width: 200rpx; */
+  padding: 20rpx;
+}

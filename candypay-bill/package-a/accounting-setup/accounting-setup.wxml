@@ -1,0 +1,127 @@
+<view class="con">
+    <view class="main-info">
+        <view class="top-bar">
+            <view class="l" wx:if="{{entryMode==1}}">
+                <text class="fa fa-fax"></text>
+                <text>{{label||'无'}}</text>
+            </view>
+            <view class="l" wx:if="{{entryMode==2}}">
+                <text class="fa fa-credit-card"></text>
+                <text>{{cardDisplayNo}}</text>
+            </view>
+            <view class="r">
+                <text wx:if="{{entryMode==1}}">SN:{{sn}}</text>
+                <text wx:if="{{entryMode==2}}">{{bankName}} {{cardName}}</text>
+            </view>
+        </view>
+        <view class="h2">
+            <text class="icon"></text>
+            <text class="t">当前生效</text>
+        </view>
+        <view class="selected-vendor-info">
+            <view wx:if="{{vendorType=='默认'}}">
+                <view class="vendor-name" wx:if="{{entryMode==1}}">{{merchantName}}</view>
+                <view class="vendor-name" wx:if="{{entryMode==2}}" style="color:#999">
+                    使用设备注册的默认商户记账
+                </view>
+            </view>
+            <view class="describing" wx:if="{{vendorType=='默认'&&entryMode==1}}">
+                {{vendorType}}  {{merchantRegion}} {{merchantMcc}}
+            </view>
+            <view class="vendor-name" wx:if="{{vendorType=='速记'}}">{{vendorName}}</view>
+            <view class="describing" wx:if="{{vendorType=='速记'}}">
+                <text class="{{vendorType=='速记'?'green':''}}">{{vendorType}}</text>
+                {{vendorRegion}} {{vendorMcc}}
+            </view>
+        </view>
+    </view>
+    <view class="h2">
+        <text class="icon"></text>
+        <text class="t">记账设置</text>
+    </view>
+    <view class="tab-btn-list {{tapIndexName}}">
+        <view class="tab-btn default {{0==tabIndex?'cur':''}}" style="margin-left:40rpx" bind:tap="tabBtnTap" data-index="0">
+            <view class="top">
+                <view class="fa fa-exclamation "></view>
+                <view class="txt">
+                    <view>使用默认商家</view>
+                    <view>消费记账</view>
+                </view>
+            </view>
+            <view class="bottom">默认</view>
+        </view>
+        <view class="tab-btn speed {{1==tabIndex?'cur':''}}" bind:tap="tabBtnTap" data-index="1">
+            <view class="top">
+                <view class="fa fa-bolt "></view>
+                <view class="txt">
+                    <view>快速指定商家</view>
+                    <view>消费记账</view>
+                </view>
+            </view>
+            <view class="bottom">速记</view>
+        </view>
+    </view>
+    <view class="tab-item-list">
+        <swiper duration="200" current="{{tabIndex}}" style="height:100%">
+            <swiper-item catchtouchmove="onTouchMove">
+                <view class="mask"></view>
+                <view class="top-box" wx:if="{{entryMode==1}}">
+                    <view class="device-definfo">当前设备注册的默认商户</view>
+                    <view class="selected-vendor-info def">
+                        <view class="vendor-name">{{merchantName}}</view>
+                        <view class="describing">{{merchantRegion}} {{merchantMcc}}</view>
+                    </view>
+                </view>
+                <view class="top-box" wx:if="{{entryMode==2}}">
+                    <view class="device-definfo">使用设备注册的默认商户记账</view>
+                </view>
+            </swiper-item>
+            <swiper-item catchtouchmove="onTouchMove">
+                <view class="swiper-item-con" >
+                    <scroll-view scroll-y style="height:100%">
+                        <c-category-menu id="c-category-menu" bind:onselect="onfinalSelcet" merchantRegion="{{merchantRegionCode}}" formListIndex="{{entryMode}}" bind:onclickfilterbtn="onclickfilterbtn"></c-category-menu>
+                    </scroll-view>
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
+    <view class="save-btn +{{canSave?'':'disabled'}}" bind:tap="save">保 存</view>
+</view>
+<modal-window show="{{modalShow}}" height='500rpx'>
+    <view class='modal-content'>
+        <view class="vertical-layout modal-container">
+            <view class="horizontal-layout modal-header">
+                <p wx:if="{{entryMode==1}}">{{label}}</p>
+                <p wx:if="{{entryMode==2}}">卡号：{{cardDisplayNo}}</p>
+                <p bind:tap="modalCancel" class="fa fa-close"></p>
+            </view>
+            <view class="vertical-layout" wx:if="{{tabIndex==0}}">
+                <p class="modal-merchant-name" wx:if="{{entryMode==1}}">{{merchantName}}</p>
+                <p class="modal-merchant-name" wx:if="{{entryMode==2}}">使用设备注册的默认商户记账</p>
+                <view class="horizontal-layout modal-mcc"  >
+                    <p class="modal-category" wx:if="{{entryMode==1}}">{{merchantRegion}} {{merchantMcc}}</p>
+                     <p class="modal-category" wx:if="{{entryMode==2}}"><text decode="emsp">&emsp;</text></p>
+                </view>
+            </view>
+            <view class="vertical-layout" wx:if="{{tabIndex==1}}">
+                <p class="modal-merchant-name">{{chooseAccounting.MerchantName}}</p>
+                <view class="horizontal-layout modal-mcc" >
+                    <p class="modal-category">
+                        {{chooseAccounting.MerchantLoaction}} {{chooseAccounting.MerchantMccName}}
+                    </p>
+                </view>
+            </view>
+            <view class="vertical-layout modal-loading-area" wx:if="{{setAccountRequesting}}">
+                <text class="fa fa-spinner fa-spin  animated"></text>
+                <p>设置记账商家中</p>
+            </view>
+            <view class="modal-loading-area loading-success" wx:if="{{!setAccountRequesting}}">
+                设置成功
+            </view>
+            <view class="modal-ad-area" id="ad-img">
+                <image class="modal-ad-area" src="/image/register/image_bg.png" />
+            </view>
+        </view>
+    </view>
+</modal-window>
+<c-mcc-filter id="c-mcc-filter" bind:onmccfilterselected="onmccfilterselected"></c-mcc-filter>

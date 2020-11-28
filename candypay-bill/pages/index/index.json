@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "开店宝账单",
+    "backgroundColor":"#F0454F",
+    "navigationBarBackgroundColor": "#F0454F",
+    "navigationBarTextStyle": "white",
+    "usingComponents": {
+        "index-header":"/components/index-header/index-header"
+    }
+}

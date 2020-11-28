@@ -1,0 +1,24 @@
+<view class="vendor-listwrap">
+    <view class="nodata" wx:if="{{listData.length<1}}">暂无数据</view>
+    <view class="vendor-list-group" wx:if="{{listData.length>0}}" wx:for="{{listData}}" wx:key="index">
+        <view class="vendor-item" data-item="{{item}}" bind:tap="selectItem">
+            <view class="l">
+                <image wx:if="{{!item.cur}}" class="vendor-check-icon" src="../../image/icons/icon_count_seting_chose_nor@2x.png" />
+                <image wx:if="{{item.cur}}" class="vendor-check-icon" src="../../image/icons/icon_count_seting_chose_pre@2x.png" />
+            </view>
+            <view class="m">
+                <view class="vendor-name text-overflow-nowidth">
+                    <image wx:if="{{item.transFlg==0}}" style="width:60rpx;height:33rpx;margin-right:10rpx;" src="../../image/icons/icon_flash_pay_new@2x.png" />
+                    <text class="def-text" wx:if="{{item.default}}">(默认商家)</text>
+                    <text>{{item.name}}</text>
+                </view>
+                <view>
+                    <text class="mcc-tag-btn">{{item.vendorRegionName}}</text>
+                    <text class="mcc-tag-btn">{{item.vendorMccCategoryName}}</text>
+                    <text class="mcc-tag-btn">{{item.vendorMccGroupName}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="vendorlist-rowline"></view>
+    </view>
+</view>

@@ -1,0 +1,15 @@
+page{
+    background-color: #fff;
+}
+.user-agreement-wrap {
+    color: #333;
+    font-size: 28rpx;
+    padding: 20rpx;
+    line-height: 50rpx;
+}
+.block{
+    height: 40rpx;
+}
+.tr{
+    text-align: right;
+}

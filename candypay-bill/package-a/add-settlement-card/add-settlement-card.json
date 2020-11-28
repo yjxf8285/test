@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "添加结算卡",
+  "usingComponents": {
+    "selectCity": "/components/select-city/select-city"
+  }
+}

@@ -1,0 +1,6 @@
+<view class="circle-wrap" style="width:{{width}}rpx;height:{{height}}rpx">
+    <view class="circle-bar" style="width:{{width}}rpx;height:{{width}}rpx;background-color: {{barColor}};">
+        <view class="circle-bar-top" style="width:{{width}}rpx;height:{{width}}rpx; transform: rotate({{progress}}deg);"></view>
+        <view class="mask" style="width:{{maskWidth}}rpx;height:{{maskWidth}}rpx"></view>
+    </view>
+</view>

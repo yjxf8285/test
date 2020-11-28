@@ -1,0 +1,50 @@
+.com-form-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20rpx;
+    height: 100rpx;
+    align-items: center;
+    border-bottom: solid 1rpx #e0e0e0;
+    background: #fff;
+    color: #333;
+}
+.com-form-list input {
+    text-align: right;
+}
+.com-input-placeholder {
+    color: #999;
+}
+/* input 左对齐 */
+.form-list-align-left {
+    display: flex;
+    padding: 0 20rpx;
+    height: 100rpx;
+    align-items: center;
+    border-bottom: solid 1rpx #e0e0e0;
+    background: #fff;
+    color: #333;
+    font-size: 30rpx;
+}
+.border-top {
+    border-top: solid 1rpx #e0e0e0;
+}
+.form-list-align-left .input-area {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.form-list-align-left input {
+    width: 100%;
+}
+.tip-wrap {
+    display: flex;
+    align-items: center;
+    color: #f14545;
+    font-size: 28rpx;
+    padding: 20rpx;
+}
+.tip-icon {
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 8rpx;
+}

@@ -1,0 +1,38 @@
+<view class="index-header">
+    <view class="userinfo-wrap">
+        <view class="userinfo-avatar-wrap" bind:tap="gotoMine">
+            <image class="userinfo-wrap-avatar " mode="aspectFill" src="{{userInfo.avatar}}"></image>
+        </view>
+        <view class="userinfo-right-section" wx:if="{{isGuestUser}}">
+            <view class="top">
+                <text class="">{{mobile}}</text>
+            </view>
+            <view class="bottom">
+                <view class="no-authenticate" wx:if="{{authType!='AUTHED'}}" bind:tap="gotoRealNameAuthenticationPage">
+                    <text class="txt">去认证</text>
+                    <image class="icon" src="../../image/index/right_arr.png" />
+                </view>
+                <view class="done-authenticate" wx:else>
+                    <image class="icon" src="../../image/index/icon_homepage_inditify.png" />
+                    <text class="txt">已认证</text>
+                </view>
+            </view>
+        </view>
+        <view class="userinfo-right-section" wx:else>
+            <view class="top " bind:tap="gotoAccountListPage">
+                <view class="merchant-switch-btn">
+                    <image class="merchant-switch-icon" src="../../image/index/icon_change.png" />
+                    <text>切换</text>
+                </view>
+                <text class="text-overflow-nowidth fl1">{{accountList[0].merchantName}}</text>
+            </view>
+            <view class="bottom">{{accountList[0].merchantId}}</view>
+        </view>
+    </view>
+    <view class="modetype-section" bind:tap="showModal" wx:if="{{!isGuestUser}}">
+        <view class="">
+            <text>当前:{{patternName}}</text>
+            <image class="modetype-section-icon " src="../../image/index/icon_change.png" />
+        </view>
+    </view>
+</view>

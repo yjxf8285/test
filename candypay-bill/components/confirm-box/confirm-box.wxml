@@ -1,0 +1,20 @@
+<modal-window show="{{modalShow}}" width="600rpx">
+    <view class="modal-container">
+        <view class="modal-header">
+            <image style="width:358rpx;height:31rpx;" class="modal-ad-area" src="/image/icons/icon_line_setting@2x.png" />
+        </view>
+        <view class="modal-body">
+            <text class="modal-merchant-name" style="font-weight: bold;">{{chooseAccounting.MerchantName}}</text>
+            <view class="modal-mcc-wrap">
+                 <view class="space"></view>
+                <view class="mcc-tag-btn">{{chooseAccounting.vendorRegionName||'无'}}</view>
+                <view class="mcc-tag-btn">{{chooseAccounting.vendorMccCategoryName||'无'}}</view>
+                <view class="mcc-tag-btn">{{chooseAccounting.vendorMccGroupName||'无'}}</view>
+            </view>
+        </view>
+        <view class="modal-footer">
+            <view class="btn" bind:tap="hide">确认</view>
+            <view class="tip">若设备提示"无效商户"，请重新选择并设置</view>
+        </view>
+    </view>
+</modal-window>

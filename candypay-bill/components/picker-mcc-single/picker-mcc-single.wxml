@@ -1,0 +1,7 @@
+<view class="picker-mcc-single">
+    <picker mode="selector" bindchange="pickerChange"  value="index" range="{{formatMccData}}" range-key="categoryName">
+        <view class="picker">
+            {{categoryName}}
+        </view>
+    </picker>
+</view>

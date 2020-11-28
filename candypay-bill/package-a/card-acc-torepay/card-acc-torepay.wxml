@@ -1,0 +1,57 @@
+<card-acc-header cardData="{{cardData}}" />
+<view class="pd20">
+    <view class="card-acc-tab-title">
+        <view class="s  items-c " style="width:100%;">
+            <view class="items-c ">
+                <image src="../../image/icons/icon_charge_hand_money@2x.png" style="width:38rpx;height:36rpx" />
+                <view class="fc-red" style="font-size:32rpx;font-weight: bold;  margin: 10rpx;">
+                    手账
+                </view>
+            </view>
+            <view class="fc-red fz-24 column-center">(手动添加账单)</view>
+        </view>
+    </view>
+    <view class="list-wrap">
+        <view class="sub-wrap">
+            <view class="row">
+                <view class="l">选择地区：</view>
+                <view class="r">
+                    <picker-region bind:onselect="onRegionSelect" merchantRegion="{{cardData.merchantRegionCode}}" formListIndex="{{2}}" />
+                    <image src="/image/icons/icon_next@3x.png" class="icon" />
+                </view>
+            </view>
+            <view class="row">
+                <view class="l">交易类型：</view>
+                <view class="r">还款</view>
+            </view>
+            <view class="row">
+                <view class="l">还款说明：</view>
+                <view class="r">
+                    <input class="r-input" bindblur="checkCanSave" bindinput="bindiMerchantNameInput" value="{{merchantName=='null'?'':merchantName}}" placeholder="请输入还款说明" maxlength="30" />
+                </view>
+            </view>
+           
+            <view class="row">
+                <view class="l">日期：</view>
+                <view class="r">
+                    <picker mode="date" value="{{occurTime}}" start="{{startDate}}" end="{{endData}}" bindchange="bindDateChange">
+                        <view class="picker">
+                            {{occurTime||'请选择'}}
+                            <image src="/image/icons/icon_next@3x.png" class="icon" />
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class="row" catch:tap="bindAmountInput">
+                <view class="l">金额：</view>
+                <view class="r">
+                    <view class="r-input">{{amountNumber||'请输入金额'}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="bottom-bar">
+    <view class="save-btn +{{canSave?'':'disabled'}}" bind:tap="save">保存</view>
+</view>
+<keypad id="keypad" bind:submit="keypadSubmit"></keypad>

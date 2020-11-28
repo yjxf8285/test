@@ -1,0 +1,10 @@
+@import 'com-btn.wxss';
+@import 'com-card.wxss';
+@import 'com-font.wxss';
+@import 'com-form-list.wxss';
+@import 'com-layout.wxss';
+@import 'com-list.wxss';
+@import 'com-modal.wxss';
+@import 'com-search-bar.wxss';
+@import 'com-table.wxss';
+@import 'com-modal.wxss';

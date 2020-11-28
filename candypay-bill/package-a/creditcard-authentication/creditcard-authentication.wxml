@@ -1,0 +1,46 @@
+<view class="border-top">
+    <view class="form-list-align-left">
+        <view class="label label-w-t">姓名</view>
+        <view class="input-area">
+            <text class="fc-999">{{name}}</text>
+        </view>
+    </view>
+    <view class="form-list-align-left">
+        <view class="label label-w-t">身份证号</view>
+        <view class="input-area">
+            <text class="fc-999">{{idCard}}</text>
+        </view>
+    </view>
+</view>
+<view class="tip-wrap">
+    <image class="tip-icon" src="../../image/icons/icon_toast_remind@2x.png" />
+    <view class="">此银行卡持卡人姓名必须与以上姓名匹配</view>
+</view>
+<view class="form-list-align-left">
+    <view class="label label-w-t">信用卡号</view>
+    <view class="input-area">
+        <input type="number" placeholder="请输入信用卡号" placeholder-class="com-input-placeholder" value="{{cardNo}}" maxlength="30" bindinput="setCardNo" />
+    </view>
+</view>
+<view class="form-list-align-left">
+    <view class="label label-w-t">手机号</view>
+    <view class="input-area">
+        <input type="number" placeholder="请输入预留手机号" maxlength="11" placeholder-class="com-input-placeholder" value="{{mobile}}" bindinput="setMobile" />
+    </view>
+</view>
+<view class="form-list-align-left">
+    <view class="label label-w-t">验证码</view>
+    <view class="input-area">
+        <input type="number" placeholder="请输入验证码" maxlength="6" style="width:200rpx" placeholder-class="com-input-placeholder" value="{{code}}" bindinput="setCode" />
+    </view>
+    <view class="btn-require-verifycode {{vcodeBtnDisable?'btn-disable':'btn-enable'}}" bind:tap="getCreditcardVerifyCode">
+        {{getVerifyCodeTxt}}
+    </view>
+</view>
+<view class="block"></view>
+<view class="items-c " style="margin-top:80rpx;">
+    <view class="btn-primary big" bind:tap="submit">下一步</view>
+</view>
+<view class="items-c " style="margin-top:40rpx;" wx:if="{{pageSource!='amount'}}">
+    <view class="btn-normal big" bind:tap="skip">跳过</view>
+</view>

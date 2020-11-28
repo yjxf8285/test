@@ -1,0 +1,17 @@
+<view class="bar-progress-list">
+    <view class="list-wrap">
+        <view wx:if="{{type==0}}">
+            <view class="list-item" wx:for="{{listData}}" wx:key="index">
+                <view class="txt">{{item.groupName}} {{item.expenseTxt}}k {{item.percent}}%</view>
+                <progress percent="{{item.percent}}" activeColor="#EB3C46" border-radius="20rpx" />
+            </view>
+        </view>
+        <view wx:if="{{type==1}}">
+            <view class="list-item" wx:for="{{listData}}" wx:key="index">
+                <view class="txt">{{item.bankName}} {{item.debtAmountStr}}k {{item.percent}}%</view>
+                <progress percent="{{item.percent}}" activeColor="#EB3C46" border-radius="20rpx" />
+                <view class="limitTxt">{{item.limitAmountStr}}k</view>
+            </view>
+        </view>
+    </view>
+</view>

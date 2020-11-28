@@ -1,0 +1,35 @@
+ <view  class="add-card" bind:tap="gotoAddCard">
+        <view class="icon">+</view>
+        <view class="tit">卡片</view>
+    </view>
+<view class="tab-box">
+    <view class="list-title">
+        <view class="txt">
+            <p class="card-count-title">卡片({{cardCount}})</p>
+        </view>
+    </view>
+    <view class="vendor-listwrap">
+        <view class="vendor-list-group" wx:for="{{carInfoData}}" wx:key="id">
+            <view class="vendor-item">
+                <view class="l {{item.cur?'cur':''}}" data-item="{{item}}" bind:tap="selectItem">
+                    <view class="fa fa-check vendor-check-icon"></view>
+                </view>
+                <view class="m" data-item="{{item}}" bind:tap="selectItem">
+                    <view class="top">
+                        <view class="vendor-name">{{item.cardDisplayNo}}</view>
+                    </view>
+                    <view class="bottom">
+                        <text style="margin-right:20rpx;">{{item.bankName}}</text>
+                        <text>{{item.name}}</text>
+                    </view>
+                </view>
+                <view class="vendorlist-vertical-line"></view>
+                <view class="r">
+                    <view class="detail-btn" data-item="{{item}}" bind:tap="editCard">编辑</view>
+                </view>
+            </view>
+            <view class="vendorlist-rowline"></view>
+        </view>
+    </view>
+</view>
+<view hidden="{{currentCard==null}}" class="save-btn" bind:tap="delCard">删除</view>

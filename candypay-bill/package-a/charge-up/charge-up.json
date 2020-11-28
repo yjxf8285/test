@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "我要记账",
+  "backgroundColor": "#F0454F",
+  "navigationBarBackgroundColor": "#F0454F",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "home-card-list": "/components/home-card-list/home-card-list"
+  }
+}

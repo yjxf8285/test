@@ -1,0 +1,24 @@
+
+.label-w-t {
+    width: 140rpx;
+}
+.bottom-wrap{
+    margin-top: 244rpx;
+    text-align: center;
+}
+
+.btn-require-verifycode{
+    font-size: 22rpx;
+    color: #F0454F;
+    height: 48rpx;
+    line-height: 48rpx;
+    padding:0 10rpx;
+    text-align: center;
+    border-radius: 4rpx;
+    font-size: 30rpx;
+}
+.btn-disable{
+    color: #999;
+    width: auto!important;
+    padding: 0 20rpx!important;
+}

@@ -1,0 +1,41 @@
+.block {
+    height: 20rpx;
+}
+.label-w-t {
+    width: 140rpx;
+}
+.label-w-b {
+    width: 250rpx;
+}
+.title {
+    background: #fff;
+    color: #3a89e2;
+    font-size: 30rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    padding-left: 20rpx;
+}
+.autograph-section {
+    position: relative;
+    background: #fff;
+    text-align: center;
+}
+.clear-btn-section {
+    height: 60rpx;
+    overflow: hidden;
+}
+.clear-btn {
+    margin: 10rpx 20rpx 0 0;
+    float: right;
+    font-size: 32rpx;
+    color: #f0454f;
+}
+.qutograph-bg-icon {
+    position: absolute;
+    width: 432rpx;
+    height: 100rpx;
+    top: 50%;
+    left: 50%;
+    margin-top: -50rpx;
+    margin-left: -216rpx;
+}

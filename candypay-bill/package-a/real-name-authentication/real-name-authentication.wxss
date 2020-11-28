@@ -1,0 +1,97 @@
+.real-name-authentication {
+}
+.picture-wrap {
+    border-top: solid 1rpx #e0e0e0;
+    background-color: #fff;
+    display: flex;
+    padding: 30rpx 0 30rpx 20rpx;
+}
+.picture-wrap .bg {
+    position: relative;
+    background-color: #fff5f5;
+    width: 346rpx;
+    height: 194rpx;
+    text-align: center;
+    margin-right: 20rpx;
+}
+.picture-wrap .bg .square-border-bg {
+    width: 236rpx;
+    height: 134rpx;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -67rpx;
+    margin-left: -118rpx;
+}
+.picture-wrap .bg .example-pic {
+    width: 188rpx;
+    height: 110rpx;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -55rpx;
+    margin-left: -94rpx;
+}
+.picture-wrap .bg .camera-icon {
+    width: 96rpx;
+    height: 96rpx;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -48rpx;
+    margin-left: -48rpx;
+}
+.picture-wrap .bg .refer-tip {
+    position: absolute;
+    top: 20rpx;
+    left: 0;
+    width:134rpx;
+    height:44rpx;
+    background:#F14545;
+    border-radius:1px 100px 100px 1px;
+    font-size: 24rpx;
+    font-weight: 500;
+    color: #fff;
+    line-height: 44rpx;
+}
+.picture-wrap .bg .tip-text {
+    font-size: 22rpx;
+    color: #f14545;
+    position: absolute;
+    top: 150rpx;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.tip-wrap {
+    display: flex;
+    align-items: center;
+    color: #f14545;
+    font-size: 28rpx;
+    padding: 20rpx;
+}
+.tip-icon {
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 8rpx;
+}
+.separator {
+    margin: 0 6rpx;
+    color: #999;
+}
+.form-list-align-left .label {
+    width: 170rpx;
+}
+.lone-term-btn {
+    position: absolute;
+    right: 20rpx;
+    width: 124rpx;
+    height: 46rpx;
+    line-height: 46rpx;
+    color: #fff;
+    text-align: center;
+    font-size: 26rpx;
+    background: rgba(241, 69, 69, 1);
+    border-radius: 4rpx;
+}
+

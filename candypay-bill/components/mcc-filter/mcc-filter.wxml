@@ -1,0 +1,37 @@
+<i-drawer mode="right" maskClosable="{{true}}" visible="{{showDrawer}}" bind:close="closeDrawer" class="mcc-filter">
+    <view class="drawer-container" catchtouchmove="myCatchTouch">
+        <scroll-view class="rightmenu-wrap" scroll-y>
+            <view class="rightmenu-item" wx:for="{{formatMccData}}" wx:key="index">
+                <view class="title-recommend" wx:if="{{item.category==0}}">
+                    <text class="fa fa-heart mr10"></text>
+                    <text>猜您喜欢</text>
+                </view>
+                <view class="title" wx:if="{{item.category!=0}}">
+                    <view class="l">{{item.categoryName}}</view>
+                    <view wx:if="{{item.groupList.length>9}}">
+                        <image src="/image/icons/icon_collapse@2x.png" class="icon" wx:if="{{!item.showSim}}" data-item="{{item}}" bind:tap="toggleSimData"></image>
+                        <image src="/image/icons/icon_expand@2x.png" class="icon" wx:if="{{item.showSim}}" data-item="{{item}}" bind:tap="toggleSimData"></image>
+                    </view>
+                </view>
+                <view class="ul +{{item.category==0?'recommend-list':''}}" wx:if="{{!item.showSim}}">
+                    <view class="li +{{item.cur?' cur':''}}+{{item.disabled?' dis':''}}" bind:tap="singleSelectGroup" data-item="{{item}}" wx:key="{{item.index}}" wx:for="{{item.groupList}}">
+                        {{item.groupName}}
+                    </view>
+                </view>
+                <view class="ul +{{item.category==0?'recommend-list':''}}" wx:if="{{item.showSim}}">
+                    <view class="li +{{item.cur?' cur':''}}+{{item.disabled?' dis':''}}" wx:key="{{item.index}}" bind:tap="singleSelectGroup" data-item="{{item}}" wx:for="{{item.simGroupList}}">
+                        {{item.groupName}}
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+        <view class="footer">
+            <view class="l">
+                <view class="reset-btn" bind:tap="reset">重置</view>
+            </view>
+            <view class="r">
+                <view class="confirm" bind:tap="comfirm">确定</view>
+            </view>
+        </view>
+    </view>
+</i-drawer>

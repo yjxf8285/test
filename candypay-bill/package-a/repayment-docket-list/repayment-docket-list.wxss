@@ -1,0 +1,77 @@
+.repayment-docket-list {
+    padding: 20rpx;
+}
+
+.repayment-docket-list .txt {
+    font-size: 28rpx;
+    color: #ff9124;
+}
+.repayment-docket-list .list-wrap {
+    margin-top: 20rpx;
+    padding: 30rpx;
+    padding-bottom: 0;
+}
+.repayment-docket-list .list-item {
+    height: 150rpx;
+    display: flex;
+}
+.repayment-docket-list .list-item .l {
+    padding-top: 40rpx;
+    box-sizing: border-box;
+    width: 190rpx;
+}
+.repayment-docket-list .list-item .m {
+    display: flex;
+    flex-direction: column;
+    width: 22rpx;
+}
+.repayment-docket-list .list-item .m .t {
+    width: 1px;
+    height: 48rpx;
+    margin-left: 12rpx;
+    border-left: 1px solid #d8d8d8;
+}
+.repayment-docket-list .list-item .m .b {
+    flex: 1;
+    margin-left: 12rpx;
+    width: 1px;
+    border-left: 1px solid #d8d8d8;
+}
+.repayment-docket-list .list-item .m .o {
+    width: 22rpx;
+    height: 22rpx;
+    border-radius: 100%;
+    border: 1px solid #d8d8d8;
+}
+.repayment-docket-list .list-item.start .t {
+    border: none;
+}
+.repayment-docket-list .list-item.end .b {
+    border: none;
+}
+.repayment-docket-list .list-item .r {
+    padding-left: 30rpx;
+    box-sizing: border-box;
+    flex: 1;
+}
+.repayment-docket-list .list-item .r .tip-wrap {
+    position: relative;
+    padding: 20rpx;
+    box-shadow: 0 -9rpx 18rpx 0 rgba(222, 222, 222, 0.5), 0 9rpx 18rpx 0 rgba(202, 202, 202, 0.5);
+    border-radius: 10rpx;
+}
+.repayment-docket-list .list-item .r .tip-wrap .icon {
+    position: absolute;
+    top: 36rpx;
+    left: -10rpx;
+}
+.repayment-docket-list .list-item .r .tip-wrap .icon-next {
+    position: absolute;
+    top: 40rpx;
+    right: 20rpx;
+}
+.repayment-docket-list .list-item .r .nodata {
+    font-size: 28rpx;
+    color: #333;
+    padding-top: 42rpx;
+}

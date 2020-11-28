@@ -1,0 +1,21 @@
+.tab-btn-wrap {
+    box-sizing: border-box;
+    padding-top: 12rpx;
+    height: 85rpx;
+    background-image: linear-gradient(-225deg, #fb5e5e 0%, #f0454f 100%);
+    font-size: 30rpx;
+    color: #ffffff;
+    display: flex;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+}
+.tab-btn-wrap .i {
+    background: #ffffff;
+    border-radius: 4rpx;
+    width: 53rpx;
+    height: 7rpx;
+    margin: 6rpx auto;
+    opacity: 0;
+}
+.tab-btn-wrap .cur .i {
+    opacity: 1;
+}

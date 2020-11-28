@@ -1,0 +1,4 @@
+<view class="manual-accounting">
+    <card-acc-header cardData="{{cardData}}" />
+    <card-acc-manual singleMode="{{1}}" cardData="{{cardData}}"/>
+</view>

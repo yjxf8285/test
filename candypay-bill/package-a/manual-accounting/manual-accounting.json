@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "记一笔",
+    "usingComponents": {
+        "card-acc-header": "/components/card-acc-header/card-acc-header",
+        "card-acc-manual": "/components/card-acc-manual/card-acc-manual"
+    }
+}

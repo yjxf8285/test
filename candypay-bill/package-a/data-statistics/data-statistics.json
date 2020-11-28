@@ -1,0 +1,8 @@
+{
+	"navigationBarTitleText": "数据",
+	
+	"usingComponents": {
+		"bills-detail":"/components/bills-detail/bills-detail",
+		"debt-statistics":"/components/debt-statistics/debt-statistics"
+	}
+}

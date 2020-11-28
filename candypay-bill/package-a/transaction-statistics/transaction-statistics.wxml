@@ -1,0 +1,5 @@
+<view class="tab-btn-wrap" wx:if="{{0}}">
+		<view class="fl1 items-c">交易统计</view>
+		<view class="fl1 items-c">交易明细</view>
+</view>
+<transaction-detail id="transaction-detail" />

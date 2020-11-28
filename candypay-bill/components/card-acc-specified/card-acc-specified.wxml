@@ -1,0 +1,51 @@
+<view class="items-center available-merchant-info" wx:if="{{cardData.vendorType=='DEFAULT'||!cardData.vendorType}}">
+    <image class="mr20" mode="aspectFit" src="../../image/icons/icon_mine_store@2x.png" style="width:60rpx;height:60rpx" />
+    <view class="fz-30 fc-333">该卡片未选定商户</view>
+</view>
+<view class=" available-merchant-info" wx:if="{{cardData.vendorType=='SPECIFIED'}}">
+    <view class="r">
+        <image class="" mode="aspectFit" src="../../image/icons/icon_count_seting_tag@2x.png" style="width:130rpx;height:130rpx" />
+    </view>
+    <view class="mr10 l">
+        <view class="vendorname-wrap">
+            <view class="vendorname text-overflow-double">{{cardData.vendorName||'无'}}</view>
+        </view>
+        <view class="tag-btn-wrap">
+            <text class="mcc-tag-btn">{{cardData.vendorRegionName}}</text>
+            <text class="mcc-tag-btn">{{cardData.vendorMccCategoryName}}</text>
+            <text class="mcc-tag-btn">{{cardData.vendorMccGroupName}}</text>
+        </view>
+    </view>
+</view>
+<view style="padding:0 20rpx">
+    <view class="card-acc-tab-title">
+        <view class="s fl1 align-center">
+            <view class="items-c mt10">
+                <image src="../../image/icons/icon_count_seting_flash_wriite_pre@2x.png" style="width:38rpx;height:36rpx" />
+                <view class="fc-red" style="font-size:32rpx;font-weight: bold;  margin: 10rpx;">
+                    速记
+                </view>
+            </view>
+            <view class="fc-red fz-24" style="margin-top:-10rpx;">(快速选定商家记账)</view>
+        </view>
+        <view class="m fl1 align-center " bind:tap="onTabClick">
+            <view class="items-c">
+                <image src="../../image/icons/icon_count_seting_hand_money_nor@2x.png" style="width:38rpx;height:36rpx" />
+                <view class="fc-333" style="font-size:32rpx;font-weight: bold;  margin: 10rpx;">
+                    手账
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="card-acc-tab-title-bottom"></view>
+</view>
+<view class="accounting-body " style="top:454rpx;">
+    <view class="vendor-wrap">
+        <c-category-menu id="c-category-menu" bind:onselect="onfinalSelcet" bind:ongetvendor="onGetVendor" merchantRegion="{{cardData.merchantRegionCode}}" formListIndex="{{2}}" bind:onclickfilterbtn="onclickfilterbtn" />
+        <c-mcc-filter id="c-mcc-filter" bind:onmccfilterselected="onmccfilterselected"
+        cardNo="{{cardData.cardNo}}"
+         />
+            <confirm-box id="confirm-box" />
+    </view>
+    <view class="save-btn +{{canSave?'':'disabled'}}" bind:tap="save">保存</view>
+</view>

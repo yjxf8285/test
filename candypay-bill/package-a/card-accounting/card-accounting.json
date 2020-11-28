@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "卡片详情",
+    "usingComponents": {
+        "card-acc-accounting":"/components/card-acc-accounting/card-acc-accounting",
+        "card-acc-detail":"/components/card-acc-detail/card-acc-detail"
+    }
+}

@@ -1,0 +1,7 @@
+.tab-btn-wrap {
+    height: 85rpx;
+    background-image: linear-gradient(-225deg, #fb5e5e 0%, #f0454f 100%);
+    font-size: 30rpx;
+		color: #ffffff;
+		display: flex;
+}

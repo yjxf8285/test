@@ -1,0 +1,95 @@
+<view class="card-list noscroll">
+    <view class="card-list-bar">
+        <view class="filters-bar">
+            <picker bindchange="selectMember" value="index" range="{{memberList}}" range-key="name">
+                <view class="filters-bar-item items-c" style="border:none;">
+                    <view class="text-overflow-width align-center" style="max-width:200rpx;">
+                        <text>{{currentMember.name||'全部'}}</text>
+                    </view>
+                    <image style="width:16rpx;height:16rpx;margin-left:10rpx;" src="../../image/icons/icon_card_list_screen_nor@2x-b.png" />
+                </view>
+            </picker>
+        </view>
+        <view class="filters-bar">
+            <view class=" items-c fl1" bind:tap="sortBtnClick" id="availableLimit">
+                <view class="fc-666 fz-26 mr20">可用额度</view>
+                <view class="column-center">
+                    <image style="width:16rpx;height:16rpx;" src="../../image/icons/{{availableLimit===true?'icon_card_list_screen_pre@2x-t':'icon_card_list_screen_pre@2x'}}.png" />
+                    <image style="width:16rpx;height:16rpx;" src="../../image/icons/{{availableLimit===false?'icon_card_list_screen_nor@2x':'icon_card_list_screen_nor@2x-b'}}.png" />
+                </view>
+            </view>
+            <view class=" items-c fl1" bind:tap="sortBtnClick" id="debt">
+                <view class="fc-666 fz-26 mr20">负债比例</view>
+                <view class="column-center">
+                    <image style="width:16rpx;height:16rpx;" src="../../image/icons/{{debt===true?'icon_card_list_screen_pre@2x-t':'icon_card_list_screen_pre@2x'}}.png" />
+                    <image style="width:16rpx;height:16rpx;" src="../../image/icons/{{debt===false?'icon_card_list_screen_nor@2x':'icon_card_list_screen_nor@2x-b'}}.png" />
+                </view>
+            </view>
+            <view class=" items-c fl1" bind:tap="sortBtnClick" id="freeInteval">
+                <view class="fc-666 fz-26 mr20">免息期</view>
+                <view class="column-center">
+                    <image style="width:16rpx;height:16rpx;" src="../../image/icons/{{freeInteval===true?'icon_card_list_screen_pre@2x-t':'icon_card_list_screen_pre@2x'}}.png" />
+                    <image style="width:16rpx;height:16rpx;" src="../../image/icons/{{freeInteval===false?'icon_card_list_screen_nor@2x':'icon_card_list_screen_nor@2x-b'}}.png" />
+                </view>
+            </view>
+            <view class=" items-c fl1 pr20" bind:tap="sortBtnClick" id="nextRepaymentInterval">
+                <view class="fc-666 fz-26 mr20">还款日剩余</view>
+                <view class="column-center">
+                    <image style="width:16rpx;height:16rpx;" src="../../image/icons/{{nextRepaymentInterval===true?'icon_card_list_screen_pre@2x-t':'icon_card_list_screen_pre@2x'}}.png" />
+                    <image style="width:16rpx;height:16rpx;" src="../../image/icons/{{nextRepaymentInterval===false?'icon_card_list_screen_nor@2x':'icon_card_list_screen_nor@2x-b'}}.png" />
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="card-list-wrap">
+        <scroll-view scroll-y="{{true}}" style="height:100%;">
+            <view class="card-list-item com-card mb20" wx:for="{{cardList}}" wx:key="index" bind:tap="gotoCardAccounting" data-item="{{item}}">
+                <view class="list-header items-center com-border-bottom ">
+                    <view class="img-wrap items-c mr20">
+                        <image class="" style="width:60rpx;height:60rpx;" src="../../image/icon_bank/{{item.bankImg}}.png" />
+                    </view>
+                    <view class="fl1">
+                        <view class="justify-between fb fz-32">
+                            <view class="items-center">
+                                <view style="max-width:200rpx" class=" mr20 fb text-overflow-width">
+                                    {{item.bankName||'无'}}
+                                </view>
+                                <view class="mr20">{{item.hidecardNo||''}}</view>
+                            </view>
+                            <view class="justify-right " hidden="{{!item.name}}">
+                                <view style="max-width:130rpx" class="card-product-brand text-overflow-width">
+                                    {{item.name}}
+                                </view>
+                            </view>
+                        </view>
+                        <!-- <view class="fc-999 fz-28 " wx:if="{{!item.vendorName}}">该卡片未选定商户</view>
+                        <view class="fc-999 fz-28 " wx:else>
+                            ({{item.vendorType=='DEFAULT'?'默认':'速记'}}){{item.vendorName||'无'}}
+                        </view> -->
+                    </view>
+                </view>
+                <view class="justify-between pd20 fz-28 fc-999">
+                    <view class="">
+                        <view class="">
+                            可用额度：
+                            <text class="fc-333">{{item.availableLimitStr}}</text>
+                        </view>
+                        <view class="mt10">
+                            账单日：{{item.currClosingDateStr}}日
+                            <text class="fc-333">（免息期{{item.freeInteval}}天）</text>
+                        </view>
+                    </view>
+                    <view class=" ">
+                        <circle-progress-360 size="s" width="110" border="10" progress="{{item.monthSummary.progress}}" percent="{{item.monthSummary.percent}}" barColor="{{item.monthSummary.barColor}}" />
+                        <!-- <circle-progress-180 barColor="{{item.barColor}}" progress="{{item.progress}}" /> -->
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <movable-area style="height: 100vh; width: 1vw;  position: absolute;top:0;right:0;">
+        <movable-view class="add-card-btn" style="width:116rpx;height:139rpx;" x="{{x}}" y="{{y}}" direction="vertical" bind:tap="gotoAddCard">
+            <image style="width:116rpx;height:139rpx;" src="../../image/icons/icon_card_list_add@2x.png" />
+        </movable-view>
+    </movable-area>
+</view>

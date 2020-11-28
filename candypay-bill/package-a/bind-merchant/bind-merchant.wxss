@@ -1,0 +1,49 @@
+.container{
+    background-color: #fff;
+    
+}
+.vertical-layout{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:flex-start;
+    align-items: center;
+}
+.horizontal-layout{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-area{
+    display: flex;
+    height: 90rpx;
+    width:570rpx;
+    margin: 50rpx 65rpx 0rpx 65rpx;
+    padding-left: 50rpx;
+    border: solid 1px #d0d0d0;
+    border-radius: 45rpx 45rpx 45rpx 45rpx ;
+    text-align: center;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.section-area input{
+    margin-left: 20rpx;
+    text-align: left;
+    color: #999;
+    font-size: 32rpx;
+    width: 550rpx;
+}
+
+.red-btn{
+    margin: 50rpx 65rpx 0rpx 65rpx;
+    width:620rpx;
+    border: none;
+    border-radius: 45rpx 45rpx 45rpx 45rpx ;
+    background-color: #e45451;
+    color: #fff;
+    font-size: 36rpx;
+}

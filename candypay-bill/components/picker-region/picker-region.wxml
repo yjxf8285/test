@@ -1,0 +1,8 @@
+<picker mode="multiSelector" disabled="{{pickerRegionDisable}}" bindchange="locationPickerConfirm" bindcolumnchange="locationPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" range-key="regname">
+    <view class="picker-wrap">
+        <view class="txt">
+            <!-- <p>{{curLocationData.provinceName}} </p> -->
+            <p>{{curLocationData.cityName}}</p>
+        </view>
+    </view>
+</picker>

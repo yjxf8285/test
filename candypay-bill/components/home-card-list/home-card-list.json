@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "circle-progress-360": "/components/circle-progress-360/circle-progress-360"
+    }
+}

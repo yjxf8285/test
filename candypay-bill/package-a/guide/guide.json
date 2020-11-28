@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "开店宝账单",
+    "usingComponents": {
+        "modal-window": "/components/modal-window/modal-window"
+    }
+}

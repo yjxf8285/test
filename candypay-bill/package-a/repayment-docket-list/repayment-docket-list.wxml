@@ -1,0 +1,35 @@
+<view class="repayment-docket-list">
+    <view class="hd items-center">
+        <image class="home-header-icon" src="../../image/icons/icon_money_calendar_remind@2x.png" style="width:42rpx;height:42rpx;margin-right:14rpx;" />
+        <view class="txt">用款日历小助手，展示未来20天内的用款事项</view>
+    </view>
+    <view class="list-wrap com-card" style="{ {nopaddingtop?'padding-top:0':''}}">
+        <view class="list-item {{item.start?'start':''}} {{item.end?'end':''}}" wx:for="{{listData}}" wx:key="index" >
+            <view class="l">
+                <view class="fc-333 fz-30 fb">{{item.repaymentDateStr}}</view>
+                <view class="fc-999 fz-26">{{item.remainStr}}</view>
+            </view>
+            <view class="m">
+                <view class="t"></view>
+                <view class="o"></view>
+                <view class="b"></view>
+            </view>
+            <view class="r">
+                <view class="nodata" wx:if="{{item.cardCount==0}}">无</view>
+                <view class="tip-wrap" wx:else bind:tap="gotoDetail" data-item="{{item}}">
+                    <view class="icon">
+                         <image class="home-header-icon" src="../../image/icons/icon_triangle@2x.png" style="width:15rpx;height:20rpx;" />
+                    </view>
+                    <view class="icon-next">
+                         <image class="home-header-icon" src="../../image/icons/icon_next@3x.png" style="width:15rpx;height:26rpx;" />
+                    </view>
+                    <view class="items-center">
+                        <image class="home-header-icon" src="../../image/icons/icon_pos_mode_card_read@2x.png" style="width:40rpx;height:40rpx;margin-right:14rpx;" />
+                        <view class="fc-333 fz-30 fb">{{item.cardCount}}张卡片还款日</view>
+                    </view>
+                    <view class="fc-999 fz-26">当前欠款：{{item.repaymentAmountStr}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

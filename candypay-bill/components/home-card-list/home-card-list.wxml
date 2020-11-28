@@ -1,0 +1,155 @@
+<view class="home-card-list">
+    <view class="com-card top-info items-center" bind:tap="gotoAddCard">
+        <view class="fl1 items-center">
+            <image src="../../image/icons/icon_pos_mode_card_read@2x.png" style="width:46rpx;height:46rpx;margin-right:14rpx;" />
+            <view style="font-size:32rpx;">
+                <text>已绑定</text>
+                <text class="fc-red fb">{{cardNum}}</text>
+                <text>张卡片</text>
+            </view>
+            <view style="color:#999;margin-left:14rpx;">
+                <text>(分属</text>
+                <text class="fb fc-333">{{merberNum}}</text>
+                <text>个成员)</text>
+            </view>
+        </view>
+        <view class="btn-primary">添加银行卡</view>
+    </view>
+    <!-- <view class="ad-wrap mt20 " wx:if="{{bannerIsShow}}">
+        <image class="ad-image" src="../../image/icons/icon_banner.png" bind:tap="gotoAdPage" />
+    </view> -->
+    <view class="com-card mt20 " bind:tap="gotoCardList">
+        <view class="com-card-header com-border-bottom">
+            <view class="com-card-header-icon"></view>
+            <view class="fb">最近记账</view>
+        </view>
+        <view class="items-center pd20">
+            <view class="fl1 items-center">
+                <view class="accouting-text-icon">
+                    <view>上笔</view>
+                    <view>记账</view>
+                </view>
+                <view class="fl1 fz-28 fb" wx:if="{{lastTransactionData}}">
+                    <view class="">记账金额：{{lastTransactionData.amount}}</view>
+                    <view class="">记账时间：{{lastTransactionData.occurTime}}</view>
+                </view>
+                <view class="fb" wx:else>暂时没有记账信息</view>
+            </view>
+            <view class="btn-primary">卡片记账</view>
+        </view>
+        <view class="fc-999 fz-28 pd20 com-border-top" wx:if="{{lastTransactionData}}">
+            <view>{{lastTransactionData.bankName}} {{lastTransactionData.cardNo}}</view>
+            <!-- <view>{{lastTransactionData.vendorName||lastTransactionData.transComments}}</view> -->
+        </view>
+    </view>
+
+    <!-- 数据统计 -->
+    <!-- <view class="com-card mt20 ">
+        <view class="com-card-header com-border-bottom">
+            <view class="fl1 items-center">
+                <view class="com-card-header-icon"></view>
+                <view class="fz-30 fb">{{monthSummary.ym}} 汇总</view>
+                <view class="fc-999 fz-26">(共计{{monthSummary.transactions}}笔)</view>
+            </view>
+            <view class="items-center">
+                <view class="fc-999  fz-26" bind:tap="gotoStatistics">查看更多</view>
+                <image class="" src="../../image/icons/icon_next@3x.png" style="width:10rpx;height:20rpx;margin-left:10rpx;" />
+            </view>
+        </view> 
+        <view class="items-center " style="padding:25rpx 0 25rpx 60rpx">
+            <view class="fl1 ">
+                <view class="fz-24 fc-999 items-center">
+                    <image src="../../image/icons/icon_card_mode_total_limit@2x.png" style="width:32rpx;height:32rpx;margin-right:6rpx;" />
+                    <view class="">总授信额度</view>
+                </view>
+                <view class="fz-30 fc-333 fb">{{monthSummary.limitAmount}}</view>
+                <view class="fz-24 fc-999  items-center mt20">
+                    <image src="../../image/icons/icon_card_mode_total_money@2x.png" style="width:32rpx;height:32rpx;margin-right:6rpx;" />
+                    <view class="">费用合计</view>
+                </view>
+                <view class="fz-30 fc-333 fb">{{monthSummary.commissions}}</view>
+            </view>
+            <view class=" items-c">
+                <circle-progress-360 progress="{{monthSummary.progress}}" percent="{{monthSummary.percent}}"/>
+            </view>
+            <view class="fl1 " style="padding-left:60rpx">
+                <view class="fz-24 fc-999 items-center">
+                    <view class="color-square " />
+                    <view class="">本月总消费</view>
+                </view>
+                <view class="fz-30 fc-333 fb">{{monthSummary.expense}}</view>
+                <view class="fz-24 fc-999  items-center mt20">
+                    <view class="color-square" style="background-image: linear-gradient(-134deg, #FFBB7E 0%, #F7943D 100%);" />
+                    <view class="">总可用额度</view>
+                </view>
+                <view class="fz-30 fc-333 fb">{{monthSummary.totalAvailable}}</view>
+            </view>
+        </view>
+    </view> -->
+    <view class="com-card mt20 " bind:tap="gotoRepaymentDocket">
+        <view class="com-card-header com-border-bottom">
+            <view class="fl1 items-center">
+                <view class="com-card-header-icon"></view>
+                <view class="fz-30 fb">用款日历</view>
+                <view class="fz-26 fc-999">(20天内)</view>
+            </view>
+            <view class="items-center">
+                <view class="fc-999  fz-26">查看更多</view>
+                <image class="" src="../../image/icons/icon_next@3x.png" style="width:10rpx;height:20rpx;margin-left:10rpx;" />
+            </view>
+        </view>
+        <view class="items-center fz-24 fc-333" style="padding:20rpx 0 20rpx 20rpx">
+            <view class="mr20 calendar-card align-center" wx:if="{{paymentList.length==3}}" wx:for="{{paymentList}}" wx:key="index">
+                <view class=" fb" style="font-size:21rpx">
+                    {{item.repaymentDate}}({{item.remain}})
+                </view>
+                <view class="fc-999">{{item.cardCount}}张卡片待还</view>
+                <view class="fc-red">{{item.repaymentAmount}}</view>
+            </view>
+            <view class="mr20 calendar-card items-top" wx:if="{{paymentList.length==2}}" wx:for="{{paymentList}}" wx:key="index">
+                <image class="" src="../../image/icons/icon_card_mode_money_calendar@2x.png" style="width:48rpx;height:44rpx;margin-right:20rpx;" />
+                <view class="fl1">
+                    <view class="fb">{{item.repaymentDate}}({{item.remain}})</view>
+                    <view class="fc-999">{{item.cardCount}}张卡片待还</view>
+                    <view class="fc-red">{{item.repaymentAmount}}</view>
+                </view>
+            </view>
+            <view class="items-center" wx:if="{{paymentList.length==1}}" wx:for="{{paymentList}}" wx:key="index" style="width:100%">
+                <image class="" src="../../image/icons/icon_card_mode_money_calendar02@2x.png" style="width:80rpx;height:80rpx;margin-right:20rpx;" />
+                <view class="fl1">
+                    <view class="fb">{{item.repaymentDate}}({{item.remain}})</view>
+                    <view class="fc-999">{{item.cardCount}}张卡片待还</view>
+                </view>
+                <view class="align-center" style="width:200rpx;">
+                    <view class="fc-999">待还金额</view>
+                    <view class="fc-red">{{item.repaymentAmount}}</view>
+                </view>
+            </view>
+            <view class="margin-auto" wx:if="{{paymentList.length==0}}">
+                <image class="" src="../../image/icons/image_empity@2x.png" style="width:200rpx;height:120rpx;margin-left:10rpx;" />
+                <view class="fc-666">暂时没有用款日历</view>
+            </view>
+        </view>
+    </view>
+    <view class="com-card mt20 " bind:tap="gotoStatistics">
+        <view class="com-card-header com-border-bottom">
+            <view class="fl1 items-center">
+                <view class="com-card-header-icon"></view>
+                <view class="fz-30 fb">数据统计</view>
+            </view>
+            <view class="items-center">
+                <view class="fc-999  fz-26">查看更多</view>
+                <image class="" src="../../image/icons/icon_next@3x.png" style="width:10rpx;height:20rpx;margin-left:10rpx;" />
+            </view>
+        </view>
+        <view class=" fz-24 fc-333" style="display: flex;padding:20rpx 20rpx 6rpx 20rpx">
+            <view class="l">
+                <image class="" src="../../image/icons/icon_date.png" style="width:80rpx;height:80rpx;" />
+            </view>
+            <view class="data-statistic">
+                <view class="t">数据统计</view>
+                <view class="b">查看负债统计、账单明细</view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,63 @@
+.modal-header {
+    text-align: center;
+    padding: 28rpx;
+}
+.modal-body {
+    padding:0 20rpx;
+}
+.modal-mcc-wrap {
+    height: 30rpx;
+}
+.modal-merchant-name {
+    font-size: 34rpx;
+    color: #333333;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap !important;
+}
+.modal-footer {
+    margin-top: 40rpx;
+    padding: 20rpx;
+    text-align: center;
+}
+.modal-footer .tip {
+    margin-top: 20rpx;
+    font-size: 24rpx;
+    color: #959595;
+}
+.modal-footer .btn {
+    margin: auto;
+    background-image: linear-gradient(-224deg, #ec686d 0%, #eb3c46 100%);
+    box-shadow: 0 6px 12px 0 rgba(255, 67, 67, 0.5);
+    width: 340rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 30rpx;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 100rpx;
+}
+.mcc-tag-btn {
+    line-height: 36rpx;
+    height: 36rpx;
+    max-width: 200rpx;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap !important;
+    border: 1rpx solid #979797;
+    border-radius: 36rpx;
+    font-size: 22rpx;
+    color: #959595;
+    padding: 0 16rpx;
+    box-sizing: border-box;
+    margin-right: 20rpx;
+}
+/* 补像素-解决部分ios设备1rpx边框显示不全的解决方案 */
+.space {
+    width: 1rpx;
+    height: 100%;
+    display: inline-block;
+}

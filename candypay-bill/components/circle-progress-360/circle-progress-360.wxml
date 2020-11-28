@@ -1,0 +1,11 @@
+<view class="circle-wrap {{size}}" style="width:{{width}}rpx;height:{{height}}rpx">
+    <view class="circle-bar" style="width:{{width}}rpx;height:{{width}}rpx;background-color: {{barColor}};">
+        <view class="circle-bar-top r" style="width:{{width}}rpx;height:{{width}}rpx;  background-color:{{(progress>180)?barColor:rSemicircleBg}}"></view>
+        <view class="circle-bar-top l" style="width:{{width}}rpx;height:{{width}}rpx; transform: rotate({{progress}}deg);"></view>
+        <view class="circle-bar-top l-mask" style="width:{{width}}rpx;height:{{width}}rpx;  background-color:{{(progress>180)?barColor:lMaskBg}}"></view>
+        <view class="mask" style="width:{{maskWidth}}rpx;height:{{maskWidth}}rpx">
+            <view class="tit">负债比</view>
+            <view class="p">{{percent}}%</view>
+        </view>
+    </view>
+</view>

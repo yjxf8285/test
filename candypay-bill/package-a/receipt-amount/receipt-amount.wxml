@@ -1,0 +1,49 @@
+<view class="arc-bg-wrap">
+    <view class="arc-bg-shape"></view>
+</view>
+<view class="page-content">
+    <view class="home-device-list">
+        <!-- <view class="com-card top-info top-info-supplement">
+            <view class="t items-c">
+                <text class="">我的额度</text>
+            </view>
+            <view class="com-row ">
+                <view class="com-row-column align-center">
+                    <view class="fc-999">商户数</view>
+                    <view class="large-number">{{accountLength}}</view>
+                </view>
+                <view class="column-line"></view>
+                <view class="com-row-column align-center">
+                    <view class="fc-999">总额度</view>
+                    <view class="large-number">{{totalLimitAmount}}</view>
+                </view>
+            </view>
+        </view> -->
+        <view class="device-list-wrap mt20">
+            <view class="device-list-item com-card " wx:key="index" wx:for-item="account" wx:for="{{accountList}}">
+                <view class="header justify-between">
+                    <view class="">
+                        <view class="l">
+                            <image class="merchant-icon" src="../../image/icons/icon_store@2x.png" style="width:90rpx;height:90rpx;" />
+                        </view>
+                        <view class="m">
+                            <view class="merchant-name-wrap">
+                                <view class="merchant-name text-overflow-width" style="max-width:350rpx">
+                                    {{account.merchantName||'无'}}
+                                </view>
+                            </view>
+                            <view class="merchant-id">商户号：{{account.merchantId||''}}</view>
+                        </view>
+                    </view>
+                    <view class="r column-center" bind:tap="gotoCreditCardAuthentication" data-item="{{account}}" hidden="{{account.creditCardAuthStatus}}">
+                        <view class="btn-primary">交易提额</view>
+                    </view>
+                </view>
+                <view class="body justify-between">
+                    <text class="">总额度：{{account.currentLimitStr||''}}</text>
+                    <!-- <text class="">注册地：{{account.merchantRegionName||'无'}}</text> -->
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,54 @@
+@import "/style/accounting";
+.con {
+    height: 100%;
+    padding: 0 20rpx;
+}
+.sub-title {
+    color: #757575;
+}
+.sub-wrap {
+    color: #757575;
+    background-color: #fff;
+    border-radius:0 0 12rpx 12rpx;
+    margin-bottom: 18rpx;
+    border-top: solid 1px #f3f3f3;
+}
+.sub-wrap .row {
+    height: 100rpx;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20rpx;
+    border-bottom: solid 1px #f3f3f3;
+    font-size: 30rpx;
+}
+.sub-wrap .row .r-input {
+    text-align: right;
+}
+.sub-wrap .row .icon {
+    width: 15rpx;
+    height: 24rpx;
+    margin-left: 12rpx;
+}
+.sub-wrap .row .l {
+   font-weight: bold;
+}
+.sub-wrap .row .r {
+    display: flex;
+    align-items: center;
+}
+.sub-wrap .b {
+    padding: 16rpx 20rpx;
+    text-align: right;
+}
+
+.count-placeholder {
+    color: #fff;
+    opacity: 0.5;
+}
+.picker-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

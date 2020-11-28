@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "c-vendor-list":"/components/vendor-list/vendor-list"
+    }
+}

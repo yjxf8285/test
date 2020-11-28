@@ -1,0 +1,14 @@
+<view>
+   <canvas 
+    class="c-autograph"
+    style="width:{{canvasW}}px;height:{{canvasH}}px;"
+    canvas-id="autograph" 
+    bindtouchcancel="cancel" 
+    bindtouchmove="move" 
+    bindtouchstart="start" 
+    bindtouchend="end" 
+    bindlongtap="longtap" 
+    disable-scroll="true" 
+    binderror="error"
+    ></canvas>
+</view>

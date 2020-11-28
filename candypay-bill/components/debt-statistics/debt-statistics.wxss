@@ -1,0 +1,17 @@
+.transaction-statistics-detail .filters-bar {
+    height: 85rpx;
+    background-image: linear-gradient(-225deg, #fb5e5e 0%, #f0454f 100%);
+    font-size: 30rpx;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.transaction-statistics-detail .filters-bar-item {
+    width: 240rpx;
+    font-size: 26rpx;
+    color: #ffffff;
+    height: 40rpx;
+    border-right: solid 1px rgba(255, 255, 255, 0.4);
+    padding: 0 20rpx;
+    box-sizing: border-box;
+}

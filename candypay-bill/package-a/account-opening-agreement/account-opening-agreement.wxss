@@ -1,0 +1,29 @@
+page{
+    background-color: #fff;
+   
+}
+.cantainer{
+    color: #333;
+    font-size: 26rpx;
+    padding: 20rpx;
+    line-height: 40rpx;
+}
+.block{
+    height: 40rpx;
+}
+table{
+    width: 100%;
+    border: solid 1rpx #ccc;
+}
+td{
+    border: solid 1rpx #ccc;
+}
+.tr{
+    text-align: right;
+}
+.t-c{
+    text-align: center;
+}
+.fb{
+    font-weight: 500;
+}

@@ -1,0 +1,13 @@
+.wrapper{
+    display:flex;
+   
+}
+.left{
+   flex:1;
+}
+.right{
+    overflow: hidden;
+    width: 0;
+    white-space:nowrap;
+    text-align: center;
+}

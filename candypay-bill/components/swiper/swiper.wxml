@@ -1,0 +1,8 @@
+<view class="wrapper"  bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE">
+  <view class="left" >
+    <slot name="left"></slot>
+  </view>
+  <view class="right" style="width:{{rightWidth}}px">
+    <slot name="right"></slot>
+  </view>
+</view>

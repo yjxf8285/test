@@ -1,0 +1,46 @@
+<view class="container-mine">
+    <view class="header">
+        <image class="icon-header-image" mode="aspectFill" src="{{userInfo.avatar}}"></image>
+        <view class="name">{{userInfo.nickName}}</view>
+    </view>
+    <view class="content-list">
+        <view bindtap='gotoAccount' class="list-item" wx:if="{{!userInfo.isGuestUser}}">
+            <text class="title">商户</text>
+            <image class="r" mode="aspectFit" src="../../image/icons/icon_next@3x.png"></image>
+        </view>
+        <view bindtap='gotoMemberList' class="list-item" >
+            <text class="title">成员</text>
+            <image class="r" mode="aspectFit" src="../../image/icons/icon_next@3x.png"></image>
+        </view>
+        <view bindtap='gotoCard' class="list-item">
+            <text class="title">卡片</text>
+            <image class="r" mode="aspectFit" src="../../image/icons/icon_next@3x.png"></image>
+        </view>
+        <view wx:if="{{false}}" bindtap='gotoDistrict' class="list-item">
+            <text class="title">消费圈</text>
+            <image class="r" mode="aspectFit" src="../../image/icons/icon_next@3x.png"></image>
+        </view>
+      <!-- <view bindtap='goGuidePage' class="list-item">
+            <text class="title">帮助</text>
+            <image class="r" mode="aspectFit" src="../../image/icons/icon_next@3x.png"></image>
+        </view>  -->
+    </view>
+    <view class="content-list">
+        <view class="list-item">
+            <text class="title">版本信息</text>
+            <text class="value">{{versionName}}</text>
+        </view>
+    </view>
+    <view class="content-list" wx:if="{{!userInfo.isGuestUser}}">
+        <view class="list-item" wx:if="{{false}}">
+            <button open-type="contact" class="contact-btn">
+                <text class="title">在线客服</text>
+                <image class="r" mode="aspectFit" src="../../image/icons/icon_next@3x.png"></image>
+            </button>
+        </view>
+        <!-- <view bindtap='gotoGuide' class="list-item">
+            <text class="title">帮助</text>
+            <image class="r" mode="aspectFit" src="../../image/icons/icon_next@3x.png"></image>
+        </view> -->
+    </view>
+</view>

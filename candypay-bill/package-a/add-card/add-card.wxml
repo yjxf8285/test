@@ -1,0 +1,164 @@
+<view class="container vertical-layout">
+    <scroll-view style="height:100%;" scroll-x="{{false}}" scroll-y="{{true}}">
+        <!-- 卡片添加状态部分 -->
+        <view wx:if="{{entryMode=='addCard'}}" class="add-card-status-area vertical-layout">
+            <view class="horizontal-layout status-area">
+                <view class="vertical-layout">
+                    <view class="horizontal-layout" style="padding-left:20rpx;">
+                        <view class="horizontal-layout {{addCardStep>0? addCardStep==1?'b-current':'b-selected':'b-unselected'}}">
+                            <span class="fa {{addCardStep>0?addCardStep==1?'fa-check f-current':'fa-check f-selected':'fa-ellipsis-h'}}"></span>
+                        </view>
+                        <view class="link-line {{addCardStep>0?'green-bg':'gray-bg'}}"></view>
+                    </view>
+                    <span class="status-name-left  {{addCardStep>0?'green-color':'gray-color'}}">
+                        注册卡片
+                    </span>
+                </view>
+                <view class="vertical-layout">
+                    <view class="horizontal-layout">
+                        <view class="link-line {{addCardStep>1?'green-bg':'gray-bg'}}"></view>
+                        <view class="horizontal-layout {{addCardStep>1? addCardStep==2?'b-current':'b-selected':'b-unselected'}}">
+                            <span class="fa {{addCardStep>1? addCardStep==2?'fa-check f-current':'fa-check f-selected':'fa-ellipsis-h'}}"></span>
+                        </view>
+                        <view class="link-line {{addCardStep>1?'green-bg':'gray-bg'}}"></view>
+                    </view>
+                    <span class="status-name-center {{addCardStep>1?'green-color':'gray-color'}}">
+                        设置卡片
+                    </span>
+                </view>
+                <view class="vertical-layout">
+                    <view class="horizontal-layout">
+                        <view class="link-line {{addCardStep>2?'green-bg':'gray-bg'}}"></view>
+                        <view class="horizontal-layout {{addCardStep>2? addCardStep==3?'b-current':'b-selected':'b-unselected'}}">
+                            <span class="fa {{addCardStep>2?addCardStep==3?'fa-check f-current':'fa-check f-selected':'fa-ellipsis-h'}}"></span>
+                        </view>
+                    </view>
+                    <span class="status-name-right {{addCardStep>2?'green-color':'gray-color'}}">
+                        完成
+                    </span>
+                </view>
+            </view>
+        </view>
+        <!-- 四要素验证部分 -->
+        <view wx:if="{{entryMode=='addCard'&& addCardStep==1 }}" class="card-section " style="margin-top:10rpx;">
+            <view class="cell horizontal-layout">
+                <p class="input-name">姓名</p>
+              
+               <input bindinput="setCardOwnerName" class="input-value" placeholder-class="input-place-holder" value="{{cardOwnerName}}" placeholder="请输入持卡人姓名" maxlength="20" /> 
+               
+            </view>
+            <view class="split-view"></view>
+            <view class="cell horizontal-layout">
+                <p class="input-name">卡号</p>
+                <input placeholder-class="input-place-holder" type="number" maxlength="19" placeholder="请输入信用卡号" bindblur="onInputBlur" id="cardno-input" />
+            </view>
+            <view class="split-view"></view>
+            <view class="cell horizontal-layout">
+                <p class="input-name">身份证号</p>
+                <input bindinput="setCardOwnerId" class="input-value" placeholder-class="input-place-holder" type="idcard" value="{{cardOwnerIdCard}}" placeholder="请输入持卡人身份证号" maxlength="18" />
+            </view>
+            <view class="split-view"></view>
+            <view class="cell horizontal-layout">
+                <p class="input-name">银行预留手机号</p>
+                <input bindinput="setCardOwnerMobile" class="input-value" placeholder-class="input-place-holder" type="number" value="{{cardOwnerMobile}}" placeholder="请输入持卡人手机号码" maxlength="11" />
+            </view>
+            <view class="split-view"></view>
+            <view class="cell horizontal-layout">
+                <p class="input-name">验证码</p>
+                <view class="horizontal-layout">
+                    <input bindinput="setCardOwnerVcode" class="input-value" style="width:200rpx; margin-right:10rpx;" placeholder-class="input-place-holder" type="number" value="{{cardOwnerVcode}}" placeholder="请输入验证码" maxlength="6" />
+                    <button class="send-vcode-btn {{vcodeBtnDisable?'btn-disable':'btn-enable'}}" bind:tap="onSendVcode">
+                        {{getVerifyCodeTxt}}
+                    </button>
+                </view>
+            </view>
+        </view>
+        <!-- 卡片信息部分 -->
+        <view wx:if="{{addCardStep >1 ||entryMode=='editCard'}}" class="card-section " style="margin-top:10rpx;">
+            <view class="cell horizontal-layout">
+                <p class="input-name">卡号</p>
+                <input class="input-value-disable" value="{{cardDisplayNo}}" placeholder-class="input-place-holder" type="number" disabled="{{1}}" maxlength="19" placeholder="请输入信用卡号" bindblur="onInputBlur" id="cardno-input" />
+            </view>
+            <view hidden="{{true}}" class="split-view"></view>
+            <view hidden="{{true}}" class="cell horizontal-layout">
+                <p class="input-name">发卡行</p>
+                <input class="input-value-disable" placeholder-class="input-place-holder" value="{{bankName}}" placeholder="" disabled="{{true}}" />
+            </view>
+            <view class="split-view"></view>
+            <view class="cell horizontal-layout">
+                <p class="input-name">卡产品</p>
+                <span class="input-value-disable  ">{{bankName + ' '+cardName}}</span>
+            </view>
+        </view>
+        <!-- 卡片设置部分 -->
+        <view wx:if="{{addCardStep >1 || entryMode=='editCard'}}" class="card-section">
+            <view class="cell horizontal-layout accounting-cell">
+                <p>多卡共额</p>
+                <switch checked="{{cardShared}}" bind:change="onCardShardChange" />
+            </view>
+            <view class="cell small-cell">
+                <text class="fa fa-info-circle tips"></text>
+                <text class="tips">设定同行多卡片是否共用额度。</text>
+            </view>
+            <view class="split-view"></view>
+            <view class="cell horizontal-layout accounting-cell">
+                <p>多卡同账</p>
+                <switch checked="{{billShared}}" disabled="{{!cardShared}}" bind:change="onBillShardChange" />
+            </view>
+            <view class="cell small-cell">
+                <text class="fa fa-info-circle tips"></text>
+                <text class="tips">设定同行多卡片是否共用一个账单。</text>
+            </view>
+            <view class="split-view"></view>
+            <view class="cell horizontal-layout">
+                <p class="input-name">授信额度</p>
+                <view class="horizontal-layout">
+                    <input type="number" placeholder-class="input-place-holder" maxlength="7" value="{{cardCredit}}" bind:blur="onCardCreditBlur" bindinput="onCardCreditInput" placeholder="0" />
+                    <p>元</p>
+                </view>
+            </view>
+            <view class="split-view"></view>
+            <view class="cell  horizontal-layout">
+                <p class="input-name">未还欠款</p>
+                <view class="horizontal-layout">
+                    <input type="digit" placeholder-class="input-place-holder" class="input-value" maxlength="9" value="{{arrears}}" bindblur="onAvailableCreditBlur" bindinput="onArrearsInput" placeholder="0.00" />
+                    <p>元</p>
+                </view>
+            </view>
+            <view class="split-view"></view>
+            <view class="cell horizontal-layout">
+                <p class="input-name">账单日</p>
+                <picker mode="selector" range="{{date}}" bindchange="onBillDayPicker">
+                    <view class="horizontal-layout">
+                        <input id="biil-day-input" placeholder-class="input-place-holder" type="number" value="{{billDay== ''?'':'每月'+billDay+'号'}}" placeholder="请选择账单日" disabled="{{true}}" />
+                        <image mode="aspectFit" class="right-icon" src="../../image/icons/icon_next@3x.png"></image>
+                    </view>
+                </picker>
+            </view>
+            <view class="split-view"></view>
+            <view class="cell horizontal-layout">
+                <p class="input-name">还款日</p>
+                <picker mode="multiSelector" bind:columnchange="onRepayColumnChange" value="{{repayIndex}}" range="{{repayDate}}" bindchange="onRepayDayPicker">
+                    <view class="horizontal-layout">
+                        <input id="repay-day-input" placeholder-class="input-place-holder" class="input-value" value="{{repayDisplayDay== ''?'':repayDisplayDay}}" placeholder="请选择还款日" disabled="{{true}}" />
+                        <image mode="aspectFit" class="right-icon" src="../../image/icons/icon_next@3x.png"></image>
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <!-- 设置记账生效部分 -->
+        <!-- <view wx:if="{{(addCardStep>1 ||entryMode=='editCard') && !isGuestUser}}" class="card-section">
+            <view class="cell horizontal-layout accounting-cell">
+                <p>卡片记账生效</p>
+                <switch checked="{{vendorEnabled}}" bind:change="onVendorSwitch" />
+            </view>
+            <view class="cell small-cell">
+                <text class="fa fa-info-circle tips"></text>
+                <text class="tips">关闭后，该卡将不能选择商家记账，已选择的商家也将失效。</text>
+            </view>
+        </view> -->
+        <view hidden="{{hiddenSave}}" disable="{{addCardStep==3}}" class="save-btn {{addCardStep==3?'disable-btn':''}}" bind:tap="onSaveBtn">
+            {{addCardStep<3&&entryMode!='editCard'?'下一步':'保存'}}
+        </view>
+    </scroll-view>
+</view>

@@ -1,0 +1,65 @@
+<view class="real-name-authentication">
+    <view class="picture-wrap">
+        <view class="bg" bind:tap="selectFrontPic">
+            <image class="square-border-bg" src="../../image/real-name-authentication/icon_scan_after@2x.png" />
+            <image class="example-pic" wx:if="{{!frontPicPath}}" src="../../image/real-name-authentication/icon_identify_font@2x.png" />
+            <image class="example-pic" wx:if="{{frontPicPath}}" src="{{frontPicPath}}" />
+            <image class="camera-icon" src="../../image/real-name-authentication/icon_photo.png" />
+            <text class="tip-text">身份证正面照片</text>
+        </view>
+        <view class="bg" bind:tap="selectBackPic">
+            <image class="square-border-bg" src="../../image/real-name-authentication/icon_scan_after@2x.png" />
+            <image class="example-pic" wx:if="{{!backPicPath}}" src="../../image/real-name-authentication/icon_identify_back@2x.png" />
+            <image class="example-pic" wx:if="{{backPicPath}}" src="{{backPicPath}}" />
+            <image class="camera-icon" src="../../image/real-name-authentication/icon_photo.png" />
+            <text class="tip-text">身份证反面照片</text>
+        </view>
+    </view>
+    <view class="picture-wrap">
+        <view class="bg">
+            <image style="width:189rpx;height:156rpx;margin-top:24rpx" src="../../image/real-name-authentication/image_hand_photo.png" />
+            <view class="refer-tip">参考图例</view>
+        </view>
+        <view class="bg" bind:tap="selectHandPic">
+            <image class="square-border-bg" src="../../image/real-name-authentication/icon_scan_after@2x.png" />
+            <image class="example-pic" wx:if="{{!handPicPath}}" src="../../image/real-name-authentication/image_people@2x.png" />
+            <image class="example-pic" wx:if="{{handPicPath}}" src="{{handPicPath}}" />
+            <image class="camera-icon" src="../../image/real-name-authentication/icon_photo.png" />
+            <view class="tip-text">手持身份证照片</view>
+        </view>
+    </view>
+    <view class="tip-wrap">
+        <image class="tip-icon" src="../../image/icons/icon_toast_remind@2x.png" />
+        <view class="">请保证身份证照片正确、清晰</view>
+    </view>
+    <view class="form-list-align-left">
+        <view class="label">姓名</view>
+        <view class="input-area">
+            <input placeholder="请输入姓名" placeholder-class="com-input-placeholder" value="{{chineseName}}" maxlength="16" bindinput="setChineseName" />
+        </view>
+    </view>
+    <view class="form-list-align-left">
+        <view class="label">身份证号</view>
+        <view class="input-area">
+            <input placeholder="请输入身份证号" placeholder-class="com-input-placeholder" value="{{idCardNo}}" maxlength="18" bindinput="setIdCardNo" />
+        </view>
+    </view>
+    <view class="form-list-align-left">
+        <view class="label">证件有效期</view>
+        <view class="input-area">
+            <picker mode="date" start="{{start}}" end="{{nowDate}}" value="index" bindchange="selectStartDate">
+                <text class="fc-999" wx:if="{{!startDateStr}}">起始时间</text>
+                <text class="" wx:if="{{startDateStr}}">{{startDateStr}}</text>
+            </picker>
+            <text class="separator">至</text>
+            <picker mode="date" start="{{nowDate}}" end="{{end}}" value="index" bindchange="selectEndDate">
+                <text class="fc-999" wx:if="{{!endDateStr}}">截止时间</text>
+                <text class="" wx:if="{{endDateStr}}">{{endDateStr}}</text>
+            </picker>
+            <text class="lone-term-btn" bind:tap="setAwaysValid">长期有效</text>
+        </view>
+    </view>
+    <view class="submit-button-wrap">
+        <view class="btn-primary big" bind:tap="submit">提交</view>
+    </view>
+</view>

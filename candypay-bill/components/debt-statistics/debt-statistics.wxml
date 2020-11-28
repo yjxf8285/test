@@ -1,0 +1,56 @@
+<view class="transaction-statistics-detail">
+    <view class="filters-bar">
+        <picker bindchange="selectMember" value="index" range="{{memberList}}" range-key="name">
+            <view class="filters-bar-item items-c" style="border:none;">
+                <text class="text-overflow-width align-center" style="max-width:160rpx;">
+                    <text>{{currentMember.name || '全部成员'}}</text>
+                </text>
+                <image style="width:16rpx;height:12rpx;margin-left:10rpx;" src="../../image/icons/icon_pos_mode_chose@2x.png" />
+            </view>
+        </picker>
+    </view>
+    <view class="pd20">
+        <view class="com-card ">
+            <view class="com-card-header com-border-bottom">
+                <view class="fl1 items-center">
+                    <view class="com-card-header-icon"></view>
+                    <vifew class="fz-30 fb">当前总负债</vifew>
+                </view>
+            </view>
+            <view class="items-center " style="padding:25rpx 0 25rpx 60rpx">
+                <view class="fl1 ">
+                    <view class="fz-24 fc-999 items-center">
+                        <image src="../../image/icons/icon_card_mode_total_limit@2x.png" style="width:32rpx;height:32rpx;margin-right:6rpx;" />
+                        <view class="">总授信额度</view>
+                    </view>
+                    <view class="fz-30 fc-333 fb">{{monthSummary.limitAmount}}</view>
+                </view>
+                <view class=" items-c">
+                    <circle-progress-360 progress="{{monthSummary.progress}}" percent="{{monthSummary.percent}}" barColor="{{monthSummary.barColor}}"/>
+                </view>
+                <view class="fl1 " style="padding-left:60rpx">
+                    <view class="fz-24 fc-999 items-center">
+                        <view class="color-square " />
+                        <view class="">总负债金额</view>
+                    </view>
+                    <view class="fz-30 fc-333 fb">{{monthSummary.debtAmount}}</view>
+                    <view class="fz-24 fc-999  items-center mt20">
+                        <view class="color-square" style="background-image: linear-gradient(-134deg, #FFBB7E 0%, #F7943D 100%);" />
+                        <view class="">总可用额度</view>
+                    </view>
+                    <view class="fz-30 fc-333 fb">{{monthSummary.totalAvailable}}</view>
+                </view>
+            </view>
+        </view>
+        <view class="com-card mt20">
+            <view class="com-card-header com-border-bottom" style="height:70rpx;">
+                <view class="com-card-header-icon"></view>
+                <view>银行额度负债</view>
+            </view>
+            <view class="pd20">
+                <bar-progress-list wx:if="{{limtanddebtList.length>0}}" listData="{{limtanddebtList}}" type="1"/>
+                <view wx:else class="fc-999 fz-26 align-center">暂无数据</view>
+            </view>
+        </view>
+    </view>
+</view>

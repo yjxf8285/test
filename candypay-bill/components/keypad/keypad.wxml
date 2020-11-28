@@ -1,0 +1,18 @@
+<view class="keypad">
+    <view class="pad +{{show?'show':''}}">
+        <view class="top">
+            <view class="l"></view>
+            <view class="r">
+                ¥
+                <view class="placeholder">{{placeholder}}</view>
+                {{value}}
+            </view>
+        </view>
+        <view class="con">
+            <view class="btn" wx:for="{{keys}}" wx:key="index" data-item="{{item}}" bind:tap="keydown">
+                {{item}}
+            </view>
+        </view>
+       
+    </view>
+</view>

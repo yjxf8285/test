@@ -1,0 +1,53 @@
+page{
+    background-color: #fff;
+}
+.split{
+    width: 750rpx;
+    height: 2rpx;
+    background-color: #e0e0e0;
+}
+.h1{
+    width: 650rpx;
+    margin-left: 50rpx;
+    margin-bottom: 40rpx;
+}
+.ad{
+    text-align: center;
+    height: 35rpx;
+    margin-bottom: 40rpx;
+
+}
+.ad-words{
+    height: 35rpx;
+    
+}
+.t1{
+    font-weight: bolder;
+    color: #fff;
+    border-radius: 8rpx;
+    display: inline-block;
+    padding:0rpx 10rpx;
+    margin: 20rpx 0rpx;
+    font-size: 26rpx;
+}
+.red{
+    background-color: #ed4a4a;
+}
+.blue{
+    background-color: #379df3;
+}
+text{
+    display: block;
+    color: #666666;
+}
+.red-btn{
+    position: absolute;
+    bottom: 50rpx;
+    margin: 50rpx 65rpx 0rpx 65rpx;
+    width:620rpx;
+    border: none;
+    border-radius: 45rpx 45rpx 45rpx 45rpx ;
+    background-color: #e45451;
+    color: #fff;
+    font-size: 36rpx;
+}

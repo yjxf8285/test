@@ -1,0 +1,9 @@
+<picker mode="multiSelector" bindchange="locationPickerConfirm" bindcolumnchange="locationPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" range-key="name">
+    <view class="picker-wrap">
+        <view class="txt" wx:if="{{curLocationData.cityName}}">
+            {{curLocationData.provinceName}}
+            {{curLocationData.cityName}}
+        </view>
+        <view class="txt" wx:else style="color:#999">请选择开户行省市</view>
+    </view>
+</picker>

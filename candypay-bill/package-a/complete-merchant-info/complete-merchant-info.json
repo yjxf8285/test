@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "商户信息",
+  "usingComponents": {
+    "Autograph":"/components/autograph/autograph",
+    "selectDistrict":"/components/select-district/select-district"
+  }
+}

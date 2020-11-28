@@ -1,0 +1,51 @@
+.account-list {
+    padding: 0 20rpx 20rpx 20rpx;
+}
+.account-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18rpx 0;
+}
+.account-list-header .left {
+    font-size: 30rpx;
+    color: #959595;
+}
+.account-list-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10rpx;
+    padding: 20rpx;
+    margin-bottom: 20rpx;
+    height: 110rpx;
+}
+.account-list-item .section-right {
+    width: 180rpx;
+    text-align: center;
+}
+.account-list-item .section-left .top {
+    font-size: 32rpx;
+    color: #333;
+    font-weight: 500;
+}
+.account-list-item .section-left .bottom {
+    font-size: 28rpx;
+    color: #959595;
+}
+.def-icon {
+    width: 160rpx;
+    height: 44rpx;
+}
+.chose-icon {
+    width: 32rpx;
+    height: 32rpx;
+}
+.status-btn {
+    margin: auto;
+    display: inline-block;
+    padding: 0 20rpx;
+    height: 46rpx;
+    border-radius: 24rpx;
+    font-size: 26rpx;
+}

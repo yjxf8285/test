@@ -1,0 +1,42 @@
+<view class="com-form-list">
+    <view class="label">姓名</view>
+    <view class="input-area">
+        <input type="text" placeholder="请输入姓名" value="{{name}}" bindinput="setName" maxlength="20"/>
+    </view>
+</view>
+<view class="com-form-list">
+    <view class="label">身份证号</view>
+    <view class="input-area">
+        <input type="idcard" maxlength="18" placeholder="请输入身份证号" value="{{idCard}}"placeholder-class="com-input-placeholder" bindinput="setIdCard" />
+    </view>
+</view>
+<view class="com-form-list">
+    <view class="label">银行卡号</view>
+    <view class="input-area">
+        <input type="number" placeholder="请输入银行卡号" placeholder-class="com-input-placeholder"  value="{{cardNo}}" maxlength="19" bindinput="setCardNo"/>
+    </view>
+</view>
+<view class="com-form-list">
+    <view class="label">开户行</view>
+    <view class="input-area" bind:tap="getBankName">
+        <input type="text" disabled="{{true}}" placeholder="点击获取" placeholder-class="com-input-placeholder" value="{{bankName}}"  />
+    </view>
+</view>
+<view class="com-form-list">
+    <view class="label">银行预留手机号</view>
+    <view class="input-area">
+        <input type="number" placeholder="请输入银行预留手机号" maxlength="11" placeholder-class="com-input-placeholder" value="{{mobile}}" bindinput="setMobile" />
+    </view>
+</view>
+<view class="com-form-list">
+    <view class="label">验证码</view>
+    <view class="input-area items-c">
+        <input type="number" placeholder="请输入验证码" maxlength="6" style="width:200rpx" placeholder-class="com-input-placeholder" value="{{code}}"  bindinput="setCode"  />
+        <view class="btn-require-verifycode ml-40 {{vcodeBtnDisable?'btn-disable':'btn-enable'}}" bind:tap="getCreditcardVerifyCode"> {{getVerifyCodeTxt}}</view>
+    </view>
+</view>
+<view class="bottom-wrap">
+    <view class="btn-primary big" bind:tap="complete">完成</view>
+    <view class="btn-normal big mt-40" bind:tap="gotoCrediCardPerfect">完善信用卡信息</view>
+    <view class="b-t mt-20 fz-28 fc-999">体验数据统计等更多服务</view>
+</view>

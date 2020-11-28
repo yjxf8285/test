@@ -1,0 +1,70 @@
+.repayment-docket-detail .hd {
+    box-sizing: border-box;
+    font-size: 28rpx;
+    color: #fff;
+    background-image: linear-gradient(-225deg, #fb5e5e 0%, #f0454f 100%);
+    height: 228rpx;
+}
+.repayment-docket-detail .hd .huge-size {
+    padding: 0 20rpx;
+    font-size: 56rpx;
+    font-weight: bold;
+}
+.repayment-docket-detail .hd .due-data-txt {
+    border-top: 1px dashed #cbcbcb;
+    padding: 0 20rpx;
+    margin-top: 30rpx;
+    line-height: 68rpx;
+    height: 68rpx;
+}
+.repayment-docket-detail .list-wrap {
+    position: absolute;
+    left: 20rpx;
+    right: 20rpx;
+    top: 248rpx;
+    bottom: 190rpx;
+}
+.repayment-docket-detail .list-item {
+    margin-bottom: 20rpx;
+    background: #ffffff;
+    box-shadow: 0 9rpx 18rpx 0 #dadada;
+    border-radius: 10rpx;
+    padding: 20rpx;
+    position: relative;
+}
+.repayment-docket-detail .list-item .tip {
+    width: 150rpx;
+    height: 32rpx;
+    color: #fff;
+    font-size: 20rpx;
+    border-radius: 4rpx;
+    position: absolute;
+    right: 20rpx;
+    top: 0;
+    background-image: linear-gradient(-134deg, #ff967a 0%, #f7563d 100%);
+    box-shadow: 0 6rpx 12rpx 0 #ffb89c;
+}
+.repayment-docket-detail .list-item .select-icon {
+    position: absolute;
+    right: 0;
+    bottom: -12rpx;
+}
+.btn {
+    position: absolute;
+    width: 400rpx;
+    height: 70rpx;
+    text-align: center;
+    line-height: 70rpx;
+    bottom: 60rpx;
+    font-size: 34rpx;
+    left:50%;
+    margin-left: -200rpx;
+    color: #ffffff;
+    background-image: linear-gradient(-224deg, #ec686d 0%, #eb3c46 100%);
+    box-shadow: 0 6rpx 12rpx 0 rgba(255, 67, 67, 0.5);
+    border-radius: 40rpx;
+}
+.btn.disabled{
+    background-image: linear-gradient(-224deg, #ccc 0%, #ccc 100%);
+    box-shadow: 0 6rpx 12rpx 0 #ccc;
+}

@@ -1,0 +1,4 @@
+.bottom-wrap{
+    margin-top: 150rpx;
+    text-align: center;
+}

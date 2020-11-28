@@ -1,0 +1,184 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": false,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": false,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useIsolateContext": true,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.0",
+	"appid": "wx1888b2b787e4d670",
+	"projectname": "candypay-bill",
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "注册登录",
+					"pathName": "package-a/register/user-register/user-register",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "实名认证",
+					"pathName": "package-a/real-name-authentication/real-name-authentication",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商户信息",
+					"pathName": "package-a/complete-merchant-info/complete-merchant-info",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加结算卡",
+					"pathName": "package-a/add-settlement-card/add-settlement-card",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "信用卡认证",
+					"pathName": "package-a/creditcard-authentication/creditcard-authentication",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的商户列表",
+					"pathName": "package-a/account-list/account-list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "交易查询",
+					"pathName": "package-a/transaction-query/transaction-query",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "终端列表",
+					"pathName": "package-a/bind-terminal-list/bind-terminal-list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "绑定终端",
+					"pathName": "package-a/bind-terminal-detail/bind-terminal-detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "数据统计",
+					"pathName": "package-a/data-statistics/data-statistics",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "授权",
+					"pathName": "package-a/authorization/authorization",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "package-a/register/user-register/user-register",
+					"pathName": "package-a/register/user-register/user-register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "隐私协议",
+					"pathName": "package-a/user-agreement/user-agreement",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新增卡片",
+					"pathName": "package-a/add-card/add-card",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我要记账",
+					"pathName": "package-a/charge-up/charge-up",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "package-a/mine/card/card",
+					"pathName": "package-a/mine/card/card",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "卡片列表",
+					"pathName": "package-a/card-list/card-list",
+					"scene": null
+				}
+			]
+		}
+	}
+}
