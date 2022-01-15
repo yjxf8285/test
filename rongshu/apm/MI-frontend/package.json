@@ -36,7 +36,7 @@
     "serve-favicon": "^2.4.3",
     "vue-popperjs": "^1.2.2",
     "archiver": "^2.0.3",
-    "shelljs": "^0.7.6"
+    "shelljs": "^0.8.5"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
