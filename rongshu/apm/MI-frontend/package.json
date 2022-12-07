@@ -22,7 +22,7 @@
     "echarts": "^3.8.5",
     "ejs": "^2.5.7",
     "elasticsearch": "^13.3.1",
-    "express": "^4.14.1",
+    "express": "^4.17.3",
     "express-session": "^1.15.5",
     "i18n": "^0.8.3",
     "ioredis": "^3.1.2",
